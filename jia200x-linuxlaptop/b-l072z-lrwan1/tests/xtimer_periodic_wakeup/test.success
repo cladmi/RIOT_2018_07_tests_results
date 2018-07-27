@@ -1,0 +1,718 @@
+/home/jialamos/Development/RIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00226-g1c2e3d41d (2018-01-02-18:28)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.256131
+Info : stm32l0.cpu: hardware has 4 breakpoints, 2 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l0.cpu        hla_target little stm32l0.cpu        reset
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xf1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L0xx (Cat.5)
+Info : STM32L flash has dual banks. Bank (0) size is 96kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 12288 bytes from file /home/jialamos/Development/RIOT/tests/xtimer_periodic_wakeup/bin/b-l072z-lrwan1/tests_xtimer_periodic_wakeup.elf in 2.785978s (4.307 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 10280 bytes in 0.507319s (19.788 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/jialamos/Development/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-07-27 16:55:58,028 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-07-27 16:55:59,032 - INFO # �����172... (now=307383)
+2018-07-27 16:55:59,037 - INFO # Testing interval 171... (now=310939)
+2018-07-27 16:55:59,038 - INFO # Testing interval 170... (now=314494)
+2018-07-27 16:55:59,039 - INFO # Testing interval 169... (now=318048)
+2018-07-27 16:55:59,040 - INFO # Testing interval 168... (now=321601)
+2018-07-27 16:55:59,041 - INFO # Testing interval 167... (now=325153)
+2018-07-27 16:55:59,042 - INFO # Testing interval 166... (now=328705)
+2018-07-27 16:55:59,043 - INFO # Testing interval 165... (now=332255)
+2018-07-27 16:55:59,043 - INFO # Testing interval 164... (now=335804)
+2018-07-27 16:55:59,044 - INFO # Testing interval 163... (now=339352)
+2018-07-27 16:55:59,045 - INFO # Testing interval 162... (now=342899)
+2018-07-27 16:55:59,046 - INFO # Testing interval 161... (now=346445)
+2018-07-27 16:55:59,047 - INFO # Testing interval 160... (now=349990)
+2018-07-27 16:55:59,047 - INFO # Testing interval 159... (now=353534)
+2018-07-27 16:55:59,048 - INFO # Testing interval 158... (now=357077)
+2018-07-27 16:55:59,049 - INFO # Testing interval 157... (now=360619)
+2018-07-27 16:55:59,049 - INFO # Testing interval 156... (now=364160)
+2018-07-27 16:55:59,049 - INFO # Testing interval 155... (now=367700)
+2018-07-27 16:55:59,050 - INFO # Testing interval 154... (now=371239)
+2018-07-27 16:55:59,050 - INFO # Testing interval 153... (now=374777)
+2018-07-27 16:55:59,051 - INFO # Testing interval 152... (now=378314)
+2018-07-27 16:55:59,051 - INFO # Testing interval 151... (now=381850)
+2018-07-27 16:55:59,052 - INFO # Testing interval 150... (now=385385)
+2018-07-27 16:55:59,052 - INFO # Testing interval 149... (now=388919)
+2018-07-27 16:55:59,052 - INFO # Testing interval 148... (now=392452)
+2018-07-27 16:55:59,053 - INFO # Testing interval 147... (now=395983)
+2018-07-27 16:55:59,053 - INFO # Testing interval 146... (now=399514)
+2018-07-27 16:55:59,054 - INFO # Testing interval 145... (now=403044)
+2018-07-27 16:55:59,054 - INFO # Testing interval 144... (now=406573)
+2018-07-27 16:55:59,055 - INFO # Testing interval 143... (now=410101)
+2018-07-27 16:55:59,055 - INFO # Testing interval 142... (now=413628)
+2018-07-27 16:55:59,055 - INFO # Testing interval 141... (now=417154)
+2018-07-27 16:55:59,056 - INFO # Testing interval 140... (now=420679)
+2018-07-27 16:55:59,056 - INFO # Testing interval 139... (now=424203)
+2018-07-27 16:55:59,057 - INFO # Testing interval 138... (now=427726)
+2018-07-27 16:55:59,057 - INFO # Testing interval 137... (now=431248)
+2018-07-27 16:55:59,057 - INFO # Testing interval 136... (now=434769)
+2018-07-27 16:55:59,058 - INFO # Testing interval 135... (now=438289)
+2018-07-27 16:55:59,058 - INFO # Testing interval 134... (now=441808)
+2018-07-27 16:55:59,058 - INFO # Testing interval 133... (now=445326)
+2018-07-27 16:55:59,059 - INFO # Testing interval 132... (now=448843)
+2018-07-27 16:55:59,059 - INFO # Testing interval 131... (now=452359)
+2018-07-27 16:55:59,060 - INFO # Testing interval 130... (now=455874)
+2018-07-27 16:55:59,060 - INFO # Testing interval 129... (now=459388)
+2018-07-27 16:55:59,060 - INFO # Testing interval 128... (now=462901)
+2018-07-27 16:55:59,061 - INFO # Testing interval 127... (now=466413)
+2018-07-27 16:55:59,061 - INFO # Testing interval 126... (now=469924)
+2018-07-27 16:55:59,061 - INFO # Testing interval 125... (now=473434)
+2018-07-27 16:55:59,062 - INFO # Testing interval 124... (now=476943)
+2018-07-27 16:55:59,062 - INFO # Testing interval 123... (now=480451)
+2018-07-27 16:55:59,063 - INFO # Testing interval 122... (now=483958)
+2018-07-27 16:55:59,063 - INFO # Testing interval 121... (now=487464)
+2018-07-27 16:55:59,063 - INFO # Testing interval 120... (now=490969)
+2018-07-27 16:55:59,064 - INFO # Testing interval 119... (now=494473)
+2018-07-27 16:55:59,064 - INFO # Testing interval 118... (now=497976)
+2018-07-27 16:55:59,064 - INFO # Testing interval 117... (now=501478)
+2018-07-27 16:55:59,065 - INFO # Testing interval 116... (now=504979)
+2018-07-27 16:55:59,065 - INFO # Testing interval 115... (now=508479)
+2018-07-27 16:55:59,066 - INFO # Testing interval 114... (now=511978)
+2018-07-27 16:55:59,066 - INFO # Testing interval 113... (now=515476)
+2018-07-27 16:55:59,066 - INFO # Testing interval 112... (now=518973)
+2018-07-27 16:55:59,067 - INFO # Testing interval 111... (now=522469)
+2018-07-27 16:55:59,067 - INFO # Testing interval 110... (now=525964)
+2018-07-27 16:55:59,067 - INFO # Testing interval 109... (now=529458)
+2018-07-27 16:55:59,068 - INFO # Testing interval 108... (now=532951)
+2018-07-27 16:55:59,068 - INFO # Testing interval 107... (now=536443)
+2018-07-27 16:55:59,068 - INFO # Testing interval 106... (now=539934)
+2018-07-27 16:55:59,068 - INFO # Testing interval 105... (now=543424)
+2018-07-27 16:55:59,069 - INFO # Testing interval 104... (now=546913)
+2018-07-27 16:55:59,069 - INFO # Testing interval 103... (now=550401)
+2018-07-27 16:55:59,069 - INFO # Testing interval 102... (now=553888)
+2018-07-27 16:55:59,070 - INFO # Testing interval 101... (now=557374)
+2018-07-27 16:55:59,070 - INFO # Testing interval 100... (now=560859)
+2018-07-27 16:55:59,071 - INFO # Testing interval 99... (now=564343)
+2018-07-27 16:55:59,071 - INFO # Testing interval 98... (now=567736)
+2018-07-27 16:55:59,071 - INFO # Testing interval 97... (now=571128)
+2018-07-27 16:55:59,072 - INFO # Testing interval 96... (now=574519)
+2018-07-27 16:55:59,073 - INFO # Testing interval 95... (now=577910)
+2018-07-27 16:55:59,073 - INFO # Testing interval 94... (now=581300)
+2018-07-27 16:55:59,073 - INFO # Testing interval 93... (now=584689)
+2018-07-27 16:55:59,074 - INFO # Testing interval 92... (now=588076)
+2018-07-27 16:55:59,074 - INFO # Testing interval 91... (now=591463)
+2018-07-27 16:55:59,074 - INFO # Testing interval 90... (now=594849)
+2018-07-27 16:55:59,075 - INFO # Testing interval 89... (now=598233)
+2018-07-27 16:55:59,075 - INFO # Testing interval 88... (now=601617)
+2018-07-27 16:55:59,075 - INFO # Testing interval 87... (now=604999)
+2018-07-27 16:55:59,076 - INFO # Testing interval 86... (now=608380)
+2018-07-27 16:55:59,076 - INFO # Testing interval 85... (now=611761)
+2018-07-27 16:55:59,076 - INFO # Testing interval 84... (now=615141)
+2018-07-27 16:55:59,077 - INFO # Testing interval 83... (now=618519)
+2018-07-27 16:55:59,077 - INFO # Testing interval 82... (now=621897)
+2018-07-27 16:55:59,077 - INFO # Testing interval 81... (now=625274)
+2018-07-27 16:55:59,078 - INFO # Testing interval 80... (now=628650)
+2018-07-27 16:55:59,078 - INFO # Testing interval 79... (now=632025)
+2018-07-27 16:55:59,079 - INFO # Testing interval 78... (now=635398)
+2018-07-27 16:55:59,079 - INFO # Testing interval 77... (now=638770)
+2018-07-27 16:55:59,079 - INFO # Testing interval 76... (now=642141)
+2018-07-27 16:55:59,080 - INFO # Testing interval 75... (now=645511)
+2018-07-27 16:55:59,080 - INFO # Testing interval 74... (now=648880)
+2018-07-27 16:55:59,080 - INFO # Testing interval 73... (now=652249)
+2018-07-27 16:55:59,080 - INFO # Testing interval 72... (now=655617)
+2018-07-27 16:55:59,081 - INFO # Testing interval 71... (now=658985)
+2018-07-27 16:55:59,081 - INFO # Testing interval 70... (now=662352)
+2018-07-27 16:55:59,081 - INFO # Testing interval 69... (now=665718)
+2018-07-27 16:55:59,082 - INFO # Testing interval 68... (now=669083)
+2018-07-27 16:55:59,082 - INFO # Testing interval 67... (now=672448)
+2018-07-27 16:55:59,082 - INFO # Testing interval 66... (now=675812)
+2018-07-27 16:55:59,083 - INFO # Testing interval 65... (now=679174)
+2018-07-27 16:55:59,083 - INFO # Testing interval 64... (now=682535)
+2018-07-27 16:55:59,083 - INFO # Testing interval 63... (now=685895)
+2018-07-27 16:55:59,084 - INFO # Testing interval 62... (now=689254)
+2018-07-27 16:55:59,084 - INFO # Testing interval 61... (now=692613)
+2018-07-27 16:55:59,084 - INFO # Testing interval 60... (now=695950)
+2018-07-27 16:55:59,085 - INFO # Testing interval 59... (now=699286)
+2018-07-27 16:55:59,085 - INFO # Testing interval 58... (now=702619)
+2018-07-27 16:55:59,085 - INFO # Testing interval 57... (now=705953)
+2018-07-27 16:55:59,086 - INFO # Testing interval 56... (now=709286)
+2018-07-27 16:55:59,086 - INFO # Testing interval 55... (now=712617)
+2018-07-27 16:55:59,086 - INFO # Testing interval 54... (now=715948)
+2018-07-27 16:55:59,087 - INFO # Testing interval 53... (now=719276)
+2018-07-27 16:55:59,087 - INFO # Testing interval 52... (now=722603)
+2018-07-27 16:55:59,087 - INFO # Testing interval 51... (now=725930)
+2018-07-27 16:55:59,088 - INFO # Testing interval 50... (now=729257)
+2018-07-27 16:55:59,088 - INFO # Testing interval 49... (now=732583)
+2018-07-27 16:55:59,088 - INFO # Testing interval 48... (now=735907)
+2018-07-27 16:55:59,089 - INFO # Testing interval 47... (now=739230)
+2018-07-27 16:56:01,077 - INFO # Testing intmain(): This is RIOT! (Version: buildtest)
+2018-07-27 16:56:01,081 - INFO # xtimer_periodic_wakeup test application.
+2018-07-27 16:56:01,082 - INFO # 
+2018-07-27 16:56:01,084 - INFO # Testing interval 256... (now=7686)
+2018-07-27 16:56:01,087 - INFO # Testing interval 255... (now=11142)
+2018-07-27 16:56:01,091 - INFO # Testing interval 254... (now=14687)
+2018-07-27 16:56:01,095 - INFO # Testing interval 253... (now=18231)
+2018-07-27 16:56:01,098 - INFO # Testing interval 252... (now=21774)
+2018-07-27 16:56:01,102 - INFO # Testing interval 251... (now=25317)
+2018-07-27 16:56:01,105 - INFO # Testing interval 250... (now=28859)
+2018-07-27 16:56:01,109 - INFO # Testing interval 249... (now=32402)
+2018-07-27 16:56:01,112 - INFO # Testing interval 248... (now=35944)
+2018-07-27 16:56:01,116 - INFO # Testing interval 247... (now=39485)
+2018-07-27 16:56:01,120 - INFO # Testing interval 246... (now=43025)
+2018-07-27 16:56:01,124 - INFO # Testing interval 245... (now=46564)
+2018-07-27 16:56:01,127 - INFO # Testing interval 244... (now=50102)
+2018-07-27 16:56:01,130 - INFO # Testing interval 243... (now=53639)
+2018-07-27 16:56:01,134 - INFO # Testing interval 242... (now=57175)
+2018-07-27 16:56:01,137 - INFO # Testing interval 241... (now=60711)
+2018-07-27 16:56:01,141 - INFO # Testing interval 240... (now=64246)
+2018-07-27 16:56:01,145 - INFO # Testing interval 239... (now=67780)
+2018-07-27 16:56:01,149 - INFO # Testing interval 238... (now=71313)
+2018-07-27 16:56:01,152 - INFO # Testing interval 237... (now=74845)
+2018-07-27 16:56:01,155 - INFO # Testing interval 236... (now=78376)
+2018-07-27 16:56:01,159 - INFO # Testing interval 235... (now=81905)
+2018-07-27 16:56:01,162 - INFO # Testing interval 234... (now=85434)
+2018-07-27 16:56:01,166 - INFO # Testing interval 233... (now=88961)
+2018-07-27 16:56:01,169 - INFO # Testing interval 232... (now=92488)
+2018-07-27 16:56:01,173 - INFO # Testing interval 231... (now=96014)
+2018-07-27 16:56:01,177 - INFO # Testing interval 230... (now=99539)
+2018-07-27 16:56:01,180 - INFO # Testing interval 229... (now=103062)
+2018-07-27 16:56:01,184 - INFO # Testing interval 228... (now=106674)
+2018-07-27 16:56:01,188 - INFO # Testing interval 227... (now=110285)
+2018-07-27 16:56:01,191 - INFO # Testing interval 226... (now=113895)
+2018-07-27 16:56:01,195 - INFO # Testing interval 225... (now=117504)
+2018-07-27 16:56:01,199 - INFO # Testing interval 224... (now=121111)
+2018-07-27 16:56:01,202 - INFO # Testing interval 223... (now=124718)
+2018-07-27 16:56:01,206 - INFO # Testing interval 222... (now=128323)
+2018-07-27 16:56:01,209 - INFO # Testing interval 221... (now=131927)
+2018-07-27 16:56:01,214 - INFO # Testing interval 220... (now=135531)
+2018-07-27 16:56:01,217 - INFO # Testing interval 219... (now=139134)
+2018-07-27 16:56:01,220 - INFO # Testing interval 218... (now=142735)
+2018-07-27 16:56:01,225 - INFO # Testing interval 217... (now=146335)
+2018-07-27 16:56:01,228 - INFO # Testing interval 216... (now=149935)
+2018-07-27 16:56:01,231 - INFO # Testing interval 215... (now=153534)
+2018-07-27 16:56:01,235 - INFO # Testing interval 214... (now=157132)
+2018-07-27 16:56:01,238 - INFO # Testing interval 213... (now=160728)
+2018-07-27 16:56:01,242 - INFO # Testing interval 212... (now=164325)
+2018-07-27 16:56:01,246 - INFO # Testing interval 211... (now=167920)
+2018-07-27 16:56:01,250 - INFO # Testing interval 210... (now=171515)
+2018-07-27 16:56:01,253 - INFO # Testing interval 209... (now=175109)
+2018-07-27 16:56:01,257 - INFO # Testing interval 208... (now=178702)
+2018-07-27 16:56:01,260 - INFO # Testing interval 207... (now=182294)
+2018-07-27 16:56:01,264 - INFO # Testing interval 206... (now=185885)
+2018-07-27 16:56:01,267 - INFO # Testing interval 205... (now=189475)
+2018-07-27 16:56:01,271 - INFO # Testing interval 204... (now=193064)
+2018-07-27 16:56:01,275 - INFO # Testing interval 203... (now=196652)
+2018-07-27 16:56:01,278 - INFO # Testing interval 202... (now=200239)
+2018-07-27 16:56:01,282 - INFO # Testing interval 201... (now=203824)
+2018-07-27 16:56:01,285 - INFO # Testing interval 200... (now=207409)
+2018-07-27 16:56:01,289 - INFO # Testing interval 199... (now=210993)
+2018-07-27 16:56:01,293 - INFO # Testing interval 198... (now=214576)
+2018-07-27 16:56:01,296 - INFO # Testing interval 197... (now=218158)
+2018-07-27 16:56:01,300 - INFO # Testing interval 196... (now=221739)
+2018-07-27 16:56:01,304 - INFO # Testing interval 195... (now=225319)
+2018-07-27 16:56:01,307 - INFO # Testing interval 194... (now=228898)
+2018-07-27 16:56:01,311 - INFO # Testing interval 193... (now=232476)
+2018-07-27 16:56:01,314 - INFO # Testing interval 192... (now=236053)
+2018-07-27 16:56:01,318 - INFO # Testing interval 191... (now=239629)
+2018-07-27 16:56:01,322 - INFO # Testing interval 190... (now=243204)
+2018-07-27 16:56:01,325 - INFO # Testing interval 189... (now=246778)
+2018-07-27 16:56:01,329 - INFO # Testing interval 188... (now=250351)
+2018-07-27 16:56:01,332 - INFO # Testing interval 187... (now=253923)
+2018-07-27 16:56:01,336 - INFO # Testing interval 186... (now=257494)
+2018-07-27 16:56:01,340 - INFO # Testing interval 185... (now=261064)
+2018-07-27 16:56:01,343 - INFO # Testing interval 184... (now=264633)
+2018-07-27 16:56:01,347 - INFO # Testing interval 183... (now=268201)
+2018-07-27 16:56:01,350 - INFO # Testing interval 182... (now=271768)
+2018-07-27 16:56:01,354 - INFO # Testing interval 181... (now=275334)
+2018-07-27 16:56:01,358 - INFO # Testing interval 180... (now=278899)
+2018-07-27 16:56:01,361 - INFO # Testing interval 179... (now=282463)
+2018-07-27 16:56:01,365 - INFO # Testing interval 178... (now=286026)
+2018-07-27 16:56:01,368 - INFO # Testing interval 177... (now=289588)
+2018-07-27 16:56:01,372 - INFO # Testing interval 176... (now=293149)
+2018-07-27 16:56:01,376 - INFO # Testing interval 175... (now=296709)
+2018-07-27 16:56:01,379 - INFO # Testing interval 174... (now=300268)
+2018-07-27 16:56:01,383 - INFO # Testing interval 173... (now=303826)
+2018-07-27 16:56:01,386 - INFO # Testing interval 172... (now=307383)
+2018-07-27 16:56:01,390 - INFO # Testing interval 171... (now=310939)
+2018-07-27 16:56:01,393 - INFO # Testing interval 170... (now=314494)
+2018-07-27 16:56:01,397 - INFO # Testing interval 169... (now=318048)
+2018-07-27 16:56:01,401 - INFO # Testing interval 168... (now=321601)
+2018-07-27 16:56:01,404 - INFO # Testing interval 167... (now=325153)
+2018-07-27 16:56:01,408 - INFO # Testing interval 166... (now=328705)
+2018-07-27 16:56:01,411 - INFO # Testing interval 165... (now=332255)
+2018-07-27 16:56:01,415 - INFO # Testing interval 164... (now=335804)
+2018-07-27 16:56:01,419 - INFO # Testing interval 163... (now=339352)
+2018-07-27 16:56:01,422 - INFO # Testing interval 162... (now=342899)
+2018-07-27 16:56:01,426 - INFO # Testing interval 161... (now=346445)
+2018-07-27 16:56:01,429 - INFO # Testing interval 160... (now=349990)
+2018-07-27 16:56:01,433 - INFO # Testing interval 159... (now=353534)
+2018-07-27 16:56:01,436 - INFO # Testing interval 158... (now=357077)
+2018-07-27 16:56:01,440 - INFO # Testing interval 157... (now=360619)
+2018-07-27 16:56:01,444 - INFO # Testing interval 156... (now=364160)
+2018-07-27 16:56:01,447 - INFO # Testing interval 155... (now=367700)
+2018-07-27 16:56:01,452 - INFO # Testing interval 154... (now=371239)
+2018-07-27 16:56:01,454 - INFO # Testing interval 153... (now=374777)
+2018-07-27 16:56:01,458 - INFO # Testing interval 152... (now=378314)
+2018-07-27 16:56:01,461 - INFO # Testing interval 151... (now=381850)
+2018-07-27 16:56:01,465 - INFO # Testing interval 150... (now=385385)
+2018-07-27 16:56:01,469 - INFO # Testing interval 149... (now=388919)
+2018-07-27 16:56:01,472 - INFO # Testing interval 148... (now=392452)
+2018-07-27 16:56:01,476 - INFO # Testing interval 147... (now=395983)
+2018-07-27 16:56:01,479 - INFO # Testing interval 146... (now=399514)
+2018-07-27 16:56:01,483 - INFO # Testing interval 145... (now=403044)
+2018-07-27 16:56:01,486 - INFO # Testing interval 144... (now=406573)
+2018-07-27 16:56:01,490 - INFO # Testing interval 143... (now=410101)
+2018-07-27 16:56:01,493 - INFO # Testing interval 142... (now=413628)
+2018-07-27 16:56:01,497 - INFO # Testing interval 141... (now=417154)
+2018-07-27 16:56:01,501 - INFO # Testing interval 140... (now=420679)
+2018-07-27 16:56:01,504 - INFO # Testing interval 139... (now=424203)
+2018-07-27 16:56:01,508 - INFO # Testing interval 138... (now=427726)
+2018-07-27 16:56:01,511 - INFO # Testing interval 137... (now=431248)
+2018-07-27 16:56:01,515 - INFO # Testing interval 136... (now=434769)
+2018-07-27 16:56:01,518 - INFO # Testing interval 135... (now=438289)
+2018-07-27 16:56:01,523 - INFO # Testing interval 134... (now=441808)
+2018-07-27 16:56:01,525 - INFO # Testing interval 133... (now=445326)
+2018-07-27 16:56:01,529 - INFO # Testing interval 132... (now=448843)
+2018-07-27 16:56:01,532 - INFO # Testing interval 131... (now=452359)
+2018-07-27 16:56:01,536 - INFO # Testing interval 130... (now=455874)
+2018-07-27 16:56:01,540 - INFO # Testing interval 129... (now=459388)
+2018-07-27 16:56:01,543 - INFO # Testing interval 128... (now=462901)
+2018-07-27 16:56:01,547 - INFO # Testing interval 127... (now=466413)
+2018-07-27 16:56:01,550 - INFO # Testing interval 126... (now=469924)
+2018-07-27 16:56:01,554 - INFO # Testing interval 125... (now=473434)
+2018-07-27 16:56:01,557 - INFO # Testing interval 124... (now=476943)
+2018-07-27 16:56:01,561 - INFO # Testing interval 123... (now=480451)
+2018-07-27 16:56:01,564 - INFO # Testing interval 122... (now=483958)
+2018-07-27 16:56:01,568 - INFO # Testing interval 121... (now=487464)
+2018-07-27 16:56:01,572 - INFO # Testing interval 120... (now=490969)
+2018-07-27 16:56:01,575 - INFO # Testing interval 119... (now=494473)
+2018-07-27 16:56:01,578 - INFO # Testing interval 118... (now=497976)
+2018-07-27 16:56:01,582 - INFO # Testing interval 117... (now=501478)
+2018-07-27 16:56:01,586 - INFO # Testing interval 116... (now=504979)
+2018-07-27 16:56:01,589 - INFO # Testing interval 115... (now=508479)
+2018-07-27 16:56:01,593 - INFO # Testing interval 114... (now=511978)
+2018-07-27 16:56:01,596 - INFO # Testing interval 113... (now=515476)
+2018-07-27 16:56:01,600 - INFO # Testing interval 112... (now=518973)
+2018-07-27 16:56:01,603 - INFO # Testing interval 111... (now=522469)
+2018-07-27 16:56:01,607 - INFO # Testing interval 110... (now=525964)
+2018-07-27 16:56:01,610 - INFO # Testing interval 109... (now=529458)
+2018-07-27 16:56:01,614 - INFO # Testing interval 108... (now=532951)
+2018-07-27 16:56:01,617 - INFO # Testing interval 107... (now=536443)
+2018-07-27 16:56:01,621 - INFO # Testing interval 106... (now=539934)
+2018-07-27 16:56:01,624 - INFO # Testing interval 105... (now=543424)
+2018-07-27 16:56:01,628 - INFO # Testing interval 104... (now=546913)
+2018-07-27 16:56:01,631 - INFO # Testing interval 103... (now=550401)
+2018-07-27 16:56:01,635 - INFO # Testing interval 102... (now=553888)
+2018-07-27 16:56:01,638 - INFO # Testing interval 101... (now=557374)
+2018-07-27 16:56:01,642 - INFO # Testing interval 100... (now=560859)
+2018-07-27 16:56:01,645 - INFO # Testing interval 99... (now=564343)
+2018-07-27 16:56:01,649 - INFO # Testing interval 98... (now=567736)
+2018-07-27 16:56:01,652 - INFO # Testing interval 97... (now=571128)
+2018-07-27 16:56:01,656 - INFO # Testing interval 96... (now=574519)
+2018-07-27 16:56:01,659 - INFO # Testing interval 95... (now=577910)
+2018-07-27 16:56:01,662 - INFO # Testing interval 94... (now=581300)
+2018-07-27 16:56:01,666 - INFO # Testing interval 93... (now=584689)
+2018-07-27 16:56:01,669 - INFO # Testing interval 92... (now=588076)
+2018-07-27 16:56:01,673 - INFO # Testing interval 91... (now=591463)
+2018-07-27 16:56:01,676 - INFO # Testing interval 90... (now=594849)
+2018-07-27 16:56:01,679 - INFO # Testing interval 89... (now=598233)
+2018-07-27 16:56:01,683 - INFO # Testing interval 88... (now=601617)
+2018-07-27 16:56:01,686 - INFO # Testing interval 87... (now=604999)
+2018-07-27 16:56:01,690 - INFO # Testing interval 86... (now=608380)
+2018-07-27 16:56:01,694 - INFO # Testing interval 85... (now=611761)
+2018-07-27 16:56:01,697 - INFO # Testing interval 84... (now=615141)
+2018-07-27 16:56:01,700 - INFO # Testing interval 83... (now=618519)
+2018-07-27 16:56:01,703 - INFO # Testing interval 82... (now=621897)
+2018-07-27 16:56:01,707 - INFO # Testing interval 81... (now=625274)
+2018-07-27 16:56:01,710 - INFO # Testing interval 80... (now=628650)
+2018-07-27 16:56:01,714 - INFO # Testing interval 79... (now=632025)
+2018-07-27 16:56:01,718 - INFO # Testing interval 78... (now=635398)
+2018-07-27 16:56:01,720 - INFO # Testing interval 77... (now=638770)
+2018-07-27 16:56:01,724 - INFO # Testing interval 76... (now=642141)
+2018-07-27 16:56:01,727 - INFO # Testing interval 75... (now=645511)
+2018-07-27 16:56:01,731 - INFO # Testing interval 74... (now=648880)
+2018-07-27 16:56:01,734 - INFO # Testing interval 73... (now=652249)
+2018-07-27 16:56:01,737 - INFO # Testing interval 72... (now=655617)
+2018-07-27 16:56:01,741 - INFO # Testing interval 71... (now=658985)
+2018-07-27 16:56:01,744 - INFO # Testing interval 70... (now=662352)
+2018-07-27 16:56:01,748 - INFO # Testing interval 69... (now=665718)
+2018-07-27 16:56:01,751 - INFO # Testing interval 68... (now=669083)
+2018-07-27 16:56:01,754 - INFO # Testing interval 67... (now=672448)
+2018-07-27 16:56:01,758 - INFO # Testing interval 66... (now=675812)
+2018-07-27 16:56:01,761 - INFO # Testing interval 65... (now=679174)
+2018-07-27 16:56:01,765 - INFO # Testing interval 64... (now=682535)
+2018-07-27 16:56:01,768 - INFO # Testing interval 63... (now=685895)
+2018-07-27 16:56:01,771 - INFO # Testing interval 62... (now=689254)
+2018-07-27 16:56:01,775 - INFO # Testing interval 61... (now=692613)
+2018-07-27 16:56:01,778 - INFO # Testing interval 60... (now=695950)
+2018-07-27 16:56:01,781 - INFO # Testing interval 59... (now=699286)
+2018-07-27 16:56:01,785 - INFO # Testing interval 58... (now=702619)
+2018-07-27 16:56:01,788 - INFO # Testing interval 57... (now=705953)
+2018-07-27 16:56:01,791 - INFO # Testing interval 56... (now=709286)
+2018-07-27 16:56:01,795 - INFO # Testing interval 55... (now=712617)
+2018-07-27 16:56:01,798 - INFO # Testing interval 54... (now=715948)
+2018-07-27 16:56:01,802 - INFO # Testing interval 53... (now=719276)
+2018-07-27 16:56:01,805 - INFO # Testing interval 52... (now=722603)
+2018-07-27 16:56:01,808 - INFO # Testing interval 51... (now=725930)
+2018-07-27 16:56:01,812 - INFO # Testing interval 50... (now=729257)
+2018-07-27 16:56:01,815 - INFO # Testing interval 49... (now=732583)
+2018-07-27 16:56:01,818 - INFO # Testing interval 48... (now=735907)
+2018-07-27 16:56:01,822 - INFO # Testing interval 47... (now=739230)
+2018-07-27 16:56:01,825 - INFO # Testing interval 46... (now=742552)
+2018-07-27 16:56:01,828 - INFO # Testing interval 45... (now=745874)
+2018-07-27 16:56:01,832 - INFO # Testing interval 44... (now=749193)
+2018-07-27 16:56:01,835 - INFO # Testing interval 43... (now=752511)
+2018-07-27 16:56:01,838 - INFO # Testing interval 42... (now=755829)
+2018-07-27 16:56:01,842 - INFO # Testing interval 41... (now=759147)
+2018-07-27 16:56:01,845 - INFO # Testing interval 40... (now=762462)
+2018-07-27 16:56:01,848 - INFO # Testing interval 39... (now=765776)
+2018-07-27 16:56:01,852 - INFO # Testing interval 38... (now=769090)
+2018-07-27 16:56:01,855 - INFO # Testing interval 37... (now=772404)
+2018-07-27 16:56:01,858 - INFO # Testing interval 36... (now=775717)
+2018-07-27 16:56:01,862 - INFO # Testing interval 35... (now=779028)
+2018-07-27 16:56:01,865 - INFO # Testing interval 34... (now=782337)
+2018-07-27 16:56:01,868 - INFO # Testing interval 33... (now=785646)
+2018-07-27 16:56:01,872 - INFO # Testing interval 32... (now=788955)
+2018-07-27 16:56:01,875 - INFO # Testing interval 31... (now=792262)
+2018-07-27 16:56:01,878 - INFO # Testing interval 30... (now=795567)
+2018-07-27 16:56:01,882 - INFO # Testing interval 29... (now=798872)
+2018-07-27 16:56:01,885 - INFO # Testing interval 28... (now=802177)
+2018-07-27 16:56:01,888 - INFO # Testing interval 27... (now=805480)
+2018-07-27 16:56:01,892 - INFO # Testing interval 26... (now=808783)
+2018-07-27 16:56:01,895 - INFO # Testing interval 25... (now=812084)
+2018-07-27 16:56:01,898 - INFO # Testing interval 24... (now=815385)
+2018-07-27 16:56:01,902 - INFO # Testing interval 23... (now=818683)
+2018-07-27 16:56:01,905 - INFO # Testing interval 22... (now=821981)
+2018-07-27 16:56:01,910 - INFO # Testing interval 21... (now=825279)
+2018-07-27 16:56:01,912 - INFO # Testing interval 20... (now=828576)
+2018-07-27 16:56:01,915 - INFO # Testing interval 19... (now=831872)
+2018-07-27 16:56:01,918 - INFO # Testing interval 18... (now=835166)
+2018-07-27 16:56:01,922 - INFO # Testing interval 17... (now=838459)
+2018-07-27 16:56:01,925 - INFO # Testing interval 16... (now=841751)
+2018-07-27 16:56:01,928 - INFO # Testing interval 15... (now=845042)
+2018-07-27 16:56:01,932 - INFO # Testing interval 14... (now=848331)
+2018-07-27 16:56:01,935 - INFO # Testing interval 13... (now=851619)
+2018-07-27 16:56:01,938 - INFO # Testing interval 12... (now=854907)
+2018-07-27 16:56:01,942 - INFO # Testing interval 11... (now=858193)
+2018-07-27 16:56:01,945 - INFO # Testing interval 10... (now=861478)
+2018-07-27 16:56:01,948 - INFO # Testing interval 9... (now=864762)
+2018-07-27 16:56:01,951 - INFO # Testing interval 8... (now=867957)
+2018-07-27 16:56:01,955 - INFO # Testing interval 7... (now=871151)
+2018-07-27 16:56:01,958 - INFO # Testing interval 6... (now=874344)
+2018-07-27 16:56:01,961 - INFO # Testing interval 5... (now=877535)
+2018-07-27 16:56:01,964 - INFO # Testing interval 4... (now=880725)
+2018-07-27 16:56:01,967 - INFO # Testing interval 3... (now=883915)
+2018-07-27 16:56:01,971 - INFO # Testing interval 2... (now=887104)
+2018-07-27 16:56:01,974 - INFO # Testing interval 1... (now=890290)
+2018-07-27 16:56:01,975 - INFO #  256 diff=24
+2018-07-27 16:56:01,976 - INFO #  255 diff=24
+2018-07-27 16:56:01,978 - INFO #  254 diff=24
+2018-07-27 16:56:01,980 - INFO #  253 diff=24
+2018-07-27 16:56:01,980 - INFO #  252 diff=24
+2018-07-27 16:56:01,981 - INFO #  251 diff=24
+2018-07-27 16:56:01,983 - INFO #  250 diff=25
+2018-07-27 16:56:01,984 - INFO #  249 diff=25
+2018-07-27 16:56:01,985 - INFO #  248 diff=25
+2018-07-27 16:56:01,986 - INFO #  247 diff=25
+2018-07-27 16:56:01,987 - INFO #  246 diff=24
+2018-07-27 16:56:01,989 - INFO #  245 diff=24
+2018-07-27 16:56:01,990 - INFO #  244 diff=24
+2018-07-27 16:56:01,991 - INFO #  243 diff=24
+2018-07-27 16:56:01,993 - INFO #  242 diff=25
+2018-07-27 16:56:01,996 - INFO #  241 diff=25
+2018-07-27 16:56:01,996 - INFO #  240 diff=25
+2018-07-27 16:56:01,997 - INFO #  239 diff=25
+2018-07-27 16:56:01,997 - INFO #  238 diff=25
+2018-07-27 16:56:01,999 - INFO #  237 diff=25
+2018-07-27 16:56:02,000 - INFO #  236 diff=24
+2018-07-27 16:56:02,001 - INFO #  235 diff=25
+2018-07-27 16:56:02,002 - INFO #  234 diff=24
+2018-07-27 16:56:02,004 - INFO #  233 diff=25
+2018-07-27 16:56:02,005 - INFO #  232 diff=25
+2018-07-27 16:56:02,006 - INFO #  231 diff=25
+2018-07-27 16:56:02,007 - INFO #  230 diff=24
+2018-07-27 16:56:02,008 - INFO #  229 diff=25
+2018-07-27 16:56:02,010 - INFO #  228 diff=25
+2018-07-27 16:56:02,011 - INFO #  227 diff=25
+2018-07-27 16:56:02,012 - INFO #  226 diff=25
+2018-07-27 16:56:02,013 - INFO #  225 diff=24
+2018-07-27 16:56:02,015 - INFO #  224 diff=25
+2018-07-27 16:56:02,016 - INFO #  223 diff=24
+2018-07-27 16:56:02,017 - INFO #  222 diff=24
+2018-07-27 16:56:02,018 - INFO #  221 diff=25
+2018-07-27 16:56:02,019 - INFO #  220 diff=25
+2018-07-27 16:56:02,021 - INFO #  219 diff=24
+2018-07-27 16:56:02,022 - INFO #  218 diff=24
+2018-07-27 16:56:02,023 - INFO #  217 diff=25
+2018-07-27 16:56:02,024 - INFO #  216 diff=25
+2018-07-27 16:56:02,026 - INFO #  215 diff=25
+2018-07-27 16:56:02,027 - INFO #  214 diff=24
+2018-07-27 16:56:02,028 - INFO #  213 diff=25
+2018-07-27 16:56:02,029 - INFO #  212 diff=24
+2018-07-27 16:56:02,031 - INFO #  211 diff=25
+2018-07-27 16:56:02,032 - INFO #  210 diff=25
+2018-07-27 16:56:02,033 - INFO #  209 diff=25
+2018-07-27 16:56:02,034 - INFO #  208 diff=25
+2018-07-27 16:56:02,035 - INFO #  207 diff=25
+2018-07-27 16:56:02,037 - INFO #  206 diff=25
+2018-07-27 16:56:02,038 - INFO #  205 diff=25
+2018-07-27 16:56:02,039 - INFO #  204 diff=25
+2018-07-27 16:56:02,040 - INFO #  203 diff=25
+2018-07-27 16:56:02,042 - INFO #  202 diff=24
+2018-07-27 16:56:02,043 - INFO #  201 diff=24
+2018-07-27 16:56:02,044 - INFO #  200 diff=24
+2018-07-27 16:56:02,045 - INFO #  199 diff=25
+2018-07-27 16:56:02,047 - INFO #  198 diff=25
+2018-07-27 16:56:02,048 - INFO #  197 diff=25
+2018-07-27 16:56:02,049 - INFO #  196 diff=25
+2018-07-27 16:56:02,050 - INFO #  195 diff=25
+2018-07-27 16:56:02,052 - INFO #  194 diff=25
+2018-07-27 16:56:02,053 - INFO #  193 diff=25
+2018-07-27 16:56:02,054 - INFO #  192 diff=25
+2018-07-27 16:56:02,055 - INFO #  191 diff=25
+2018-07-27 16:56:02,056 - INFO #  190 diff=25
+2018-07-27 16:56:02,058 - INFO #  189 diff=25
+2018-07-27 16:56:02,059 - INFO #  188 diff=25
+2018-07-27 16:56:02,060 - INFO #  187 diff=25
+2018-07-27 16:56:02,061 - INFO #  186 diff=24
+2018-07-27 16:56:02,063 - INFO #  185 diff=24
+2018-07-27 16:56:02,064 - INFO #  184 diff=24
+2018-07-27 16:56:02,065 - INFO #  183 diff=24
+2018-07-27 16:56:02,066 - INFO #  182 diff=24
+2018-07-27 16:56:02,067 - INFO #  181 diff=24
+2018-07-27 16:56:02,069 - INFO #  180 diff=24
+2018-07-27 16:56:02,070 - INFO #  179 diff=24
+2018-07-27 16:56:02,071 - INFO #  178 diff=24
+2018-07-27 16:56:02,072 - INFO #  177 diff=24
+2018-07-27 16:56:02,074 - INFO #  176 diff=24
+2018-07-27 16:56:02,077 - INFO #  175 diff=24
+2018-07-27 16:56:02,078 - INFO #  174 diff=24
+2018-07-27 16:56:02,078 - INFO #  173 diff=24
+2018-07-27 16:56:02,079 - INFO #  172 diff=24
+2018-07-27 16:56:02,080 - INFO #  171 diff=24
+2018-07-27 16:56:02,081 - INFO #  170 diff=24
+2018-07-27 16:56:02,082 - INFO #  169 diff=24
+2018-07-27 16:56:02,083 - INFO #  168 diff=24
+2018-07-27 16:56:02,085 - INFO #  167 diff=25
+2018-07-27 16:56:02,086 - INFO #  166 diff=24
+2018-07-27 16:56:02,087 - INFO #  165 diff=24
+2018-07-27 16:56:02,088 - INFO #  164 diff=24
+2018-07-27 16:56:02,090 - INFO #  163 diff=24
+2018-07-27 16:56:02,091 - INFO #  162 diff=24
+2018-07-27 16:56:02,092 - INFO #  161 diff=24
+2018-07-27 16:56:02,093 - INFO #  160 diff=24
+2018-07-27 16:56:02,095 - INFO #  159 diff=25
+2018-07-27 16:56:02,096 - INFO #  158 diff=25
+2018-07-27 16:56:02,097 - INFO #  157 diff=25
+2018-07-27 16:56:02,098 - INFO #  156 diff=25
+2018-07-27 16:56:02,099 - INFO #  155 diff=25
+2018-07-27 16:56:02,101 - INFO #  154 diff=25
+2018-07-27 16:56:02,102 - INFO #  153 diff=25
+2018-07-27 16:56:02,103 - INFO #  152 diff=25
+2018-07-27 16:56:02,104 - INFO #  151 diff=25
+2018-07-27 16:56:02,106 - INFO #  150 diff=25
+2018-07-27 16:56:02,107 - INFO #  149 diff=25
+2018-07-27 16:56:02,108 - INFO #  148 diff=24
+2018-07-27 16:56:02,109 - INFO #  147 diff=25
+2018-07-27 16:56:02,111 - INFO #  146 diff=25
+2018-07-27 16:56:02,112 - INFO #  145 diff=25
+2018-07-27 16:56:02,113 - INFO #  144 diff=25
+2018-07-27 16:56:02,114 - INFO #  143 diff=24
+2018-07-27 16:56:02,115 - INFO #  142 diff=24
+2018-07-27 16:56:02,117 - INFO #  141 diff=24
+2018-07-27 16:56:02,118 - INFO #  140 diff=24
+2018-07-27 16:56:02,119 - INFO #  139 diff=24
+2018-07-27 16:56:02,120 - INFO #  138 diff=24
+2018-07-27 16:56:02,122 - INFO #  137 diff=24
+2018-07-27 16:56:02,123 - INFO #  136 diff=24
+2018-07-27 16:56:02,124 - INFO #  135 diff=24
+2018-07-27 16:56:02,125 - INFO #  134 diff=24
+2018-07-27 16:56:02,127 - INFO #  133 diff=24
+2018-07-27 16:56:02,128 - INFO #  132 diff=24
+2018-07-27 16:56:02,129 - INFO #  131 diff=24
+2018-07-27 16:56:02,130 - INFO #  130 diff=24
+2018-07-27 16:56:02,131 - INFO #  129 diff=24
+2018-07-27 16:56:02,133 - INFO #  128 diff=24
+2018-07-27 16:56:02,134 - INFO #  127 diff=24
+2018-07-27 16:56:02,135 - INFO #  126 diff=24
+2018-07-27 16:56:02,137 - INFO #  125 diff=24
+2018-07-27 16:56:02,138 - INFO #  124 diff=24
+2018-07-27 16:56:02,139 - INFO #  123 diff=24
+2018-07-27 16:56:02,140 - INFO #  122 diff=24
+2018-07-27 16:56:02,141 - INFO #  121 diff=24
+2018-07-27 16:56:02,143 - INFO #  120 diff=24
+2018-07-27 16:56:02,144 - INFO #  119 diff=24
+2018-07-27 16:56:02,145 - INFO #  118 diff=24
+2018-07-27 16:56:02,146 - INFO #  117 diff=24
+2018-07-27 16:56:02,147 - INFO #  116 diff=24
+2018-07-27 16:56:02,149 - INFO #  115 diff=24
+2018-07-27 16:56:02,150 - INFO #  114 diff=24
+2018-07-27 16:56:02,151 - INFO #  113 diff=24
+2018-07-27 16:56:02,152 - INFO #  112 diff=24
+2018-07-27 16:56:02,154 - INFO #  111 diff=24
+2018-07-27 16:56:02,155 - INFO #  110 diff=24
+2018-07-27 16:56:02,156 - INFO #  109 diff=24
+2018-07-27 16:56:02,157 - INFO #  108 diff=24
+2018-07-27 16:56:02,160 - INFO #  107 diff=24
+2018-07-27 16:56:02,161 - INFO #  106 diff=24
+2018-07-27 16:56:02,161 - INFO #  105 diff=24
+2018-07-27 16:56:02,162 - INFO #  104 diff=24
+2018-07-27 16:56:02,163 - INFO #  103 diff=24
+2018-07-27 16:56:02,165 - INFO #  102 diff=24
+2018-07-27 16:56:02,166 - INFO #  101 diff=24
+2018-07-27 16:56:02,167 - INFO #  100 diff=24
+2018-07-27 16:56:02,168 - INFO #   99 diff=24
+2018-07-27 16:56:02,170 - INFO #   98 diff=24
+2018-07-27 16:56:02,171 - INFO #   97 diff=24
+2018-07-27 16:56:02,172 - INFO #   96 diff=24
+2018-07-27 16:56:02,174 - INFO #   95 diff=24
+2018-07-27 16:56:02,175 - INFO #   94 diff=24
+2018-07-27 16:56:02,176 - INFO #   93 diff=24
+2018-07-27 16:56:02,177 - INFO #   92 diff=24
+2018-07-27 16:56:02,178 - INFO #   91 diff=24
+2018-07-27 16:56:02,179 - INFO #   90 diff=24
+2018-07-27 16:56:02,181 - INFO #   89 diff=24
+2018-07-27 16:56:02,182 - INFO #   88 diff=24
+2018-07-27 16:56:02,183 - INFO #   87 diff=24
+2018-07-27 16:56:02,184 - INFO #   86 diff=24
+2018-07-27 16:56:02,186 - INFO #   85 diff=24
+2018-07-27 16:56:02,187 - INFO #   84 diff=24
+2018-07-27 16:56:02,188 - INFO #   83 diff=24
+2018-07-27 16:56:02,189 - INFO #   82 diff=24
+2018-07-27 16:56:02,191 - INFO #   81 diff=24
+2018-07-27 16:56:02,192 - INFO #   80 diff=24
+2018-07-27 16:56:02,193 - INFO #   79 diff=24
+2018-07-27 16:56:02,194 - INFO #   78 diff=24
+2018-07-27 16:56:02,195 - INFO #   77 diff=24
+2018-07-27 16:56:02,197 - INFO #   76 diff=24
+2018-07-27 16:56:02,198 - INFO #   75 diff=24
+2018-07-27 16:56:02,199 - INFO #   74 diff=24
+2018-07-27 16:56:02,200 - INFO #   73 diff=24
+2018-07-27 16:56:02,202 - INFO #   72 diff=24
+2018-07-27 16:56:02,203 - INFO #   71 diff=24
+2018-07-27 16:56:02,204 - INFO #   70 diff=24
+2018-07-27 16:56:02,205 - INFO #   69 diff=24
+2018-07-27 16:56:02,207 - INFO #   68 diff=25
+2018-07-27 16:56:02,208 - INFO #   67 diff=25
+2018-07-27 16:56:02,209 - INFO #   66 diff=24
+2018-07-27 16:56:02,210 - INFO #   65 diff=24
+2018-07-27 16:56:02,211 - INFO #   64 diff=24
+2018-07-27 16:56:02,213 - INFO #   63 diff=24
+2018-07-27 16:56:02,214 - INFO #   62 diff=25
+2018-07-27 16:56:02,215 - INFO #   61 diff=4
+2018-07-27 16:56:02,216 - INFO #   60 diff=4
+2018-07-27 16:56:02,217 - INFO #   59 diff=3
+2018-07-27 16:56:02,218 - INFO #   58 diff=4
+2018-07-27 16:56:02,220 - INFO #   57 diff=4
+2018-07-27 16:56:02,221 - INFO #   56 diff=4
+2018-07-27 16:56:02,222 - INFO #   55 diff=4
+2018-07-27 16:56:02,223 - INFO #   54 diff=3
+2018-07-27 16:56:02,224 - INFO #   53 diff=3
+2018-07-27 16:56:02,225 - INFO #   52 diff=4
+2018-07-27 16:56:02,226 - INFO #   51 diff=4
+2018-07-27 16:56:02,228 - INFO #   50 diff=4
+2018-07-27 16:56:02,229 - INFO #   49 diff=4
+2018-07-27 16:56:02,230 - INFO #   48 diff=4
+2018-07-27 16:56:02,231 - INFO #   47 diff=4
+2018-07-27 16:56:02,232 - INFO #   46 diff=4
+2018-07-27 16:56:02,233 - INFO #   45 diff=3
+2018-07-27 16:56:02,234 - INFO #   44 diff=3
+2018-07-27 16:56:02,236 - INFO #   43 diff=4
+2018-07-27 16:56:02,237 - INFO #   42 diff=4
+2018-07-27 16:56:02,238 - INFO #   41 diff=3
+2018-07-27 16:56:02,239 - INFO #   40 diff=3
+2018-07-27 16:56:02,240 - INFO #   39 diff=4
+2018-07-27 16:56:02,241 - INFO #   38 diff=4
+2018-07-27 16:56:02,242 - INFO #   37 diff=4
+2018-07-27 16:56:02,244 - INFO #   36 diff=4
+2018-07-27 16:56:02,245 - INFO #   35 diff=3
+2018-07-27 16:56:02,246 - INFO #   34 diff=4
+2018-07-27 16:56:02,247 - INFO #   33 diff=4
+2018-07-27 16:56:02,248 - INFO #   32 diff=4
+2018-07-27 16:56:02,249 - INFO #   31 diff=3
+2018-07-27 16:56:02,250 - INFO #   30 diff=4
+2018-07-27 16:56:02,252 - INFO #   29 diff=3
+2018-07-27 16:56:02,253 - INFO #   28 diff=4
+2018-07-27 16:56:02,254 - INFO #   27 diff=4
+2018-07-27 16:56:02,255 - INFO #   26 diff=4
+2018-07-27 16:56:02,256 - INFO #   25 diff=4
+2018-07-27 16:56:02,257 - INFO #   24 diff=2
+2018-07-27 16:56:02,258 - INFO #   23 diff=4
+2018-07-27 16:56:02,260 - INFO #   22 diff=4
+2018-07-27 16:56:02,261 - INFO #   21 diff=4
+2018-07-27 16:56:02,262 - INFO #   20 diff=4
+2018-07-27 16:56:02,263 - INFO #   19 diff=4
+2018-07-27 16:56:02,264 - INFO #   18 diff=4
+2018-07-27 16:56:02,265 - INFO #   17 diff=4
+2018-07-27 16:56:02,266 - INFO #   16 diff=4
+2018-07-27 16:56:02,267 - INFO #   15 diff=3
+2018-07-27 16:56:02,269 - INFO #   14 diff=4
+2018-07-27 16:56:02,271 - INFO #   13 diff=4
+2018-07-27 16:56:02,271 - INFO #   12 diff=4
+2018-07-27 16:56:02,272 - INFO #   11 diff=4
+2018-07-27 16:56:02,273 - INFO #   10 diff=4
+2018-07-27 16:56:02,274 - INFO #    9 diff=4
+2018-07-27 16:56:02,275 - INFO #    8 diff=4
+2018-07-27 16:56:02,277 - INFO #    7 diff=4
+2018-07-27 16:56:02,278 - INFO #    6 diff=4
+2018-07-27 16:56:02,279 - INFO #    5 diff=4
+2018-07-27 16:56:02,280 - INFO #    4 diff=4
+2018-07-27 16:56:02,281 - INFO #    3 diff=4
+2018-07-27 16:56:02,282 - INFO #    2 diff=3
+2018-07-27 16:56:02,283 - INFO #    1 diff=4
+2018-07-27 16:56:02,284 - INFO # 
+2018-07-27 16:56:02,285 - INFO # Min/max error: 2/25
+2018-07-27 16:56:02,286 - INFO # 
+2018-07-27 16:56:02,287 - INFO # Test complete.
+

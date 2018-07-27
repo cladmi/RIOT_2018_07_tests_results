@@ -1,0 +1,263 @@
+/home/jialamos/Development/RIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00226-g1c2e3d41d (2018-01-02-18:28)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.256131
+Info : stm32l0.cpu: hardware has 4 breakpoints, 2 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l0.cpu        hla_target little stm32l0.cpu        reset
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xf1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L0xx (Cat.5)
+Info : STM32L flash has dual banks. Bank (0) size is 96kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 20480 bytes from file /home/jialamos/Development/RIOT/tests/pkg_u8g2/bin/b-l072z-lrwan1/tests_pkg_u8g2.elf in 4.503755s (4.441 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 17200 bytes in 0.765634s (21.939 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/jialamos/Development/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-07-27 16:47:26,692 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-07-27 16:47:27,694 - INFO # 00|                                                |
+2018-07-27 16:47:27,695 - INFO # 02|                                                |
+2018-07-27 16:47:27,696 - INFO # 04|                                                |
+2018-07-27 16:47:27,696 - INFO # 06|                                                |
+2018-07-27 16:47:27,697 - INFO # 08|                                                |
+2018-07-27 16:47:27,697 - INFO # 10|            ▐▋ ▟██▖                             |
+2018-07-27 16:47:27,698 - INFO # 12|            ▐▋▐▛ ▝█                             |
+2018-07-27 16:47:27,699 - INFO # 14|            ▐▋▝█▙▄                              |
+2018-07-27 16:47:27,702 - INFO # 16|            ▐▋  ▀▜▙                             |
+2018-07-27 16:47:27,709 - INFO # 18|            ▐▋▐▙ ▗█                             |
+2018-07-27 16:47:27,716 - INFO # 20|            ▐▋ ▜██▘                             |
+2018-07-27 16:47:27,722 - INFO # 22|                                                |
+2018-07-27 16:47:27,729 - INFO # 24|                                                |
+2018-07-27 16:47:27,734 - INFO # 26|                                                |
+2018-07-27 16:47:27,740 - INFO # 28|                                                |
+2018-07-27 16:47:27,746 - INFO # 30|                                                |
+2018-07-27 16:47:27,752 - INFO # 32|                                                |
+2018-07-27 16:47:27,758 - INFO # 34|                                                |
+2018-07-27 16:47:27,764 - INFO # 36|                                                |
+2018-07-27 16:47:27,770 - INFO # 38|                                                |
+2018-07-27 16:47:27,777 - INFO # 40|                                                |
+2018-07-27 16:47:27,783 - INFO # 42|                                                |
+2018-07-27 16:47:27,789 - INFO # 44|                                                |
+2018-07-27 16:47:27,796 - INFO # 46|                                                |
+2018-07-27 16:47:27,801 - INFO # 48|                                                |
+2018-07-27 16:47:27,807 - INFO # 50|                                                |
+2018-07-27 16:47:27,813 - INFO # 52|                                                |
+2018-07-27 16:47:27,819 - INFO # 54|                                                |
+2018-07-27 16:47:27,825 - INFO # 56|                                                |
+2018-07-27 16:47:27,831 - INFO # 58|                                                |
+2018-07-27 16:47:27,837 - INFO # 60|                                                |
+2018-07-27 16:47:27,843 - INFO # 62|                                                |
+2018-07-27 16:47:27,849 - INFO # 64|                                                |
+2018-07-27 16:47:27,856 - INFO # 66|                                                |
+2018-07-27 16:47:28,904 - INFO # 00|           ▄▄▖                                  |
+2018-07-27 16:47:28,912 - INFO # 02|         ▗████▋                                 |
+2018-07-27 16:47:28,919 - INFO # 04|        ▗█▛▘ ▜█▖                                |
+2018-07-27 16:47:28,926 - INFO # 06|        ▐█    █▋                                |
+2018-07-27 16:47:28,932 - INFO # 08|        ██    █▋                                |
+2018-07-27 16:47:28,939 - INFO # 10|        ██   ▟█▘                                |
+2018-07-27 16:47:28,948 - INFO # 12|        ▜█ ▄▟█▛  ▄   ▄▄  ▄▄▄▄                   |
+2018-07-27 16:47:28,957 - INFO # 14|    ▗▄█▖▐█▝██▀   █▋ ▟▛▜▙ ▀▜▛▀                   |
+2018-07-27 16:47:28,966 - INFO # 16|   ▗██▀ ▐█ ▝     █▋ █▋ █  ▐▋                    |
+2018-07-27 16:47:28,974 - INFO # 18|   ▟▛   ▐█  ▄    █▋ █▋ █  ▐▋                    |
+2018-07-27 16:47:28,983 - INFO # 20|   █▋   ▐█ ▝█▋   █▋ █▋ █  ▐▋                    |
+2018-07-27 16:47:28,991 - INFO # 22|   █▋   ▐█  ▜█   █▋ █▋ █  ▐▋                    |
+2018-07-27 16:47:29,001 - INFO # 24|   █▙  ▗█▛  ▝█▙  █▋ █▋▗█  ▐▋                    |
+2018-07-27 16:47:29,009 - INFO # 26|   ▐█▙▄██▘   ▜█  █▘ ▝██▘  ▐▋                    |
+2018-07-27 16:47:29,016 - INFO # 28|    ▝▜█▀▘                                       |
+2018-07-27 16:47:29,022 - INFO # 30|                                                |
+2018-07-27 16:47:29,029 - INFO # 32|                                                |
+2018-07-27 16:47:29,034 - INFO # 34|                                                |
+2018-07-27 16:47:29,041 - INFO # 36|                                                |
+2018-07-27 16:47:29,047 - INFO # 38|                                                |
+2018-07-27 16:47:29,053 - INFO # 40|                                                |
+2018-07-27 16:47:29,059 - INFO # 42|                                                |
+2018-07-27 16:47:29,065 - INFO # 44|                                                |
+2018-07-27 16:47:29,071 - INFO # 46|                                                |
+2018-07-27 16:47:29,077 - INFO # 48|                                                |
+2018-07-27 16:47:29,083 - INFO # 50|                                                |
+2018-07-27 16:47:29,089 - INFO # 52|                                                |
+2018-07-27 16:47:29,095 - INFO # 54|                                                |
+2018-07-27 16:47:29,101 - INFO # 56|                                                |
+2018-07-27 16:47:29,107 - INFO # 58|                                                |
+2018-07-27 16:47:29,113 - INFO # 60|                                                |
+2018-07-27 16:47:29,119 - INFO # 62|                                                |
+2018-07-27 16:47:29,126 - INFO # 64|                                                |
+2018-07-27 16:47:29,132 - INFO # 66|                                                |
+2018-07-27 16:47:29,699 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-07-27 16:47:29,701 - INFO # Initializing to stdout.
+2018-07-27 16:47:29,703 - INFO # Initializing display.
+2018-07-27 16:47:29,705 - INFO # Drawing on screen.
+2018-07-27 16:47:29,734 - INFO # 00|                                                |
+2018-07-27 16:47:29,740 - INFO # 02|                                                |
+2018-07-27 16:47:29,746 - INFO # 04|                                                |
+2018-07-27 16:47:29,752 - INFO # 06|                                                |
+2018-07-27 16:47:29,759 - INFO # 08|                                                |
+2018-07-27 16:47:29,767 - INFO # 10|      █████▐▋  ▐▋▐▋ ▟██▖                        |
+2018-07-27 16:47:29,775 - INFO # 12|        █  ▐▋  ▐▋▐▋▐▛ ▝█                        |
+2018-07-27 16:47:29,783 - INFO # 14|        █  ▐████▋▐▋▝█▙▄                         |
+2018-07-27 16:47:29,791 - INFO # 16|        █  ▐▋  ▐▋▐▋  ▀▜▙                        |
+2018-07-27 16:47:29,799 - INFO # 18|        █  ▐▋  ▐▋▐▋▐▙ ▗█                        |
+2018-07-27 16:47:29,807 - INFO # 20|        █  ▐▋  ▐▋▐▋ ▜██▘                        |
+2018-07-27 16:47:29,814 - INFO # 22|                                                |
+2018-07-27 16:47:29,819 - INFO # 24|                                                |
+2018-07-27 16:47:29,825 - INFO # 26|                                                |
+2018-07-27 16:47:29,832 - INFO # 28|                                                |
+2018-07-27 16:47:29,838 - INFO # 30|                                                |
+2018-07-27 16:47:29,844 - INFO # 32|                                                |
+2018-07-27 16:47:29,850 - INFO # 34|                                                |
+2018-07-27 16:47:29,856 - INFO # 36|                                                |
+2018-07-27 16:47:29,862 - INFO # 38|                                                |
+2018-07-27 16:47:29,868 - INFO # 40|                                                |
+2018-07-27 16:47:29,874 - INFO # 42|                                                |
+2018-07-27 16:47:29,880 - INFO # 44|                                                |
+2018-07-27 16:47:29,886 - INFO # 46|                                                |
+2018-07-27 16:47:29,892 - INFO # 48|                                                |
+2018-07-27 16:47:29,898 - INFO # 50|                                                |
+2018-07-27 16:47:29,904 - INFO # 52|                                                |
+2018-07-27 16:47:29,911 - INFO # 54|                                                |
+2018-07-27 16:47:29,917 - INFO # 56|                                                |
+2018-07-27 16:47:29,923 - INFO # 58|                                                |
+2018-07-27 16:47:29,929 - INFO # 60|                                                |
+2018-07-27 16:47:29,935 - INFO # 62|                                                |
+2018-07-27 16:47:29,941 - INFO # 64|                                                |
+2018-07-27 16:47:29,947 - INFO # 66|                                                |
+2018-07-27 16:47:30,982 - INFO # 00|                                                |
+2018-07-27 16:47:30,988 - INFO # 02|                                                |
+2018-07-27 16:47:30,994 - INFO # 04|                                                |
+2018-07-27 16:47:31,000 - INFO # 06|                                                |
+2018-07-27 16:47:31,006 - INFO # 08|                                                |
+2018-07-27 16:47:31,014 - INFO # 10|            ▐▋ ▟██▖                             |
+2018-07-27 16:47:31,021 - INFO # 12|            ▐▋▐▛ ▝█                             |
+2018-07-27 16:47:31,028 - INFO # 14|            ▐▋▝█▙▄                              |
+2018-07-27 16:47:31,035 - INFO # 16|            ▐▋  ▀▜▙                             |
+2018-07-27 16:47:31,042 - INFO # 18|            ▐▋▐▙ ▗█                             |
+2018-07-27 16:47:31,049 - INFO # 20|            ▐▋ ▜██▘                             |
+2018-07-27 16:47:31,055 - INFO # 22|                                                |
+2018-07-27 16:47:31,061 - INFO # 24|                                                |
+2018-07-27 16:47:31,067 - INFO # 26|                                                |
+2018-07-27 16:47:31,073 - INFO # 28|                                                |
+2018-07-27 16:47:31,080 - INFO # 30|                                                |
+2018-07-27 16:47:31,086 - INFO # 32|                                                |
+2018-07-27 16:47:31,093 - INFO # 34|                                                |
+2018-07-27 16:47:31,098 - INFO # 36|                                                |
+2018-07-27 16:47:31,104 - INFO # 38|                                                |
+2018-07-27 16:47:31,110 - INFO # 40|                                                |
+2018-07-27 16:47:31,116 - INFO # 42|                                                |
+2018-07-27 16:47:31,122 - INFO # 44|                                                |
+2018-07-27 16:47:31,128 - INFO # 46|                                                |
+2018-07-27 16:47:31,135 - INFO # 48|                                                |
+2018-07-27 16:47:31,140 - INFO # 50|                                                |
+2018-07-27 16:47:31,146 - INFO # 52|                                                |
+2018-07-27 16:47:31,152 - INFO # 54|                                                |
+2018-07-27 16:47:31,158 - INFO # 56|                                                |
+2018-07-27 16:47:31,165 - INFO # 58|                                                |
+2018-07-27 16:47:31,171 - INFO # 60|                                                |
+2018-07-27 16:47:31,177 - INFO # 62|                                                |
+2018-07-27 16:47:31,183 - INFO # 64|                                                |
+2018-07-27 16:47:31,189 - INFO # 66|                                                |
+2018-07-27 16:47:32,238 - INFO # 00|           ▄▄▖                                  |
+2018-07-27 16:47:32,245 - INFO # 02|         ▗████▋                                 |
+2018-07-27 16:47:32,252 - INFO # 04|        ▗█▛▘ ▜█▖                                |
+2018-07-27 16:47:32,259 - INFO # 06|        ▐█    █▋                                |
+2018-07-27 16:47:32,266 - INFO # 08|        ██    █▋                                |
+2018-07-27 16:47:32,273 - INFO # 10|        ██   ▟█▘                                |
+2018-07-27 16:47:32,281 - INFO # 12|        ▜█ ▄▟█▛  ▄   ▄▄  ▄▄▄▄                   |
+2018-07-27 16:47:32,291 - INFO # 14|    ▗▄█▖▐█▝██▀   █▋ ▟▛▜▙ ▀▜▛▀                   |
+2018-07-27 16:47:32,299 - INFO # 16|   ▗██▀ ▐█ ▝     █▋ █▋ █  ▐▋                    |
+2018-07-27 16:47:32,308 - INFO # 18|   ▟▛   ▐█  ▄    █▋ █▋ █  ▐▋                    |
+2018-07-27 16:47:32,316 - INFO # 20|   █▋   ▐█ ▝█▋   █▋ █▋ █  ▐▋                    |
+2018-07-27 16:47:32,325 - INFO # 22|   █▋   ▐█  ▜█   █▋ █▋ █  ▐▋                    |
+2018-07-27 16:47:32,333 - INFO # 24|   █▙  ▗█▛  ▝█▙  █▋ █▋▗█  ▐▋                    |
+2018-07-27 16:47:32,343 - INFO # 26|   ▐█▙▄██▘   ▜█  █▘ ▝██▘  ▐▋                    |
+2018-07-27 16:47:32,350 - INFO # 28|    ▝▜█▀▘                                       |
+2018-07-27 16:47:32,356 - INFO # 30|                                                |
+2018-07-27 16:47:32,362 - INFO # 32|                                                |
+2018-07-27 16:47:32,368 - INFO # 34|                                                |
+2018-07-27 16:47:32,375 - INFO # 36|                                                |
+2018-07-27 16:47:32,380 - INFO # 38|                                                |
+2018-07-27 16:47:32,386 - INFO # 40|                                                |
+2018-07-27 16:47:32,392 - INFO # 42|                                                |
+2018-07-27 16:47:32,398 - INFO # 44|                                                |
+2018-07-27 16:47:32,404 - INFO # 46|                                                |
+2018-07-27 16:47:32,410 - INFO # 48|                                                |
+2018-07-27 16:47:32,416 - INFO # 50|                                                |
+2018-07-27 16:47:32,422 - INFO # 52|                                                |
+2018-07-27 16:47:32,429 - INFO # 54|                                                |
+2018-07-27 16:47:32,435 - INFO # 56|                                                |
+2018-07-27 16:47:32,441 - INFO # 58|                                                |
+2018-07-27 16:47:32,447 - INFO # 60|                                                |
+2018-07-27 16:47:32,453 - INFO # 62|                                                |
+2018-07-27 16:47:32,459 - INFO # 64|                                                |
+2018-07-27 16:47:32,465 - INFO # 66|                                                |
+

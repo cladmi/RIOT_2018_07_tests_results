@@ -1,0 +1,25 @@
+Installed compiler toolchains 
+-----------------------------
+             native gcc: gcc (GCC) 7.2.1 20171128
+      arm-none-eabi-gcc: arm-none-eabi-gcc (GNU Tools for Arm Embedded Processors 7-2017-q4-major) 7.2.1 20170904 (release) [ARM/embedded-7-branch revision 255204]
+                avr-gcc: missing
+       mips-mti-elf-gcc: missing
+             msp430-gcc: missing
+   riscv-none-embed-gcc: missing
+                  clang: missing
+
+Installed compiler libs
+-----------------------
+   arm-none-eabi-newlib: "2.5.0"
+    mips-mti-elf-newlib: missing
+riscv-none-embed-newlib: missing
+               avr-libc: missing (missing)
+
+Installed development tools
+---------------------------
+                  cmake: cmake version 3.10.1
+               cppcheck: Cppcheck 1.82
+                doxygen: 1.8.14
+                 flake8: missing
+                    git: git version 2.16.0
+             coccinelle: missing

@@ -1,0 +1,137 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/danielpetry/Sandbox/RIOT/tests/gnrc_netif flash-only test
+/home/danielpetry/Sandbox/RIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+/home/danielpetry/Sandbox/RIOT/tests/gnrc_netif/bin/pba-d-01-kw2x/tests_gnrc_netif.elf is fine.
+Open On-Chip Debugger 0.10.0+dev-00224-g19f8f58c (2017-12-20-14:48)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : auto-selecting first available session transport "swd". To override use 'transport select <transport>'.
+Info : add flash_bank kinetis kw22d512.flash
+adapter speed: 1000 kHz
+cortex_m reset_config sysresetreq
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: Interface Initialised (SWD)
+Info : CMSIS-DAP: FW Version = 1.0
+Info : SWCLK/TCK = 0 SWDIO/TMS = 1 TDI = 0 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 1000 kHz
+Info : SWD DPIDR 0x2ba01477
+START...
+Info : kw22d512.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : MDM: Chip is unsecured. Continuing.
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* kw22d512.cpu       cortex_m   little kw22d512.cpu       running
+START...
+Info : MDM: Chip is unsecured. Continuing.
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000740 msp: 0x1fffc200
+auto erase enabled
+Info : Kinetis MK21DX256xxx5 detected: 2 flash blocks
+Info : 1 PFlash banks: 256k total
+Info : 1 FlexNVM banks: 64k total, 64k available as data flash, 4096bytes FlexRAM
+Warn : Missing bank 1 configuration, FCF protection flags may be incomplette
+Warn : Missing bank 1 configuration, FCF protection flags may be incomplette
+Warn : Flash Configuration Field written.
+Warn : Reset or power off the device to make settings effective.
+wrote 67584 bytes from file /home/danielpetry/Sandbox/RIOT/tests/gnrc_netif/bin/pba-d-01-kw2x/tests_gnrc_netif.elf in 3.743109s (17.632 KiB/s)
+34 bytes written at address 0x20000000
+downloaded 34 bytes in 0.004014s (8.272 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x01000000 pc: 0x20000020 msp: 0x1fffc200
+verified 65600 bytes in 0.809006s (79.187 KiB/s)
+START...
+Info : MDM: Chip is unsecured. Continuing.
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/danielpetry/Sandbox/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-07-27 15:24:16,272 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-07-27 15:24:17,279 - INFO # 00010  00  00  00  18  3A 6:4b:03:eb:40:03:5c:78:ff:f7:dc:f8:25:01:14:4b:14:22:05:f1:80:45:05:f5:5c
+2018-07-27 15:24:17,280 - INFO # 
+2018-07-27 15:24:17,281 - INFO # Context before hardfault:
+2018-07-27 15:24:17,281 - INFO #    r0: 0x0000015f
+2018-07-27 15:24:17,282 - INFO #    r1: 0x20002297
+2018-07-27 15:24:17,283 - INFO #    r2: 0x20002297
+2018-07-27 15:24:19,464 - INFO #    r3: 0x12.Sending data from Ethernet device:
+2018-07-27 15:24:19,471 - INFO # 00000000  33  33  FF  22  FD  0A  3E  E6  B5  22  FD  0A  86  DD  60  00
+2018-07-27 15:24:19,476 - INFO # 00000010  00  00  00  18  3A  FF  00  00  00  00  00  00  00  00  00  00
+2018-07-27 15:24:19,483 - INFO # 00000020  00  00  00  00  00  00  FF  02  00  00  00  00  00  00  00  00
+2018-07-27 15:24:19,490 - INFO # 00000030  00  01  FF  22  FD  0A  87  00  90  E6  00  00  00  00  FE  80
+2018-07-27 15:24:19,495 - INFO # 00000040  00  00  00  00  00  00  3C  E6  B5  FF  FE  22  FD  0A
+2018-07-27 15:24:19,497 - INFO # PKTDUMP: data to send:
+2018-07-27 15:24:19,501 - INFO # ~~ SNIP  0 - size:   8 byte, type: NETTYPE_NETIF (-1)
+2018-07-27 15:24:19,504 - INFO # if_pid: 6  rssi: 0  lqi: 0
+2018-07-27 15:24:19,505 - INFO # flags: 0x0
+2018-07-27 15:24:19,506 - INFO # src_l2addr: (nil)
+2018-07-27 15:24:19,508 - INFO # dst_l2addr: (nil)
+2018-07-27 15:24:19,512 - INFO # ~~ SNIP  1 - size:  40 byte, type: NETTYPE_IPV6 (2)
+2018-07-27 15:24:19,516 - INFO # traffic class: 0x00 (ECN: 0x0, DSCP: 0x00)
+2018-07-27 15:24:19,518 - INFO # flow label: 0x00000
+2018-07-27 15:24:19,523 - INFO # length: 47127  next header: 255  hop limit: 255
+2018-07-27 15:24:19,524 - INFO # source address: ::
+2018-07-27 15:24:19,527 - INFO # destination address: ff02::1:ff22:fd0a
+2018-07-27 15:24:19,532 - INFO # ~~ SNIP  2 - size:  24 byte, type: NETTYPE_ICMPV6 (3)
+2018-07-27 15:24:19,534 - INFO #    type:  29  code:   7
+2018-07-27 15:24:19,535 - INFO #    cksum: 0x0000
+2018-07-27 15:24:19,542 - INFO # 00000000  00  00  00  00  61  06  00  00  2D  07  00  00  53  09  00  00
+2018-07-27 15:24:19,544 - INFO # 00000010  53  09  00  00
+2018-07-27 15:24:19,548 - INFO # ~~ SNIP  3 - size:  40 byte, type: NETTYPE_IPV6 (2)
+2018-07-27 15:24:19,550 - INFO # illegal version field: hu
+2018-07-27 15:24:19,554 - INFO # traffic class: 0x30 (ECN: 0x0, DSCP: 0x30)
+2018-07-27 15:24:19,556 - INFO # flow label: 0x90000
+2018-07-27 15:24:19,560 - INFO # length: 21257  next header: 0  hop limit: 0
+2018-07-27 15:24:19,564 - INFO # source address: 5309:0:5309:0:5309:0:5309:0
+2018-07-27 15:24:19,568 - INFO # destination address: 5309:0:5309:0:5309:0:5309:0
+2018-07-27 15:24:19,572 - INFO # ~~ SNIP  4 - size:   8 byte, type: NETTYPE_NETIF (-1)
+2018-07-27 15:24:19,576 - INFO # if_pid: 4294965443  rssi: 24602  lqi: 33
+2018-07-27 15:24:19,578 - INFO # flags: BROADCAST 
+2018-07-27 15:24:19,582 - INFO # src_l2addr: 4f:f0:ff:33:ce:f8:08:30:33:51:11:f8
+2018-07-27 15:24:19,613 - INFO # dst_l2addr: 18:30:10:49:b1:fb:f9:f1:06:eb:03:12:10:33:1b:01:01:39:c2:f8:08:51:f1:50:05:23:c2:f8:08:71:cc:f8:08:31:ff:f7:03:f9:28:46:bd:e8:f8:8f:4f:f0:ff:30:fa:e7:00:bf:dc:07:90:42:00:70:03:40:bc:d7:00:00:0c:cd:ff:1f:00:6c:dc:02:2d:e9:f0:41:06:46:90:46:0f:46:59:bb:01:28:29:d8:16:4b:03:eb:40:03:5c:78:ff:f7:dc:f8:25:01:14:4b:14:22:05:f1:80:45:05:f5:5c
+2018-07-27 15:24:19,613 - INFO # 
+2018-07-27 15:24:19,615 - INFO # Context before hardfault:
+2018-07-27 15:24:19,616 - INFO #    r0: 0x0000015f
+2018-07-27 15:24:19,618 - INFO #    r1: 0x20002297
+2018-07-27 15:24:19,620 - INFO #    r2: 0x20002297
+2018-07-27 15:24:19,621 - INFO #    r3: 0x12000000
+2018-07-27 15:24:19,623 - INFO #   r12: 0x20001893
+2018-07-27 15:24:19,624 - INFO #    lr: 0x0000bd0f
+2018-07-27 15:24:19,626 - INFO #    pc: 0x33303a62
+2018-07-27 15:24:19,627 - INFO #   psr: 0x20000000
+2018-07-27 15:24:19,628 - INFO # 
+2018-07-27 15:24:19,628 - INFO # FSR/FAR:
+2018-07-27 15:24:19,630 - INFO #  CFSR: 0x00000100
+2018-07-27 15:24:19,631 - INFO #  HFSR: 0x40000000
+2018-07-27 15:24:19,633 - INFO #  DFSR: 0x00000000
+2018-07-27 15:24:19,634 - INFO #  AFSR: 0x00000000
+2018-07-27 15:24:19,635 - INFO # Misc
+2018-07-27 15:24:19,637 - INFO # EXC_RET: 0xfffffffd
+2018-07-27 15:24:19,641 - INFO # Attempting to reconstruct state for debugging...
+2018-07-27 15:24:19,642 - INFO # In GDB:
+2018-07-27 15:24:19,643 - INFO #   set $pc=0x33303a62
+2018-07-27 15:24:19,644 - INFO #   frame 0
+2018-07-27 15:24:19,645 - INFO #   bt
+2018-07-27 15:24:19,646 - INFO # 
+2018-07-27 15:24:19,649 - INFO # ISR stack overflowed by at least 16 bytes.
+  File "/home/danielpetry/Sandbox/RIOT/dist/tools/testrunner/testrunner.py", line 55, in run
+    testfunc(child)
+  File "tests/01-run.py", line 16, in testfunc
+    child.expect(r"OK \(\d+ tests\)")
+  File "/home/danielpetry/lib/python3.5/site-packages/pexpect/spawnbase.py", line 341, in expect
+    timeout, searchwindowsize, async_)
+  File "/home/danielpetry/lib/python3.5/site-packages/pexpect/spawnbase.py", line 369, in expect_list
+    return exp.expect_loop(timeout)
+  File "/home/danielpetry/lib/python3.5/site-packages/pexpect/expect.py", line 119, in expect_loop
+    return self.timeout(e)
+  File "/home/danielpetry/lib/python3.5/site-packages/pexpect/expect.py", line 82, in timeout
+    raise TIMEOUT(msg)
+Timeout in expect script at "child.expect(r"OK \(\d+ tests\)")" (tests/gnrc_netif/tests/01-run.py:16)
+
+Makefile:33: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

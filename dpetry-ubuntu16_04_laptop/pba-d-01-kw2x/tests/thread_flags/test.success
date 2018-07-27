@@ -1,0 +1,82 @@
+/home/danielpetry/Sandbox/RIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+/home/danielpetry/Sandbox/RIOT/tests/thread_flags/bin/pba-d-01-kw2x/tests_thread_flags.elf is fine.
+Open On-Chip Debugger 0.10.0+dev-00224-g19f8f58c (2017-12-20-14:48)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : auto-selecting first available session transport "swd". To override use 'transport select <transport>'.
+Info : add flash_bank kinetis kw22d512.flash
+adapter speed: 1000 kHz
+cortex_m reset_config sysresetreq
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: Interface Initialised (SWD)
+Info : CMSIS-DAP: FW Version = 1.0
+Info : SWCLK/TCK = 0 SWDIO/TMS = 1 TDI = 0 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 1000 kHz
+Info : SWD DPIDR 0x2ba01477
+START...
+Info : kw22d512.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : MDM: Chip is unsecured. Continuing.
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* kw22d512.cpu       cortex_m   little kw22d512.cpu       unknown
+START...
+Info : MDM: Chip is unsecured. Continuing.
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x00000740 msp: 0x1fffc200
+auto erase enabled
+Info : Kinetis MK21DX256xxx5 detected: 2 flash blocks
+Info : 1 PFlash banks: 256k total
+Info : 1 FlexNVM banks: 64k total, 64k available as data flash, 4096bytes FlexRAM
+Warn : Missing bank 1 configuration, FCF protection flags may be incomplette
+Warn : Missing bank 1 configuration, FCF protection flags may be incomplette
+Warn : Flash Configuration Field written.
+Warn : Reset or power off the device to make settings effective.
+wrote 14336 bytes from file /home/danielpetry/Sandbox/RIOT/tests/thread_flags/bin/pba-d-01-kw2x/tests_thread_flags.elf in 0.827984s (16.909 KiB/s)
+34 bytes written at address 0x20000000
+downloaded 34 bytes in 0.004022s (8.255 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x01000000 pc: 0x20000020 msp: 0x1fffc200
+verified 12408 bytes in 0.419926s (28.856 KiB/s)
+START...
+Info : MDM: Chip is unsecured. Continuing.
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/danielpetry/Sandbox/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-07-27 12:17:20,419 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-07-27 12:17:21,421 - INFO # 
+2018-07-27 12:17:21,422 - INFO # START
+2018-07-27 12:17:21,424 - INFO # thread(): waiting for 0x1...
+2018-07-27 12:17:21,425 - INFO # main(): setting flag 0x0001
+2018-07-27 12:17:21,426 - INFO # thread(): received flags: 0x0001
+2018-07-27 12:17:21,426 - INFO # tESS
+2018-07-27 12:17:21,427 - INFO # d(): waiting for 0x1 || 0x64...
+2018-07-27 12:17:21,427 - INFO # main(): setting flag 0x0064
+2018-07-27 12:17:23,665 - INFO # thread(): received flags: 0x00main(): This is RIOT! (Version: buildtest)
+2018-07-27 12:17:23,666 - INFO # START
+2018-07-27 12:17:23,668 - INFO # thread(): waiting for 0x1...
+2018-07-27 12:17:23,671 - INFO # main(): setting flag 0x0001
+2018-07-27 12:17:23,673 - INFO # thread(): received flags: 0x0001
+2018-07-27 12:17:23,677 - INFO # thread(): waiting for 0x1 || 0x64...
+2018-07-27 12:17:23,679 - INFO # main(): setting flag 0x0064
+2018-07-27 12:17:23,682 - INFO # thread(): received flags: 0x0064
+2018-07-27 12:17:23,685 - INFO # thread(): waiting for 0x2 && 0x4...
+2018-07-27 12:17:23,687 - INFO # main(): setting flag 0x0001
+2018-07-27 12:17:23,690 - INFO # main(): setting flag 0x0008
+2018-07-27 12:17:23,692 - INFO # main(): setting flag 0x0002
+2018-07-27 12:17:23,695 - INFO # main(): setting flag 0x0004
+2018-07-27 12:17:23,698 - INFO # thread(): received flags: 0x0006
+2018-07-27 12:17:23,701 - INFO # thread(): waiting for any flag, one by one
+2018-07-27 12:17:23,704 - INFO # thread(): received flags: 0x0001
+2018-07-27 12:17:23,708 - INFO # thread(): waiting for any flag, one by one
+2018-07-27 12:17:23,711 - INFO # thread(): received flags: 0x0008
+2018-07-27 12:17:23,714 - INFO # main: setting 100ms timeout...
+2018-07-27 12:17:23,818 - INFO # main: timeout triggered. time passed: 100016us
+2018-07-27 12:17:23,819 - INFO # SUCCESS
+

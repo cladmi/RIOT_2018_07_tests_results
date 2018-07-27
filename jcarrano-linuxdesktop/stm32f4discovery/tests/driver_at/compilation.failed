@@ -1,0 +1,16 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../masterRIOT/tests/driver_at clean all -j 8
+Building application "tests_driver_at" for "stm32f4discovery" with MCU "stm32f4".
+
+/home/jcarrano/source/masterRIOT/drivers/at/at.c: In function 'at_dev_init':
+/home/jcarrano/source/masterRIOT/drivers/at/at.c:29:31: error: cast between incompatible function types from 'int (*)(isrpipe_t *, char)' {aka 'int (*)(struct <anonymous> *, char)'} to 'void (*)(void *, uint8_t)' {aka 'void (*)(void *, unsigned char)'} [-Werror=cast-function-type]
+     uart_init(uart, baudrate, (uart_rx_cb_t) isrpipe_write_one,
+                               ^
+cc1: all warnings being treated as errors
+make[3]: *** [/home/jcarrano/source/masterRIOT/Makefile.base:83: /home/jcarrano/source/masterRIOT/tests/driver_at/bin/stm32f4discovery/at/at.o] Error 1
+make[2]: *** [/home/jcarrano/source/masterRIOT/Makefile.base:20: ALL--/home/jcarrano/source/masterRIOT/drivers/at] Error 2
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [/home/jcarrano/source/masterRIOT/Makefile.base:20: ALL--/home/jcarrano/source/masterRIOT/drivers] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [/home/jcarrano/source/masterRIOT/tests/driver_at/../../Makefile.include:414: /home/jcarrano/source/masterRIOT/tests/driver_at/bin/stm32f4discovery/application_tests_driver_at.a] Error 2
+
+Return value: 2

@@ -1,0 +1,62 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../masterRIOT/tests/warn_conflict flash-only test
+/home/jcarrano/source/masterRIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 2000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : clock speed 1800 kHz
+Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
+Info : using stlink api v2
+Info : Target voltage: 2.916329
+Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f4x.cpu       hla_target little stm32f4x.cpu       running
+adapter speed: 2000 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000528 msp: 0x20000200
+auto erase enabled
+Info : device id = 0x10016413
+Info : flash size = 1024kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/warn_conflict/bin/stm32f4discovery/tests_warn_conflict.elf in 0.875303s (18.279 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 9092 bytes in 0.153426s (57.871 KiB/s)
+adapter speed: 2000 kHz
+shutdown command invoked
+Done flashing
+tests/01-make.py
+The following features may conflict: periph_dac periph_spi
+Rationale: On stm32f4discovery boards there are the same pins for the DAC and/or SPI_0.
+\nEXPECT undesired behaviour!
+Building application "tests_warn_conflict" for "stm32f4discovery" with MCU "stm32f4".
+
+/home/jcarrano/source/masterRIOT/Makefile.base:82: target '/home/jcarrano/source/masterRIOT/tests/warn_conflict/bin/stm32f4discovery/core/msg.o' given more than once in the same rule
+[01m[Karm-none-eabi-gcc:[m[K [01;31m[Kfatal error: [m[K/usr/lib/gcc/arm-none-eabi/8.1.0/../../../../arm-none-eabi/lib/nano.specs: attempt to rename spec '[01m[Klink[m[K' to already defined spec '[01m[Knano_link[m[K'
+compilation terminated.
+make[1]: *** [/home/jcarrano/source/masterRIOT/Makefile.include:411: /home/jcarrano/source/masterRIOT/tests/warn_conflict/bin/stm32f4discovery/tests_warn_conflict.elf] Error 1
+  File "tests/01-make.py", line 28, in testfunc
+    child.expect_exact('\x1b[1;33mThe following features may conflict:'
+  File "/usr/lib/python3.6/site-packages/pexpect/spawnbase.py", line 418, in expect_exact
+    return exp.expect_loop(timeout)
+  File "/usr/lib/python3.6/site-packages/pexpect/expect.py", line 117, in expect_loop
+    return self.eof(e)
+  File "/usr/lib/python3.6/site-packages/pexpect/expect.py", line 63, in eof
+    raise EOF(msg)
+[1;31mUnexpected end of file in expect script[0m
+make: *** [Makefile:18: test] Error 1
+
+Return value: 2

@@ -1,0 +1,239 @@
+/home/jcarrano/source/masterRIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 2000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : clock speed 1800 kHz
+Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
+Info : using stlink api v2
+Info : Target voltage: 2.916329
+Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f4x.cpu       hla_target little stm32f4x.cpu       reset
+adapter speed: 2000 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080004bc msp: 0x20000200
+auto erase enabled
+Info : device id = 0x10016413
+Info : flash size = 1024kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/struct_tm_utility/bin/stm32f4discovery/tests_struct_tm_utility.elf in 0.883227s (18.115 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 12552 bytes in 0.175490s (69.849 KiB/s)
+adapter speed: 2000 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+
+/home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-07-27 15:20:44,240 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-07-27 15:20:47,284 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-07-27 15:20:47,285 - INFO # `struct tm` utility shell.
+> 
+help
+help
+2018-07-27 15:20:47,405 - INFO #  help
+2018-07-27 15:20:47,406 - INFO # Command              Description
+2018-07-27 15:20:47,407 - INFO # ---------------------------------------
+2018-07-27 15:20:47,408 - INFO # days_in              Tells you the number of days in a month.
+2018-07-27 15:20:47,410 - INFO # leap_year            Tells you if a supplied year is a leap year.
+2018-07-27 15:20:47,412 - INFO # doomsday             Tells you the wday Doomsday of the supplied year.
+2018-07-27 15:20:47,414 - INFO # day                  Tells you the day of the supplied date.
+days_in
+> days_in
+2018-07-27 15:20:47,470 - INFO #  days_in
+2018-07-27 15:20:47,471 - INFO # Usage: days_in <Month[1..12]>
+days_in 13
+> days_in 13
+2018-07-27 15:20:47,528 - INFO #  days_in 13
+2018-07-27 15:20:47,529 - INFO # Usage: days_in <Month[1..12]>
+days_in 0
+> days_in 0
+2018-07-27 15:20:47,585 - INFO #  days_in 0
+2018-07-27 15:20:47,586 - INFO # Usage: days_in <Month[1..12]>
+days_in 1
+> days_in 1
+2018-07-27 15:20:47,644 - INFO #  days_in 1
+2018-07-27 15:20:47,646 - INFO # There are 31 days in JAN in common years.
+> days_in 2
+days_in 2
+2018-07-27 15:20:47,704 - INFO #  days_in 2
+2018-07-27 15:20:47,705 - INFO # There are 28 days in FEB in common years.
+days_in 3
+> days_in 3
+2018-07-27 15:20:47,763 - INFO #  days_in 3
+2018-07-27 15:20:47,764 - INFO # There are 31 days in MAR in common years.
+days_in 4
+> days_in 4
+2018-07-27 15:20:47,822 - INFO #  days_in 4
+2018-07-27 15:20:47,823 - INFO # There are 30 days in APR in common years.
+> days_in 5
+days_in 5
+2018-07-27 15:20:47,880 - INFO #  days_in 5
+2018-07-27 15:20:47,882 - INFO # There are 31 days in MAY in common years.
+> days_in 6
+days_in 6
+2018-07-27 15:20:47,940 - INFO #  days_in 6
+2018-07-27 15:20:47,941 - INFO # There are 30 days in JUN in common years.
+> days_in 7
+days_in 7
+2018-07-27 15:20:47,999 - INFO #  days_in 7
+2018-07-27 15:20:48,000 - INFO # There are 31 days in JUL in common years.
+days_in 8
+> days_in 8
+2018-07-27 15:20:48,058 - INFO #  days_in 8
+2018-07-27 15:20:48,060 - INFO # There are 31 days in AUG in common years.
+days_in 9
+> days_in 9
+2018-07-27 15:20:48,117 - INFO #  days_in 9
+2018-07-27 15:20:48,118 - INFO # There are 30 days in SEP in common years.
+> days_in 10
+days_in 10
+2018-07-27 15:20:48,177 - INFO #  days_in 10
+2018-07-27 15:20:48,178 - INFO # There are 31 days in OCT in common years.
+days_in 11
+> days_in 11
+2018-07-27 15:20:48,236 - INFO #  days_in 11
+2018-07-27 15:20:48,238 - INFO # There are 30 days in NOV in common years.
+days_in 12
+> days_in 12
+2018-07-27 15:20:48,296 - INFO #  days_in 12
+2018-07-27 15:20:48,297 - INFO # There are 31 days in DEC in common years.
+leap_year
+> leap_year
+2018-07-27 15:20:48,353 - INFO #  leap_year
+2018-07-27 15:20:48,354 - INFO # Usage: leap_year <Year>
+leap_year aaaa
+> leap_year aaaa
+2018-07-27 15:20:48,411 - INFO #  leap_year aaaa
+2018-07-27 15:20:48,412 - INFO # Usage: leap_year <Year>
+> leap_year 2000
+leap_year 2000
+2018-07-27 15:20:48,469 - INFO #  leap_year 2000
+2018-07-27 15:20:48,469 - INFO # Was 2000 a leap year? YES.
+leap_year 2016
+> leap_year 2016
+2018-07-27 15:20:48,527 - INFO #  leap_year 2016
+2018-07-27 15:20:48,529 - INFO # Was 2016 a leap year? YES.
+leap_year 2017
+> leap_year 2017
+2018-07-27 15:20:48,587 - INFO #  leap_year 2017
+2018-07-27 15:20:48,588 - INFO # Was 2017 a leap year? NO.
+leap_year 2018
+> leap_year 2018
+2018-07-27 15:20:48,645 - INFO #  leap_year 2018
+2018-07-27 15:20:48,646 - INFO # Was 2018 a leap year? NO.
+> doomsday
+doomsday
+2018-07-27 15:20:48,702 - INFO #  doomsday
+2018-07-27 15:20:48,703 - INFO # Usage: doomsday <Year>
+> doomsday 2016
+doomsday 2016
+2018-07-27 15:20:48,761 - INFO #  doomsday 2016
+2018-07-27 15:20:48,762 - INFO # What weekday was MAR 0 of 2016? MON.
+> doomsday 2017
+doomsday 2017
+2018-07-27 15:20:48,819 - INFO #  doomsday 2017
+2018-07-27 15:20:48,821 - INFO # What weekday was MAR 0 of 2017? TUE.
+day
+> day
+2018-07-27 15:20:48,878 - INFO #  day
+2018-07-27 15:20:48,879 - INFO # Usage: day <Year> <Month[1..12]> <Day[1..31]>
+day 2017 1 1
+> day 2017 1 1
+2018-07-27 15:20:48,940 - INFO #  day 2017 1 1
+2018-07-27 15:20:48,941 - INFO # What weekday was 2017-01-01? The 1(th) day of the year was a SUN.
+day 2017 1 15
+> day 2017 1 15
+2018-07-27 15:20:49,002 - INFO #  day 2017 1 15
+2018-07-27 15:20:49,004 - INFO # What weekday was 2017-01-15? The 15(th) day of the year was a SUN.
+day 2017 1 28
+> day 2017 1 28
+2018-07-27 15:20:49,065 - INFO #  day 2017 1 28
+2018-07-27 15:20:49,067 - INFO # What weekday was 2017-01-28? The 28(th) day of the year was a SAT.
+day 2017 4 1
+> day 2017 4 1
+2018-07-27 15:20:49,128 - INFO #  day 2017 4 1
+2018-07-27 15:20:49,129 - INFO # What weekday was 2017-04-01? The 91(th) day of the year was a SAT.
+day 2017 4 15
+> day 2017 4 15
+2018-07-27 15:20:49,190 - INFO #  day 2017 4 15
+2018-07-27 15:20:49,192 - INFO # What weekday was 2017-04-15? The 105(th) day of the year was a SAT.
+day 2017 4 28
+> day 2017 4 28
+2018-07-27 15:20:49,253 - INFO #  day 2017 4 28
+2018-07-27 15:20:49,255 - INFO # What weekday was 2017-04-28? The 118(th) day of the year was a FRI.
+day 2017 11 1
+> day 2017 11 1
+2018-07-27 15:20:49,316 - INFO #  day 2017 11 1
+2018-07-27 15:20:49,318 - INFO # What weekday was 2017-11-01? The 305(th) day of the year was a WED.
+day 2017 11 15
+> day 2017 11 15
+2018-07-27 15:20:49,379 - INFO #  day 2017 11 15
+2018-07-27 15:20:49,381 - INFO # What weekday was 2017-11-15? The 319(th) day of the year was a WED.
+> day 2017 11 28
+day 2017 11 28
+2018-07-27 15:20:49,443 - INFO #  day 2017 11 28
+2018-07-27 15:20:49,445 - INFO # What weekday was 2017-11-28? The 332(th) day of the year was a TUE.
+> day 2018 1 1
+day 2018 1 1
+2018-07-27 15:20:49,505 - INFO #  day 2018 1 1
+2018-07-27 15:20:49,507 - INFO # What weekday was 2018-01-01? The 1(th) day of the year was a MON.
+day 2018 1 15
+> day 2018 1 15
+2018-07-27 15:20:49,568 - INFO #  day 2018 1 15
+2018-07-27 15:20:49,569 - INFO # What weekday was 2018-01-15? The 15(th) day of the year was a MON.
+day 2018 1 28
+> day 2018 1 28
+2018-07-27 15:20:49,630 - INFO #  day 2018 1 28
+2018-07-27 15:20:49,632 - INFO # What weekday was 2018-01-28? The 28(th) day of the year was a SUN.
+day 2018 4 1
+> day 2018 4 1
+2018-07-27 15:20:49,693 - INFO #  day 2018 4 1
+2018-07-27 15:20:49,696 - INFO # What weekday was 2018-04-01? The 91(th) day of the year was a SUN.
+> day 2018 4 15
+day 2018 4 15
+2018-07-27 15:20:49,757 - INFO #  day 2018 4 15
+2018-07-27 15:20:49,759 - INFO # What weekday was 2018-04-15? The 105(th) day of the year was a SUN.
+day 2018 4 28
+> day 2018 4 28
+2018-07-27 15:20:49,820 - INFO #  day 2018 4 28
+2018-07-27 15:20:49,822 - INFO # What weekday was 2018-04-28? The 118(th) day of the year was a SAT.
+day 2018 11 1
+> day 2018 11 1
+2018-07-27 15:20:49,884 - INFO #  day 2018 11 1
+2018-07-27 15:20:49,886 - INFO # What weekday was 2018-11-01? The 305(th) day of the year was a THU.
+day 2018 11 15
+> day 2018 11 15
+2018-07-27 15:20:49,947 - INFO #  day 2018 11 15
+2018-07-27 15:20:49,949 - INFO # What weekday was 2018-11-15? The 319(th) day of the year was a THU.
+> day 2018 11 28
+day 2018 11 28
+2018-07-27 15:20:50,011 - INFO #  day 2018 11 28
+2018-07-27 15:20:50,013 - INFO # What weekday was 2018-11-28? The 332(th) day of the year was a WED.
+> day 2016 2 29
+day 2016 2 29
+2018-07-27 15:20:50,074 - INFO #  day 2016 2 29
+2018-07-27 15:20:50,076 - INFO # What weekday was 2016-02-29? The 60(th) day of the year was a MON.
+> day 2017 2 29
+day 2017 2 29
+2018-07-27 15:20:50,141 - INFO #  day 2017 2 29
+2018-07-27 15:20:50,143 - INFO # The supplied date is invalid, but no error should occur.
+

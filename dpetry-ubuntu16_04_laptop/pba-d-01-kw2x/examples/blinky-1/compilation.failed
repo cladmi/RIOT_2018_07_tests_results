@@ -1,0 +1,18 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/danielpetry/Sandbox/RIOT/examples/blinky-1 clean all
+Building application "blinky-1" for "pba-d-01-kw2x" with MCU "kinetis".
+
+/home/danielpetry/Sandbox/RIOT/examples/blinky-1/main.c: In function 'main':
+/home/danielpetry/Sandbox/RIOT/examples/blinky-1/main.c:30:5: error: implicit declaration of function 'write'; did you mean 'fwrite'? [-Werror=implicit-function-declaration]
+     write(0,0);
+     ^~~~~
+     fwrite
+/home/danielpetry/Sandbox/RIOT/examples/blinky-1/main.c:31:5: error: implicit declaration of function 'delay' [-Werror=implicit-function-declaration]
+     delay(1);
+     ^~~~~
+cc1: all warnings being treated as errors
+/home/danielpetry/Sandbox/RIOT/Makefile.base:83: recipe for target '/home/danielpetry/Sandbox/RIOT/examples/blinky-1/bin/pba-d-01-kw2x/application_blinky-1/main.o' failed
+make[1]: *** [/home/danielpetry/Sandbox/RIOT/examples/blinky-1/bin/pba-d-01-kw2x/application_blinky-1/main.o] Error 1
+/home/danielpetry/Sandbox/RIOT/examples/blinky-1/../../Makefile.include:403: recipe for target '/home/danielpetry/Sandbox/RIOT/examples/blinky-1/bin/pba-d-01-kw2x/application_blinky-1.a' failed
+make: *** [/home/danielpetry/Sandbox/RIOT/examples/blinky-1/bin/pba-d-01-kw2x/application_blinky-1.a] Error 2
+
+Return value: 2

@@ -1,0 +1,20 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/danielpetry/Sandbox/RIOT/examples/udpechoserver clean all
+Building application "udpechoserver" for "pba-d-01-kw2x" with MCU "kinetis".
+
+/home/danielpetry/Sandbox/RIOT/examples/udpechoserver/main.c: In function 'timer_thread':
+/home/danielpetry/Sandbox/RIOT/examples/udpechoserver/main.c:40:36: error: format '%d' expects argument of type 'int', but argument 2 has type 'long unsigned int' [-Werror=format=]
+         printf("Timer: Got msg at %d ms and UDP msg \"%s\" of size %d sent\n",current_time.ticks32/1000, (char*)data->buffer, data->size);
+                                   ~^                                          ~~~~~~~~~~~~~~~~~~~~~~~~~
+                                   %ld
+/home/danielpetry/Sandbox/RIOT/examples/udpechoserver/main.c: In function 'main':
+/home/danielpetry/Sandbox/RIOT/examples/udpechoserver/main.c:85:66: error: format '%d' expects argument of type 'int', but argument 4 has type 'long unsigned int' [-Werror=format=]
+             printf("Received a UDP message \"%s\" of size %d at %d ms\n",(char*)buf,res,current_time.ticks32/1000);
+                                                                 ~^                      ~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                                 %ld
+cc1: all warnings being treated as errors
+/home/danielpetry/Sandbox/RIOT/Makefile.base:83: recipe for target '/home/danielpetry/Sandbox/RIOT/examples/udpechoserver/bin/pba-d-01-kw2x/application_udpechoserver/main.o' failed
+make[1]: *** [/home/danielpetry/Sandbox/RIOT/examples/udpechoserver/bin/pba-d-01-kw2x/application_udpechoserver/main.o] Error 1
+/home/danielpetry/Sandbox/RIOT/examples/udpechoserver/../../Makefile.include:403: recipe for target '/home/danielpetry/Sandbox/RIOT/examples/udpechoserver/bin/pba-d-01-kw2x/application_udpechoserver.a' failed
+make: *** [/home/danielpetry/Sandbox/RIOT/examples/udpechoserver/bin/pba-d-01-kw2x/application_udpechoserver.a] Error 2
+
+Return value: 2

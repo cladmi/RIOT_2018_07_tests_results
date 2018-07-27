@@ -1,0 +1,56 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/harter/work/git/RIOT_release/tests/driver_ds1307 flash-only test
+/home/harter/work/git/RIOT_release/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.9.0 (2018-01-30-19:14)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : auto-selecting first available session transport "jtag". To override use 'transport select <transport>'.
+adapter speed: 1000 kHz
+adapter_nsrst_delay: 100
+jtag_ntrst_delay: 100
+none separate
+cortex_m reset_config sysresetreq
+trst_and_srst separate srst_nogate trst_push_pull srst_open_drain connect_assert_srst
+Info : clock speed 1000 kHz
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020, part: 0x6414, ver: 0x0)
+Info : stm32f1x.cpu: hardware has 6 breakpoints, 4 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f1x.cpu       cortex_m   little stm32f1x.cpu       reset
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020, part: 0x6414, ver: 0x0)
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x0800046c msp: 0x20000200
+auto erase enabled
+Info : device id = 0x10016414
+Info : flash size = 512kbytes
+wrote 16384 bytes from file /home/harter/work/git/RIOT_release/tests/driver_ds1307/bin/iotlab-m3/tests_driver_ds1307.elf in 0.719900s (22.225 KiB/s)
+verified 15248 bytes in 0.247982s (60.047 KiB/s)
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020, part: 0x6414, ver: 0x0)
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "500000"
+No handlers could be found for logger "root"
+2018-07-25 19:03:45,557 - INFO # Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-07-25 19:03:49,091 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-07-25 19:03:49,092 - INFO # DS1307 RTC test
+2018-07-25 19:03:49,092 - INFO # 
+2018-07-25 19:03:49,092 - INFO # .
+2018-07-25 19:03:49,093 - INFO # tests.test_nvram (tests/driver_ds1307/main.c 89) exp "This is a test" was ""
+2018-07-25 19:03:55,090 - INFO # ..
+2018-07-25 19:03:55,091 - INFO # tests.test_halt (tests/driver_ds1307/main.c 117) exp 0 was -80
+2018-07-25 19:03:55,091 - INFO # 
+2018-07-25 19:03:55,092 - INFO # run 3 failures 2
+Timeout in expect script at "r"error: unable to initialize RTC \[I2C initialization error\]"])" (tests/driver_ds1307/tests/01-run.py:15)
+
+Makefile:10: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

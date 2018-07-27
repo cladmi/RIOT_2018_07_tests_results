@@ -1,0 +1,15 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/harter/work/git/RIOT_release/tests/cbor flash-only test
+/home/harter/work/git/RIOT_release/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/harter/work/git/RIOT_release/tests/cbor/bin/samr21-xpro/tests_cbor.bin
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800004678 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev C)
+Erasing...  done.
+Programming.................................................................................................................................. done.
+Verification.................................................................................................................................. done.
+tests/01-run.py
+Timeout in expect script at "child.expect_exact('(uint64_t, 1)')" (tests/cbor/tests/01-run.py:17)
+
+Makefile:24: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

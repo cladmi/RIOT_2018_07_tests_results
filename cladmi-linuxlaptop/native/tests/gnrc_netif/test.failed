@@ -1,0 +1,50 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/harter/work/git/RIOT_release/tests/gnrc_netif flash-only test
+true 
+tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/gnrc_netif/bin/native/tests_gnrc_netif.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+.Sending data from Ethernet device:
+00000000  33  33  FF  22  FD  0A  3E  E6  B5  22  FD  0A  86  DD  60  00
+00000010  00  00  00  18  3A  FF  00  00  00  00  00  00  00  00  00  00
+00000020  00  00  00  00  00  00  FF  02  00  00  00  00  00  00  00  00
+00000030  00  01  FF  22  FD  0A  87  00  90  E6  00  00  00  00  FE  80
+00000040  00  00  00  00  00  00  3C  E6  B5  FF  FE  22  FD  0A
+PKTDUMP: data to send:
+~~ SNIP  0 - size:   8 byte, type: NETTYPE_NETIF (-1)
+if_pid: 6  rssi: 0  lqi: 0
+flags: 0x0
+src_l2addr: (nil)
+dst_l2addr: (nil)
+~~ SNIP  1 - size:  40 byte, type: NETTYPE_IPV6 (2)
+traffic class: 0x00 (ECN: 0x0, DSCP: 0x00)
+flow label: 0x00000
+length: 47127  next header: 255  hop limit: 255
+source address: ::
+destination address: ff02::1:ff22:fd0a
+~~ SNIP  2 - size:  24 byte, type: NETTYPE_ICMPV6 (3)
+/home/harter/work/git/RIOT_release/Makefile.include:483: recipe for target 'term' failed
+make[1]: *** [term] Segmentation fault (core dumped)
+  File "/home/harter/work/git/RIOT_release/dist/tools/testrunner/testrunner.py", line 55, in run
+    testfunc(child)
+  File "tests/01-run.py", line 16, in testfunc
+    child.expect(r"OK \(\d+ tests\)")
+  File "/usr/lib/python3/dist-packages/pexpect/spawnbase.py", line 315, in expect
+    timeout, searchwindowsize, async)
+  File "/usr/lib/python3/dist-packages/pexpect/spawnbase.py", line 339, in expect_list
+    return exp.expect_loop(timeout)
+  File "/usr/lib/python3/dist-packages/pexpect/expect.py", line 102, in expect_loop
+    return self.eof(e)
+  File "/usr/lib/python3/dist-packages/pexpect/expect.py", line 49, in eof
+    raise EOF(msg)
+Unexpected end of file in expect script at "child.expect(r"OK \(\d+ tests\)")" (tests/gnrc_netif/tests/01-run.py:16)
+
+Process already stopped
+Makefile:33: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

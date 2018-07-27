@@ -1,0 +1,10 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /senslab/users/harter/riot/RIOT/tests/cbor flash-only test
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list lyon,m3,1 --update /senslab/users/harter/riot/RIOT/tests/cbor/bin/iotlab-m3/tests_cbor.elf | grep 0
+0
+tests/01-run.py
+Timeout in expect script at "child.expect_exact('(uint64_t, 1)')" (tests/cbor/tests/01-run.py:17)
+
+Makefile:24: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

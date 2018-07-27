@@ -1,0 +1,33 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT/tests/driver_hd44780 flash-only test
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,arduino-zero,1 --update /senslab/users/harter/riot/RIOT/tests/driver_hd44780/bin/arduino-zero/tests_driver_hd44780.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:arduino-zero-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: buildtest)
+[START]
+
+Context before hardfault:
+   r0: 0x0000013f
+   r1: 0x00000000
+   r2: 0x000000e0
+   r3: 0x80000000
+  r12: 0x00000000
+   lr: 0x000017c1
+   pc: 0x000012ba
+  psr: 0x01000000
+
+Misc
+EXC_RET: 0xfffffffd
+Attempting to reconstruct state for debugging...
+In GDB:
+  set $pc=0x12ba
+  frame 0
+  bt
+
+ISR stack overflowed by at least 8 bytes.
+Timeout in expect script at "child.expect_exact("[SUCCESS]")" (tests/driver_hd44780/tests/01-run.py:16)
+
+Makefile:12: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

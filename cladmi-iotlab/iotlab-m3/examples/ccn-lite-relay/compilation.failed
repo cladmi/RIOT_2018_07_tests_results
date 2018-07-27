@@ -1,0 +1,119 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay clean all
+make: Nothing to be done for 'clean'.
+Building application "ccn-lite-relay" for "iotlab-m3" with MCU "stm32f1".
+
+rm -Rf /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite
+mkdir -p /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite
+/senslab/users/harter/riot/RIOT/dist/tools/git/git-cache clone "https://github.com/cn-uofbasel/ccn-lite/" "48b17ebee7600b2e79b3acf0728217473d7a4ee8" "/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite"
+Clonage dans '/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite'...
+HEAD est maintenant sur 48b17eb... Merge pull request #269 from cgundogan/pr/fix_interest_evtimers
+touch /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/.git-downloaded
+rm -Rf /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/tlsf
+mkdir -p /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/tlsf
+/senslab/users/harter/riot/RIOT/dist/tools/git/git-cache clone "https://github.com/mattconte/tlsf" "a1f743ffac0305408b39e791e0ffb45f6d9bc777" "/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/tlsf"
+Clonage dans '/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/tlsf'...
+HEAD est maintenant sur a1f743f... Merge pull request #3 from velvitonator/large-alloc-corruption
+touch /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/tlsf/.git-downloaded
+git -C /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/tlsf checkout -f a1f743ffac0305408b39e791e0ffb45f6d9bc777
+HEAD est maintenant sur a1f743f... Merge pull request #3 from velvitonator/large-alloc-corruption
+git -C /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/tlsf am --ignore-whitespace "/senslab/users/harter/riot/RIOT/pkg/tlsf"/patches/*.patch
+Application : Fix warnining on implicit pointer conversion.
+touch /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/tlsf/.git-patched
+/senslab/users/harter/riot/RIOT/dist/tools/cmake/generate-xcompile-toolchain.sh > /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/xcompile-toolchain.cmake
+cd /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src && \
+cmake -DCMAKE_TOOLCHAIN_FILE=/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/xcompile-toolchain.cmake \
+	  -DCCNL_RIOT=1 -DRIOT_CFLAGS=" -isystem /opt/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/include/newlib-nano -I/senslab/users/harter/riot/RIOT/core/include -I/senslab/users/harter/riot/RIOT/drivers/include -I/senslab/users/harter/riot/RIOT/sys/include -I/senslab/users/harter/riot/RIOT/boards/iotlab-m3/include -I/senslab/users/harter/riot/RIOT/boards/common/iotlab/include -I/senslab/users/harter/riot/RIOT/boards/iotlab-m3/include -I/senslab/users/harter/riot/RIOT/cpu/stm32f1/include -I/senslab/users/harter/riot/RIOT/cpu/stm32_common/include -I/senslab/users/harter/riot/RIOT/cpu/cortexm_common/include -I/senslab/users/harter/riot/RIOT/cpu/cortexm_common/include/vendor -I/senslab/users/harter/riot/RIOT/sys/libc/include -I/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src/ccnl-riot/include -I/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src/ccnl-core/include -I/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src/ccnl-pkt/include -I/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src/ccnl-fwd/include -I/senslab/users/harter/riot/RIOT/sys/posix/include -I/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/tlsf -I/senslab/users/harter/riot/RIOT/pkg/tlsf/contrib/include -I/senslab/users/harter/riot/RIOT/sys/net/gnrc/netif/include -I/senslab/users/harter/riot/RIOT/drivers/at86rf2xx/include" -DBUILD_TESTING=OFF .
+-- The C compiler identification is unknown
+-- The CXX compiler identification is GNU 7.2.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working CXX compiler: /opt/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++
+-- Check for working CXX compiler: /opt/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++ -- broken
+CMake Error at /usr/share/cmake-3.0/Modules/CMakeTestCXXCompiler.cmake:54 (message):
+  The C++ compiler
+  "/opt/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++" is not able
+  to compile a simple test program.
+
+  It fails with the following output:
+
+   Change Dir: /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src/CMakeFiles/CMakeTmp
+
+  
+
+  Run Build Command:"/usr/bin/make" "cmTryCompileExec697574438/fast"
+
+  make[2]: Entering directory
+  '/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src/CMakeFiles/CMakeTmp'
+
+
+  /usr/bin/make -f CMakeFiles/cmTryCompileExec697574438.dir/build.make
+  CMakeFiles/cmTryCompileExec697574438.dir/build
+
+  make[3]: Entering directory
+  '/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src/CMakeFiles/CMakeTmp'
+
+
+  /usr/bin/cmake -E cmake_progress_report
+  /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src/CMakeFiles/CMakeTmp/CMakeFiles
+  1
+
+  Building CXX object
+  CMakeFiles/cmTryCompileExec697574438.dir/testCXXCompiler.cxx.obj
+
+  /opt/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++ -o
+  CMakeFiles/cmTryCompileExec697574438.dir/testCXXCompiler.cxx.obj -c
+  /senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+
+
+  Linking CXX executable cmTryCompileExec697574438
+
+  /usr/bin/cmake -E cmake_link_script
+  CMakeFiles/cmTryCompileExec697574438.dir/link.txt --verbose=1
+
+  /opt/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++
+  CMakeFiles/cmTryCompileExec697574438.dir/testCXXCompiler.cxx.obj -o
+  cmTryCompileExec697574438
+
+  
+  /opt/gcc-arm-none-eabi-7-2017-q4-major/bin/../lib/gcc/arm-none-eabi/7.2.1/../../../../arm-none-eabi/lib/libc.a(lib_a-exit.o):
+  In function `exit':
+
+  exit.c:(.text.exit+0x2c): undefined reference to `_exit'
+
+  collect2: error: ld returned 1 exit status
+
+  CMakeFiles/cmTryCompileExec697574438.dir/build.make:88: recipe for target
+  'cmTryCompileExec697574438' failed
+
+  make[3]: *** [cmTryCompileExec697574438] Error 1
+
+  make[3]: Leaving directory
+  '/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src/CMakeFiles/CMakeTmp'
+
+
+  Makefile:118: recipe for target 'cmTryCompileExec697574438/fast' failed
+
+  make[2]: *** [cmTryCompileExec697574438/fast] Error 2
+
+  make[2]: Leaving directory
+  '/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src/CMakeFiles/CMakeTmp'
+
+
+  
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  ccnl-core/CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src/CMakeFiles/CMakeOutput.log".
+See also "/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/pkg/iotlab-m3/ccn-lite/src/CMakeFiles/CMakeError.log".
+Makefile:17: recipe for target '/src/Makefile' failed
+make[1]: *** [/src/Makefile] Error 1
+/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/../../Makefile.include:448: recipe for target '/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/iotlab-m3/ccn-lite.a' failed
+make: *** [/senslab/users/harter/riot/RIOT/examples/ccn-lite-relay/bin/iotlab-m3/ccn-lite.a] Error 2
+
+Return value: 2

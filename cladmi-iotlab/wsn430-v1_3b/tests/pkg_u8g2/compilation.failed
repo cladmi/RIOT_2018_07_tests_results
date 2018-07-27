@@ -1,0 +1,34 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /senslab/users/harter/riot/RIOT/tests/pkg_u8g2 clean all
+make: Nothing to be done for 'clean'.
+Building application "tests_pkg_u8g2" for "wsn430-v1_3b" with MCU "msp430fxyz".
+
+git -C /senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/pkg/wsn430-v1_3b/u8g2 checkout -f f08ff974c03e5c848bc5d2ae3fddb6a97897881a
+Attention : vous abandonnez 1 commit, non connecté à
+une branche :
+
+  32a3797 add RIOT-OS interface.
+
+Si vous souhaitez les garder en créant une nouvelle branche, c'est le bon moment
+pour le faire avec :
+
+git branch nouvelle_branche 32a3797
+
+HEAD est maintenant sur f08ff97... issue #556
+git -C /senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/pkg/wsn430-v1_3b/u8g2 am --ignore-whitespace "/senslab/users/harter/riot/RIOT/pkg/u8g2"/patches/*.patch
+Application : add RIOT-OS interface.
+touch /senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/pkg/wsn430-v1_3b/u8g2/.git-patched
+cp /senslab/users/harter/riot/RIOT/pkg/u8g2/src/Makefile /senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/pkg/wsn430-v1_3b/u8g2/Makefile
+cp /senslab/users/harter/riot/RIOT/pkg/u8g2/src/csrc/Makefile /senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/pkg/wsn430-v1_3b/u8g2/csrc/Makefile
+cp /senslab/users/harter/riot/RIOT/pkg/u8g2/src/csrc/u8g2_riotos.c /senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/pkg/wsn430-v1_3b/u8g2/csrc/u8g2_riotos.c
+cp /senslab/users/harter/riot/RIOT/pkg/u8g2/src/sys/sdl/common/Makefile /senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/pkg/wsn430-v1_3b/u8g2/sys/sdl/common/Makefile
+cp /senslab/users/harter/riot/RIOT/pkg/u8g2/src/sys/utf8/common/Makefile /senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/pkg/wsn430-v1_3b/u8g2/sys/utf8/common/Makefile
+"make" -C /senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/pkg/wsn430-v1_3b/u8g2
+/senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/wsn430-v1_3b/u8g2.a(u8g2_hvline.o):(.debug_loc+0x1fd): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+/senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/wsn430-v1_3b/u8g2.a(u8g2_hvline.o):(.debug_loc+0x20b): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+/senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/wsn430-v1_3b/u8g2.a(u8g2_hvline.o):(.debug_loc+0x248): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+/senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/wsn430-v1_3b/u8g2.a(u8g2_hvline.o):(.debug_loc+0x256): relocation truncated to fit: R_MSP430_16_BYTE against `no symbol'
+collect2: error: ld returned 1 exit status
+/senslab/users/harter/riot/RIOT/tests/pkg_u8g2/../../Makefile.include:400: recipe for target '/senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/wsn430-v1_3b/tests_pkg_u8g2.elf' failed
+make: *** [/senslab/users/harter/riot/RIOT/tests/pkg_u8g2/bin/wsn430-v1_3b/tests_pkg_u8g2.elf] Error 1
+
+Return value: 2

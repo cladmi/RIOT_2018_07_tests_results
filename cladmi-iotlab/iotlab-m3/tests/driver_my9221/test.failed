@@ -1,0 +1,29 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /senslab/users/harter/riot/RIOT/tests/driver_my9221 flash-only test
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list lyon,m3,1 --update /senslab/users/harter/riot/RIOT/tests/driver_my9221/bin/iotlab-m3/tests_driver_my9221.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@lyon.iot-lab.info 'socat - tcp:m3-1.lyon.iot-lab.info:20000'
+0x80016ef
+*** RIOT kernel panic:
+FAILED ASSERTION.
+
+*** halted.
+
+�main(): This is RIOT! (Version: buildtest)
+[START]
+- light up all LEDs one by one.
+�main(): This is RIOT! (Version: buildtest)
+[START]
+- light up all LEDs one by one.
+0x80016ef
+*** RIOT kernel panic:
+FAILED ASSERTION.
+
+*** halted.
+
+Timeout in expect script at "child.expect_exact("[SUCCESS]", timeout=60)" (tests/driver_my9221/tests/01-run.py:15)
+
+Makefile:19: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

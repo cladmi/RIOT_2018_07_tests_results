@@ -1,0 +1,98 @@
+/home/jcarrano/source/masterRIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 2000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : clock speed 1800 kHz
+Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
+Info : using stlink api v2
+Info : Target voltage: 2.916329
+Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f4x.cpu       hla_target little stm32f4x.cpu       running
+adapter speed: 2000 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080004bc msp: 0x20000200
+auto erase enabled
+Info : device id = 0x10016413
+Info : flash size = 1024kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/pthread_cooperation/bin/stm32f4discovery/tests_pthread_cooperation.elf in 0.881358s (18.154 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 11236 bytes in 0.170395s (64.395 KiB/s)
+adapter speed: 2000 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-07-27 15:19:23,949 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-07-27 15:19:27,085 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-07-27 15:19:27,085 - INFO # START
+2018-07-27 15:19:27,085 - INFO # Creating thread with arg 1
+2018-07-27 15:19:27,086 - INFO # Creating thread with arg 2
+2018-07-27 15:19:27,086 - INFO # Creating thread with arg 3
+2018-07-27 15:19:27,086 - INFO # Creating thread with arg 4
+2018-07-27 15:19:27,087 - INFO # Creating thread with arg 5
+2018-07-27 15:19:27,087 - INFO # Creating thread with arg 6
+2018-07-27 15:19:27,087 - INFO # Creating thread with arg 7
+2018-07-27 15:19:27,108 - INFO # Creating thread with arg 8
+2018-07-27 15:19:27,109 - INFO # Creating thread with arg 9
+2018-07-27 15:19:27,109 - INFO # Creating thread with arg 10
+2018-07-27 15:19:27,110 - INFO # Creating thread with arg 11
+2018-07-27 15:19:27,111 - INFO # Creating thread with arg 12
+2018-07-27 15:19:27,112 - INFO # join thread 1
+2018-07-27 15:19:27,112 - INFO # My arg: 1
+2018-07-27 15:19:27,113 - INFO # val = 1
+2018-07-27 15:19:27,113 - INFO # My arg: 2
+2018-07-27 15:19:27,113 - INFO # val = 2
+2018-07-27 15:19:27,114 - INFO # My arg: 3
+2018-07-27 15:19:27,114 - INFO # val = 6
+2018-07-27 15:19:27,114 - INFO # My arg: 4
+2018-07-27 15:19:27,115 - INFO # val = 24
+2018-07-27 15:19:27,115 - INFO # My arg: 5
+2018-07-27 15:19:27,115 - INFO # val = 120
+2018-07-27 15:19:27,116 - INFO # My arg: 6
+2018-07-27 15:19:27,116 - INFO # val = 720
+2018-07-27 15:19:27,130 - INFO # My arg: 7
+2018-07-27 15:19:27,130 - INFO # val = 5040
+2018-07-27 15:19:27,131 - INFO # My arg: 8
+2018-07-27 15:19:27,131 - INFO # val = 40320
+2018-07-27 15:19:27,131 - INFO # My arg: 9
+2018-07-27 15:19:27,132 - INFO # val = 362880
+2018-07-27 15:19:27,132 - INFO # My arg: 10
+2018-07-27 15:19:27,133 - INFO # val = 3628800
+2018-07-27 15:19:27,133 - INFO # My arg: 11
+2018-07-27 15:19:27,134 - INFO # val = 39916800
+2018-07-27 15:19:27,134 - INFO # My arg: 12
+2018-07-27 15:19:27,134 - INFO # val = 479001600
+2018-07-27 15:19:27,135 - INFO # join thread 2
+2018-07-27 15:19:27,135 - INFO # join thread 3
+2018-07-27 15:19:27,136 - INFO # join thread 4
+2018-07-27 15:19:27,136 - INFO # join thread 5
+2018-07-27 15:19:27,137 - INFO # join thread 6
+2018-07-27 15:19:27,137 - INFO # join thread 7
+2018-07-27 15:19:27,138 - INFO # join thread 8
+2018-07-27 15:19:27,138 - INFO # join thread 9
+2018-07-27 15:19:27,139 - INFO # join thread 10
+2018-07-27 15:19:27,139 - INFO # join thread 11
+2018-07-27 15:19:27,139 - INFO # join thread 12
+2018-07-27 15:19:27,140 - INFO # Factorial: 479001600
+2018-07-27 15:19:27,140 - INFO # SUCCESS
+

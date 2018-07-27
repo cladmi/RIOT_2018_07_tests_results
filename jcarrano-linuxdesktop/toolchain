@@ -1,0 +1,25 @@
+Installed compiler toolchains 
+-----------------------------
+             native gcc: gcc (GCC) 8.1.1 20180531
+      arm-none-eabi-gcc: arm-none-eabi-gcc (Arch Repository) 8.1.0
+                avr-gcc: missing
+       mips-mti-elf-gcc: missing
+             msp430-gcc: missing
+   riscv-none-embed-gcc: missing
+                  clang: clang version 6.0.1 (tags/RELEASE_601/final)
+
+Installed compiler libs
+-----------------------
+   arm-none-eabi-newlib: "3.0.0"
+    mips-mti-elf-newlib: missing
+riscv-none-embed-newlib: missing
+               avr-libc: missing (missing)
+
+Installed development tools
+---------------------------
+                  cmake: cmake version 3.11.4
+               cppcheck: Cppcheck 1.84
+                doxygen: 1.8.14
+                 flake8: 3.5.0 (mccabe: 0.6.1, pycodestyle: 2.4.0, pyflakes: 2.0.0) CPython 3.6.6 on Linux
+                    git: git version 2.18.0
+             coccinelle: missing

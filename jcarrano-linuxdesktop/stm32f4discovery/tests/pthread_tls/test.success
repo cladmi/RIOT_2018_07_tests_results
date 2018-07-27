@@ -1,0 +1,134 @@
+/home/jcarrano/source/masterRIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 2000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : clock speed 1800 kHz
+Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
+Info : using stlink api v2
+Info : Target voltage: 2.916329
+Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f4x.cpu       hla_target little stm32f4x.cpu       running
+adapter speed: 2000 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080004bc msp: 0x20000200
+auto erase enabled
+Info : device id = 0x10016413
+Info : flash size = 1024kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/pthread_tls/bin/stm32f4discovery/tests_pthread_tls.elf in 0.890157s (17.974 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 12312 bytes in 0.181599s (66.209 KiB/s)
+adapter speed: 2000 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-07-27 15:19:42,701 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-07-27 15:19:45,813 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-07-27 15:19:45,813 - INFO # START
+2018-07-27 15:19:45,813 - INFO # 
+2018-07-27 15:19:45,814 - INFO # -= TEST 1 - create 20 tls with sequencial values 0...19 =-
+2018-07-27 15:19:45,836 - INFO # now rise sequencial by one values 1...20
+2018-07-27 15:19:45,837 - INFO # pick deliberate storage (key[3]:536877640) and change the value
+2018-07-27 15:19:45,838 - INFO # show tls values:
+2018-07-27 15:19:45,838 - INFO # key[0]: 536877544, val: 1
+2018-07-27 15:19:45,839 - INFO # key[1]: 536877576, val: 2
+2018-07-27 15:19:45,839 - INFO # key[2]: 536877608, val: 3
+2018-07-27 15:19:45,840 - INFO # key[3]: 536877640, val: 42
+2018-07-27 15:19:45,841 - INFO # key[4]: 536877672, val: 5
+2018-07-27 15:19:45,858 - INFO # key[5]: 536877704, val: 6
+2018-07-27 15:19:45,859 - INFO # key[6]: 536877736, val: 7
+2018-07-27 15:19:45,860 - INFO # key[7]: 536877768, val: 8
+2018-07-27 15:19:45,861 - INFO # key[8]: 536877800, val: 9
+2018-07-27 15:19:45,862 - INFO # key[9]: 536877832, val: 10
+2018-07-27 15:19:45,863 - INFO # key[10]: 536877864, val: 11
+2018-07-27 15:19:45,863 - INFO # key[11]: 536877896, val: 12
+2018-07-27 15:19:45,864 - INFO # key[12]: 536877928, val: 13
+2018-07-27 15:19:45,865 - INFO # key[13]: 536877960, val: 14
+2018-07-27 15:19:45,881 - INFO # key[14]: 536877992, val: 15
+2018-07-27 15:19:45,882 - INFO # key[15]: 536878024, val: 16
+2018-07-27 15:19:45,883 - INFO # key[16]: 536878056, val: 17
+2018-07-27 15:19:45,883 - INFO # key[17]: 536878088, val: 18
+2018-07-27 15:19:45,884 - INFO # key[18]: 536878120, val: 19
+2018-07-27 15:19:45,885 - INFO # key[19]: 536878152, val: 20
+2018-07-27 15:19:45,885 - INFO # 
+2018-07-27 15:19:45,887 - INFO #  -= TEST 2 - delete deliberate key (key[5]:536877704) =-
+2018-07-27 15:19:45,887 - INFO # show tls values:
+2018-07-27 15:19:45,888 - INFO # key[0]: 536877544, val: 1
+2018-07-27 15:19:45,903 - INFO # key[1]: 536877576, val: 2
+2018-07-27 15:19:45,904 - INFO # key[2]: 536877608, val: 3
+2018-07-27 15:19:45,905 - INFO # key[3]: 536877640, val: 42
+2018-07-27 15:19:45,906 - INFO # key[4]: 536877672, val: 5
+2018-07-27 15:19:45,906 - INFO # key[6]: 536877736, val: 7
+2018-07-27 15:19:45,907 - INFO # key[7]: 536877768, val: 8
+2018-07-27 15:19:45,908 - INFO # key[8]: 536877800, val: 9
+2018-07-27 15:19:45,909 - INFO # key[9]: 536877832, val: 10
+2018-07-27 15:19:45,909 - INFO # key[10]: 536877864, val: 11
+2018-07-27 15:19:45,926 - INFO # key[11]: 536877896, val: 12
+2018-07-27 15:19:45,927 - INFO # key[12]: 536877928, val: 13
+2018-07-27 15:19:45,929 - INFO # key[13]: 536877960, val: 14
+2018-07-27 15:19:45,929 - INFO # key[14]: 536877992, val: 15
+2018-07-27 15:19:45,930 - INFO # key[15]: 536878024, val: 16
+2018-07-27 15:19:45,931 - INFO # key[16]: 536878056, val: 17
+2018-07-27 15:19:45,932 - INFO # key[17]: 536878088, val: 18
+2018-07-27 15:19:45,933 - INFO # key[18]: 536878120, val: 19
+2018-07-27 15:19:45,934 - INFO # key[19]: 536878152, val: 20
+2018-07-27 15:19:45,934 - INFO # 
+2018-07-27 15:19:45,948 - INFO # -= TEST 3 - create new tls =-
+2018-07-27 15:19:45,949 - INFO # added new tls, key: 536878184, val: 99
+2018-07-27 15:19:45,950 - INFO # show tls values:
+2018-07-27 15:19:45,950 - INFO # key[0]: 536877544, val: 1
+2018-07-27 15:19:45,951 - INFO # key[1]: 536877576, val: 2
+2018-07-27 15:19:45,952 - INFO # key[2]: 536877608, val: 3
+2018-07-27 15:19:45,953 - INFO # key[3]: 536877640, val: 42
+2018-07-27 15:19:45,953 - INFO # key[4]: 536877672, val: 5
+2018-07-27 15:19:45,954 - INFO # key[6]: 536877736, val: 7
+2018-07-27 15:19:45,955 - INFO # key[7]: 536877768, val: 8
+2018-07-27 15:19:45,970 - INFO # key[8]: 536877800, val: 9
+2018-07-27 15:19:45,971 - INFO # key[9]: 536877832, val: 10
+2018-07-27 15:19:45,972 - INFO # key[10]: 536877864, val: 11
+2018-07-27 15:19:45,973 - INFO # key[11]: 536877896, val: 12
+2018-07-27 15:19:45,974 - INFO # key[12]: 536877928, val: 13
+2018-07-27 15:19:45,975 - INFO # key[13]: 536877960, val: 14
+2018-07-27 15:19:45,976 - INFO # key[14]: 536877992, val: 15
+2018-07-27 15:19:45,977 - INFO # key[15]: 536878024, val: 16
+2018-07-27 15:19:45,978 - INFO # key[16]: 536878056, val: 17
+2018-07-27 15:19:45,979 - INFO # key[17]: 536878088, val: 18
+2018-07-27 15:19:45,980 - INFO # key[18]: 536878120, val: 19
+2018-07-27 15:19:45,981 - INFO # key[19]: 536878152, val: 20
+2018-07-27 15:19:45,981 - INFO # 
+2018-07-27 15:19:45,982 - INFO # -= TEST 4 - delete all keys =-
+2018-07-27 15:19:46,002 - INFO # show tls values:
+2018-07-27 15:19:46,002 - INFO # 
+2018-07-27 15:19:46,004 - INFO # -= TEST 5 - try delete non-existing key =-
+2018-07-27 15:19:46,005 - INFO # try to delete returns: 0
+2018-07-27 15:19:46,006 - INFO # 
+2018-07-27 15:19:46,008 - INFO # -= TEST 6 - add key and delete without a tls =-
+2018-07-27 15:19:46,009 - INFO # created key: 536878216
+2018-07-27 15:19:46,010 - INFO # try to delete returns: 0
+2018-07-27 15:19:46,010 - INFO # 
+2018-07-27 15:19:46,012 - INFO # -= TEST 7 - add key without tls =-
+2018-07-27 15:19:46,012 - INFO # created key: 536878232
+2018-07-27 15:19:46,013 - INFO # test_7_val: 0
+2018-07-27 15:19:46,014 - INFO # tls tests finished.
+2018-07-27 15:19:46,015 - INFO # SUCCESS
+

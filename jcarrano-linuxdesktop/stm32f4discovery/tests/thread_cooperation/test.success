@@ -1,0 +1,110 @@
+/home/jcarrano/source/masterRIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 2000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : clock speed 1800 kHz
+Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
+Info : using stlink api v2
+Info : Target voltage: 2.916329
+Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f4x.cpu       hla_target little stm32f4x.cpu       running
+adapter speed: 2000 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080004bc msp: 0x20000200
+auto erase enabled
+Info : device id = 0x10016413
+Info : flash size = 1024kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/thread_cooperation/bin/stm32f4discovery/tests_thread_cooperation.elf in 0.872983s (18.328 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 9964 bytes in 0.152182s (63.940 KiB/s)
+adapter speed: 2000 kHz
+shutdown command invoked
+Done flashing
+./tests/01-run.py
+/home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-07-27 15:21:00,930 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-07-27 15:21:04,049 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-07-27 15:21:04,050 - INFO # [START] compute 12! (factorial).
+2018-07-27 15:21:04,051 - INFO # MAIN: create thread, arg: 1
+2018-07-27 15:21:04,051 - INFO # MAIN: msg to T-3
+2018-07-27 15:21:04,052 - INFO # T-03: alive
+2018-07-27 15:21:04,052 - INFO # T-03: got arg 1
+2018-07-27 15:21:04,053 - INFO # MAIN: create thread, arg: 2
+2018-07-27 15:21:04,054 - INFO # MAIN: msg to T-4
+2018-07-27 15:21:04,054 - INFO # T-04: alive
+2018-07-27 15:21:04,054 - INFO # T-04: got arg 2
+2018-07-27 15:21:04,055 - INFO # MAIN: create thread, arg: 3
+2018-07-27 15:21:04,070 - INFO # MAIN: msg to T-5
+2018-07-27 15:21:04,071 - INFO # T-05: alive
+2018-07-27 15:21:04,071 - INFO # T-05: got arg 3
+2018-07-27 15:21:04,072 - INFO # MAIN: create thread, arg: 4
+2018-07-27 15:21:04,073 - INFO # MAIN: msg to T-6
+2018-07-27 15:21:04,073 - INFO # T-06: alive
+2018-07-27 15:21:04,074 - INFO # T-06: got arg 4
+2018-07-27 15:21:04,074 - INFO # MAIN: create thread, arg: 5
+2018-07-27 15:21:04,075 - INFO # MAIN: msg to T-7
+2018-07-27 15:21:04,075 - INFO # T-07: alive
+2018-07-27 15:21:04,076 - INFO # T-07: got arg 5
+2018-07-27 15:21:04,077 - INFO # MAIN: create thread, arg: 6
+2018-07-27 15:21:04,077 - INFO # MAIN: msg to T-8
+2018-07-27 15:21:04,078 - INFO # T-08: alive
+2018-07-27 15:21:04,093 - INFO # T-08: got arg 6
+2018-07-27 15:21:04,094 - INFO # MAIN: create thread, arg: 7
+2018-07-27 15:21:04,094 - INFO # MAIN: msg to T-9
+2018-07-27 15:21:04,095 - INFO # T-09: alive
+2018-07-27 15:21:04,096 - INFO # T-09: got arg 7
+2018-07-27 15:21:04,097 - INFO # MAIN: create thread, arg: 8
+2018-07-27 15:21:04,098 - INFO # MAIN: msg to T-10
+2018-07-27 15:21:04,099 - INFO # T-10: alive
+2018-07-27 15:21:04,100 - INFO # T-10: got arg 8
+2018-07-27 15:21:04,101 - INFO # MAIN: create thread, arg: 9
+2018-07-27 15:21:04,102 - INFO # MAIN: msg to T-11
+2018-07-27 15:21:04,103 - INFO # T-11: alive
+2018-07-27 15:21:04,103 - INFO # T-11: got arg 9
+2018-07-27 15:21:04,104 - INFO # MAIN: create thread, arg: 10
+2018-07-27 15:21:04,115 - INFO # MAIN: msg to T-12
+2018-07-27 15:21:04,115 - INFO # T-12: alive
+2018-07-27 15:21:04,116 - INFO # T-12: got arg 10
+2018-07-27 15:21:04,117 - INFO # MAIN: create thread, arg: 11
+2018-07-27 15:21:04,117 - INFO # MAIN: msg to T-13
+2018-07-27 15:21:04,118 - INFO # T-13: alive
+2018-07-27 15:21:04,118 - INFO # T-13: got arg 11
+2018-07-27 15:21:04,119 - INFO # MAIN: create thread, arg: 12
+2018-07-27 15:21:04,119 - INFO # MAIN: msg to T-14
+2018-07-27 15:21:04,120 - INFO # T-14: alive
+2018-07-27 15:21:04,120 - INFO # T-14: got arg 12
+2018-07-27 15:21:04,121 - INFO # MAIN: reply from T-3
+2018-07-27 15:21:04,121 - INFO # MAIN: reply from T-4
+2018-07-27 15:21:04,135 - INFO # MAIN: reply from T-5
+2018-07-27 15:21:04,135 - INFO # MAIN: reply from T-6
+2018-07-27 15:21:04,136 - INFO # MAIN: reply from T-7
+2018-07-27 15:21:04,137 - INFO # MAIN: reply from T-8
+2018-07-27 15:21:04,137 - INFO # MAIN: reply from T-9
+2018-07-27 15:21:04,138 - INFO # MAIN: reply from T-10
+2018-07-27 15:21:04,139 - INFO # MAIN: reply from T-11
+2018-07-27 15:21:04,139 - INFO # MAIN: reply from T-12
+2018-07-27 15:21:04,140 - INFO # MAIN: reply from T-13
+2018-07-27 15:21:04,141 - INFO # MAIN: reply from T-14
+2018-07-27 15:21:04,141 - INFO # MAIN: 12! = 479001600
+2018-07-27 15:21:04,142 - INFO # [SUCCESS]
+

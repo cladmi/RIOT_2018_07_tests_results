@@ -1,0 +1,122 @@
+/home/jcarrano/source/masterRIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 2000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : Unable to match requested speed 2000 kHz, using 1800 kHz
+Info : clock speed 1800 kHz
+Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
+Info : using stlink api v2
+Info : Target voltage: 2.916329
+Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f4x.cpu       hla_target little stm32f4x.cpu       running
+adapter speed: 2000 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080004bc msp: 0x20000200
+auto erase enabled
+Info : device id = 0x10016413
+Info : flash size = 1024kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
+wrote 32768 bytes from file /home/jcarrano/source/masterRIOT/tests/rng/bin/stm32f4discovery/tests_rng.elf in 1.553329s (20.601 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 28996 bytes in 0.312544s (90.600 KiB/s)
+adapter speed: 2000 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+source 0
+seed 1337
+fips
+/home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-07-27 15:19:59,943 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-07-27 15:20:02,986 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-07-27 15:20:02,986 - INFO # Starting shell...
+> source 0
+2018-07-27 15:20:03,034 - INFO #  source 0
+> seed 1337
+2018-07-27 15:20:03,086 - INFO #  seed 1337
+2018-07-27 15:20:03,087 - INFO # Seed set to 1337
+> fips
+2018-07-27 15:20:03,140 - INFO #  fips
+2018-07-27 15:20:03,142 - INFO # Running FIPS 140-2 test, with seed 1337 using Tiny Mersenne Twister PRNG.
+2018-07-27 15:20:03,142 - INFO # 
+2018-07-27 15:20:03,151 - INFO # - Monobit test: passed
+2018-07-27 15:20:03,152 - INFO # - Poker test: passed
+2018-07-27 15:20:03,153 - INFO # - Run test: passed
+2018-07-27 15:20:03,153 - INFO # - Longrun test: passed
+> dump 10
+dump 10
+2018-07-27 15:20:03,223 - INFO #  dump 10
+2018-07-27 15:20:03,225 - INFO # Running dump test, with seed 1337 using Tiny Mersenne Twister PRNG.
+2018-07-27 15:20:03,225 - INFO # 
+2018-07-27 15:20:03,226 - INFO # 1555530734
+2018-07-27 15:20:03,226 - INFO # 2178333451
+2018-07-27 15:20:03,227 - INFO # 2272913641
+2018-07-27 15:20:03,227 - INFO # 3790481823
+2018-07-27 15:20:03,228 - INFO # 3190025502
+2018-07-27 15:20:03,229 - INFO # 798555366
+2018-07-27 15:20:03,229 - INFO # 1918982324
+2018-07-27 15:20:03,229 - INFO # 1550167154
+2018-07-27 15:20:03,230 - INFO # 3454972398
+2018-07-27 15:20:03,230 - INFO # 1034066532
+> entropy
+entropy
+2018-07-27 15:20:03,291 - INFO #  entropy
+2018-07-27 15:20:03,293 - INFO # Running entropy test, with seed 1337 using Tiny Mersenne Twister PRNG.
+2018-07-27 15:20:03,293 - INFO # 
+2018-07-27 15:20:03,306 - INFO # Calculated 7.994709 bits of entropy from 10000 samples.
+source 1
+seed 1337
+fips
+> source 1
+2018-07-27 15:20:03,360 - INFO #  source 1
+> seed 1337
+2018-07-27 15:20:03,412 - INFO #  seed 1337
+2018-07-27 15:20:03,413 - INFO # Seed set to 1337
+> fips
+2018-07-27 15:20:03,465 - INFO #  fips
+2018-07-27 15:20:03,467 - INFO # Running FIPS 140-2 test, with seed 1337 using constant value.
+2018-07-27 15:20:03,467 - INFO # 
+2018-07-27 15:20:03,475 - INFO # - Monobit test: failed
+2018-07-27 15:20:03,476 - INFO # - Poker test: failed
+2018-07-27 15:20:03,477 - INFO # - Run test: failed
+2018-07-27 15:20:03,478 - INFO # - Longrun test: passed
+> dump 10
+dump 10
+2018-07-27 15:20:03,541 - INFO #  dump 10
+2018-07-27 15:20:03,543 - INFO # Running dump test, with seed 1337 using constant value.
+2018-07-27 15:20:03,543 - INFO # 
+2018-07-27 15:20:03,543 - INFO # 1337
+2018-07-27 15:20:03,544 - INFO # 1337
+2018-07-27 15:20:03,544 - INFO # 1337
+2018-07-27 15:20:03,544 - INFO # 1337
+2018-07-27 15:20:03,545 - INFO # 1337
+2018-07-27 15:20:03,545 - INFO # 1337
+2018-07-27 15:20:03,545 - INFO # 1337
+2018-07-27 15:20:03,545 - INFO # 1337
+2018-07-27 15:20:03,546 - INFO # 1337
+entropy
+2018-07-27 15:20:03,546 - INFO # 1337
+> entropy
+2018-07-27 15:20:03,605 - INFO #  entropy
+2018-07-27 15:20:03,606 - INFO # Running entropy test, with seed 1337 using constant value.
+2018-07-27 15:20:03,607 - INFO # 
+2018-07-27 15:20:03,614 - INFO # Calculated 0.017260 bits of entropy from 10000 samples.
+> 

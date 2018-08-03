@@ -1,0 +1,133 @@
+/home/jialamos/Development/RIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00226-g1c2e3d41d (2018-01-02-18:28)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.258268
+Info : stm32l0.cpu: hardware has 4 breakpoints, 2 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l0.cpu        hla_target little stm32l0.cpu        reset
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xf1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L0xx (Cat.5)
+Info : STM32L flash has dual banks. Bank (0) size is 96kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 12288 bytes from file /home/jialamos/Development/RIOT/tests/rmutex/bin/b-l072z-lrwan1/tests_rmutex.elf in 2.791915s (4.298 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 9276 bytes in 0.466694s (19.410 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/jialamos/Development/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-03 14:03:20,575 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-03 14:03:23,631 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 14:03:23,633 - INFO # Recursive Mutex test
+2018-08-03 14:03:23,637 - INFO # Please refer to the README.md for more information
+2018-08-03 14:03:23,638 - INFO # 
+2018-08-03 14:03:23,641 - INFO # T3 (prio 6, depth 0): trying to lock rmutex now
+2018-08-03 14:03:23,646 - INFO # T4 (prio 4, depth 0): trying to lock rmutex now
+2018-08-03 14:03:23,651 - INFO # T5 (prio 5, depth 0): trying to lock rmutex now
+2018-08-03 14:03:23,655 - INFO # T6 (prio 2, depth 0): trying to lock rmutex now
+2018-08-03 14:03:23,659 - INFO # T7 (prio 4, depth 0): trying to lock rmutex now
+2018-08-03 14:03:23,662 - INFO # main: unlocking recursive mutex
+2018-08-03 14:03:23,666 - INFO # T6 (prio 2, depth 0): locked rmutex now
+2018-08-03 14:03:23,670 - INFO # T6 (prio 2, depth 1): trying to lock rmutex now
+2018-08-03 14:03:23,674 - INFO # T6 (prio 2, depth 1): locked rmutex now
+2018-08-03 14:03:23,678 - INFO # T6 (prio 2, depth 2): trying to lock rmutex now
+2018-08-03 14:03:23,682 - INFO # T6 (prio 2, depth 2): locked rmutex now
+2018-08-03 14:03:23,686 - INFO # T6 (prio 2, depth 3): trying to lock rmutex now
+2018-08-03 14:03:23,690 - INFO # T6 (prio 2, depth 3): locked rmutex now
+2018-08-03 14:03:23,693 - INFO # T6 (prio 2, depth 3): unlocked rmutex
+2018-08-03 14:03:23,697 - INFO # T6 (prio 2, depth 2): unlocked rmutex
+2018-08-03 14:03:23,700 - INFO # T6 (prio 2, depth 1): unlocked rmutex
+2018-08-03 14:03:23,704 - INFO # T6 (prio 2, depth 0): unlocked rmutex
+2018-08-03 14:03:23,707 - INFO # T4 (prio 4, depth 0): locked rmutex now
+2018-08-03 14:03:23,712 - INFO # T4 (prio 4, depth 1): trying to lock rmutex now
+2018-08-03 14:03:23,716 - INFO # T4 (prio 4, depth 1): locked rmutex now
+2018-08-03 14:03:23,720 - INFO # T4 (prio 4, depth 2): trying to lock rmutex now
+2018-08-03 14:03:23,724 - INFO # T4 (prio 4, depth 2): locked rmutex now
+2018-08-03 14:03:23,728 - INFO # T4 (prio 4, depth 2): unlocked rmutex
+2018-08-03 14:03:23,731 - INFO # T4 (prio 4, depth 1): unlocked rmutex
+2018-08-03 14:03:23,735 - INFO # T4 (prio 4, depth 0): unlocked rmutex
+2018-08-03 14:03:23,738 - INFO # T7 (prio 4, depth 0): locked rmutex now
+2018-08-03 14:03:23,742 - INFO # T7 (prio 4, depth 1): trying to lock rmutex now
+2018-08-03 14:03:23,746 - INFO # T7 (prio 4, depth 1): locked rmutex now
+2018-08-03 14:03:23,751 - INFO # T7 (prio 4, depth 2): trying to lock rmutex now
+2018-08-03 14:03:23,754 - INFO # T7 (prio 4, depth 2): locked rmutex now
+2018-08-03 14:03:23,759 - INFO # T7 (prio 4, depth 3): trying to lock rmutex now
+2018-08-03 14:03:23,762 - INFO # T7 (prio 4, depth 3): locked rmutex now
+2018-08-03 14:03:23,767 - INFO # T7 (prio 4, depth 4): trying to lock rmutex now
+2018-08-03 14:03:23,770 - INFO # T7 (prio 4, depth 4): locked rmutex now
+2018-08-03 14:03:23,774 - INFO # T7 (prio 4, depth 4): unlocked rmutex
+2018-08-03 14:03:23,777 - INFO # T7 (prio 4, depth 3): unlocked rmutex
+2018-08-03 14:03:23,780 - INFO # T7 (prio 4, depth 2): unlocked rmutex
+2018-08-03 14:03:23,784 - INFO # T7 (prio 4, depth 1): unlocked rmutex
+2018-08-03 14:03:23,788 - INFO # T7 (prio 4, depth 0): unlocked rmutex
+2018-08-03 14:03:23,792 - INFO # T5 (prio 5, depth 0): locked rmutex now
+2018-08-03 14:03:23,795 - INFO # T5 (prio 5, depth 1): trying to lock rmutex now
+2018-08-03 14:03:23,799 - INFO # T5 (prio 5, depth 1): locked rmutex now
+2018-08-03 14:03:23,804 - INFO # T5 (prio 5, depth 2): trying to lock rmutex now
+2018-08-03 14:03:23,808 - INFO # T5 (prio 5, depth 2): locked rmutex now
+2018-08-03 14:03:23,811 - INFO # T5 (prio 5, depth 2): unlocked rmutex
+2018-08-03 14:03:23,815 - INFO # T5 (prio 5, depth 1): unlocked rmutex
+2018-08-03 14:03:23,818 - INFO # T5 (prio 5, depth 0): unlocked rmutex
+2018-08-03 14:03:23,822 - INFO # T3 (prio 6, depth 0): locked rmutex now
+2018-08-03 14:03:23,826 - INFO # T3 (prio 6, depth 1): trying to lock rmutex now
+2018-08-03 14:03:23,830 - INFO # T3 (prio 6, depth 1): locked rmutex now
+2018-08-03 14:03:23,834 - INFO # T3 (prio 6, depth 2): trying to lock rmutex now
+2018-08-03 14:03:23,838 - INFO # T3 (prio 6, depth 2): locked rmutex now
+2018-08-03 14:03:23,842 - INFO # T3 (prio 6, depth 3): trying to lock rmutex now
+2018-08-03 14:03:23,846 - INFO # T3 (prio 6, depth 3): locked rmutex now
+2018-08-03 14:03:23,850 - INFO # T3 (prio 6, depth 4): trying to lock rmutex now
+2018-08-03 14:03:23,854 - INFO # T3 (prio 6, depth 4): locked rmutex now
+

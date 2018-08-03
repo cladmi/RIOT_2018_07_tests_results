@@ -1,0 +1,197 @@
+/home/jialamos/Development/RIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00226-g1c2e3d41d (2018-01-02-18:28)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.258268
+Info : stm32l0.cpu: hardware has 4 breakpoints, 2 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l0.cpu        hla_target little stm32l0.cpu        reset
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xf1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L0xx (Cat.5)
+Info : STM32L flash has dual banks. Bank (0) size is 96kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 36864 bytes from file /home/jialamos/Development/RIOT/tests/rng/bin/b-l072z-lrwan1/tests_rng.elf in 8.282431s (4.347 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 36284 bytes in 1.503437s (23.568 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+source 0
+seed 1337
+fips
+/home/jialamos/Development/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-03 14:03:39,794 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-03 14:03:42,856 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 14:03:42,857 - INFO # Starting shell...
+> source 0
+2018-08-03 14:03:42,906 - INFO #  source 0
+> seed 1337
+2018-08-03 14:03:42,956 - INFO #  seed 1337
+2018-08-03 14:03:42,958 - INFO # Seed set to 1337
+> fips
+2018-08-03 14:03:43,005 - INFO #  fips
+2018-08-03 14:03:43,012 - INFO # Running FIPS 140-2 test, with seed 1337 using Tiny Mersenne Twister PRNG.
+2018-08-03 14:03:43,013 - INFO # 
+2018-08-03 14:03:43,042 - INFO # - Monobit test: passed
+2018-08-03 14:03:43,044 - INFO # - Poker test: passed
+2018-08-03 14:03:43,045 - INFO # - Run test: passed
+2018-08-03 14:03:43,048 - INFO # - Longrun test: passed
+dump 10
+> dump 10
+2018-08-03 14:03:43,102 - INFO #  dump 10
+2018-08-03 14:03:43,108 - INFO # Running dump test, with seed 1337 using Tiny Mersenne Twister PRNG.
+2018-08-03 14:03:43,108 - INFO # 
+2018-08-03 14:03:43,109 - INFO # 1555530734
+2018-08-03 14:03:43,110 - INFO # 2178333451
+2018-08-03 14:03:43,111 - INFO # 2272913641
+2018-08-03 14:03:43,112 - INFO # 3790481823
+2018-08-03 14:03:43,113 - INFO # 3190025502
+2018-08-03 14:03:43,114 - INFO # 798555366
+2018-08-03 14:03:43,116 - INFO # 1918982324
+2018-08-03 14:03:43,117 - INFO # 1550167154
+2018-08-03 14:03:43,118 - INFO # 3454972398
+2018-08-03 14:03:43,119 - INFO # 1034066532
+entropy
+> entropy
+2018-08-03 14:03:43,172 - INFO #  entropy
+2018-08-03 14:03:43,178 - INFO # Running entropy test, with seed 1337 using Tiny Mersenne Twister PRNG.
+2018-08-03 14:03:43,178 - INFO # 
+2018-08-03 14:03:43,265 - INFO # Calculated 7.994709 bits of entropy from 10000 samples.
+source 1
+seed 1337
+fips
+> source 1
+2018-08-03 14:03:43,319 - INFO #  source 1
+> seed 1337
+2018-08-03 14:03:43,370 - INFO #  seed 1337
+2018-08-03 14:03:43,371 - INFO # Seed set to 1337
+> fips
+2018-08-03 14:03:43,419 - INFO #  fips
+2018-08-03 14:03:43,425 - INFO # Running FIPS 140-2 test, with seed 1337 using constant value.
+2018-08-03 14:03:43,425 - INFO # 
+2018-08-03 14:03:43,448 - INFO # - Monobit test: failed
+2018-08-03 14:03:43,450 - INFO # - Poker test: failed
+2018-08-03 14:03:43,452 - INFO # - Run test: failed
+2018-08-03 14:03:43,453 - INFO # - Longrun test: passed
+dump 10
+> dump 10
+2018-08-03 14:03:43,507 - INFO #  dump 10
+2018-08-03 14:03:43,512 - INFO # Running dump test, with seed 1337 using constant value.
+2018-08-03 14:03:43,513 - INFO # 
+2018-08-03 14:03:43,514 - INFO # 1337
+2018-08-03 14:03:43,514 - INFO # 1337
+2018-08-03 14:03:43,515 - INFO # 1337
+2018-08-03 14:03:43,515 - INFO # 1337
+2018-08-03 14:03:43,515 - INFO # 1337
+2018-08-03 14:03:43,516 - INFO # 1337
+2018-08-03 14:03:43,516 - INFO # 1337
+2018-08-03 14:03:43,517 - INFO # 1337
+2018-08-03 14:03:43,517 - INFO # 1337
+entropy
+2018-08-03 14:03:43,518 - INFO # 1337
+> entropy
+2018-08-03 14:03:43,570 - INFO #  entropy
+2018-08-03 14:03:43,575 - INFO # Running entropy test, with seed 1337 using constant value.
+2018-08-03 14:03:43,576 - INFO # 
+2018-08-03 14:03:43,606 - INFO # Calculated 0.017260 bits of entropy from 10000 samples.
+> 

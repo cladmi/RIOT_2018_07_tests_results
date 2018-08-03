@@ -1,0 +1,136 @@
+/home/jialamos/Development/RIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00226-g1c2e3d41d (2018-01-02-18:28)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.258268
+Info : stm32l0.cpu: hardware has 4 breakpoints, 2 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l0.cpu        hla_target little stm32l0.cpu        reset
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xf1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L0xx (Cat.5)
+Info : STM32L flash has dual banks. Bank (0) size is 96kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 12288 bytes from file /home/jialamos/Development/RIOT/tests/pkg_tiny-asn1/bin/b-l072z-lrwan1/tests_pkg_tiny-asn1.elf in 2.778404s (4.319 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 11444 bytes in 0.548807s (20.364 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+./tests/01-run.py
+/home/jialamos/Development/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-03 13:56:46,831 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-03 13:56:49,879 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 13:56:49,881 - INFO # d=0, Tag: 30, len=96
+2018-08-03 13:56:49,883 - INFO # d=1, Tag: 06, len=9
+2018-08-03 13:56:49,883 - INFO # Value:
+2018-08-03 13:56:49,886 - INFO # 2a 86 48 86   f7 0d 01 07 
+2018-08-03 13:56:49,887 - INFO # 06 
+2018-08-03 13:56:49,889 - INFO # d=1, Tag: a0, len=83
+2018-08-03 13:56:49,891 - INFO # d=2, Tag: 30, len=81
+2018-08-03 13:56:49,893 - INFO # d=3, Tag: 02, len=1
+2018-08-03 13:56:49,893 - INFO # Value:
+2018-08-03 13:56:49,894 - INFO # 00 
+2018-08-03 13:56:49,895 - INFO # d=3, Tag: 30, len=76
+2018-08-03 13:56:49,898 - INFO # d=4, Tag: 06, len=9
+2018-08-03 13:56:49,898 - INFO # Value:
+2018-08-03 13:56:49,901 - INFO # 2a 86 48 86   f7 0d 01 07 
+2018-08-03 13:56:49,901 - INFO # 01 
+2018-08-03 13:56:49,903 - INFO # d=4, Tag: 30, len=29
+2018-08-03 13:56:49,905 - INFO # d=5, Tag: 06, len=9
+2018-08-03 13:56:49,906 - INFO # Value:
+2018-08-03 13:56:49,908 - INFO # 60 86 48 01   65 03 04 01 
+2018-08-03 13:56:49,909 - INFO # 02 
+2018-08-03 13:56:49,910 - INFO # d=5, Tag: 04, len=16
+2018-08-03 13:56:49,911 - INFO # Value:
+2018-08-03 13:56:49,914 - INFO # 4d aa 7b 74   fb f7 7a fa 
+2018-08-03 13:56:49,916 - INFO # b0 23 a2 9c   1a b6 51 e4 
+2018-08-03 13:56:49,917 - INFO # 
+2018-08-03 13:56:49,919 - INFO # d=4, Tag: 80, len=32
+2018-08-03 13:56:49,919 - INFO # Value:
+2018-08-03 13:56:49,922 - INFO # 6b 8f 64 d7   3a 81 01 0c 
+2018-08-03 13:56:49,925 - INFO # 7b ab fd 26   6d 46 2e 3e 
+2018-08-03 13:56:49,927 - INFO # c4 f6 01 78   8a c0 c0 52 
+2018-08-03 13:56:49,930 - INFO # 0a 66 17 71   4f f6 d9 95 
+2018-08-03 13:56:49,930 - INFO # 
+2018-08-03 13:56:49,932 - INFO # ContentType: encryptedData
+2018-08-03 13:56:49,934 - INFO # CMSVersion: 0
+2018-08-03 13:56:49,938 - INFO # ContentType of EncryptedContentInfo: pkcs#7
+2018-08-03 13:56:49,942 - INFO # Content encryption algorithm: AES-128-CBC.
+2018-08-03 13:56:49,942 - INFO # IV:
+2018-08-03 13:56:49,945 - INFO # 4d aa 7b 74   fb f7 7a fa 
+2018-08-03 13:56:49,947 - INFO # b0 23 a2 9c   1a b6 51 e4 
+2018-08-03 13:56:49,948 - INFO # 
+2018-08-03 13:56:49,949 - INFO # Encrypted content:
+2018-08-03 13:56:49,952 - INFO # 6b 8f 64 d7   3a 81 01 0c 
+2018-08-03 13:56:49,955 - INFO # 7b ab fd 26   6d 46 2e 3e 
+2018-08-03 13:56:49,957 - INFO # c4 f6 01 78   8a c0 c0 52 
+2018-08-03 13:56:49,960 - INFO # 0a 66 17 71   4f f6 d9 95 
+2018-08-03 13:56:49,960 - INFO # 
+2018-08-03 13:56:49,964 - INFO # Unprotected attributes are not available.
+2018-08-03 13:56:49,966 - INFO # DER encoded data:
+2018-08-03 13:56:49,969 - INFO # 30 60 06 09   2a 86 48 86 
+2018-08-03 13:56:49,971 - INFO # f7 0d 01 07   06 a0 53 30 
+2018-08-03 13:56:49,975 - INFO # 51 02 01 00   30 4c 06 09 
+2018-08-03 13:56:49,977 - INFO # 2a 86 48 86   f7 0d 01 07 
+2018-08-03 13:56:49,979 - INFO # 01 30 1d 06   09 60 86 48 
+2018-08-03 13:56:49,982 - INFO # 01 65 03 04   01 02 04 10 
+2018-08-03 13:56:49,985 - INFO # 4d aa 7b 74   fb f7 7a fa 
+2018-08-03 13:56:49,988 - INFO # b0 23 a2 9c   1a b6 51 e4 
+2018-08-03 13:56:49,990 - INFO # 80 20 6b 8f   64 d7 3a 81 
+2018-08-03 13:56:49,993 - INFO # 01 0c 7b ab   fd 26 6d 46 
+2018-08-03 13:56:49,996 - INFO # 2e 3e c4 f6   01 78 8a c0 
+2018-08-03 13:56:49,998 - INFO # c0 52 0a 66   17 71 4f f6 
+2018-08-03 13:56:49,999 - INFO # d9 95 
+2018-08-03 13:56:50,002 - INFO # Decoding finished succesfully
+

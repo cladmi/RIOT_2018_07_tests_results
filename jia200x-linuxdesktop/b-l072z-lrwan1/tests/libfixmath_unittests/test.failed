@@ -1,0 +1,398 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/jialamos/Development/RIOT/tests/libfixmath_unittests flash-only test
+/home/jialamos/Development/RIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00226-g1c2e3d41d (2018-01-02-18:28)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.258268
+Info : stm32l0.cpu: hardware has 4 breakpoints, 2 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l0.cpu        hla_target little stm32l0.cpu        reset
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xf1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L0xx (Cat.5)
+Info : STM32L flash has dual banks. Bank (0) size is 96kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 61440 bytes from file /home/jialamos/Development/RIOT/tests/libfixmath_unittests/bin/b-l072z-lrwan1/tests_libfixmath_unittests.elf in 13.885761s (4.321 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 59980 bytes in 2.411772s (24.287 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/jialamos/Development/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-03 13:41:01,209 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-03 13:41:04,272 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 13:41:04,272 - INFO # 
+2018-08-03 13:41:04,276 - INFO # ----Testing fix16_exp() corner cases----
+2018-08-03 13:41:04,280 - INFO # [32;1mOK:[22;39m fix16_exp(0) == fix16_one
+2018-08-03 13:41:04,284 - INFO # [32;1mOK:[22;39m fix16_exp(fix16_minimum) == 0
+2018-08-03 13:41:04,290 - INFO # [32;1mOK:[22;39m fix16_exp(fix16_maximum) == fix16_maximum
+2018-08-03 13:41:04,291 - INFO # 
+2018-08-03 13:41:04,294 - INFO # ----Testing fix16_exp() accuracy over -11..4----
+2018-08-03 13:41:20,252 - INFO # Worst delta 39 with input 251543
+2018-08-03 13:41:20,254 - INFO # Average delta 1.11
+2018-08-03 13:41:20,257 - INFO # [32;1mOK:[22;39m max_delta < 200
+2018-08-03 13:41:20,258 - INFO # 
+2018-08-03 13:41:20,262 - INFO # ----Testing fix16_exp() accuracy over full range----
+2018-08-03 13:41:27,454 - INFO # Worst delta 0.0025% with input 323857
+2018-08-03 13:41:27,456 - INFO # Average delta 0.0003%
+2018-08-03 13:41:27,460 - INFO # [32;1mOK:[22;39m max_delta < 1
+2018-08-03 13:41:27,460 - INFO # 
+2018-08-03 13:41:27,464 - INFO # ----Testing fix16_log() accuracy over full range----
+2018-08-03 13:45:53,754 - INFO # Worst delta 3 with input 417752911
+2018-08-03 13:45:53,756 - INFO # Average delta 0.30
+2018-08-03 13:45:53,759 - INFO # [32;1mOK:[22;39m max_delta < 20
+2018-08-03 13:45:53,763 - INFO # [32;1mOK:[22;39m F16(1.234) == F16C(1,234)
+2018-08-03 13:45:53,768 - INFO # [32;1mOK:[22;39m F16(1.234) == fix16_from_dbl(1.234)
+2018-08-03 13:45:53,771 - INFO # [32;1mOK:[22;39m F16(0.0) == F16C(0,0)
+2018-08-03 13:45:53,776 - INFO # [32;1mOK:[22;39m F16(0.0) == fix16_from_dbl(0.0)
+2018-08-03 13:45:53,780 - INFO # [32;1mOK:[22;39m F16(1.0) == F16C(1,0)
+2018-08-03 13:45:53,784 - INFO # [32;1mOK:[22;39m F16(1.0) == fix16_from_dbl(1.0)
+2018-08-03 13:45:53,788 - INFO # [32;1mOK:[22;39m F16(-1.0) == F16C(-1,0)
+2018-08-03 13:45:53,793 - INFO # [32;1mOK:[22;39m F16(-1.0) == fix16_from_dbl(-1.0)
+2018-08-03 13:45:53,796 - INFO # [32;1mOK:[22;39m F16(1.5) == F16C(1,5)
+2018-08-03 13:45:53,801 - INFO # [32;1mOK:[22;39m F16(1.5) == fix16_from_dbl(1.5)
+2018-08-03 13:45:53,805 - INFO # [32;1mOK:[22;39m F16(-1.5) == F16C(-1,5)
+2018-08-03 13:45:53,810 - INFO # [32;1mOK:[22;39m F16(-1.5) == fix16_from_dbl(-1.5)
+2018-08-03 13:45:53,815 - INFO # [32;1mOK:[22;39m F16(000000.00000) == F16C(000000,00000)
+2018-08-03 13:45:53,821 - INFO # [32;1mOK:[22;39m F16(000000.00000) == fix16_from_dbl(000000.00000)
+2018-08-03 13:45:53,826 - INFO # [32;1mOK:[22;39m F16(0.00001) == F16C(0,00001)
+2018-08-03 13:45:53,831 - INFO # [32;1mOK:[22;39m F16(0.00001) == fix16_from_dbl(0.00001)
+2018-08-03 13:45:53,835 - INFO # [32;1mOK:[22;39m F16(0.00010) == F16C(0,00010)
+2018-08-03 13:45:53,841 - INFO # [32;1mOK:[22;39m F16(0.00010) == fix16_from_dbl(0.00010)
+2018-08-03 13:45:53,844 - INFO # [32;1mOK:[22;39m F16(0.1) == F16C(0,1)
+2018-08-03 13:45:53,849 - INFO # [32;1mOK:[22;39m F16(0.1) == fix16_from_dbl(0.1)
+2018-08-03 13:45:53,853 - INFO # [32;1mOK:[22;39m F16(0.10001) == F16C(0,10001)
+2018-08-03 13:45:53,858 - INFO # [32;1mOK:[22;39m F16(0.10001) == fix16_from_dbl(0.10001)
+2018-08-03 13:45:53,863 - INFO # [32;1mOK:[22;39m F16(0.11000) == F16C(0,11000)
+2018-08-03 13:45:53,868 - INFO # [32;1mOK:[22;39m F16(0.11000) == fix16_from_dbl(0.11000)
+2018-08-03 13:45:53,872 - INFO # [32;1mOK:[22;39m F16(25.133) == F16C(25,133)
+2018-08-03 13:45:53,878 - INFO # [32;1mOK:[22;39m F16(25.133) == fix16_from_dbl(25.133)
+2018-08-03 13:45:53,883 - INFO # [32;1mOK:[22;39m F16(32767.00000) == F16C(32767,00000)
+2018-08-03 13:45:53,889 - INFO # [32;1mOK:[22;39m F16(32767.00000) == fix16_from_dbl(32767.00000)
+2018-08-03 13:45:53,894 - INFO # [32;1mOK:[22;39m F16(32767.00001) == F16C(32767,00001)
+2018-08-03 13:45:53,900 - INFO # [32;1mOK:[22;39m F16(32767.00001) == fix16_from_dbl(32767.00001)
+2018-08-03 13:45:53,905 - INFO # [32;1mOK:[22;39m F16(32767.99999) == F16C(32767,99999)
+2018-08-03 13:45:53,911 - INFO # [32;1mOK:[22;39m F16(32767.99999) == fix16_from_dbl(32767.99999)
+2018-08-03 13:45:53,915 - INFO # [32;1mOK:[22;39m F16(0.25) == F16C(0,25)
+2018-08-03 13:45:53,919 - INFO # [32;1mOK:[22;39m F16(0.25) == fix16_from_dbl(0.25)
+2018-08-03 13:45:53,924 - INFO # [32;1mOK:[22;39m F16(0.99555) == F16C(0,99555)
+2018-08-03 13:45:53,929 - INFO # [32;1mOK:[22;39m F16(0.99555) == fix16_from_dbl(0.99555)
+2018-08-03 13:45:53,934 - INFO # [32;1mOK:[22;39m F16(0.99998) == F16C(0,99998)
+2018-08-03 13:45:53,939 - INFO # [32;1mOK:[22;39m F16(0.99998) == fix16_from_dbl(0.99998)
+2018-08-03 13:45:53,943 - INFO # [32;1mOK:[22;39m F16(0.99999) == F16C(0,99999)
+2018-08-03 13:45:53,948 - INFO # [32;1mOK:[22;39m F16(0.99999) == fix16_from_dbl(0.99999)
+2018-08-03 13:45:53,953 - INFO # [32;1mOK:[22;39m F16(-1.1) == F16C(-1,1)
+2018-08-03 13:45:53,957 - INFO # [32;1mOK:[22;39m F16(-1.1) == fix16_from_dbl(-1.1)
+2018-08-03 13:45:53,961 - INFO # [32;1mOK:[22;39m F16(-25.133) == F16C(-25,133)
+2018-08-03 13:45:53,967 - INFO # [32;1mOK:[22;39m F16(-25.133) == fix16_from_dbl(-25.133)
+2018-08-03 13:45:53,972 - INFO # [32;1mOK:[22;39m F16(-32767.00001) == F16C(-32767,00001)
+2018-08-03 13:45:53,978 - INFO # [32;1mOK:[22;39m F16(-32767.00001) == fix16_from_dbl(-32767.00001)
+2018-08-03 13:45:53,984 - INFO # [32;1mOK:[22;39m F16(-32768.00000) == F16C(-32768,00000)
+2018-08-03 13:45:53,990 - INFO # [32;1mOK:[22;39m F16(-32768.00000) == fix16_from_dbl(-32768.00000)
+2018-08-03 13:45:53,994 - INFO # [32;1mOK:[22;39m F16(0.02267) == F16C(0,02267)
+2018-08-03 13:45:53,999 - INFO # [32;1mOK:[22;39m F16(0.02267) == fix16_from_dbl(0.02267)
+2018-08-03 13:45:54,004 - INFO # [32;1mOK:[22;39m F16(1.49887) == F16C(1,49887)
+2018-08-03 13:45:54,009 - INFO # [32;1mOK:[22;39m F16(1.49887) == fix16_from_dbl(1.49887)
+2018-08-03 13:45:54,013 - INFO # [32;1mOK:[22;39m F16(0.27589) == F16C(0,27589)
+2018-08-03 13:45:54,019 - INFO # [32;1mOK:[22;39m F16(0.27589) == fix16_from_dbl(0.27589)
+2018-08-03 13:45:54,023 - INFO # [32;1mOK:[22;39m F16(0.38393) == F16C(0,38393)
+2018-08-03 13:45:54,028 - INFO # [32;1mOK:[22;39m F16(0.38393) == fix16_from_dbl(0.38393)
+2018-08-03 13:45:54,033 - INFO # [32;1mOK:[22;39m F16(0.08934) == F16C(0,08934)
+2018-08-03 13:45:54,038 - INFO # [32;1mOK:[22;39m F16(0.08934) == fix16_from_dbl(0.08934)
+2018-08-03 13:45:54,042 - INFO # [32;1mOK:[22;39m F16(0.95820) == F16C(0,95820)
+2018-08-03 13:45:54,048 - INFO # [32;1mOK:[22;39m F16(0.95820) == fix16_from_dbl(0.95820)
+2018-08-03 13:45:54,052 - INFO # [32;1mOK:[22;39m F16(0.95596) == F16C(0,95596)
+2018-08-03 13:45:54,057 - INFO # [32;1mOK:[22;39m F16(0.95596) == fix16_from_dbl(0.95596)
+2018-08-03 13:45:54,062 - INFO # [32;1mOK:[22;39m F16(72.10642) == F16C(72,10642)
+2018-08-03 13:45:54,068 - INFO # [32;1mOK:[22;39m F16(72.10642) == fix16_from_dbl(72.10642)
+2018-08-03 13:45:54,072 - INFO # [32;1mOK:[22;39m F16(0.48939) == F16C(0,48939)
+2018-08-03 13:45:54,077 - INFO # [32;1mOK:[22;39m F16(0.48939) == fix16_from_dbl(0.48939)
+2018-08-03 13:45:54,081 - INFO # [32;1mOK:[22;39m F16(3.37797) == F16C(3,37797)
+2018-08-03 13:45:54,087 - INFO # [32;1mOK:[22;39m F16(3.37797) == fix16_from_dbl(3.37797)
+2018-08-03 13:45:54,091 - INFO # [32;1mOK:[22;39m F16(1.09194) == F16C(1,09194)
+2018-08-03 13:45:54,097 - INFO # [32;1mOK:[22;39m F16(1.09194) == fix16_from_dbl(1.09194)
+2018-08-03 13:45:54,101 - INFO # [32;1mOK:[22;39m F16(0.08605) == F16C(0,08605)
+2018-08-03 13:45:54,106 - INFO # [32;1mOK:[22;39m F16(0.08605) == fix16_from_dbl(0.08605)
+2018-08-03 13:45:54,110 - INFO # [32;1mOK:[22;39m F16(3.04349) == F16C(3,04349)
+2018-08-03 13:45:54,116 - INFO # [32;1mOK:[22;39m F16(3.04349) == fix16_from_dbl(3.04349)
+2018-08-03 13:45:54,120 - INFO # [32;1mOK:[22;39m F16(3.95401) == F16C(3,95401)
+2018-08-03 13:45:54,126 - INFO # [32;1mOK:[22;39m F16(3.95401) == fix16_from_dbl(3.95401)
+2018-08-03 13:45:54,130 - INFO # [32;1mOK:[22;39m F16(15.36292) == F16C(15,36292)
+2018-08-03 13:45:54,136 - INFO # [32;1mOK:[22;39m F16(15.36292) == fix16_from_dbl(15.36292)
+2018-08-03 13:45:54,140 - INFO # [32;1mOK:[22;39m F16(56.09242) == F16C(56,09242)
+2018-08-03 13:45:54,145 - INFO # [32;1mOK:[22;39m F16(56.09242) == fix16_from_dbl(56.09242)
+2018-08-03 13:45:54,150 - INFO # [32;1mOK:[22;39m F16(0.54071) == F16C(0,54071)
+2018-08-03 13:45:54,155 - INFO # [32;1mOK:[22;39m F16(0.54071) == fix16_from_dbl(0.54071)
+2018-08-03 13:45:54,160 - INFO # [32;1mOK:[22;39m F16(27.08953) == F16C(27,08953)
+2018-08-03 13:45:54,165 - INFO # [32;1mOK:[22;39m F16(27.08953) == fix16_from_dbl(27.08953)
+2018-08-03 13:45:54,170 - INFO # [32;1mOK:[22;39m F16(0.03913) == F16C(0,03913)
+2018-08-03 13:45:54,175 - INFO # [32;1mOK:[22;39m F16(0.03913) == fix16_from_dbl(0.03913)
+2018-08-03 13:45:54,179 - INFO # [32;1mOK:[22;39m F16(1.32707) == F16C(1,32707)
+2018-08-03 13:45:54,184 - INFO # [32;1mOK:[22;39m F16(1.32707) == fix16_from_dbl(1.32707)
+2018-08-03 13:45:54,189 - INFO # [32;1mOK:[22;39m F16(4.50117) == F16C(4,50117)
+2018-08-03 13:45:54,194 - INFO # [32;1mOK:[22;39m F16(4.50117) == fix16_from_dbl(4.50117)
+2018-08-03 13:45:54,199 - INFO # [32;1mOK:[22;39m F16(0.24990) == F16C(0,24990)
+2018-08-03 13:45:54,204 - INFO # [32;1mOK:[22;39m F16(0.24990) == fix16_from_dbl(0.24990)
+2018-08-03 13:45:54,209 - INFO # [32;1mOK:[22;39m F16(44.77319) == F16C(44,77319)
+2018-08-03 13:45:54,214 - INFO # [32;1mOK:[22;39m F16(44.77319) == fix16_from_dbl(44.77319)
+2018-08-03 13:45:54,219 - INFO # [32;1mOK:[22;39m F16(2.59139) == F16C(2,59139)
+2018-08-03 13:45:54,224 - INFO # [32;1mOK:[22;39m F16(2.59139) == fix16_from_dbl(2.59139)
+2018-08-03 13:45:54,228 - INFO # [32;1mOK:[22;39m F16(0.16279) == F16C(0,16279)
+2018-08-03 13:45:54,233 - INFO # [32;1mOK:[22;39m F16(0.16279) == fix16_from_dbl(0.16279)
+2018-08-03 13:45:54,238 - INFO # [32;1mOK:[22;39m F16(17.14712) == F16C(17,14712)
+2018-08-03 13:45:54,243 - INFO # [32;1mOK:[22;39m F16(17.14712) == fix16_from_dbl(17.14712)
+2018-08-03 13:45:54,248 - INFO # [32;1mOK:[22;39m F16(11.54281) == F16C(11,54281)
+2018-08-03 13:45:54,253 - INFO # [32;1mOK:[22;39m F16(11.54281) == fix16_from_dbl(11.54281)
+2018-08-03 13:45:54,258 - INFO # [32;1mOK:[22;39m F16(0.02768) == F16C(0,02768)
+2018-08-03 13:45:54,263 - INFO # [32;1mOK:[22;39m F16(0.02768) == fix16_from_dbl(0.02768)
+2018-08-03 13:45:54,267 - INFO # [32;1mOK:[22;39m F16(0.39278) == F16C(0,39278)
+2018-08-03 13:45:54,273 - INFO # [32;1mOK:[22;39m F16(0.39278) == fix16_from_dbl(0.39278)
+2018-08-03 13:45:54,277 - INFO # [32;1mOK:[22;39m F16(0.19369) == F16C(0,19369)
+2018-08-03 13:45:54,283 - INFO # [32;1mOK:[22;39m F16(0.19369) == fix16_from_dbl(0.19369)
+2018-08-03 13:45:54,287 - INFO # [32;1mOK:[22;39m F16(-0.04534) == F16C(-0,04534)
+2018-08-03 13:45:54,293 - INFO # [32;1mOK:[22;39m F16(-0.04534) == fix16_from_dbl(-0.04534)
+2018-08-03 13:45:54,297 - INFO # [32;1mOK:[22;39m F16(-0.00349) == F16C(-0,00349)
+2018-08-03 13:45:54,303 - INFO # [32;1mOK:[22;39m F16(-0.00349) == fix16_from_dbl(-0.00349)
+2018-08-03 13:45:54,307 - INFO # [32;1mOK:[22;39m F16(-2.30380) == F16C(-2,30380)
+2018-08-03 13:45:54,313 - INFO # [32;1mOK:[22;39m F16(-2.30380) == fix16_from_dbl(-2.30380)
+2018-08-03 13:45:54,317 - INFO # [32;1mOK:[22;39m F16(-0.03061) == F16C(-0,03061)
+2018-08-03 13:45:54,323 - INFO # [32;1mOK:[22;39m F16(-0.03061) == fix16_from_dbl(-0.03061)
+2018-08-03 13:45:54,327 - INFO # [32;1mOK:[22;39m F16(-7.50065) == F16C(-7,50065)
+2018-08-03 13:45:54,332 - INFO # [32;1mOK:[22;39m F16(-7.50065) == fix16_from_dbl(-7.50065)
+2018-08-03 13:45:54,337 - INFO # [32;1mOK:[22;39m F16(-3.97050) == F16C(-3,97050)
+2018-08-03 13:45:54,343 - INFO # [32;1mOK:[22;39m F16(-3.97050) == fix16_from_dbl(-3.97050)
+2018-08-03 13:45:54,347 - INFO # [32;1mOK:[22;39m F16(-0.43898) == F16C(-0,43898)
+2018-08-03 13:45:54,353 - INFO # [32;1mOK:[22;39m F16(-0.43898) == fix16_from_dbl(-0.43898)
+2018-08-03 13:45:54,358 - INFO # [32;1mOK:[22;39m F16(-3.49876) == F16C(-3,49876)
+2018-08-03 13:45:54,363 - INFO # [32;1mOK:[22;39m F16(-3.49876) == fix16_from_dbl(-3.49876)
+2018-08-03 13:45:54,367 - INFO # [32;1mOK:[22;39m F16(-1.35942) == F16C(-1,35942)
+2018-08-03 13:45:54,373 - INFO # [32;1mOK:[22;39m F16(-1.35942) == fix16_from_dbl(-1.35942)
+2018-08-03 13:45:54,378 - INFO # [32;1mOK:[22;39m F16(-10.81154) == F16C(-10,81154)
+2018-08-03 13:45:54,383 - INFO # [32;1mOK:[22;39m F16(-10.81154) == fix16_from_dbl(-10.81154)
+2018-08-03 13:45:54,388 - INFO # [32;1mOK:[22;39m F16(-0.26676) == F16C(-0,26676)
+2018-08-03 13:45:54,393 - INFO # [32;1mOK:[22;39m F16(-0.26676) == fix16_from_dbl(-0.26676)
+2018-08-03 13:45:54,398 - INFO # [32;1mOK:[22;39m F16(-9.52134) == F16C(-9,52134)
+2018-08-03 13:45:54,403 - INFO # [32;1mOK:[22;39m F16(-9.52134) == fix16_from_dbl(-9.52134)
+2018-08-03 13:45:54,408 - INFO # [32;1mOK:[22;39m F16(-0.42592) == F16C(-0,42592)
+2018-08-03 13:45:54,413 - INFO # [32;1mOK:[22;39m F16(-0.42592) == fix16_from_dbl(-0.42592)
+2018-08-03 13:45:54,418 - INFO # [32;1mOK:[22;39m F16(-0.05424) == F16C(-0,05424)
+2018-08-03 13:45:54,423 - INFO # [32;1mOK:[22;39m F16(-0.05424) == fix16_from_dbl(-0.05424)
+2018-08-03 13:45:54,428 - INFO # [32;1mOK:[22;39m F16(-0.62461) == F16C(-0,62461)
+2018-08-03 13:45:54,434 - INFO # [32;1mOK:[22;39m F16(-0.62461) == fix16_from_dbl(-0.62461)
+2018-08-03 13:45:54,438 - INFO # [32;1mOK:[22;39m F16(-0.21562) == F16C(-0,21562)
+2018-08-03 13:45:54,443 - INFO # [32;1mOK:[22;39m F16(-0.21562) == fix16_from_dbl(-0.21562)
+2018-08-03 13:45:54,448 - INFO # [32;1mOK:[22;39m F16(-0.22366) == F16C(-0,22366)
+2018-08-03 13:45:54,453 - INFO # [32;1mOK:[22;39m F16(-0.22366) == fix16_from_dbl(-0.22366)
+2018-08-03 13:45:54,458 - INFO # [32;1mOK:[22;39m F16(-0.09074) == F16C(-0,09074)
+2018-08-03 13:45:54,463 - INFO # [32;1mOK:[22;39m F16(-0.09074) == fix16_from_dbl(-0.09074)
+2018-08-03 13:45:54,468 - INFO # [32;1mOK:[22;39m F16(-1.29527) == F16C(-1,29527)
+2018-08-03 13:45:54,474 - INFO # [32;1mOK:[22;39m F16(-1.29527) == fix16_from_dbl(-1.29527)
+2018-08-03 13:45:54,478 - INFO # [32;1mOK:[22;39m F16(-4.98427) == F16C(-4,98427)
+2018-08-03 13:45:54,484 - INFO # [32;1mOK:[22;39m F16(-4.98427) == fix16_from_dbl(-4.98427)
+2018-08-03 13:45:54,488 - INFO # [32;1mOK:[22;39m F16(-0.10721) == F16C(-0,10721)
+2018-08-03 13:45:54,493 - INFO # [32;1mOK:[22;39m F16(-0.10721) == fix16_from_dbl(-0.10721)
+2018-08-03 13:45:54,498 - INFO # [32;1mOK:[22;39m F16(-11.39446) == F16C(-11,39446)
+2018-08-03 13:45:54,504 - INFO # [32;1mOK:[22;39m F16(-11.39446) == fix16_from_dbl(-11.39446)
+2018-08-03 13:45:54,509 - INFO # [32;1mOK:[22;39m F16(-451.53916) == F16C(-451,53916)
+2018-08-03 13:45:54,515 - INFO # [32;1mOK:[22;39m F16(-451.53916) == fix16_from_dbl(-451.53916)
+2018-08-03 13:45:54,519 - INFO # [32;1mOK:[22;39m F16(-0.04279) == F16C(-0,04279)
+2018-08-03 13:45:54,525 - INFO # [32;1mOK:[22;39m F16(-0.04279) == fix16_from_dbl(-0.04279)
+2018-08-03 13:45:54,529 - INFO # [32;1mOK:[22;39m F16(-3.36543) == F16C(-3,36543)
+2018-08-03 13:45:54,535 - INFO # [32;1mOK:[22;39m F16(-3.36543) == fix16_from_dbl(-3.36543)
+2018-08-03 13:45:54,539 - INFO # [32;1mOK:[22;39m F16(-0.01003) == F16C(-0,01003)
+2018-08-03 13:45:54,545 - INFO # [32;1mOK:[22;39m F16(-0.01003) == fix16_from_dbl(-0.01003)
+2018-08-03 13:45:54,550 - INFO # [32;1mOK:[22;39m F16(-12.08326) == F16C(-12,08326)
+2018-08-03 13:45:54,555 - INFO # [32;1mOK:[22;39m F16(-12.08326) == fix16_from_dbl(-12.08326)
+2018-08-03 13:45:54,560 - INFO # [32;1mOK:[22;39m F16(-1.07143) == F16C(-1,07143)
+2018-08-03 13:45:54,565 - INFO # [32;1mOK:[22;39m F16(-1.07143) == fix16_from_dbl(-1.07143)
+2018-08-03 13:45:54,570 - INFO # [32;1mOK:[22;39m F16(-1.07737) == F16C(-1,07737)
+2018-08-03 13:45:54,576 - INFO # [32;1mOK:[22;39m F16(-1.07737) == fix16_from_dbl(-1.07737)
+2018-08-03 13:45:54,580 - INFO # [32;1mOK:[22;39m F16(-0.22957) == F16C(-0,22957)
+2018-08-03 13:45:54,585 - INFO # [32;1mOK:[22;39m F16(-0.22957) == fix16_from_dbl(-0.22957)
+2018-08-03 13:45:54,586 - INFO # 
+2018-08-03 13:45:54,589 - INFO # ----Testing fix16_to_str corner cases----
+2018-08-03 13:45:54,591 - INFO # 1234.5678 = 1234.5678
+2018-08-03 13:45:54,596 - INFO # [32;1mOK:[22;39m strcmp(buf, "1234.5678") == 0
+2018-08-03 13:45:54,598 - INFO # -1234.5678 = -1234.5678
+2018-08-03 13:45:54,602 - INFO # [32;1mOK:[22;39m strcmp(buf, "-1234.5678") == 0
+2018-08-03 13:45:54,606 - INFO # [32;1mOK:[22;39m strcmp(buf, "0") == 0
+2018-08-03 13:45:54,609 - INFO # [32;1mOK:[22;39m strcmp(buf, "1") == 0
+2018-08-03 13:45:54,612 - INFO # (fix16_t)1 = 0.00002
+2018-08-03 13:45:54,616 - INFO # [32;1mOK:[22;39m strcmp(buf, "0.00002") == 0
+2018-08-03 13:45:54,619 - INFO # (fix16_t)-1 = -0.00002
+2018-08-03 13:45:54,622 - INFO # [32;1mOK:[22;39m strcmp(buf, "-0.00002") == 0
+2018-08-03 13:45:54,625 - INFO # (fix16_t)65535 = 0.99998
+2018-08-03 13:45:54,629 - INFO # [32;1mOK:[22;39m strcmp(buf, "0.99998") == 0
+2018-08-03 13:45:54,631 - INFO # (fix16_t)65535 = 1.0000
+2018-08-03 13:45:54,635 - INFO # [32;1mOK:[22;39m strcmp(buf, "1.0000") == 0
+2018-08-03 13:45:54,638 - INFO # fix16_maximum = 32767.99998
+2018-08-03 13:45:54,642 - INFO # [32;1mOK:[22;39m strcmp(buf, "32767.99998") == 0
+2018-08-03 13:45:54,645 - INFO # fix16_minimum = -32768.00000
+2018-08-03 13:45:54,650 - INFO # [32;1mOK:[22;39m strcmp(buf, "-32768.00000") == 0
+2018-08-03 13:45:54,650 - INFO # 
+2018-08-03 13:45:54,654 - INFO # ----Testing fix16_from_str corner cases----
+2018-08-03 13:45:54,661 - INFO # [32;1mOK:[22;39m fix16_from_str("1234.5678") == fix16_from_dbl(1234.5678)
+2018-08-03 13:45:54,668 - INFO # [32;1mOK:[22;39m fix16_from_str("-1234.5678") == fix16_from_dbl(-1234.5678)
+2018-08-03 13:45:54,675 - INFO # [32;1mOK:[22;39m fix16_from_str("   +1234,56780   ") == fix16_from_dbl(1234.5678)
+2018-08-03 13:45:54,679 - INFO # [32;1mOK:[22;39m fix16_from_str("0") == 0
+2018-08-03 13:45:54,684 - INFO # [32;1mOK:[22;39m fix16_from_str("1") == fix16_one
+2018-08-03 13:45:54,689 - INFO # [32;1mOK:[22;39m fix16_from_str("1.0") == fix16_one
+2018-08-03 13:45:54,694 - INFO # [32;1mOK:[22;39m fix16_from_str("1.0000000000") == fix16_one
+2018-08-03 13:45:54,699 - INFO # [32;1mOK:[22;39m fix16_from_str("0.00002") == 1
+2018-08-03 13:45:54,704 - INFO # [32;1mOK:[22;39m fix16_from_str("0.99998") == 65535
+2018-08-03 13:45:54,710 - INFO # [32;1mOK:[22;39m fix16_from_str("32767.99998") == fix16_maximum
+2018-08-03 13:45:54,716 - INFO # [32;1mOK:[22;39m fix16_from_str("-32768.00000") == fix16_minimum
+2018-08-03 13:45:54,716 - INFO # 
+2018-08-03 13:45:54,719 - INFO # ----Extended testing for whole range----
+Timeout in expect script at "child.expect('SUCCESS', timeout=TIMEOUT)" (tests/libfixmath_unittests/tests/01-run.py:18)
+
+make: *** [Makefile:25: test] Error 1
+
+Return value: 2

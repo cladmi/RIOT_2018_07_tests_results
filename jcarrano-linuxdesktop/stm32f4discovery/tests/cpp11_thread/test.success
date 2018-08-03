@@ -15,7 +15,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.916329
+Info : Target voltage: 2.920930
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -28,61 +28,61 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 32768 bytes from file /home/jcarrano/source/masterRIOT/tests/cpp11_thread/bin/stm32f4discovery/tests_cpp11_thread.elf in 1.532721s (20.878 KiB/s)
+wrote 32768 bytes from file /home/jcarrano/source/masterRIOT/tests/cpp11_thread/bin/stm32f4discovery/tests_cpp11_thread.elf in 1.557472s (20.546 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 29392 bytes in 0.315040s (91.109 KiB/s)
+verified 29392 bytes in 0.315456s (90.989 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:01:21,107 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 11:43:02,466 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:01:22,111 - INFO # Done
-2018-07-27 15:01:22,112 - INFO # 
-2018-07-27 15:01:22,112 - INFO # Testing sleep_until ...
-2018-07-27 15:01:22,725 - INFO # Done
-2018-07-27 15:01:22,726 - INFO # 
-2018-07-27 15:01:22,727 - INFO # Swapping two threads ...
-2018-07-27 15:01:22,727 - INFO # Done
-2018-07-27 15:01:22,727 - INFO # 
-2018-07-27 15:01:22,728 - INFO # Move constructor ...
-2018-07-27 15:01:22,728 - INFO # Done
-2018-07-27 15:01:22,729 - INFO # 
-2018-07-27 15:01:22,729 - INFO # Bye, bye.
-2018-07-27 15:01:22,730 - INFO # ******************************************
-2018-07-27 15:01:24,139 - INFO # main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:01:24,139 - INFO # 
-2018-07-27 15:01:24,139 - INFO # ************ C++ thread test ***********
-2018-07-27 15:01:24,140 - INFO # Creating one thread and passing an argument ...
-2018-07-27 15:01:24,140 - INFO # Done
-2018-07-27 15:01:24,140 - INFO # 
-2018-07-27 15:01:24,141 - INFO # Creating detached thread ...
-2018-07-27 15:01:24,141 - INFO # Done
-2018-07-27 15:01:24,141 - INFO # 
-2018-07-27 15:01:24,141 - INFO # Join on 'finished' thread ...
-2018-07-27 15:01:24,141 - INFO # Done
-2018-07-27 15:01:24,141 - INFO # 
-2018-07-27 15:01:24,142 - INFO # Join on 'running' thread ...
-2018-07-27 15:01:24,142 - INFO # Done
-2018-07-27 15:01:24,142 - INFO # 
-2018-07-27 15:01:24,142 - INFO # Testing sleep_for ...
-2018-07-27 15:01:25,142 - INFO # Done
-2018-07-27 15:01:25,142 - INFO # 
-2018-07-27 15:01:25,143 - INFO # Testing sleep_until ...
-2018-07-27 15:01:26,152 - INFO # Done
-2018-07-27 15:01:26,153 - INFO # 
-2018-07-27 15:01:26,161 - INFO # Swapping two threads ...
-2018-07-27 15:01:26,162 - INFO # Done
-2018-07-27 15:01:26,162 - INFO # 
-2018-07-27 15:01:26,163 - INFO # Move constructor ...
-2018-07-27 15:01:26,163 - INFO # Done
-2018-07-27 15:01:26,163 - INFO # 
-2018-07-27 15:01:26,164 - INFO # Bye, bye.
-2018-07-27 15:01:26,165 - INFO # ******************************************
+2018-08-03 11:43:03,470 - INFO # Done
+2018-08-03 11:43:03,471 - INFO # 
+2018-08-03 11:43:03,471 - INFO # Testing sleep_until ...
+2018-08-03 11:43:04,144 - INFO # Done
+2018-08-03 11:43:04,144 - INFO # 
+2018-08-03 11:43:04,145 - INFO # Swapping two threads ...
+2018-08-03 11:43:04,145 - INFO # Done
+2018-08-03 11:43:04,145 - INFO # 
+2018-08-03 11:43:04,145 - INFO # Move constructor ...
+2018-08-03 11:43:04,145 - INFO # Done
+2018-08-03 11:43:04,145 - INFO # 
+2018-08-03 11:43:04,145 - INFO # Bye, bye.
+2018-08-03 11:43:04,146 - INFO # ******************************************
+2018-08-03 11:43:05,434 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 11:43:05,434 - INFO # 
+2018-08-03 11:43:05,436 - INFO # ************ C++ thread test ***********
+2018-08-03 11:43:05,437 - INFO # Creating one thread and passing an argument ...
+2018-08-03 11:43:05,437 - INFO # Done
+2018-08-03 11:43:05,437 - INFO # 
+2018-08-03 11:43:05,438 - INFO # Creating detached thread ...
+2018-08-03 11:43:05,439 - INFO # Done
+2018-08-03 11:43:05,439 - INFO # 
+2018-08-03 11:43:05,440 - INFO # Join on 'finished' thread ...
+2018-08-03 11:43:05,440 - INFO # Done
+2018-08-03 11:43:05,440 - INFO # 
+2018-08-03 11:43:05,441 - INFO # Join on 'running' thread ...
+2018-08-03 11:43:05,441 - INFO # Done
+2018-08-03 11:43:05,441 - INFO # 
+2018-08-03 11:43:05,442 - INFO # Testing sleep_for ...
+2018-08-03 11:43:06,436 - INFO # Done
+2018-08-03 11:43:06,437 - INFO # 
+2018-08-03 11:43:06,438 - INFO # Testing sleep_until ...
+2018-08-03 11:43:07,446 - INFO # Done
+2018-08-03 11:43:07,446 - INFO # 
+2018-08-03 11:43:07,447 - INFO # Swapping two threads ...
+2018-08-03 11:43:07,447 - INFO # Done
+2018-08-03 11:43:07,447 - INFO # 
+2018-08-03 11:43:07,447 - INFO # Move constructor ...
+2018-08-03 11:43:07,447 - INFO # Done
+2018-08-03 11:43:07,447 - INFO # 
+2018-08-03 11:43:07,447 - INFO # Bye, bye.
+2018-08-03 11:43:07,448 - INFO # ******************************************
 

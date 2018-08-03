@@ -15,7 +15,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.914899
+Info : Target voltage: 2.918068
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -28,29 +28,29 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/netdev_test/bin/stm32f4discovery/tests_netdev_test.elf in 0.902241s (17.734 KiB/s)
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/netdev_test/bin/stm32f4discovery/tests_netdev_test.elf in 0.904315s (17.693 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 15620 bytes in 0.198620s (76.799 KiB/s)
+verified 15620 bytes in 0.198983s (76.659 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:12:47,800 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 12:01:34,901 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:12:50,870 - INFO # main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:12:50,871 - INFO # Executing test_get_addr()
-2018-07-27 15:12:50,871 - INFO #  + succeeded.
-2018-07-27 15:12:50,871 - INFO # Executing test_send()
-2018-07-27 15:12:50,872 - INFO #  + succeeded.
-2018-07-27 15:12:50,872 - INFO # Executing test_receive()
-2018-07-27 15:12:50,872 - INFO #  + succeeded.
-2018-07-27 15:12:50,872 - INFO # Executing test_set_addr()
-2018-07-27 15:12:50,873 - INFO #  + succeeded.
-2018-07-27 15:12:50,873 - INFO # ALL TESTS SUCCESSFUL
+2018-08-03 12:01:37,991 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 12:01:37,992 - INFO # Executing test_get_addr()
+2018-08-03 12:01:37,993 - INFO #  + succeeded.
+2018-08-03 12:01:37,993 - INFO # Executing test_send()
+2018-08-03 12:01:37,994 - INFO #  + succeeded.
+2018-08-03 12:01:37,994 - INFO # Executing test_receive()
+2018-08-03 12:01:37,995 - INFO #  + succeeded.
+2018-08-03 12:01:37,996 - INFO # Executing test_set_addr()
+2018-08-03 12:01:37,996 - INFO #  + succeeded.
+2018-08-03 12:01:37,997 - INFO # ALL TESTS SUCCESSFUL
 

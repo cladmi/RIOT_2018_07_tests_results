@@ -1,7 +1,7 @@
 Installed compiler toolchains 
 -----------------------------
              native gcc: gcc (GCC) 8.1.1 20180531
-      arm-none-eabi-gcc: arm-none-eabi-gcc (Arch Repository) 8.1.0
+      arm-none-eabi-gcc: arm-none-eabi-gcc (Arch Repository) 8.2.0
                 avr-gcc: missing
        mips-mti-elf-gcc: missing
              msp430-gcc: missing

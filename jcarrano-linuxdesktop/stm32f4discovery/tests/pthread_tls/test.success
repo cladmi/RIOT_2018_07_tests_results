@@ -15,7 +15,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.916329
+Info : Target voltage: 2.918068
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -28,107 +28,107 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/pthread_tls/bin/stm32f4discovery/tests_pthread_tls.elf in 0.890157s (17.974 KiB/s)
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/pthread_tls/bin/stm32f4discovery/tests_pthread_tls.elf in 0.885044s (18.078 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 12312 bytes in 0.181599s (66.209 KiB/s)
+verified 12312 bytes in 0.171280s (70.198 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:19:42,701 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 12:11:52,798 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:19:45,813 - INFO # main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:19:45,813 - INFO # START
-2018-07-27 15:19:45,813 - INFO # 
-2018-07-27 15:19:45,814 - INFO # -= TEST 1 - create 20 tls with sequencial values 0...19 =-
-2018-07-27 15:19:45,836 - INFO # now rise sequencial by one values 1...20
-2018-07-27 15:19:45,837 - INFO # pick deliberate storage (key[3]:536877640) and change the value
-2018-07-27 15:19:45,838 - INFO # show tls values:
-2018-07-27 15:19:45,838 - INFO # key[0]: 536877544, val: 1
-2018-07-27 15:19:45,839 - INFO # key[1]: 536877576, val: 2
-2018-07-27 15:19:45,839 - INFO # key[2]: 536877608, val: 3
-2018-07-27 15:19:45,840 - INFO # key[3]: 536877640, val: 42
-2018-07-27 15:19:45,841 - INFO # key[4]: 536877672, val: 5
-2018-07-27 15:19:45,858 - INFO # key[5]: 536877704, val: 6
-2018-07-27 15:19:45,859 - INFO # key[6]: 536877736, val: 7
-2018-07-27 15:19:45,860 - INFO # key[7]: 536877768, val: 8
-2018-07-27 15:19:45,861 - INFO # key[8]: 536877800, val: 9
-2018-07-27 15:19:45,862 - INFO # key[9]: 536877832, val: 10
-2018-07-27 15:19:45,863 - INFO # key[10]: 536877864, val: 11
-2018-07-27 15:19:45,863 - INFO # key[11]: 536877896, val: 12
-2018-07-27 15:19:45,864 - INFO # key[12]: 536877928, val: 13
-2018-07-27 15:19:45,865 - INFO # key[13]: 536877960, val: 14
-2018-07-27 15:19:45,881 - INFO # key[14]: 536877992, val: 15
-2018-07-27 15:19:45,882 - INFO # key[15]: 536878024, val: 16
-2018-07-27 15:19:45,883 - INFO # key[16]: 536878056, val: 17
-2018-07-27 15:19:45,883 - INFO # key[17]: 536878088, val: 18
-2018-07-27 15:19:45,884 - INFO # key[18]: 536878120, val: 19
-2018-07-27 15:19:45,885 - INFO # key[19]: 536878152, val: 20
-2018-07-27 15:19:45,885 - INFO # 
-2018-07-27 15:19:45,887 - INFO #  -= TEST 2 - delete deliberate key (key[5]:536877704) =-
-2018-07-27 15:19:45,887 - INFO # show tls values:
-2018-07-27 15:19:45,888 - INFO # key[0]: 536877544, val: 1
-2018-07-27 15:19:45,903 - INFO # key[1]: 536877576, val: 2
-2018-07-27 15:19:45,904 - INFO # key[2]: 536877608, val: 3
-2018-07-27 15:19:45,905 - INFO # key[3]: 536877640, val: 42
-2018-07-27 15:19:45,906 - INFO # key[4]: 536877672, val: 5
-2018-07-27 15:19:45,906 - INFO # key[6]: 536877736, val: 7
-2018-07-27 15:19:45,907 - INFO # key[7]: 536877768, val: 8
-2018-07-27 15:19:45,908 - INFO # key[8]: 536877800, val: 9
-2018-07-27 15:19:45,909 - INFO # key[9]: 536877832, val: 10
-2018-07-27 15:19:45,909 - INFO # key[10]: 536877864, val: 11
-2018-07-27 15:19:45,926 - INFO # key[11]: 536877896, val: 12
-2018-07-27 15:19:45,927 - INFO # key[12]: 536877928, val: 13
-2018-07-27 15:19:45,929 - INFO # key[13]: 536877960, val: 14
-2018-07-27 15:19:45,929 - INFO # key[14]: 536877992, val: 15
-2018-07-27 15:19:45,930 - INFO # key[15]: 536878024, val: 16
-2018-07-27 15:19:45,931 - INFO # key[16]: 536878056, val: 17
-2018-07-27 15:19:45,932 - INFO # key[17]: 536878088, val: 18
-2018-07-27 15:19:45,933 - INFO # key[18]: 536878120, val: 19
-2018-07-27 15:19:45,934 - INFO # key[19]: 536878152, val: 20
-2018-07-27 15:19:45,934 - INFO # 
-2018-07-27 15:19:45,948 - INFO # -= TEST 3 - create new tls =-
-2018-07-27 15:19:45,949 - INFO # added new tls, key: 536878184, val: 99
-2018-07-27 15:19:45,950 - INFO # show tls values:
-2018-07-27 15:19:45,950 - INFO # key[0]: 536877544, val: 1
-2018-07-27 15:19:45,951 - INFO # key[1]: 536877576, val: 2
-2018-07-27 15:19:45,952 - INFO # key[2]: 536877608, val: 3
-2018-07-27 15:19:45,953 - INFO # key[3]: 536877640, val: 42
-2018-07-27 15:19:45,953 - INFO # key[4]: 536877672, val: 5
-2018-07-27 15:19:45,954 - INFO # key[6]: 536877736, val: 7
-2018-07-27 15:19:45,955 - INFO # key[7]: 536877768, val: 8
-2018-07-27 15:19:45,970 - INFO # key[8]: 536877800, val: 9
-2018-07-27 15:19:45,971 - INFO # key[9]: 536877832, val: 10
-2018-07-27 15:19:45,972 - INFO # key[10]: 536877864, val: 11
-2018-07-27 15:19:45,973 - INFO # key[11]: 536877896, val: 12
-2018-07-27 15:19:45,974 - INFO # key[12]: 536877928, val: 13
-2018-07-27 15:19:45,975 - INFO # key[13]: 536877960, val: 14
-2018-07-27 15:19:45,976 - INFO # key[14]: 536877992, val: 15
-2018-07-27 15:19:45,977 - INFO # key[15]: 536878024, val: 16
-2018-07-27 15:19:45,978 - INFO # key[16]: 536878056, val: 17
-2018-07-27 15:19:45,979 - INFO # key[17]: 536878088, val: 18
-2018-07-27 15:19:45,980 - INFO # key[18]: 536878120, val: 19
-2018-07-27 15:19:45,981 - INFO # key[19]: 536878152, val: 20
-2018-07-27 15:19:45,981 - INFO # 
-2018-07-27 15:19:45,982 - INFO # -= TEST 4 - delete all keys =-
-2018-07-27 15:19:46,002 - INFO # show tls values:
-2018-07-27 15:19:46,002 - INFO # 
-2018-07-27 15:19:46,004 - INFO # -= TEST 5 - try delete non-existing key =-
-2018-07-27 15:19:46,005 - INFO # try to delete returns: 0
-2018-07-27 15:19:46,006 - INFO # 
-2018-07-27 15:19:46,008 - INFO # -= TEST 6 - add key and delete without a tls =-
-2018-07-27 15:19:46,009 - INFO # created key: 536878216
-2018-07-27 15:19:46,010 - INFO # try to delete returns: 0
-2018-07-27 15:19:46,010 - INFO # 
-2018-07-27 15:19:46,012 - INFO # -= TEST 7 - add key without tls =-
-2018-07-27 15:19:46,012 - INFO # created key: 536878232
-2018-07-27 15:19:46,013 - INFO # test_7_val: 0
-2018-07-27 15:19:46,014 - INFO # tls tests finished.
-2018-07-27 15:19:46,015 - INFO # SUCCESS
+2018-08-03 12:11:55,795 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 12:11:55,795 - INFO # START
+2018-08-03 12:11:55,796 - INFO # 
+2018-08-03 12:11:55,797 - INFO # -= TEST 1 - create 20 tls with sequencial values 0...19 =-
+2018-08-03 12:11:55,818 - INFO # now rise sequencial by one values 1...20
+2018-08-03 12:11:55,820 - INFO # pick deliberate storage (key[3]:536877640) and change the value
+2018-08-03 12:11:55,821 - INFO # show tls values:
+2018-08-03 12:11:55,822 - INFO # key[0]: 536877544, val: 1
+2018-08-03 12:11:55,823 - INFO # key[1]: 536877576, val: 2
+2018-08-03 12:11:55,823 - INFO # key[2]: 536877608, val: 3
+2018-08-03 12:11:55,824 - INFO # key[3]: 536877640, val: 42
+2018-08-03 12:11:55,825 - INFO # key[4]: 536877672, val: 5
+2018-08-03 12:11:55,840 - INFO # key[5]: 536877704, val: 6
+2018-08-03 12:11:55,841 - INFO # key[6]: 536877736, val: 7
+2018-08-03 12:11:55,842 - INFO # key[7]: 536877768, val: 8
+2018-08-03 12:11:55,843 - INFO # key[8]: 536877800, val: 9
+2018-08-03 12:11:55,843 - INFO # key[9]: 536877832, val: 10
+2018-08-03 12:11:55,844 - INFO # key[10]: 536877864, val: 11
+2018-08-03 12:11:55,845 - INFO # key[11]: 536877896, val: 12
+2018-08-03 12:11:55,846 - INFO # key[12]: 536877928, val: 13
+2018-08-03 12:11:55,847 - INFO # key[13]: 536877960, val: 14
+2018-08-03 12:11:55,862 - INFO # key[14]: 536877992, val: 15
+2018-08-03 12:11:55,863 - INFO # key[15]: 536878024, val: 16
+2018-08-03 12:11:55,864 - INFO # key[16]: 536878056, val: 17
+2018-08-03 12:11:55,865 - INFO # key[17]: 536878088, val: 18
+2018-08-03 12:11:55,865 - INFO # key[18]: 536878120, val: 19
+2018-08-03 12:11:55,866 - INFO # key[19]: 536878152, val: 20
+2018-08-03 12:11:55,866 - INFO # 
+2018-08-03 12:11:55,868 - INFO #  -= TEST 2 - delete deliberate key (key[5]:536877704) =-
+2018-08-03 12:11:55,869 - INFO # show tls values:
+2018-08-03 12:11:55,869 - INFO # key[0]: 536877544, val: 1
+2018-08-03 12:11:55,885 - INFO # key[1]: 536877576, val: 2
+2018-08-03 12:11:55,886 - INFO # key[2]: 536877608, val: 3
+2018-08-03 12:11:55,887 - INFO # key[3]: 536877640, val: 42
+2018-08-03 12:11:55,888 - INFO # key[4]: 536877672, val: 5
+2018-08-03 12:11:55,888 - INFO # key[6]: 536877736, val: 7
+2018-08-03 12:11:55,889 - INFO # key[7]: 536877768, val: 8
+2018-08-03 12:11:55,890 - INFO # key[8]: 536877800, val: 9
+2018-08-03 12:11:55,891 - INFO # key[9]: 536877832, val: 10
+2018-08-03 12:11:55,891 - INFO # key[10]: 536877864, val: 11
+2018-08-03 12:11:55,907 - INFO # key[11]: 536877896, val: 12
+2018-08-03 12:11:55,908 - INFO # key[12]: 536877928, val: 13
+2018-08-03 12:11:55,908 - INFO # key[13]: 536877960, val: 14
+2018-08-03 12:11:55,909 - INFO # key[14]: 536877992, val: 15
+2018-08-03 12:11:55,910 - INFO # key[15]: 536878024, val: 16
+2018-08-03 12:11:55,911 - INFO # key[16]: 536878056, val: 17
+2018-08-03 12:11:55,912 - INFO # key[17]: 536878088, val: 18
+2018-08-03 12:11:55,912 - INFO # key[18]: 536878120, val: 19
+2018-08-03 12:11:55,913 - INFO # key[19]: 536878152, val: 20
+2018-08-03 12:11:55,913 - INFO # 
+2018-08-03 12:11:55,930 - INFO # -= TEST 3 - create new tls =-
+2018-08-03 12:11:55,931 - INFO # added new tls, key: 536878184, val: 99
+2018-08-03 12:11:55,932 - INFO # show tls values:
+2018-08-03 12:11:55,932 - INFO # key[0]: 536877544, val: 1
+2018-08-03 12:11:55,933 - INFO # key[1]: 536877576, val: 2
+2018-08-03 12:11:55,934 - INFO # key[2]: 536877608, val: 3
+2018-08-03 12:11:55,935 - INFO # key[3]: 536877640, val: 42
+2018-08-03 12:11:55,936 - INFO # key[4]: 536877672, val: 5
+2018-08-03 12:11:55,936 - INFO # key[6]: 536877736, val: 7
+2018-08-03 12:11:55,937 - INFO # key[7]: 536877768, val: 8
+2018-08-03 12:11:55,952 - INFO # key[8]: 536877800, val: 9
+2018-08-03 12:11:55,953 - INFO # key[9]: 536877832, val: 10
+2018-08-03 12:11:55,954 - INFO # key[10]: 536877864, val: 11
+2018-08-03 12:11:55,954 - INFO # key[11]: 536877896, val: 12
+2018-08-03 12:11:55,955 - INFO # key[12]: 536877928, val: 13
+2018-08-03 12:11:55,956 - INFO # key[13]: 536877960, val: 14
+2018-08-03 12:11:55,957 - INFO # key[14]: 536877992, val: 15
+2018-08-03 12:11:55,957 - INFO # key[15]: 536878024, val: 16
+2018-08-03 12:11:55,958 - INFO # key[16]: 536878056, val: 17
+2018-08-03 12:11:55,960 - INFO # key[17]: 536878088, val: 18
+2018-08-03 12:11:55,961 - INFO # key[18]: 536878120, val: 19
+2018-08-03 12:11:55,961 - INFO # key[19]: 536878152, val: 20
+2018-08-03 12:11:55,962 - INFO # 
+2018-08-03 12:11:55,963 - INFO # -= TEST 4 - delete all keys =-
+2018-08-03 12:11:55,983 - INFO # show tls values:
+2018-08-03 12:11:55,983 - INFO # 
+2018-08-03 12:11:55,984 - INFO # -= TEST 5 - try delete non-existing key =-
+2018-08-03 12:11:55,985 - INFO # try to delete returns: 0
+2018-08-03 12:11:55,985 - INFO # 
+2018-08-03 12:11:55,987 - INFO # -= TEST 6 - add key and delete without a tls =-
+2018-08-03 12:11:55,987 - INFO # created key: 536878216
+2018-08-03 12:11:55,988 - INFO # try to delete returns: 0
+2018-08-03 12:11:55,988 - INFO # 
+2018-08-03 12:11:55,989 - INFO # -= TEST 7 - add key without tls =-
+2018-08-03 12:11:55,990 - INFO # created key: 536878232
+2018-08-03 12:11:55,991 - INFO # test_7_val: 0
+2018-08-03 12:11:55,991 - INFO # tls tests finished.
+2018-08-03 12:11:55,992 - INFO # SUCCESS
 

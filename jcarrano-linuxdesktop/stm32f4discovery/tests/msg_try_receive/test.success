@@ -15,7 +15,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.916329
+Info : Target voltage: 2.918068
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -28,23 +28,23 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/msg_try_receive/bin/stm32f4discovery/tests_msg_try_receive.elf in 0.871865s (18.351 KiB/s)
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/msg_try_receive/bin/stm32f4discovery/tests_msg_try_receive.elf in 0.869477s (18.402 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 9576 bytes in 0.148047s (63.166 KiB/s)
+verified 9576 bytes in 0.147861s (63.246 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:12:26,921 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 12:01:02,993 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:12:29,845 - INFO # main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:12:29,845 - INFO # main starting
-2018-07-27 15:12:29,845 - INFO # sending message...
-2018-07-27 15:12:29,845 - INFO # msg available: 1 (should be 1!)
+2018-08-03 12:01:05,862 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 12:01:05,862 - INFO # main starting
+2018-08-03 12:01:05,863 - INFO # sending message...
+2018-08-03 12:01:05,864 - INFO # msg available: 1 (should be 1!)
 

@@ -16,7 +16,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.916329
+Info : Target voltage: 2.920930
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -29,12 +29,12 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 32768 bytes from file /home/jcarrano/source/masterRIOT/tests/cbor/bin/stm32f4discovery/tests_cbor.elf in 1.556709s (20.556 KiB/s)
+wrote 32768 bytes from file /home/jcarrano/source/masterRIOT/tests/cbor/bin/stm32f4discovery/tests_cbor.elf in 1.558523s (20.532 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 29876 bytes in 0.320935s (90.909 KiB/s)
+verified 29876 bytes in 0.319674s (91.267 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing

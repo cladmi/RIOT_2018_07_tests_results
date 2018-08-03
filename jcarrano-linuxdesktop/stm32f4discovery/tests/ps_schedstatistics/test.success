@@ -15,7 +15,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.916329
+Info : Target voltage: 2.918068
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -28,42 +28,42 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 32768 bytes from file /home/jcarrano/source/masterRIOT/tests/ps_schedstatistics/bin/stm32f4discovery/tests_ps_schedstatistics.elf in 1.476474s (21.673 KiB/s)
+wrote 32768 bytes from file /home/jcarrano/source/masterRIOT/tests/ps_schedstatistics/bin/stm32f4discovery/tests_ps_schedstatistics.elf in 1.485459s (21.542 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 23848 bytes in 0.271751s (85.700 KiB/s)
+verified 23848 bytes in 0.269231s (86.502 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:18:24,672 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 12:10:03,320 - INFO # Connect to serial port /dev/ttyUSB0
 > Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:18:27,712 - INFO #  main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:18:27,712 - INFO # Creating thread #0, next=1
-2018-07-27 15:18:27,713 - INFO # Creating thread #1, next=2
-2018-07-27 15:18:27,713 - INFO # Creating thread #2, next=3
-2018-07-27 15:18:27,713 - INFO # Creating thread #3, next=4
-2018-07-27 15:18:27,713 - INFO # Creating thread #4, next=0
+2018-08-03 12:10:06,488 - INFO #  main(): This is RIOT! (Version: buildtest)
+2018-08-03 12:10:06,489 - INFO # Creating thread #0, next=1
+2018-08-03 12:10:06,489 - INFO # Creating thread #1, next=2
+2018-08-03 12:10:06,490 - INFO # Creating thread #2, next=3
+2018-08-03 12:10:06,490 - INFO # Creating thread #3, next=4
+2018-08-03 12:10:06,491 - INFO # Creating thread #4, next=0
 
 
 > help
 help
-2018-07-27 15:18:28,780 - INFO #  help
-2018-07-27 15:18:28,781 - INFO # Command              Description
-2018-07-27 15:18:28,782 - INFO # ---------------------------------------
-2018-07-27 15:18:28,783 - INFO # reboot               Reboot the node
-2018-07-27 15:18:28,785 - INFO # ps                   Prints information about running threads.
+2018-08-03 12:10:07,556 - INFO #  help
+2018-08-03 12:10:07,556 - INFO # Command              Description
+2018-08-03 12:10:07,557 - INFO # ---------------------------------------
+2018-08-03 12:10:07,558 - INFO # reboot               Reboot the node
+2018-08-03 12:10:07,559 - INFO # ps                   Prints information about running threads.
 > ps
 ps
-2018-07-27 15:18:28,837 - INFO #  ps
-2018-07-27 15:18:28,850 - INFO # 	pid | name                 | state    Q | pri | stack  ( used) | base addr  | current     | runtime  | switches
-2018-07-27 15:18:28,857 - INFO # 	  - | isr_stack            | -        - |   - |    512 (  140) | 0x20000000 | 0x200001c8
-2018-07-27 15:18:28,868 - INFO # 	  1 | idle                 | pending  Q |  15 |    256 (  128) | 0x2000074c | 0x200007cc  | 91.810% |      2032
-2018-07-27 15:18:28,878 - INFO # 	  2 | main                 | running  Q |   7 |   1536 (  728) | 0x2000084c | 0x20000b74  |  2.164% |       846
-2018-07-27 15:18:28,888 - INFO # 	  3 | thread               | bl rx    _ |   6 |   1024 (  384) | 0x20000ee8 | 0x2000122c  |  1.207% |      1221
+2018-08-03 12:10:07,611 - INFO #  ps
+2018-08-03 12:10:07,623 - INFO # 	pid | name                 | state    Q | pri | stack  ( used) | base addr  | current     | runtime  | switches
+2018-08-03 12:10:07,630 - INFO # 	  - | isr_stack            | -        - |   - |    512 (  140) | 0x20000000 | 0x200001c8
+2018-08-03 12:10:07,641 - INFO # 	  1 | idle                 | pending  Q |  15 |    256 (  128) | 0x2000074c | 0x200007cc  | 91.885% |      1983
+2018-08-03 12:10:07,650 - INFO # 	  2 | main                 | running  Q |   7 |   1536 (  728) | 0x2000084c | 0x20000b74  |  2.170% |       847
+2018-08-03 12:10:07,660 - INFO # 	  3 | thread               | bl rx    _ |   6 |   1024 (  384) | 0x20000ee8 | 0x2000122c  |  1.194% |      1201
 

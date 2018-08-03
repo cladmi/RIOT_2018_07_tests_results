@@ -15,7 +15,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.916329
+Info : Target voltage: 2.918068
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -28,40 +28,40 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/thread_flags/bin/stm32f4discovery/tests_thread_flags.elf in 0.877508s (18.233 KiB/s)
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/thread_flags/bin/stm32f4discovery/tests_thread_flags.elf in 0.880214s (18.177 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 11048 bytes in 0.161273s (66.899 KiB/s)
+verified 11048 bytes in 0.160576s (67.190 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:21:14,675 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 12:14:21,838 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:21:17,805 - INFO # main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:21:17,805 - INFO # START
-2018-07-27 15:21:17,806 - INFO # thread(): waiting for 0x1...
-2018-07-27 15:21:17,806 - INFO # main(): setting flag 0x0001
-2018-07-27 15:21:17,807 - INFO # thread(): received flags: 0x0001
-2018-07-27 15:21:17,807 - INFO # thread(): waiting for 0x1 || 0x64...
-2018-07-27 15:21:17,808 - INFO # main(): setting flag 0x0064
-2018-07-27 15:21:17,808 - INFO # thread(): received flags: 0x0064
-2018-07-27 15:21:17,828 - INFO # thread(): waiting for 0x2 && 0x4...
-2018-07-27 15:21:17,830 - INFO # main(): setting flag 0x0001
-2018-07-27 15:21:17,831 - INFO # main(): setting flag 0x0008
-2018-07-27 15:21:17,832 - INFO # main(): setting flag 0x0002
-2018-07-27 15:21:17,833 - INFO # main(): setting flag 0x0004
-2018-07-27 15:21:17,833 - INFO # thread(): received flags: 0x0006
-2018-07-27 15:21:17,835 - INFO # thread(): waiting for any flag, one by one
-2018-07-27 15:21:17,835 - INFO # thread(): received flags: 0x0001
-2018-07-27 15:21:17,836 - INFO # thread(): waiting for any flag, one by one
-2018-07-27 15:21:17,837 - INFO # thread(): received flags: 0x0008
-2018-07-27 15:21:17,838 - INFO # main: setting 100ms timeout...
-2018-07-27 15:21:17,941 - INFO # main: timeout triggered. time passed: 100005us
-2018-07-27 15:21:17,941 - INFO # SUCCESS
+2018-08-03 12:14:24,779 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 12:14:24,779 - INFO # START
+2018-08-03 12:14:24,780 - INFO # thread(): waiting for 0x1...
+2018-08-03 12:14:24,781 - INFO # main(): setting flag 0x0001
+2018-08-03 12:14:24,781 - INFO # thread(): received flags: 0x0001
+2018-08-03 12:14:24,782 - INFO # thread(): waiting for 0x1 || 0x64...
+2018-08-03 12:14:24,783 - INFO # main(): setting flag 0x0064
+2018-08-03 12:14:24,784 - INFO # thread(): received flags: 0x0064
+2018-08-03 12:14:24,800 - INFO # thread(): waiting for 0x2 && 0x4...
+2018-08-03 12:14:24,801 - INFO # main(): setting flag 0x0001
+2018-08-03 12:14:24,802 - INFO # main(): setting flag 0x0008
+2018-08-03 12:14:24,803 - INFO # main(): setting flag 0x0002
+2018-08-03 12:14:24,803 - INFO # main(): setting flag 0x0004
+2018-08-03 12:14:24,804 - INFO # thread(): received flags: 0x0006
+2018-08-03 12:14:24,805 - INFO # thread(): waiting for any flag, one by one
+2018-08-03 12:14:24,806 - INFO # thread(): received flags: 0x0001
+2018-08-03 12:14:24,807 - INFO # thread(): waiting for any flag, one by one
+2018-08-03 12:14:24,808 - INFO # thread(): received flags: 0x0008
+2018-08-03 12:14:24,809 - INFO # main: setting 100ms timeout...
+2018-08-03 12:14:24,913 - INFO # main: timeout triggered. time passed: 100005us
+2018-08-03 12:14:24,914 - INFO # SUCCESS
 

@@ -1,0 +1,16 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../masterRIOT/tests/lwip_sock_ip clean all
+make: Nothing to be done for 'clean'.
+Building application "tests_lwip_sock_ip" for "stm32f4discovery" with MCU "stm32f4".
+
+make[1]: Nothing to be done for 'prepare'.
+"make" -C /home/jcarrano/source/masterRIOT/tests/lwip_sock_ip/bin/pkg/stm32f4discovery/lwip
+/home/jcarrano/source/masterRIOT/pkg/lwip/contrib/sys_arch.c: In function 'sys_thread_new':
+/home/jcarrano/source/masterRIOT/pkg/lwip/contrib/sys_arch.c:191:30: error: cast between incompatible function types from 'lwip_thread_fn' {aka 'void (*)(void *)'} to 'void * (*)(void *)' [-Werror=cast-function-type]
+                              (thread_task_func_t)thread, arg, name)) <= KERNEL_PID_UNDEF) {
+                              ^
+cc1: all warnings being treated as errors
+make[2]: *** [/home/jcarrano/source/masterRIOT/Makefile.base:83: /home/jcarrano/source/masterRIOT/tests/lwip_sock_ip/bin/stm32f4discovery/lwip_contrib/sys_arch.o] Error 1
+make[1]: *** [/home/jcarrano/source/masterRIOT/Makefile.base:20: ALL--/home/jcarrano/source/masterRIOT/pkg/lwip/contrib] Error 2
+make: *** [/home/jcarrano/source/masterRIOT/tests/lwip_sock_ip/../../Makefile.include:403: /home/jcarrano/source/masterRIOT/tests/lwip_sock_ip/bin/stm32f4discovery/application_tests_lwip_sock_ip.a] Error 2
+
+Return value: 2

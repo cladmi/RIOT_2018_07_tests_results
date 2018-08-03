@@ -15,7 +15,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.919189
+Info : Target voltage: 2.918068
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -28,38 +28,38 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 32768 bytes from file /home/jcarrano/source/masterRIOT/tests/cpp11_mutex/bin/stm32f4discovery/tests_cpp11_mutex.elf in 1.518246s (21.077 KiB/s)
+wrote 32768 bytes from file /home/jcarrano/source/masterRIOT/tests/cpp11_mutex/bin/stm32f4discovery/tests_cpp11_mutex.elf in 1.519594s (21.058 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 26516 bytes in 0.290985s (88.989 KiB/s)
+verified 26516 bytes in 0.302043s (85.731 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:01:12,464 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 11:42:49,310 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:01:13,469 - INFO # Done
-2018-07-27 15:01:13,469 - INFO # 
-2018-07-27 15:01:13,469 - INFO # Try_lock ...
-2018-07-27 15:01:13,469 - INFO # Done
-2018-07-27 15:01:13,469 - INFO # 
-2018-07-27 15:01:13,470 - INFO # Bye, bye.
-2018-07-27 15:01:13,470 - INFO # *****************************************
-2018-07-27 15:01:13,470 - INFO # 
-2018-07-27 15:01:15,492 - INFO # main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:01:15,492 - INFO # 
-2018-07-27 15:01:15,492 - INFO # ************ C++ mutex test ***********
-2018-07-27 15:01:15,492 - INFO # Lock and unlock ... 
-2018-07-27 15:01:16,099 - INFO # Done
-2018-07-27 15:01:16,099 - INFO # 
-2018-07-27 15:01:16,099 - INFO # Try_lock ...
-2018-07-27 15:01:16,100 - INFO # Done
-2018-07-27 15:01:16,100 - INFO # 
-2018-07-27 15:01:16,100 - INFO # Bye, bye.
-2018-07-27 15:01:16,102 - INFO # *****************************************
+2018-08-03 11:42:50,317 - INFO # Done
+2018-08-03 11:42:50,317 - INFO # 
+2018-08-03 11:42:50,317 - INFO # Try_lock ...
+2018-08-03 11:42:50,318 - INFO # Done
+2018-08-03 11:42:50,318 - INFO # 
+2018-08-03 11:42:50,318 - INFO # Bye, bye.
+2018-08-03 11:42:50,320 - INFO # *****************************************
+2018-08-03 11:42:50,320 - INFO # 
+2018-08-03 11:42:52,334 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 11:42:52,334 - INFO # 
+2018-08-03 11:42:52,336 - INFO # ************ C++ mutex test ***********
+2018-08-03 11:42:52,336 - INFO # Lock and unlock ... 
+2018-08-03 11:42:52,940 - INFO # Done
+2018-08-03 11:42:52,941 - INFO # 
+2018-08-03 11:42:52,941 - INFO # Try_lock ...
+2018-08-03 11:42:52,941 - INFO # Done
+2018-08-03 11:42:52,942 - INFO # 
+2018-08-03 11:42:52,942 - INFO # Bye, bye.
+2018-08-03 11:42:52,943 - INFO # *****************************************
 

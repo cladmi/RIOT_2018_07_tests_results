@@ -15,33 +15,54 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.916329
-Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Target voltage: 2.922361
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32f4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 100ms
+Info : Previous state query failed, trying to reconnect
+Error: jtag status contains invalid mode value - communication failure
+Polling target stm32f4x.cpu failed, trying to reexamine
+Examination failed, GDB will be halted. Polling again in 300ms
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
- 0* stm32f4x.cpu       hla_target little stm32f4x.cpu       running
+ 0* stm32f4x.cpu       hla_target little stm32f4x.cpu       unknown
 adapter speed: 2000 kHz
+Error: mem2array: Read @ 0xe0042004, w=4, cnt=1, failed
+/usr/bin/../share/openocd/scripts/mem_helper.tcl:6: Error: 
+in procedure 'reset' 
+in procedure 'ocd_bouncer' 
+in procedure 'ocd_process_reset' 
+in procedure 'ocd_process_reset_inner' called at file "embedded:startup.tcl", line 248
+in procedure 'stm32f4x.cpu' called at file "embedded:startup.tcl", line 299
+in procedure 'ocd_bouncer' 
+in procedure 'mmw' 
+in procedure 'mrw' called at file "/usr/bin/../share/openocd/scripts/mem_helper.tcl", line 25
+at file "/usr/bin/../share/openocd/scripts/mem_helper.tcl", line 6
+
+Info : Previous state query failed, trying to reconnect
 target halted due to debug-request, current mode: Thread 
-xPSR: 0x01000000 pc: 0x080004bc msp: 0x20000200
+xPSR: 0x01000000 pc: 0x080004f0 msp: 0x20000200
+Polling target stm32f4x.cpu failed, trying to reexamine
+Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
 auto erase enabled
 Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/bench_msg_pingpong/bin/stm32f4discovery/tests_bench_msg_pingpong.elf in 0.874468s (18.297 KiB/s)
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/bench_msg_pingpong/bin/stm32f4discovery/tests_bench_msg_pingpong.elf in 0.873222s (18.323 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 10764 bytes in 0.159560s (65.879 KiB/s)
+verified 10764 bytes in 0.158849s (66.174 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 14:59:13,017 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 11:39:52,086 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 14:59:14,022 - INFO # { "result" : 290655 }
+2018-08-03 11:39:53,092 - INFO # { "result" : 290655 }
 

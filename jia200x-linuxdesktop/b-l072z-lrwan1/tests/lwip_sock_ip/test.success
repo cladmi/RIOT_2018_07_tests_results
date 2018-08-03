@@ -1,0 +1,197 @@
+/home/jialamos/Development/RIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00226-g1c2e3d41d (2018-01-02-18:28)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.258268
+Info : stm32l0.cpu: hardware has 4 breakpoints, 2 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l0.cpu        hla_target little stm32l0.cpu        reset
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xf1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L0xx (Cat.5)
+Info : STM32L flash has dual banks. Bank (0) size is 96kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 49152 bytes from file /home/jialamos/Development/RIOT/tests/lwip_sock_ip/bin/b-l072z-lrwan1/tests_lwip_sock_ip.elf in 11.091405s (4.328 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 48772 bytes in 1.980698s (24.047 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+./tests/01-run.py
+/home/jialamos/Development/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-03 13:46:56,551 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-03 13:46:59,300 - INFO # Calling test_sock_ip_create6__EAFNOSUPPORT()
+2018-08-03 13:46:59,304 - INFO # Calling test_sock_ip_create6__EINVAL_addr()
+2018-08-03 13:46:59,309 - INFO # Calling test_sock_ip_create6__EINVAL_netif()
+2018-08-03 13:46:59,312 - INFO # Calling test_sock_ip_create6__no_endpoints()
+2018-08-03 13:46:59,316 - INFO # Calling test_sock_ip_create6__only_local()
+2018-08-03 13:46:59,321 - INFO # Calling test_sock_ip_create6__only_local_reuse_ep()
+2018-08-03 13:46:59,325 - INFO # Calling test_sock_ip_create6__only_remote()
+2018-08-03 13:46:59,329 - INFO # Calling test_sock_ip_create6__full()
+2018-08-03 13:46:59,333 - INFO # Calling test_sock_ip_recv6__EADDRNOTAVAIL()
+2018-08-03 13:46:59,336 - INFO # Calling test_sock_ip_recv6__EAGAIN()
+2018-08-03 13:46:59,339 - INFO # Calling test_sock_ip_recv6__ENOBUFS()
+2018-08-03 13:46:59,344 - INFO # Calling test_sock_ip_recv6__ETIMEDOUT()
+2018-08-03 13:46:59,346 - INFO #  * Calling sock_ip_recv()
+2018-08-03 13:46:59,608 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 13:46:59,609 - INFO # code 0x41
+2018-08-03 13:47:02,641 - INFO # Calling test_sock_ip_create6__EAFNOSUPPORT()
+2018-08-03 13:47:02,644 - INFO # Calling test_sock_ip_create6__EINVAL_addr()
+2018-08-03 13:47:02,648 - INFO # Calling test_sock_ip_create6__EINVAL_netif()
+2018-08-03 13:47:02,653 - INFO # Calling test_sock_ip_create6__no_endpoints()
+2018-08-03 13:47:02,656 - INFO # Calling test_sock_ip_create6__only_local()
+2018-08-03 13:47:02,661 - INFO # Calling test_sock_ip_create6__only_local_reuse_ep()
+2018-08-03 13:47:02,665 - INFO # Calling test_sock_ip_create6__only_remote()
+2018-08-03 13:47:02,669 - INFO # Calling test_sock_ip_create6__full()
+2018-08-03 13:47:02,673 - INFO # Calling test_sock_ip_recv6__EADDRNOTAVAIL()
+2018-08-03 13:47:02,676 - INFO # Calling test_sock_ip_recv6__EAGAIN()
+2018-08-03 13:47:02,680 - INFO # Calling test_sock_ip_recv6__ENOBUFS()
+2018-08-03 13:47:02,684 - INFO # Calling test_sock_ip_recv6__ETIMEDOUT()
+2018-08-03 13:47:02,686 - INFO #  * Calling sock_ip_recv()
+2018-08-03 13:47:03,698 - INFO #  * (timed out with timeout 1000000)
+2018-08-03 13:47:03,702 - INFO # Calling test_sock_ip_recv6__socketed()
+2018-08-03 13:47:03,708 - INFO # Calling test_sock_ip_recv6__socketed_with_remote()
+2018-08-03 13:47:03,712 - INFO # Calling test_sock_ip_recv6__unsocketed()
+2018-08-03 13:47:03,717 - INFO # Calling test_sock_ip_recv6__unsocketed_with_remote()
+2018-08-03 13:47:03,722 - INFO # Calling test_sock_ip_recv6__with_timeout()
+2018-08-03 13:47:03,726 - INFO # Calling test_sock_ip_recv6__non_blocking()
+2018-08-03 13:47:03,731 - INFO # Calling test_sock_ip_send6__EAFNOSUPPORT()
+2018-08-03 13:47:03,735 - INFO # Calling test_sock_ip_send6__EINVAL_addr()
+2018-08-03 13:47:03,738 - INFO # Calling test_sock_ip_send6__EINVAL_netif()
+2018-08-03 13:47:03,743 - INFO # Calling test_sock_ip_send6__EHOSTUNREACH()
+2018-08-03 13:47:03,747 - INFO # Calling test_sock_ip_send6__ENOTCONN()
+2018-08-03 13:47:03,752 - INFO # Calling test_sock_ip_send6__socketed_no_local_no_netif()
+2018-08-03 13:47:03,757 - INFO # Calling test_sock_ip_send6__socketed_no_netif()
+2018-08-03 13:47:03,764 - INFO # Calling test_sock_ip_send6__socketed_no_local()
+2018-08-03 13:47:03,768 - INFO # Calling test_sock_ip_send6__socketed()
+2018-08-03 13:47:03,774 - INFO # Calling test_sock_ip_send6__socketed_other_remote()
+2018-08-03 13:47:03,780 - INFO # Calling test_sock_ip_send6__unsocketed_no_local_no_netif()
+2018-08-03 13:47:03,786 - INFO # Calling test_sock_ip_send6__unsocketed_no_netif()
+2018-08-03 13:47:03,792 - INFO # Calling test_sock_ip_send6__unsocketed_no_local()
+2018-08-03 13:47:03,797 - INFO # Calling test_sock_ip_send6__unsocketed()
+2018-08-03 13:47:03,803 - INFO # Calling test_sock_ip_send6__no_sock_no_netif()
+2018-08-03 13:47:03,807 - INFO # Calling test_sock_ip_send6__no_sock()
+2018-08-03 13:47:03,811 - INFO # ALL TESTS SUCCESSFUL
+

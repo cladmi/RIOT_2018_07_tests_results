@@ -1,0 +1,191 @@
+/home/jialamos/Development/RIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00226-g1c2e3d41d (2018-01-02-18:28)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.258268
+Info : stm32l0.cpu: hardware has 4 breakpoints, 2 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l0.cpu        hla_target little stm32l0.cpu        reset
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xf1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L0xx (Cat.5)
+Info : STM32L flash has dual banks. Bank (0) size is 96kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 32768 bytes from file /home/jialamos/Development/RIOT/tests/pkg_ucglib/bin/b-l072z-lrwan1/tests_pkg_ucglib.elf in 7.421914s (4.312 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 29408 bytes in 1.239829s (23.163 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/jialamos/Development/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-03 13:58:01,389 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-03 13:58:03,129 - INFO # ucg: UCG_MSG_DRAW_PIXEL (128)
+2018-08-03 13:58:03,133 - INFO # ucg: UCG_MSG_DRAW_PIXEL (256)
+2018-08-03 13:58:03,136 - INFO # ucg: UCG_MSG_DRAW_PIXEL (384)
+2018-08-03 13:58:03,139 - INFO # ucg: UCG_MSG_DRAW_PIXEL (512)
+2018-08-03 13:58:03,143 - INFO # ucg: UCG_MSG_DRAW_PIXEL (640)
+2018-08-03 13:58:03,146 - INFO # ucg: UCG_MSG_DRAW_PIXEL (768)
+2018-08-03 13:58:03,150 - INFO # ucg: UCG_MSG_DRAW_PIXEL (896)
+2018-08-03 13:58:03,153 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1024)
+2018-08-03 13:58:03,156 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1152)
+2018-08-03 13:58:03,160 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1280)
+2018-08-03 13:58:03,164 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1408)
+2018-08-03 13:58:03,167 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1536)
+2018-08-03 13:58:03,170 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1664)
+2018-08-03 13:58:03,174 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1792)
+2018-08-03 13:58:03,177 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1920)
+2018-08-03 13:58:03,181 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2048)
+2018-08-03 13:58:03,185 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2176)
+2018-08-03 13:58:03,188 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2304)
+2018-08-03 13:58:03,191 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2432)
+2018-08-03 13:58:03,195 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2560)
+2018-08-03 13:58:03,198 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2688)
+2018-08-03 13:58:03,201 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2816)
+2018-08-03 13:58:03,205 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2944)
+2018-08-03 13:58:03,209 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3072)
+2018-08-03 13:58:03,212 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3200)
+2018-08-03 13:58:03,216 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3328)
+2018-08-03 13:58:03,219 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3456)
+2018-08-03 13:58:03,223 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3584)
+2018-08-03 13:58:03,226 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3712)
+2018-08-03 13:58:03,230 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3840)
+2018-08-03 13:58:03,233 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3968)
+2018-08-03 13:58:03,237 - INFO # ucg: UCG_MSG_DRAW_PIXEL (4096)
+2018-08-03 13:58:03,240 - INFO # ucg: UCG_MSG_DRAW_PIXEL (4224)
+2018-08-03 13:58:03,244 - INFO # ucg: UCG_MSG_DRAW_PIXEL (4352)
+2018-08-03 13:58:03,247 - INFO # ucg: UCG_MSG_DRAW_PIXEL (4480)
+2018-08-03 13:58:03,251 - INFO # ucg: UCG_MSG_DRAW_PIXEL (4608)
+2018-08-03 13:58:04,480 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 13:58:04,482 - INFO # Initializing dummy output.
+2018-08-03 13:58:04,485 - INFO # ucg: UCG_MSG_DEV_POWER_UP
+2018-08-03 13:58:04,487 - INFO # ucg: UCG_MSG_GET_DIMENSION
+2018-08-03 13:58:04,489 - INFO # Initializing display.
+2018-08-03 13:58:04,491 - INFO # Drawing on screen.
+2018-08-03 13:58:06,516 - INFO # ucg: UCG_MSG_DRAW_PIXEL (128)
+2018-08-03 13:58:06,520 - INFO # ucg: UCG_MSG_DRAW_PIXEL (256)
+2018-08-03 13:58:06,523 - INFO # ucg: UCG_MSG_DRAW_PIXEL (384)
+2018-08-03 13:58:06,526 - INFO # ucg: UCG_MSG_DRAW_PIXEL (512)
+2018-08-03 13:58:06,530 - INFO # ucg: UCG_MSG_DRAW_PIXEL (640)
+2018-08-03 13:58:06,534 - INFO # ucg: UCG_MSG_DRAW_PIXEL (768)
+2018-08-03 13:58:06,537 - INFO # ucg: UCG_MSG_DRAW_PIXEL (896)
+2018-08-03 13:58:06,541 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1024)
+2018-08-03 13:58:06,544 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1152)
+2018-08-03 13:58:06,547 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1280)
+2018-08-03 13:58:06,551 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1408)
+2018-08-03 13:58:06,555 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1536)
+2018-08-03 13:58:06,557 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1664)
+2018-08-03 13:58:06,561 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1792)
+2018-08-03 13:58:06,565 - INFO # ucg: UCG_MSG_DRAW_PIXEL (1920)
+2018-08-03 13:58:06,568 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2048)
+2018-08-03 13:58:06,572 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2176)
+2018-08-03 13:58:06,575 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2304)
+2018-08-03 13:58:06,579 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2432)
+2018-08-03 13:58:06,582 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2560)
+2018-08-03 13:58:06,586 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2688)
+2018-08-03 13:58:06,589 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2816)
+2018-08-03 13:58:06,593 - INFO # ucg: UCG_MSG_DRAW_PIXEL (2944)
+2018-08-03 13:58:06,596 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3072)
+2018-08-03 13:58:06,600 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3200)
+2018-08-03 13:58:06,603 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3328)
+2018-08-03 13:58:06,607 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3456)
+2018-08-03 13:58:06,610 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3584)
+2018-08-03 13:58:06,614 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3712)
+2018-08-03 13:58:06,617 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3840)
+2018-08-03 13:58:06,621 - INFO # ucg: UCG_MSG_DRAW_PIXEL (3968)
+2018-08-03 13:58:06,624 - INFO # ucg: UCG_MSG_DRAW_PIXEL (4096)
+2018-08-03 13:58:06,628 - INFO # ucg: UCG_MSG_DRAW_PIXEL (4224)
+2018-08-03 13:58:06,631 - INFO # ucg: UCG_MSG_DRAW_PIXEL (4352)
+2018-08-03 13:58:06,635 - INFO # ucg: UCG_MSG_DRAW_PIXEL (4480)
+2018-08-03 13:58:06,638 - INFO # ucg: UCG_MSG_DRAW_PIXEL (4608)
+

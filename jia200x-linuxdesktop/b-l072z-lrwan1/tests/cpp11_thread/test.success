@@ -1,0 +1,155 @@
+/home/jialamos/Development/RIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00226-g1c2e3d41d (2018-01-02-18:28)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_assert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.259842
+Info : stm32l0.cpu: hardware has 4 breakpoints, 2 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l0.cpu        hla_target little stm32l0.cpu        reset
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xf1000000 pc: 0x08000508 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L0xx (Cat.5)
+Info : STM32L flash has dual banks. Bank (0) size is 96kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 32768 bytes from file /home/jialamos/Development/RIOT/tests/cpp11_thread/bin/b-l072z-lrwan1/tests_cpp11_thread.elf in 7.389383s (4.331 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 29776 bytes in 1.253784s (23.192 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/jialamos/Development/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-03 13:26:22,566 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-03 13:26:23,569 - INFO # Done
+2018-08-03 13:26:23,570 - INFO # 
+2018-08-03 13:26:23,571 - INFO # Testing sleep_until ...
+2018-08-03 13:26:24,312 - INFO # Done
+2018-08-03 13:26:24,313 - INFO # 
+2018-08-03 13:26:24,315 - INFO # Swapping two threads ...
+2018-08-03 13:26:24,315 - INFO # Done
+2018-08-03 13:26:24,316 - INFO # 
+2018-08-03 13:26:24,317 - INFO # Move constructor ...
+2018-08-03 13:26:24,317 - INFO # Done
+2018-08-03 13:26:24,318 - INFO # 
+2018-08-03 13:26:24,318 - INFO # Bye, bye.
+2018-08-03 13:26:24,322 - INFO # ******************************************
+2018-08-03 13:26:25,619 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 13:26:25,619 - INFO # 
+2018-08-03 13:26:25,622 - INFO # ************ C++ thread test ***********
+2018-08-03 13:26:25,627 - INFO # Creating one thread and passing an argument ...
+2018-08-03 13:26:25,627 - INFO # Done
+2018-08-03 13:26:25,627 - INFO # 
+2018-08-03 13:26:25,630 - INFO # Creating detached thread ...
+2018-08-03 13:26:25,630 - INFO # Done
+2018-08-03 13:26:25,630 - INFO # 
+2018-08-03 13:26:25,633 - INFO # Join on 'finished' thread ...
+2018-08-03 13:26:25,634 - INFO # Done
+2018-08-03 13:26:25,634 - INFO # 
+2018-08-03 13:26:25,636 - INFO # Join on 'running' thread ...
+2018-08-03 13:26:25,637 - INFO # Done
+2018-08-03 13:26:25,637 - INFO # 
+2018-08-03 13:26:25,639 - INFO # Testing sleep_for ...
+2018-08-03 13:26:26,649 - INFO # Done
+2018-08-03 13:26:26,649 - INFO # 
+2018-08-03 13:26:26,651 - INFO # Testing sleep_until ...
+2018-08-03 13:26:27,661 - INFO # Done
+2018-08-03 13:26:27,662 - INFO # 
+2018-08-03 13:26:27,663 - INFO # Swapping two threads ...
+2018-08-03 13:26:27,664 - INFO # Done
+2018-08-03 13:26:27,664 - INFO # 
+2018-08-03 13:26:27,665 - INFO # Move constructor ...
+2018-08-03 13:26:27,666 - INFO # Done
+2018-08-03 13:26:27,666 - INFO # 
+2018-08-03 13:26:27,667 - INFO # Bye, bye.
+2018-08-03 13:26:27,671 - INFO # ******************************************
+

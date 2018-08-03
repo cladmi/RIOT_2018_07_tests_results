@@ -15,7 +15,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.916329
+Info : Target voltage: 2.920930
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -28,33 +28,33 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/mutex_order/bin/stm32f4discovery/tests_mutex_order.elf in 0.868865s (18.415 KiB/s)
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/mutex_order/bin/stm32f4discovery/tests_mutex_order.elf in 0.869268s (18.406 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 9176 bytes in 0.147333s (60.821 KiB/s)
+verified 9176 bytes in 0.145222s (61.705 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:12:33,666 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 12:01:12,927 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:12:36,742 - INFO # main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:12:36,743 - INFO # Mutex order test
-2018-07-27 15:12:36,744 - INFO # Please refer to the README.md for more information
-2018-07-27 15:12:36,745 - INFO # 
-2018-07-27 15:12:36,746 - INFO # T3 (prio 6): trying to lock mutex now
-2018-07-27 15:12:36,747 - INFO # T4 (prio 4): trying to lock mutex now
-2018-07-27 15:12:36,748 - INFO # T5 (prio 0): trying to lock mutex now
-2018-07-27 15:12:36,763 - INFO # T6 (prio 2): trying to lock mutex now
-2018-07-27 15:12:36,764 - INFO # T7 (prio 1): trying to lock mutex now
-2018-07-27 15:12:36,765 - INFO # T5 (prio 0): locked mutex now
-2018-07-27 15:12:36,766 - INFO # T7 (prio 1): locked mutex now
-2018-07-27 15:12:36,767 - INFO # T6 (prio 2): locked mutex now
-2018-07-27 15:12:36,768 - INFO # T4 (prio 4): locked mutex now
-2018-07-27 15:12:36,769 - INFO # T3 (prio 6): locked mutex now
+2018-08-03 12:01:15,946 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 12:01:15,947 - INFO # Mutex order test
+2018-08-03 12:01:15,948 - INFO # Please refer to the README.md for more information
+2018-08-03 12:01:15,948 - INFO # 
+2018-08-03 12:01:15,949 - INFO # T3 (prio 6): trying to lock mutex now
+2018-08-03 12:01:15,950 - INFO # T4 (prio 4): trying to lock mutex now
+2018-08-03 12:01:15,950 - INFO # T5 (prio 0): trying to lock mutex now
+2018-08-03 12:01:15,966 - INFO # T6 (prio 2): trying to lock mutex now
+2018-08-03 12:01:15,967 - INFO # T7 (prio 1): trying to lock mutex now
+2018-08-03 12:01:15,968 - INFO # T5 (prio 0): locked mutex now
+2018-08-03 12:01:15,969 - INFO # T7 (prio 1): locked mutex now
+2018-08-03 12:01:15,970 - INFO # T6 (prio 2): locked mutex now
+2018-08-03 12:01:15,971 - INFO # T4 (prio 4): locked mutex now
+2018-08-03 12:01:15,971 - INFO # T3 (prio 6): locked mutex now
 

@@ -16,7 +16,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.916329
+Info : Target voltage: 2.918068
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -29,12 +29,12 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/warn_conflict/bin/stm32f4discovery/tests_warn_conflict.elf in 0.875303s (18.279 KiB/s)
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/warn_conflict/bin/stm32f4discovery/tests_warn_conflict.elf in 0.870279s (18.385 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 9092 bytes in 0.153426s (57.871 KiB/s)
+verified 9092 bytes in 0.144201s (61.573 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
@@ -45,9 +45,9 @@ Rationale: On stm32f4discovery boards there are the same pins for the DAC and/or
 Building application "tests_warn_conflict" for "stm32f4discovery" with MCU "stm32f4".
 
 /home/jcarrano/source/masterRIOT/Makefile.base:82: target '/home/jcarrano/source/masterRIOT/tests/warn_conflict/bin/stm32f4discovery/core/msg.o' given more than once in the same rule
-[01m[Karm-none-eabi-gcc:[m[K [01;31m[Kfatal error: [m[K/usr/lib/gcc/arm-none-eabi/8.1.0/../../../../arm-none-eabi/lib/nano.specs: attempt to rename spec '[01m[Klink[m[K' to already defined spec '[01m[Knano_link[m[K'
+[01m[Karm-none-eabi-gcc:[m[K [01;31m[Kfatal error: [m[K/usr/lib/gcc/arm-none-eabi/8.2.0/../../../../arm-none-eabi/lib/nano.specs: attempt to rename spec '[01m[Klink[m[K' to already defined spec '[01m[Knano_link[m[K'
 compilation terminated.
-make[1]: *** [/home/jcarrano/source/masterRIOT/Makefile.include:411: /home/jcarrano/source/masterRIOT/tests/warn_conflict/bin/stm32f4discovery/tests_warn_conflict.elf] Error 1
+make[1]: *** [/home/jcarrano/source/masterRIOT/Makefile.include:400: /home/jcarrano/source/masterRIOT/tests/warn_conflict/bin/stm32f4discovery/tests_warn_conflict.elf] Error 1
   File "tests/01-make.py", line 28, in testfunc
     child.expect_exact('\x1b[1;33mThe following features may conflict:'
   File "/usr/lib/python3.6/site-packages/pexpect/spawnbase.py", line 418, in expect_exact

@@ -1,4 +1,3 @@
-make[1]: Nothing to be done for 'Makefile.include'.
 /home/jcarrano/source/masterRIOT/dist/tools/openocd/openocd.sh flash
 ### Flashing Target ###
 Open On-Chip Debugger 0.10.0
@@ -16,7 +15,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.917759
+Info : Target voltage: 2.919499
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -29,25 +28,24 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/pkg_micro-ecc-with-hwrng/bin/stm32f4discovery/tests_pkg_micro-ecc-with-hwrng.elf in 0.916744s (17.453 KiB/s)
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/pkg_micro-ecc-with-hwrng/bin/stm32f4discovery/tests_pkg_micro-ecc-with-hwrng.elf in 0.901304s (17.752 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 15244 bytes in 0.195999s (75.953 KiB/s)
+verified 15244 bytes in 0.196123s (75.905 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
-make[2]: Nothing to be done for 'Makefile.include'.
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:15:00,596 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 12:05:33,209 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:15:03,584 - INFO # main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:15:03,584 - INFO # micro-ecc compiled!
-2018-07-27 15:15:03,585 - INFO # Testing 16 random private key pairs and signature using HWRNG
-2018-07-27 15:15:09,626 - INFO # ................ done with 0 error(s)
-2018-07-27 15:15:09,627 - INFO # SUCCESS
+2018-08-03 12:05:36,243 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 12:05:36,244 - INFO # micro-ecc compiled!
+2018-08-03 12:05:36,244 - INFO # Testing 16 random private key pairs and signature using HWRNG
+2018-08-03 12:05:42,286 - INFO # ................ done with 0 error(s)
+2018-08-03 12:05:42,287 - INFO # SUCCESS
 

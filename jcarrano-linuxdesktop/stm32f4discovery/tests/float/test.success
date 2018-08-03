@@ -15,7 +15,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.916329
+Info : Target voltage: 2.920930
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -28,23 +28,23 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/float/bin/stm32f4discovery/tests_float.elf in 0.886867s (18.041 KiB/s)
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/float/bin/stm32f4discovery/tests_float.elf in 0.889219s (17.993 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 10336 bytes in 0.154014s (65.538 KiB/s)
+verified 10336 bytes in 0.154330s (65.404 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:06:46,218 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 11:53:29,463 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:06:49,186 - INFO # main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:06:49,186 - INFO # Testing floating point arithmetics...
-2018-07-27 15:06:49,186 - INFO # 
-2018-07-27 15:06:49,435 - INFO # [SUCCESS]
+2018-08-03 11:53:32,434 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 11:53:32,434 - INFO # Testing floating point arithmetics...
+2018-08-03 11:53:32,434 - INFO # 
+2018-08-03 11:53:32,683 - INFO # [SUCCESS]
 

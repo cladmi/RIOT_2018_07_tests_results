@@ -15,7 +15,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.916329
+Info : Target voltage: 2.918068
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -28,92 +28,92 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/posix_semaphore/bin/stm32f4discovery/tests_posix_semaphore.elf in 0.899253s (17.793 KiB/s)
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/posix_semaphore/bin/stm32f4discovery/tests_posix_semaphore.elf in 0.901680s (17.745 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 15448 bytes in 0.197955s (76.209 KiB/s)
+verified 15448 bytes in 0.197452s (76.403 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:17:53,589 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 12:09:24,541 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:17:54,595 - INFO # first: timed out
-2018-07-27 15:17:54,596 - INFO # first: waited 1000007 usec
-2018-07-27 15:17:54,597 - INFO # ######################### DONE
-2018-07-27 15:17:56,691 - INFO # main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:17:56,692 - INFO # ######################### TEST1:
-2018-07-27 15:17:56,693 - INFO # first: sem_init
-2018-07-27 15:17:56,694 - INFO # first: thread create
-2018-07-27 15:17:56,694 - INFO # first: thread created
-2018-07-27 15:17:56,695 - INFO # first: sem_getvalue
-2018-07-27 15:17:56,696 - INFO # first: sem_getvalue != 0
-2018-07-27 15:17:56,696 - INFO # first: do yield
-2018-07-27 15:17:56,697 - INFO # second: sem_trywait
-2018-07-27 15:17:56,697 - INFO # second: sem_trywait failed
-2018-07-27 15:17:56,713 - INFO # second: sem_trywait done with == 0
-2018-07-27 15:17:56,714 - INFO # second: wait for post
-2018-07-27 15:17:56,715 - INFO # first: done yield
-2018-07-27 15:17:56,715 - INFO # first: sem_trywait
-2018-07-27 15:17:56,716 - INFO # first: sem_trywait FAILED
-2018-07-27 15:17:56,717 - INFO # first: sem_trywait done
-2018-07-27 15:17:56,717 - INFO # first: sem_post
-2018-07-27 15:17:56,718 - INFO # second: sem was posted
-2018-07-27 15:17:56,719 - INFO # second: end
-2018-07-27 15:17:56,719 - INFO # first: sem_post done
-2018-07-27 15:17:56,720 - INFO # first: sem_destroy
-2018-07-27 15:17:56,720 - INFO # first: end
-2018-07-27 15:17:56,736 - INFO # ######################### TEST2:
-2018-07-27 15:17:56,737 - INFO # first: sem_init
-2018-07-27 15:17:56,738 - INFO # first: thread create: 5
-2018-07-27 15:17:56,739 - INFO # first: thread created: priority 5 (1/5)
-2018-07-27 15:17:56,739 - INFO # first: thread create: 4
-2018-07-27 15:17:56,740 - INFO # first: thread created: priority 4 (2/5)
-2018-07-27 15:17:56,741 - INFO # first: thread create: 3
-2018-07-27 15:17:56,742 - INFO # first: thread created: priority 3 (3/5)
-2018-07-27 15:17:56,743 - INFO # first: thread create: 2
-2018-07-27 15:17:56,758 - INFO # first: thread created: priority 2 (4/5)
-2018-07-27 15:17:56,759 - INFO # first: thread create: 1
-2018-07-27 15:17:56,760 - INFO # first: thread created: priority 1 (5/5)
-2018-07-27 15:17:56,762 - INFO # ------------------------------------------
-2018-07-27 15:17:56,762 - INFO # post no. 0
-2018-07-27 15:17:56,763 - INFO # Thread 'priority 1' woke up.
-2018-07-27 15:17:56,763 - INFO # Back in main thread.
-2018-07-27 15:17:56,764 - INFO # post no. 1
-2018-07-27 15:17:56,765 - INFO # Thread 'priority 2' woke up.
-2018-07-27 15:17:56,765 - INFO # Back in main thread.
-2018-07-27 15:17:56,780 - INFO # post no. 2
-2018-07-27 15:17:56,781 - INFO # Thread 'priority 3' woke up.
-2018-07-27 15:17:56,782 - INFO # Back in main thread.
-2018-07-27 15:17:56,782 - INFO # post no. 3
-2018-07-27 15:17:56,783 - INFO # Thread 'priority 4' woke up.
-2018-07-27 15:17:56,784 - INFO # Back in main thread.
-2018-07-27 15:17:56,784 - INFO # post no. 4
-2018-07-27 15:17:56,785 - INFO # Thread 'priority 5' woke up.
-2018-07-27 15:17:56,786 - INFO # Back in main thread.
-2018-07-27 15:17:56,787 - INFO # ######################### TEST3:
-2018-07-27 15:17:56,787 - INFO # first: sem_init s1
-2018-07-27 15:17:56,788 - INFO # first: sem_init s2
-2018-07-27 15:17:56,803 - INFO # first: create thread 1
-2018-07-27 15:17:56,804 - INFO # first: create thread 2
-2018-07-27 15:17:56,805 - INFO # ------------------------------------------
-2018-07-27 15:17:56,806 - INFO # post s1
-2018-07-27 15:17:56,807 - INFO # Thread 1 woke up after waiting for s1.
-2018-07-27 15:17:56,807 - INFO # post s2
-2018-07-27 15:17:56,808 - INFO # Thread 2 woke up after waiting for s2.
-2018-07-27 15:17:56,808 - INFO # post s2
-2018-07-27 15:17:56,810 - INFO # Thread 1 woke up after waiting for s2.
-2018-07-27 15:17:56,810 - INFO # post s1
-2018-07-27 15:17:56,811 - INFO # Thread 2 woke up after waiting for s1.
-2018-07-27 15:17:56,812 - INFO # ######################### TEST4:
-2018-07-27 15:17:56,813 - INFO # first: sem_init s1
-2018-07-27 15:17:56,813 - INFO # first: wait 1 sec for s1
-2018-07-27 15:17:57,817 - INFO # first: timed out
-2018-07-27 15:17:57,818 - INFO # first: waited 1000007 usec
-2018-07-27 15:17:57,819 - INFO # ######################### DONE
+2018-08-03 12:09:25,547 - INFO # first: timed out
+2018-08-03 12:09:25,548 - INFO # first: waited 1000007 usec
+2018-08-03 12:09:25,549 - INFO # ######################### DONE
+2018-08-03 12:09:27,647 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 12:09:27,648 - INFO # ######################### TEST1:
+2018-08-03 12:09:27,648 - INFO # first: sem_init
+2018-08-03 12:09:27,649 - INFO # first: thread create
+2018-08-03 12:09:27,650 - INFO # first: thread created
+2018-08-03 12:09:27,650 - INFO # first: sem_getvalue
+2018-08-03 12:09:27,651 - INFO # first: sem_getvalue != 0
+2018-08-03 12:09:27,652 - INFO # first: do yield
+2018-08-03 12:09:27,652 - INFO # second: sem_trywait
+2018-08-03 12:09:27,653 - INFO # second: sem_trywait failed
+2018-08-03 12:09:27,668 - INFO # second: sem_trywait done with == 0
+2018-08-03 12:09:27,669 - INFO # second: wait for post
+2018-08-03 12:09:27,670 - INFO # first: done yield
+2018-08-03 12:09:27,670 - INFO # first: sem_trywait
+2018-08-03 12:09:27,671 - INFO # first: sem_trywait FAILED
+2018-08-03 12:09:27,672 - INFO # first: sem_trywait done
+2018-08-03 12:09:27,672 - INFO # first: sem_post
+2018-08-03 12:09:27,673 - INFO # second: sem was posted
+2018-08-03 12:09:27,673 - INFO # second: end
+2018-08-03 12:09:27,674 - INFO # first: sem_post done
+2018-08-03 12:09:27,674 - INFO # first: sem_destroy
+2018-08-03 12:09:27,675 - INFO # first: end
+2018-08-03 12:09:27,690 - INFO # ######################### TEST2:
+2018-08-03 12:09:27,690 - INFO # first: sem_init
+2018-08-03 12:09:27,691 - INFO # first: thread create: 5
+2018-08-03 12:09:27,692 - INFO # first: thread created: priority 5 (1/5)
+2018-08-03 12:09:27,693 - INFO # first: thread create: 4
+2018-08-03 12:09:27,694 - INFO # first: thread created: priority 4 (2/5)
+2018-08-03 12:09:27,695 - INFO # first: thread create: 3
+2018-08-03 12:09:27,696 - INFO # first: thread created: priority 3 (3/5)
+2018-08-03 12:09:27,697 - INFO # first: thread create: 2
+2018-08-03 12:09:27,713 - INFO # first: thread created: priority 2 (4/5)
+2018-08-03 12:09:27,714 - INFO # first: thread create: 1
+2018-08-03 12:09:27,715 - INFO # first: thread created: priority 1 (5/5)
+2018-08-03 12:09:27,716 - INFO # ------------------------------------------
+2018-08-03 12:09:27,716 - INFO # post no. 0
+2018-08-03 12:09:27,717 - INFO # Thread 'priority 1' woke up.
+2018-08-03 12:09:27,718 - INFO # Back in main thread.
+2018-08-03 12:09:27,718 - INFO # post no. 1
+2018-08-03 12:09:27,719 - INFO # Thread 'priority 2' woke up.
+2018-08-03 12:09:27,719 - INFO # Back in main thread.
+2018-08-03 12:09:27,734 - INFO # post no. 2
+2018-08-03 12:09:27,735 - INFO # Thread 'priority 3' woke up.
+2018-08-03 12:09:27,736 - INFO # Back in main thread.
+2018-08-03 12:09:27,736 - INFO # post no. 3
+2018-08-03 12:09:27,737 - INFO # Thread 'priority 4' woke up.
+2018-08-03 12:09:27,738 - INFO # Back in main thread.
+2018-08-03 12:09:27,738 - INFO # post no. 4
+2018-08-03 12:09:27,739 - INFO # Thread 'priority 5' woke up.
+2018-08-03 12:09:27,739 - INFO # Back in main thread.
+2018-08-03 12:09:27,740 - INFO # ######################### TEST3:
+2018-08-03 12:09:27,741 - INFO # first: sem_init s1
+2018-08-03 12:09:27,742 - INFO # first: sem_init s2
+2018-08-03 12:09:27,757 - INFO # first: create thread 1
+2018-08-03 12:09:27,758 - INFO # first: create thread 2
+2018-08-03 12:09:27,759 - INFO # ------------------------------------------
+2018-08-03 12:09:27,760 - INFO # post s1
+2018-08-03 12:09:27,761 - INFO # Thread 1 woke up after waiting for s1.
+2018-08-03 12:09:27,761 - INFO # post s2
+2018-08-03 12:09:27,762 - INFO # Thread 2 woke up after waiting for s2.
+2018-08-03 12:09:27,762 - INFO # post s2
+2018-08-03 12:09:27,763 - INFO # Thread 1 woke up after waiting for s2.
+2018-08-03 12:09:27,764 - INFO # post s1
+2018-08-03 12:09:27,765 - INFO # Thread 2 woke up after waiting for s1.
+2018-08-03 12:09:27,766 - INFO # ######################### TEST4:
+2018-08-03 12:09:27,766 - INFO # first: sem_init s1
+2018-08-03 12:09:27,767 - INFO # first: wait 1 sec for s1
+2018-08-03 12:09:28,772 - INFO # first: timed out
+2018-08-03 12:09:28,772 - INFO # first: waited 1000007 usec
+2018-08-03 12:09:28,781 - INFO # ######################### DONE
 

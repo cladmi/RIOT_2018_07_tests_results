@@ -1,4 +1,3 @@
-make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../masterRIOT/tests/gnrc_sixlowpan flash-only test
 /home/jcarrano/source/masterRIOT/dist/tools/openocd/openocd.sh flash
 ### Flashing Target ###
 Open On-Chip Debugger 0.10.0
@@ -16,11 +15,11 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.916329
+Info : Target voltage: 2.919499
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
- 0* stm32f4x.cpu       hla_target little stm32f4x.cpu       halted
+ 0* stm32f4x.cpu       hla_target little stm32f4x.cpu       running
 adapter speed: 2000 kHz
 target halted due to debug-request, current mode: Thread 
 xPSR: 0x01000000 pc: 0x080004bc msp: 0x20000200
@@ -29,31 +28,23 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 49152 bytes from file /home/jcarrano/source/masterRIOT/tests/gnrc_sixlowpan/bin/stm32f4discovery/tests_gnrc_sixlowpan.elf in 2.290918s (20.952 KiB/s)
+wrote 49152 bytes from file /home/jcarrano/source/masterRIOT/tests/gnrc_ipv6_ext/bin/stm32f4discovery/tests_gnrc_ipv6_ext.elf in 2.261739s (21.223 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 36340 bytes in 0.375047s (94.624 KiB/s)
+verified 34148 bytes in 0.355214s (93.880 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:08:03,712 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 11:53:56,953 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:08:06,667 - INFO # main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:08:06,668 - INFO # RIOT network stack example application
-2018-07-27 15:08:06,668 - INFO # 0x800359b
-2018-07-27 15:08:06,668 - INFO # *** RIOT kernel panic:
-2018-07-27 15:08:06,669 - INFO # FAILED ASSERTION.
-2018-07-27 15:08:06,669 - INFO # 
-2018-07-27 15:08:06,669 - INFO # *** halted.
-2018-07-27 15:08:06,669 - INFO # 
-Timeout in expect script at "child.expect_exact("PKTDUMP: data received:")" (tests/gnrc_sixlowpan/tests/01-run.py:16)
+2018-08-03 11:54:00,111 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 11:54:00,111 - INFO # RIOT network stack example application
+2018-08-03 11:54:00,112 - INFO # pkt->users: 0
+2018-08-03 11:54:00,114 - INFO # pkt->users: 0
 
-make: *** [Makefile:25: test] Error 1
-
-Return value: 2

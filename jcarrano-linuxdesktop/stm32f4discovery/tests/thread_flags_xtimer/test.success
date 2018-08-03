@@ -15,7 +15,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.916329
+Info : Target voltage: 2.919499
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -28,33 +28,34 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/thread_flags_xtimer/bin/stm32f4discovery/tests_thread_flags_xtimer.elf in 0.872827s (18.331 KiB/s)
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/thread_flags_xtimer/bin/stm32f4discovery/tests_thread_flags_xtimer.elf in 0.874920s (18.287 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 10484 bytes in 0.157035s (65.197 KiB/s)
+verified 10484 bytes in 0.155860s (65.689 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:21:21,864 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 12:14:32,638 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:21:22,869 - INFO # +++ timeout  5 +++
-2018-07-27 15:21:22,870 - INFO # SUCCESS
-2018-07-27 15:21:25,004 - INFO # main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:21:25,004 - INFO # START
-2018-07-27 15:21:25,004 - INFO # Test setting thread flags from (x)timer callback
-2018-07-27 15:21:25,005 - INFO # You should see the message '+++ timeout XX +++' printed to the 
-2018-07-27 15:21:25,005 - INFO # screen 5 times, once every 100 milliseconds
-2018-07-27 15:21:25,006 - INFO # 
-2018-07-27 15:21:25,106 - INFO # +++ timeout  1 +++
-2018-07-27 15:21:25,207 - INFO # +++ timeout  2 +++
-2018-07-27 15:21:25,309 - INFO # +++ timeout  3 +++
-2018-07-27 15:21:25,411 - INFO # +++ timeout  4 +++
-2018-07-27 15:21:25,513 - INFO # +++ timeout  5 +++
-2018-07-27 15:21:25,514 - INFO # SUCCESS
+2018-08-03 12:14:33,644 - INFO # +++ timeout  4 +++
+2018-08-03 12:14:33,645 - INFO # +++ timeout  5 +++
+2018-08-03 12:14:33,645 - INFO # SUCCESS
+2018-08-03 12:14:35,620 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 12:14:35,620 - INFO # START
+2018-08-03 12:14:35,621 - INFO # Test setting thread flags from (x)timer callback
+2018-08-03 12:14:35,623 - INFO # You should see the message '+++ timeout XX +++' printed to the 
+2018-08-03 12:14:35,624 - INFO # screen 5 times, once every 100 milliseconds
+2018-08-03 12:14:35,624 - INFO # 
+2018-08-03 12:14:35,721 - INFO # +++ timeout  1 +++
+2018-08-03 12:14:35,823 - INFO # +++ timeout  2 +++
+2018-08-03 12:14:35,925 - INFO # +++ timeout  3 +++
+2018-08-03 12:14:36,026 - INFO # +++ timeout  4 +++
+2018-08-03 12:14:36,129 - INFO # +++ timeout  5 +++
+2018-08-03 12:14:36,129 - INFO # SUCCESS
 

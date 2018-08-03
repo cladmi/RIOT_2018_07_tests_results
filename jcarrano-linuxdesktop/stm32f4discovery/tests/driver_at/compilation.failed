@@ -1,4 +1,4 @@
-make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../masterRIOT/tests/driver_at clean all -j 8
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../masterRIOT/tests/driver_at clean all
 Building application "tests_driver_at" for "stm32f4discovery" with MCU "stm32f4".
 
 /home/jcarrano/source/masterRIOT/drivers/at/at.c: In function 'at_dev_init':
@@ -8,9 +8,7 @@ Building application "tests_driver_at" for "stm32f4discovery" with MCU "stm32f4"
 cc1: all warnings being treated as errors
 make[3]: *** [/home/jcarrano/source/masterRIOT/Makefile.base:83: /home/jcarrano/source/masterRIOT/tests/driver_at/bin/stm32f4discovery/at/at.o] Error 1
 make[2]: *** [/home/jcarrano/source/masterRIOT/Makefile.base:20: ALL--/home/jcarrano/source/masterRIOT/drivers/at] Error 2
-make[2]: *** Waiting for unfinished jobs....
 make[1]: *** [/home/jcarrano/source/masterRIOT/Makefile.base:20: ALL--/home/jcarrano/source/masterRIOT/drivers] Error 2
-make[1]: *** Waiting for unfinished jobs....
-make: *** [/home/jcarrano/source/masterRIOT/tests/driver_at/../../Makefile.include:414: /home/jcarrano/source/masterRIOT/tests/driver_at/bin/stm32f4discovery/application_tests_driver_at.a] Error 2
+make: *** [/home/jcarrano/source/masterRIOT/tests/driver_at/../../Makefile.include:403: /home/jcarrano/source/masterRIOT/tests/driver_at/bin/stm32f4discovery/application_tests_driver_at.a] Error 2
 
 Return value: 2

@@ -15,7 +15,7 @@ Info : Unable to match requested speed 2000 kHz, using 1800 kHz
 Info : clock speed 1800 kHz
 Info : STLINK v2 JTAG v14 API v2 SWIM v0 VID 0x0483 PID 0x3748
 Info : using stlink api v2
-Info : Target voltage: 2.917759
+Info : Target voltage: 2.919499
 Info : stm32f4x.cpu: hardware has 6 breakpoints, 4 watchpoints
     TargetName         Type       Endian TapName            State       
 --  ------------------ ---------- ------ ------------------ ------------
@@ -28,35 +28,35 @@ Info : device id = 0x10016413
 Info : flash size = 1024kbytes
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x20000046 msp: 0x20000200
-wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/sizeof_tcb/bin/stm32f4discovery/tests_sizeof_tcb.elf in 0.889436s (17.989 KiB/s)
+wrote 16384 bytes from file /home/jcarrano/source/masterRIOT/tests/sizeof_tcb/bin/stm32f4discovery/tests_sizeof_tcb.elf in 0.865917s (18.478 KiB/s)
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
 target halted due to breakpoint, current mode: Thread 
 xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
-verified 9120 bytes in 0.146096s (60.962 KiB/s)
+verified 9120 bytes in 0.142414s (62.538 KiB/s)
 adapter speed: 2000 kHz
 shutdown command invoked
 Done flashing
 tests/01-run.py
 /home/jcarrano/source/masterRIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
 Twisted not available, please install it if you want to use pyterm's JSON capabilities
-2018-07-27 15:20:24,017 - INFO # Connect to serial port /dev/ttyUSB0
+2018-08-03 12:12:59,502 - INFO # Connect to serial port /dev/ttyUSB0
 Welcome to pyterm!
 Type '/exit' to exit.
-2018-07-27 15:20:27,148 - INFO # main(): This is RIOT! (Version: buildtest)
-2018-07-27 15:20:27,148 - INFO # 	member, sizeof, offsetof
-2018-07-27 15:20:27,148 - INFO # sizeof(thread_t): 48
-2018-07-27 15:20:27,148 - INFO # 	sp            4   0
-2018-07-27 15:20:27,149 - INFO # 	status        1   4
-2018-07-27 15:20:27,149 - INFO # 	priority      1   5
-2018-07-27 15:20:27,149 - INFO # 	pid           2   6
-2018-07-27 15:20:27,149 - INFO # 	rq_entry      4   8
-2018-07-27 15:20:27,149 - INFO # 	wait_data     4  12
-2018-07-27 15:20:27,150 - INFO # 	msg_waiters   4  16
-2018-07-27 15:20:27,156 - INFO # 	msg_queue    12  20
-2018-07-27 15:20:27,156 - INFO # 	msg_array     4  32
-2018-07-27 15:20:27,157 - INFO # 	name          4  40
-2018-07-27 15:20:27,157 - INFO # 	stack_start   4  36
-2018-07-27 15:20:27,157 - INFO # 	stack_size    4  44
-2018-07-27 15:20:27,157 - INFO # SUCCESS
+2018-08-03 12:13:02,539 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-03 12:13:02,540 - INFO # 	member, sizeof, offsetof
+2018-08-03 12:13:02,540 - INFO # sizeof(thread_t): 48
+2018-08-03 12:13:02,541 - INFO # 	sp            4   0
+2018-08-03 12:13:02,542 - INFO # 	status        1   4
+2018-08-03 12:13:02,542 - INFO # 	priority      1   5
+2018-08-03 12:13:02,543 - INFO # 	pid           2   6
+2018-08-03 12:13:02,544 - INFO # 	rq_entry      4   8
+2018-08-03 12:13:02,544 - INFO # 	wait_data     4  12
+2018-08-03 12:13:02,545 - INFO # 	msg_waiters   4  16
+2018-08-03 12:13:02,546 - INFO # 	msg_queue    12  20
+2018-08-03 12:13:02,547 - INFO # 	msg_array     4  32
+2018-08-03 12:13:02,548 - INFO # 	name          4  40
+2018-08-03 12:13:02,548 - INFO # 	stack_start   4  36
+2018-08-03 12:13:02,549 - INFO # 	stack_size    4  44
+2018-08-03 12:13:02,549 - INFO # SUCCESS
 

@@ -1,11 +1,11 @@
 make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /senslab/users/harter/riot/RIOT/tests/pkg_fatfs_vfs flash-only test
-iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list lyon,a8,1 /senslab/users/harter/riot/RIOT/tests/pkg_fatfs_vfs/bin/iotlab-a8-m3/pkg_fatfs_vfs.elf | grep 0
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/pkg_fatfs_vfs/bin/iotlab-a8-m3/pkg_fatfs_vfs.elf | grep 0
 0
 ./tests/01-run.py
-ssh -oProxyCommand='ssh harter@lyon.iot-lab.info -W %h:%p' -oStrictHostKeyChecking=no -t root@node-a8-1.lyon.iot-lab.info 'socat - open:/dev/ttyA8_M3,b500000,echo=0,raw'
+ssh -oProxyCommand='ssh harter@saclay.iot-lab.info -W %h:%p' -oStrictHostKeyChecking=no -t root@node-a8-1.saclay.iot-lab.info 'socat - open:/dev/ttyA8_M3,b500000,echo=0,raw'
 ��Timeout in expect script at "child.expect(u"Tests for FatFs over VFS - test results will be printed in "" (tests/pkg_fatfs_vfs/tests/01-run.py:19)
 
-Makefile:58: recipe for target 'test' failed
+Makefile:59: recipe for target 'test' failed
 make: *** [test] Error 1
 
 Return value: 2

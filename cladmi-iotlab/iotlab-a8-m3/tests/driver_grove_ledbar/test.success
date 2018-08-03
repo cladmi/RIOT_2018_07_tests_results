@@ -1,0 +1,21 @@
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/driver_grove_ledbar/bin/iotlab-a8-m3/tests_driver_grove_ledbar.elf | grep 0
+0
+tests/01-run.py
+ssh -oProxyCommand='ssh harter@saclay.iot-lab.info -W %h:%p' -oStrictHostKeyChecking=no -t root@node-a8-1.saclay.iot-lab.info 'socat - open:/dev/ttyA8_M3,b500000,echo=0,raw'
+ >>> round 2
+�main(): This is RIOT! (Version: buildtest)
+[START]
+ stepwise increase LED bar to 100% and then decrease to 0%.
+
+ >>> round 1
+�main(): This is RIOT! (Version: buildtest)
+[START]
+ stepwise increase LED bar to 100% and then decrease to 0%.
+
+ >>> round 1
+ >>> round 2
+ >>> round 3
+ >>> round 4
+ >>> round 5
+[SUCCESS]
+

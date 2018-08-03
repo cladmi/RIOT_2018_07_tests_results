@@ -1,0 +1,9 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,samr21,1 --update /senslab/users/harter/riot/RIOT/tests/driver_ds1307/bin/samr21-xpro/tests_driver_ds1307.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:samr21-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: buildtest)
+DS1307 RTC test
+
+error: unable to initialize RTC [I2C initialization error]
+

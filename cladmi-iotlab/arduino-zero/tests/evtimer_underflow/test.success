@@ -1,0 +1,7 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,arduino-zero,1 --update /senslab/users/harter/riot/RIOT/tests/evtimer_underflow/bin/arduino-zero/tests_evtimer_underflow.elf | grep 0
+0
+tests/01-run.py
+....................................................................................................
+Stopped after 100 iterations, but should run forever.
+=> All tests successful
+

@@ -1,0 +1,5 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/od/bin/iotlab-m3/tests_od.elf | grep 0
+0
+tests/01-run.py
+All tests successful
+

@@ -1,0 +1,93 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,arduino-zero,1 --update /senslab/users/harter/riot/RIOT/tests/pthread_tls/bin/arduino-zero/tests_pthread_tls.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:arduino-zero-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: buildtest)
+START
+
+-= TEST 1 - create 20 tls with sequencial values 0...19 =-
+now rise sequencial by one values 1...20
+pick deliberate storage (key[3]:536877648) and change the value
+show tls values:
+key[0]: 536877552, val: 1
+key[1]: 536877584, val: 2
+key[2]: 536877616, val: 3
+key[3]: 536877648, val: 42
+key[4]: 536877680, val: 5
+key[5]: 536877712, val: 6
+key[6]: 536877744, val: 7
+key[7]: 536877776, val: 8
+key[8]: 536877808, val: 9
+key[9]: 536877840, val: 10
+key[10]: 536877872, val: 11
+key[11]: 536877904, val: 12
+key[12]: 536877936, val: 13
+key[13]: 536877968, val: 14
+key[14]: 536878000, val: 15
+key[15]: 536878032, val: 16
+key[16]: 536878064, val: 17
+key[17]: 536878096, val: 18
+key[18]: 536878128, val: 19
+key[19]: 536878160, val: 20
+
+ -= TEST 2 - delete deliberate key (key[5]:536877712) =-
+show tls values:
+key[0]: 536877552, val: 1
+key[1]: 536877584, val: 2
+key[2]: 536877616, val: 3
+key[3]: 536877648, val: 42
+key[4]: 536877680, val: 5
+key[6]: 536877744, val: 7
+key[7]: 536877776, val: 8
+key[8]: 536877808, val: 9
+key[9]: 536877840, val: 10
+key[10]: 536877872, val: 11
+key[11]: 536877904, val: 12
+key[12]: 536877936, val: 13
+key[13]: 536877968, val: 14
+key[14]: 536878000, val: 15
+key[15]: 536878032, val: 16
+key[16]: 536878064, val: 17
+key[17]: 536878096, val: 18
+key[18]: 536878128, val: 19
+key[19]: 536878160, val: 20
+
+-= TEST 3 - create new tls =-
+added new tls, key: 536878192, val: 99
+show tls values:
+key[0]: 536877552, val: 1
+key[1]: 536877584, val: 2
+key[2]: 536877616, val: 3
+key[3]: 536877648, val: 42
+key[4]: 536877680, val: 5
+key[6]: 536877744, val: 7
+key[7]: 536877776, val: 8
+key[8]: 536877808, val: 9
+key[9]: 536877840, val: 10
+key[10]: 536877872, val: 11
+key[11]: 536877904, val: 12
+key[12]: 536877936, val: 13
+key[13]: 536877968, val: 14
+key[14]: 536878000, val: 15
+key[15]: 536878032, val: 16
+key[16]: 536878064, val: 17
+key[17]: 536878096, val: 18
+key[18]: 536878128, val: 19
+key[19]: 536878160, val: 20
+
+-= TEST 4 - delete all keys =-
+show tls values:
+
+-= TEST 5 - try delete non-existing key =-
+try to delete returns: 0
+
+-= TEST 6 - add key and delete without a tls =-
+created key: 536878224
+try to delete returns: 0
+
+-= TEST 7 - add key without tls =-
+created key: 536878232
+test_7_val: 0
+tls tests finished.
+SUCCESS
+

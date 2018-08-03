@@ -1,0 +1,31 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,samr21,1 --update /senslab/users/harter/riot/RIOT/tests/cb_mux/bin/samr21-xpro/tests_cb_mux.elf | grep 0
+0
+./tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:samr21-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: buildtest)
+cb_mux test routine
+Test list addition, retrieval, execution of 5 CBs
+Callback 0 executed
+Callback 1 executed
+Callback 2 executed
+Callback 3 executed
+Callback 4 executed
+Test list deletion of CB 0, 2, 4, execution of 1, 3
+Callback 1 executed
+Callback 3 executed
+Test execution of CB with lowest ID (1)
+Callback 1 executed
+Test execution of CB with highest ID (3)
+Callback 3 executed
+Re-adding list entries (0, 2, 4) by finding next free ID
+Added entry 0
+Added entry 2
+Added entry 4
+Test iteration of a function over list
+Entry 0 was updated correctly
+Entry 1 was updated correctly
+Entry 2 was updated correctly
+Entry 3 was updated correctly
+Entry 4 was updated correctly
+Tests complete!
+

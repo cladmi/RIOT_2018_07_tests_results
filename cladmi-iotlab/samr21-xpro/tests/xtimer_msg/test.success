@@ -1,0 +1,67 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,samr21,1 --update /senslab/users/harter/riot/RIOT/tests/xtimer_msg/bin/samr21-xpro/tests_xtimer_msg.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:samr21-1.saclay.iot-lab.info:20000'
+sec=1 min=0 hour=0
+now=2:10429 -> every 2.0s: Hello World
+sec=2 min=0 hour=0
+sec=3 min=0 hour=0
+now=4:14015 -> every 2.0s: Hello World
+sec=4 min=0 hour=0
+main(): This is RIOT! (Version: buildtest)
+This is thread 3
+sending 1st msg
+now=0:6932 -> every 2.0s: Hello World
+sending 2nd msg
+now=0:11833 -> every 5.0s: This is a Test
+This is thread 4
+sec=1 min=0 hour=0
+now=2:10428 -> every 2.0s: Hello World
+sec=2 min=0 hour=0
+sec=3 min=0 hour=0
+now=4:14014 -> every 2.0s: Hello World
+sec=4 min=0 hour=0
+now=5:15681 -> every 5.0s: This is a Test
+sec=5 min=0 hour=0
+now=6:17600 -> every 2.0s: Hello World
+sec=6 min=0 hour=0
+sec=7 min=0 hour=0
+now=8:21187 -> every 2.0s: Hello World
+sec=8 min=0 hour=0
+sec=9 min=0 hour=0
+now=10:19530 -> every 5.0s: This is a Test
+now=10:24774 -> every 2.0s: Hello World
+sec=10 min=0 hour=0
+sec=11 min=0 hour=0
+now=12:28450 -> every 2.0s: Hello World
+sec=12 min=0 hour=0
+sec=13 min=0 hour=0
+now=14:32127 -> every 2.0s: Hello World
+sec=14 min=0 hour=0
+now=15:23469 -> every 5.0s: This is a Test
+sec=15 min=0 hour=0
+now=16:35804 -> every 2.0s: Hello World
+sec=16 min=0 hour=0
+sec=17 min=0 hour=0
+now=18:39482 -> every 2.0s: Hello World
+sec=18 min=0 hour=0
+sec=19 min=0 hour=0
+now=20:27408 -> every 5.0s: This is a Test
+now=20:43160 -> every 2.0s: Hello World
+sec=20 min=0 hour=0
+sec=21 min=0 hour=0
+now=22:46839 -> every 2.0s: Hello World
+sec=22 min=0 hour=0
+sec=23 min=0 hour=0
+now=24:50518 -> every 2.0s: Hello World
+sec=24 min=0 hour=0
+now=25:31350 -> every 5.0s: This is a Test
+sec=25 min=0 hour=0
+now=26:54197 -> every 2.0s: Hello World
+sec=26 min=0 hour=0
+sec=27 min=0 hour=0
+now=28:57876 -> every 2.0s: Hello World
+sec=28 min=0 hour=0
+sec=29 min=0 hour=0
+now=30:35292 -> every 5.0s: This is a Test
+

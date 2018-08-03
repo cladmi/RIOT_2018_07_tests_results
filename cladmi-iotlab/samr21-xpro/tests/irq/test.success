@@ -1,0 +1,15 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,samr21,1 --update /senslab/users/harter/riot/RIOT/tests/irq/bin/samr21-xpro/tests_irq.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:samr21-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: buildtest)
+START
+busy_thread created
+xtimer_wait()
+busy_thread starting
+main: return
+i: 336391
+j: 336391
+k: 336391
+SUCCESS
+

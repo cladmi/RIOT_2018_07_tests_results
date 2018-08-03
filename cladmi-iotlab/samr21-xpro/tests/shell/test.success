@@ -1,0 +1,54 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,samr21,1 --update /senslab/users/harter/riot/RIOT/tests/shell/bin/samr21-xpro/tests_shell.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:samr21-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: buildtest)
+test_shell.
+> reboot
+reboot
+reboot
+main(): This is RIOT! (Version: buildtest)
+test_shell.
+> echo a string
+echo a string
+echo a string
+"echo""a""string"
+> 123456789012345678901234567890123456789012345678901234567890
+123456789012345678901234567890123456789012345678901234567890
+123456789012345678901234567890123456789012345678901234567890
+shell: command not found: 123456789012345678901234567890123456789012345678901234567890
+> 
+
+end_test
+
+
+
+> 
+> end_test
+end_test
+[TEST_END]start_test
+
+> start_test
+start_test
+[TEST_START]
+> ps
+ps
+ps
+	pid | state    Q | pri 
+	  1 | pending  Q |  15
+	  2 | running  Q |   7
+> help
+help
+help
+Command              Description
+---------------------------------------
+start_test           starts a test
+end_test             ends a test
+echo                 prints the input command
+reboot               Reboot the node
+ps                   Prints information about running threads.
+> unknown_command
+unknown_command
+unknown_command
+shell: command not found: unknown_command
+> 

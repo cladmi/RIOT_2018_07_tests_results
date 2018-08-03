@@ -1,0 +1,19 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/cb_mux_bench/bin/iotlab-m3/tests_cb_mux_bench.elf | grep 0
+0
+./tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+�main(): This is RIOT! (Version: buildtest)
+cb_mux benchmark application
+Populating cb_mux list with 20 items
+Finding the last list entry
+List walk time: 4 us
+Walk time less than threshold of 200 us
+[SUCCESS]
+�main(): This is RIOT! (Version: buildtest)
+cb_mux benchmark application
+Populating cb_mux list with 20 items
+Finding the last list entry
+List walk time: 4 us
+Walk time less than threshold of 200 us
+[SUCCESS]
+

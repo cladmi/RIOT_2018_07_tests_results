@@ -1,0 +1,22 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/xtimer_remove/bin/iotlab-m3/tests_xtimer_remove.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+�main(): This is RIOT! (Version: buildtest)
+xtimer_remove test application.
+
+Setting 3 timers, removing timer 0/3
+�main(): This is RIOT! (Version: buildtest)
+xtimer_remove test application.
+
+Setting 3 timers, removing timer 0/3
+timer 1 triggered.
+timer 2 triggered.
+Setting 3 timers, removing timer 1/3
+timer 0 triggered.
+timer 2 triggered.
+Setting 3 timers, removing timer 2/3
+timer 0 triggered.
+timer 1 triggered.
+test successful.
+

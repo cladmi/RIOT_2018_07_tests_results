@@ -1,0 +1,9 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,arduino-zero,1 --update /senslab/users/harter/riot/RIOT/tests/buttons/bin/arduino-zero/tests_buttons.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:arduino-zero-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: buildtest)
+On-board button test
+
+[FAILED] no buttons available!
+

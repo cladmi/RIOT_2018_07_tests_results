@@ -1,0 +1,35 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/trickle/bin/iotlab-m3/tests_trickle.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+now = 1034084, prev_now = 583036, diff = 451048
+[TRICKLE_RESET]
+now = 1049162, prev_now = 1034084, diff = 15078
+now = 1074229, prev_now = 1049162, diff = 25067
+now = 1140297, prev_now = 1074229, diff = 66068
+now = 1243365, prev_now = 1140297, diff = 103068
+now = 1410453, prev_now = 1243365, diff = 167088
+now = 1935541, prev_now = 1410453, diff = 525088
+now = 2601629, prev_now = 1935541, diff = 666088
+[SUCCESS]
+�main(): This is RIOT! (Version: buildtest)
+[START]
+now = 30017, prev_now = 1000, diff = 29017
+now = 111981, prev_now = 30017, diff = 81964
+�main(): This is RIOT! (Version: buildtest)
+[START]
+now = 30017, prev_now = 1000, diff = 29017
+now = 111981, prev_now = 30017, diff = 81964
+now = 260987, prev_now = 111981, diff = 149006
+now = 583036, prev_now = 260987, diff = 322049
+now = 1034084, prev_now = 583036, diff = 451048
+[TRICKLE_RESET]
+now = 1049162, prev_now = 1034084, diff = 15078
+now = 1074229, prev_now = 1049162, diff = 25067
+now = 1140297, prev_now = 1074229, diff = 66068
+now = 1243365, prev_now = 1140297, diff = 103068
+now = 1410453, prev_now = 1243365, diff = 167088
+now = 1935541, prev_now = 1410453, diff = 525088
+now = 2601629, prev_now = 1935541, diff = 666088
+[SUCCESS]
+

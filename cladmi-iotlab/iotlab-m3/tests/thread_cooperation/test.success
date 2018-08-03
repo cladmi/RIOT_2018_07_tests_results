@@ -1,0 +1,98 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/thread_cooperation/bin/iotlab-m3/tests_thread_cooperation.elf | grep 0
+0
+./tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+�main(): This is RIOT! (Version: buildtest)
+[START] compute 12! (factorial).
+MAIN: create thread, arg: 1
+MAIN: msg to T-3
+T-03: alive
+T-03: got arg 1
+MAIN: create thread, arg: 2
+MAIN: msg to T-4
+T-04: alive
+T-04: got arg 2
+MAIN: create thread, arg: 3
+MAIN: msg to T-5
+T-05: alive
+T-05: got arg 3
+MAIN: create thread, arg: 4
+MAIN: msg to T-6
+T-06: alive
+T-06: got arg 4
+MAIN: create thread, arg: 5
+MAIN: msg to T-7
+T-07: alive
+T-07: got arg 5
+MAIN: create thread, arg: 6
+MAIN: msg to T-8
+T-08: alive
+T-08: got arg 6
+MAIN: create thread, arg: 7
+MAIN: msg to T-9
+T-09: alive
+T-09: got arg 7
+MAIN: create thread, arg: 8
+MAIN: msg to T-10
+T-10: alive
+T-10: got arg 8
+MAIN: create thread, arg: 9
+MAIN: msg to T-11
+T-11: alive
+T-11: got arg 9
+MAIN: create thread, arg: 10
+MAIN: msg to T-12
+T-12: alive
+T-12: got arg 10
+MAIN: create thread, arg: 11
+MAIN: msg to T-13
+T-13: alive
+T-13: got arg 11
+MAIN: create thread, arg: 12
+MAIN: msg to T-14
+T-14: alive
+T-14: got arg 12
+MAIN: reply from T-3
+MAIN: reply from T-4
+MAIN: reply from T-5
+MAIN: reply from T-6
+MAIN: reply from T-7
+MAIN: reply from T-8
+MAIN: reply from T-9
+MAIN: reply from T-10
+MAIN: reply from T-11
+MAIN: reply from T-12
+MAIN: reply from T-13
+MAIN: reply from T-14
+MAIN: 12! = 479001600
+[SUCCESS]
+�main(): This is RIOT! (Version: buildtest)
+[START] compute 12! (factorial).
+MAIN: create thread, arg: 1
+MAIN: msg to T-3
+T-03: alive
+T-03: got arg 1
+MAIN: create thread, arg: 2
+MAIN: msg to T-4
+T-04: alive
+T-04: got arg 2
+MAIN: create thread, arg: 3
+MAIN: msg to T-5
+T-05: alive
+T-05: got arg 3
+MAIN: create thread, arg: 4
+MAIN: msg to T-6
+T-06: alive
+T-06: got arg 4
+MAIN: create thread, arg: 5
+MAIN: msg to T-7
+T-07: alive
+T-07: got arg 5
+MAIN: create thread, arg: 6
+MAIN: msg to T-8
+T-08: alive
+T-08: got arg 6
+MAIN: create thread, arg: 7
+MAIN: msg to T-9
+T-09: alive
+T-

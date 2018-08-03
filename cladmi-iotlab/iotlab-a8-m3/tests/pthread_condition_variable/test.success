@@ -1,0 +1,23 @@
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/pthread_condition_variable/bin/iotlab-a8-m3/tests_pthread_condition_variable.elf | grep 0
+0
+tests/01-run.py
+ssh -oProxyCommand='ssh harter@saclay.iot-lab.info -W %h:%p' -oStrictHostKeyChecking=no -t root@node-a8-1.saclay.iot-lab.info 'socat - open:/dev/ttyA8_M3,b500000,echo=0,raw'
+Still alive alternated [count: 100k] times.
+Still alive alternated [count: 200k] times.
+�main(): This is RIOT! (Version: buildtest)
+START
+�main(): This is RIOT! (Version: buildtest)
+START
+Still alive alternated [count: 100k] times.
+Still alive alternated [count: 200k] times.
+Still alive alternated [count: 300k] times.
+Still alive alternated [count: 400k] times.
+Still alive alternated [count: 500k] times.
+Still alive alternated [count: 600k] times.
+Still alive alternated [count: 700k] times.
+Still alive alternated [count: 800k] times.
+Still alive alternated [count: 900k] times.
+Still alive alternated [count: 1000k] times.
+condition fulfilled.
+SUCCESS
+

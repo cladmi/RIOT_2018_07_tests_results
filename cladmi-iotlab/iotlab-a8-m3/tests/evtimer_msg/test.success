@@ -1,0 +1,6 @@
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/evtimer_msg/bin/iotlab-a8-m3/tests_evtimer_msg.elf | grep 0
+0
+tests/01-run.py
+....
+All tests successful
+

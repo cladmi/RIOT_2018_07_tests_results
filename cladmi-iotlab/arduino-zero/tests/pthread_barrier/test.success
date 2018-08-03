@@ -1,0 +1,67 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,arduino-zero,1 --update /senslab/users/harter/riot/RIOT/tests/pthread_barrier/bin/arduino-zero/tests_pthread_barrier.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:arduino-zero-1.saclay.iot-lab.info:20000'
+
+======================================
+
+Child 1 sleeps for  1514587 us.
+Child 3 sleeps for  1706397 us.
+Child 4 sleeps for  1265353 us.
+Child 2 sleeps for  2085252 us.
+
+======================================
+
+Child 2 sleeps for  2406092 us.
+Child 3 sleeps for  2184134 us.
+Child 1 sleeps for   921395 us.
+Child 4 sleeps for   107980 us.
+main(): This is RIOT! (Version: buildtest)
+START
+
+Start 1
+Start 2
+Start 3
+Start 4
+
+======================================
+
+Child 4 sleeps for  1752298 us.
+Child 3 sleeps for  1772042 us.
+Child 2 sleeps for  1287734 us.
+Child 1 sleeps for  2386493 us.
+
+======================================
+
+Child 1 sleeps for  1514587 us.
+Child 3 sleeps for  1706397 us.
+Child 4 sleeps for  1265353 us.
+Child 2 sleeps for  2085252 us.
+
+======================================
+
+Child 2 sleeps for  2406092 us.
+Child 3 sleeps for  2184134 us.
+Child 1 sleeps for   921395 us.
+Child 4 sleeps for   107980 us.
+
+======================================
+
+Child 2 sleeps for    76940 us.
+Child 3 sleeps for  2273767 us.
+Child 1 sleeps for  1868346 us.
+Child 4 sleeps for  1650360 us.
+
+======================================
+
+Child 3 sleeps for  1729994 us.
+Child 1 sleeps for  1288040 us.
+Child 4 sleeps for  2397307 us.
+Child 2 sleeps for   580990 us.
+Done 2
+Done 1
+Done 3
+Done 4
+
+SUCCESS
+

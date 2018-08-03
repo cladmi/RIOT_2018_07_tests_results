@@ -1,0 +1,11 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,samr21,1 --update /senslab/users/harter/riot/RIOT/tests/bitarithm_timings/bin/samr21-xpro/tests_bitarithm_timings.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:samr21-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: buildtest)
+Start.
++ bitarithm_msb: 963609 iterations per second
++ bitarithm_lsb: 1751216 iterations per second
++ bitarithm_bits_set: 333478 iterations per second
+Done.
+

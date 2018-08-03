@@ -1,0 +1,27 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,arduino-zero,1 --update /senslab/users/harter/riot/RIOT/tests/trickle/bin/arduino-zero/tests_trickle.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:arduino-zero-1.saclay.iot-lab.info:20000'
+now = 1010740, prev_now = 977545, diff = 33195
+now = 1076026, prev_now = 1010740, diff = 65286
+now = 1175401, prev_now = 1076026, diff = 99375
+now = 1457776, prev_now = 1175401, diff = 282375
+now = 1865241, prev_now = 1457776, diff = 407465
+now = 2968708, prev_now = 1865241, diff = 1103467
+[SUCCESS]
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 88530, prev_now = 69472, diff = 19058
+now = 153544, prev_now = 88530, diff = 65014
+now = 283647, prev_now = 153544, diff = 130103
+now = 586931, prev_now = 283647, diff = 303284
+now = 965219, prev_now = 586931, diff = 378288
+[TRICKLE_RESET]
+now = 977546, prev_now = 965219, diff = 12327
+now = 1010741, prev_now = 977546, diff = 33195
+now = 1076027, prev_now = 1010741, diff = 65286
+now = 1175402, prev_now = 1076027, diff = 99375
+now = 1457777, prev_now = 1175402, diff = 282375
+now = 1865243, prev_now = 1457777, diff = 407466
+now = 2968709, prev_now = 1865243, diff = 1103466
+[SUCCESS]

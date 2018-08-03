@@ -1,0 +1,51 @@
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/pipe/bin/iotlab-a8-m3/tests_pipe.elf | grep 0
+0
+tests/01-run.py
+ssh -oProxyCommand='ssh harter@saclay.iot-lab.info -W %h:%p' -oStrictHostKeyChecking=no -t root@node-a8-1.saclay.iot-lab.info 'socat - open:/dev/ttyA8_M3,b500000,echo=0,raw'
+�main(): This is RIOT! (Version: buildtest)
+Start.
+Middle read: <ABCD> [0:4]
+Middle read: <EF> [4:6]
+End read: <ABC> [0:3]
+End read: <DEF> [3:6]
+Middle read: <GHIJ> [6:10]
+Middle read: <KL> [10:12]
+End read: <GHI> [6:9]
+End read: <JKL> [9:12]
+Middle read: <MNOP> [12:16]
+Middle read: <QR> [16:18]
+End read: <MNO> [12:15]
+End read: <PQR> [15:18]
+Middle read: <STUV> [18:22]
+Middle read: <WX> [22:24]
+Main done.
+End read: <STU> [18:21]
+End read: <VWX> [21:24]
+Middle read: <YZ> [24:26]
+Middle done.
+End read: <YZ> [24:26]
+End done.
+�main(): This is RIOT! (Version: buildtest)
+Start.
+Middle read: <ABCD> [0:4]
+Middle read: <EF> [4:6]
+End read: <ABC> [0:3]
+End read: <DEF> [3:6]
+Middle read: <GHIJ> [6:10]
+Middle read: <KL> [10:12]
+End read: <GHI> [6:9]
+End read: <JKL> [9:12]
+Middle read: <MNOP> [12:16]
+Middle read: <QR> [16:18]
+End read: <MNO> [12:15]
+End read: <PQR> [15:18]
+Middle read: <STUV> [18:22]
+Middle read: <WX> [22:24]
+Main done.
+End read: <STU> [18:21]
+End read: <VWX> [21:24]
+Middle read: <YZ> [24:26]
+Middle done.
+End read: <YZ> [24:26]
+End done.
+

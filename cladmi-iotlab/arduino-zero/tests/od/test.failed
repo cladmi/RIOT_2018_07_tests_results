@@ -1,0 +1,10 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /senslab/users/harter/riot/RIOT/tests/od flash-only test
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,arduino-zero,1 --update /senslab/users/harter/riot/RIOT/tests/od/bin/arduino-zero/tests_od.elf | grep 0
+0
+tests/01-run.py
+Timeout in expect script at "child.expect_exact("od_hex_dump(short_str, sizeof(short_str), OD_WIDTH_DEFAULT)")" (tests/od/tests/01-run.py:14)
+
+Makefile:12: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

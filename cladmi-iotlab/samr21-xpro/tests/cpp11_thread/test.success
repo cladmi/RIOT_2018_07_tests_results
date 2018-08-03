@@ -1,0 +1,47 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,samr21,1 --update /senslab/users/harter/riot/RIOT/tests/cpp11_thread/bin/samr21-xpro/tests_cpp11_thread.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:samr21-1.saclay.iot-lab.info:20000'
+Done
+
+Testing sleep_until ...
+Done
+
+Swapping two threads ...
+Done
+
+Move constructor ...
+Done
+
+Bye, bye.
+******************************************
+main(): This is RIOT! (Version: buildtest)
+
+************ C++ thread test ***********
+Creating one thread and passing an argument ...
+Done
+
+Creating detached thread ...
+Done
+
+Join on 'finished' thread ...
+Done
+
+Join on 'running' thread ...
+Done
+
+Testing sleep_for ...
+Done
+
+Testing sleep_until ...
+Done
+
+Swapping two threads ...
+Done
+
+Move constructor ...
+Done
+
+Bye, bye.
+******************************************
+

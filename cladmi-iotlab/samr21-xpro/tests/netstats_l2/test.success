@@ -1,0 +1,20 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,samr21,1 --update /senslab/users/harter/riot/RIOT/tests/netstats_l2/bin/samr21-xpro/tests_netstats_l2.elf | grep 0
+0
+tests/01-run.py
+ifconfig
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:samr21-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: buildtest)
+Welcome to RIOT!
+> ifconfig
+ifconfig
+Iface  3  HWaddr: 30:1a  Channel: 26  Page: 0  NID: 0x23
+          Long HWaddr: 79:64:00:5d:84:3b:30:1a 
+           TX-Power: 0dBm  State: IDLE  max. Retrans.: 3  CSMA Retries: 4 
+          AUTOACK  ACK_REQ  CSMA  Source address length: 2
+          
+          Statistics for Layer 2
+            RX packets 0  bytes 0
+            TX packets 0 (Multicast: 0)  bytes 0
+            TX succeeded 0 errors 0
+
+

@@ -1,0 +1,33 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/thread_msg_seq/bin/iotlab-m3/tests_thread_msg_seq.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+�main(): This is RIOT! (Version: buildtest)
+START
+THREADS CREATED
+
+THREAD nr1 (pid:3) start
+THREAD nr1 (pid:3) end.
+THREAD nr2 (pid:4) start
+THREAD nr3 (pid:5) start
+Got msg from pid 3: "nr1"
+THREAD nr2 (pid:4) end.
+Got msg from pid 4: "nr2"
+THREAD nr3 (pid:5) end.
+Got msg from pid 5: "nr3"
+SUCCESS
+�main(): This is RIOT! (Version: buildtest)
+START
+THREADS CREATED
+
+THREAD nr1 (pid:3) start
+THREAD nr1 (pid:3) end.
+THREAD nr2 (pid:4) start
+THREAD nr3 (pid:5) start
+Got msg from pid 3: "nr1"
+THREAD nr2 (pid:4) end.
+Got msg from pid 4: "nr2"
+THREAD nr3 (pid:5) end.
+Got msg from pid 5: "nr3"
+SUCCESS
+

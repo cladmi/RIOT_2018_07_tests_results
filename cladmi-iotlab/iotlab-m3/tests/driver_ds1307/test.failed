@@ -1,8 +1,8 @@
 make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /senslab/users/harter/riot/RIOT/tests/driver_ds1307 flash-only test
-iotlab-node --jmespath='keys(@)[0]' --format='int'  --list lyon,m3,1 --update /senslab/users/harter/riot/RIOT/tests/driver_ds1307/bin/iotlab-m3/tests_driver_ds1307.elf | grep 0
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/driver_ds1307/bin/iotlab-m3/tests_driver_ds1307.elf | grep 0
 0
 tests/01-run.py
-ssh -t harter@lyon.iot-lab.info 'socat - tcp:m3-1.lyon.iot-lab.info:20000'
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
 �main(): This is RIOT! (Version: buildtest)
 DS1307 RTC test
 

@@ -1,0 +1,19 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,samr21,1 --update /senslab/users/harter/riot/RIOT/tests/events/bin/samr21-xpro/tests_events.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:samr21-1.saclay.iot-lab.info:20000'
+triggered timed callback with arg 0x12345678 after 1000046us
+[SUCCESS]
+main(): This is RIOT! (Version: buildtest)
+[START] event test application.
+
+posting 0x20000230
+posting 0x20000238
+canceling 0x20000238
+posting custom event
+posting timed callback with timeout 1sec
+posting timed callback with timeout 0.5sec and canceling it again
+launching event queue
+triggered 0x20000230
+triggered custom event with text: "CUSTOM CALLBACK"
+

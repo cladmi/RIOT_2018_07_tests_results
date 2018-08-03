@@ -1,0 +1,25 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,samr21,1 --update /senslab/users/harter/riot/RIOT/tests/trickle/bin/samr21-xpro/tests_trickle.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:samr21-1.saclay.iot-lab.info:20000'
+now = 1034443, prev_now = 776164, diff = 258279
+now = 1566813, prev_now = 1034443, diff = 532370
+now = 2128272, prev_now = 1566813, diff = 561459
+[SUCCESS]
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 14996, prev_now = 3935, diff = 11061
+now = 57913, prev_now = 14996, diff = 42917
+now = 122927, prev_now = 57913, diff = 65014
+now = 281029, prev_now = 122927, diff = 158102
+now = 549312, prev_now = 281029, diff = 268283
+[TRICKLE_RESET]
+now = 562635, prev_now = 549312, diff = 13323
+now = 603828, prev_now = 562635, diff = 41193
+now = 670023, prev_now = 603828, diff = 66195
+now = 776219, prev_now = 670023, diff = 106196
+now = 1034505, prev_now = 776219, diff = 258286
+now = 1566881, prev_now = 1034505, diff = 532376
+now = 2128346, prev_now = 1566881, diff = 561465
+[SUCCESS]
+

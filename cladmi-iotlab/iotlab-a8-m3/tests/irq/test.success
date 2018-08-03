@@ -1,0 +1,25 @@
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/irq/bin/iotlab-a8-m3/tests_irq.elf | grep 0
+0
+tests/01-run.py
+ssh -oProxyCommand='ssh harter@saclay.iot-lab.info -W %h:%p' -oStrictHostKeyChecking=no -t root@node-a8-1.saclay.iot-lab.info 'socat - open:/dev/ttyA8_M3,b500000,echo=0,raw'
+�main(): This is RIOT! (Version: buildtest)
+START
+busy_thread created
+xtimer_wait()
+busy_thread starting
+main: return
+i: 447934
+j: 447934
+k: 447934
+SUCCESS
+�main(): This is RIOT! (Version: buildtest)
+START
+busy_thread created
+xtimer_wait()
+busy_thread starting
+main: return
+i: 447934
+j: 447934
+k: 447934
+SUCCESS
+

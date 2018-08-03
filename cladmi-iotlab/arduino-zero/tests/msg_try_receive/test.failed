@@ -1,0 +1,18 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /senslab/users/harter/riot/RIOT/tests/msg_try_receive flash-only test
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,arduino-zero,1 --update /senslab/users/harter/riot/RIOT/tests/msg_try_receive/bin/arduino-zero/tests_msg_try_receive.elf | grep 0
+HTTP Error 502: 
+	<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+	<html><head>
+	<title>502 Proxy Error</title>
+	</head><body>
+	<h1>Proxy Error</h1>
+	<p>The proxy server received an invalid
+	response from an upstream server.<br />
+	The proxy server could not handle the request <em><a href="/rest/experiments/128163/nodes">POST&nbsp;/rest/experiments/128163/nodes</a></em>.<p>
+	Reason: <strong>Error reading from remote server</strong></p></p>
+	</body></html>
+
+/senslab/users/harter/riot/RIOT/tests/msg_try_receive/../../Makefile.include:474: recipe for target 'flash' failed
+make: *** [flash] Error 1
+
+Return value: 2

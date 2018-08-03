@@ -1,0 +1,6 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,arduino-zero,1 --update /senslab/users/harter/riot/RIOT/tests/evtimer_msg/bin/arduino-zero/tests_evtimer_msg.elf | grep 0
+0
+tests/01-run.py
+....
+All tests successful
+

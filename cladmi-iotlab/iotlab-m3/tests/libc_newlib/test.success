@@ -1,0 +1,13 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/libc_newlib/bin/iotlab-m3/tests_libc_newlib.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+�main(): This is RIOT! (Version: buildtest)
+Newlib/nano test
+.
+OK (1 tests)
+�main(): This is RIOT! (Version: buildtest)
+Newlib/nano test
+.
+OK (1 tests)
+

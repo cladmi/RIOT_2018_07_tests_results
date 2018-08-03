@@ -1,0 +1,6 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/evtimer_msg/bin/iotlab-m3/tests_evtimer_msg.elf | grep 0
+0
+tests/01-run.py
+....
+All tests successful
+

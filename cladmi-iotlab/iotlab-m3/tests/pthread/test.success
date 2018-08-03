@@ -1,0 +1,17 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/pthread/bin/iotlab-m3/tests_pthread.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+�main(): This is RIOT! (Version: buildtest)
+main: parameter = 6
+pthread: parameter = 6
+pthread: factorial = 720
+main: factorial = 720
+SUCCESS
+�main(): This is RIOT! (Version: buildtest)
+main: parameter = 6
+pthread: parameter = 6
+pthread: factorial = 720
+main: factorial = 720
+SUCCESS
+

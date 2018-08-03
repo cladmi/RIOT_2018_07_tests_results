@@ -1,0 +1,49 @@
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/xtimer_usleep/bin/iotlab-a8-m3/tests_xtimer_usleep.elf | grep 0
+0
+./tests/01-run.py
+ssh -oProxyCommand='ssh harter@saclay.iot-lab.info -W %h:%p' -oStrictHostKeyChecking=no -t root@node-a8-1.saclay.iot-lab.info 'socat - open:/dev/ttyA8_M3,b500000,echo=0,raw'
+�main(): This is RIOT! (Version: buildtest)
+Running test 5 times with 7 distinct sleep times
+Please hit any key and then ENTER to continue
+�main(): This is RIOT! (Version: buildtest)
+Running test 5 times with 7 distinct sleep times
+Please hit any key and then ENTER to continue
+a
+a
+Slept for 10014 us (expected: 10000 us) Offset: 14 us
+Slept for 50014 us (expected: 50000 us) Offset: 14 us
+Slept for 10248 us (expected: 10234 us) Offset: 14 us
+Slept for 56794 us (expected: 56780 us) Offset: 14 us
+Slept for 12136 us (expected: 12122 us) Offset: 14 us
+Slept for 98779 us (expected: 98765 us) Offset: 14 us
+Slept for 75014 us (expected: 75000 us) Offset: 14 us
+Slept for 10014 us (expected: 10000 us) Offset: 14 us
+Slept for 50014 us (expected: 50000 us) Offset: 14 us
+Slept for 10248 us (expected: 10234 us) Offset: 14 us
+Slept for 56794 us (expected: 56780 us) Offset: 14 us
+Slept for 12136 us (expected: 12122 us) Offset: 14 us
+Slept for 98779 us (expected: 98765 us) Offset: 14 us
+Slept for 75014 us (expected: 75000 us) Offset: 14 us
+Slept for 10014 us (expected: 10000 us) Offset: 14 us
+Slept for 50014 us (expected: 50000 us) Offset: 14 us
+Slept for 10248 us (expected: 10234 us) Offset: 14 us
+Slept for 56794 us (expected: 56780 us) Offset: 14 us
+Slept for 12136 us (expected: 12122 us) Offset: 14 us
+Slept for 98779 us (expected: 98765 us) Offset: 14 us
+Slept for 75014 us (expected: 75000 us) Offset: 14 us
+Slept for 10014 us (expected: 10000 us) Offset: 14 us
+Slept for 50014 us (expected: 50000 us) Offset: 14 us
+Slept for 10248 us (expected: 10234 us) Offset: 14 us
+Slept for 56794 us (expected: 56780 us) Offset: 14 us
+Slept for 12136 us (expected: 12122 us) Offset: 14 us
+Slept for 98779 us (expected: 98765 us) Offset: 14 us
+Slept for 75014 us (expected: 75000 us) Offset: 14 us
+Slept for 10014 us (expected: 10000 us) Offset: 14 us
+Slept for 50014 us (expected: 50000 us) Offset: 14 us
+Slept for 10248 us (expected: 10234 us) Offset: 14 us
+Slept for 56794 us (expected: 56780 us) Offset: 14 us
+Slept for 12136 us (expected: 12122 us) Offset: 14 us
+Slept for 98779 us (expected: 98765 us) Offset: 14 us
+Slept for 75014 us (expected: 75000 us) Offset: 14 us
+Test ran for 1606291 us
+

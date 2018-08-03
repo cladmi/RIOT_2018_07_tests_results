@@ -1,0 +1,19 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,samr21,1 --update /senslab/users/harter/riot/RIOT/tests/pkg_umorse/bin/samr21-xpro/tests_pkg_umorse.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:samr21-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: buildtest)
+[START]
+> Translate text of length 30 into Morse code:
+"Hello RIOT-OS!
+This is uMorse."
+> using aligned encoding:
+.... . ._.. ._.. ___ / ._. .. ___ _ ___ ...
+_ .... .. ... / .. ... / .._ __ ___ ._. ... .
+> encoded length=52
+> using compact encoding:
+.... . ._.. ._.. ___ / ._. .. ___ _ ___ ...
+_ .... .. ... / .. ... / .._ __ ___ ._. ... .
+> encoded length=25
+[SUCCESS]
+

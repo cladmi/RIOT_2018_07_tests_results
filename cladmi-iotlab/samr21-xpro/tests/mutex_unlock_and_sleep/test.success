@@ -1,0 +1,16 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,samr21,1 --update /senslab/users/harter/riot/RIOT/tests/mutex_unlock_and_sleep/bin/samr21-xpro/tests_mutex_unlock_and_sleep.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:samr21-1.saclay.iot-lab.info:20000'
+[ALIVE] alternated 20k times.
+[ALIVE] alternated 30k times.
+[ALIVE] alternated 40k times.
+[ALIVE] alternated 50k times.
+[ALIVE] alternated 60k times.
+[ALIVE] alternated 70k times.
+[ALIVE] alternated 80k times.
+[ALIVE] alternated 90k times.
+[ALIVE] alternated 100k times.
+[ALIVE] alternated 110k times.
+main(): This is RIOT! (Version: buildtest)
+

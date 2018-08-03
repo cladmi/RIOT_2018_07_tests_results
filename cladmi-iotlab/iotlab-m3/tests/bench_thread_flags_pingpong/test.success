@@ -1,0 +1,10 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/bench_thread_flags_pingpong/bin/iotlab-m3/tests_bench_thread_flags_pingpong.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+{ "result" : 106182 }
+�main(): This is RIOT! (Version: buildtest)
+main starting
+�main(): This is RIOT! (Version: buildtest)
+main starting
+

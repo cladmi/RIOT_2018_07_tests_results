@@ -1,0 +1,81 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,arduino-zero,1 --update /senslab/users/harter/riot/RIOT/tests/rng/bin/arduino-zero/tests_rng.elf | grep 0
+0
+tests/01-run.py
+source 0
+seed 1337
+fips
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:arduino-zero-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: buildtest)
+Starting shell...
+> source 0
+source 0
+> seed 1337
+seed 1337
+Seed set to 1337
+> fips
+fips
+Running FIPS 140-2 test, with seed 1337 using Tiny Mersenne Twister PRNG.
+
+- Monobit test: passed
+- Poker test: passed
+- Run test: passed
+- Longrun test: passed
+> dump 10
+dump 10
+dump 10
+Running dump test, with seed 1337 using Tiny Mersenne Twister PRNG.
+
+1555530734
+2178333451
+2272913641
+3790481823
+3190025502
+798555366
+1918982324
+1550167154
+3454972398
+1034066532
+> entropy
+entropy
+entropy
+Running entropy test, with seed 1337 using Tiny Mersenne Twister PRNG.
+
+Calculated 7.994709 bits of entropy from 10000 samples.
+> source 1
+seed 1337
+fips
+source 1
+source 1
+> seed 1337
+seed 1337
+Seed set to 1337
+> fips
+fips
+Running FIPS 140-2 test, with seed 1337 using constant value.
+
+- Monobit test: failed
+- Poker test: failed
+- Run test: failed
+- Longrun test: passed
+> dump 10
+dump 10
+dump 10
+Running dump test, with seed 1337 using constant value.
+
+1337
+1337
+1337
+1337
+1337
+1337
+1337
+1337
+1337
+1337
+entropy
+> entropy
+entropy
+Running entropy test, with seed 1337 using constant value.
+
+Calculated 0.017260 bits of entropy from 10000 samples.
+>

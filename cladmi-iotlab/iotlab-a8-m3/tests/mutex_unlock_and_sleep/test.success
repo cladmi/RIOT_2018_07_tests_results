@@ -1,0 +1,27 @@
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/mutex_unlock_and_sleep/bin/iotlab-a8-m3/tests_mutex_unlock_and_sleep.elf | grep 0
+0
+tests/01-run.py
+ssh -oProxyCommand='ssh harter@saclay.iot-lab.info -W %h:%p' -oStrictHostKeyChecking=no -t root@node-a8-1.saclay.iot-lab.info 'socat - open:/dev/ttyA8_M3,b500000,echo=0,raw'
+[ALIVE] alternated 70k times.
+[ALIVE] alternated 80k times.
+[ALIVE] alternated 90k times.
+[ALIVE] alternated 100k times.
+[ALIVE] alternated 110k times.
+[ALIVE] alternated 120k times.
+[ALIVE] alternated 130k times.
+[ALIVE] alternated 140k times.
+[ALIVE] alternated 150k times.
+[ALIVE] alternated 160k times.
+[ALIVE] alternated 170k times.
+[ALIVE] alternated 180k times.
+[ALIVE] alternated 190k times.
+[ALIVE] alternated 200k times.
+[ALIVE] alternated 210k times.
+[ALIVE] alternated 220k times.
+[ALIVE] alternated 230k times.
+[ALIVE] alternated 240k times.
+[ALIVE] alternated 250k times.
+�main(): This is RIOT! (Version: buildtest)
+�main(): This is RIOT! (Version: buildtest)
+[ALIVE] alternated 10k times.
+

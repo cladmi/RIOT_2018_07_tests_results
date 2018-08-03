@@ -1,0 +1,57 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,arduino-zero,1 --update /senslab/users/harter/riot/RIOT/tests/pthread_cooperation/bin/arduino-zero/tests_pthread_cooperation.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:arduino-zero-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: buildtest)
+START
+Creating thread with arg 1
+Creating thread with arg 2
+Creating thread with arg 3
+Creating thread with arg 4
+Creating thread with arg 5
+Creating thread with arg 6
+Creating thread with arg 7
+Creating thread with arg 8
+Creating thread with arg 9
+Creating thread with arg 10
+Creating thread with arg 11
+Creating thread with arg 12
+join thread 1
+My arg: 1
+val = 1
+My arg: 2
+val = 2
+My arg: 3
+val = 6
+My arg: 4
+val = 24
+My arg: 5
+val = 120
+My arg: 6
+val = 720
+My arg: 7
+val = 5040
+My arg: 8
+val = 40320
+My arg: 9
+val = 362880
+My arg: 10
+val = 3628800
+My arg: 11
+val = 39916800
+My arg: 12
+val = 479001600
+join thread 2
+join thread 3
+join thread 4
+join thread 5
+join thread 6
+join thread 7
+join thread 8
+join thread 9
+join thread 10
+join thread 11
+join thread 12
+Factorial: 479001600
+SUCCESS
+

@@ -1,0 +1,21 @@
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/cpp11_mutex/bin/iotlab-a8-m3/tests_cpp11_mutex.elf | grep 0
+0
+tests/01-run.py
+ssh -oProxyCommand='ssh harter@saclay.iot-lab.info -W %h:%p' -oStrictHostKeyChecking=no -t root@node-a8-1.saclay.iot-lab.info 'socat - open:/dev/ttyA8_M3,b500000,echo=0,raw'
+�main(): This is RIOT! (Version: buildtest)
+
+************ C++ mutex test ***********
+Lock and unlock ... 
+�main(): This is RIOT! (Version: buildtest)
+
+************ C++ mutex test ***********
+Lock and unlock ... 
+Done
+
+Try_lock ...
+Done
+
+Bye, bye.
+*****************************************
+
+

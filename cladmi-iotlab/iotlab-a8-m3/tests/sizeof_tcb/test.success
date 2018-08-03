@@ -1,0 +1,37 @@
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/sizeof_tcb/bin/iotlab-a8-m3/tests_sizeof_tcb.elf | grep 0
+0
+tests/01-run.py
+ssh -oProxyCommand='ssh harter@saclay.iot-lab.info -W %h:%p' -oStrictHostKeyChecking=no -t root@node-a8-1.saclay.iot-lab.info 'socat - open:/dev/ttyA8_M3,b500000,echo=0,raw'
+�main(): This is RIOT! (Version: buildtest)
+	member, sizeof, offsetof
+sizeof(thread_t): 48
+	sp            4   0
+	status        1   4
+	priority      1   5
+	pid           2   6
+	rq_entry      4   8
+	wait_data     4  12
+	msg_waiters   4  16
+	msg_queue    12  20
+	msg_array     4  32
+	name          4  40
+	stack_start   4  36
+	stack_size    4  44
+SUCCESS
+�main(): This is RIOT! (Version: buildtest)
+	member, sizeof, offsetof
+sizeof(thread_t): 48
+	sp            4   0
+	status        1   4
+	priority      1   5
+	pid           2   6
+	rq_entry      4   8
+	wait_data     4  12
+	msg_waiters   4  16
+	msg_queue    12  20
+	msg_array     4  32
+	name          4  40
+	stack_start   4  36
+	stack_size    4  44
+SUCCESS
+

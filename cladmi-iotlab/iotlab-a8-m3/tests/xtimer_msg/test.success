@@ -1,0 +1,70 @@
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/xtimer_msg/bin/iotlab-a8-m3/tests_xtimer_msg.elf | grep 0
+0
+tests/01-run.py
+ssh -oProxyCommand='ssh harter@saclay.iot-lab.info -W %h:%p' -oStrictHostKeyChecking=no -t root@node-a8-1.saclay.iot-lab.info 'socat - open:/dev/ttyA8_M3,b500000,echo=0,raw'
+now=2:2676 -> every 2.0s: Hello World
+sec=2 min=0 hour=0
+sec=3 min=0 hour=0
+now=4:3556 -> every 2.0s: Hello World
+sec=4 min=0 hour=0
+now=5:3960 -> every 5.0s: This is a Test
+sec=5 min=0 hour=0
+now=6:4436 -> every 2.0s: Hello World
+sec=6 min=0 hour=0
+�main(): This is RIOT! (Version: buildtest)
+This is thread 3
+sending 1st msg
+now=0:1796 -> every 2.0s: Hello World
+sending 2nd msg
+now=0:3016 -> every 5.0s: This is a Test
+This is thread 4
+�main(): This is RIOT! (Version: buildtest)
+This is thread 3
+sending 1st msg
+now=0:1796 -> every 2.0s: Hello World
+sending 2nd msg
+now=0:3016 -> every 5.0s: This is a Test
+This is thread 4
+sec=1 min=0 hour=0
+now=2:2676 -> every 2.0s: Hello World
+sec=2 min=0 hour=0
+sec=3 min=0 hour=0
+now=4:3556 -> every 2.0s: Hello World
+sec=4 min=0 hour=0
+now=5:3960 -> every 5.0s: This is a Test
+sec=5 min=0 hour=0
+now=6:4436 -> every 2.0s: Hello World
+sec=6 min=0 hour=0
+sec=7 min=0 hour=0
+now=8:5316 -> every 2.0s: Hello World
+sec=8 min=0 hour=0
+sec=9 min=0 hour=0
+now=10:4904 -> every 5.0s: This is a Test
+now=10:6196 -> every 2.0s: Hello World
+sec=10 min=0 hour=0
+sec=11 min=0 hour=0
+now=12:7098 -> every 2.0s: Hello World
+sec=12 min=0 hour=0
+sec=13 min=0 hour=0
+now=14:8000 -> every 2.0s: Hello World
+sec=14 min=0 hour=0
+now=15:5868 -> every 5.0s: This is a Test
+sec=15 min=0 hour=0
+now=16:8902 -> every 2.0s: Hello World
+sec=16 min=0 hour=0
+sec=17 min=0 hour=0
+now=18:9804 -> every 2.0s: Hello World
+sec=18 min=0 hour=0
+sec=19 min=0 hour=0
+now=20:6832 -> every 5.0s: This is a Test
+now=20:10706 -> every 2.0s: Hello World
+sec=20 min=0 hour=0
+sec=21 min=0 hour=0
+now=22:11628 -> every 2.0s: Hello World
+sec=22 min=0 hour=0
+sec=23 min=0 hour=0
+now=24:12550 -> every 2.0s: Hello World
+sec=24 min=0 hour=0
+now=25:7796 -> every 5.0s: This is a Test
+sec=25 min=0 hour=0
+

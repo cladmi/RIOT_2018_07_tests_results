@@ -1,0 +1,4 @@
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/isr_yield_higher/bin/iotlab-a8-m3/isr_yield_higher.elf | grep 0
+0
+./tests/test.py
+

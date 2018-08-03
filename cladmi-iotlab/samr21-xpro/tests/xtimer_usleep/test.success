@@ -1,0 +1,46 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,samr21,1 --update /senslab/users/harter/riot/RIOT/tests/xtimer_usleep/bin/samr21-xpro/tests_xtimer_usleep.elf | grep 0
+0
+./tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:samr21-1.saclay.iot-lab.info:20000'
+main(): This is RIOT! (Version: buildtest)
+Running test 5 times with 7 distinct sleep times
+Please hit any key and then ENTER to continue
+a
+a
+Slept for 10044 us (expected: 10000 us) Offset: 44 us
+Slept for 50044 us (expected: 50000 us) Offset: 44 us
+Slept for 10278 us (expected: 10234 us) Offset: 44 us
+Slept for 56824 us (expected: 56780 us) Offset: 44 us
+Slept for 12166 us (expected: 12122 us) Offset: 44 us
+Slept for 98809 us (expected: 98765 us) Offset: 44 us
+Slept for 75044 us (expected: 75000 us) Offset: 44 us
+Slept for 10044 us (expected: 10000 us) Offset: 44 us
+Slept for 50044 us (expected: 50000 us) Offset: 44 us
+Slept for 10278 us (expected: 10234 us) Offset: 44 us
+Slept for 56824 us (expected: 56780 us) Offset: 44 us
+Slept for 12166 us (expected: 12122 us) Offset: 44 us
+Slept for 98809 us (expected: 98765 us) Offset: 44 us
+Slept for 75044 us (expected: 75000 us) Offset: 44 us
+Slept for 10044 us (expected: 10000 us) Offset: 44 us
+Slept for 50044 us (expected: 50000 us) Offset: 44 us
+Slept for 10278 us (expected: 10234 us) Offset: 44 us
+Slept for 56824 us (expected: 56780 us) Offset: 44 us
+Slept for 12166 us (expected: 12122 us) Offset: 44 us
+Slept for 98809 us (expected: 98765 us) Offset: 44 us
+Slept for 75044 us (expected: 75000 us) Offset: 44 us
+Slept for 10044 us (expected: 10000 us) Offset: 44 us
+Slept for 50044 us (expected: 50000 us) Offset: 44 us
+Slept for 10278 us (expected: 10234 us) Offset: 44 us
+Slept for 56824 us (expected: 56780 us) Offset: 44 us
+Slept for 12166 us (expected: 12122 us) Offset: 44 us
+Slept for 98809 us (expected: 98765 us) Offset: 44 us
+Slept for 75044 us (expected: 75000 us) Offset: 44 us
+Slept for 10044 us (expected: 10000 us) Offset: 44 us
+Slept for 50044 us (expected: 50000 us) Offset: 44 us
+Slept for 10278 us (expected: 10234 us) Offset: 44 us
+Slept for 56824 us (expected: 56780 us) Offset: 44 us
+Slept for 12166 us (expected: 12122 us) Offset: 44 us
+Slept for 98809 us (expected: 98765 us) Offset: 44 us
+Slept for 75044 us (expected: 75000 us) Offset: 44 us
+Test ran for 1735344 us
+

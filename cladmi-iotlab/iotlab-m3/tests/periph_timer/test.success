@@ -1,0 +1,58 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/periph_timer/bin/iotlab-m3/tests_periph_timer.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+�main(): This is RIOT! (Version: buildtest)
+
+Test for peripheral TIMERs
+
+This test will test all configured peripheral timers of the
+targeted platform. For each timer, it will set each channel with
+an incrementing timeout. CH0 set to 5ms, CH1 to 10ms, CH2 to 15ms
+and so on.
+In the output you should see that every channel fired, after an
+evenly distributed amount of time -> the shown diff values should
+be pretty much equal (to some jitter...)
+This test does however NOT show, if the timeouts were correct in
+relation to the expected real-time ~ use e.g. tests/xtimer_msg for
+this.
+
+
+Available timers: 2
+
+Testing TIMER_0:
+TIMER_0: initialization successful
+TIMER_0: stopped
+TIMER_0: set channel 0 to 5000
+TIMER_0: set channel 1 to 10000
+TIMER_0: set channel 2 to 15000
+TIMER_0: set channel 3 to 20000
+TIMER_0: starting
+TIMER_0: channel 0 fired at SW count    25715 - init:    25715
+TIMER_0: channel 1 fired at SW count    51415 - diff:    25700
+TIMER_0: channel 2 fired at SW count    77116 - diff:    25701
+TIMER_0: channel 3 fired at SW count   102816 - diff:    25700
+
+Testing TIMER_1:
+TIMER_1: initialization successful
+TIMER_1: stopped
+TIMER_1: set channel 0 to 5000
+TIMER_1: set channel 1 to 10000
+TIMER_1: set channel 2 to 15000
+TIMER_1: set channel 3 to 20000
+TIMER_1: starting
+TIMER_1: channel 0 fired at SW count    25714 - init:    25714
+TIMER_1: channel 1 fired at SW count    51414 - diff:    25700
+TIMER_1: channel 2 fired at SW count    77115 - diff:    25701
+TIMER_1: channel 3 fired at SW count   102815 - diff:    25700
+
+TEST SUCCEEDED
+�main(): This is RIOT! (Version: buildtest)
+
+Test for peripheral TIMERs
+
+This test will test all configured peripheral timers of the
+targeted platform. For each timer, it will set each channel with
+an incrementing timeout. CH0 set to 5ms, CH1 to 10ms, CH2 to 15ms
+and so on.
+In the output you should see that ev

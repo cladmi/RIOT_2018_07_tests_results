@@ -1,0 +1,47 @@
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/thread_flags/bin/iotlab-a8-m3/tests_thread_flags.elf | grep 0
+0
+tests/01-run.py
+ssh -oProxyCommand='ssh harter@saclay.iot-lab.info -W %h:%p' -oStrictHostKeyChecking=no -t root@node-a8-1.saclay.iot-lab.info 'socat - open:/dev/ttyA8_M3,b500000,echo=0,raw'
+�main(): This is RIOT! (Version: buildtest)
+START
+thread(): waiting for 0x1...
+main(): setting flag 0x0001
+thread(): received flags: 0x0001
+thread(): waiting for 0x1 || 0x64...
+main(): setting flag 0x0064
+thread(): received flags: 0x0064
+thread(): waiting for 0x2 && 0x4...
+main(): setting flag 0x0001
+main(): setting flag 0x0008
+main(): setting flag 0x0002
+main(): setting flag 0x0004
+thread(): received flags: 0x0006
+thread(): waiting for any flag, one by one
+thread(): received flags: 0x0001
+thread(): waiting for any flag, one by one
+thread(): received flags: 0x0008
+main: setting 100ms timeout...
+main: timeout triggered. time passed: 100014us
+SUCCESS
+�main(): This is RIOT! (Version: buildtest)
+START
+thread(): waiting for 0x1...
+main(): setting flag 0x0001
+thread(): received flags: 0x0001
+thread(): waiting for 0x1 || 0x64...
+main(): setting flag 0x0064
+thread(): received flags: 0x0064
+thread(): waiting for 0x2 && 0x4...
+main(): setting flag 0x0001
+main(): setting flag 0x0008
+main(): setting flag 0x0002
+main(): setting flag 0x0004
+thread(): received flags: 0x0006
+thread(): waiting for any flag, one by one
+thread(): received flags: 0x0001
+thread(): waiting for any flag, one by one
+thread(): received flags: 0x0008
+main: setting 100ms timeout...
+main: timeout triggered. time passed: 100014us
+SUCCESS
+

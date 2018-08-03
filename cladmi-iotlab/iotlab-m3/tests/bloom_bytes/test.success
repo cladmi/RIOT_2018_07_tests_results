@@ -1,0 +1,30 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/bloom_bytes/bin/iotlab-m3/tests_bloom_bytes.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+checking 10000 elements took 1528ms
+
+267 elements probably in the filter.
+9733 elements not in the filter.
+ false positive rate.
+
+All done!
+�main(): This is RIOT! (Version: buildtest)
+Testing Bloom filter.
+
+m: 4096 k: 8
+
+�main(): This is RIOT! (Version: buildtest)
+Testing Bloom filter.
+
+m: 4096 k: 8
+
+adding 512 elements took 183ms
+checking 10000 elements took 1528ms
+
+267 elements probably in the filter.
+9733 elements not in the filter.
+ false positive rate.
+
+All done!
+

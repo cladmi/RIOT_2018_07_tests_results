@@ -1,0 +1,67 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,arduino-zero,1 --update /senslab/users/harter/riot/RIOT/tests/xtimer_msg/bin/arduino-zero/tests_xtimer_msg.elf | grep 0
+0
+tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:arduino-zero-1.saclay.iot-lab.info:20000'
+sec=1 min=0 hour=0
+now=2:76055 -> every 2.0s: Hello World
+sec=2 min=0 hour=0
+sec=3 min=0 hour=0
+now=4:79644 -> every 2.0s: Hello World
+sec=4 min=0 hour=0
+main(): This is RIOT! (Version: buildtest)
+This is thread 3
+sending 1st msg
+now=0:72468 -> every 2.0s: Hello World
+sending 2nd msg
+now=0:77460 -> every 5.0s: This is a Test
+This is thread 4
+sec=1 min=0 hour=0
+now=2:76056 -> every 2.0s: Hello World
+sec=2 min=0 hour=0
+sec=3 min=0 hour=0
+now=4:79645 -> every 2.0s: Hello World
+sec=4 min=0 hour=0
+now=5:81310 -> every 5.0s: This is a Test
+sec=5 min=0 hour=0
+now=6:83234 -> every 2.0s: Hello World
+sec=6 min=0 hour=0
+sec=7 min=0 hour=0
+now=8:86823 -> every 2.0s: Hello World
+sec=8 min=0 hour=0
+sec=9 min=0 hour=0
+now=10:85162 -> every 5.0s: This is a Test
+now=10:90405 -> every 2.0s: Hello World
+sec=10 min=0 hour=0
+sec=11 min=0 hour=0
+now=12:94083 -> every 2.0s: Hello World
+sec=12 min=0 hour=0
+sec=13 min=0 hour=0
+now=14:97761 -> every 2.0s: Hello World
+sec=14 min=0 hour=0
+now=15:89103 -> every 5.0s: This is a Test
+sec=15 min=0 hour=0
+now=16:101438 -> every 2.0s: Hello World
+sec=16 min=0 hour=0
+sec=17 min=0 hour=0
+now=18:105206 -> every 2.0s: Hello World
+sec=18 min=0 hour=0
+sec=19 min=0 hour=0
+now=20:93044 -> every 5.0s: This is a Test
+now=20:108973 -> every 2.0s: Hello World
+sec=20 min=0 hour=0
+sec=21 min=0 hour=0
+now=22:112741 -> every 2.0s: Hello World
+sec=22 min=0 hour=0
+sec=23 min=0 hour=0
+now=24:116502 -> every 2.0s: Hello World
+sec=24 min=0 hour=0
+now=25:96979 -> every 5.0s: This is a Test
+sec=25 min=0 hour=0
+now=26:120270 -> every 2.0s: Hello World
+sec=26 min=0 hour=0
+sec=27 min=0 hour=0
+now=28:124038 -> every 2.0s: Hello World
+sec=28 min=0 hour=0
+sec=29 min=0 hour=0
+now=30:100922 -> every 5.0s: This is a Test
+

@@ -1,0 +1,19 @@
+iotlab-ssh --jmespath='keys(values(@)[0])[0]' --fmt='int'  flash-m3 --list saclay,a8,1 /senslab/users/harter/riot/RIOT/tests/cb_mux_bench/bin/iotlab-a8-m3/tests_cb_mux_bench.elf | grep 0
+0
+./tests/01-run.py
+ssh -oProxyCommand='ssh harter@saclay.iot-lab.info -W %h:%p' -oStrictHostKeyChecking=no -t root@node-a8-1.saclay.iot-lab.info 'socat - open:/dev/ttyA8_M3,b500000,echo=0,raw'
+�main(): This is RIOT! (Version: buildtest)
+cb_mux benchmark application
+Populating cb_mux list with 20 items
+Finding the last list entry
+List walk time: 4 us
+Walk time less than threshold of 200 us
+[SUCCESS]
+�main(): This is RIOT! (Version: buildtest)
+cb_mux benchmark application
+Populating cb_mux list with 20 items
+Finding the last list entry
+List walk time: 4 us
+Walk time less than threshold of 200 us
+[SUCCESS]
+

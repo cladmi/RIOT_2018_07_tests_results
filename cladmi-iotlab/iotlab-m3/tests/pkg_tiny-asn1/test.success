@@ -1,0 +1,97 @@
+iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,m3,1 --update /senslab/users/harter/riot/RIOT/tests/pkg_tiny-asn1/bin/iotlab-m3/tests_pkg_tiny-asn1.elf | grep 0
+0
+./tests/01-run.py
+ssh -t harter@saclay.iot-lab.info 'socat - tcp:m3-1.saclay.iot-lab.info:20000'
+�main(): This is RIOT! (Version: buildtest)
+d=0, Tag: 30, len=96
+d=1, Tag: 06, len=9
+Value:
+2a 86 48 86   f7 0d 01 07 
+06 
+d=1, Tag: a0, len=83
+d=2, Tag: 30, len=81
+d=3, Tag: 02, len=1
+Value:
+00 
+d=3, Tag: 30, len=76
+d=4, Tag: 06, len=9
+Value:
+2a 86 48 86   f7 0d 01 07 
+01 
+d=4, Tag: 30, len=29
+d=5, Tag: 06, len=9
+Value:
+60 86 48 01   65 03 04 01 
+02 
+d=5, Tag: 04, len=16
+Value:
+4d aa 7b 74   fb f7 7a fa 
+b0 23 a2 9c   1a b6 51 e4 
+
+d=4, Tag: 80, len=32
+Value:
+6b 8f 64 d7   3a 81 01 0c 
+7b ab fd 26   6d 46 2e 3e 
+c4 f6 01 78   8a c0 c0 52 
+0a 66 17 71   4f f6 d9 95 
+
+ContentType: encryptedData
+CMSVersion: 0
+ContentType of EncryptedContentInfo: pkcs#7
+Content encryption algorithm: AES-128-CBC.
+IV:
+4d aa 7b 74   fb f7 7a fa 
+b0 23 a2 9c   1a b6 51 e4 
+
+Encrypted content:
+6b 8f 64 d7   3a 81 01 0c 
+7b ab fd 26   6d 46 2e 3e 
+c4 f6 01 78   8a c0 c0 52 
+0a 66 17 71   4f f6 d9 95 
+
+Unprotected attributes are not available.
+DER encoded data:
+30 60 06 09   2a 86 48 86 
+f7 0d 01 07   06 a0 53 30 
+51 02 01 00   30 4c 06 09 
+2a 86 48 86   f7 0d 01 07 
+01 30 1d 06   09 60 86 48 
+01 65 03 04   01 02 04 10 
+4d aa 7b 74   fb f7 7a fa 
+b0 23 a2 9c   1a b6 51 e4 
+80 20 6b 8f   64 d7 3a 81 
+01 0c 7b ab   fd 26 6d 46 
+2e 3e c4 f6   01 78 8a c0 
+c0 52 0a 66   17 71 4f f6 
+d9 95 
+Decoding finished succesfully
+�main(): This is RIOT! (Version: buildtest)
+d=0, Tag: 30, len=96
+d=1, Tag: 06, len=9
+Value:
+2a 86 48 86   f7 0d 01 07 
+06 
+d=1, Tag: a0, len=83
+d=2, Tag: 30, len=81
+d=3, Tag: 02, len=1
+Value:
+00 
+d=3, Tag: 30, len=76
+d=4, Tag: 06, len=9
+Value:
+2a 86 48 86   f7 0d 01 07 
+01 
+d=4, Tag: 30, len=29
+d=5, Tag: 06, len=9
+Value:
+60 86 48 01   65 03 04 01 
+02 
+d=5, Tag: 04, len=16
+Value:
+4d aa 7b 74   fb f7 7a fa 
+b0 23 a2 9c   1a b6 51 e4 
+
+d=4, Tag: 80, len=32
+Value:
+6b 8f 64 d7   3a 81 01 0c 
+7b ab fd 26   6d 46 2e 3e 

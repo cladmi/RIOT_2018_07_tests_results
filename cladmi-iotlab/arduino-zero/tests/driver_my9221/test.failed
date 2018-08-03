@@ -1,4 +1,4 @@
-make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT/tests/driver_my9221 flash-only test
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /senslab/users/harter/riot/RIOT/tests/driver_my9221 flash-only test
 iotlab-node --jmespath='keys(@)[0]' --format='int'  --list saclay,arduino-zero,1 --update /senslab/users/harter/riot/RIOT/tests/driver_my9221/bin/arduino-zero/tests_driver_my9221.elf | grep 0
 0
 tests/01-run.py

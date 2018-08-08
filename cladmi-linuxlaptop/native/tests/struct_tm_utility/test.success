@@ -1,0 +1,205 @@
+true 
+tests/01-run.py
+
+/home/harter/work/git/RIOT_release/tests/struct_tm_utility/bin/native/tests_struct_tm_utility.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+`struct tm` utility shell.
+> 
+
+> help
+help
+help
+Command              Description
+---------------------------------------
+days_in              Tells you the number of days in a month.
+leap_year            Tells you if a supplied year is a leap year.
+doomsday             Tells you the wday Doomsday of the supplied year.
+day                  Tells you the day of the supplied date.
+> days_in
+days_in
+days_in
+Usage: days_in <Month[1..12]>
+> days_in 13
+days_in 13
+days_in 13
+Usage: days_in <Month[1..12]>
+> days_in 0
+days_in 0
+days_in 0
+Usage: days_in <Month[1..12]>
+> days_in 1
+days_in 1
+days_in 1
+There are 31 days in JAN in common years.
+> days_in 2
+days_in 2
+days_in 2
+There are 28 days in FEB in common years.
+> days_in 3
+days_in 3
+days_in 3
+There are 31 days in MAR in common years.
+> days_in 4
+days_in 4
+days_in 4
+There are 30 days in APR in common years.
+> days_in 5
+days_in 5
+days_in 5
+There are 31 days in MAY in common years.
+> days_in 6
+days_in 6
+days_in 6
+There are 30 days in JUN in common years.
+> days_in 7
+days_in 7
+days_in 7
+There are 31 days in JUL in common years.
+> days_in 8
+days_in 8
+days_in 8
+There are 31 days in AUG in common years.
+> days_in 9
+days_in 9
+days_in 9
+There are 30 days in SEP in common years.
+> days_in 10
+days_in 10
+days_in 10
+There are 31 days in OCT in common years.
+> days_in 11
+days_in 11
+days_in 11
+There are 30 days in NOV in common years.
+> days_in 12
+days_in 12
+days_in 12
+There are 31 days in DEC in common years.
+> leap_year
+leap_year
+leap_year
+Usage: leap_year <Year>
+> leap_year aaaa
+leap_year aaaa
+leap_year aaaa
+Usage: leap_year <Year>
+> leap_year 2000
+leap_year 2000
+leap_year 2000
+Was 2000 a leap year? YES.
+> leap_year 2016
+leap_year 2016
+leap_year 2016
+Was 2016 a leap year? YES.
+> leap_year 2017
+leap_year 2017
+leap_year 2017
+Was 2017 a leap year? NO.
+> leap_year 2018
+leap_year 2018
+leap_year 2018
+Was 2018 a leap year? NO.
+> doomsday
+doomsday
+doomsday
+Usage: doomsday <Year>
+> doomsday 2016
+doomsday 2016
+doomsday 2016
+What weekday was MAR 0 of 2016? MON.
+> doomsday 2017
+doomsday 2017
+doomsday 2017
+What weekday was MAR 0 of 2017? TUE.
+> day
+day
+day
+Usage: day <Year> <Month[1..12]> <Day[1..31]>
+> day 2017 1 1
+day 2017 1 1
+day 2017 1 1
+What weekday was 2017-01-01? The 1(th) day of the year was a SUN.
+> day 2017 1 15
+day 2017 1 15
+day 2017 1 15
+What weekday was 2017-01-15? The 15(th) day of the year was a SUN.
+> day 2017 1 28
+day 2017 1 28
+day 2017 1 28
+What weekday was 2017-01-28? The 28(th) day of the year was a SAT.
+> day 2017 4 1
+day 2017 4 1
+day 2017 4 1
+What weekday was 2017-04-01? The 91(th) day of the year was a SAT.
+> day 2017 4 15
+day 2017 4 15
+day 2017 4 15
+What weekday was 2017-04-15? The 105(th) day of the year was a SAT.
+> day 2017 4 28
+day 2017 4 28
+day 2017 4 28
+What weekday was 2017-04-28? The 118(th) day of the year was a FRI.
+> day 2017 11 1
+day 2017 11 1
+day 2017 11 1
+What weekday was 2017-11-01? The 305(th) day of the year was a WED.
+> day 2017 11 15
+day 2017 11 15
+day 2017 11 15
+What weekday was 2017-11-15? The 319(th) day of the year was a WED.
+> day 2017 11 28
+day 2017 11 28
+day 2017 11 28
+What weekday was 2017-11-28? The 332(th) day of the year was a TUE.
+> day 2018 1 1
+day 2018 1 1
+day 2018 1 1
+What weekday was 2018-01-01? The 1(th) day of the year was a MON.
+> day 2018 1 15
+day 2018 1 15
+day 2018 1 15
+What weekday was 2018-01-15? The 15(th) day of the year was a MON.
+> day 2018 1 28
+day 2018 1 28
+day 2018 1 28
+What weekday was 2018-01-28? The 28(th) day of the year was a SUN.
+> day 2018 4 1
+day 2018 4 1
+day 2018 4 1
+What weekday was 2018-04-01? The 91(th) day of the year was a SUN.
+> day 2018 4 15
+day 2018 4 15
+day 2018 4 15
+What weekday was 2018-04-15? The 105(th) day of the year was a SUN.
+> day 2018 4 28
+day 2018 4 28
+day 2018 4 28
+What weekday was 2018-04-28? The 118(th) day of the year was a SAT.
+> day 2018 11 1
+day 2018 11 1
+day 2018 11 1
+What weekday was 2018-11-01? The 305(th) day of the year was a THU.
+> day 2018 11 15
+day 2018 11 15
+day 2018 11 15
+What weekday was 2018-11-15? The 319(th) day of the year was a THU.
+> day 2018 11 28
+day 2018 11 28
+day 2018 11 28
+What weekday was 2018-11-28? The 332(th) day of the year was a WED.
+> day 2016 2 29
+day 2016 2 29
+day 2016 2 29
+What weekday was 2016-02-29? The 60(th) day of the year was a MON.
+> day 2017 2 29
+day 2017 2 29
+day 2017 2 29
+The supplied date is invalid, but no error should occur.
+What weekday was 2017-02-29? The 60(th) day of the year was a WED.
+> 

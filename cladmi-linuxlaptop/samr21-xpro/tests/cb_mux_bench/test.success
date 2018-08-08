@@ -1,0 +1,21 @@
+/home/harter/work/git/RIOT_release/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/harter/work/git/RIOT_release/tests/cb_mux_bench/bin/samr21-xpro/tests_cb_mux_bench.bin
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800001911 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev B)
+Erasing...  done.
+Programming........................................... done.
+Verification........................................... done.
+./tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-08 13:51:15,695 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 13:51:18,843 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 13:51:18,846 - INFO # cb_mux benchmark application
+2018-08-08 13:51:18,849 - INFO # Populating cb_mux list with 20 items
+2018-08-08 13:51:18,851 - INFO # Finding the last list entry
+2018-08-08 13:51:18,853 - INFO # List walk time: 19 us
+2018-08-08 13:51:18,857 - INFO # Walk time less than threshold of 200 us
+2018-08-08 13:51:18,858 - INFO # [SUCCESS]
+

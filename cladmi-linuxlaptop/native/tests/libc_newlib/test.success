@@ -1,0 +1,14 @@
+true 
+tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/libc_newlib/bin/native/tests_libc_newlib.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Newlib/nano test
+.
+OK (1 tests)
+

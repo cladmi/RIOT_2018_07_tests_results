@@ -1,7 +1,6 @@
-make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/harter/work/git/RIOT_release/tests/gnrc_sixlowpan flash-only test
 true 
 tests/01-run.py
-/home/harter/work/git/RIOT_release/tests/gnrc_sixlowpan/bin/native/tests_gnrc_sixlowpan.elf tap0 tap0 
+/home/harter/work/git/RIOT_release/tests/gnrc_sixlowpan/bin/native/tests_gnrc_sixlowpan.elf   
 RIOT native interrupts/signals initialized.
 LED_RED_OFF
 LED_GREEN_ON
@@ -115,23 +114,6 @@ flags: 0x0
 src_l2addr: 02:00:00:ff:fe:00:00:02
 dst_l2addr: 02:00:00:ff:fe:00:00:01
 ~~ PKT    -  4 snips, total size: 172 byte
-PKTDUMP: data received:
-~~ SNIP  0 - size:  96 byte, type: NETTYPE_IPV6 (2)
-traffic class: 0x00 (ECN: 0x0, DSCP: 0x00)
-flow label: 0x00000
-length: 56  next header: 0  hop limit: 1
-source address: fe80::99:a9ff:fe36:4959
-destination address: ff02::16
-00000000  3A  00  05  02  00  00  01  00  8F  00  31  3E  00  00  00  02
-00000010  04  00  00  00  FF  02  00  00  00  00  00  00  00  00  00  00
-00000020  00  00  00  FB  04  00  00  00  FF  02  00  00  00  00  00  00
-00000030  00  00  00  01  FF  36  49  59
-~~ SNIP  1 - size:  20 byte, type: NETTYPE_NETIF (-1)
-if_pid: 7  rssi: 0  lqi: 0
-flags: 0x0
-src_l2addr: 02:99:a9:36:49:59
-dst_l2addr: 33:33:00:00:00:16
-~~ PKT    -  2 snips, total size: 116 byte
 PKTDUMP: data to send:
 ~~ SNIP  0 - size:   8 byte, type: NETTYPE_NETIF (-1)
 if_pid: 7  rssi: 0  lqi: 0
@@ -141,16 +123,16 @@ dst_l2addr: (nil)
 ~~ SNIP  1 - size:  40 byte, type: NETTYPE_IPV6 (2)
 traffic class: 0x00 (ECN: 0x0, DSCP: 0x00)
 flow label: 0x00000
-length: 43031  next header: 255  hop limit: 255
-source address: fe80::99:a9ff:fe36:495a
+length: 40983  next header: 255  hop limit: 255
+source address: fe80::
 destination address: ff02::2
 ~~ SNIP  2 - size:   8 byte, type: NETTYPE_ICMPV6 (3)
    type: 133  code:   0
-   cksum: 0x94da
+   cksum: 0x0000
 00000000  00  00  00  00
-~~ SNIP  3 - size:   8 byte, type: NETTYPE_UNDEF (0)
-00000000  01  01  02  99  A9  36  49  5A
-~~ PKT    -  4 snips, total size:  64 byte
+~~ SNIP  3 - size:  16 byte, type: NETTYPE_UNDEF (0)
+00000000  01  02  00  00  00  00  00  00  00  00  00  00  00  00  00  00
+~~ PKT    -  4 snips, total size:  72 byte
 PKTDUMP: data to send:
 ~~ SNIP  0 - size:   8 byte, type: NETTYPE_NETIF (-1)
 if_pid: 7  rssi: 0  lqi: 0
@@ -160,16 +142,6 @@ dst_l2addr: (nil)
 ~~ SNIP  1 - size:  40 byte, type: NETTYPE_IPV6 (2)
 traffic class: 0x00 (ECN: 0x0, DSCP: 0x00)
 flow label: 0x00000
-length: 16  next header: 58  hop limit: 255
-source address: fe80::99:a9ff:fe36:495a
-destination address: ff02::2
-~~ SNIP  2 - size:   8 byte, type: NETTYPE_ICMPV6 (3)
-/home/harter/work/git/RIOT_release/Makefile.include:483: recipe for target 'term' failed
-make[1]: *** [term] Segmentation fault (core dumped)
-Unexpected end of file in expect script at "child.expect_exact("tag: 0x1")" (tests/gnrc_sixlowpan/tests/01-run.py:20)
-
-Process already stopped
-Makefile:25: recipe for target 'test' failed
-make: *** [test] Error 1
-
-Return value: 2
+length: 24  next header: 58  hop limit: 255
+source address: fe80::
+d

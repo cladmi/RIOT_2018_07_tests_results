@@ -1,0 +1,22 @@
+true 
+tests/01-run.py
+ifconfig
+/home/harter/work/git/RIOT_release/tests/netstats_l2/bin/native/tests_netstats_l2.elf tap0 tap0 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Welcome to RIOT!
+> ifconfig
+ifconfig
+Iface  3  HWaddr: 16:21:a8:f7:6f:b9 
+          Source address length: 6
+          
+          Statistics for Layer 2
+            RX packets 2  bytes 220
+            TX packets 0 (Multicast: 0)  bytes 0
+            TX succeeded 0 errors 0
+

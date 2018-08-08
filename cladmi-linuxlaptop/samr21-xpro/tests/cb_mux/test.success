@@ -1,0 +1,40 @@
+/home/harter/work/git/RIOT_release/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/harter/work/git/RIOT_release/tests/cb_mux/bin/samr21-xpro/tests_cb_mux.bin
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800001911 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev B)
+Erasing...  done.
+Programming......................................... done.
+Verification......................................... done.
+./tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-08 13:51:07,436 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 13:51:10,545 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 13:51:10,547 - INFO # cb_mux test routine
+2018-08-08 13:51:10,551 - INFO # Test list addition, retrieval, execution of 5 CBs
+2018-08-08 13:51:10,553 - INFO # Callback 0 executed
+2018-08-08 13:51:10,555 - INFO # Callback 1 executed
+2018-08-08 13:51:10,556 - INFO # Callback 2 executed
+2018-08-08 13:51:10,558 - INFO # Callback 3 executed
+2018-08-08 13:51:10,560 - INFO # Callback 4 executed
+2018-08-08 13:51:10,565 - INFO # Test list deletion of CB 0, 2, 4, execution of 1, 3
+2018-08-08 13:51:10,566 - INFO # Callback 1 executed
+2018-08-08 13:51:10,568 - INFO # Callback 3 executed
+2018-08-08 13:51:10,572 - INFO # Test execution of CB with lowest ID (1)
+2018-08-08 13:51:10,574 - INFO # Callback 1 executed
+2018-08-08 13:51:10,577 - INFO # Test execution of CB with highest ID (3)
+2018-08-08 13:51:10,579 - INFO # Callback 3 executed
+2018-08-08 13:51:10,584 - INFO # Re-adding list entries (0, 2, 4) by finding next free ID
+2018-08-08 13:51:10,585 - INFO # Added entry 0
+2018-08-08 13:51:10,586 - INFO # Added entry 2
+2018-08-08 13:51:10,588 - INFO # Added entry 4
+2018-08-08 13:51:10,591 - INFO # Test iteration of a function over list
+2018-08-08 13:51:10,594 - INFO # Entry 0 was updated correctly
+2018-08-08 13:51:10,597 - INFO # Entry 1 was updated correctly
+2018-08-08 13:51:10,599 - INFO # Entry 2 was updated correctly
+2018-08-08 13:51:10,602 - INFO # Entry 3 was updated correctly
+2018-08-08 13:51:10,605 - INFO # Entry 4 was updated correctly
+2018-08-08 13:51:10,606 - INFO # Tests complete!
+

@@ -1,0 +1,39 @@
+true 
+tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/ps_schedstatistics/bin/native/tests_ps_schedstatistics.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+> 
+help
+
+
+> help
+help
+Command              Description
+---------------------------------------
+reboot               Reboot the node
+ps                   Prints information about running threads.
+> ps
+ps
+ps
+	pid | name                 | state    Q | pri | stack  ( used) | base addr  | current     | runtime  | switches
+	  - | isr_stack            | -        - |   - |   8192 (   -1) |  0x8062680 |  0x8062680
+	  1 | idle                 | pending  Q |  15 |   8192 (  568) |  0x8060160 |  0x8061fd4  | 29.860% |         1
+	  2 | main                 | running  Q |   7 |  12288 ( 2976) |  0x805d160 |  0x805ffd4  | 65.839% |      3345
+	  3 | thread               | bl rx    _ |   6 |   8192 ( 2292) |  0x8053140 |  0x8054fb4  |  0.799% |      1337
+	  4 | thread               | bl rx    _ |   6 |   8192 ( 2292) |  0x8055140 |  0x8056fb4  |  0.865% |      1337
+	  5 | thread               | bl mutex _ |   6 |   8192 ( 2292) |  0x8057140 |  0x8058fb4  |  0.918% |      1336
+	  6 | thread               | bl rx    _ |   6 |   8192 ( 2292) |  0x8059140 |  0x805afb4  |  0.980% |      1335
+	  7 | thread               | bl rx    _ |   6 |   8192 ( 2292) |  0x805b140 |  0x805cfb4  |  0.736% |      1335
+	    | SUM                  |            |     |  69632 (15004)
+> 

@@ -1,0 +1,274 @@
+/home/harter/work/git/RIOT_release/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/harter/work/git/RIOT_release/tests/pthread_rwlock/bin/samr21-xpro/tests_pthread_rwlock.bin
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800001911 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev B)
+Erasing...  done.
+Programming..................................................... done.
+Verification..................................................... done.
+tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-08 14:20:56,577 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 14:20:57,580 - INFO # w8 (prio=8): 0: write ->  1 (correct = 1)
+2018-08-08 14:20:57,580 - INFO # d8 (prio=8): sleep for   122594 µs.
+2018-08-08 14:20:57,581 - INFO # d3 (prio=8): sleep for    24656 µs.
+2018-08-08 14:20:57,581 - INFO # d4 (prio=8): sleep for    83993 µs.
+2018-08-08 14:20:57,581 - INFO # d5 (prio=9): sleep for    73503 µs.
+2018-08-08 14:20:57,582 - INFO # d6 (prio=9): sleep for    46989 µs.
+2018-08-08 14:20:57,582 - INFO # d7 (prio=9): sleep for    24089 µs.
+2018-08-08 14:20:57,582 - INFO # r3 (prio=8): 1: read  <-  1 (correct = 1)
+2018-08-08 14:20:57,583 - INFO # d3 (prio=8): sleep for    95588 µs.
+2018-08-08 14:20:57,583 - INFO # r7 (prio=9): 0: read  <-  1 (correct = 1)
+2018-08-08 14:20:57,583 - INFO # d7 (prio=9): sleep for    23051 µs.
+2018-08-08 14:20:57,584 - INFO # r6 (prio=9): 0: read  <-  1 (correct = 1)
+2018-08-08 14:20:57,584 - INFO # d6 (prio=9): sleep for    96154 µs.
+2018-08-08 14:20:57,584 - INFO # r5 (prio=9): 0: read  <-  1 (correct = 1)
+2018-08-08 14:20:57,585 - INFO # d5 (prio=9): sleep for    91811 µs.
+2018-08-08 14:20:57,585 - INFO # r4 (prio=8): 1: read  <-  1 (correct = 1)
+2018-08-08 14:20:57,585 - INFO # d4 (prio=8): sleep for    88416 µs.
+2018-08-08 14:20:57,586 - INFO # d9 (prio=9): sleep for    16692 µs.
+2018-08-08 14:20:57,586 - INFO # w9 (prio=9): 0: write ->  2 (correct = 1)
+2018-08-08 14:20:57,586 - INFO # d9 (prio=9): sleep for   128954 µs.
+2018-08-08 14:20:57,587 - INFO # d10 (prio=9): sleep for   167538 µs.
+2018-08-08 14:20:57,587 - INFO # w10 (prio=9): 0: write ->  3 (correct = 1)
+2018-08-08 14:20:57,588 - INFO # d8 (prio=8): sleep for    75279 µs.
+2018-08-08 14:20:57,588 - INFO # d10 (prio=9): sleep for   165582 µs.
+2018-08-08 14:20:57,589 - INFO # w8 (prio=8): 1: write ->  4 (correct = 1)
+2018-08-08 14:20:57,589 - INFO # d8 (prio=8): sleep for    78118 µs.
+2018-08-08 14:20:57,590 - INFO # d3 (prio=8): sleep for    36496 µs.
+2018-08-08 14:20:57,590 - INFO # d4 (prio=8): sleep for    86878 µs.
+2018-08-08 14:20:57,590 - INFO # d7 (prio=9): sleep for    71947 µs.
+2018-08-08 14:20:57,590 - INFO # d6 (prio=9): sleep for    49155 µs.
+2018-08-08 14:20:57,591 - INFO # d5 (prio=9): sleep for    68149 µs.
+2018-08-08 14:20:57,591 - INFO # r3 (prio=8): 2: read  <-  4 (correct = 1)
+2018-08-08 14:20:57,591 - INFO # d3 (prio=8): sleep for    68562 µs.
+2018-08-08 14:20:57,592 - INFO # r6 (prio=9): 1: read  <-  4 (correct = 1)
+2018-08-08 14:20:57,592 - INFO # d6 (prio=9): sleep for    31048 µs.
+2018-08-08 14:20:57,593 - INFO # r7 (prio=9): 1: read  <-  4 (correct = 1)
+2018-08-08 14:20:57,593 - INFO # d7 (prio=9): sleep for    46645 µs.
+2018-08-08 14:20:57,593 - INFO # r5 (prio=9): 1: read  <-  4 (correct = 1)
+2018-08-08 14:20:57,594 - INFO # d5 (pr4 (prio=8): 2: read  <-  4 (correct = 1)
+2018-08-08 14:20:57,594 - INFO # d4 (prio=8): sleep for     3591 µs.
+2018-08-08 14:20:57,595 - INFO # d8 (prio=8): sleep for   163698 µs.
+2018-08-08 14:20:57,595 - INFO # rio=8): sleep for   163698 µs.
+2018-08-08 14:20:57,595 - INFO # w8 (prio=8): 2: write ->  5 (correct = 1)
+2018-08-08 14:20:57,596 - INFO # d8 (prio=8): sleep for    77382 µs.
+2018-08-08 14:20:57,596 - INFO # d4 (prio=8): sleep for    92791 µs.
+2018-08-08 14:20:57,596 - INFO # d3 (prio=8): sleep for    89770 µs.
+2018-08-08 14:20:57,597 - INFO # r4 (prio=8): 3: read  <-  5 (correct = 1)
+2018-08-08 14:20:57,597 - INFO # d4 (prio=8): sleep for     6593 µs.
+2018-08-08 14:20:57,598 - INFO # r3 (prio=8): 3: read  <-  5 (correct = 1)
+2018-08-08 14:20:57,598 - INFO # d3 (prio=8): sleep for     3433 µs.
+2018-08-08 14:20:57,598 - INFO # d8 (prio=8): sleep for    73806 µs.
+2018-08-08 14:20:57,599 - INFO # w8 (prio=8): 3: write ->  6 (correct = 1)
+2018-08-08 14:20:57,599 - INFO # d8 (prio=8): sleep for     4704 µs.
+2018-08-08 14:20:57,599 - INFO # d4 (prio=8): sleep for    24046 µs.
+2018-08-08 14:20:57,600 - INFO # d3 (prio=8): sleep for    24314 µs.
+2018-08-08 14:20:57,600 - INFO # r4 (prio=8): 4: read  <-  6 (correct = 1)
+2018-08-08 14:20:57,600 - INFO # d4 (prio=8): sleep for    85259 µs.
+2018-08-08 14:20:57,601 - INFO # r3 (prio=8): 4: read  <-  6 (correct = 1)
+2018-08-08 14:20:57,601 - INFO # d3 (prio=8): sleep for    70067 µs.
+2018-08-08 14:20:57,601 - INFO # d8 (prio=8): sleep for   183939 µs.
+2018-08-08 14:20:57,620 - INFO # done
+2018-08-08 14:20:57,628 - INFO # done
+2018-08-08 14:20:57,741 - INFO # w8 (prio=8): 4: write ->  7 (correct = 1)
+2018-08-08 14:20:57,744 - INFO # d8 (prio=8): sleep for    72394 µs.
+2018-08-08 14:20:57,747 - INFO # d9 (prio=9): sleep for   268101 µs.
+2018-08-08 14:20:57,817 - INFO # done
+2018-08-08 14:20:58,020 - INFO # w9 (prio=9): 1: write ->  8 (correct = 1)
+2018-08-08 14:20:58,023 - INFO # d9 (prio=9): sleep for   196760 µs.
+2018-08-08 14:20:58,027 - INFO # d10 (prio=9): sleep for   204576 µs.
+2018-08-08 14:20:58,236 - INFO # w10 (prio=9): 1: write ->  9 (correct = 1)
+2018-08-08 14:20:58,239 - INFO # d10 (prio=9): sleep for    21254 µs.
+2018-08-08 14:20:58,242 - INFO # d6 (prio=9): sleep for    45475 µs.
+2018-08-08 14:20:58,246 - INFO # d5 (prio=9): sleep for    90714 µs.
+2018-08-08 14:20:58,249 - INFO # d7 (prio=9): sleep for    91645 µs.
+2018-08-08 14:20:58,292 - INFO # r6 (prio=9): 2: read  <-  9 (correct = 1)
+2018-08-08 14:20:58,295 - INFO # d6 (prio=9): sleep for    60870 µs.
+2018-08-08 14:20:58,341 - INFO # r5 (prio=9): 2: read  <-  9 (correct = 1)
+2018-08-08 14:20:58,344 - INFO # d5 (prio=9): sleep for    95333 µs.
+2018-08-08 14:20:58,348 - INFO # r7 (prio=9): 2: read  <-  9 (correct = 1)
+2018-08-08 14:20:58,351 - INFO # d7 (prio=9): sleep for    69317 µs.
+2018-08-08 14:20:58,355 - INFO # d9 (prio=9): sleep for   129957 µs.
+2018-08-08 14:20:58,489 - INFO # w9 (prio=9): 2: write -> 10 (correct = 1)
+2018-08-08 14:20:58,492 - INFO # d9 (prio=9): sleep for   171762 µs.
+2018-08-08 14:20:58,496 - INFO # d10 (prio=9): sleep for   119604 µs.
+2018-08-08 14:20:58,619 - INFO # w10 (prio=9): 2: write -> 11 (correct = 1)
+2018-08-08 14:20:58,623 - INFO # d10 (prio=9): sleep for   110538 µs.
+2018-08-08 14:20:58,626 - INFO # d6 (prio=9): sleep for    87106 µs.
+2018-08-08 14:20:58,630 - INFO # d7 (prio=9): sleep for    62824 µs.
+2018-08-08 14:20:58,633 - INFO # d5 (prio=9): sleep for    45806 µs.
+2018-08-08 14:20:58,683 - INFO # r5 (prio=9): 3: read  <- 11 (correct = 1)
+2018-08-08 14:20:58,686 - INFO # d5 (prio=9): sleep for    97021 µs.
+2018-08-08 14:20:58,696 - INFO # r7 (prio=9): 3: read  <- 11 (correct = 1)
+2018-08-08 14:20:58,700 - INFO # d7 (prio=9): sleep for    98317 µs.
+2018-08-08 14:20:58,717 - INFO # r6 (prio=9): 3: read  <- 11 (correct = 1)
+2018-08-08 14:20:58,721 - INFO # d6 (prio=9): sleep for    24749 µs.
+2018-08-08 14:20:58,724 - INFO # d9 (prio=9): sleep for   285648 µs.
+2018-08-08 14:20:59,014 - INFO # w9 (prio=9): 3: write -> 12 (correct = 1)
+2018-08-08 14:20:59,017 - INFO # d9 (prio=9): sleep for   144708 µs.
+2018-08-08 14:20:59,021 - INFO # d10 (prio=9): sleep for   133053 µs.
+2018-08-08 14:20:59,158 - INFO # w10 (prio=9): 3: write -> 13 (correct = 1)
+2018-08-08 14:20:59,162 - INFO # d10 (prio=9): sleep for    53816 µs.
+2018-08-08 14:20:59,165 - INFO # d6 (prio=9): sleep for    95901 µs.
+2018-08-08 14:20:59,168 - INFO # d5 (prio=9): sleep for    87544 µs.
+2018-08-08 14:20:59,172 - INFO # d7 (prio=9): sleep for    49978 µs.
+2018-08-08 14:20:59,226 - INFO # r7 (prio=9): 4: read  <- 13 (correct = 1)
+2018-08-08 14:20:59,229 - INFO # d7 (prio=9): sleep for    78192 µs.
+2018-08-08 14:20:59,260 - INFO # r5 (prio=9): 4: read  <- 13 (correct = 1)
+2018-08-08 14:20:59,263 - INFO # d5 (prio=9): sleep for    85060 µs.
+2018-08-08 14:20:59,267 - INFO # r6 (prio=9): 4: read  <- 13 (correct = 1)
+2018-08-08 14:20:59,271 - INFO # d6 (prio=9): sleep for    84081 µs.
+2018-08-08 14:20:59,274 - INFO # d9 (prio=9): sleep for    21156 µs.
+2018-08-08 14:20:59,299 - INFO # w9 (prio=9): 4: write -> 14 (correct = 1)
+2018-08-08 14:20:59,302 - INFO # d9 (prio=9): sleep for    89472 µs.
+2018-08-08 14:20:59,306 - INFO # d10 (prio=9): sleep for   215796 µs.
+2018-08-08 14:20:59,308 - INFO # done
+2018-08-08 14:20:59,349 - INFO # done
+2018-08-08 14:20:59,355 - INFO # done
+2018-08-08 14:20:59,393 - INFO # done
+2018-08-08 14:20:59,526 - INFO # w10 (prio=9): 4: write -> 15 (correct = 1)
+2018-08-08 14:20:59,529 - INFO # d10 (prio=9): sleep for     1304 µs.
+2018-08-08 14:20:59,531 - INFO # done
+2018-08-08 14:20:59,532 - INFO # SUCCESS
+2018-08-08 14:20:59,665 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 14:20:59,665 - INFO # START
+2018-08-08 14:20:59,666 - INFO # start
+2018-08-08 14:20:59,670 - INFO # d3 (prio=8): sleep for    49510 µs.
+2018-08-08 14:20:59,670 - INFO # start
+2018-08-08 14:20:59,674 - INFO # d4 (prio=8): sleep for    83613 µs.
+2018-08-08 14:20:59,674 - INFO # start
+2018-08-08 14:20:59,675 - INFO # start
+2018-08-08 14:20:59,675 - INFO # start
+2018-08-08 14:20:59,676 - INFO # start
+2018-08-08 14:20:59,676 - INFO # start
+2018-08-08 14:20:59,677 - INFO # start
+2018-08-08 14:20:59,723 - INFO # r3 (prio=8): 0: read  <-  0 (correct = 1)
+2018-08-08 14:20:59,727 - INFO # d3 (prio=8): sleep for    48428 µs.
+2018-08-08 14:20:59,761 - INFO # r4 (prio=8): 0: read  <-  0 (correct = 1)
+2018-08-08 14:20:59,765 - INFO # d4 (prio=8): sleep for    65598 µs.
+2018-08-08 14:20:59,768 - INFO # d8 (prio=8): sleep for   145551 µs.
+2018-08-08 14:20:59,918 - INFO # w8 (prio=8): 0: write ->  1 (correct = 1)
+2018-08-08 14:20:59,921 - INFO # d8 (prio=8): sleep for   122594 µs.
+2018-08-08 14:20:59,924 - INFO # d3 (prio=8): sleep for    24656 µs.
+2018-08-08 14:20:59,928 - INFO # d4 (prio=8): sleep for    83993 µs.
+2018-08-08 14:20:59,931 - INFO # d5 (prio=9): sleep for    73503 µs.
+2018-08-08 14:20:59,935 - INFO # d6 (prio=9): sleep for    46989 µs.
+2018-08-08 14:20:59,938 - INFO # d7 (prio=9): sleep for    24089 µs.
+2018-08-08 14:20:59,953 - INFO # r3 (prio=8): 1: read  <-  1 (correct = 1)
+2018-08-08 14:20:59,956 - INFO # d3 (prio=8): sleep for    95588 µs.
+2018-08-08 14:20:59,966 - INFO # r7 (prio=9): 0: read  <-  1 (correct = 1)
+2018-08-08 14:20:59,969 - INFO # d7 (prio=9): sleep for    23051 µs.
+2018-08-08 14:20:59,986 - INFO # r6 (prio=9): 0: read  <-  1 (correct = 1)
+2018-08-08 14:20:59,989 - INFO # d6 (prio=9): sleep for    96154 µs.
+2018-08-08 14:21:00,009 - INFO # r5 (prio=9): 0: read  <-  1 (correct = 1)
+2018-08-08 14:21:00,012 - INFO # d5 (prio=9): sleep for    91811 µs.
+2018-08-08 14:21:00,016 - INFO # r4 (prio=8): 1: read  <-  1 (correct = 1)
+2018-08-08 14:21:00,019 - INFO # d4 (prio=8): sleep for    88416 µs.
+2018-08-08 14:21:00,023 - INFO # d9 (prio=9): sleep for    16692 µs.
+2018-08-08 14:21:00,044 - INFO # w9 (prio=9): 0: write ->  2 (correct = 1)
+2018-08-08 14:21:00,047 - INFO # d9 (prio=9): sleep for   128954 µs.
+2018-08-08 14:21:00,050 - INFO # d10 (prio=9): sleep for   167538 µs.
+2018-08-08 14:21:00,222 - INFO # w10 (prio=9): 0: write ->  3 (correct = 1)
+2018-08-08 14:21:00,225 - INFO # d8 (prio=8): sleep for    75279 µs.
+2018-08-08 14:21:00,229 - INFO # d10 (prio=9): sleep for   165582 µs.
+2018-08-08 14:21:00,305 - INFO # w8 (prio=8): 1: write ->  4 (correct = 1)
+2018-08-08 14:21:00,308 - INFO # d8 (prio=8): sleep for    78118 µs.
+2018-08-08 14:21:00,311 - INFO # d3 (prio=8): sleep for    36496 µs.
+2018-08-08 14:21:00,315 - INFO # d4 (prio=8): sleep for    86878 µs.
+2018-08-08 14:21:00,318 - INFO # d7 (prio=9): sleep for    71947 µs.
+2018-08-08 14:21:00,322 - INFO # d6 (prio=9): sleep for    49155 µs.
+2018-08-08 14:21:00,325 - INFO # d5 (prio=9): sleep for    68149 µs.
+2018-08-08 14:21:00,352 - INFO # r3 (prio=8): 2: read  <-  4 (correct = 1)
+2018-08-08 14:21:00,355 - INFO # d3 (prio=8): sleep for    68562 µs.
+2018-08-08 14:21:00,375 - INFO # r6 (prio=9): 1: read  <-  4 (correct = 1)
+2018-08-08 14:21:00,380 - INFO # d6 (prio=9): sleep for    31048 µs.
+2018-08-08 14:21:00,394 - INFO # r7 (prio=9): 1: read  <-  4 (correct = 1)
+2018-08-08 14:21:00,397 - INFO # d7 (prio=9): sleep for    46645 µs.
+2018-08-08 14:21:00,401 - INFO # r5 (prio=9): 1: read  <-  4 (correct = 1)
+2018-08-08 14:21:00,406 - INFO # d5 (pr4 (prio=8): 2: read  <-  4 (correct = 1)
+2018-08-08 14:21:00,410 - INFO # d4 (prio=8): sleep for     3591 µs.
+2018-08-08 14:21:00,413 - INFO # d8 (prio=8): sleep for   163698 µs.
+2018-08-08 14:21:00,415 - INFO # rio=8): sleep for   163698 µs.
+2018-08-08 14:21:00,580 - INFO # w8 (prio=8): 2: write ->  5 (correct = 1)
+2018-08-08 14:21:00,584 - INFO # d8 (prio=8): sleep for    77382 µs.
+2018-08-08 14:21:00,587 - INFO # d4 (prio=8): sleep for    92791 µs.
+2018-08-08 14:21:00,590 - INFO # d3 (prio=8): sleep for    89770 µs.
+2018-08-08 14:21:00,684 - INFO # r4 (prio=8): 3: read  <-  5 (correct = 1)
+2018-08-08 14:21:00,687 - INFO # d4 (prio=8): sleep for     6593 µs.
+2018-08-08 14:21:00,691 - INFO # r3 (prio=8): 3: read  <-  5 (correct = 1)
+2018-08-08 14:21:00,694 - INFO # d3 (prio=8): sleep for     3433 µs.
+2018-08-08 14:21:00,698 - INFO # d8 (prio=8): sleep for    73806 µs.
+2018-08-08 14:21:00,776 - INFO # w8 (prio=8): 3: write ->  6 (correct = 1)
+2018-08-08 14:21:00,781 - INFO # d8 (prio=8): sleep for     4704 µs.
+2018-08-08 14:21:00,783 - INFO # d4 (prio=8): sleep for    24046 µs.
+2018-08-08 14:21:00,786 - INFO # d3 (prio=8): sleep for    24314 µs.
+2018-08-08 14:21:00,810 - INFO # r4 (prio=8): 4: read  <-  6 (correct = 1)
+2018-08-08 14:21:00,814 - INFO # d4 (prio=8): sleep for    85259 µs.
+2018-08-08 14:21:00,818 - INFO # r3 (prio=8): 4: read  <-  6 (correct = 1)
+2018-08-08 14:21:00,821 - INFO # d3 (prio=8): sleep for    70067 µs.
+2018-08-08 14:21:00,824 - INFO # d8 (prio=8): sleep for   183939 µs.
+2018-08-08 14:21:00,892 - INFO # done
+2018-08-08 14:21:00,900 - INFO # done
+2018-08-08 14:21:01,013 - INFO # w8 (prio=8): 4: write ->  7 (correct = 1)
+2018-08-08 14:21:01,016 - INFO # d8 (prio=8): sleep for    72394 µs.
+2018-08-08 14:21:01,019 - INFO # d9 (prio=9): sleep for   268101 µs.
+2018-08-08 14:21:01,089 - INFO # done
+2018-08-08 14:21:01,292 - INFO # w9 (prio=9): 1: write ->  8 (correct = 1)
+2018-08-08 14:21:01,295 - INFO # d9 (prio=9): sleep for   196760 µs.
+2018-08-08 14:21:01,299 - INFO # d10 (prio=9): sleep for   204576 µs.
+2018-08-08 14:21:01,509 - INFO # w10 (prio=9): 1: write ->  9 (correct = 1)
+2018-08-08 14:21:01,513 - INFO # d10 (prio=9): sleep for    21254 µs.
+2018-08-08 14:21:01,514 - INFO # d6 (prio=9): sleep for    45475 µs.
+2018-08-08 14:21:01,518 - INFO # d5 (prio=9): sleep for    90714 µs.
+2018-08-08 14:21:01,521 - INFO # d7 (prio=9): sleep for    91645 µs.
+2018-08-08 14:21:01,564 - INFO # r6 (prio=9): 2: read  <-  9 (correct = 1)
+2018-08-08 14:21:01,567 - INFO # d6 (prio=9): sleep for    60870 µs.
+2018-08-08 14:21:01,613 - INFO # r5 (prio=9): 2: read  <-  9 (correct = 1)
+2018-08-08 14:21:01,616 - INFO # d5 (prio=9): sleep for    95333 µs.
+2018-08-08 14:21:01,620 - INFO # r7 (prio=9): 2: read  <-  9 (correct = 1)
+2018-08-08 14:21:01,623 - INFO # d7 (prio=9): sleep for    69317 µs.
+2018-08-08 14:21:01,626 - INFO # d9 (prio=9): sleep for   129957 µs.
+2018-08-08 14:21:01,761 - INFO # w9 (prio=9): 2: write -> 10 (correct = 1)
+2018-08-08 14:21:01,764 - INFO # d9 (prio=9): sleep for   171762 µs.
+2018-08-08 14:21:01,767 - INFO # d10 (prio=9): sleep for   119604 µs.
+2018-08-08 14:21:01,891 - INFO # w10 (prio=9): 2: write -> 11 (correct = 1)
+2018-08-08 14:21:01,895 - INFO # d10 (prio=9): sleep for   110538 µs.
+2018-08-08 14:21:01,898 - INFO # d6 (prio=9): sleep for    87106 µs.
+2018-08-08 14:21:01,901 - INFO # d7 (prio=9): sleep for    62824 µs.
+2018-08-08 14:21:01,905 - INFO # d5 (prio=9): sleep for    45806 µs.
+2018-08-08 14:21:01,955 - INFO # r5 (prio=9): 3: read  <- 11 (correct = 1)
+2018-08-08 14:21:01,958 - INFO # d5 (prio=9): sleep for    97021 µs.
+2018-08-08 14:21:01,968 - INFO # r7 (prio=9): 3: read  <- 11 (correct = 1)
+2018-08-08 14:21:01,972 - INFO # d7 (prio=9): sleep for    98317 µs.
+2018-08-08 14:21:01,989 - INFO # r6 (prio=9): 3: read  <- 11 (correct = 1)
+2018-08-08 14:21:01,993 - INFO # d6 (prio=9): sleep for    24749 µs.
+2018-08-08 14:21:01,996 - INFO # d9 (prio=9): sleep for   285648 µs.
+2018-08-08 14:21:02,286 - INFO # w9 (prio=9): 3: write -> 12 (correct = 1)
+2018-08-08 14:21:02,289 - INFO # d9 (prio=9): sleep for   144708 µs.
+2018-08-08 14:21:02,293 - INFO # d10 (prio=9): sleep for   133053 µs.
+2018-08-08 14:21:02,430 - INFO # w10 (prio=9): 3: write -> 13 (correct = 1)
+2018-08-08 14:21:02,433 - INFO # d10 (prio=9): sleep for    53816 µs.
+2018-08-08 14:21:02,437 - INFO # d6 (prio=9): sleep for    95901 µs.
+2018-08-08 14:21:02,440 - INFO # d5 (prio=9): sleep for    87544 µs.
+2018-08-08 14:21:02,444 - INFO # d7 (prio=9): sleep for    49978 µs.
+2018-08-08 14:21:02,498 - INFO # r7 (prio=9): 4: read  <- 13 (correct = 1)
+2018-08-08 14:21:02,501 - INFO # d7 (prio=9): sleep for    78192 µs.
+2018-08-08 14:21:02,532 - INFO # r5 (prio=9): 4: read  <- 13 (correct = 1)
+2018-08-08 14:21:02,535 - INFO # d5 (prio=9): sleep for    85060 µs.
+2018-08-08 14:21:02,539 - INFO # r6 (prio=9): 4: read  <- 13 (correct = 1)
+2018-08-08 14:21:02,542 - INFO # d6 (prio=9): sleep for    84081 µs.
+2018-08-08 14:21:02,546 - INFO # d9 (prio=9): sleep for    21156 µs.
+2018-08-08 14:21:02,571 - INFO # w9 (prio=9): 4: write -> 14 (correct = 1)
+2018-08-08 14:21:02,574 - INFO # d9 (prio=9): sleep for    89472 µs.
+2018-08-08 14:21:02,578 - INFO # d10 (prio=9): sleep for   215796 µs.
+2018-08-08 14:21:02,580 - INFO # done
+2018-08-08 14:21:02,621 - INFO # done
+2018-08-08 14:21:02,627 - INFO # done
+2018-08-08 14:21:02,664 - INFO # done
+2018-08-08 14:21:02,798 - INFO # w10 (prio=9): 4: write -> 15 (correct = 1)
+2018-08-08 14:21:02,801 - INFO # d10 (prio=9): sleep for     1304 µs.
+2018-08-08 14:21:02,803 - INFO # done
+2018-08-08 14:21:02,804 - INFO # SUCCESS

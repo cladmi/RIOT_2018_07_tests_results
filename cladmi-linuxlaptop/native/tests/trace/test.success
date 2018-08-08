@@ -1,0 +1,17 @@
+true 
+TERMFLAGS= tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/trace/bin/native/trace.elf  
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+TRACE_SIZE: 4
+0x80492d2
+0x8049360
+0xf7e3116b
+0x80496be
+All tests successful
+

@@ -1,0 +1,26 @@
+true 
+tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/pthread_cleanup/bin/native/tests_pthread_cleanup.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+START
+<SCOPE 0>
+<SCOPE 1>
+<SCOPE 2>
+<SCOPE 3>
+<SCOPE 4>
+<SCOPE 5 />
+Cleanup: <5>
+</SCOPE 4>
+</SCOPE 3>
+Cleanup: <3>
+Cleanup: <2>
+Cleanup: <1>
+Result: 1234
+SUCCESS
+

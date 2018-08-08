@@ -1,0 +1,22 @@
+true 
+tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/cpp11_mutex/bin/native/tests_cpp11_mutex.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+
+************ C++ mutex test ***********
+Lock and unlock ... 
+Done
+
+Try_lock ...
+Done
+
+Bye, bye.
+*****************************************
+
+

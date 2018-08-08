@@ -1,0 +1,13 @@
+true 
+tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/fmt_print/bin/native/tests_fmt_print.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+If you can read this:
+Test successful.
+

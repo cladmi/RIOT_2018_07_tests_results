@@ -1,0 +1,98 @@
+/home/harter/work/git/RIOT_release/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.9.0 (2018-01-30-19:14)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : auto-selecting first available session transport "jtag". To override use 'transport select <transport>'.
+adapter speed: 1000 kHz
+adapter_nsrst_delay: 100
+jtag_ntrst_delay: 100
+none separate
+cortex_m reset_config sysresetreq
+trst_and_srst separate srst_nogate trst_push_pull srst_open_drain connect_assert_srst
+Info : clock speed 1000 kHz
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020, part: 0x6414, ver: 0x0)
+Info : stm32f1x.cpu: hardware has 6 breakpoints, 4 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f1x.cpu       cortex_m   little stm32f1x.cpu       reset
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020, part: 0x6414, ver: 0x0)
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080004c0 msp: 0x20000200
+auto erase enabled
+Info : device id = 0x10016414
+Info : flash size = 512kbytes
+wrote 47104 bytes from file /home/harter/work/git/RIOT_release/tests/lwip_sock_udp/bin/iotlab-m3/tests_lwip_sock_udp.elf in 1.979370s (23.240 KiB/s)
+verified 46984 bytes in 0.698183s (65.717 KiB/s)
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020, part: 0x6414, ver: 0x0)
+shutdown command invoked
+Done flashing
+./tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "500000"
+No handlers could be found for logger "root"
+2018-08-08 12:32:31,525 - INFO # Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 12:32:34,227 - INFO # Calling test_sock_udp_create6__EADDRINUSE()
+2018-08-08 12:32:34,229 - INFO # Calling test_sock_udp_create6__EAFNOSUPPORT()
+2018-08-08 12:32:34,231 - INFO # Calling test_sock_udp_create6__EINVAL_addr()
+2018-08-08 12:32:34,231 - INFO # Calling test_sock_udp_create6__EINVAL_netif()
+2018-08-08 12:32:34,232 - INFO # Calling test_sock_udp_create6__no_endpoints()
+2018-08-08 12:32:34,232 - INFO # Calling test_sock_udp_create6__only_local()
+2018-08-08 12:32:34,232 - INFO # Calling test_sock_udp_create6__only_local_port0()
+2018-08-08 12:32:34,233 - INFO # Calling test_sock_udp_create6__only_local_reuse_ep()
+2018-08-08 12:32:34,233 - INFO # Calling test_sock_udp_create6__only_remote()
+2018-08-08 12:32:34,233 - INFO # Calling test_sock_udp_create6__full()
+2018-08-08 12:32:34,234 - INFO # Calling test_sock_udp_recv6__EADDRNOTAVAIL()
+2018-08-08 12:32:34,242 - INFO # Calling test_sock_udp_recv6__EAGAIN()
+2018-08-08 12:32:34,242 - INFO # Calling test_sock_udp_recv6__ENOBUFS()
+2018-08-08 12:32:34,242 - INFO # Calling test_sock_udp_recv6__ETIMEDOUT()
+2018-08-08 12:32:34,243 - INFO #  * Calling sock_udp_recv()
+2018-08-08 12:32:34,994 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-08 12:32:34,995 - INFO # code 0x41
+2018-08-08 12:32:37,987 - INFO # Calling test_sock_udp_create6__EADDRINUSE()
+2018-08-08 12:32:37,988 - INFO # Calling test_sock_udp_create6__EAFNOSUPPORT()
+2018-08-08 12:32:37,990 - INFO # Calling test_sock_udp_create6__EINVAL_addr()
+2018-08-08 12:32:37,990 - INFO # Calling test_sock_udp_create6__EINVAL_netif()
+2018-08-08 12:32:37,991 - INFO # Calling test_sock_udp_create6__no_endpoints()
+2018-08-08 12:32:37,991 - INFO # Calling test_sock_udp_create6__only_local()
+2018-08-08 12:32:38,001 - INFO # Calling test_sock_udp_create6__only_local_port0()
+2018-08-08 12:32:38,002 - INFO # Calling test_sock_udp_create6__only_local_reuse_ep()
+2018-08-08 12:32:38,003 - INFO # Calling test_sock_udp_create6__only_remote()
+2018-08-08 12:32:38,003 - INFO # Calling test_sock_udp_create6__full()
+2018-08-08 12:32:38,004 - INFO # Calling test_sock_udp_recv6__EADDRNOTAVAIL()
+2018-08-08 12:32:38,004 - INFO # Calling test_sock_udp_recv6__EAGAIN()
+2018-08-08 12:32:38,004 - INFO # Calling test_sock_udp_recv6__ENOBUFS()
+2018-08-08 12:32:38,005 - INFO # Calling test_sock_udp_recv6__ETIMEDOUT()
+2018-08-08 12:32:38,005 - INFO #  * Calling sock_udp_recv()
+2018-08-08 12:32:39,007 - INFO #  * (timed out with timeout 1000000)
+2018-08-08 12:32:39,009 - INFO # Calling test_sock_udp_recv6__socketed()
+2018-08-08 12:32:39,011 - INFO # Calling test_sock_udp_recv6__socketed_with_remote()
+2018-08-08 12:32:39,011 - INFO # Calling test_sock_udp_recv6__unsocketed()
+2018-08-08 12:32:39,012 - INFO # Calling test_sock_udp_recv6__unsocketed_with_remote()
+2018-08-08 12:32:39,012 - INFO # Calling test_sock_udp_recv6__with_timeout()
+2018-08-08 12:32:39,013 - INFO # Calling test_sock_udp_recv6__non_blocking()
+2018-08-08 12:32:39,013 - INFO # Calling test_sock_udp_send6__EAFNOSUPPORT()
+2018-08-08 12:32:39,013 - INFO # Calling test_sock_udp_send6__EINVAL_addr()
+2018-08-08 12:32:39,014 - INFO # Calling test_sock_udp_send6__EINVAL_netif()
+2018-08-08 12:32:39,014 - INFO # Calling test_sock_udp_send6__EINVAL_port()
+2018-08-08 12:32:39,021 - INFO # Calling test_sock_udp_send6__EHOSTUNREACH()
+2018-08-08 12:32:39,023 - INFO # Calling test_sock_udp_send6__ENOTCONN()
+2018-08-08 12:32:39,025 - INFO # Calling test_sock_udp_send6__socketed_no_local_no_netif()
+2018-08-08 12:32:39,026 - INFO # Calling test_sock_udp_send6__socketed_no_netif()
+2018-08-08 12:32:39,028 - INFO # Calling test_sock_udp_send6__socketed_no_local()
+2018-08-08 12:32:39,029 - INFO # Calling test_sock_udp_send6__socketed()
+2018-08-08 12:32:39,031 - INFO # Calling test_sock_udp_send6__socketed_other_remote()
+2018-08-08 12:32:39,033 - INFO # Calling test_sock_udp_send6__unsocketed_no_local_no_netif()
+2018-08-08 12:32:39,038 - INFO # Calling test_sock_udp_send6__unsocketed_no_netif()
+2018-08-08 12:32:39,040 - INFO # Calling test_sock_udp_send6__unsocketed_no_local()
+2018-08-08 12:32:39,041 - INFO # Calling test_sock_udp_send6__unsocketed()
+2018-08-08 12:32:39,043 - INFO # Calling test_sock_udp_send6__no_sock_no_netif()
+2018-08-08 12:32:39,044 - INFO # Calling test_sock_udp_send6__no_sock()
+2018-08-08 12:32:39,045 - INFO # ALL TESTS SUCCESSFUL
+

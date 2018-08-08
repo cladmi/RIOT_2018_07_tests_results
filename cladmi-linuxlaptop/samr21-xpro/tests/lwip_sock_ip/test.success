@@ -1,0 +1,66 @@
+/home/harter/work/git/RIOT_release/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/harter/work/git/RIOT_release/tests/lwip_sock_ip/bin/samr21-xpro/tests_lwip_sock_ip.bin
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800001911 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev B)
+Erasing...  done.
+Programming................................................................................................................................................................................................... done.
+Verification................................................................................................................................................................................................... done.
+./tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-08 14:09:07,635 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 14:09:10,500 - INFO # Calling test_sock_ip_create6__EAFNOSUPPORT()
+2018-08-08 14:09:10,503 - INFO # Calling test_sock_ip_create6__EINVAL_addr()
+2018-08-08 14:09:10,507 - INFO # Calling test_sock_ip_create6__EINVAL_netif()
+2018-08-08 14:09:10,511 - INFO # Calling test_sock_ip_create6__no_endpoints()
+2018-08-08 14:09:10,515 - INFO # Calling test_sock_ip_create6__only_local()
+2018-08-08 14:09:10,520 - INFO # Calling test_sock_ip_create6__only_local_reuse_ep()
+2018-08-08 14:09:10,524 - INFO # Calling test_sock_ip_create6__only_remote()
+2018-08-08 14:09:10,528 - INFO # Calling test_sock_ip_create6__full()
+2018-08-08 14:09:10,532 - INFO # Calling test_sock_ip_recv6__EADDRNOTAVAIL()
+2018-08-08 14:09:10,535 - INFO # Calling test_sock_ip_recv6__EAGAIN()
+2018-08-08 14:09:10,538 - INFO # Calling test_sock_ip_recv6__ENOBUFS()
+2018-08-08 14:09:10,542 - INFO # Calling test_sock_ip_recv6__ETIMEDOUT()
+2018-08-08 14:09:10,545 - INFO #  * Calling sock_ip_recv()
+2018-08-08 14:09:10,768 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 14:09:10,769 - INFO # code 0x41
+2018-08-08 14:09:13,779 - INFO # Calling test_sock_ip_create6__EAFNOSUPPORT()
+2018-08-08 14:09:13,783 - INFO # Calling test_sock_ip_create6__EINVAL_addr()
+2018-08-08 14:09:13,787 - INFO # Calling test_sock_ip_create6__EINVAL_netif()
+2018-08-08 14:09:13,791 - INFO # Calling test_sock_ip_create6__no_endpoints()
+2018-08-08 14:09:13,795 - INFO # Calling test_sock_ip_create6__only_local()
+2018-08-08 14:09:13,800 - INFO # Calling test_sock_ip_create6__only_local_reuse_ep()
+2018-08-08 14:09:13,804 - INFO # Calling test_sock_ip_create6__only_remote()
+2018-08-08 14:09:13,807 - INFO # Calling test_sock_ip_create6__full()
+2018-08-08 14:09:13,812 - INFO # Calling test_sock_ip_recv6__EADDRNOTAVAIL()
+2018-08-08 14:09:13,815 - INFO # Calling test_sock_ip_recv6__EAGAIN()
+2018-08-08 14:09:13,818 - INFO # Calling test_sock_ip_recv6__ENOBUFS()
+2018-08-08 14:09:13,822 - INFO # Calling test_sock_ip_recv6__ETIMEDOUT()
+2018-08-08 14:09:13,825 - INFO #  * Calling sock_ip_recv()
+2018-08-08 14:09:14,830 - INFO #  * (timed out with timeout 1000000)
+2018-08-08 14:09:14,833 - INFO # Calling test_sock_ip_recv6__socketed()
+2018-08-08 14:09:14,838 - INFO # Calling test_sock_ip_recv6__socketed_with_remote()
+2018-08-08 14:09:14,843 - INFO # Calling test_sock_ip_recv6__unsocketed()
+2018-08-08 14:09:14,848 - INFO # Calling test_sock_ip_recv6__unsocketed_with_remote()
+2018-08-08 14:09:14,852 - INFO # Calling test_sock_ip_recv6__with_timeout()
+2018-08-08 14:09:14,857 - INFO # Calling test_sock_ip_recv6__non_blocking()
+2018-08-08 14:09:14,861 - INFO # Calling test_sock_ip_send6__EAFNOSUPPORT()
+2018-08-08 14:09:14,865 - INFO # Calling test_sock_ip_send6__EINVAL_addr()
+2018-08-08 14:09:14,869 - INFO # Calling test_sock_ip_send6__EINVAL_netif()
+2018-08-08 14:09:14,873 - INFO # Calling test_sock_ip_send6__EHOSTUNREACH()
+2018-08-08 14:09:14,877 - INFO # Calling test_sock_ip_send6__ENOTCONN()
+2018-08-08 14:09:14,883 - INFO # Calling test_sock_ip_send6__socketed_no_local_no_netif()
+2018-08-08 14:09:14,887 - INFO # Calling test_sock_ip_send6__socketed_no_netif()
+2018-08-08 14:09:14,893 - INFO # Calling test_sock_ip_send6__socketed_no_local()
+2018-08-08 14:09:14,897 - INFO # Calling test_sock_ip_send6__socketed()
+2018-08-08 14:09:14,903 - INFO # Calling test_sock_ip_send6__socketed_other_remote()
+2018-08-08 14:09:14,910 - INFO # Calling test_sock_ip_send6__unsocketed_no_local_no_netif()
+2018-08-08 14:09:14,915 - INFO # Calling test_sock_ip_send6__unsocketed_no_netif()
+2018-08-08 14:09:14,921 - INFO # Calling test_sock_ip_send6__unsocketed_no_local()
+2018-08-08 14:09:14,926 - INFO # Calling test_sock_ip_send6__unsocketed()
+2018-08-08 14:09:14,931 - INFO # Calling test_sock_ip_send6__no_sock_no_netif()
+2018-08-08 14:09:14,936 - INFO # Calling test_sock_ip_send6__no_sock()
+2018-08-08 14:09:14,939 - INFO # ALL TESTS SUCCESSFUL
+

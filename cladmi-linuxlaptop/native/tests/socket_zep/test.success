@@ -1,0 +1,21 @@
+true 
+./tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/socket_zep/bin/native/socket_zep.elf  -z [::]:12345,[::1]:17754
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Socket ZEP device driver test
+Initializing socket ZEP with (local: [::]:12345, remote: [::1]:17754)
+(Hwaddrs: 3038, 005a45500a003038)
+Send zero-length packet
+Send 'Hello\0World\0'
+Waiting for an incoming message (use `make test`)
+RSSI: 255, LQI: 255, Data:
+00000000  41  DC  02  23  00  38  30  00  0A  50  45  5A  00  5B  45  00
+00000010  0A  50  45  5A  00  48  65  6C  6C  6F  20  57  6F  72  6C  64
+
+Run tests successful

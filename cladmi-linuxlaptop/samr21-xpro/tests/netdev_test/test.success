@@ -1,0 +1,24 @@
+/home/harter/work/git/RIOT_release/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/harter/work/git/RIOT_release/tests/netdev_test/bin/samr21-xpro/tests_netdev_test.bin
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800001911 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev B)
+Erasing...  done.
+Programming................................................................ done.
+Verification................................................................ done.
+tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-08 14:10:55,918 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 14:10:59,038 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 14:10:59,041 - INFO # Executing test_get_addr()
+2018-08-08 14:10:59,042 - INFO #  + succeeded.
+2018-08-08 14:10:59,044 - INFO # Executing test_send()
+2018-08-08 14:10:59,045 - INFO #  + succeeded.
+2018-08-08 14:10:59,047 - INFO # Executing test_receive()
+2018-08-08 14:10:59,049 - INFO #  + succeeded.
+2018-08-08 14:10:59,051 - INFO # Executing test_set_addr()
+2018-08-08 14:10:59,052 - INFO #  + succeeded.
+2018-08-08 14:10:59,054 - INFO # ALL TESTS SUCCESSFUL
+

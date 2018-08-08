@@ -1,0 +1,30 @@
+/home/harter/work/git/RIOT_release/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/harter/work/git/RIOT_release/tests/pthread_cleanup/bin/samr21-xpro/tests_pthread_cleanup.bin
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800001911 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev B)
+Erasing...  done.
+Programming................................................ done.
+Verification................................................ done.
+tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-08 14:19:22,701 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 14:19:25,840 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 14:19:25,841 - INFO # START
+2018-08-08 14:19:25,841 - INFO # <SCOPE 0>
+2018-08-08 14:19:25,842 - INFO # <SCOPE 1>
+2018-08-08 14:19:25,843 - INFO # <SCOPE 2>
+2018-08-08 14:19:25,844 - INFO # <SCOPE 3>
+2018-08-08 14:19:25,845 - INFO # <SCOPE 4>
+2018-08-08 14:19:25,846 - INFO # <SCOPE 5 />
+2018-08-08 14:19:25,847 - INFO # Cleanup: <5>
+2018-08-08 14:19:25,848 - INFO # </SCOPE 4>
+2018-08-08 14:19:25,849 - INFO # </SCOPE 3>
+2018-08-08 14:19:25,850 - INFO # Cleanup: <3>
+2018-08-08 14:19:25,851 - INFO # Cleanup: <2>
+2018-08-08 14:19:25,853 - INFO # Cleanup: <1>
+2018-08-08 14:19:25,854 - INFO # Result: 1234
+2018-08-08 14:19:25,854 - INFO # SUCCESS
+

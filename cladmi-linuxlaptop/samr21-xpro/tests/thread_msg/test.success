@@ -1,0 +1,39 @@
+/home/harter/work/git/RIOT_release/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/harter/work/git/RIOT_release/tests/thread_msg/bin/samr21-xpro/tests_thread_msg.bin
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800001911 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev B)
+Erasing...  done.
+Programming.......................................... done.
+Verification.......................................... done.
+tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-08 14:25:53,987 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 14:25:57,115 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 14:25:57,116 - INFO # THREADS CREATED
+2018-08-08 14:25:57,117 - INFO # 
+2018-08-08 14:25:57,118 - INFO # THREAD 1 start
+2018-08-08 14:25:57,118 - INFO # 
+2018-08-08 14:25:57,119 - INFO # THREAD 2 start
+2018-08-08 14:25:57,119 - INFO # 
+2018-08-08 14:25:57,121 - INFO # THREAD 3 start
+2018-08-08 14:25:57,121 - INFO # 
+2018-08-08 14:25:57,121 - INFO # T3 i=0
+2018-08-08 14:25:57,122 - INFO # T3 i=1
+2018-08-08 14:25:57,123 - INFO # T1 recv: 0(i=0)
+2018-08-08 14:25:57,125 - INFO # T2 got 0 (i=0)
+2018-08-08 14:25:57,127 - INFO # T1 got reply: 0 (i=0)
+2018-08-08 14:25:57,128 - INFO # T1 recv: 1(i=1)
+2018-08-08 14:25:57,129 - INFO # T3 i=2
+2018-08-08 14:25:57,130 - INFO # T2 got 1 (i=1)
+2018-08-08 14:25:57,133 - INFO # T1 got reply: 1 (i=1)
+2018-08-08 14:25:57,134 - INFO # T1 recv: 2(i=2)
+2018-08-08 14:25:57,135 - INFO # T3 i=3
+2018-08-08 14:25:57,136 - INFO # T2 got 2 (i=2)
+2018-08-08 14:25:57,138 - INFO # T1 got reply: 2 (i=2)
+2018-08-08 14:25:57,139 - INFO # THREAD 1 end
+2018-08-08 14:25:57,139 - INFO # 
+2018-08-08 14:25:57,140 - INFO # SUCCESS
+

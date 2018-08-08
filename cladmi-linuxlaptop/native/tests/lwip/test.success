@@ -1,0 +1,4 @@
+true 
+./tests/01-run.py
+Testing for (<Board 'native',port='tap0',serial=None>, <Board 'native',port='tap1',serial=None>): 
+....

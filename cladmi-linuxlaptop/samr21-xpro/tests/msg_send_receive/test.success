@@ -1,0 +1,26 @@
+/home/harter/work/git/RIOT_release/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/harter/work/git/RIOT_release/tests/msg_send_receive/bin/samr21-xpro/tests_msg_send_receive.bin
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800001911 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev B)
+Erasing...  done.
+Programming......................................... done.
+Verification......................................... done.
+./tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-08 14:10:21,807 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 14:10:24,947 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 14:10:24,950 - INFO # Incremented counters to 1 and 1
+2018-08-08 14:10:24,953 - INFO # Incremented counters to 2 and 2
+2018-08-08 14:10:24,956 - INFO # Incremented counters to 3 and 3
+2018-08-08 14:10:24,959 - INFO # Incremented counters to 4 and 4
+2018-08-08 14:10:24,962 - INFO # Incremented counters to 5 and 5
+2018-08-08 14:10:24,965 - INFO # Incremented counters to 6 and 6
+2018-08-08 14:10:24,968 - INFO # Incremented counters to 7 and 7
+2018-08-08 14:10:24,970 - INFO # Incremented counters to 8 and 8
+2018-08-08 14:10:24,973 - INFO # Incremented counters to 9 and 9
+2018-08-08 14:10:24,976 - INFO # Incremented counters to 10 and 10
+2018-08-08 14:10:24,978 - INFO # Test successful.
+

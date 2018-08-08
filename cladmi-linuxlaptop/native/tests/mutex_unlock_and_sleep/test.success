@@ -1,0 +1,21 @@
+true 
+tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/mutex_unlock_and_sleep/bin/native/tests_mutex_unlock_and_sleep.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+[ALIVE] alternated 100k times.
+[ALIVE] alternated 200k times.
+[ALIVE] alternated 300k times.
+[ALIVE] alternated 400k times.
+[ALIVE] alternated 500k times.
+[ALIVE] alternated 600k times.
+[ALIVE] alternated 700k times.
+[ALIVE] alternated 800k times.
+[ALIVE] alternated 900k times.
+[ALIVE] alternated 1000k times.
+

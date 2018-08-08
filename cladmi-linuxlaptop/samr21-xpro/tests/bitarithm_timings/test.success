@@ -1,0 +1,20 @@
+/home/harter/work/git/RIOT_release/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/harter/work/git/RIOT_release/tests/bitarithm_timings/bin/samr21-xpro/tests_bitarithm_timings.bin
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800001911 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev B)
+Erasing...  done.
+Programming............................................ done.
+Verification............................................ done.
+tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-08 13:50:20,945 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 13:50:24,069 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 13:50:24,070 - INFO # Start.
+2018-08-08 13:50:29,080 - INFO # + bitarithm_msb: 944643 iterations per second
+2018-08-08 13:50:34,091 - INFO # + bitarithm_lsb: 1689571 iterations per second
+2018-08-08 13:50:39,102 - INFO # + bitarithm_bits_set: 331177 iterations per second
+2018-08-08 13:50:39,103 - INFO # Done.
+

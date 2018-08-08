@@ -1,0 +1,114 @@
+/home/harter/work/git/RIOT_release/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.9.0 (2018-01-30-19:14)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : auto-selecting first available session transport "jtag". To override use 'transport select <transport>'.
+adapter speed: 1000 kHz
+adapter_nsrst_delay: 100
+jtag_ntrst_delay: 100
+none separate
+cortex_m reset_config sysresetreq
+trst_and_srst separate srst_nogate trst_push_pull srst_open_drain connect_assert_srst
+Info : clock speed 1000 kHz
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020, part: 0x6414, ver: 0x0)
+Info : stm32f1x.cpu: hardware has 6 breakpoints, 4 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f1x.cpu       cortex_m   little stm32f1x.cpu       reset
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020, part: 0x6414, ver: 0x0)
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000460 msp: 0x20000200
+auto erase enabled
+Info : device id = 0x10016414
+Info : flash size = 512kbytes
+wrote 16384 bytes from file /home/harter/work/git/RIOT_release/tests/posix_semaphore/bin/iotlab-m3/tests_posix_semaphore.elf in 0.723789s (22.106 KiB/s)
+verified 15312 bytes in 0.246245s (60.725 KiB/s)
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020, part: 0x6414, ver: 0x0)
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "500000"
+No handlers could be found for logger "root"
+2018-08-08 12:39:00,844 - INFO # Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 12:39:01,847 - INFO # first: timed out
+2018-08-08 12:39:01,848 - INFO # first: waited 1000022 usec
+2018-08-08 12:39:01,855 - INFO # ######################### DONE
+2018-08-08 12:39:04,237 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-08 12:39:04,238 - INFO # ######################### TEST1:
+2018-08-08 12:39:04,239 - INFO # first: sem_init
+2018-08-08 12:39:04,240 - INFO # first: thread create
+2018-08-08 12:39:04,241 - INFO # first: thread created
+2018-08-08 12:39:04,242 - INFO # first: sem_getvalue
+2018-08-08 12:39:04,243 - INFO # first: sem_getvalue != 0
+2018-08-08 12:39:04,243 - INFO # first: do yield
+2018-08-08 12:39:04,247 - INFO # second: sem_trywait
+2018-08-08 12:39:04,248 - INFO # second: sem_trywait failed
+2018-08-08 12:39:04,249 - INFO # second: sem_trywait done with == 0
+2018-08-08 12:39:04,250 - INFO # second: wait for post
+2018-08-08 12:39:04,251 - INFO # first: done yield
+2018-08-08 12:39:04,252 - INFO # first: sem_trywait
+2018-08-08 12:39:04,253 - INFO # first: sem_trywait FAILED
+2018-08-08 12:39:04,254 - INFO # first: sem_trywait done
+2018-08-08 12:39:04,255 - INFO # first: sem_post
+2018-08-08 12:39:04,256 - INFO # second: sem was posted
+2018-08-08 12:39:04,256 - INFO # second: end
+2018-08-08 12:39:04,257 - INFO # first: sem_post done
+2018-08-08 12:39:04,258 - INFO # first: sem_destroy
+2018-08-08 12:39:04,258 - INFO # first: end
+2018-08-08 12:39:04,259 - INFO # ######################### TEST2:
+2018-08-08 12:39:04,260 - INFO # first: sem_init
+2018-08-08 12:39:04,261 - INFO # first: thread create: 5
+2018-08-08 12:39:04,262 - INFO # first: thread created: priority 5 (1/5)
+2018-08-08 12:39:04,263 - INFO # first: thread create: 4
+2018-08-08 12:39:04,264 - INFO # first: thread created: priority 4 (2/5)
+2018-08-08 12:39:04,265 - INFO # first: thread create: 3
+2018-08-08 12:39:04,266 - INFO # first: thread created: priority 3 (3/5)
+2018-08-08 12:39:04,267 - INFO # first: thread create: 2
+2018-08-08 12:39:04,268 - INFO # first: thread created: priority 2 (4/5)
+2018-08-08 12:39:04,269 - INFO # first: thread create: 1
+2018-08-08 12:39:04,270 - INFO # first: thread created: priority 1 (5/5)
+2018-08-08 12:39:04,271 - INFO # ------------------------------------------
+2018-08-08 12:39:04,271 - INFO # post no. 0
+2018-08-08 12:39:04,272 - INFO # Thread 'priority 1' woke up.
+2018-08-08 12:39:04,273 - INFO # Back in main thread.
+2018-08-08 12:39:04,273 - INFO # post no. 1
+2018-08-08 12:39:04,274 - INFO # Thread 'priority 2' woke up.
+2018-08-08 12:39:04,274 - INFO # Back in main thread.
+2018-08-08 12:39:04,274 - INFO # post no. 2
+2018-08-08 12:39:04,275 - INFO # Thread 'priority 3' woke up.
+2018-08-08 12:39:04,275 - INFO # Back in main thread.
+2018-08-08 12:39:04,276 - INFO # post no. 3
+2018-08-08 12:39:04,276 - INFO # Thread 'priority 4' woke up.
+2018-08-08 12:39:04,277 - INFO # Back in main thread.
+2018-08-08 12:39:04,277 - INFO # post no. 4
+2018-08-08 12:39:04,277 - INFO # Thread 'priority 5' woke up.
+2018-08-08 12:39:04,278 - INFO # Back in main thread.
+2018-08-08 12:39:04,278 - INFO # ######################### TEST3:
+2018-08-08 12:39:04,279 - INFO # first: sem_init s1
+2018-08-08 12:39:04,279 - INFO # first: sem_init s2
+2018-08-08 12:39:04,279 - INFO # first: create thread 1
+2018-08-08 12:39:04,280 - INFO # first: create thread 2
+2018-08-08 12:39:04,280 - INFO # ------------------------------------------
+2018-08-08 12:39:04,281 - INFO # post s1
+2018-08-08 12:39:04,281 - INFO # Thread 1 woke up after waiting for s1.
+2018-08-08 12:39:04,281 - INFO # post s2
+2018-08-08 12:39:04,282 - INFO # Thread 2 woke up after waiting for s2.
+2018-08-08 12:39:04,282 - INFO # post s2
+2018-08-08 12:39:04,282 - INFO # Thread 1 woke up after waiting for s2.
+2018-08-08 12:39:04,283 - INFO # post s1
+2018-08-08 12:39:04,283 - INFO # Thread 2 woke up after waiting for s1.
+2018-08-08 12:39:04,283 - INFO # ######################### TEST4:
+2018-08-08 12:39:04,284 - INFO # first: sem_init s1
+2018-08-08 12:39:04,284 - INFO # first: wait 1 sec for s1
+2018-08-08 12:39:05,282 - INFO # first: timed out
+2018-08-08 12:39:05,284 - INFO # first: waited 1000022 usec
+2018-08-08 12:39:05,286 - INFO # ######################### DONE
+

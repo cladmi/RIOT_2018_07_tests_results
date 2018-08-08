@@ -1,0 +1,16 @@
+true 
+tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/pthread/bin/native/tests_pthread.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+main: parameter = 6
+pthread: parameter = 6
+pthread: factorial = 720
+main: factorial = 720
+SUCCESS
+

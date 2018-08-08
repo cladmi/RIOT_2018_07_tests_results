@@ -1,0 +1,20 @@
+true 
+tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/netdev_test/bin/native/tests_netdev_test.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Executing test_get_addr()
+ + succeeded.
+Executing test_send()
+ + succeeded.
+Executing test_receive()
+ + succeeded.
+Executing test_set_addr()
+ + succeeded.
+ALL TESTS SUCCESSFUL
+

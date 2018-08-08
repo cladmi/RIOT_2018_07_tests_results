@@ -1,0 +1,83 @@
+/home/harter/work/git/RIOT_release/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.9.0 (2018-01-30-19:14)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : auto-selecting first available session transport "jtag". To override use 'transport select <transport>'.
+adapter speed: 1000 kHz
+adapter_nsrst_delay: 100
+jtag_ntrst_delay: 100
+none separate
+cortex_m reset_config sysresetreq
+trst_and_srst separate srst_nogate trst_push_pull srst_open_drain connect_assert_srst
+Info : clock speed 1000 kHz
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020, part: 0x6414, ver: 0x0)
+Info : stm32f1x.cpu: hardware has 6 breakpoints, 4 watchpoints
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f1x.cpu       cortex_m   little stm32f1x.cpu       reset
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020, part: 0x6414, ver: 0x0)
+target state: halted
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000554 msp: 0x20000200
+auto erase enabled
+Info : device id = 0x10016414
+Info : flash size = 512kbytes
+wrote 30720 bytes from file /home/harter/work/git/RIOT_release/tests/cpp11_thread/bin/iotlab-m3/tests_cpp11_thread.elf in 1.315799s (22.800 KiB/s)
+verified 29892 bytes in 0.454526s (64.224 KiB/s)
+Info : JTAG tap: stm32f1x.cpu tap/device found: 0x3ba00477 (mfg: 0x23b, part: 0xba00, ver: 0x3)
+Info : JTAG tap: stm32f1x.bs tap/device found: 0x06414041 (mfg: 0x020, part: 0x6414, ver: 0x0)
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyUSB1" -b "500000"
+No handlers could be found for logger "root"
+2018-08-08 12:21:47,232 - INFO # Connect to serial port /dev/ttyUSB1
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 12:21:48,235 - INFO # Done
+2018-08-08 12:21:48,236 - INFO # 
+2018-08-08 12:21:48,237 - INFO # Testing sleep_until ...
+2018-08-08 12:21:48,886 - INFO # Done
+2018-08-08 12:21:48,886 - INFO # 
+2018-08-08 12:21:48,887 - INFO # Swapping two threads ...
+2018-08-08 12:21:48,887 - INFO # Done
+2018-08-08 12:21:48,887 - INFO # 
+2018-08-08 12:21:48,888 - INFO # Move constructor ...
+2018-08-08 12:21:48,888 - INFO # Done
+2018-08-08 12:21:48,888 - INFO # 
+2018-08-08 12:21:48,888 - INFO # Bye, bye.
+2018-08-08 12:21:48,889 - INFO # ******************************************
+2018-08-08 12:21:50,647 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-08 12:21:50,648 - INFO # 
+2018-08-08 12:21:50,649 - INFO # ************ C++ thread test ***********
+2018-08-08 12:21:50,650 - INFO # Creating one thread and passing an argument ...
+2018-08-08 12:21:50,651 - INFO # Done
+2018-08-08 12:21:50,651 - INFO # 
+2018-08-08 12:21:50,652 - INFO # Creating detached thread ...
+2018-08-08 12:21:50,652 - INFO # Done
+2018-08-08 12:21:50,653 - INFO # 
+2018-08-08 12:21:50,653 - INFO # Join on 'finished' thread ...
+2018-08-08 12:21:50,654 - INFO # Done
+2018-08-08 12:21:50,654 - INFO # 
+2018-08-08 12:21:50,655 - INFO # Join on 'running' thread ...
+2018-08-08 12:21:50,655 - INFO # Done
+2018-08-08 12:21:50,656 - INFO # 
+2018-08-08 12:21:50,657 - INFO # Testing sleep_for ...
+2018-08-08 12:21:51,654 - INFO # Done
+2018-08-08 12:21:51,655 - INFO # 
+2018-08-08 12:21:51,655 - INFO # Testing sleep_until ...
+2018-08-08 12:21:52,662 - INFO # Done
+2018-08-08 12:21:52,663 - INFO # 
+2018-08-08 12:21:52,670 - INFO # Swapping two threads ...
+2018-08-08 12:21:52,671 - INFO # Done
+2018-08-08 12:21:52,671 - INFO # 
+2018-08-08 12:21:52,672 - INFO # Move constructor ...
+2018-08-08 12:21:52,672 - INFO # Done
+2018-08-08 12:21:52,673 - INFO # 
+2018-08-08 12:21:52,673 - INFO # Bye, bye.
+2018-08-08 12:21:52,675 - INFO # ******************************************
+

@@ -1,0 +1,26 @@
+true 
+tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/trickle/bin/native/tests_trickle.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 46188, prev_now = 6, diff = 46182
+now = 114465, prev_now = 46188, diff = 68277
+now = 286702, prev_now = 114465, diff = 172237
+now = 662957, prev_now = 286702, diff = 376255
+now = 1210213, prev_now = 662957, diff = 547256
+[TRICKLE_RESET]
+now = 1222482, prev_now = 1210213, diff = 12269
+now = 1254728, prev_now = 1222482, diff = 32246
+now = 1316986, prev_now = 1254728, diff = 62258
+now = 1398118, prev_now = 1316986, diff = 81132
+now = 1705367, prev_now = 1398118, diff = 307249
+now = 2070520, prev_now = 1705367, diff = 365153
+now = 2746784, prev_now = 2070520, diff = 676264
+[SUCCESS]
+

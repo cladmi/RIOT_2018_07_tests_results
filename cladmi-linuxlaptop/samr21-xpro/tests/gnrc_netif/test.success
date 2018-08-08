@@ -1,0 +1,187 @@
+/home/harter/work/git/RIOT_release/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/harter/work/git/RIOT_release/tests/gnrc_netif/bin/samr21-xpro/tests_gnrc_netif.bin
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800001911 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev B)
+Erasing...  done.
+Programming...................................................................................................................................................................................................................................................... done.
+Verification...................................................................................................................................................................................................................................................... done.
+tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-08 14:01:52,288 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 14:01:53,292 - INFO # Va�������&ff&�f
+2018-08-08 14:01:53,297 - INFO # f��������6VN�������&ff2�&�F�F�F�F�F�F�F����Sending data from Ethernet device:
+2018-08-08 14:01:53,299 - INFO # 00000000  33  33  00  00  00  01  3E  E6  B5  22  FD  0A  86  DD  60  00
+2018-08-08 14:01:53,301 - INFO # 00000010  00  00  00  08  3B  40  FE  80  00  00  00  00  00  00  3C  E6
+2018-08-08 14:01:53,303 - INFO # 00000020  B5  FF  FE  22  FD  0A  FF  02  00  00  00  00  00  00  00  00
+2018-08-08 14:01:53,304 - INFO # 00000030  00  00  00  00  00  01  41  42  43  44  45  46  47  00
+2018-08-08 14:01:53,306 - INFO # Sending data from IEEE 802.15.4 device:
+2018-08-08 14:01:53,308 - INFO # 00000000  41  DC  07  00  00  0B  FD  22  19  0F  B5  E6  3E  0A  FD  22
+2018-08-08 14:01:53,310 - INFO # 00000010  19  0F  B5  E6  3E  60  00  00  00  00  08  3B  40  FE  80  00
+2018-08-08 14:01:53,312 - INFO # 00000020  00  00  00  00  00  3C  E6  B5  0F  19  22  FD  0A  FE  80  00
+2018-08-08 14:01:53,314 - INFO # 00000030  00  00  00  00  00  3C  E6  B5  FF  FE  0F  19  23  41  42  43
+2018-08-08 14:01:53,315 - INFO # 00000040  44  45  46  47  00
+2018-08-08 14:01:53,316 - INFO # Sending data from IEEE 802.15.4 device:
+2018-08-08 14:01:53,318 - INFO # 00000000  41  D8  08  00  00  FF  FF  0A  FD  22  19  0F  B5  E6  3E  60
+2018-08-08 14:01:53,320 - INFO # 00000010  00  00  00  00  08  3B  40  FE  80  00  00  00  00  00  00  3C
+2018-08-08 14:01:53,321 - INFO # 00000020  E6  B5  0F  19  22  FD  0A  FF  02  00  00  00  00  00  00  00
+2018-08-08 14:01:53,323 - INFO # 00000030  00  00  00  00  00  00  01  41  42  43  44  45  46  47  00
+2018-08-08 14:01:53,324 - INFO # pktdump dumping Ethernet packet with empty payload
+2018-08-08 14:01:53,324 - INFO # PKTDUMP: data received:
+2018-08-08 14:01:53,325 - INFO # ~~ SNIP  0 - size:   0 byte, type: NETTYPE_UNDEF (0)
+2018-08-08 14:01:53,326 - INFO # 00000000~~ SNIP  1 - size:  20 byte, type: NETTYPE_NETIF (-1)
+2018-08-08 14:01:53,326 - INFO # if_pid: 6  rssi: 0  lqi: 0
+2018-08-08 14:01:53,326 - INFO # flags: 0x0
+2018-08-08 14:01:53,327 - INFO # src_l2addr: 3e:e6:b5:22:fd:0b
+2018-08-08 14:01:53,327 - INFO # dst_l2addr: 3e:e6:b5:22:fd:0a
+2018-08-08 14:01:53,328 - INFO # ~~ PKT    -  2 snips, total size:  20 byte
+2018-08-08 14:01:53,329 - INFO # pktdump dumping IEEE 802.15.4 packet with empty payload
+2018-08-08 14:01:53,329 - INFO # PKTDUMP: data received:
+2018-08-08 14:01:53,330 - INFO # ~~ SNIP  0 - size:   0 byte, type: NETTYPE_UNDEF (0)
+2018-08-08 14:01:53,330 - INFO # 00000000~~ SNIP  1 - size:  24 byte, type: NETTYPE_NETIF (-1)
+2018-08-08 14:01:53,331 - INFO # if_pid: 7  rssi: 11  lqi: 0
+2018-08-08 14:01:53,331 - INFO # flags: 0x0
+2018-08-08 14:01:53,331 - INFO # src_l2addr: 3e:e6:b5:0f:19:22:fd:0b
+2018-08-08 14:01:53,332 - INFO # dst_l2addr: 3e:e6:b5:0f:19:22:fd:0a
+2018-08-08 14:01:53,332 - INFO # ~~ PKT    -  2 snips, total size:  24 byte
+2018-08-08 14:01:53,333 - INFO # pktdump dumping Ethernet packet with payload 12 34 45 56
+2018-08-08 14:01:53,333 - INFO # PKTDUMP: data received:
+2018-08-08 14:01:53,334 - INFO # ~~ SNIP  0 - size:   4 byte, type: NETTYPE_UNDEF (0)
+2018-08-08 14:01:53,334 - INFO # 00000000  12  34  45  56
+2018-08-08 14:01:53,334 - INFO # ~~ SNIP  1 - size:  20 byte, type: NETTYPE_NETIF (-1)
+2018-08-08 14:01:53,335 - INFO # if_pid: 6  rssi: 0  lqi: 0
+2018-08-08 14:01:53,335 - INFO # flags: 0x0
+2018-08-08 14:01:53,335 - INFO # src_l2addr: 3e:e6:b5:22:fd:0b
+2018-08-08 14:01:53,336 - INFO # dst_l2addr: 3e:e6:b5:22:fd:0a
+2018-08-08 14:01:53,336 - INFO # ~~ PKT    -  2 snips, total size:  24 byte
+2018-08-08 14:01:53,337 - INFO # pktdump dumping IEEE 802.15.4 packet with payload 12 34 45 56
+2018-08-08 14:01:53,337 - INFO # PKTDUMP: data received:
+2018-08-08 14:01:53,337 - INFO # ~~ SNIP  0 - size:   4 byte, type: NETTYPE_UNDEF (0)
+2018-08-08 14:01:53,338 - INFO # 00000000  12  34  45  56
+2018-08-08 14:01:53,338 - INFO # ~~ SNIP  1 - size:  24 byte, type: NETTYPE_NETIF (-1)
+2018-08-08 14:01:53,338 - INFO # if_pid: 7  rssi: 11  lqi: 0
+2018-08-08 14:01:53,339 - INFO # flags: 0x0
+2018-08-08 14:01:53,339 - INFO # src_l2addr: 3e:e6:b5:0f:19:22:fd:0b
+2018-08-08 14:01:53,339 - INFO # dst_l2addr: 3e:e6:b5:0f:19:22:fd:0a
+2018-08-08 14:01:53,340 - INFO # ~~ PKT    -  2 snips, total size:  28 byte
+2018-08-08 14:01:53,340 - INFO # pktdump dumping IPv6 over Ethernet packet with payload 01
+2018-08-08 14:01:53,340 - INFO # PKTDUMP: data received:
+2018-08-08 14:01:53,341 - INFO # ~~ SNIP  0 - size:  41 byte, type: NETTYPE_IPV6 (2)
+2018-08-08 14:01:53,341 - INFO # traffic class: 0x00 (ECN: 0x0, DSCP: 0x00)
+2018-08-08 14:01:53,341 - INFO # flow label: 0x00000
+2018-08-08 14:01:53,342 - INFO # length: 1  next header: 59  hop limit: 64
+2018-08-08 14:01:53,342 - INFO # source address: fe80::3fe6:b5ff:fe22:fd0a
+2018-08-08 14:01:53,342 - INFO # destination address: fe80::3fe6:b5ff:fe22:fd0b
+2018-08-08 14:01:53,343 - INFO # 00000000  01
+2018-08-08 14:01:53,343 - INFO # ~~ SNIP  1 - size:  20 byte, type: NETTYPE_NETIF (-1)
+2018-08-08 14:01:53,343 - INFO # if_pid: 6  rssi: 0  lqi: 0
+2018-08-08 14:01:53,343 - INFO # flags: 0x0
+2018-08-08 14:01:53,344 - INFO # src_l2addr: 3e:e6:b5:22:fd:0b
+2018-08-08 14:01:53,344 - INFO # dst_l2addr: 3e:e6:b5:22:fd:0a
+2018-08-08 14:01:53,344 - INFO # ~~ PKT    -  2 snips, total size:  61 byte
+2018-08-08 14:01:55,458 - INFO # ....................................................................
+2018-08-08 14:01:55,460 - INFO # OK (68 tests)
+2018-08-08 14:01:55,463 - INFO # Sending data from Ethernet device:
+2018-08-08 14:01:55,469 - INFO # 00000000  3E  E6  B5  0F  19  23  3E  E6  B5  22  FD  0A  FF  FF  41  42
+2018-08-08 14:01:55,474 - INFO # 00000010  43  44  45  46  47  00
+2018-08-08 14:01:55,477 - INFO # Sending data from Ethernet device:
+2018-08-08 14:01:55,482 - INFO # 00000000  FF  FF  FF  FF  FF  FF  3E  E6  B5  22  FD  0A  FF  FF  41  42
+2018-08-08 14:01:55,485 - INFO # 00000010  43  44  45  46  47  00
+2018-08-08 14:01:55,488 - INFO # Sending data from IEEE 802.15.4 device:
+2018-08-08 14:01:55,495 - INFO # 00000000  41  DC  00  00  00  0B  FD  22  19  0F  B5  E6  3E  0A  FD  22
+2018-08-08 14:01:55,501 - INFO # 00000010  19  0F  B5  E6  3E  31  32  33  41  42  43  44  45  46  47  00
+2018-08-08 14:01:55,505 - INFO # Sending data from IEEE 802.15.4 device:
+2018-08-08 14:01:55,512 - INFO # 00000000  41  D8  01  00  00  0B  FD  0A  FD  22  19  0F  B5  E6  3E  31
+2018-08-08 14:01:55,516 - INFO # 00000010  32  33  41  42  43  44  45  46  47  00
+2018-08-08 14:01:55,520 - INFO # Sending data from IEEE 802.15.4 device:
+2018-08-08 14:01:55,526 - INFO # 00000000  41  9C  02  00  00  0B  FD  22  19  0F  B5  E6  3E  0A  FD  31
+2018-08-08 14:01:55,531 - INFO # 00000010  32  33  41  42  43  44  45  46  47  00
+2018-08-08 14:01:55,534 - INFO # Sending data from IEEE 802.15.4 device:
+2018-08-08 14:01:55,541 - INFO # 00000000  41  9C  03  00  00  0B  FD  22  19  0F  B5  E6  3E  0A  FD  31
+2018-08-08 14:01:55,545 - INFO # 00000010  32  33  41  42  43  44  45  46  47  00
+2018-08-08 14:01:55,549 - INFO # Sending data from IEEE 802.15.4 device:
+2018-08-08 14:01:55,555 - INFO # 00000000  41  98  04  00  00  0B  FD  0A  FD  31  32  33  41  42  43  44
+2018-08-08 14:01:55,558 - INFO # 00000010  45  46  47  00
+2018-08-08 14:01:55,561 - INFO # Sending data from IEEE 802.15.4 device:
+2018-08-08 14:01:55,568 - INFO # 00000000  41  D8  05  00  00  FF  FF  0A  FD  22  19  0F  B5  E6  3E  31
+2018-08-08 14:01:55,572 - INFO # 00000010  32  33  41  42  43  44  45  46  47  00
+2018-08-08 14:01:55,576 - INFO # Sending data from IEEE 802.15.4 device:
+2018-08-08 14:01:55,582 - INFO # 00000000  41  98  06  00  00  FF  FF  0A  FD  31  32  33  41  42  43  44
+2018-08-08 14:01:55,585 - INFO # 00000010  45  46  47  00
+2018-08-08 14:01:55,588 - INFO # Sending data from Ethernet device:
+2018-08-08 14:01:55,594 - INFO # 00000000  3E  E6  B5  0F  19  23  3E  E6  B5  22  FD  0A  86  DD  60  00
+2018-08-08 14:01:55,601 - INFO # 00000010  00  00  00  08  3B  40  FE  80  00  00  00  00  00  00  3C  E6
+2018-08-08 14:01:55,608 - INFO # 00000020  B5  FF  FE  22  FD  0A  FE  80  00  00  00  00  00  00  3C  E6
+2018-08-08 14:01:55,613 - INFO # 00000030  B5  FF  FE  0F  19  23  41  42  43  44  45  46  47  00
+2018-08-08 14:01:55,617 - INFO # Sending data from Ethernet device:
+2018-08-08 14:01:55,623 - INFO # 00000000  33  33  00  00  00  01  3E  E6  B5  22  FD  0A  86  DD  60  00
+2018-08-08 14:01:55,630 - INFO # 00000010  00  00  00  08  3B  40  FE  80  00  00  00  00  00  00  3C  E6
+2018-08-08 14:01:55,636 - INFO # 00000020  B5  FF  FE  22  FD  0A  FF  02  00  00  00  00  00  00  00  00
+2018-08-08 14:01:55,642 - INFO # 00000030  00  00  00  00  00  01  41  42  43  44  45  46  47  00
+2018-08-08 14:01:55,646 - INFO # Sending data from IEEE 802.15.4 device:
+2018-08-08 14:01:55,652 - INFO # 00000000  41  DC  07  00  00  0B  FD  22  19  0F  B5  E6  3E  0A  FD  22
+2018-08-08 14:01:55,659 - INFO # 00000010  19  0F  B5  E6  3E  60  00  00  00  00  08  3B  40  FE  80  00
+2018-08-08 14:01:55,665 - INFO # 00000020  00  00  00  00  00  3C  E6  B5  0F  19  22  FD  0A  FE  80  00
+2018-08-08 14:01:55,672 - INFO # 00000030  00  00  00  00  00  3C  E6  B5  FF  FE  0F  19  23  41  42  43
+2018-08-08 14:01:55,675 - INFO # 00000040  44  45  46  47  00
+2018-08-08 14:01:55,678 - INFO # Sending data from IEEE 802.15.4 device:
+2018-08-08 14:01:55,685 - INFO # 00000000  41  D8  08  00  00  FF  FF  0A  FD  22  19  0F  B5  E6  3E  60
+2018-08-08 14:01:55,691 - INFO # 00000010  00  00  00  00  08  3B  40  FE  80  00  00  00  00  00  00  3C
+2018-08-08 14:01:55,698 - INFO # 00000020  E6  B5  0F  19  22  FD  0A  FF  02  00  00  00  00  00  00  00
+2018-08-08 14:01:55,704 - INFO # 00000030  00  00  00  00  00  00  01  41  42  43  44  45  46  47  00
+2018-08-08 14:01:55,708 - INFO # pktdump dumping Ethernet packet with empty payload
+2018-08-08 14:01:55,711 - INFO # PKTDUMP: data received:
+2018-08-08 14:01:55,715 - INFO # ~~ SNIP  0 - size:   0 byte, type: NETTYPE_UNDEF (0)
+2018-08-08 14:01:55,721 - INFO # 00000000~~ SNIP  1 - size:  20 byte, type: NETTYPE_NETIF (-1)
+2018-08-08 14:01:55,724 - INFO # if_pid: 6  rssi: 0  lqi: 0
+2018-08-08 14:01:55,724 - INFO # flags: 0x0
+2018-08-08 14:01:55,727 - INFO # src_l2addr: 3e:e6:b5:22:fd:0b
+2018-08-08 14:01:55,730 - INFO # dst_l2addr: 3e:e6:b5:22:fd:0a
+2018-08-08 14:01:55,734 - INFO # ~~ PKT    -  2 snips, total size:  20 byte
+2018-08-08 14:01:55,739 - INFO # pktdump dumping IEEE 802.15.4 packet with empty payload
+2018-08-08 14:01:55,741 - INFO # PKTDUMP: data received:
+2018-08-08 14:01:55,746 - INFO # ~~ SNIP  0 - size:   0 byte, type: NETTYPE_UNDEF (0)
+2018-08-08 14:01:55,751 - INFO # 00000000~~ SNIP  1 - size:  24 byte, type: NETTYPE_NETIF (-1)
+2018-08-08 14:01:55,754 - INFO # if_pid: 7  rssi: 11  lqi: 0
+2018-08-08 14:01:55,755 - INFO # flags: 0x0
+2018-08-08 14:01:55,760 - INFO # src_l2addr: 3e:e6:b5:0f:19:22:fd:0b
+2018-08-08 14:01:55,761 - INFO # dst_l2addr: 3e:e6:b5:0f:19:22:fd:0a
+2018-08-08 14:01:55,765 - INFO # ~~ PKT    -  2 snips, total size:  24 byte
+2018-08-08 14:01:55,770 - INFO # pktdump dumping Ethernet packet with payload 12 34 45 56
+2018-08-08 14:01:55,772 - INFO # PKTDUMP: data received:
+2018-08-08 14:01:55,777 - INFO # ~~ SNIP  0 - size:   4 byte, type: NETTYPE_UNDEF (0)
+2018-08-08 14:01:55,779 - INFO # 00000000  12  34  45  56
+2018-08-08 14:01:55,784 - INFO # ~~ SNIP  1 - size:  20 byte, type: NETTYPE_NETIF (-1)
+2018-08-08 14:01:55,786 - INFO # if_pid: 6  rssi: 0  lqi: 0
+2018-08-08 14:01:55,787 - INFO # flags: 0x0
+2018-08-08 14:01:55,799 - INFO # src_l2addr: 3e:e6:b5:22:fd:0b
+2018-08-08 14:01:55,800 - INFO # dst_l2addr: 3e:e6:b5:22:fd:0a
+2018-08-08 14:01:55,800 - INFO # ~~ PKT    -  2 snips, total size:  24 byte
+2018-08-08 14:01:55,802 - INFO # pktdump dumping IEEE 802.15.4 packet with payload 12 34 45 56
+2018-08-08 14:01:55,804 - INFO # PKTDUMP: data received:
+2018-08-08 14:01:55,809 - INFO # ~~ SNIP  0 - size:   4 byte, type: NETTYPE_UNDEF (0)
+2018-08-08 14:01:55,811 - INFO # 00000000  12  34  45  56
+2018-08-08 14:01:55,816 - INFO # ~~ SNIP  1 - size:  24 byte, type: NETTYPE_NETIF (-1)
+2018-08-08 14:01:55,819 - INFO # if_pid: 7  rssi: 11  lqi: 0
+2018-08-08 14:01:55,820 - INFO # flags: 0x0
+2018-08-08 14:01:55,823 - INFO # src_l2addr: 3e:e6:b5:0f:19:22:fd:0b
+2018-08-08 14:01:55,826 - INFO # dst_l2addr: 3e:e6:b5:0f:19:22:fd:0a
+2018-08-08 14:01:55,830 - INFO # ~~ PKT    -  2 snips, total size:  28 byte
+2018-08-08 14:01:55,835 - INFO # pktdump dumping IPv6 over Ethernet packet with payload 01
+2018-08-08 14:01:55,838 - INFO # PKTDUMP: data received:
+2018-08-08 14:01:55,842 - INFO # ~~ SNIP  0 - size:  41 byte, type: NETTYPE_IPV6 (2)
+2018-08-08 14:01:55,846 - INFO # traffic class: 0x00 (ECN: 0x0, DSCP: 0x00)
+2018-08-08 14:01:55,848 - INFO # flow label: 0x00000
+2018-08-08 14:01:55,852 - INFO # length: 1  next header: 59  hop limit: 64
+2018-08-08 14:01:55,855 - INFO # source address: fe80::3fe6:b5ff:fe22:fd0a
+2018-08-08 14:01:55,860 - INFO # destination address: fe80::3fe6:b5ff:fe22:fd0b
+2018-08-08 14:01:55,861 - INFO # 00000000  01
+2018-08-08 14:01:55,866 - INFO # ~~ SNIP  1 - size:  20 byte, type: NETTYPE_NETIF (-1)
+2018-08-08 14:01:55,868 - INFO # if_pid: 6  rssi: 0  lqi: 0
+2018-08-08 14:01:55,869 - INFO # flags: 0x0
+2018-08-08 14:01:55,872 - INFO # src_l2addr: 3e:e6:b5:22:fd:0b
+2018-08-08 14:01:55,874 - INFO # dst_l2addr: 3e:e6:b5:22:fd:0a
+2018-08-08 14:01:55,878 - INFO # ~~ PKT    -  2 snips, total size:  61 byte
+

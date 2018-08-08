@@ -1,0 +1,82 @@
+/home/harter/work/git/RIOT_release/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/harter/work/git/RIOT_release/tests/rmutex/bin/samr21-xpro/tests_rmutex.bin
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800001911 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev B)
+Erasing...  done.
+Programming........................................ done.
+Verification........................................ done.
+tests/01-run.py
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-08 14:21:46,918 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 14:21:47,923 - INFO # ɥ��b"��ѡ�J��������b��������r��)T3 (prio 6, depth 4): locked rmutex now
+2018-08-08 14:21:47,924 - INFO # T3 (prio 6, depth 4): unlocked rmutex
+2018-08-08 14:21:47,924 - INFO # T3 (prio 6, depth 3): unlocked rmutex
+2018-08-08 14:21:47,924 - INFO # T3 (prio 6, depth 2): unlocked rmutex
+2018-08-08 14:21:47,924 - INFO # T3 (prio 6, depth 1): unlocked rmutex
+2018-08-08 14:21:47,925 - INFO # T3 (prio 6, depth 0): unlocked rmutex
+2018-08-08 14:21:47,925 - INFO # 
+2018-08-08 14:21:47,925 - INFO # Test END, check the order of priorities above.
+2018-08-08 14:21:49,992 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 14:21:49,993 - INFO # Recursive Mutex test
+2018-08-08 14:21:49,998 - INFO # Please refer to the README.md for more information
+2018-08-08 14:21:49,998 - INFO # 
+2018-08-08 14:21:50,002 - INFO # T3 (prio 6, depth 0): trying to lock rmutex now
+2018-08-08 14:21:50,007 - INFO # T4 (prio 4, depth 0): trying to lock rmutex now
+2018-08-08 14:21:50,011 - INFO # T5 (prio 5, depth 0): trying to lock rmutex now
+2018-08-08 14:21:50,015 - INFO # T6 (prio 2, depth 0): trying to lock rmutex now
+2018-08-08 14:21:50,020 - INFO # T7 (prio 4, depth 0): trying to lock rmutex now
+2018-08-08 14:21:50,022 - INFO # main: unlocking recursive mutex
+2018-08-08 14:21:50,026 - INFO # T6 (prio 2, depth 0): locked rmutex now
+2018-08-08 14:21:50,030 - INFO # T6 (prio 2, depth 1): trying to lock rmutex now
+2018-08-08 14:21:50,034 - INFO # T6 (prio 2, depth 1): locked rmutex now
+2018-08-08 14:21:50,038 - INFO # T6 (prio 2, depth 2): trying to lock rmutex now
+2018-08-08 14:21:50,042 - INFO # T6 (prio 2, depth 2): locked rmutex now
+2018-08-08 14:21:50,046 - INFO # T6 (prio 2, depth 3): trying to lock rmutex now
+2018-08-08 14:21:50,050 - INFO # T6 (prio 2, depth 3): locked rmutex now
+2018-08-08 14:21:50,053 - INFO # T6 (prio 2, depth 3): unlocked rmutex
+2018-08-08 14:21:50,057 - INFO # T6 (prio 2, depth 2): unlocked rmutex
+2018-08-08 14:21:50,063 - INFO # T6 (prio 2, depth 1): unlocked rmutex
+2018-08-08 14:21:50,063 - INFO # T6 (prio 2, depth 0): unlocked rmutex
+2018-08-08 14:21:50,067 - INFO # T4 (prio 4, depth 0): locked rmutex now
+2018-08-08 14:21:50,071 - INFO # T4 (prio 4, depth 1): trying to lock rmutex now
+2018-08-08 14:21:50,075 - INFO # T4 (prio 4, depth 1): locked rmutex now
+2018-08-08 14:21:50,079 - INFO # T4 (prio 4, depth 2): trying to lock rmutex now
+2018-08-08 14:21:50,083 - INFO # T4 (prio 4, depth 2): locked rmutex now
+2018-08-08 14:21:50,086 - INFO # T4 (prio 4, depth 2): unlocked rmutex
+2018-08-08 14:21:50,090 - INFO # T4 (prio 4, depth 1): unlocked rmutex
+2018-08-08 14:21:50,094 - INFO # T4 (prio 4, depth 0): unlocked rmutex
+2018-08-08 14:21:50,097 - INFO # T7 (prio 4, depth 0): locked rmutex now
+2018-08-08 14:21:50,101 - INFO # T7 (prio 4, depth 1): trying to lock rmutex now
+2018-08-08 14:21:50,105 - INFO # T7 (prio 4, depth 1): locked rmutex now
+2018-08-08 14:21:50,109 - INFO # T7 (prio 4, depth 2): trying to lock rmutex now
+2018-08-08 14:21:50,113 - INFO # T7 (prio 4, depth 2): locked rmutex now
+2018-08-08 14:21:50,117 - INFO # T7 (prio 4, depth 3): trying to lock rmutex now
+2018-08-08 14:21:50,121 - INFO # T7 (prio 4, depth 3): locked rmutex now
+2018-08-08 14:21:50,125 - INFO # T7 (prio 4, depth 4): trying to lock rmutex now
+2018-08-08 14:21:50,128 - INFO # T7 (prio 4, depth 4): locked rmutex now
+2018-08-08 14:21:50,132 - INFO # T7 (prio 4, depth 4): unlocked rmutex
+2018-08-08 14:21:50,135 - INFO # T7 (prio 4, depth 3): unlocked rmutex
+2018-08-08 14:21:50,139 - INFO # T7 (prio 4, depth 2): unlocked rmutex
+2018-08-08 14:21:50,142 - INFO # T7 (prio 4, depth 1): unlocked rmutex
+2018-08-08 14:21:50,146 - INFO # T7 (prio 4, depth 0): unlocked rmutex
+2018-08-08 14:21:50,149 - INFO # T5 (prio 5, depth 0): locked rmutex now
+2018-08-08 14:21:50,154 - INFO # T5 (prio 5, depth 1): trying to lock rmutex now
+2018-08-08 14:21:50,157 - INFO # T5 (prio 5, depth 1): locked rmutex now
+2018-08-08 14:21:50,162 - INFO # T5 (prio 5, depth 2): trying to lock rmutex now
+2018-08-08 14:21:50,165 - INFO # T5 (prio 5, depth 2): locked rmutex now
+2018-08-08 14:21:50,168 - INFO # T5 (prio 5, depth 2): unlocked rmutex
+2018-08-08 14:21:50,172 - INFO # T5 (prio 5, depth 1): unlocked rmutex
+2018-08-08 14:21:50,175 - INFO # T5 (prio 5, depth 0): unlocked rmutex
+2018-08-08 14:21:50,179 - INFO # T3 (prio 6, depth 0): locked rmutex now
+2018-08-08 14:21:50,183 - INFO # T3 (prio 6, depth 1): trying to lock rmutex now
+2018-08-08 14:21:50,187 - INFO # T3 (prio 6, depth 1): locked rmutex now
+2018-08-08 14:21:50,191 - INFO # T3 (prio 6, depth 2): trying to lock rmutex now
+2018-08-08 14:21:50,195 - INFO # T3 (prio 6, depth 2): locked rmutex now
+2018-08-08 14:21:50,199 - INFO # T3 (prio 6, depth 3): trying to lock rmutex now
+2018-08-08 14:21:50,203 - INFO # T3 (prio 6, depth 3): locked rmutex now
+2018-08-08 14:21:50,207 - INFO # T3 (prio 6, depth 4): trying to lock rmutex now
+2018-08-08 14:21:50,211 - INFO # T3 (prio 6, depth 4): locked rmutex now
+

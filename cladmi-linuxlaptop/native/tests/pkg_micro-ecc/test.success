@@ -1,0 +1,15 @@
+true 
+tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/pkg_micro-ecc/bin/native/tests_pkg_micro-ecc.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+micro-ecc compiled!
+Testing 16 random private key pairs and signature without using HWRNG
+................ done with 0 error(s)
+SUCCESS
+

@@ -1,0 +1,206 @@
+/home/harter/work/git/RIOT_release/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/harter/work/git/RIOT_release/tests/struct_tm_utility/bin/samr21-xpro/tests_struct_tm_utility.bin
+Debugger: ATMEL EDBG CMSIS-DAP ATML2127031800001911 01.1A.00FB (S)
+Clock frequency: 16.0 MHz
+Target: SAM R21G18 (Rev B)
+Erasing...  done.
+Programming...................................................... done.
+Verification...................................................... done.
+tests/01-run.py
+
+/home/harter/work/git/RIOT_release/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-08 14:24:12,402 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 14:24:15,893 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 14:24:15,895 - INFO # `struct tm` utility shell.
+> 
+help
+help
+2018-08-08 14:24:16,083 - INFO #  help
+2018-08-08 14:24:16,086 - INFO # Command              Description
+2018-08-08 14:24:16,089 - INFO # ---------------------------------------
+2018-08-08 14:24:16,095 - INFO # days_in              Tells you the number of days in a month.
+2018-08-08 14:24:16,101 - INFO # leap_year            Tells you if a supplied year is a leap year.
+2018-08-08 14:24:16,107 - INFO # doomsday             Tells you the wday Doomsday of the supplied year.
+2018-08-08 14:24:16,112 - INFO # day                  Tells you the day of the supplied date.days_in
+
+> days_in
+2018-08-08 14:24:16,217 - INFO #  days_in
+2018-08-08 14:24:16,220 - INFO # Usage: days_in <Month[1..12]>days_in 13
+
+> days_in 13
+2018-08-08 14:24:16,323 - INFO #  days_in 13
+2018-08-08 14:24:16,326 - INFO # Usage: days_in <Month[1..12]>days_in 0
+
+> days_in 0
+2018-08-08 14:24:16,430 - INFO #  days_in 0
+2018-08-08 14:24:16,432 - INFO # Usage: days_in <Month[1..12]>days_in 1
+
+> days_in 1
+2018-08-08 14:24:16,535 - INFO #  days_in 1
+2018-08-08 14:24:16,539 - INFO # There are 31 days in JAN in common years.days_in 2
+
+> days_in 2
+2018-08-08 14:24:16,642 - INFO #  days_in 2
+2018-08-08 14:24:16,646 - INFO # There are 28 days in FEB in common years.days_in 3
+
+> days_in 3
+2018-08-08 14:24:16,749 - INFO #  days_in 3
+2018-08-08 14:24:16,753 - INFO # There are 31 days in MAR in common years.days_in 4
+
+> days_in 4
+2018-08-08 14:24:16,856 - INFO #  days_in 4
+2018-08-08 14:24:16,859 - INFO # There are 30 days in APR in common years.days_in 5
+
+> days_in 5
+2018-08-08 14:24:16,963 - INFO #  days_in 5
+2018-08-08 14:24:16,966 - INFO # There are 31 days in MAY in common years.days_in 6
+
+> days_in 6
+2018-08-08 14:24:17,070 - INFO #  days_in 6
+2018-08-08 14:24:17,074 - INFO # There are 30 days in JUN in common years.days_in 7
+
+> days_in 7
+2018-08-08 14:24:17,177 - INFO #  days_in 7
+2018-08-08 14:24:17,181 - INFO # There are 31 days in JUL in common years.days_in 8
+
+> days_in 8
+2018-08-08 14:24:17,284 - INFO #  days_in 8
+2018-08-08 14:24:17,288 - INFO # There are 31 days in AUG in common years.days_in 9
+
+> days_in 9
+2018-08-08 14:24:17,391 - INFO #  days_in 9
+2018-08-08 14:24:17,395 - INFO # There are 30 days in SEP in common years.days_in 10
+
+> days_in 10
+2018-08-08 14:24:17,499 - INFO #  days_in 10
+2018-08-08 14:24:17,502 - INFO # There are 31 days in OCT in common years.days_in 11
+
+> days_in 11
+2018-08-08 14:24:17,606 - INFO #  days_in 11
+2018-08-08 14:24:17,610 - INFO # There are 30 days in NOV in common years.days_in 12
+
+> days_in 12
+2018-08-08 14:24:17,713 - INFO #  days_in 12
+2018-08-08 14:24:17,717 - INFO # There are 31 days in DEC in common years.leap_year
+
+> leap_year
+2018-08-08 14:24:17,820 - INFO #  leap_year
+2018-08-08 14:24:17,822 - INFO # Usage: leap_year <Year>leap_year aaaa
+
+> leap_year aaaa
+2018-08-08 14:24:17,926 - INFO #  leap_year aaaa
+2018-08-08 14:24:17,929 - INFO # Usage: leap_year <Year>leap_year 2000
+
+> leap_year 2000
+2018-08-08 14:24:18,033 - INFO #  leap_year 2000
+2018-08-08 14:24:18,035 - INFO # Was 2000 a leap year? YES.leap_year 2016
+
+> leap_year 2016
+2018-08-08 14:24:18,139 - INFO #  leap_year 2016
+2018-08-08 14:24:18,142 - INFO # Was 2016 a leap year? YES.leap_year 2017
+
+> leap_year 2017
+2018-08-08 14:24:18,246 - INFO #  leap_year 2017
+2018-08-08 14:24:18,248 - INFO # Was 2017 a leap year? NO.leap_year 2018
+
+> leap_year 2018
+2018-08-08 14:24:18,352 - INFO #  leap_year 2018
+2018-08-08 14:24:18,355 - INFO # Was 2018 a leap year? NO.doomsday
+
+> doomsday
+2018-08-08 14:24:18,458 - INFO #  doomsday
+2018-08-08 14:24:18,460 - INFO # Usage: doomsday <Year>doomsday 2016
+
+> doomsday 2016
+2018-08-08 14:24:18,564 - INFO #  doomsday 2016
+2018-08-08 14:24:18,567 - INFO # What weekday was MAR 0 of 2016? MON.doomsday 2017
+
+> doomsday 2017
+2018-08-08 14:24:18,671 - INFO #  doomsday 2017
+2018-08-08 14:24:18,674 - INFO # What weekday was MAR 0 of 2017? TUE.day
+
+> day
+2018-08-08 14:24:18,776 - INFO #  day
+2018-08-08 14:24:18,780 - INFO # Usage: day <Year> <Month[1..12]> <Day[1..31]>
+day 2017 1 1
+> day 2017 1 1
+2018-08-08 14:24:18,884 - INFO #  day 2017 1 1
+2018-08-08 14:24:18,890 - INFO # What weekday was 2017-01-01? The 1(th) day of the year was a SUN.
+day 2017 1 15
+> day 2017 1 15
+2018-08-08 14:24:18,994 - INFO #  day 2017 1 15
+2018-08-08 14:24:19,000 - INFO # What weekday was 2017-01-15? The 15(th) day of the year was a SUN.
+day 2017 1 28
+> day 2017 1 28
+2018-08-08 14:24:19,103 - INFO #  day 2017 1 28
+2018-08-08 14:24:19,109 - INFO # What weekday was 2017-01-28? The 28(th) day of the year was a SAT.
+day 2017 4 1
+> day 2017 4 1
+2018-08-08 14:24:19,215 - INFO #  day 2017 4 1
+2018-08-08 14:24:19,221 - INFO # What weekday was 2017-04-01? The 91(th) day of the year was a SAT.day 2017 4 15
+
+> day 2017 4 15
+2018-08-08 14:24:19,325 - INFO #  day 2017 4 15
+2018-08-08 14:24:19,332 - INFO # What weekday was 2017-04-15? The 105(th) day of the year was a SAT.day 2017 4 28
+
+> day 2017 4 28
+2018-08-08 14:24:19,436 - INFO #  day 2017 4 28
+2018-08-08 14:24:19,442 - INFO # What weekday was 2017-04-28? The 118(th) day of the year was a FRI.day 2017 11 1
+
+> day 2017 11 1
+2018-08-08 14:24:19,546 - INFO #  day 2017 11 1
+2018-08-08 14:24:19,552 - INFO # What weekday was 2017-11-01? The 305(th) day of the year was a WED.day 2017 11 15
+
+> day 2017 11 15
+2018-08-08 14:24:19,656 - INFO #  day 2017 11 15
+2018-08-08 14:24:19,662 - INFO # What weekday was 2017-11-15? The 319(th) day of the year was a WED.day 2017 11 28
+
+> day 2017 11 28
+2018-08-08 14:24:19,767 - INFO #  day 2017 11 28
+2018-08-08 14:24:19,773 - INFO # What weekday was 2017-11-28? The 332(th) day of the year was a TUE.day 2018 1 1
+
+> day 2018 1 1
+2018-08-08 14:24:19,877 - INFO #  day 2018 1 1
+2018-08-08 14:24:19,883 - INFO # What weekday was 2018-01-01? The 1(th) day of the year was a MON.day 2018 1 15
+
+> day 2018 1 15
+2018-08-08 14:24:19,987 - INFO #  day 2018 1 15
+2018-08-08 14:24:19,993 - INFO # What weekday was 2018-01-15? The 15(th) day of the year was a MON.day 2018 1 28
+
+> day 2018 1 28
+2018-08-08 14:24:20,097 - INFO #  day 2018 1 28
+2018-08-08 14:24:20,103 - INFO # What weekday was 2018-01-28? The 28(th) day of the year was a SUN.day 2018 4 1
+
+> day 2018 4 1
+2018-08-08 14:24:20,206 - INFO #  day 2018 4 1
+2018-08-08 14:24:20,212 - INFO # What weekday was 2018-04-01? The 91(th) day of the year was a SUN.day 2018 4 15
+
+> day 2018 4 15
+2018-08-08 14:24:20,316 - INFO #  day 2018 4 15
+2018-08-08 14:24:20,322 - INFO # What weekday was 2018-04-15? The 105(th) day of the year was a SUN.day 2018 4 28
+
+> day 2018 4 28
+2018-08-08 14:24:20,427 - INFO #  day 2018 4 28
+2018-08-08 14:24:20,433 - INFO # What weekday was 2018-04-28? The 118(th) day of the year was a SAT.day 2018 11 1
+
+> day 2018 11 1
+2018-08-08 14:24:20,537 - INFO #  day 2018 11 1
+2018-08-08 14:24:20,543 - INFO # What weekday was 2018-11-01? The 305(th) day of the year was a THU.day 2018 11 15
+
+> day 2018 11 15
+2018-08-08 14:24:20,649 - INFO #  day 2018 11 15
+2018-08-08 14:24:20,655 - INFO # What weekday was 2018-11-15? The 319(th) day of the year was a THU.day 2018 11 28
+
+> day 2018 11 28
+2018-08-08 14:24:20,760 - INFO #  day 2018 11 28
+2018-08-08 14:24:20,766 - INFO # What weekday was 2018-11-28? The 332(th) day of the year was a WED.day 2016 2 29
+
+> day 2016 2 29
+2018-08-08 14:24:20,869 - INFO #  day 2016 2 29
+2018-08-08 14:24:20,876 - INFO # What weekday was 2016-02-29? The 60(th) day of the year was a MON.day 2017 2 29
+
+> day 2017 2 29
+2018-08-08 14:24:20,982 - INFO #  day 2017 2 29
+2018-08-08 14:24:20,987 - INFO # The supplied date is invalid, but no error should occur.

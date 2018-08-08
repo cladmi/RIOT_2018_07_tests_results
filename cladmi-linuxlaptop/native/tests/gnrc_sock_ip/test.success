@@ -1,0 +1,48 @@
+true 
+./tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/gnrc_sock_ip/bin/native/tests_gnrc_sock_ip.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Calling test_sock_ip_create__EAFNOSUPPORT()
+Calling test_sock_ip_create__EINVAL_addr()
+Calling test_sock_ip_create__EINVAL_netif()
+Calling test_sock_ip_create__no_endpoints()
+Calling test_sock_ip_create__only_local()
+Calling test_sock_ip_create__only_local_reuse_ep()
+Calling test_sock_ip_create__only_remote()
+Calling test_sock_ip_create__full()
+Calling test_sock_ip_recv__EADDRNOTAVAIL()
+Calling test_sock_ip_recv__EAGAIN()
+Calling test_sock_ip_recv__ENOBUFS()
+Calling test_sock_ip_recv__EPROTO()
+Calling test_sock_ip_recv__ETIMEDOUT()
+ * Calling sock_ip_recv()
+ * (timed out with timeout 1000000)
+Calling test_sock_ip_recv__socketed()
+Calling test_sock_ip_recv__socketed_with_remote()
+Calling test_sock_ip_recv__unsocketed()
+Calling test_sock_ip_recv__unsocketed_with_remote()
+Calling test_sock_ip_recv__with_timeout()
+Calling test_sock_ip_recv__non_blocking()
+Calling test_sock_ip_send__EAFNOSUPPORT()
+Calling test_sock_ip_send__EINVAL_addr()
+Calling test_sock_ip_send__EINVAL_netif()
+Calling test_sock_ip_send__ENOTCONN()
+Calling test_sock_ip_send__socketed_no_local_no_netif()
+Calling test_sock_ip_send__socketed_no_netif()
+Calling test_sock_ip_send__socketed_no_local()
+Calling test_sock_ip_send__socketed()
+Calling test_sock_ip_send__socketed_other_remote()
+Calling test_sock_ip_send__unsocketed_no_local_no_netif()
+Calling test_sock_ip_send__unsocketed_no_netif()
+Calling test_sock_ip_send__unsocketed_no_local()
+Calling test_sock_ip_send__unsocketed()
+Calling test_sock_ip_send__no_sock_no_netif()
+Calling test_sock_ip_send__no_sock()
+ALL TESTS SUCCESSFUL
+

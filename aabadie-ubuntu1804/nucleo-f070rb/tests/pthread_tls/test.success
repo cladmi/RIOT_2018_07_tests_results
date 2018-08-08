@@ -1,0 +1,139 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 1000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : clock speed 950 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.258383
+Info : stm32f0x.cpu: hardware has 4 breakpoints, 2 watchpoints
+Info : Listening on port 41391 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f0x.cpu       hla_target little stm32f0x.cpu       running
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xc1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : device id = 0x20016448
+Info : flash size = 128kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000003a msp: 0x20000200
+wrote 12288 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/pthread_tls/bin/nucleo-f070rb/tests_pthread_tls.elf in 0.561099s (21.387 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 11864 bytes in 0.183891s (63.004 KiB/s)
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 21:56:30,094 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 21:56:32,920 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 21:56:32,920 - INFO # START
+2018-08-08 21:56:32,920 - INFO # 
+2018-08-08 21:56:32,925 - INFO # -= TEST 1 - create 20 tls with sequencial values 0...19 =-
+2018-08-08 21:56:32,929 - INFO # now rise sequencial by one values 1...20
+2018-08-08 21:56:32,935 - INFO # pick deliberate storage (key[3]:536877640) and change the value
+2018-08-08 21:56:32,937 - INFO # show tls values:
+2018-08-08 21:56:32,940 - INFO # key[0]: 536877544, val: 1
+2018-08-08 21:56:32,942 - INFO # key[1]: 536877576, val: 2
+2018-08-08 21:56:32,944 - INFO # key[2]: 536877608, val: 3
+2018-08-08 21:56:32,946 - INFO # key[3]: 536877640, val: 42
+2018-08-08 21:56:32,949 - INFO # key[4]: 536877672, val: 5
+2018-08-08 21:56:32,951 - INFO # key[5]: 536877704, val: 6
+2018-08-08 21:56:32,953 - INFO # key[6]: 536877736, val: 7
+2018-08-08 21:56:32,955 - INFO # key[7]: 536877768, val: 8
+2018-08-08 21:56:32,958 - INFO # key[8]: 536877800, val: 9
+2018-08-08 21:56:32,960 - INFO # key[9]: 536877832, val: 10
+2018-08-08 21:56:32,964 - INFO # key[10]: 536877864, val: 11
+2018-08-08 21:56:32,965 - INFO # key[11]: 536877896, val: 12
+2018-08-08 21:56:32,968 - INFO # key[12]: 536877928, val: 13
+2018-08-08 21:56:32,971 - INFO # key[13]: 536877960, val: 14
+2018-08-08 21:56:32,974 - INFO # key[14]: 536877992, val: 15
+2018-08-08 21:56:32,976 - INFO # key[15]: 536878024, val: 16
+2018-08-08 21:56:32,978 - INFO # key[16]: 536878056, val: 17
+2018-08-08 21:56:32,981 - INFO # key[17]: 536878088, val: 18
+2018-08-08 21:56:32,984 - INFO # key[18]: 536878120, val: 19
+2018-08-08 21:56:32,986 - INFO # key[19]: 536878152, val: 20
+2018-08-08 21:56:32,987 - INFO # 
+2018-08-08 21:56:32,991 - INFO #  -= TEST 2 - delete deliberate key (key[5]:536877704) =-
+2018-08-08 21:56:32,993 - INFO # show tls values:
+2018-08-08 21:56:32,996 - INFO # key[0]: 536877544, val: 1
+2018-08-08 21:56:32,998 - INFO # key[1]: 536877576, val: 2
+2018-08-08 21:56:33,000 - INFO # key[2]: 536877608, val: 3
+2018-08-08 21:56:33,003 - INFO # key[3]: 536877640, val: 42
+2018-08-08 21:56:33,005 - INFO # key[4]: 536877672, val: 5
+2018-08-08 21:56:33,007 - INFO # key[6]: 536877736, val: 7
+2018-08-08 21:56:33,011 - INFO # key[7]: 536877768, val: 8
+2018-08-08 21:56:33,012 - INFO # key[8]: 536877800, val: 9
+2018-08-08 21:56:33,014 - INFO # key[9]: 536877832, val: 10
+2018-08-08 21:56:33,017 - INFO # key[10]: 536877864, val: 11
+2018-08-08 21:56:33,019 - INFO # key[11]: 536877896, val: 12
+2018-08-08 21:56:33,022 - INFO # key[12]: 536877928, val: 13
+2018-08-08 21:56:33,024 - INFO # key[13]: 536877960, val: 14
+2018-08-08 21:56:33,028 - INFO # key[14]: 536877992, val: 15
+2018-08-08 21:56:33,030 - INFO # key[15]: 536878024, val: 16
+2018-08-08 21:56:33,032 - INFO # key[16]: 536878056, val: 17
+2018-08-08 21:56:33,035 - INFO # key[17]: 536878088, val: 18
+2018-08-08 21:56:33,038 - INFO # key[18]: 536878120, val: 19
+2018-08-08 21:56:33,040 - INFO # key[19]: 536878152, val: 20
+2018-08-08 21:56:33,041 - INFO # 
+2018-08-08 21:56:33,043 - INFO # -= TEST 3 - create new tls =-
+2018-08-08 21:56:33,047 - INFO # added new tls, key: 536878184, val: 99
+2018-08-08 21:56:33,048 - INFO # show tls values:
+2018-08-08 21:56:33,051 - INFO # key[0]: 536877544, val: 1
+2018-08-08 21:56:33,053 - INFO # key[1]: 536877576, val: 2
+2018-08-08 21:56:33,056 - INFO # key[2]: 536877608, val: 3
+2018-08-08 21:56:33,058 - INFO # key[3]: 536877640, val: 42
+2018-08-08 21:56:33,060 - INFO # key[4]: 536877672, val: 5
+2018-08-08 21:56:33,063 - INFO # key[6]: 536877736, val: 7
+2018-08-08 21:56:33,065 - INFO # key[7]: 536877768, val: 8
+2018-08-08 21:56:33,068 - INFO # key[8]: 536877800, val: 9
+2018-08-08 21:56:33,070 - INFO # key[9]: 536877832, val: 10
+2018-08-08 21:56:33,073 - INFO # key[10]: 536877864, val: 11
+2018-08-08 21:56:33,075 - INFO # key[11]: 536877896, val: 12
+2018-08-08 21:56:33,078 - INFO # key[12]: 536877928, val: 13
+2018-08-08 21:56:33,081 - INFO # key[13]: 536877960, val: 14
+2018-08-08 21:56:33,083 - INFO # key[14]: 536877992, val: 15
+2018-08-08 21:56:33,086 - INFO # key[15]: 536878024, val: 16
+2018-08-08 21:56:33,088 - INFO # key[16]: 536878056, val: 17
+2018-08-08 21:56:33,091 - INFO # key[17]: 536878088, val: 18
+2018-08-08 21:56:33,093 - INFO # key[18]: 536878120, val: 19
+2018-08-08 21:56:33,096 - INFO # key[19]: 536878152, val: 20
+2018-08-08 21:56:33,096 - INFO # 
+2018-08-08 21:56:33,099 - INFO # -= TEST 4 - delete all keys =-
+2018-08-08 21:56:33,101 - INFO # show tls values:
+2018-08-08 21:56:33,101 - INFO # 
+2018-08-08 21:56:33,105 - INFO # -= TEST 5 - try delete non-existing key =-
+2018-08-08 21:56:33,107 - INFO # try to delete returns: 0
+2018-08-08 21:56:33,107 - INFO # 
+2018-08-08 21:56:33,111 - INFO # -= TEST 6 - add key and delete without a tls =-
+2018-08-08 21:56:33,114 - INFO # created key: 536878216
+2018-08-08 21:56:33,116 - INFO # try to delete returns: 0
+2018-08-08 21:56:33,116 - INFO # 
+2018-08-08 21:56:33,119 - INFO # -= TEST 7 - add key without tls =-
+2018-08-08 21:56:33,121 - INFO # created key: 536878232
+2018-08-08 21:56:33,122 - INFO # test_7_val: 0
+2018-08-08 21:56:33,124 - INFO # tls tests finished.
+2018-08-08 21:56:33,125 - INFO # SUCCESS
+

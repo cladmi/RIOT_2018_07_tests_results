@@ -1,0 +1,89 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/rng/bin/arduino-zero/tests_rng.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming..................................................................................................................................................... done.
+Verification..................................................................................................................................................... done.
+tests/01-run.py
+source 0
+seed 1337
+fips
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:53:54,157 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:53:57,014 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:53:57,016 - INFO # Starting shell...
+> source 0
+2018-08-08 22:53:57,057 - INFO #  source 0
+> seed 1337
+2018-08-08 22:53:57,107 - INFO #  seed 1337
+2018-08-08 22:53:57,109 - INFO # Seed set to 1337
+> fips
+2018-08-08 22:53:57,157 - INFO #  fips
+2018-08-08 22:53:57,163 - INFO # Running FIPS 140-2 test, with seed 1337 using Tiny Mersenne Twister PRNG.
+2018-08-08 22:53:57,163 - INFO # 
+2018-08-08 22:53:57,184 - INFO # - Monobit test: passed
+2018-08-08 22:53:57,186 - INFO # - Poker test: passed
+2018-08-08 22:53:57,188 - INFO # - Run test: passed
+2018-08-08 22:53:57,190 - INFO # - Longrun test: passed
+dump 10
+> dump 10
+2018-08-08 22:53:57,243 - INFO #  dump 10
+2018-08-08 22:53:57,249 - INFO # Running dump test, with seed 1337 using Tiny Mersenne Twister PRNG.
+2018-08-08 22:53:57,250 - INFO # 
+2018-08-08 22:53:57,250 - INFO # 1555530734
+2018-08-08 22:53:57,251 - INFO # 2178333451
+2018-08-08 22:53:57,252 - INFO # 2272913641
+2018-08-08 22:53:57,254 - INFO # 3790481823
+2018-08-08 22:53:57,255 - INFO # 3190025502
+2018-08-08 22:53:57,256 - INFO # 798555366
+2018-08-08 22:53:57,257 - INFO # 1918982324
+2018-08-08 22:53:57,258 - INFO # 1550167154
+2018-08-08 22:53:57,259 - INFO # 3454972398
+2018-08-08 22:53:57,260 - INFO # 1034066532
+entropy
+> entropy
+2018-08-08 22:53:57,312 - INFO #  entropy
+2018-08-08 22:53:57,318 - INFO # Running entropy test, with seed 1337 using Tiny Mersenne Twister PRNG.
+2018-08-08 22:53:57,319 - INFO # 
+2018-08-08 22:53:57,389 - INFO # Calculated 7.994709 bits of entropy from 10000 samples.
+source 1
+seed 1337
+fips
+> source 1
+2018-08-08 22:53:57,443 - INFO #  source 1
+> seed 1337
+2018-08-08 22:53:57,493 - INFO #  seed 1337
+2018-08-08 22:53:57,494 - INFO # Seed set to 1337
+> fips
+2018-08-08 22:53:57,542 - INFO #  fips
+2018-08-08 22:53:57,547 - INFO # Running FIPS 140-2 test, with seed 1337 using constant value.
+2018-08-08 22:53:57,548 - INFO # 
+2018-08-08 22:53:57,565 - INFO # - Monobit test: failed
+2018-08-08 22:53:57,567 - INFO # - Poker test: failed
+2018-08-08 22:53:57,569 - INFO # - Run test: failed
+2018-08-08 22:53:57,570 - INFO # - Longrun test: passed
+dump 10
+> dump 10
+2018-08-08 22:53:57,622 - INFO #  dump 10
+2018-08-08 22:53:57,627 - INFO # Running dump test, with seed 1337 using constant value.
+2018-08-08 22:53:57,627 - INFO # 
+2018-08-08 22:53:57,628 - INFO # 1337
+2018-08-08 22:53:57,628 - INFO # 1337
+2018-08-08 22:53:57,629 - INFO # 1337
+2018-08-08 22:53:57,629 - INFO # 1337
+2018-08-08 22:53:57,630 - INFO # 1337
+2018-08-08 22:53:57,630 - INFO # 1337
+2018-08-08 22:53:57,631 - INFO # 1337
+2018-08-08 22:53:57,631 - INFO # 1337
+2018-08-08 22:53:57,632 - INFO # 1337
+entropy
+2018-08-08 22:53:57,632 - INFO # 1337
+> entropy
+2018-08-08 22:53:57,684 - INFO #  entropy
+2018-08-08 22:53:57,689 - INFO # Running entropy test, with seed 1337 using constant value.
+2018-08-08 22:53:57,689 - INFO # 
+2018-08-08 22:53:57,710 - INFO # Calculated 0.017260 bits of entropy from 10000 samples.
+

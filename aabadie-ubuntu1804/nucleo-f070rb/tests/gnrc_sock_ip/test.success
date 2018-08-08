@@ -1,0 +1,112 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 1000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : clock speed 950 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.261538
+Info : stm32f0x.cpu: hardware has 4 breakpoints, 2 watchpoints
+Info : Listening on port 43657 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f0x.cpu       hla_target little stm32f0x.cpu       running
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xc1000000 pc: 0x08000458 msp: 0x20000200
+auto erase enabled
+Info : device id = 0x20016448
+Info : flash size = 128kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000003a msp: 0x20000200
+wrote 38912 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/gnrc_sock_ip/bin/nucleo-f070rb/tests_gnrc_sock_ip.elf in 1.641127s (23.155 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 36940 bytes in 0.483020s (74.685 KiB/s)
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+shutdown command invoked
+Done flashing
+./tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 21:37:42,100 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 21:37:43,104 - INFO #  * (timed out with timeout 1000000)
+2018-08-08 21:37:43,106 - INFO # Calling test_sock_ip_recv__socketed()
+2018-08-08 21:37:43,107 - INFO # Calling test_sock_ip_recv__socketed_with_remote()
+2018-08-08 21:37:43,109 - INFO # Calling test_sock_ip_recv__unsocketed()
+2018-08-08 21:37:43,109 - INFO # Calling test_sock_ip_recv__unsocketed_with_remote()
+2018-08-08 21:37:43,110 - INFO # Calling test_sock_ip_recv__with_timeout()
+2018-08-08 21:37:43,111 - INFO # Calling test_sock_ip_recv__non_blocking()
+2018-08-08 21:37:43,111 - INFO # Calling test_sock_ip_send__EAFNOSUPPORT()
+2018-08-08 21:37:43,112 - INFO # Calling test_sock_ip_send__EINVAL_addr()
+2018-08-08 21:37:43,112 - INFO # Calling test_sock_ip_send__EINVAL_netif()
+2018-08-08 21:37:43,113 - INFO # Calling test_sock_ip_send__ENOTCONN()
+2018-08-08 21:37:43,114 - INFO # Calling test_sock_ip_send__socketed_no_local_no_netif()
+2018-08-08 21:37:43,115 - INFO # Calling test_sock_ip_send__socketed_no_netif()
+2018-08-08 21:37:43,115 - INFO # Calling test_sock_ip_send__socketed_no_local()
+2018-08-08 21:37:43,116 - INFO # Calling test_sock_ip_send__socketed()
+2018-08-08 21:37:43,117 - INFO # Calling test_sock_ip_send__socketed_other_remote()
+2018-08-08 21:37:43,118 - INFO # Calling test_sock_ip_send__unsocketed_no_local_no_netif()
+2018-08-08 21:37:43,118 - INFO # Calling test_sock_ip_send__unsocketed_no_netif()
+2018-08-08 21:37:43,119 - INFO # Calling test_sock_ip_send__unsocketed_no_local()
+2018-08-08 21:37:43,120 - INFO # Calling test_sock_ip_send__unsocketed()
+2018-08-08 21:37:43,120 - INFO # Calling test_sock_ip_send__no_sock_no_netif()
+2018-08-08 21:37:43,121 - INFO # Calling test_sock_ip_send__no_sock()
+2018-08-08 21:37:43,121 - INFO # ALL TESTS SUCCESSFUL
+2018-08-08 21:37:44,913 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 21:37:44,917 - INFO # Calling test_sock_ip_create__EAFNOSUPPORT()
+2018-08-08 21:37:44,920 - INFO # Calling test_sock_ip_create__EINVAL_addr()
+2018-08-08 21:37:44,924 - INFO # Calling test_sock_ip_create__EINVAL_netif()
+2018-08-08 21:37:44,928 - INFO # Calling test_sock_ip_create__no_endpoints()
+2018-08-08 21:37:44,932 - INFO # Calling test_sock_ip_create__only_local()
+2018-08-08 21:37:44,936 - INFO # Calling test_sock_ip_create__only_local_reuse_ep()
+2018-08-08 21:37:44,940 - INFO # Calling test_sock_ip_create__only_remote()
+2018-08-08 21:37:44,943 - INFO # Calling test_sock_ip_create__full()
+2018-08-08 21:37:44,947 - INFO # Calling test_sock_ip_recv__EADDRNOTAVAIL()
+2018-08-08 21:37:44,950 - INFO # Calling test_sock_ip_recv__EAGAIN()
+2018-08-08 21:37:44,954 - INFO # Calling test_sock_ip_recv__ENOBUFS()
+2018-08-08 21:37:44,957 - INFO # Calling test_sock_ip_recv__EPROTO()
+2018-08-08 21:37:44,960 - INFO # Calling test_sock_ip_recv__ETIMEDOUT()
+2018-08-08 21:37:44,962 - INFO #  * Calling sock_ip_recv()
+2018-08-08 21:37:45,966 - INFO #  * (timed out with timeout 1000000)
+2018-08-08 21:37:45,970 - INFO # Calling test_sock_ip_recv__socketed()
+2018-08-08 21:37:45,974 - INFO # Calling test_sock_ip_recv__socketed_with_remote()
+2018-08-08 21:37:45,978 - INFO # Calling test_sock_ip_recv__unsocketed()
+2018-08-08 21:37:45,983 - INFO # Calling test_sock_ip_recv__unsocketed_with_remote()
+2018-08-08 21:37:45,987 - INFO # Calling test_sock_ip_recv__with_timeout()
+2018-08-08 21:37:45,990 - INFO # Calling test_sock_ip_recv__non_blocking()
+2018-08-08 21:37:45,994 - INFO # Calling test_sock_ip_send__EAFNOSUPPORT()
+2018-08-08 21:37:45,998 - INFO # Calling test_sock_ip_send__EINVAL_addr()
+2018-08-08 21:37:46,001 - INFO # Calling test_sock_ip_send__EINVAL_netif()
+2018-08-08 21:37:46,005 - INFO # Calling test_sock_ip_send__ENOTCONN()
+2018-08-08 21:37:46,009 - INFO # Calling test_sock_ip_send__socketed_no_local_no_netif()
+2018-08-08 21:37:46,014 - INFO # Calling test_sock_ip_send__socketed_no_netif()
+2018-08-08 21:37:46,020 - INFO # Calling test_sock_ip_send__socketed_no_local()
+2018-08-08 21:37:46,024 - INFO # Calling test_sock_ip_send__socketed()
+2018-08-08 21:37:46,032 - INFO # Calling test_sock_ip_send__socketed_other_remote()
+2018-08-08 21:37:46,038 - INFO # Calling test_sock_ip_send__unsocketed_no_local_no_netif()
+2018-08-08 21:37:46,043 - INFO # Calling test_sock_ip_send__unsocketed_no_netif()
+2018-08-08 21:37:46,049 - INFO # Calling test_sock_ip_send__unsocketed_no_local()
+2018-08-08 21:37:46,053 - INFO # Calling test_sock_ip_send__unsocketed()
+2018-08-08 21:37:46,059 - INFO # Calling test_sock_ip_send__no_sock_no_netif()
+2018-08-08 21:37:46,063 - INFO # Calling test_sock_ip_send__no_sock()
+2018-08-08 21:37:46,066 - INFO # ALL TESTS SUCCESSFUL
+

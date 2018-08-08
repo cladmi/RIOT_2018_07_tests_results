@@ -1,0 +1,16 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/thread_msg_block_w_queue/bin/arduino-zero/tests_thread_msg_block_w_queue.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming......................................... done.
+Verification......................................... done.
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:56:48,394 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:56:51,258 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:56:51,260 - INFO # sender_thread start
+2018-08-08 22:56:51,262 - INFO # main thread alive
+

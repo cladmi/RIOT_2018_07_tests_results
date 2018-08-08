@@ -1,0 +1,27 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/pkg_umorse/bin/arduino-zero/tests_pkg_umorse.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming................................................. done.
+Verification................................................. done.
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:48:52,954 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:48:55,788 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:48:55,788 - INFO # [START]
+> 2018-08-08 22:48:55,792 - INFO #  Translate text of length 30 into Morse code:
+2018-08-08 22:48:55,794 - INFO # "Hello RIOT-OS!
+2018-08-08 22:48:55,795 - INFO # This is uMorse."
+> 2018-08-08 22:48:55,798 - INFO #  using aligned encoding:
+2018-08-08 22:49:10,451 - INFO # .... . ._.. ._.. ___ / ._. .. ___ _ ___ ...
+2018-08-08 22:49:26,307 - INFO # _ .... .. ... / .. ... / .._ __ ___ ._. ... .
+> 2018-08-08 22:49:28,110 - INFO #  encoded length=52
+> 2018-08-08 22:49:28,112 - INFO #  using compact encoding:
+2018-08-08 22:49:28,117 - INFO # .... . ._.. ._.. ___ / ._. .. ___ _ ___ ...
+2018-08-08 22:49:28,121 - INFO # _ .... .. ... / .. ... / .._ __ ___ ._. ... .
+> 2018-08-08 22:50:00,424 - INFO #  encoded length=25
+2018-08-08 22:50:00,425 - INFO # [SUCCESS]
+

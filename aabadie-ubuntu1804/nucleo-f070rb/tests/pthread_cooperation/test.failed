@@ -1,0 +1,72 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT-RC/tests/pthread_cooperation flash-only test
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 1000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : clock speed 950 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.261538
+Info : stm32f0x.cpu: hardware has 4 breakpoints, 2 watchpoints
+Info : Listening on port 33417 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f0x.cpu       hla_target little stm32f0x.cpu       running
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xc1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : device id = 0x20016448
+Info : flash size = 128kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000003a msp: 0x20000200
+wrote 12288 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/pthread_cooperation/bin/nucleo-f070rb/tests_pthread_cooperation.elf in 0.562602s (21.329 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 10800 bytes in 0.172356s (61.192 KiB/s)
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 21:55:56,024 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 21:55:58,852 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 21:55:58,852 - INFO # START
+2018-08-08 21:55:58,855 - INFO # Creating thread with arg 1
+2018-08-08 21:55:58,857 - INFO # Creating thread with arg 2
+2018-08-08 21:55:58,860 - INFO # Creating thread with arg 3
+2018-08-08 21:55:58,862 - INFO # Creating thread with arg 4
+2018-08-08 21:55:58,865 - INFO # Creating thread with arg 5
+2018-08-08 21:55:58,867 - INFO # Creating thread with arg 6
+2018-08-08 21:55:58,870 - INFO # Creating thread with arg 7
+2018-08-08 21:55:58,872 - INFO # Creating thread with arg 8
+2018-08-08 21:55:58,875 - INFO # Creating thread with arg 9
+2018-08-08 21:55:58,877 - INFO # Creating thread with arg 10
+2018-08-08 21:55:58,880 - INFO # Creating thread with arg 11
+2018-08-08 21:55:58,881 - INFO # 
+2018-08-08 21:55:58,882 - INFO # Context before hardfault:
+Timeout in expect script at "child.expect('Creating thread with arg {}'.format(i + 1))" (tests/pthread_cooperation/tests/01-run.py:11)
+
+Makefile:19: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

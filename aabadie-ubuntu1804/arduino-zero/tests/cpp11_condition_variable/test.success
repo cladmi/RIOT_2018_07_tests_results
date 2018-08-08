@@ -1,0 +1,38 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/cpp11_condition_variable/bin/arduino-zero/tests_cpp11_condition_variable.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming................................................................................................................. done.
+Verification................................................................................................................. done.
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:14:34,422 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:14:35,426 - INFO # Done
+2018-08-08 22:14:35,426 - INFO # 
+2018-08-08 22:14:35,427 - INFO # Wait until ...
+2018-08-08 22:14:35,598 - INFO # Done
+2018-08-08 22:14:35,598 - INFO # 
+2018-08-08 22:14:35,599 - INFO # Bye, bye. 
+2018-08-08 22:14:35,604 - INFO # ******************************************************
+2018-08-08 22:14:35,604 - INFO # 
+2018-08-08 22:14:37,125 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:14:37,125 - INFO # 
+2018-08-08 22:14:37,129 - INFO # ************ C++ condition_variable test ***********
+2018-08-08 22:14:37,133 - INFO # Wait with predicate and notify one ... 
+2018-08-08 22:14:37,134 - INFO # Done
+2018-08-08 22:14:37,134 - INFO # 
+2018-08-08 22:14:37,136 - INFO # Wait and notify all ...
+2018-08-08 22:14:37,136 - INFO # Done
+2018-08-08 22:14:37,137 - INFO # 
+2018-08-08 22:14:37,138 - INFO # Wait for ...
+2018-08-08 22:14:38,139 - INFO # Done
+2018-08-08 22:14:38,139 - INFO # 
+2018-08-08 22:14:38,140 - INFO # Wait until ...
+2018-08-08 22:14:39,141 - INFO # Done
+2018-08-08 22:14:39,141 - INFO # 
+2018-08-08 22:14:39,142 - INFO # Bye, bye. 
+2018-08-08 22:14:39,147 - INFO # ******************************************************
+

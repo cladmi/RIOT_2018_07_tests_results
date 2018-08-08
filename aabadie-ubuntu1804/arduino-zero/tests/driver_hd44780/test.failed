@@ -1,0 +1,41 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT-RC/tests/driver_hd44780 flash-only test
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/driver_hd44780/bin/arduino-zero/tests_driver_hd44780.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming................................................ done.
+Verification................................................ done.
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:18:47,708 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:18:50,596 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:18:50,597 - INFO # [START]
+2018-08-08 22:18:50,597 - INFO # 
+2018-08-08 22:18:50,599 - INFO # Context before hardfault:
+2018-08-08 22:18:50,601 - INFO #    r0: 0x0000013f
+2018-08-08 22:18:50,603 - INFO #    r1: 0x00000000
+2018-08-08 22:18:50,604 - INFO #    r2: 0x000000e0
+2018-08-08 22:18:50,606 - INFO #    r3: 0x80000000
+2018-08-08 22:18:50,607 - INFO #   r12: 0x00000000
+2018-08-08 22:18:50,609 - INFO #    lr: 0x000017c1
+2018-08-08 22:18:50,611 - INFO #    pc: 0x000012ba
+2018-08-08 22:18:50,612 - INFO #   psr: 0x01000000
+2018-08-08 22:18:50,613 - INFO # 
+2018-08-08 22:18:50,613 - INFO # Misc
+2018-08-08 22:18:50,615 - INFO # EXC_RET: 0xfffffffd
+2018-08-08 22:18:50,619 - INFO # Attempting to reconstruct state for debugging...
+2018-08-08 22:18:50,620 - INFO # In GDB:
+2018-08-08 22:18:50,621 - INFO #   set $pc=0x12ba
+2018-08-08 22:18:50,622 - INFO #   frame 0
+2018-08-08 22:18:50,622 - INFO #   bt
+2018-08-08 22:18:50,623 - INFO # 
+2018-08-08 22:18:50,626 - INFO # ISR stack overflowed by at least 8 bytes.
+Timeout in expect script at "child.expect_exact("[SUCCESS]")" (tests/driver_hd44780/tests/01-run.py:16)
+
+Makefile:12: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

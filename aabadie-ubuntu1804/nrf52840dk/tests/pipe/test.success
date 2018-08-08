@@ -1,0 +1,91 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/jlink/jlink.sh flash
+### Flashing Target ###
+### Flashing at address 0x0 ###
+HEXFILE found
+SEGGER J-Link Commander V6.33g (Compiled Jun 28 2018 15:09:53)
+DLL version V6.33g, compiled Jun 28 2018 15:09:48
+
+
+J-Link Command File read successfully.
+Processing script file...
+
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: J-Link OB-SAM3U128-V2-NordicSemi compiled Jan 12 2018 16:05:20
+Hardware version: V1.00
+S/N: 683238897
+VTref=3.300V
+Target connection not established yet but required for command.
+Device "NRF52" selected.
+
+
+Connecting to target via SWD
+Found SW-DP with ID 0x2BA01477
+Found SW-DP with ID 0x2BA01477
+Scanning AP map to find all available APs
+AP[2]: Stopped AP scan as end of AP map has been reached
+AP[0]: AHB-AP (IDR: 0x24770011)
+AP[1]: JTAG-AP (IDR: 0x02880000)
+Iterating through AP map to find AHB-AP to use
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)
+Found Cortex-M4 r0p1, Little endian.
+FPUnit: 6 code (BP) slots and 2 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB00C SCS-M7
+ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 003BB002 DWT
+ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 002BB003 FPB
+ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 003BB001 ITM
+ROMTbl[0][4]: E0040000, CID: B105900D, PID: 000BB9A1 TPIU
+ROMTbl[0][5]: E0041000, CID: B105900D, PID: 000BB925 ETM
+Cortex-M4 identified.
+Halting CPU for downloading file.
+Downloading file [/home/aabadie/softs/src/riot/RIOT-RC/tests/pipe/bin/nrf52840dk/tests_pipe.bin]...
+Comparing flash   [000%]000%]050%]100%] Done.
+Erasing flash     [000%]000%]100%] Done.
+Programming flash [000%]000%]000%]000%]005%]005%]010%]010%]015%]015%]020%]020%]025%]025%]025%]025%]030%]030%]035%]035%]040%]040%]045%]045%]050%]050%]050%]050%]055%]055%]060%]060%]065%]065%]070%]070%]075%]100%] Done.
+Verifying flash   [000%]000%]100%] Done.
+J-Link: Flash download: Bank 0 @ 0x00000000: 1 range affected (12288 bytes)
+J-Link: Flash download: Total time needed: 0.466s (Prepare: 0.041s, Compare: 0.005s, Erase: 0.254s, Program: 0.156s, Verify: 0.000s, Restore: 0.008s)
+O.K.
+
+Reset delay: 0 ms
+Reset type NORMAL: Resets core & peripherals via SYSRESETREQ & VECTRESET bit.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+
+
+
+Script processing completed.
+
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 21:03:16,672 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 21:03:19,767 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 21:03:19,767 - INFO # Start.
+2018-08-08 21:03:19,769 - INFO # Middle read: <ABCD> [0:4]
+2018-08-08 21:03:19,772 - INFO # Middle read: <EF> [4:6]
+2018-08-08 21:03:19,773 - INFO # End read: <ABC> [0:3]
+2018-08-08 21:03:19,775 - INFO # End read: <DEF> [3:6]
+2018-08-08 21:03:19,778 - INFO # Middle read: <GHIJ> [6:10]
+2018-08-08 21:03:19,780 - INFO # Middle read: <KL> [10:12]
+2018-08-08 21:03:19,782 - INFO # End read: <GHI> [6:9]
+2018-08-08 21:03:19,784 - INFO # End read: <JKL> [9:12]
+2018-08-08 21:03:19,786 - INFO # Middle read: <MNOP> [12:16]
+2018-08-08 21:03:19,789 - INFO # Middle read: <QR> [16:18]
+2018-08-08 21:03:19,791 - INFO # End read: <MNO> [12:15]
+2018-08-08 21:03:19,793 - INFO # End read: <PQR> [15:18]
+2018-08-08 21:03:19,796 - INFO # Middle read: <STUV> [18:22]
+2018-08-08 21:03:19,798 - INFO # Middle read: <WX> [22:24]
+2018-08-08 21:03:19,799 - INFO # Main done.
+2018-08-08 21:03:19,801 - INFO # End read: <STU> [18:21]
+2018-08-08 21:03:19,803 - INFO # End read: <VWX> [21:24]
+2018-08-08 21:03:19,805 - INFO # Middle read: <YZ> [24:26]
+2018-08-08 21:03:19,807 - INFO # Middle done.
+2018-08-08 21:03:19,809 - INFO # End read: <YZ> [24:26]
+2018-08-08 21:03:19,810 - INFO # End done.
+

@@ -1,0 +1,201 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/jlink/jlink.sh flash
+### Flashing Target ###
+### Flashing at address 0x0 ###
+HEXFILE found
+SEGGER J-Link Commander V6.33g (Compiled Jun 28 2018 15:09:53)
+DLL version V6.33g, compiled Jun 28 2018 15:09:48
+
+
+J-Link Command File read successfully.
+Processing script file...
+
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: J-Link OB-SAM3U128-V2-NordicSemi compiled Jan 12 2018 16:05:20
+Hardware version: V1.00
+S/N: 683238897
+VTref=3.300V
+Target connection not established yet but required for command.
+Device "NRF52" selected.
+
+
+Connecting to target via SWD
+Found SW-DP with ID 0x2BA01477
+Found SW-DP with ID 0x2BA01477
+Scanning AP map to find all available APs
+AP[2]: Stopped AP scan as end of AP map has been reached
+AP[0]: AHB-AP (IDR: 0x24770011)
+AP[1]: JTAG-AP (IDR: 0x02880000)
+Iterating through AP map to find AHB-AP to use
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)
+Found Cortex-M4 r0p1, Little endian.
+FPUnit: 6 code (BP) slots and 2 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB00C SCS-M7
+ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 003BB002 DWT
+ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 002BB003 FPB
+ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 003BB001 ITM
+ROMTbl[0][4]: E0040000, CID: B105900D, PID: 000BB9A1 TPIU
+ROMTbl[0][5]: E0041000, CID: B105900D, PID: 000BB925 ETM
+Cortex-M4 identified.
+Halting CPU for downloading file.
+Downloading file [/home/aabadie/softs/src/riot/RIOT-RC/tests/xtimer_hang/bin/nrf52840dk/tests_xtimer_hang.bin]...
+Comparing flash   [000%]000%]050%]100%] Done.
+Erasing flash     [000%]000%]100%] Done.
+Programming flash [000%]000%]000%]000%]005%]005%]010%]010%]015%]015%]020%]020%]025%]025%]025%]025%]030%]030%]035%]035%]040%]040%]045%]045%]050%]050%]050%]050%]055%]055%]060%]060%]065%]065%]070%]070%]075%]075%]075%]075%]080%]100%] Done.
+Verifying flash   [000%]000%]100%] Done.
+J-Link: Flash download: Bank 0 @ 0x00000000: 1 range affected (12288 bytes)
+J-Link: Flash download: Total time needed: 0.485s (Prepare: 0.041s, Compare: 0.004s, Erase: 0.254s, Program: 0.175s, Verify: 0.000s, Restore: 0.008s)
+O.K.
+
+Reset delay: 0 ms
+Reset type NORMAL: Resets core & peripherals via SYSRESETREQ & VECTRESET bit.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+
+
+
+Script processing completed.
+
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 21:20:50,341 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 21:20:51,344 - INFO # Testing (  6%)
+2018-08-08 21:20:51,345 - INFO # Testing (  7%)
+2018-08-08 21:20:51,345 - INFO # Testing (  8%)
+2018-08-08 21:20:51,345 - INFO # Testing (  9%)
+2018-08-08 21:20:51,345 - INFO # Testing ( 10%)
+2018-08-08 21:20:51,345 - INFO # Testing ( 11%)
+2018-08-08 21:20:51,346 - INFO # Testing ( 12%)
+2018-08-08 21:20:51,346 - INFO # Testing ( 13%)
+2018-08-08 21:20:51,346 - INFO # Testing ( 14%)
+2018-08-08 21:20:51,346 - INFO # Testing ( 15%)
+2018-08-08 21:20:51,421 - INFO # Testing ( 16%)
+2018-08-08 21:20:51,521 - INFO # Testing ( 17%)
+2018-08-08 21:20:51,624 - INFO # Testing ( 18%)
+2018-08-08 21:20:51,725 - INFO # Testing ( 19%)
+2018-08-08 21:20:51,826 - INFO # Testing ( 20%)
+2018-08-08 21:20:51,928 - INFO # Testing ( 21%)
+2018-08-08 21:20:52,028 - INFO # Testing ( 22%)
+2018-08-08 21:20:52,130 - INFO # Testing ( 23%)
+2018-08-08 21:20:52,232 - INFO # Testing ( 24%)
+2018-08-08 21:20:52,333 - INFO # Testing ( 25%)
+2018-08-08 21:20:52,435 - INFO # Testing ( 26%)
+2018-08-08 21:20:52,536 - INFO # Testing ( 27%)
+2018-08-08 21:20:52,637 - INFO # Testing ( 28%)
+2018-08-08 21:20:52,738 - INFO # Testing ( 29%)
+2018-08-08 21:20:52,840 - INFO # Testing ( 30%)
+2018-08-08 21:20:52,941 - INFO # Testing ( 31%)
+2018-08-08 21:20:53,042 - INFO # Testing ( 32%)
+2018-08-08 21:20:53,143 - INFO # Testing ( 33%)
+2018-08-08 21:20:53,244 - INFO # Testing ( 34%)
+2018-08-08 21:20:53,346 - INFO # Testing ( 35%)
+2018-08-08 21:20:53,447 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 21:20:53,448 - INFO # [START]
+2018-08-08 21:20:53,550 - INFO # Testing (  0%)
+2018-08-08 21:20:53,651 - INFO # Testing (  1%)
+2018-08-08 21:20:53,752 - INFO # Testing (  2%)
+2018-08-08 21:20:53,854 - INFO # Testing (  3%)
+2018-08-08 21:20:53,955 - INFO # Testing (  4%)
+2018-08-08 21:20:54,057 - INFO # Testing (  5%)
+2018-08-08 21:20:54,158 - INFO # Testing (  6%)
+2018-08-08 21:20:54,259 - INFO # Testing (  7%)
+2018-08-08 21:20:54,361 - INFO # Testing (  8%)
+2018-08-08 21:20:54,462 - INFO # Testing (  9%)
+2018-08-08 21:20:54,563 - INFO # Testing ( 10%)
+2018-08-08 21:20:54,665 - INFO # Testing ( 11%)
+2018-08-08 21:20:54,766 - INFO # Testing ( 12%)
+2018-08-08 21:20:54,867 - INFO # Testing ( 13%)
+2018-08-08 21:20:54,969 - INFO # Testing ( 14%)
+2018-08-08 21:20:55,070 - INFO # Testing ( 15%)
+2018-08-08 21:20:55,172 - INFO # Testing ( 16%)
+2018-08-08 21:20:55,273 - INFO # Testing ( 17%)
+2018-08-08 21:20:55,374 - INFO # Testing ( 18%)
+2018-08-08 21:20:55,476 - INFO # Testing ( 19%)
+2018-08-08 21:20:55,577 - INFO # Testing ( 20%)
+2018-08-08 21:20:55,678 - INFO # Testing ( 21%)
+2018-08-08 21:20:55,780 - INFO # Testing ( 22%)
+2018-08-08 21:20:55,881 - INFO # Testing ( 23%)
+2018-08-08 21:20:55,983 - INFO # Testing ( 24%)
+2018-08-08 21:20:56,084 - INFO # Testing ( 25%)
+2018-08-08 21:20:56,185 - INFO # Testing ( 26%)
+2018-08-08 21:20:56,287 - INFO # Testing ( 27%)
+2018-08-08 21:20:56,388 - INFO # Testing ( 28%)
+2018-08-08 21:20:56,490 - INFO # Testing ( 29%)
+2018-08-08 21:20:56,591 - INFO # Testing ( 30%)
+2018-08-08 21:20:56,692 - INFO # Testing ( 31%)
+2018-08-08 21:20:56,794 - INFO # Testing ( 32%)
+2018-08-08 21:20:56,895 - INFO # Testing ( 33%)
+2018-08-08 21:20:56,996 - INFO # Testing ( 34%)
+2018-08-08 21:20:57,098 - INFO # Testing ( 35%)
+2018-08-08 21:20:57,199 - INFO # Testing ( 36%)
+2018-08-08 21:20:57,300 - INFO # Testing ( 37%)
+2018-08-08 21:20:57,402 - INFO # Testing ( 38%)
+2018-08-08 21:20:57,503 - INFO # Testing ( 39%)
+2018-08-08 21:20:57,604 - INFO # Testing ( 40%)
+2018-08-08 21:20:57,706 - INFO # Testing ( 41%)
+2018-08-08 21:20:57,807 - INFO # Testing ( 42%)
+2018-08-08 21:20:57,909 - INFO # Testing ( 43%)
+2018-08-08 21:20:58,010 - INFO # Testing ( 44%)
+2018-08-08 21:20:58,111 - INFO # Testing ( 45%)
+2018-08-08 21:20:58,213 - INFO # Testing ( 46%)
+2018-08-08 21:20:58,314 - INFO # Testing ( 47%)
+2018-08-08 21:20:58,415 - INFO # Testing ( 48%)
+2018-08-08 21:20:58,517 - INFO # Testing ( 49%)
+2018-08-08 21:20:58,618 - INFO # Testing ( 50%)
+2018-08-08 21:20:58,719 - INFO # Testing ( 51%)
+2018-08-08 21:20:58,821 - INFO # Testing ( 52%)
+2018-08-08 21:20:58,922 - INFO # Testing ( 53%)
+2018-08-08 21:20:59,024 - INFO # Testing ( 54%)
+2018-08-08 21:20:59,125 - INFO # Testing ( 55%)
+2018-08-08 21:20:59,226 - INFO # Testing ( 56%)
+2018-08-08 21:20:59,328 - INFO # Testing ( 57%)
+2018-08-08 21:20:59,429 - INFO # Testing ( 58%)
+2018-08-08 21:20:59,531 - INFO # Testing ( 59%)
+2018-08-08 21:20:59,632 - INFO # Testing ( 60%)
+2018-08-08 21:20:59,733 - INFO # Testing ( 61%)
+2018-08-08 21:20:59,835 - INFO # Testing ( 62%)
+2018-08-08 21:20:59,936 - INFO # Testing ( 63%)
+2018-08-08 21:21:00,038 - INFO # Testing ( 64%)
+2018-08-08 21:21:00,139 - INFO # Testing ( 65%)
+2018-08-08 21:21:00,240 - INFO # Testing ( 66%)
+2018-08-08 21:21:00,342 - INFO # Testing ( 67%)
+2018-08-08 21:21:00,443 - INFO # Testing ( 68%)
+2018-08-08 21:21:00,545 - INFO # Testing ( 69%)
+2018-08-08 21:21:00,646 - INFO # Testing ( 70%)
+2018-08-08 21:21:00,747 - INFO # Testing ( 71%)
+2018-08-08 21:21:00,849 - INFO # Testing ( 72%)
+2018-08-08 21:21:00,950 - INFO # Testing ( 74%)
+2018-08-08 21:21:01,051 - INFO # Testing ( 75%)
+2018-08-08 21:21:01,153 - INFO # Testing ( 76%)
+2018-08-08 21:21:01,254 - INFO # Testing ( 77%)
+2018-08-08 21:21:01,355 - INFO # Testing ( 78%)
+2018-08-08 21:21:01,457 - INFO # Testing ( 79%)
+2018-08-08 21:21:01,558 - INFO # Testing ( 80%)
+2018-08-08 21:21:01,660 - INFO # Testing ( 81%)
+2018-08-08 21:21:01,761 - INFO # Testing ( 82%)
+2018-08-08 21:21:01,862 - INFO # Testing ( 83%)
+2018-08-08 21:21:01,964 - INFO # Testing ( 84%)
+2018-08-08 21:21:02,065 - INFO # Testing ( 85%)
+2018-08-08 21:21:02,167 - INFO # Testing ( 86%)
+2018-08-08 21:21:02,268 - INFO # Testing ( 87%)
+2018-08-08 21:21:02,370 - INFO # Testing ( 88%)
+2018-08-08 21:21:02,471 - INFO # Testing ( 89%)
+2018-08-08 21:21:02,572 - INFO # Testing ( 90%)
+2018-08-08 21:21:02,674 - INFO # Testing ( 91%)
+2018-08-08 21:21:02,775 - INFO # Testing ( 92%)
+2018-08-08 21:21:02,877 - INFO # Testing ( 93%)
+2018-08-08 21:21:02,978 - INFO # Testing ( 94%)
+2018-08-08 21:21:03,080 - INFO # Testing ( 95%)
+2018-08-08 21:21:03,181 - INFO # Testing ( 96%)
+2018-08-08 21:21:03,282 - INFO # Testing ( 97%)
+2018-08-08 21:21:03,384 - INFO # Testing ( 98%)
+2018-08-08 21:21:03,485 - INFO # Testing ( 99%)
+2018-08-08 21:21:03,487 - INFO # Testing (100%)
+2018-08-08 21:21:03,488 - INFO # [SUCCESS]
+

@@ -1,0 +1,39 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/cb_mux/bin/arduino-zero/tests_cb_mux.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming......................................... done.
+Verification......................................... done.
+./tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:13:37,933 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:13:40,818 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:13:40,820 - INFO # cb_mux test routine
+2018-08-08 22:13:40,824 - INFO # Test list addition, retrieval, execution of 5 CBs
+2018-08-08 22:13:40,826 - INFO # Callback 0 executed
+2018-08-08 22:13:40,828 - INFO # Callback 1 executed
+2018-08-08 22:13:40,830 - INFO # Callback 2 executed
+2018-08-08 22:13:40,832 - INFO # Callback 3 executed
+2018-08-08 22:13:40,833 - INFO # Callback 4 executed
+2018-08-08 22:13:40,838 - INFO # Test list deletion of CB 0, 2, 4, execution of 1, 3
+2018-08-08 22:13:40,840 - INFO # Callback 1 executed
+2018-08-08 22:13:40,841 - INFO # Callback 3 executed
+2018-08-08 22:13:40,845 - INFO # Test execution of CB with lowest ID (1)
+2018-08-08 22:13:40,847 - INFO # Callback 1 executed
+2018-08-08 22:13:40,850 - INFO # Test execution of CB with highest ID (3)
+2018-08-08 22:13:40,852 - INFO # Callback 3 executed
+2018-08-08 22:13:40,857 - INFO # Re-adding list entries (0, 2, 4) by finding next free ID
+2018-08-08 22:13:40,858 - INFO # Added entry 0
+2018-08-08 22:13:40,860 - INFO # Added entry 2
+2018-08-08 22:13:40,861 - INFO # Added entry 4
+2018-08-08 22:13:40,864 - INFO # Test iteration of a function over list
+2018-08-08 22:13:40,867 - INFO # Entry 0 was updated correctly
+2018-08-08 22:13:40,870 - INFO # Entry 1 was updated correctly
+2018-08-08 22:13:40,872 - INFO # Entry 2 was updated correctly
+2018-08-08 22:13:40,875 - INFO # Entry 3 was updated correctly
+2018-08-08 22:13:40,878 - INFO # Entry 4 was updated correctly
+2018-08-08 22:13:40,879 - INFO # Tests complete!
+

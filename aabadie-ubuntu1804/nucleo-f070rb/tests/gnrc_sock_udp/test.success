@@ -1,0 +1,118 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 1000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : clock speed 950 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.255227
+Info : stm32f0x.cpu: hardware has 4 breakpoints, 2 watchpoints
+Info : Listening on port 36969 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f0x.cpu       hla_target little stm32f0x.cpu       running
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xc1000000 pc: 0x0800048c msp: 0x20000200
+auto erase enabled
+Info : device id = 0x20016448
+Info : flash size = 128kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000003a msp: 0x20000200
+wrote 40960 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/gnrc_sock_udp/bin/nucleo-f070rb/tests_gnrc_sock_udp.elf in 1.723928s (23.203 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 39188 bytes in 0.510866s (74.911 KiB/s)
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+shutdown command invoked
+Done flashing
+./tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 21:37:58,766 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 21:37:59,770 - INFO #  * (timed out with timeout 1000000)
+2018-08-08 21:37:59,772 - INFO # Calling test_sock_udp_recv__socketed()
+2018-08-08 21:37:59,774 - INFO # Calling test_sock_udp_recv__socketed_with_remote()
+2018-08-08 21:37:59,775 - INFO # Calling test_sock_udp_recv__socketed_with_port0()
+2018-08-08 21:37:59,776 - INFO # Calling test_sock_udp_recv__unsocketed()
+2018-08-08 21:37:59,777 - INFO # Calling test_sock_udp_recv__unsocketed_with_remote()
+2018-08-08 21:37:59,777 - INFO # Calling test_sock_udp_recv__with_timeout()
+2018-08-08 21:37:59,778 - INFO # Calling test_sock_udp_recv__non_blocking()
+2018-08-08 21:37:59,778 - INFO # Calling test_sock_udp_send__EAFNOSUPPORT()
+2018-08-08 21:37:59,779 - INFO # Calling test_sock_udp_send__EINVAL_addr()
+2018-08-08 21:37:59,779 - INFO # Calling test_sock_udp_send__EINVAL_netif()
+2018-08-08 21:37:59,780 - INFO # Calling test_sock_udp_send__EINVAL_port()
+2018-08-08 21:37:59,780 - INFO # Calling test_sock_udp_send__ENOTCONN()
+2018-08-08 21:37:59,781 - INFO # Calling test_sock_udp_send__socketed_no_local_no_netif()
+2018-08-08 21:37:59,781 - INFO # Calling test_sock_udp_send__socketed_no_netif()
+2018-08-08 21:37:59,782 - INFO # Calling test_sock_udp_send__socketed_no_local()
+2018-08-08 21:37:59,782 - INFO # Calling test_sock_udp_send__socketed()
+2018-08-08 21:37:59,783 - INFO # Calling test_sock_udp_send__socketed_other_remote()
+2018-08-08 21:37:59,784 - INFO # Calling test_sock_udp_send__unsocketed_no_local_no_netif()
+2018-08-08 21:37:59,784 - INFO # Calling test_sock_udp_send__unsocketed_no_netif()
+2018-08-08 21:37:59,785 - INFO # Calling test_sock_udp_send__unsocketed_no_local()
+2018-08-08 21:37:59,785 - INFO # Calling test_sock_udp_send__unsocketed()
+2018-08-08 21:37:59,786 - INFO # Calling test_sock_udp_send__no_sock_no_netif()
+2018-08-08 21:37:59,786 - INFO # Calling test_sock_udp_send__no_sock()
+2018-08-08 21:37:59,786 - INFO # ALL TESTS SUCCESSFUL
+2018-08-08 21:38:01,585 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 21:38:01,589 - INFO # Calling test_sock_udp_create__EADDRINUSE()
+2018-08-08 21:38:01,593 - INFO # Calling test_sock_udp_create__EAFNOSUPPORT()
+2018-08-08 21:38:01,597 - INFO # Calling test_sock_udp_create__EINVAL_addr()
+2018-08-08 21:38:01,601 - INFO # Calling test_sock_udp_create__EINVAL_netif()
+2018-08-08 21:38:01,605 - INFO # Calling test_sock_udp_create__no_endpoints()
+2018-08-08 21:38:01,609 - INFO # Calling test_sock_udp_create__only_local()
+2018-08-08 21:38:01,613 - INFO # Calling test_sock_udp_create__only_local_port0()
+2018-08-08 21:38:01,618 - INFO # Calling test_sock_udp_create__only_local_reuse_ep()
+2018-08-08 21:38:01,622 - INFO # Calling test_sock_udp_create__only_remote()
+2018-08-08 21:38:01,625 - INFO # Calling test_sock_udp_create__full()
+2018-08-08 21:38:01,629 - INFO # Calling test_sock_udp_recv__EADDRNOTAVAIL()
+2018-08-08 21:38:01,632 - INFO # Calling test_sock_udp_recv__EAGAIN()
+2018-08-08 21:38:01,636 - INFO # Calling test_sock_udp_recv__ENOBUFS()
+2018-08-08 21:38:01,639 - INFO # Calling test_sock_udp_recv__EPROTO()
+2018-08-08 21:38:01,643 - INFO # Calling test_sock_udp_recv__ETIMEDOUT()
+2018-08-08 21:38:01,645 - INFO #  * Calling sock_udp_recv()
+2018-08-08 21:38:02,649 - INFO #  * (timed out with timeout 1000000)
+2018-08-08 21:38:02,653 - INFO # Calling test_sock_udp_recv__socketed()
+2018-08-08 21:38:02,657 - INFO # Calling test_sock_udp_recv__socketed_with_remote()
+2018-08-08 21:38:02,662 - INFO # Calling test_sock_udp_recv__socketed_with_port0()
+2018-08-08 21:38:02,666 - INFO # Calling test_sock_udp_recv__unsocketed()
+2018-08-08 21:38:02,670 - INFO # Calling test_sock_udp_recv__unsocketed_with_remote()
+2018-08-08 21:38:02,674 - INFO # Calling test_sock_udp_recv__with_timeout()
+2018-08-08 21:38:02,678 - INFO # Calling test_sock_udp_recv__non_blocking()
+2018-08-08 21:38:02,682 - INFO # Calling test_sock_udp_send__EAFNOSUPPORT()
+2018-08-08 21:38:02,686 - INFO # Calling test_sock_udp_send__EINVAL_addr()
+2018-08-08 21:38:02,690 - INFO # Calling test_sock_udp_send__EINVAL_netif()
+2018-08-08 21:38:02,694 - INFO # Calling test_sock_udp_send__EINVAL_port()
+2018-08-08 21:38:02,697 - INFO # Calling test_sock_udp_send__ENOTCONN()
+2018-08-08 21:38:02,702 - INFO # Calling test_sock_udp_send__socketed_no_local_no_netif()
+2018-08-08 21:38:02,708 - INFO # Calling test_sock_udp_send__socketed_no_netif()
+2018-08-08 21:38:02,713 - INFO # Calling test_sock_udp_send__socketed_no_local()
+2018-08-08 21:38:02,718 - INFO # Calling test_sock_udp_send__socketed()
+2018-08-08 21:38:02,724 - INFO # Calling test_sock_udp_send__socketed_other_remote()
+2018-08-08 21:38:02,730 - INFO # Calling test_sock_udp_send__unsocketed_no_local_no_netif()
+2018-08-08 21:38:02,736 - INFO # Calling test_sock_udp_send__unsocketed_no_netif()
+2018-08-08 21:38:02,742 - INFO # Calling test_sock_udp_send__unsocketed_no_local()
+2018-08-08 21:38:02,747 - INFO # Calling test_sock_udp_send__unsocketed()
+2018-08-08 21:38:02,752 - INFO # Calling test_sock_udp_send__no_sock_no_netif()
+2018-08-08 21:38:02,757 - INFO # Calling test_sock_udp_send__no_sock()
+2018-08-08 21:38:02,760 - INFO # ALL TESTS SUCCESSFUL
+

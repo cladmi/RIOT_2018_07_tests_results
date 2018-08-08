@@ -1,0 +1,86 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/posix_semaphore/bin/arduino-zero/tests_posix_semaphore.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming................................................................ done.
+Verification................................................................ done.
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:50:10,112 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:50:11,115 - INFO # first: timed out
+2018-08-08 22:50:11,116 - INFO # first: waited 1000091 usec
+2018-08-08 22:50:11,117 - INFO # ######################### DONE
+2018-08-08 22:50:12,972 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:50:12,975 - INFO # ######################### TEST1:
+2018-08-08 22:50:12,976 - INFO # first: sem_init
+2018-08-08 22:50:12,978 - INFO # first: thread create
+2018-08-08 22:50:12,980 - INFO # first: thread created
+2018-08-08 22:50:12,982 - INFO # first: sem_getvalue
+2018-08-08 22:50:12,984 - INFO # first: sem_getvalue != 0
+2018-08-08 22:50:12,985 - INFO # first: do yield
+2018-08-08 22:50:12,987 - INFO # second: sem_trywait
+2018-08-08 22:50:12,990 - INFO # second: sem_trywait failed
+2018-08-08 22:50:12,993 - INFO # second: sem_trywait done with == 0
+2018-08-08 22:50:12,995 - INFO # second: wait for post
+2018-08-08 22:50:12,996 - INFO # first: done yield
+2018-08-08 22:50:12,998 - INFO # first: sem_trywait
+2018-08-08 22:50:13,000 - INFO # first: sem_trywait FAILED
+2018-08-08 22:50:13,002 - INFO # first: sem_trywait done
+2018-08-08 22:50:13,004 - INFO # first: sem_post
+2018-08-08 22:50:13,006 - INFO # second: sem was posted
+2018-08-08 22:50:13,007 - INFO # second: end
+2018-08-08 22:50:13,009 - INFO # first: sem_post done
+2018-08-08 22:50:13,010 - INFO # first: sem_destroy
+2018-08-08 22:50:13,011 - INFO # first: end
+2018-08-08 22:50:13,014 - INFO # ######################### TEST2:
+2018-08-08 22:50:13,016 - INFO # first: sem_init
+2018-08-08 22:50:13,018 - INFO # first: thread create: 5
+2018-08-08 22:50:13,021 - INFO # first: thread created: priority 5 (1/5)
+2018-08-08 22:50:13,024 - INFO # first: thread create: 4
+2018-08-08 22:50:13,027 - INFO # first: thread created: priority 4 (2/5)
+2018-08-08 22:50:13,029 - INFO # first: thread create: 3
+2018-08-08 22:50:13,033 - INFO # first: thread created: priority 3 (3/5)
+2018-08-08 22:50:13,035 - INFO # first: thread create: 2
+2018-08-08 22:50:13,039 - INFO # first: thread created: priority 2 (4/5)
+2018-08-08 22:50:13,041 - INFO # first: thread create: 1
+2018-08-08 22:50:13,045 - INFO # first: thread created: priority 1 (5/5)
+2018-08-08 22:50:13,048 - INFO # ------------------------------------------
+2018-08-08 22:50:13,049 - INFO # post no. 0
+2018-08-08 22:50:13,052 - INFO # Thread 'priority 1' woke up.
+2018-08-08 22:50:13,054 - INFO # Back in main thread.
+2018-08-08 22:50:13,055 - INFO # post no. 1
+2018-08-08 22:50:13,057 - INFO # Thread 'priority 2' woke up.
+2018-08-08 22:50:13,059 - INFO # Back in main thread.
+2018-08-08 22:50:13,060 - INFO # post no. 2
+2018-08-08 22:50:13,063 - INFO # Thread 'priority 3' woke up.
+2018-08-08 22:50:13,065 - INFO # Back in main thread.
+2018-08-08 22:50:13,066 - INFO # post no. 3
+2018-08-08 22:50:13,068 - INFO # Thread 'priority 4' woke up.
+2018-08-08 22:50:13,070 - INFO # Back in main thread.
+2018-08-08 22:50:13,071 - INFO # post no. 4
+2018-08-08 22:50:13,074 - INFO # Thread 'priority 5' woke up.
+2018-08-08 22:50:13,076 - INFO # Back in main thread.
+2018-08-08 22:50:13,079 - INFO # ######################### TEST3:
+2018-08-08 22:50:13,080 - INFO # first: sem_init s1
+2018-08-08 22:50:13,082 - INFO # first: sem_init s2
+2018-08-08 22:50:13,084 - INFO # first: create thread 1
+2018-08-08 22:50:13,086 - INFO # first: create thread 2
+2018-08-08 22:50:13,090 - INFO # ------------------------------------------
+2018-08-08 22:50:13,091 - INFO # post s1
+2018-08-08 22:50:13,094 - INFO # Thread 1 woke up after waiting for s1.
+2018-08-08 22:50:13,095 - INFO # post s2
+2018-08-08 22:50:13,098 - INFO # Thread 2 woke up after waiting for s2.
+2018-08-08 22:50:13,099 - INFO # post s2
+2018-08-08 22:50:13,102 - INFO # Thread 1 woke up after waiting for s2.
+2018-08-08 22:50:13,103 - INFO # post s1
+2018-08-08 22:50:13,106 - INFO # Thread 2 woke up after waiting for s1.
+2018-08-08 22:50:13,109 - INFO # ######################### TEST4:
+2018-08-08 22:50:13,111 - INFO # first: sem_init s1
+2018-08-08 22:50:13,113 - INFO # first: wait 1 sec for s1
+2018-08-08 22:50:14,115 - INFO # first: timed out
+2018-08-08 22:50:14,118 - INFO # first: waited 1000091 usec
+2018-08-08 22:50:14,120 - INFO # ######################### DONE
+

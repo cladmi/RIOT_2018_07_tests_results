@@ -1,0 +1,144 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/jlink/jlink.sh flash
+### Flashing Target ###
+### Flashing at address 0x0 ###
+HEXFILE found
+SEGGER J-Link Commander V6.33g (Compiled Jun 28 2018 15:09:53)
+DLL version V6.33g, compiled Jun 28 2018 15:09:48
+
+
+J-Link Command File read successfully.
+Processing script file...
+
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: J-Link OB-SAM3U128-V2-NordicSemi compiled Jan 12 2018 16:05:20
+Hardware version: V1.00
+S/N: 683238897
+VTref=3.300V
+Target connection not established yet but required for command.
+Device "NRF52" selected.
+
+
+Connecting to target via SWD
+Found SW-DP with ID 0x2BA01477
+Found SW-DP with ID 0x2BA01477
+Scanning AP map to find all available APs
+AP[2]: Stopped AP scan as end of AP map has been reached
+AP[0]: AHB-AP (IDR: 0x24770011)
+AP[1]: JTAG-AP (IDR: 0x02880000)
+Iterating through AP map to find AHB-AP to use
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)
+Found Cortex-M4 r0p1, Little endian.
+FPUnit: 6 code (BP) slots and 2 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB00C SCS-M7
+ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 003BB002 DWT
+ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 002BB003 FPB
+ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 003BB001 ITM
+ROMTbl[0][4]: E0040000, CID: B105900D, PID: 000BB9A1 TPIU
+ROMTbl[0][5]: E0041000, CID: B105900D, PID: 000BB925 ETM
+Cortex-M4 identified.
+Halting CPU for downloading file.
+Downloading file [/home/aabadie/softs/src/riot/RIOT-RC/tests/rng/bin/nrf52840dk/tests_rng.bin]...
+Comparing flash   [000%]000%]050%]100%] Done.
+Erasing flash     [000%]000%]100%] Done.
+Programming flash [000%]000%]000%]000%]005%]005%]010%]010%]010%]010%]015%]015%]020%]020%]025%]025%]025%]025%]030%]030%]035%]035%]035%]035%]040%]040%]045%]045%]050%]050%]050%]050%]055%]055%]060%]060%]060%]060%]065%]065%]070%]070%]075%]075%]075%]075%]080%]080%]085%]085%]085%]085%]090%]090%]095%]095%]100%] Done.
+Verifying flash   [000%]000%]100%] Done.
+J-Link: Flash download: Bank 0 @ 0x00000000: 1 range affected (28672 bytes)
+J-Link: Flash download: Total time needed: 1.083s (Prepare: 0.041s, Compare: 0.006s, Erase: 0.589s, Program: 0.437s, Verify: 0.000s, Restore: 0.008s)
+O.K.
+
+Reset delay: 0 ms
+Reset type NORMAL: Resets core & peripherals via SYSRESETREQ & VECTRESET bit.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+
+
+
+Script processing completed.
+
+tests/01-run.py
+source 0
+seed 1337
+fips
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 21:14:41,988 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 21:14:45,097 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 21:14:45,099 - INFO # Starting shell...
+> source 0
+2018-08-08 21:14:45,159 - INFO #  source 0
+> seed 1337
+2018-08-08 21:14:45,209 - INFO #  seed 1337
+2018-08-08 21:14:45,211 - INFO # Seed set to 1337
+> fips
+2018-08-08 21:14:45,259 - INFO #  fips
+2018-08-08 21:14:45,265 - INFO # Running FIPS 140-2 test, with seed 1337 using Tiny Mersenne Twister PRNG.
+2018-08-08 21:14:45,266 - INFO # 
+2018-08-08 21:14:45,277 - INFO # - Monobit test: passed
+2018-08-08 21:14:45,278 - INFO # - Poker test: passed
+2018-08-08 21:14:45,280 - INFO # - Run test: passed
+2018-08-08 21:14:45,282 - INFO # - Longrun test: passed
+dump 10
+> dump 10
+2018-08-08 21:14:45,336 - INFO #  dump 10
+2018-08-08 21:14:45,342 - INFO # Running dump test, with seed 1337 using Tiny Mersenne Twister PRNG.
+2018-08-08 21:14:45,342 - INFO # 
+2018-08-08 21:14:45,343 - INFO # 1555530734
+2018-08-08 21:14:45,344 - INFO # 2178333451
+2018-08-08 21:14:45,345 - INFO # 2272913641
+2018-08-08 21:14:45,346 - INFO # 3790481823
+2018-08-08 21:14:45,347 - INFO # 3190025502
+2018-08-08 21:14:45,348 - INFO # 798555366
+2018-08-08 21:14:45,349 - INFO # 1918982324
+2018-08-08 21:14:45,350 - INFO # 1550167154
+2018-08-08 21:14:45,351 - INFO # 3454972398
+2018-08-08 21:14:45,351 - INFO # 1034066532
+entropy
+> entropy
+2018-08-08 21:14:45,405 - INFO #  entropy
+2018-08-08 21:14:45,411 - INFO # Running entropy test, with seed 1337 using Tiny Mersenne Twister PRNG.
+2018-08-08 21:14:45,412 - INFO # 
+2018-08-08 21:14:45,441 - INFO # Calculated 7.994709 bits of entropy from 10000 samples.
+source 1
+seed 1337
+fips
+> source 1
+2018-08-08 21:14:45,495 - INFO #  source 1
+> seed 1337
+2018-08-08 21:14:45,546 - INFO #  seed 1337
+2018-08-08 21:14:45,548 - INFO # Seed set to 1337
+> fips
+2018-08-08 21:14:45,595 - INFO #  fips
+2018-08-08 21:14:45,601 - INFO # Running FIPS 140-2 test, with seed 1337 using constant value.
+2018-08-08 21:14:45,602 - INFO # 
+2018-08-08 21:14:45,610 - INFO # - Monobit test: failed
+2018-08-08 21:14:45,612 - INFO # - Poker test: failed
+2018-08-08 21:14:45,613 - INFO # - Run test: failed
+2018-08-08 21:14:45,615 - INFO # - Longrun test: passed
+> dump 10
+dump 10
+2018-08-08 21:14:45,669 - INFO #  dump 10
+2018-08-08 21:14:45,673 - INFO # Running dump test, with seed 1337 using constant value.
+2018-08-08 21:14:45,674 - INFO # 
+2018-08-08 21:14:45,674 - INFO # 1337
+2018-08-08 21:14:45,675 - INFO # 1337
+2018-08-08 21:14:45,675 - INFO # 1337
+2018-08-08 21:14:45,676 - INFO # 1337
+2018-08-08 21:14:45,676 - INFO # 1337
+2018-08-08 21:14:45,677 - INFO # 1337
+2018-08-08 21:14:45,677 - INFO # 1337
+2018-08-08 21:14:45,677 - INFO # 1337
+2018-08-08 21:14:45,678 - INFO # 1337
+entropy
+2018-08-08 21:14:45,678 - INFO # 1337
+> entropy
+2018-08-08 21:14:45,731 - INFO #  entropy
+2018-08-08 21:14:45,737 - INFO # Running entropy test, with seed 1337 using constant value.
+2018-08-08 21:14:45,737 - INFO # 
+2018-08-08 21:14:45,752 - INFO # Calculated 0.017260 bits of entropy from 10000 samples.
+

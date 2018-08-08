@@ -1,0 +1,67 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 1000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : clock speed 950 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.256805
+Info : stm32f0x.cpu: hardware has 4 breakpoints, 2 watchpoints
+Info : Listening on port 33569 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f0x.cpu       hla_target little stm32f0x.cpu       running
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xc1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : device id = 0x20016448
+Info : flash size = 128kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000003a msp: 0x20000200
+wrote 12288 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/xtimer_remove/bin/nucleo-f070rb/tests_xtimer_remove.elf in 0.562149s (21.347 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 10276 bytes in 0.164345s (61.062 KiB/s)
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:01:37,072 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:01:38,075 - INFO # timer 0 triggered.
+2018-08-08 22:01:38,076 - INFO # timer 1 triggered.
+2018-08-08 22:01:38,076 - INFO # test successful.
+2018-08-08 22:01:39,877 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:01:39,880 - INFO # xtimer_remove test application.
+2018-08-08 22:01:39,880 - INFO # 
+2018-08-08 22:01:39,884 - INFO # Setting 3 timers, removing timer 0/3
+2018-08-08 22:01:40,085 - INFO # timer 1 triggered.
+2018-08-08 22:01:40,185 - INFO # timer 2 triggered.
+2018-08-08 22:01:40,189 - INFO # Setting 3 timers, removing timer 1/3
+2018-08-08 22:01:40,291 - INFO # timer 0 triggered.
+2018-08-08 22:01:40,491 - INFO # timer 2 triggered.
+2018-08-08 22:01:40,494 - INFO # Setting 3 timers, removing timer 2/3
+2018-08-08 22:01:40,596 - INFO # timer 0 triggered.
+2018-08-08 22:01:40,696 - INFO # timer 1 triggered.
+2018-08-08 22:01:40,697 - INFO # test successful.
+

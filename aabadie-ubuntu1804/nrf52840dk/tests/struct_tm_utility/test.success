@@ -1,0 +1,261 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/jlink/jlink.sh flash
+### Flashing Target ###
+### Flashing at address 0x0 ###
+HEXFILE found
+SEGGER J-Link Commander V6.33g (Compiled Jun 28 2018 15:09:53)
+DLL version V6.33g, compiled Jun 28 2018 15:09:48
+
+
+J-Link Command File read successfully.
+Processing script file...
+
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: J-Link OB-SAM3U128-V2-NordicSemi compiled Jan 12 2018 16:05:20
+Hardware version: V1.00
+S/N: 683238897
+VTref=3.300V
+Target connection not established yet but required for command.
+Device "NRF52" selected.
+
+
+Connecting to target via SWD
+Found SW-DP with ID 0x2BA01477
+Found SW-DP with ID 0x2BA01477
+Scanning AP map to find all available APs
+AP[2]: Stopped AP scan as end of AP map has been reached
+AP[0]: AHB-AP (IDR: 0x24770011)
+AP[1]: JTAG-AP (IDR: 0x02880000)
+Iterating through AP map to find AHB-AP to use
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)
+Found Cortex-M4 r0p1, Little endian.
+FPUnit: 6 code (BP) slots and 2 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB00C SCS-M7
+ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 003BB002 DWT
+ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 002BB003 FPB
+ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 003BB001 ITM
+ROMTbl[0][4]: E0040000, CID: B105900D, PID: 000BB9A1 TPIU
+ROMTbl[0][5]: E0041000, CID: B105900D, PID: 000BB925 ETM
+Cortex-M4 identified.
+Halting CPU for downloading file.
+Downloading file [/home/aabadie/softs/src/riot/RIOT-RC/tests/struct_tm_utility/bin/nrf52840dk/tests_struct_tm_utility.bin]...
+Comparing flash   [000%]000%]050%]100%] Done.
+Erasing flash     [000%]000%]100%] Done.
+Programming flash [000%]000%]000%]000%]005%]005%]010%]010%]015%]015%]020%]020%]025%]025%]025%]025%]030%]030%]035%]035%]040%]040%]045%]045%]050%]050%]050%]050%]055%]055%]060%]060%]065%]065%]070%]070%]075%]075%]075%]075%]080%]080%]085%]085%]090%]090%]095%]095%]100%] Done.
+Verifying flash   [000%]000%]100%] Done.
+J-Link: Flash download: Bank 0 @ 0x00000000: 1 range affected (12288 bytes)
+J-Link: Flash download: Total time needed: 0.518s (Prepare: 0.041s, Compare: 0.005s, Erase: 0.250s, Program: 0.212s, Verify: 0.000s, Restore: 0.008s)
+O.K.
+
+Reset delay: 0 ms
+Reset type NORMAL: Resets core & peripherals via SYSRESETREQ & VECTRESET bit.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+
+
+
+Script processing completed.
+
+tests/01-run.py
+
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 21:16:00,494 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 21:16:03,602 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 21:16:03,605 - INFO # `struct tm` utility shell.
+> 
+help
+help
+2018-08-08 21:16:03,731 - INFO #  help
+2018-08-08 21:16:03,734 - INFO # Command              Description
+2018-08-08 21:16:03,738 - INFO # ---------------------------------------
+2018-08-08 21:16:03,743 - INFO # days_in              Tells you the number of days in a month.
+2018-08-08 21:16:03,749 - INFO # leap_year            Tells you if a supplied year is a leap year.
+2018-08-08 21:16:03,755 - INFO # doomsday             Tells you the wday Doomsday of the supplied year.
+2018-08-08 21:16:03,760 - INFO # day                  Tells you the day of the supplied date.
+days_in
+> days_in
+2018-08-08 21:16:03,814 - INFO #  days_in
+2018-08-08 21:16:03,817 - INFO # Usage: days_in <Month[1..12]>
+days_in 13
+> days_in 13
+2018-08-08 21:16:03,872 - INFO #  days_in 13
+2018-08-08 21:16:03,874 - INFO # Usage: days_in <Month[1..12]>
+days_in 0
+> days_in 0
+2018-08-08 21:16:03,929 - INFO #  days_in 0
+2018-08-08 21:16:03,931 - INFO # Usage: days_in <Month[1..12]>
+days_in 1
+> days_in 1
+2018-08-08 21:16:03,986 - INFO #  days_in 1
+2018-08-08 21:16:03,989 - INFO # There are 31 days in JAN in common years.
+days_in 2
+> days_in 2
+2018-08-08 21:16:04,043 - INFO #  days_in 2
+2018-08-08 21:16:04,047 - INFO # There are 28 days in FEB in common years.
+> days_in 3
+days_in 3
+2018-08-08 21:16:04,101 - INFO #  days_in 3
+2018-08-08 21:16:04,105 - INFO # There are 31 days in MAR in common years.
+days_in 4
+> days_in 4
+2018-08-08 21:16:04,159 - INFO #  days_in 4
+2018-08-08 21:16:04,163 - INFO # There are 30 days in APR in common years.
+> days_in 5
+days_in 5
+2018-08-08 21:16:04,217 - INFO #  days_in 5
+2018-08-08 21:16:04,221 - INFO # There are 31 days in MAY in common years.
+days_in 6
+> days_in 6
+2018-08-08 21:16:04,276 - INFO #  days_in 6
+2018-08-08 21:16:04,280 - INFO # There are 30 days in JUN in common years.
+days_in 7
+> days_in 7
+2018-08-08 21:16:04,333 - INFO #  days_in 7
+2018-08-08 21:16:04,337 - INFO # There are 31 days in JUL in common years.
+days_in 8
+> days_in 8
+2018-08-08 21:16:04,391 - INFO #  days_in 8
+2018-08-08 21:16:04,395 - INFO # There are 31 days in AUG in common years.
+days_in 9
+> days_in 9
+2018-08-08 21:16:04,450 - INFO #  days_in 9
+2018-08-08 21:16:04,453 - INFO # There are 30 days in SEP in common years.
+days_in 10
+> days_in 10
+2018-08-08 21:16:04,508 - INFO #  days_in 10
+2018-08-08 21:16:04,512 - INFO # There are 31 days in OCT in common years.
+days_in 11
+> days_in 11
+2018-08-08 21:16:04,567 - INFO #  days_in 11
+2018-08-08 21:16:04,570 - INFO # There are 30 days in NOV in common years.
+days_in 12
+> days_in 12
+2018-08-08 21:16:04,625 - INFO #  days_in 12
+2018-08-08 21:16:04,629 - INFO # There are 31 days in DEC in common years.
+leap_year
+> leap_year
+2018-08-08 21:16:04,683 - INFO #  leap_year
+2018-08-08 21:16:04,685 - INFO # Usage: leap_year <Year>
+leap_year aaaa
+> leap_year aaaa
+2018-08-08 21:16:04,741 - INFO #  leap_year aaaa
+2018-08-08 21:16:04,743 - INFO # Usage: leap_year <Year>
+leap_year 2000
+> leap_year 2000
+2018-08-08 21:16:04,798 - INFO #  leap_year 2000
+2018-08-08 21:16:04,801 - INFO # Was 2000 a leap year? YES.
+leap_year 2016
+> leap_year 2016
+2018-08-08 21:16:04,856 - INFO #  leap_year 2016
+2018-08-08 21:16:04,859 - INFO # Was 2016 a leap year? YES.
+leap_year 2017
+> leap_year 2017
+2018-08-08 21:16:04,914 - INFO #  leap_year 2017
+2018-08-08 21:16:04,917 - INFO # Was 2017 a leap year? NO.
+leap_year 2018
+> leap_year 2018
+2018-08-08 21:16:04,972 - INFO #  leap_year 2018
+2018-08-08 21:16:04,975 - INFO # Was 2018 a leap year? NO.
+doomsday
+> doomsday
+2018-08-08 21:16:05,029 - INFO #  doomsday
+2018-08-08 21:16:05,031 - INFO # Usage: doomsday <Year>
+doomsday 2016
+> doomsday 2016
+2018-08-08 21:16:05,086 - INFO #  doomsday 2016
+2018-08-08 21:16:05,089 - INFO # What weekday was MAR 0 of 2016? MON.
+> doomsday 2017
+doomsday 2017
+2018-08-08 21:16:05,144 - INFO #  doomsday 2017
+2018-08-08 21:16:05,148 - INFO # What weekday was MAR 0 of 2017? TUE.
+day
+> day
+2018-08-08 21:16:05,201 - INFO #  day
+2018-08-08 21:16:05,205 - INFO # Usage: day <Year> <Month[1..12]> <Day[1..31]>
+day 2017 1 1
+> day 2017 1 1
+2018-08-08 21:16:05,260 - INFO #  day 2017 1 1
+2018-08-08 21:16:05,265 - INFO # What weekday was 2017-01-01? The 1(th) day of the year was a SUN.
+day 2017 1 15
+> day 2017 1 15
+2018-08-08 21:16:05,320 - INFO #  day 2017 1 15
+2018-08-08 21:16:05,326 - INFO # What weekday was 2017-01-15? The 15(th) day of the year was a SUN.
+day 2017 1 28
+> day 2017 1 28
+2018-08-08 21:16:05,381 - INFO #  day 2017 1 28
+2018-08-08 21:16:05,387 - INFO # What weekday was 2017-01-28? The 28(th) day of the year was a SAT.
+> day 2017 4 1
+day 2017 4 1
+2018-08-08 21:16:05,442 - INFO #  day 2017 4 1
+2018-08-08 21:16:05,448 - INFO # What weekday was 2017-04-01? The 91(th) day of the year was a SAT.
+> day 2017 4 15
+day 2017 4 15
+2018-08-08 21:16:05,503 - INFO #  day 2017 4 15
+2018-08-08 21:16:05,509 - INFO # What weekday was 2017-04-15? The 105(th) day of the year was a SAT.
+day 2017 4 28
+> day 2017 4 28
+2018-08-08 21:16:05,565 - INFO #  day 2017 4 28
+2018-08-08 21:16:05,571 - INFO # What weekday was 2017-04-28? The 118(th) day of the year was a FRI.
+day 2017 11 1
+> day 2017 11 1
+2018-08-08 21:16:05,626 - INFO #  day 2017 11 1
+2018-08-08 21:16:05,632 - INFO # What weekday was 2017-11-01? The 305(th) day of the year was a WED.
+day 2017 11 15
+> day 2017 11 15
+2018-08-08 21:16:05,688 - INFO #  day 2017 11 15
+2018-08-08 21:16:05,694 - INFO # What weekday was 2017-11-15? The 319(th) day of the year was a WED.
+day 2017 11 28
+> day 2017 11 28
+2018-08-08 21:16:05,749 - INFO #  day 2017 11 28
+2018-08-08 21:16:05,755 - INFO # What weekday was 2017-11-28? The 332(th) day of the year was a TUE.
+> day 2018 1 1
+day 2018 1 1
+2018-08-08 21:16:05,810 - INFO #  day 2018 1 1
+2018-08-08 21:16:05,815 - INFO # What weekday was 2018-01-01? The 1(th) day of the year was a MON.
+day 2018 1 15
+> day 2018 1 15
+2018-08-08 21:16:05,870 - INFO #  day 2018 1 15
+2018-08-08 21:16:05,876 - INFO # What weekday was 2018-01-15? The 15(th) day of the year was a MON.
+> day 2018 1 28
+day 2018 1 28
+2018-08-08 21:16:05,931 - INFO #  day 2018 1 28
+2018-08-08 21:16:05,937 - INFO # What weekday was 2018-01-28? The 28(th) day of the year was a SUN.
+> day 2018 4 1
+day 2018 4 1
+2018-08-08 21:16:05,992 - INFO #  day 2018 4 1
+2018-08-08 21:16:05,998 - INFO # What weekday was 2018-04-01? The 91(th) day of the year was a SUN.
+> day 2018 4 15
+day 2018 4 15
+2018-08-08 21:16:06,053 - INFO #  day 2018 4 15
+2018-08-08 21:16:06,059 - INFO # What weekday was 2018-04-15? The 105(th) day of the year was a SUN.
+day 2018 4 28
+> day 2018 4 28
+2018-08-08 21:16:06,114 - INFO #  day 2018 4 28
+2018-08-08 21:16:06,120 - INFO # What weekday was 2018-04-28? The 118(th) day of the year was a SAT.
+day 2018 11 1
+> day 2018 11 1
+2018-08-08 21:16:06,175 - INFO #  day 2018 11 1
+2018-08-08 21:16:06,181 - INFO # What weekday was 2018-11-01? The 305(th) day of the year was a THU.
+day 2018 11 15
+> day 2018 11 15
+2018-08-08 21:16:06,236 - INFO #  day 2018 11 15
+2018-08-08 21:16:06,242 - INFO # What weekday was 2018-11-15? The 319(th) day of the year was a THU.
+day 2018 11 28
+> day 2018 11 28
+2018-08-08 21:16:06,297 - INFO #  day 2018 11 28
+2018-08-08 21:16:06,303 - INFO # What weekday was 2018-11-28? The 332(th) day of the year was a WED.
+day 2016 2 29
+> day 2016 2 29
+2018-08-08 21:16:06,358 - INFO #  day 2016 2 29
+2018-08-08 21:16:06,364 - INFO # What weekday was 2016-02-29? The 60(th) day of the year was a MON.
+day 2017 2 29
+> day 2017 2 29
+2018-08-08 21:16:06,419 - INFO #  day 2017 2 29
+2018-08-08 21:16:06,424 - INFO # The supplied date is invalid, but no error should occur.
+

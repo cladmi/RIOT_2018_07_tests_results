@@ -1,0 +1,92 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 1000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : clock speed 950 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.258383
+Info : stm32f0x.cpu: hardware has 4 breakpoints, 2 watchpoints
+Info : Listening on port 41087 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f0x.cpu       hla_target little stm32f0x.cpu       running
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xc1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : device id = 0x20016448
+Info : flash size = 128kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000003a msp: 0x20000200
+wrote 12288 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/xtimer_usleep/bin/nucleo-f070rb/tests_xtimer_usleep.elf in 0.557571s (21.522 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 10756 bytes in 0.171056s (61.406 KiB/s)
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+shutdown command invoked
+Done flashing
+./tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:01:55,903 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:01:58,723 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:01:58,728 - INFO # Running test 5 times with 7 distinct sleep times
+2018-08-08 22:01:58,732 - INFO # Please hit any key and then ENTER to continue
+a
+a
+2018-08-08 22:01:58,798 - INFO # Slept for 10021 us (expected: 10000 us) Offset: 21 us
+2018-08-08 22:01:58,854 - INFO # Slept for 50021 us (expected: 50000 us) Offset: 21 us
+2018-08-08 22:01:58,869 - INFO # Slept for 10256 us (expected: 10234 us) Offset: 22 us
+2018-08-08 22:01:58,931 - INFO # Slept for 56801 us (expected: 56780 us) Offset: 21 us
+2018-08-08 22:01:58,948 - INFO # Slept for 12144 us (expected: 12122 us) Offset: 22 us
+2018-08-08 22:01:59,051 - INFO # Slept for 98786 us (expected: 98765 us) Offset: 21 us
+2018-08-08 22:01:59,132 - INFO # Slept for 75022 us (expected: 75000 us) Offset: 22 us
+2018-08-08 22:01:59,146 - INFO # Slept for 10022 us (expected: 10000 us) Offset: 22 us
+2018-08-08 22:01:59,201 - INFO # Slept for 50021 us (expected: 50000 us) Offset: 21 us
+2018-08-08 22:01:59,216 - INFO # Slept for 10256 us (expected: 10234 us) Offset: 22 us
+2018-08-08 22:01:59,278 - INFO # Slept for 56801 us (expected: 56780 us) Offset: 21 us
+2018-08-08 22:01:59,295 - INFO # Slept for 12144 us (expected: 12122 us) Offset: 22 us
+2018-08-08 22:01:59,398 - INFO # Slept for 98786 us (expected: 98765 us) Offset: 21 us
+2018-08-08 22:01:59,478 - INFO # Slept for 75022 us (expected: 75000 us) Offset: 22 us
+2018-08-08 22:01:59,493 - INFO # Slept for 10022 us (expected: 10000 us) Offset: 22 us
+2018-08-08 22:01:59,548 - INFO # Slept for 50021 us (expected: 50000 us) Offset: 21 us
+2018-08-08 22:01:59,563 - INFO # Slept for 10256 us (expected: 10234 us) Offset: 22 us
+2018-08-08 22:01:59,625 - INFO # Slept for 56801 us (expected: 56780 us) Offset: 21 us
+2018-08-08 22:01:59,642 - INFO # Slept for 12144 us (expected: 12122 us) Offset: 22 us
+2018-08-08 22:01:59,745 - INFO # Slept for 98786 us (expected: 98765 us) Offset: 21 us
+2018-08-08 22:01:59,825 - INFO # Slept for 75022 us (expected: 75000 us) Offset: 22 us
+2018-08-08 22:01:59,839 - INFO # Slept for 10022 us (expected: 10000 us) Offset: 22 us
+2018-08-08 22:01:59,895 - INFO # Slept for 50021 us (expected: 50000 us) Offset: 21 us
+2018-08-08 22:01:59,910 - INFO # Slept for 10256 us (expected: 10234 us) Offset: 22 us
+2018-08-08 22:01:59,971 - INFO # Slept for 56801 us (expected: 56780 us) Offset: 21 us
+2018-08-08 22:01:59,989 - INFO # Slept for 12144 us (expected: 12122 us) Offset: 22 us
+2018-08-08 22:02:00,092 - INFO # Slept for 98786 us (expected: 98765 us) Offset: 21 us
+2018-08-08 22:02:00,172 - INFO # Slept for 75022 us (expected: 75000 us) Offset: 22 us
+2018-08-08 22:02:00,187 - INFO # Slept for 10022 us (expected: 10000 us) Offset: 22 us
+2018-08-08 22:02:00,242 - INFO # Slept for 50021 us (expected: 50000 us) Offset: 21 us
+2018-08-08 22:02:00,257 - INFO # Slept for 10256 us (expected: 10234 us) Offset: 22 us
+2018-08-08 22:02:00,318 - INFO # Slept for 56801 us (expected: 56780 us) Offset: 21 us
+2018-08-08 22:02:00,335 - INFO # Slept for 12144 us (expected: 12122 us) Offset: 22 us
+2018-08-08 22:02:00,439 - INFO # Slept for 98786 us (expected: 98765 us) Offset: 21 us
+2018-08-08 22:02:00,519 - INFO # Slept for 75022 us (expected: 75000 us) Offset: 22 us
+2018-08-08 22:02:00,522 - INFO # Test ran for 1734461 us
+

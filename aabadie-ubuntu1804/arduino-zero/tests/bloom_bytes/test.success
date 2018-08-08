@@ -1,0 +1,33 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/bloom_bytes/bin/arduino-zero/tests_bloom_bytes.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming..................................................... done.
+Verification..................................................... done.
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:13:02,729 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:13:04,706 - INFO # checking 10000 elements took 2341ms
+2018-08-08 22:13:04,706 - INFO # 
+2018-08-08 22:13:04,709 - INFO # 267 elements probably in the filter.
+2018-08-08 22:13:04,712 - INFO # 9733 elements not in the filter.
+2018-08-08 22:13:04,714 - INFO #  false positive rate.
+2018-08-08 22:13:04,714 - INFO # 
+2018-08-08 22:13:04,715 - INFO # All done!
+2018-08-08 22:13:05,605 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:13:05,607 - INFO # Testing Bloom filter.
+2018-08-08 22:13:05,608 - INFO # 
+2018-08-08 22:13:05,609 - INFO # m: 4096 k: 8
+2018-08-08 22:13:05,609 - INFO # 
+2018-08-08 22:13:05,869 - INFO # adding 512 elements took 257ms
+2018-08-08 22:13:08,214 - INFO # checking 10000 elements took 2341ms
+2018-08-08 22:13:08,214 - INFO # 
+2018-08-08 22:13:08,217 - INFO # 267 elements probably in the filter.
+2018-08-08 22:13:08,220 - INFO # 9733 elements not in the filter.
+2018-08-08 22:13:08,222 - INFO #  false positive rate.
+2018-08-08 22:13:08,222 - INFO # 
+2018-08-08 22:13:08,223 - INFO # All done!
+

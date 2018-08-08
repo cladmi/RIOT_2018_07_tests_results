@@ -1,0 +1,115 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 1000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : clock speed 950 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.252071
+Info : stm32f0x.cpu: hardware has 4 breakpoints, 2 watchpoints
+Info : Listening on port 45589 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f0x.cpu       hla_target little stm32f0x.cpu       running
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xc1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : device id = 0x20016448
+Info : flash size = 128kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000003a msp: 0x20000200
+wrote 10240 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/thread_cooperation/bin/nucleo-f070rb/tests_thread_cooperation.elf in 0.475454s (21.033 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 9508 bytes in 0.156906s (59.177 KiB/s)
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+shutdown command invoked
+Done flashing
+./tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 21:58:15,884 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 21:58:18,726 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 21:58:18,729 - INFO # [START] compute 12! (factorial).
+2018-08-08 21:58:18,732 - INFO # MAIN: create thread, arg: 1
+2018-08-08 21:58:18,734 - INFO # MAIN: msg to T-3
+2018-08-08 21:58:18,735 - INFO # T-03: alive
+2018-08-08 21:58:18,736 - INFO # T-03: got arg 1
+2018-08-08 21:58:18,739 - INFO # MAIN: create thread, arg: 2
+2018-08-08 21:58:18,741 - INFO # MAIN: msg to T-4
+2018-08-08 21:58:18,742 - INFO # T-04: alive
+2018-08-08 21:58:18,744 - INFO # T-04: got arg 2
+2018-08-08 21:58:18,746 - INFO # MAIN: create thread, arg: 3
+2018-08-08 21:58:18,748 - INFO # MAIN: msg to T-5
+2018-08-08 21:58:18,750 - INFO # T-05: alive
+2018-08-08 21:58:18,751 - INFO # T-05: got arg 3
+2018-08-08 21:58:18,754 - INFO # MAIN: create thread, arg: 4
+2018-08-08 21:58:18,756 - INFO # MAIN: msg to T-6
+2018-08-08 21:58:18,757 - INFO # T-06: alive
+2018-08-08 21:58:18,758 - INFO # T-06: got arg 4
+2018-08-08 21:58:18,761 - INFO # MAIN: create thread, arg: 5
+2018-08-08 21:58:18,763 - INFO # MAIN: msg to T-7
+2018-08-08 21:58:18,764 - INFO # T-07: alive
+2018-08-08 21:58:18,766 - INFO # T-07: got arg 5
+2018-08-08 21:58:18,768 - INFO # MAIN: create thread, arg: 6
+2018-08-08 21:58:18,770 - INFO # MAIN: msg to T-8
+2018-08-08 21:58:18,771 - INFO # T-08: alive
+2018-08-08 21:58:18,774 - INFO # T-08: got arg 6
+2018-08-08 21:58:18,776 - INFO # MAIN: create thread, arg: 7
+2018-08-08 21:58:18,777 - INFO # MAIN: msg to T-9
+2018-08-08 21:58:18,779 - INFO # T-09: alive
+2018-08-08 21:58:18,780 - INFO # T-09: got arg 7
+2018-08-08 21:58:18,783 - INFO # MAIN: create thread, arg: 8
+2018-08-08 21:58:18,785 - INFO # MAIN: msg to T-10
+2018-08-08 21:58:18,786 - INFO # T-10: alive
+2018-08-08 21:58:18,788 - INFO # T-10: got arg 8
+2018-08-08 21:58:18,790 - INFO # MAIN: create thread, arg: 9
+2018-08-08 21:58:18,792 - INFO # MAIN: msg to T-11
+2018-08-08 21:58:18,793 - INFO # T-11: alive
+2018-08-08 21:58:18,795 - INFO # T-11: got arg 9
+2018-08-08 21:58:18,797 - INFO # MAIN: create thread, arg: 10
+2018-08-08 21:58:18,799 - INFO # MAIN: msg to T-12
+2018-08-08 21:58:18,801 - INFO # T-12: alive
+2018-08-08 21:58:18,803 - INFO # T-12: got arg 10
+2018-08-08 21:58:18,805 - INFO # MAIN: create thread, arg: 11
+2018-08-08 21:58:18,807 - INFO # MAIN: msg to T-13
+2018-08-08 21:58:18,808 - INFO # T-13: alive
+2018-08-08 21:58:18,810 - INFO # T-13: got arg 11
+2018-08-08 21:58:18,813 - INFO # MAIN: create thread, arg: 12
+2018-08-08 21:58:18,815 - INFO # MAIN: msg to T-14
+2018-08-08 21:58:18,816 - INFO # T-14: alive
+2018-08-08 21:58:18,818 - INFO # T-14: got arg 12
+2018-08-08 21:58:18,820 - INFO # MAIN: reply from T-3
+2018-08-08 21:58:18,822 - INFO # MAIN: reply from T-4
+2018-08-08 21:58:18,825 - INFO # MAIN: reply from T-5
+2018-08-08 21:58:18,826 - INFO # MAIN: reply from T-6
+2018-08-08 21:58:18,828 - INFO # MAIN: reply from T-7
+2018-08-08 21:58:18,830 - INFO # MAIN: reply from T-8
+2018-08-08 21:58:18,832 - INFO # MAIN: reply from T-9
+2018-08-08 21:58:18,835 - INFO # MAIN: reply from T-10
+2018-08-08 21:58:18,836 - INFO # MAIN: reply from T-11
+2018-08-08 21:58:18,839 - INFO # MAIN: reply from T-12
+2018-08-08 21:58:18,841 - INFO # MAIN: reply from T-13
+2018-08-08 21:58:18,843 - INFO # MAIN: reply from T-14
+2018-08-08 21:58:18,845 - INFO # MAIN: 12! = 479001600
+2018-08-08 21:58:18,846 - INFO # [SUCCESS]
+

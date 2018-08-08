@@ -1,0 +1,156 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/jlink/jlink.sh flash
+### Flashing Target ###
+### Flashing at address 0x0 ###
+HEXFILE found
+SEGGER J-Link Commander V6.33g (Compiled Jun 28 2018 15:09:53)
+DLL version V6.33g, compiled Jun 28 2018 15:09:48
+
+
+J-Link Command File read successfully.
+Processing script file...
+
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: J-Link OB-SAM3U128-V2-NordicSemi compiled Jan 12 2018 16:05:20
+Hardware version: V1.00
+S/N: 683238897
+VTref=3.300V
+Target connection not established yet but required for command.
+Device "NRF52" selected.
+
+
+Connecting to target via SWD
+Found SW-DP with ID 0x2BA01477
+Found SW-DP with ID 0x2BA01477
+Scanning AP map to find all available APs
+AP[2]: Stopped AP scan as end of AP map has been reached
+AP[0]: AHB-AP (IDR: 0x24770011)
+AP[1]: JTAG-AP (IDR: 0x02880000)
+Iterating through AP map to find AHB-AP to use
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)
+Found Cortex-M4 r0p1, Little endian.
+FPUnit: 6 code (BP) slots and 2 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB00C SCS-M7
+ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 003BB002 DWT
+ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 002BB003 FPB
+ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 003BB001 ITM
+ROMTbl[0][4]: E0040000, CID: B105900D, PID: 000BB9A1 TPIU
+ROMTbl[0][5]: E0041000, CID: B105900D, PID: 000BB925 ETM
+Cortex-M4 identified.
+Halting CPU for downloading file.
+Downloading file [/home/aabadie/softs/src/riot/RIOT-RC/tests/pthread_tls/bin/nrf52840dk/tests_pthread_tls.bin]...
+Comparing flash   [000%]000%]050%]100%] Done.
+Erasing flash     [000%]000%]100%] Done.
+Programming flash [000%]000%]000%]000%]005%]005%]010%]010%]015%]015%]020%]020%]025%]025%]025%]025%]030%]030%]035%]035%]040%]040%]045%]045%]050%]050%]050%]050%]055%]055%]060%]060%]065%]065%]070%]070%]075%]075%]075%]075%]080%]080%]085%]085%]090%]090%]095%]100%] Done.
+Verifying flash   [000%]000%]100%] Done.
+J-Link: Flash download: Bank 0 @ 0x00000000: 1 range affected (12288 bytes)
+J-Link: Flash download: Total time needed: 0.511s (Prepare: 0.041s, Compare: 0.004s, Erase: 0.253s, Program: 0.203s, Verify: 0.000s, Restore: 0.008s)
+O.K.
+
+Reset delay: 0 ms
+Reset type NORMAL: Resets core & peripherals via SYSRESETREQ & VECTRESET bit.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+
+
+
+Script processing completed.
+
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 21:14:19,385 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 21:14:22,884 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 21:14:22,885 - INFO # START
+2018-08-08 21:14:22,885 - INFO # 
+2018-08-08 21:14:22,890 - INFO # -= TEST 1 - create 20 tls with sequencial values 0...19 =-
+2018-08-08 21:14:22,893 - INFO # now rise sequencial by one values 1...20
+2018-08-08 21:14:22,899 - INFO # pick deliberate storage (key[3]:536877504) and change the value
+2018-08-08 21:14:22,901 - INFO # show tls values:
+2018-08-08 21:14:22,903 - INFO # key[0]: 536877408, val: 1
+2018-08-08 21:14:22,905 - INFO # key[1]: 536877440, val: 2
+2018-08-08 21:14:22,908 - INFO # key[2]: 536877472, val: 3
+2018-08-08 21:14:22,910 - INFO # key[3]: 536877504, val: 42
+2018-08-08 21:14:22,912 - INFO # key[4]: 536877536, val: 5
+2018-08-08 21:14:22,914 - INFO # key[5]: 536877568, val: 6
+2018-08-08 21:14:22,917 - INFO # key[6]: 536877600, val: 7
+2018-08-08 21:14:22,919 - INFO # key[7]: 536877632, val: 8
+2018-08-08 21:14:22,921 - INFO # key[8]: 536877664, val: 9
+2018-08-08 21:14:22,924 - INFO # key[9]: 536877696, val: 10
+2018-08-08 21:14:22,926 - INFO # key[10]: 536877728, val: 11
+2018-08-08 21:14:22,929 - INFO # key[11]: 536877760, val: 12
+2018-08-08 21:14:22,931 - INFO # key[12]: 536877792, val: 13
+2018-08-08 21:14:22,934 - INFO # key[13]: 536877824, val: 14
+2018-08-08 21:14:22,936 - INFO # key[14]: 536877856, val: 15
+2018-08-08 21:14:22,939 - INFO # key[15]: 536877888, val: 16
+2018-08-08 21:14:22,941 - INFO # key[16]: 536877920, val: 17
+2018-08-08 21:14:22,944 - INFO # key[17]: 536877952, val: 18
+2018-08-08 21:14:22,946 - INFO # key[18]: 536877984, val: 19
+2018-08-08 21:14:22,948 - INFO # key[19]: 536878016, val: 20
+2018-08-08 21:14:22,949 - INFO # 
+2018-08-08 21:14:22,954 - INFO #  -= TEST 2 - delete deliberate key (key[5]:536877568) =-
+2018-08-08 21:14:22,956 - INFO # show tls values:
+2018-08-08 21:14:22,958 - INFO # key[0]: 536877408, val: 1
+2018-08-08 21:14:22,960 - INFO # key[1]: 536877440, val: 2
+2018-08-08 21:14:22,962 - INFO # key[2]: 536877472, val: 3
+2018-08-08 21:14:22,965 - INFO # key[3]: 536877504, val: 42
+2018-08-08 21:14:22,967 - INFO # key[4]: 536877536, val: 5
+2018-08-08 21:14:22,969 - INFO # key[6]: 536877600, val: 7
+2018-08-08 21:14:22,971 - INFO # key[7]: 536877632, val: 8
+2018-08-08 21:14:22,974 - INFO # key[8]: 536877664, val: 9
+2018-08-08 21:14:22,976 - INFO # key[9]: 536877696, val: 10
+2018-08-08 21:14:22,978 - INFO # key[10]: 536877728, val: 11
+2018-08-08 21:14:22,981 - INFO # key[11]: 536877760, val: 12
+2018-08-08 21:14:22,983 - INFO # key[12]: 536877792, val: 13
+2018-08-08 21:14:22,986 - INFO # key[13]: 536877824, val: 14
+2018-08-08 21:14:22,988 - INFO # key[14]: 536877856, val: 15
+2018-08-08 21:14:22,991 - INFO # key[15]: 536877888, val: 16
+2018-08-08 21:14:22,993 - INFO # key[16]: 536877920, val: 17
+2018-08-08 21:14:22,996 - INFO # key[17]: 536877952, val: 18
+2018-08-08 21:14:22,999 - INFO # key[18]: 536877984, val: 19
+2018-08-08 21:14:23,001 - INFO # key[19]: 536878016, val: 20
+2018-08-08 21:14:23,002 - INFO # 
+2018-08-08 21:14:23,003 - INFO # -= TEST 3 - create new tls =-
+2018-08-08 21:14:23,007 - INFO # added new tls, key: 536878048, val: 99
+2018-08-08 21:14:23,008 - INFO # show tls values:
+2018-08-08 21:14:23,011 - INFO # key[0]: 536877408, val: 1
+2018-08-08 21:14:23,013 - INFO # key[1]: 536877440, val: 2
+2018-08-08 21:14:23,015 - INFO # key[2]: 536877472, val: 3
+2018-08-08 21:14:23,018 - INFO # key[3]: 536877504, val: 42
+2018-08-08 21:14:23,020 - INFO # key[4]: 536877536, val: 5
+2018-08-08 21:14:23,022 - INFO # key[6]: 536877600, val: 7
+2018-08-08 21:14:23,025 - INFO # key[7]: 536877632, val: 8
+2018-08-08 21:14:23,027 - INFO # key[8]: 536877664, val: 9
+2018-08-08 21:14:23,029 - INFO # key[9]: 536877696, val: 10
+2018-08-08 21:14:23,032 - INFO # key[10]: 536877728, val: 11
+2018-08-08 21:14:23,034 - INFO # key[11]: 536877760, val: 12
+2018-08-08 21:14:23,037 - INFO # key[12]: 536877792, val: 13
+2018-08-08 21:14:23,039 - INFO # key[13]: 536877824, val: 14
+2018-08-08 21:14:23,042 - INFO # key[14]: 536877856, val: 15
+2018-08-08 21:14:23,044 - INFO # key[15]: 536877888, val: 16
+2018-08-08 21:14:23,047 - INFO # key[16]: 536877920, val: 17
+2018-08-08 21:14:23,049 - INFO # key[17]: 536877952, val: 18
+2018-08-08 21:14:23,051 - INFO # key[18]: 536877984, val: 19
+2018-08-08 21:14:23,054 - INFO # key[19]: 536878016, val: 20
+2018-08-08 21:14:23,055 - INFO # 
+2018-08-08 21:14:23,057 - INFO # -= TEST 4 - delete all keys =-
+2018-08-08 21:14:23,059 - INFO # show tls values:
+2018-08-08 21:14:23,060 - INFO # 
+2018-08-08 21:14:23,063 - INFO # -= TEST 5 - try delete non-existing key =-
+2018-08-08 21:14:23,065 - INFO # try to delete returns: 0
+2018-08-08 21:14:23,065 - INFO # 
+2018-08-08 21:14:23,069 - INFO # -= TEST 6 - add key and delete without a tls =-
+2018-08-08 21:14:23,071 - INFO # created key: 536878080
+2018-08-08 21:14:23,073 - INFO # try to delete returns: 0
+2018-08-08 21:14:23,074 - INFO # 
+2018-08-08 21:14:23,076 - INFO # -= TEST 7 - add key without tls =-
+2018-08-08 21:14:23,078 - INFO # created key: 536878096
+2018-08-08 21:14:23,080 - INFO # test_7_val: 0
+2018-08-08 21:14:23,081 - INFO # tls tests finished.
+2018-08-08 21:14:23,082 - INFO # SUCCESS
+

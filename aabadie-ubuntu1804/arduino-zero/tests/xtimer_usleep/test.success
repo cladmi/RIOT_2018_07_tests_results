@@ -1,0 +1,54 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/xtimer_usleep/bin/arduino-zero/tests_xtimer_usleep.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming................................................ done.
+Verification................................................ done.
+./tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 23:00:09,555 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 23:00:12,417 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 23:00:12,421 - INFO # Running test 5 times with 7 distinct sleep times
+2018-08-08 23:00:12,425 - INFO # Please hit any key and then ENTER to continue
+a
+a
+2018-08-08 23:00:12,491 - INFO # Slept for 10045 us (expected: 10000 us) Offset: 45 us
+2018-08-08 23:00:12,546 - INFO # Slept for 50044 us (expected: 50000 us) Offset: 44 us
+2018-08-08 23:00:12,561 - INFO # Slept for 10279 us (expected: 10234 us) Offset: 45 us
+2018-08-08 23:00:12,623 - INFO # Slept for 56824 us (expected: 56780 us) Offset: 44 us
+2018-08-08 23:00:12,640 - INFO # Slept for 12167 us (expected: 12122 us) Offset: 45 us
+2018-08-08 23:00:12,744 - INFO # Slept for 98810 us (expected: 98765 us) Offset: 45 us
+2018-08-08 23:00:12,824 - INFO # Slept for 75045 us (expected: 75000 us) Offset: 45 us
+2018-08-08 23:00:12,839 - INFO # Slept for 10045 us (expected: 10000 us) Offset: 45 us
+2018-08-08 23:00:12,894 - INFO # Slept for 50044 us (expected: 50000 us) Offset: 44 us
+2018-08-08 23:00:12,909 - INFO # Slept for 10278 us (expected: 10234 us) Offset: 44 us
+2018-08-08 23:00:12,970 - INFO # Slept for 56824 us (expected: 56780 us) Offset: 44 us
+2018-08-08 23:00:12,987 - INFO # Slept for 12166 us (expected: 12122 us) Offset: 44 us
+2018-08-08 23:00:13,091 - INFO # Slept for 98810 us (expected: 98765 us) Offset: 45 us
+2018-08-08 23:00:13,171 - INFO # Slept for 75045 us (expected: 75000 us) Offset: 45 us
+2018-08-08 23:00:13,186 - INFO # Slept for 10045 us (expected: 10000 us) Offset: 45 us
+2018-08-08 23:00:13,241 - INFO # Slept for 50044 us (expected: 50000 us) Offset: 44 us
+2018-08-08 23:00:13,256 - INFO # Slept for 10278 us (expected: 10234 us) Offset: 44 us
+2018-08-08 23:00:13,318 - INFO # Slept for 56824 us (expected: 56780 us) Offset: 44 us
+2018-08-08 23:00:13,335 - INFO # Slept for 12166 us (expected: 12122 us) Offset: 44 us
+2018-08-08 23:00:13,438 - INFO # Slept for 98809 us (expected: 98765 us) Offset: 44 us
+2018-08-08 23:00:13,518 - INFO # Slept for 75045 us (expected: 75000 us) Offset: 45 us
+2018-08-08 23:00:13,533 - INFO # Slept for 10045 us (expected: 10000 us) Offset: 45 us
+2018-08-08 23:00:13,588 - INFO # Slept for 50044 us (expected: 50000 us) Offset: 44 us
+2018-08-08 23:00:13,603 - INFO # Slept for 10278 us (expected: 10234 us) Offset: 44 us
+2018-08-08 23:00:13,665 - INFO # Slept for 56824 us (expected: 56780 us) Offset: 44 us
+2018-08-08 23:00:13,682 - INFO # Slept for 12166 us (expected: 12122 us) Offset: 44 us
+2018-08-08 23:00:13,785 - INFO # Slept for 98810 us (expected: 98765 us) Offset: 45 us
+2018-08-08 23:00:13,865 - INFO # Slept for 75045 us (expected: 75000 us) Offset: 45 us
+2018-08-08 23:00:13,880 - INFO # Slept for 10045 us (expected: 10000 us) Offset: 45 us
+2018-08-08 23:00:13,935 - INFO # Slept for 50044 us (expected: 50000 us) Offset: 44 us
+2018-08-08 23:00:13,950 - INFO # Slept for 10278 us (expected: 10234 us) Offset: 44 us
+2018-08-08 23:00:14,012 - INFO # Slept for 56824 us (expected: 56780 us) Offset: 44 us
+2018-08-08 23:00:14,029 - INFO # Slept for 12167 us (expected: 12122 us) Offset: 45 us
+2018-08-08 23:00:14,133 - INFO # Slept for 98810 us (expected: 98765 us) Offset: 45 us
+2018-08-08 23:00:14,213 - INFO # Slept for 75045 us (expected: 75000 us) Offset: 45 us
+2018-08-08 23:00:14,215 - INFO # Test ran for 1735387 us
+

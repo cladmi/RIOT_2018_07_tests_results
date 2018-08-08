@@ -1,0 +1,28 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/kevinweiss/WorkingDirectory/RIOT/tests/posix_time flash-only test
+/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d1 (2018-04-12-17:12)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v17 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.251968
+Error: init mode failed (unable to connect to the target)
+in procedure 'init' 
+in procedure 'ocd_bouncer'
+
+/home/kevinweiss/WorkingDirectory/RIOT/tests/posix_time/../../Makefile.include:474: recipe for target 'flash' failed
+make: *** [flash] Error 1
+
+Return value: 2

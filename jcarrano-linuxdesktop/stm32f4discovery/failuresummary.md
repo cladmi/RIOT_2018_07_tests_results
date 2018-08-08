@@ -4,6 +4,7 @@ Failures during compilation:
 - [tests/lwip](tests/lwip/compilation.failed)
 - [tests/lwip_sock_ip](tests/lwip_sock_ip/compilation.failed)
 - [tests/lwip_sock_tcp](tests/lwip_sock_tcp/compilation.failed)
+
 Failures during test:
 - [tests/warn_conflict](tests/warn_conflict/test.failed)
 - [tests/trickle](tests/trickle/test.failed)
@@ -13,3 +14,4 @@ Failures during test:
 - [tests/driver_ds1307](tests/driver_ds1307/test.failed)
 - [tests/driver_grove_ledbar](tests/driver_grove_ledbar/test.failed)
 - [tests/cbor](tests/cbor/test.failed)
+

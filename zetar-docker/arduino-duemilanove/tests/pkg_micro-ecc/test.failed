@@ -1,0 +1,170 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/pkg_micro-ecc test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 18:55:07,120 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:55:08,600 - INFO # 
+2018-08-08 18:55:08,680 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:08,697 - INFO # micro-ecc compiled!
+2018-08-08 18:55:08,776 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:10,200 - INFO # .
+2018-08-08 18:55:10,280 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:10,297 - INFO # micro-ecc compiled!
+2018-08-08 18:55:10,376 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:11,800 - INFO # .
+2018-08-08 18:55:11,880 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:11,912 - INFO # micro-ecc compiled!
+2018-08-08 18:55:11,976 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:13,399 - INFO # .
+2018-08-08 18:55:13,479 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:13,511 - INFO # micro-ecc compiled!
+2018-08-08 18:55:13,575 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:14,999 - INFO # .
+2018-08-08 18:55:15,079 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:15,111 - INFO # micro-ecc compiled!
+2018-08-08 18:55:15,175 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:16,599 - INFO # .
+2018-08-08 18:55:16,680 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:16,711 - INFO # micro-ecc compiled!
+2018-08-08 18:55:16,775 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:18,199 - INFO # .
+2018-08-08 18:55:18,280 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:18,311 - INFO # micro-ecc compiled!
+2018-08-08 18:55:18,375 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:19,798 - INFO # .
+2018-08-08 18:55:19,879 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:19,910 - INFO # micro-ecc compiled!
+2018-08-08 18:55:19,975 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:21,398 - INFO # .
+2018-08-08 18:55:21,479 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:21,510 - INFO # micro-ecc compiled!
+2018-08-08 18:55:21,575 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:22,998 - INFO # .
+2018-08-08 18:55:23,079 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:23,110 - INFO # micro-ecc compiled!
+2018-08-08 18:55:23,175 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:24,598 - INFO # .
+2018-08-08 18:55:24,678 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:24,709 - INFO # micro-ecc compiled!
+2018-08-08 18:55:24,774 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:26,197 - INFO # .
+2018-08-08 18:55:26,293 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:26,309 - INFO # micro-ecc compiled!
+2018-08-08 18:55:26,374 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:27,797 - INFO # .
+2018-08-08 18:55:27,893 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:27,909 - INFO # micro-ecc compiled!
+2018-08-08 18:55:27,974 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:29,397 - INFO # .
+2018-08-08 18:55:29,493 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:29,509 - INFO # micro-ecc compiled!
+2018-08-08 18:55:29,574 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:30,996 - INFO # .
+2018-08-08 18:55:31,092 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:31,108 - INFO # micro-ecc compiled!
+2018-08-08 18:55:31,173 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:32,596 - INFO # .
+2018-08-08 18:55:32,692 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:32,708 - INFO # micro-ecc compiled!
+2018-08-08 18:55:32,788 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:34,196 - INFO # .
+2018-08-08 18:55:34,292 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:34,309 - INFO # micro-ecc compiled!
+2018-08-08 18:55:34,388 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:35,796 - INFO # .
+2018-08-08 18:55:35,892 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:35,908 - INFO # micro-ecc compiled!
+2018-08-08 18:55:35,988 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:37,395 - INFO # .
+2018-08-08 18:55:37,491 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:37,507 - INFO # micro-ecc compiled!
+2018-08-08 18:55:37,587 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:38,995 - INFO # .
+2018-08-08 18:55:39,091 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:39,108 - INFO # micro-ecc compiled!
+2018-08-08 18:55:39,187 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:40,595 - INFO # .
+2018-08-08 18:55:40,691 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:40,708 - INFO # micro-ecc compiled!
+2018-08-08 18:55:40,787 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:42,194 - INFO # .
+2018-08-08 18:55:42,290 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:42,307 - INFO # micro-ecc compiled!
+2018-08-08 18:55:42,386 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:43,794 - INFO # .
+2018-08-08 18:55:43,890 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:43,907 - INFO # micro-ecc compiled!
+2018-08-08 18:55:43,986 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:45,394 - INFO # .
+2018-08-08 18:55:45,490 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:45,507 - INFO # micro-ecc compiled!
+2018-08-08 18:55:45,586 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:46,994 - INFO # .
+2018-08-08 18:55:47,090 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:47,107 - INFO # micro-ecc compiled!
+2018-08-08 18:55:47,186 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:48,593 - INFO # .
+2018-08-08 18:55:48,689 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:48,706 - INFO # micro-ecc compiled!
+2018-08-08 18:55:48,785 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:50,193 - INFO # .
+2018-08-08 18:55:50,290 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:50,306 - INFO # micro-ecc compiled!
+2018-08-08 18:55:50,385 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:51,793 - INFO # .
+2018-08-08 18:55:51,890 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:51,906 - INFO # micro-ecc compiled!
+2018-08-08 18:55:51,985 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:53,408 - INFO # .
+2018-08-08 18:55:53,489 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:53,505 - INFO # micro-ecc compiled!
+2018-08-08 18:55:53,584 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:55,008 - INFO # .
+2018-08-08 18:55:55,089 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:55,105 - INFO # micro-ecc compiled!
+2018-08-08 18:55:55,184 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:56,608 - INFO # .
+2018-08-08 18:55:56,689 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:56,705 - INFO # micro-ecc compiled!
+2018-08-08 18:55:56,785 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:58,208 - INFO # .
+2018-08-08 18:55:58,289 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:58,320 - INFO # micro-ecc compiled!
+2018-08-08 18:55:58,385 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:55:59,807 - INFO # .
+2018-08-08 18:55:59,888 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:55:59,919 - INFO # micro-ecc compiled!
+2018-08-08 18:55:59,984 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:56:01,407 - INFO # .
+2018-08-08 18:56:01,488 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:56:01,519 - INFO # micro-ecc compiled!
+2018-08-08 18:56:01,584 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:56:03,007 - INFO # .
+2018-08-08 18:56:03,088 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:56:03,119 - INFO # micro-ecc compiled!
+2018-08-08 18:56:03,184 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:56:04,607 - INFO # .
+2018-08-08 18:56:04,688 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:56:04,719 - INFO # micro-ecc compiled!
+2018-08-08 18:56:04,784 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:56:06,206 - INFO # .
+2018-08-08 18:56:06,287 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:56:06,318 - INFO # micro-ecc compiled!
+2018-08-08 18:56:06,383 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:56:07,806 - INFO # .
+2018-08-08 18:56:07,887 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:56:07,918 - INFO # micro-ecc compiled!
+2018-08-08 18:56:07,983 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+2018-08-08 18:56:09,406 - INFO # .
+2018-08-08 18:56:09,487 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-420fb60bb780-2018.07-branch)
+2018-08-08 18:56:09,518 - INFO # micro-ecc compiled!
+2018-08-08 18:56:09,583 - INFO # Testing 16 random private key pairs and signature without using HWRNG
+Timeout in expect script at "child.expect_exact('................ done with 0 error(s)')" (tests/pkg_micro-ecc/tests/01-run.py:11)
+
+Makefile:11: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

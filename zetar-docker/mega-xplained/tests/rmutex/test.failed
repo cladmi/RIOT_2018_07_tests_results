@@ -1,0 +1,75 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/rmutex test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 15:40:29,136 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 15:40:30,140 - INFO # 
+2018-08-08 15:40:30,146 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-6cf19utex now
+2018-08-08 15:40:30,148 - INFO # T7 (prio 4, depth 0): trying to lock rmutex now
+2018-08-08 15:40:30,149 - INFO # main: unlocking recursive mutex
+2018-08-08 15:40:30,151 - INFO # T6 (prio 2, depth 0): locked rmutex now
+2018-08-08 15:40:30,152 - INFO # T6 (prio 2, depth 1): trying to lock rmutex now
+2018-08-08 15:40:30,154 - INFO # T6 (prio 2, depth 1): locked rmutex now
+2018-08-08 15:40:30,156 - INFO # T6 (prio 2, depth 2): trying to lock rmutex now
+2018-08-08 15:40:30,157 - INFO # T6 (prio 2, depth 2): locked rmutex now
+2018-08-08 15:40:30,159 - INFO # T6 (prio 2, depth 3): trying to lock rmutex now
+2018-08-08 15:40:30,160 - INFO # T6 (prio 2, depth 3): locked rmutex now
+2018-08-08 15:40:30,160 - INFO # T6 (prio 2, depth 3): unlocked rmutex
+2018-08-08 15:40:30,161 - INFO # T6 (prio 2, depth 2): unlocked rmutex
+2018-08-08 15:40:30,162 - INFO # T6 (prio 2, depth 1): unlocked rmutex
+2018-08-08 15:40:30,163 - INFO # T6 (prio 2, depth 0): unlocked rmutex
+2018-08-08 15:40:30,164 - INFO # T4 (prio 4, depth 0): locked rmutex now
+2018-08-08 15:40:30,165 - INFO # T4 (prio 4, depth 1): trying to lock rmutex now
+2018-08-08 15:40:30,166 - INFO # T4 (prio 4, depth 1): locked rmutex now
+2018-08-08 15:40:30,168 - INFO # T4 (prio 4, depth 2): trying to lock rmutex now
+2018-08-08 15:40:30,169 - INFO # T4 (prio 4, depth 2): locked rmutex now
+2018-08-08 15:40:30,170 - INFO # T4 (prio 4, depth 2): unlocked rmutex
+2018-08-08 15:40:30,170 - INFO # T4 (prio 4, depth 1): unlocked rmutex
+2018-08-08 15:40:30,171 - INFO # T4 (prio 4, depth 0): unlocked rmutex
+2018-08-08 15:40:30,172 - INFO # T7 (prio 4, depth 0): locked rmutex now
+2018-08-08 15:40:30,204 - INFO # T7 (prio 4, depth 1): trying to lock rmutex now
+2018-08-08 15:40:30,208 - INFO # T7 (prio 4, depth 1): locked rmutex now
+2018-08-08 15:40:30,305 - INFO # T7 (prio 4, depth 2): trying to lock rmutex now
+2018-08-08 15:40:30,307 - INFO # T7 (prio 4, depth 2): locked rmutex now
+2018-08-08 15:40:30,339 - INFO # T7 (prio 4, depth 3): trying to lock rmutex now
+2018-08-08 15:40:30,406 - INFO # T7 (prio 4, depth 3): locked rmutex now
+2018-08-08 15:40:30,439 - INFO # T7 (prio 4, depth 4): trying to lock rmutex now
+2018-08-08 15:40:30,505 - INFO # T7 (prio 4, depth 4): locked rmutex now
+2018-08-08 15:40:30,538 - INFO # T7 (prio 4, depth 4): unlocked rmutex
+2018-08-08 15:40:30,605 - INFO # T7 (prio 4, depth 3): unlocked rmutex
+2018-08-08 15:40:30,608 - INFO # T7 (prio 4, depth 2): unlocked rmutex
+2018-08-08 15:40:30,638 - INFO # T7 (prio 4, depth 1): unlocked rmutex
+2018-08-08 15:40:30,705 - INFO # T7 (prio 4, depth 0): unlocked rmutex
+2018-08-08 15:40:30,738 - INFO # T5 (prio 5, depth 0): locked rmutex now
+2018-08-08 15:40:30,806 - INFO # T5 (prio 5, depth 1): trying to lock rmutex now
+2018-08-08 15:40:30,809 - INFO # T5 (prio 5, depth 1): locked rmutex now
+2018-08-08 15:40:30,904 - INFO # T5 (prio 5, depth 2): trying to lock rmutex now
+2018-08-08 15:40:30,905 - INFO # T5 (prio 5, depth 2): locked rmutex now
+2018-08-08 15:40:30,938 - INFO # T5 (prio 5, depth 2): unlocked rmutex
+2018-08-08 15:40:31,007 - INFO # T5 (prio 5, depth 1): unlocked rmutex
+2018-08-08 15:40:31,038 - INFO # T5 (prio 5, depth 0): unlocked rmutex
+2018-08-08 15:40:31,104 - INFO # T3 (prio 6, depth 0): locked rmutex now
+2018-08-08 15:40:31,137 - INFO # T3 (prio 6, depth 1): trying to lock rmutex now
+2018-08-08 15:40:31,204 - INFO # T3 (prio 6, depth 1): locked rmutex now
+2018-08-08 15:40:31,208 - INFO # T3 (prio 6, depth 2): trying to lock rmutex now
+2018-08-08 15:40:31,303 - INFO # T3 (prio 6, depth 2): locked rmutex now
+2018-08-08 15:40:31,307 - INFO # T3 (prio 6, depth 3): trying to lock rmutex now
+2018-08-08 15:40:31,339 - INFO # T3 (prio 6, depth 3): locked rmutex now
+2018-08-08 15:40:31,407 - INFO # T3 (prio 6, depth 4): trying to lock rmutex now
+2018-08-08 15:40:31,439 - INFO # T3 (prio 6, depth 4): locked rmutex now
+2018-08-08 15:40:31,505 - INFO # T3 (prio 6, depth 4): unlocked rmutex
+2018-08-08 15:40:31,508 - INFO # T3 (prio 6, depth 3): unlocked rmutex
+2018-08-08 15:40:31,605 - INFO # T3 (prio 6, depth 2): unlocked rmutex
+2018-08-08 15:40:31,608 - INFO # T3 (prio 6, depth 1): unlocked rmutex
+2018-08-08 15:40:31,638 - INFO # T3 (prio 6, depth 0): unlocked rmutex
+2018-08-08 15:40:31,639 - INFO # 
+2018-08-08 15:40:31,740 - INFO # Test END, check the order of priorities above.
+Timeout in expect script at "(k, thread_prio[k]))" (tests/rmutex/tests/01-run.py:38)
+
+Makefile:11: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

@@ -1,0 +1,48 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/gnrc_sock_ip test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+./tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 15:18:18,599 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 15:18:19,603 - INFO # 
+2018-08-08 15:18:19,606 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:18:19,611 - INFO # main(): This is RIOT! (Version: 201ip_create__only_local_reuse_ep()
+2018-08-08 15:18:19,614 - INFO # Calling test_sock_ip_create__only_remote()
+2018-08-08 15:18:19,615 - INFO # Calling test_sock_ip_create__full()
+2018-08-08 15:18:19,616 - INFO # Calling test_sock_ip_recv__EADDRNOTAVAIL()
+2018-08-08 15:18:19,617 - INFO # Calling test_sock_ip_recv__EAGAIN()
+2018-08-08 15:18:19,617 - INFO # Calling test_sock_ip_recv__ENOBUFS()
+2018-08-08 15:18:19,618 - INFO # Calling test_sock_ip_recv__EPROTO()
+2018-08-08 15:18:19,619 - INFO # Calling test_sock_ip_recv__ETIMEDOUT()
+2018-08-08 15:18:19,620 - INFO #  * Calling sock_ip_recv()
+2018-08-08 15:18:20,003 - INFO #  * (timed out with timeout 1000000)
+2018-08-08 15:18:20,070 - INFO # Calling test_sock_ip_recv__socketed()
+2018-08-08 15:18:20,102 - INFO # Calling test_sock_ip_recv__socketed_with_remote()
+2018-08-08 15:18:20,168 - INFO # Calling test_sock_ip_recv__unsocketed()
+2018-08-08 15:18:20,201 - INFO # Calling test_sock_ip_recv__unsocketed_with_remote()
+2018-08-08 15:18:20,268 - INFO # Calling test_sock_ip_recv__with_timeout()
+2018-08-08 15:18:20,301 - INFO # Calling test_sock_ip_recv__non_blocking()
+2018-08-08 15:18:20,368 - INFO # Calling test_sock_ip_send__EAFNOSUPPORT()
+2018-08-08 15:18:20,372 - INFO # Calling test_sock_ip_send__EINVAL_addr()
+2018-08-08 15:18:20,467 - INFO # Calling test_sock_ip_send__EINVAL_netif()
+2018-08-08 15:18:20,470 - INFO # Calling test_sock_ip_send__ENOTCONN()
+2018-08-08 15:18:20,503 - INFO # Calling test_sock_ip_send__socketed_no_local_no_netif()
+2018-08-08 15:18:20,571 - INFO # Calling test_sock_ip_send__socketed_no_netif()
+2018-08-08 15:18:20,601 - INFO # Calling test_sock_ip_send__socketed_no_local()
+2018-08-08 15:18:20,669 - INFO # Calling test_sock_ip_send__socketed()
+2018-08-08 15:18:20,702 - INFO # Calling test_sock_ip_send__socketed_other_remote()
+2018-08-08 15:18:20,771 - INFO # Calling test_sock_ip_send__unsocketed_no_local_no_netif()
+2018-08-08 15:18:20,869 - INFO # Calling test_sock_ip_send__unsocketed_no_netif()
+2018-08-08 15:18:20,873 - INFO # Calling test_sock_ip_send__unsocketed_no_local()
+2018-08-08 15:18:20,968 - INFO # Calling test_sock_ip_send__unsocketed()
+2018-08-08 15:18:20,971 - INFO # Calling test_sock_ip_send__no_sock_no_netif()
+2018-08-08 15:18:21,002 - INFO # Calling test_sock_ip_send__no_sock()
+2018-08-08 15:18:21,101 - INFO # ALL TESTS SUCCESSFUL
+Timeout in expect script at "child.expect_exact(u"Calling test_sock_ip_create__EAFNOSUPPORT()")" (tests/gnrc_sock_ip/tests/01-run.py:14)
+
+Makefile:17: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

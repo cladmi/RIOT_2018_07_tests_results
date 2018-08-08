@@ -1,0 +1,32 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/xtimer_remove test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 15:56:05,755 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 15:56:06,760 - INFO #   23 diff=25
+2018-08-08 15:56:06,762 - INFO #   22 diff=26
+2018-08-08 15:56:06,763 - INFO #   21 diff=27
+2018-08-08 15:56:06,765 - INFO #   20 diff=28
+2018-08-08 15:56:06,766 - INFO #   19 diff=29
+2018-08-08 15:56:06,767 - INFO #   18 diff=30
+2018-08-08 15:56:06,769 - INFO #   17 diff=31
+2018-08-08 15:56:06,770 - INFO #   16 diff=32
+2018-08-08 15:56:06,770 - INFO #   15 diff=33
+2018-08-08 15:56:06,771 - INFO #   14 diff=3 triggered.
+2018-08-08 15:56:06,771 - INFO # timer 2 triggered.
+2018-08-08 15:56:06,772 - INFO # Setting 3 timers, removing timer 1/3
+2018-08-08 15:56:06,773 - INFO # timer 0 triggered.
+2018-08-08 15:56:06,773 - INFO # timer 2 triggered.
+2018-08-08 15:56:06,774 - INFO # Setting 3 timers, removing timer 2/3
+2018-08-08 15:56:06,775 - INFO # timer 0 triggered.
+2018-08-08 15:56:06,775 - INFO # timer 1 triggered.
+2018-08-08 15:56:06,776 - INFO # test successful.
+Timeout in expect script at "child.expect_exact("xtimer_remove test application.")" (tests/xtimer_remove/tests/01-run.py:14)
+
+Makefile:10: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

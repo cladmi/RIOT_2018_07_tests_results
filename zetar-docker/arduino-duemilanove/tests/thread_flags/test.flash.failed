@@ -1,0 +1,30 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/thread_flags flash-only
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+avrdude -p m328p -c arduino -P /dev/ttyUSB0 -b 57600 -F -D -U flash:w:/home/user/Desktop/RIOT_2018.07-branch/tests/thread_flags/bin/arduino-duemilanove/tests_thread_flags.hex
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 1 of 10: not in sync: resp=0x00
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 2 of 10: not in sync: resp=0x00
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 3 of 10: not in sync: resp=0x00
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 4 of 10: not in sync: resp=0x00
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 5 of 10: not in sync: resp=0x00
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 6 of 10: not in sync: resp=0x00
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 7 of 10: not in sync: resp=0x00
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 8 of 10: not in sync: resp=0x00
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 9 of 10: not in sync: resp=0x00
+avrdude: stk500_recv(): programmer is not responding
+avrdude: stk500_getsync() attempt 10 of 10: not in sync: resp=0x00
+
+avrdude done.  Thank you.
+
+/home/user/Desktop/RIOT_2018.07-branch/tests/thread_flags/../../Makefile.include:474: recipe for target 'flash' failed
+make: *** [flash] Error 1
+
+Return value: 2

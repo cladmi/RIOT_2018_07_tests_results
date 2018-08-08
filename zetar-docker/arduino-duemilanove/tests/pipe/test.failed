@@ -1,0 +1,20 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/pipe test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 18:53:03,524 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:53:04,991 - INFO # 
+2018-08-08 18:53:05,087 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-d9d2509d4761-2018.07-branch)
+2018-08-08 18:53:05,088 - INFO # Start.
+2018-08-08 18:53:05,295 - INFO # Middle read: <Middle read: <End read: <End read: <Middle read: <Middle read: <End read: <End read: <Middle read: <Middle read: <End read: <End read: <Middle read: <Middle read: <Main done.
+2018-08-08 18:53:05,343 - INFO # End read: <End read: <Middle read: <Middle done.
+2018-08-08 18:53:05,359 - INFO # End read: <End done.
+Timeout in expect script at "child.expect_exact('Middle read: <ABCD> [0:4]')" (tests/pipe/tests/01-run.py:9)
+
+Makefile:14: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

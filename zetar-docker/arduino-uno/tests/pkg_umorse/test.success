@@ -1,0 +1,33 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 18:02:31,843 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:02:32,849 - INFO # rse code:
+2018-08-08 18:02:32,851 - INFO # "Hello RIOT-OS!
+2018-08-08 18:02:32,853 - INFO # This is uMorse."
+> 2018-08-08 18:02:32,855 - INFO #  using aligned encoding:
+2018-08-08 18:02:32,856 - INFO # .8.07-branch)
+2018-08-08 18:02:32,857 - INFO # [START]
+> 2018-08-08 18:02:32,859 - INFO #  Translate text of length 30 into Morse code:
+2018-08-08 18:02:32,859 - INFO # "Hello RIOT-OS!
+2018-08-08 18:02:32,860 - INFO # This is uMorse."
+> 2018-08-08 18:02:32,860 - INFO #  using aligned encoding:
+2018-08-08 18:02:33,528 - INFO # .
+2018-08-08 18:02:33,614 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-2f605a2eade1-2018.07-branch)
+2018-08-08 18:02:33,622 - INFO # [START]
+> 2018-08-08 18:02:33,671 - INFO #  Translate text of length 30 into Morse code:
+2018-08-08 18:02:33,687 - INFO # "Hello RIOT-OS!
+2018-08-08 18:02:33,708 - INFO # This is uMorse."
+> 2018-08-08 18:02:33,732 - INFO #  using aligned encoding:
+2018-08-08 18:02:38,684 - INFO # .... . ._.. ._.. ___ / ._. .. ___ _ ___ ...
+2018-08-08 18:02:44,836 - INFO # _ .... .. ... / .. ... / .._ __ ___ ._. ... .
+> 2018-08-08 18:02:45,676 - INFO #  encoded length=52
+> 2018-08-08 18:02:45,700 - INFO #  using compact encoding:
+2018-08-08 18:02:45,749 - INFO # .... . ._.. ._.. ___ / ._. .. ___ _ ___ ...
+2018-08-08 18:02:45,794 - INFO # _ .... .. ... / .. ... / .._ __ ___ ._. ... .
+> 2018-08-08 18:02:52,806 - INFO #  encoded length=25
+2018-08-08 18:02:52,819 - INFO # [SUCCESS]
+

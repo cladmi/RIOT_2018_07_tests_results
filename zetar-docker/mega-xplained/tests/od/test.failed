@@ -1,0 +1,9 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/od test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+Timeout in expect script at "child.expect_exact("od_hex_dump(short_str, sizeof(short_str), OD_WIDTH_DEFAULT)")" (tests/od/tests/01-run.py:14)
+
+Makefile:12: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

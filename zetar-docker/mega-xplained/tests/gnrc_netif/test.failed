@@ -1,0 +1,26 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/gnrc_netif test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 15:14:20,774 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+  File "/home/user/Desktop/RIOT_2018.07-branch/dist/tools/testrunner/testrunner.py", line 55, in run
+    testfunc(child)
+  File "tests/01-run.py", line 16, in testfunc
+    child.expect(r"OK \(\d+ tests\)")
+  File "/usr/lib/python3/dist-packages/pexpect/spawnbase.py", line 321, in expect
+    timeout, searchwindowsize, async)
+  File "/usr/lib/python3/dist-packages/pexpect/spawnbase.py", line 345, in expect_list
+    return exp.expect_loop(timeout)
+  File "/usr/lib/python3/dist-packages/pexpect/expect.py", line 107, in expect_loop
+    return self.timeout(e)
+  File "/usr/lib/python3/dist-packages/pexpect/expect.py", line 70, in timeout
+    raise TIMEOUT(msg)
+Timeout in expect script at "child.expect(r"OK \(\d+ tests\)")" (tests/gnrc_netif/tests/01-run.py:16)
+
+Makefile:39: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

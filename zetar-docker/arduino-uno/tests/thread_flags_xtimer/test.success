@@ -1,0 +1,25 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 18:07:46,362 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:07:47,367 - INFO #  callback
+2018-08-08 18:07:47,374 - INFO # You should see the message '+++ timeout XX +++' printed �2018.07-branch)
+2018-08-08 18:07:47,377 - INFO # START
+2018-08-08 18:07:47,378 - INFO # Test setting thread flags from (x)timer callback
+2018-08-08 18:07:48,045 - INFO # You should see the message '+++ timeout XX +++' printed �
+2018-08-08 18:07:48,135 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-d2ce8f5930f2-2018.07-branch)
+2018-08-08 18:07:48,139 - INFO # START
+2018-08-08 18:07:48,193 - INFO # Test setting thread flags from (x)timer callback
+2018-08-08 18:07:48,258 - INFO # You should see the message '+++ timeout XX +++' printed to the 
+2018-08-08 18:07:48,303 - INFO # screen 5 times, once every 100 milliseconds
+2018-08-08 18:07:48,304 - INFO # 
+2018-08-08 18:07:48,422 - INFO # +++ timeout  1 +++
+2018-08-08 18:07:48,541 - INFO # +++ timeout  2 +++
+2018-08-08 18:07:48,655 - INFO # +++ timeout  3 +++
+2018-08-08 18:07:48,774 - INFO # +++ timeout  4 +++
+2018-08-08 18:07:48,893 - INFO # +++ timeout  5 +++
+2018-08-08 18:07:48,901 - INFO # SUCCESS
+

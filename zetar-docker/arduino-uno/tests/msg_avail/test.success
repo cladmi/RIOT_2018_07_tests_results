@@ -1,0 +1,42 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 17:52:54,472 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 17:52:55,476 - INFO # 2
+2018-08-08 17:52:55,478 - INFO # + add msg: 3
+2018-08-08 17:52:55,479 - INFO # + add msg: 4
+2018-08-08 17:52:55,481 - INFO # + add msg: 5
+2018-08-08 17:52:55,482 - INFO # + add msg: 6
+2018-08-08 17:52:55,484 - INFO # + add msg: �-2018.07-branch)
+2018-08-08 17:52:55,485 - INFO # [START]
+2018-08-08 17:52:55,486 - INFO # + add msg: 0
+2018-08-08 17:52:55,486 - INFO # + add msg: 1
+2018-08-08 17:52:55,487 - INFO # + add msg: 2
+2018-08-08 17:52:55,487 - INFO # + add msg: 3
+2018-08-08 17:52:55,487 - INFO # + add msg: 4
+2018-08-08 17:52:55,488 - INFO # + add msg: 5
+2018-08-08 17:52:55,488 - INFO # + add msg: 6
+2018-08-08 17:52:56,153 - INFO # + add msg: �
+2018-08-08 17:52:56,243 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-04d4ca3e39c9-2018.07-branch)
+2018-08-08 17:52:56,251 - INFO # [START]
+2018-08-08 17:52:56,266 - INFO # + add msg: 0
+2018-08-08 17:52:56,279 - INFO # + add msg: 1
+2018-08-08 17:52:56,292 - INFO # + add msg: 2
+2018-08-08 17:52:56,304 - INFO # + add msg: 3
+2018-08-08 17:52:56,319 - INFO # + add msg: 4
+2018-08-08 17:52:56,333 - INFO # + add msg: 5
+2018-08-08 17:52:56,345 - INFO # + add msg: 6
+2018-08-08 17:52:56,360 - INFO # + add msg: 7
+2018-08-08 17:52:56,374 - INFO # - got msg: 0
+2018-08-08 17:52:56,386 - INFO # - got msg: 1
+2018-08-08 17:52:56,398 - INFO # - got msg: 2
+2018-08-08 17:52:56,415 - INFO # - got msg: 3
+2018-08-08 17:52:56,427 - INFO # - got msg: 4
+2018-08-08 17:52:56,439 - INFO # - got msg: 5
+2018-08-08 17:52:56,455 - INFO # - got msg: 6
+2018-08-08 17:52:56,468 - INFO # - got msg: 7
+2018-08-08 17:52:56,479 - INFO # [SUCCESS]
+

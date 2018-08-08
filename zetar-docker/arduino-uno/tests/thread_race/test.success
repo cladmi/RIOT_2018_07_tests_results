@@ -1,0 +1,17 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 18:09:41,883 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:09:42,889 - INFO # Starting IRQ check thread
+2018-08-08 18:09:42,897 - INFO # Checking for working context swap (to detect false pos�Context swap race condition test application
+2018-08-08 18:09:42,898 - INFO # Starting IRQ check thread
+2018-08-08 18:09:43,654 - INFO # Checking for working context swap (to detect false pos�main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-799f99d3d5d6-2018.07-branch)
+2018-08-08 18:09:43,703 - INFO # Context swap race condition test application
+2018-08-08 18:09:43,728 - INFO # Starting IRQ check thread
+2018-08-08 18:09:43,806 - INFO # Checking for working context swap (to detect false positives)... [Success]
+2018-08-08 18:09:43,879 - INFO # Checking for reset of swaps (to detect false positives)... [Success]
+2018-08-08 18:09:43,932 - INFO # Checking for context swap race condition... [Success]
+

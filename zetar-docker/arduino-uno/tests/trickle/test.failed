@@ -1,0 +1,27 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/trickle test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 18:09:59,078 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:10:00,084 - INFO # 48, prev_now = 8912BLE!
+2018-08-08 18:10:00,091 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-c13940fa3a8c-2018.07-branch)
+2018-08-08 18:10:00,092 - INFO # [START]
+2018-08-08 18:10:00,762 - INFO # now = 147348, prev_now = 8912�
+2018-08-08 18:10:00,787 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 18:10:00,877 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-c13940fa3a8c-2018.07-branch)
+2018-08-08 18:10:00,885 - INFO # [START]
+2018-08-08 18:10:00,979 - INFO # now = 147348, prev_now = 89120, diff = 58228
+2018-08-08 18:10:01,110 - INFO # now = 273256, prev_now = 147348, diff = 125908
+2018-08-08 18:10:01,430 - INFO # now = 594244, prev_now = 273256, diff = 320988
+2018-08-08 18:10:01,893 - INFO # now = 1056232, prev_now = 594244, diff = 461988
+2018-08-08 18:10:02,863 - INFO # now = 2025260, prev_now = 1056232, diff = 969028
+2018-08-08 18:10:02,880 - INFO # [TRICKLE_RESET]
+Timeout in expect script at "child.expect(u"now = \d+, prev_now = \d+, diff = \d+")" (tests/trickle/tests/01-run.py:22)
+
+Makefile:10: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

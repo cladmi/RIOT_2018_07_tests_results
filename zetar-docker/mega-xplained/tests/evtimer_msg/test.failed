@@ -1,0 +1,9 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/evtimer_msg test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+Timeout in expect script at "child.expect(r"Testing generic evtimer \(start time = (\d+) ms\)")" (tests/evtimer_msg/tests/01-run.py:17)
+
+Makefile:12: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

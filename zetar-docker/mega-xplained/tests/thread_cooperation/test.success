@@ -1,0 +1,59 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+./tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 15:45:31,350 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 15:45:32,354 - INFO # 
+2018-08-08 15:45:32,360 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-8b892 arg: 4
+2018-08-08 15:45:32,362 - INFO # MAIN: msg to T-6
+2018-08-08 15:45:32,363 - INFO # T-06: alive
+2018-08-08 15:45:32,365 - INFO # T-06: got arg 4
+2018-08-08 15:45:32,367 - INFO # MAIN: create thread, arg: 5
+2018-08-08 15:45:32,369 - INFO # MAIN: msg to T-7
+2018-08-08 15:45:32,370 - INFO # T-07: alive
+2018-08-08 15:45:32,370 - INFO # T-07: got arg 5
+2018-08-08 15:45:32,371 - INFO # MAIN: create thread, arg: 6
+2018-08-08 15:45:32,371 - INFO # MAIN: msg to T-8
+2018-08-08 15:45:32,372 - INFO # T-08: alive
+2018-08-08 15:45:32,372 - INFO # T-08: got arg 6
+2018-08-08 15:45:32,373 - INFO # MAIN: create thread, arg: 7
+2018-08-08 15:45:32,373 - INFO # MAIN: msg to T-9
+2018-08-08 15:45:32,374 - INFO # T-09: alive
+2018-08-08 15:45:32,374 - INFO # T-09: got arg 7
+2018-08-08 15:45:32,375 - INFO # MAIN: create thread, arg: 8
+2018-08-08 15:45:32,375 - INFO # MAIN: msg to T-10
+2018-08-08 15:45:32,376 - INFO # T-10: alive
+2018-08-08 15:45:32,376 - INFO # T-10: got arg 8
+2018-08-08 15:45:32,377 - INFO # MAIN: create thread, arg: 9
+2018-08-08 15:45:32,378 - INFO # MAIN: msg to T-11
+2018-08-08 15:45:32,378 - INFO # T-11: alive
+2018-08-08 15:45:32,378 - INFO # T-11: got arg 9
+2018-08-08 15:45:32,379 - INFO # MAIN: create thread, arg: 10
+2018-08-08 15:45:32,380 - INFO # MAIN: msg to T-12
+2018-08-08 15:45:32,380 - INFO # T-12: alive
+2018-08-08 15:45:32,381 - INFO # T-12: got arg 10
+2018-08-08 15:45:32,381 - INFO # MAIN: create thread, arg: 11
+2018-08-08 15:45:32,382 - INFO # MAIN: msg to T-13
+2018-08-08 15:45:32,382 - INFO # T-13: alive
+2018-08-08 15:45:32,383 - INFO # T-13: got arg 11
+2018-08-08 15:45:32,383 - INFO # MAIN: create thread, arg: 12
+2018-08-08 15:45:32,384 - INFO # MAIN: msg to T-14
+2018-08-08 15:45:32,384 - INFO # T-14: alive
+2018-08-08 15:45:32,385 - INFO # T-14: got arg 12
+2018-08-08 15:45:32,385 - INFO # MAIN: reply from T-3
+2018-08-08 15:45:32,386 - INFO # MAIN: reply from T-4
+2018-08-08 15:45:32,387 - INFO # MAIN: reply from T-5
+2018-08-08 15:45:32,387 - INFO # MAIN: reply from T-6
+2018-08-08 15:45:32,388 - INFO # MAIN: reply from T-7
+2018-08-08 15:45:32,388 - INFO # MAIN: reply from T-8
+2018-08-08 15:45:32,389 - INFO # MAIN: reply from T-9
+2018-08-08 15:45:32,389 - INFO # MAIN: reply from T-10
+2018-08-08 15:45:32,390 - INFO # MAIN: reply from T-11
+2018-08-08 15:45:32,391 - INFO # MAIN: reply from T-12
+2018-08-08 15:45:32,391 - INFO # MAIN: reply from T-13
+2018-08-08 15:45:32,392 - INFO # MAIN: reply from T-14
+2018-08-08 15:45:32,392 - INFO # MAIN: 12! = 479001600
+2018-08-08 15:45:32,393 - INFO # [SUCCESS]
+

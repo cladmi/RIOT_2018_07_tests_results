@@ -1,0 +1,18 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/bitarithm_timings test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 18:24:59,642 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:25:01,119 - INFO # 
+2018-08-08 18:25:01,200 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-6ceaba679758-2018.07-branch)
+2018-08-08 18:25:01,215 - INFO # Start.
+2018-08-08 18:25:06,254 - INFO # + bitarithm_msb: 103376 iterations per second
+Timeout in expect script at "child.expect('\+ bitarithm_lsb: \d+ iterations per second')" (tests/bitarithm_timings/tests/01-run.py:16)
+
+Makefile:10: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

@@ -1,0 +1,22 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 17:32:14,250 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 17:32:15,934 - INFO # 
+2018-08-08 17:32:16,024 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-f8c172ee216e-2018.07-branch)
+2018-08-08 17:32:16,044 - INFO # Testing Bloom filter.
+2018-08-08 17:32:16,045 - INFO # 
+2018-08-08 17:32:16,061 - INFO # m: 4096 k: 8
+2018-08-08 17:32:16,062 - INFO # 
+2018-08-08 17:32:22,671 - INFO # adding 512 elements took 6583ms
+2018-08-08 17:33:03,633 - INFO # checking 10000 elements took 40945ms
+2018-08-08 17:33:03,634 - INFO # 
+2018-08-08 17:33:03,671 - INFO # 267 elements probably in the filter.
+2018-08-08 17:33:03,707 - INFO # 9733 elements not in the filter.
+2018-08-08 17:33:03,731 - INFO # ? false positive rate.
+2018-08-08 17:33:03,735 - INFO # 
+2018-08-08 17:33:03,740 - INFO # All done!
+

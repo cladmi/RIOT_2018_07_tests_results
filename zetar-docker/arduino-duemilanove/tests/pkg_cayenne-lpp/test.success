@@ -1,0 +1,23 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 18:53:34,340 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:53:35,816 - INFO # 
+2018-08-08 18:53:35,897 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-5e74368b6a4c-2018.07-branch)
+2018-08-08 18:53:35,929 - INFO # Cayenne LPP test application
+2018-08-08 18:53:35,929 - INFO # 
+2018-08-08 18:53:35,944 - INFO # Test 1:
+2018-08-08 18:53:35,945 - INFO # -------
+2018-08-08 18:53:35,992 - INFO # Result: 03670110056700FF SUCCESS
+2018-08-08 18:53:35,992 - INFO # 
+2018-08-08 18:53:35,993 - INFO # Test 2:
+2018-08-08 18:53:36,008 - INFO # -------
+2018-08-08 18:53:36,041 - INFO # Result: 0167FFD7067104D2FB2E0000 SUCCESS
+2018-08-08 18:53:36,041 - INFO # 
+2018-08-08 18:53:36,056 - INFO # Test 3:
+2018-08-08 18:53:36,057 - INFO # -------
+2018-08-08 18:53:36,104 - INFO # Result: 018806765EF2960A0003E8 SUCCESS
+

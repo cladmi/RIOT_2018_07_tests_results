@@ -1,0 +1,16 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+./tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 18:27:51,314 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:27:52,789 - INFO # 
+2018-08-08 18:27:52,870 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-38168bfaf278-2018.07-branch)
+2018-08-08 18:27:52,902 - INFO # cb_mux benchmark application
+2018-08-08 18:27:52,949 - INFO # Populating cb_mux list with 20 items
+2018-08-08 18:27:52,981 - INFO # Finding the last list entry
+2018-08-08 18:27:52,997 - INFO # List walk time: 40 us
+2018-08-08 18:27:53,045 - INFO # Walk time less than threshold of 200 us
+2018-08-08 18:27:53,046 - INFO # [SUCCESS]
+

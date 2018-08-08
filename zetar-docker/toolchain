@@ -1,0 +1,25 @@
+Installed compiler toolchains 
+-----------------------------
+             native gcc: gcc (Ubuntu 7.3.0-16ubuntu3) 7.3.0
+      arm-none-eabi-gcc: missing
+                avr-gcc: missing
+       mips-mti-elf-gcc: missing
+             msp430-gcc: missing
+   riscv-none-embed-gcc: missing
+                  clang: missing
+
+Installed compiler libs
+-----------------------
+   arm-none-eabi-newlib: missing
+    mips-mti-elf-newlib: missing
+riscv-none-embed-newlib: missing
+               avr-libc: missing (missing)
+
+Installed development tools
+---------------------------
+                  cmake: missing
+               cppcheck: missing
+                doxygen: missing
+                 flake8: missing
+                    git: git version 2.17.1
+             coccinelle: missing

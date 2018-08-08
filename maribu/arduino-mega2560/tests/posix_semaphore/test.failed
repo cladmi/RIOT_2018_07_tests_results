@@ -1,0 +1,123 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT/tests/posix_semaphore flash-only test
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/posix_semaphore/bin/arduino-mega2560/tests_posix_semaphore.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/posix_semaphore/bin/arduino-mega2560/tests_posix_semaphore.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/posix_semaphore/bin/arduino-mega2560/tests_posix_semaphore.hex auto detected as Intel Hex
+avrdude: writing flash (16252 bytes):
+
+Writing | ################################################## | 100% 2.62s
+
+avrdude: 16252 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/posix_semaphore/bin/arduino-mega2560/tests_posix_semaphore.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/posix_semaphore/bin/arduino-mega2560/tests_posix_semaphore.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/posix_semaphore/bin/arduino-mega2560/tests_posix_semaphore.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/posix_semaphore/bin/arduino-mega2560/tests_posix_semaphore.hex contains 16252 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 2.10s
+
+avrdude: verifying ...
+avrdude: 16252 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:19:23,985 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:19:24,989 - INFO # eated
+2018-08-08 16:19:24,990 - INFO # first: sem_getvalue
+2018-08-08 16:19:24,992 - INFO # first: sem_getvalue != 0
+2018-08-08 16:19:24,993 - INFO # first: do yield
+2018-08-08 16:19:24,994 - INFO # second: sem_trywait
+2018-08-08 16:19:24,994 - INFO # second: sem_trywait fai�
+2018-08-08 16:19:24,995 - INFO # first: thread created
+2018-08-08 16:19:24,995 - INFO # first: sem_getvalue
+2018-08-08 16:19:24,995 - INFO # first: sem_getvalue != 0
+2018-08-08 16:19:24,996 - INFO # first: do yield
+2018-08-08 16:19:24,996 - INFO # second: sem_trywait
+2018-08-08 16:19:24,997 - INFO # second: sem_trywait fai�
+2018-08-08 16:19:24,997 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:19:24,998 - INFO # ######################### TEST1:
+2018-08-08 16:19:24,998 - INFO # first: sem_init
+2018-08-08 16:19:25,016 - INFO # first: thread create
+2018-08-08 16:19:25,037 - INFO # first: thread created
+2018-08-08 16:19:25,057 - INFO # first: sem_getvalue
+2018-08-08 16:19:25,086 - INFO # first: sem_getvalue != 0
+2018-08-08 16:19:25,102 - INFO # first: do yield
+2018-08-08 16:19:25,122 - INFO # second: sem_trywait
+2018-08-08 16:19:25,151 - INFO # second: sem_trywait failed
+2018-08-08 16:19:25,188 - INFO # second: sem_trywait done with == 0
+2018-08-08 16:19:25,209 - INFO # second: wait for post
+2018-08-08 16:19:25,229 - INFO # first: done yield
+2018-08-08 16:19:25,249 - INFO # first: sem_trywait
+2018-08-08 16:19:25,274 - INFO # first: sem_trywait FAILED
+2018-08-08 16:19:25,299 - INFO # first: sem_trywait done
+2018-08-08 16:19:25,315 - INFO # first: sem_post
+2018-08-08 16:19:25,340 - INFO # second: sem was posted
+2018-08-08 16:19:25,352 - INFO # second: end
+2018-08-08 16:19:25,376 - INFO # first: sem_post done
+2018-08-08 16:19:25,397 - INFO # first: sem_destroy
+2018-08-08 16:19:25,405 - INFO # first: end
+2018-08-08 16:19:25,442 - INFO # ######################### TEST2:
+2018-08-08 16:19:25,458 - INFO # first: sem_init
+2018-08-08 16:19:25,483 - INFO # first: thread create: 5
+2018-08-08 16:19:25,524 - INFO # first: thread created: priority 5 (1/5)
+2018-08-08 16:19:25,549 - INFO # first: thread create: 4
+2018-08-08 16:19:25,590 - INFO # first: thread created: priority 4 (2/5)
+2018-08-08 16:19:25,614 - INFO # first: thread create: 3
+2018-08-08 16:19:25,655 - INFO # first: thread created: priority 3 (3/5)
+2018-08-08 16:19:25,684 - INFO # first: thread create: 2
+2018-08-08 16:19:25,725 - INFO # first: thread created: priority 2 (4/5)
+2018-08-08 16:19:25,749 - INFO # first: thread create: 1
+2018-08-08 16:19:25,790 - INFO # first: thread created: priority 1 (5/5)
+2018-08-08 16:19:25,835 - INFO # ------------------------------------------
+2018-08-08 16:19:25,847 - INFO # post no. 0
+2018-08-08 16:19:25,876 - INFO # Thread 'priority 1' woke up.
+2018-08-08 16:19:25,897 - INFO # Back in main thread.
+2018-08-08 16:19:25,909 - INFO # post no. 1
+2018-08-08 16:19:25,942 - INFO # Thread 'priority 2' woke up.
+2018-08-08 16:19:25,962 - INFO # Back in main thread.
+2018-08-08 16:19:25,975 - INFO # post no. 2
+2018-08-08 16:19:26,003 - INFO # Thread 'priority 3' woke up.
+2018-08-08 16:19:26,024 - INFO # Back in main thread.
+2018-08-08 16:19:26,036 - INFO # post no. 3
+2018-08-08 16:19:26,069 - INFO # Thread 'priority 4' woke up.
+2018-08-08 16:19:26,089 - INFO # Back in main thread.
+2018-08-08 16:19:26,102 - INFO # post no. 4
+2018-08-08 16:19:26,130 - INFO # Thread 'priority 5' woke up.
+2018-08-08 16:19:26,151 - INFO # Back in main thread.
+2018-08-08 16:19:26,188 - INFO # ######################### TEST3:
+2018-08-08 16:19:26,208 - INFO # first: sem_init s1
+2018-08-08 16:19:26,225 - INFO # first: sem_init s2
+2018-08-08 16:19:26,249 - INFO # first: create thread 1
+2018-08-08 16:19:26,274 - INFO # first: create thread 2
+2018-08-08 16:19:26,318 - INFO # ------------------------------------------
+2018-08-08 16:19:26,327 - INFO # post s1
+2018-08-08 16:19:26,368 - INFO # Thread 1 woke up after waiting for s1.
+2018-08-08 16:19:26,376 - INFO # post s2
+2018-08-08 16:19:26,417 - INFO # Thread 2 woke up after waiting for s2.
+2018-08-08 16:19:26,425 - INFO # post s2
+2018-08-08 16:19:26,466 - INFO # Thread 1 woke up after waiting for s2.
+2018-08-08 16:19:26,474 - INFO # post s1
+2018-08-08 16:19:26,515 - INFO # Thread 2 woke up after waiting for s1.
+2018-08-08 16:19:26,548 - INFO # ######################### TEST4:
+2018-08-08 16:19:26,568 - INFO # first: sem_init s1
+2018-08-08 16:19:26,593 - INFO # first: wait 1 sec for s1
+2018-08-08 16:19:30,611 - INFO # first: timed out
+2018-08-08 16:19:30,661 - INFO # first: waited too long 3999744 usec => FAILED
+2018-08-08 16:19:30,690 - INFO # ######################### DONE
+Timeout in expect script at "term.expect(r"first: waited 1\d{6} usec")" (tests/posix_semaphore/tests/01-run.py:89)
+
+make: *** [Makefile:18: test] Error 1
+
+Return value: 2

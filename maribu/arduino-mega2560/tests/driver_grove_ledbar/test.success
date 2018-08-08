@@ -1,0 +1,52 @@
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/driver_grove_ledbar/bin/arduino-mega2560/tests_driver_grove_ledbar.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/driver_grove_ledbar/bin/arduino-mega2560/tests_driver_grove_ledbar.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/driver_grove_ledbar/bin/arduino-mega2560/tests_driver_grove_ledbar.hex auto detected as Intel Hex
+avrdude: writing flash (11276 bytes):
+
+Writing | ################################################## | 100% 1.84s
+
+avrdude: 11276 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/driver_grove_ledbar/bin/arduino-mega2560/tests_driver_grove_ledbar.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/driver_grove_ledbar/bin/arduino-mega2560/tests_driver_grove_ledbar.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/driver_grove_ledbar/bin/arduino-mega2560/tests_driver_grove_ledbar.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/driver_grove_ledbar/bin/arduino-mega2560/tests_driver_grove_ledbar.hex contains 11276 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 1.48s
+
+avrdude: verifying ...
+avrdude: 11276 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 15:51:35,173 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 15:51:36,178 - INFO # n(): This is RIOT! (Version: buildtest)
+2018-08-08 15:51:36,179 - INFO # [START]
+2018-08-08 15:51:36,181 - INFO #  stepwise increase LED bar to 100% and then decrease to 0%.
+2018-08-08 15:51:36,181 - INFO # 
+2018-08-08 15:51:36,181 - INFO #  >>> round 1
+2018-08-08 15:51:36,181 - INFO # 
+2018-08-08 15:51:36,182 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 15:51:36,182 - INFO # [START]
+2018-08-08 15:51:36,212 - INFO #  stepwise increase LED bar to 100% and then decrease to 0%.
+2018-08-08 15:51:36,212 - INFO # 
+2018-08-08 15:51:36,224 - INFO #  >>> round 1
+2018-08-08 15:51:41,889 - INFO #  >>> round 2
+2018-08-08 15:51:47,554 - INFO #  >>> round 3
+2018-08-08 15:51:53,215 - INFO #  >>> round 4
+2018-08-08 15:51:58,881 - INFO #  >>> round 5
+2018-08-08 15:52:04,541 - INFO # [SUCCESS]
+

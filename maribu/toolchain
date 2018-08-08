@@ -1,0 +1,25 @@
+Installed compiler toolchains 
+-----------------------------
+             native gcc: gcc (Alpine 6.4.0) 6.4.0
+      arm-none-eabi-gcc: arm-none-eabi-gcc (GCC) 6.3.1 20170620
+                avr-gcc: avr-gcc (GCC) 6.4.0
+       mips-mti-elf-gcc: missing
+             msp430-gcc: missing
+   riscv-none-embed-gcc: missing
+                  clang: Alpine clang version 5.0.1 (tags/RELEASE_501/final) (based on LLVM 5.0.1)
+
+Installed compiler libs
+-----------------------
+   arm-none-eabi-newlib: "2.4.0"
+    mips-mti-elf-newlib: missing
+riscv-none-embed-newlib: missing
+               avr-libc: "2.0.0" ("20150208")
+
+Installed development tools
+---------------------------
+                  cmake: cmake version 3.12.0
+               cppcheck: Cppcheck 1.84
+                doxygen: 1.8.14
+                 flake8: missing
+                    git: git version 2.18.0
+             coccinelle: missing

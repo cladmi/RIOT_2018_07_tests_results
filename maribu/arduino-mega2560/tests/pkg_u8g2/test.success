@@ -1,0 +1,150 @@
+make[1]: Nothing to be done for 'Makefile.include'.
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/pkg_u8g2/bin/arduino-mega2560/tests_pkg_u8g2.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/pkg_u8g2/bin/arduino-mega2560/tests_pkg_u8g2.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/pkg_u8g2/bin/arduino-mega2560/tests_pkg_u8g2.hex auto detected as Intel Hex
+avrdude: writing flash (18522 bytes):
+
+Writing | ################################################## | 100% 2.99s
+
+avrdude: 18522 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/pkg_u8g2/bin/arduino-mega2560/tests_pkg_u8g2.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/pkg_u8g2/bin/arduino-mega2560/tests_pkg_u8g2.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/pkg_u8g2/bin/arduino-mega2560/tests_pkg_u8g2.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/pkg_u8g2/bin/arduino-mega2560/tests_pkg_u8g2.hex contains 18522 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 2.39s
+
+avrdude: verifying ...
+avrdude: 18522 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+make[2]: Nothing to be done for 'Makefile.include'.
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:17:57,386 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:17:58,391 - INFO #                              |
+2018-08-08 16:17:58,393 - INFO # 02|            alizing to stdout.
+2018-08-08 16:17:58,394 - INFO # Initializing display.
+2018-08-08 16:17:58,395 - INFO # Drawing on screen.
+2018-08-08 16:17:58,396 - INFO # 00|                                                |
+2018-08-08 16:17:58,396 - INFO # 02|            �
+2018-08-08 16:17:58,397 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:17:58,397 - INFO # Initializing to stdout.
+2018-08-08 16:17:58,398 - INFO # Initializing display.
+2018-08-08 16:17:58,412 - INFO # Drawing on screen.
+2018-08-08 16:17:58,527 - INFO # 00|                                                |
+2018-08-08 16:17:58,580 - INFO # 02|                                                |
+2018-08-08 16:17:58,637 - INFO # 04|                                                |
+2018-08-08 16:17:58,691 - INFO # 06|                                                |
+2018-08-08 16:17:58,744 - INFO # 08|                                                |
+2018-08-08 16:17:58,834 - INFO # 10|      █████▐▋  ▐▋▐▋ ▟██▖                        |
+2018-08-08 16:17:58,912 - INFO # 12|        █  ▐▋  ▐▋▐▋▐▛ ▝█                        |
+2018-08-08 16:17:58,994 - INFO # 14|        █  ▐████▋▐▋▝█▙▄                         |
+2018-08-08 16:17:59,068 - INFO # 16|        █  ▐▋  ▐▋▐▋  ▀▜▙                        |
+2018-08-08 16:17:59,145 - INFO # 18|        █  ▐▋  ▐▋▐▋▐▙ ▗█                        |
+2018-08-08 16:17:59,223 - INFO # 20|        █  ▐▋  ▐▋▐▋ ▜██▘                        |
+2018-08-08 16:17:59,280 - INFO # 22|                                                |
+2018-08-08 16:17:59,334 - INFO # 24|                                                |
+2018-08-08 16:17:59,391 - INFO # 26|                                                |
+2018-08-08 16:17:59,444 - INFO # 28|                                                |
+2018-08-08 16:17:59,501 - INFO # 30|                                                |
+2018-08-08 16:17:59,555 - INFO # 32|                                                |
+2018-08-08 16:17:59,608 - INFO # 34|                                                |
+2018-08-08 16:17:59,665 - INFO # 36|                                                |
+2018-08-08 16:17:59,719 - INFO # 38|                                                |
+2018-08-08 16:17:59,776 - INFO # 40|                                                |
+2018-08-08 16:17:59,830 - INFO # 42|                                                |
+2018-08-08 16:17:59,887 - INFO # 44|                                                |
+2018-08-08 16:17:59,940 - INFO # 46|                                                |
+2018-08-08 16:17:59,997 - INFO # 48|                                                |
+2018-08-08 16:18:00,051 - INFO # 50|                                                |
+2018-08-08 16:18:00,107 - INFO # 52|                                                |
+2018-08-08 16:18:00,161 - INFO # 54|                                                |
+2018-08-08 16:18:00,218 - INFO # 56|                                                |
+2018-08-08 16:18:00,271 - INFO # 58|                                                |
+2018-08-08 16:18:00,324 - INFO # 60|                                                |
+2018-08-08 16:18:00,382 - INFO # 62|                                                |
+2018-08-08 16:18:00,435 - INFO # 64|                                                |
+2018-08-08 16:18:00,493 - INFO # 66|                                                |
+2018-08-08 16:18:01,599 - INFO # 00|                                                |
+2018-08-08 16:18:01,656 - INFO # 02|                                                |
+2018-08-08 16:18:01,710 - INFO # 04|                                                |
+2018-08-08 16:18:01,767 - INFO # 06|                                                |
+2018-08-08 16:18:01,820 - INFO # 08|                                                |
+2018-08-08 16:18:01,890 - INFO # 10|            ▐▋ ▟██▖                             |
+2018-08-08 16:18:01,955 - INFO # 12|            ▐▋▐▛ ▝█                             |
+2018-08-08 16:18:02,025 - INFO # 14|            ▐▋▝█▙▄                              |
+2018-08-08 16:18:02,090 - INFO # 16|            ▐▋  ▀▜▙                             |
+2018-08-08 16:18:02,156 - INFO # 18|            ▐▋▐▙ ▗█                             |
+2018-08-08 16:18:02,226 - INFO # 20|            ▐▋ ▜██▘                             |
+2018-08-08 16:18:02,279 - INFO # 22|                                                |
+2018-08-08 16:18:02,332 - INFO # 24|                                                |
+2018-08-08 16:18:02,390 - INFO # 26|                                                |
+2018-08-08 16:18:02,443 - INFO # 28|                                                |
+2018-08-08 16:18:02,500 - INFO # 30|                                                |
+2018-08-08 16:18:02,554 - INFO # 32|                                                |
+2018-08-08 16:18:02,611 - INFO # 34|                                                |
+2018-08-08 16:18:02,664 - INFO # 36|                                                |
+2018-08-08 16:18:02,721 - INFO # 38|                                                |
+2018-08-08 16:18:02,774 - INFO # 40|                                                |
+2018-08-08 16:18:02,832 - INFO # 42|                                                |
+2018-08-08 16:18:02,885 - INFO # 44|                                                |
+2018-08-08 16:18:02,943 - INFO # 46|                                                |
+2018-08-08 16:18:02,996 - INFO # 48|                                                |
+2018-08-08 16:18:03,049 - INFO # 50|                                                |
+2018-08-08 16:18:03,106 - INFO # 52|                                                |
+2018-08-08 16:18:03,160 - INFO # 54|                                                |
+2018-08-08 16:18:03,217 - INFO # 56|                                                |
+2018-08-08 16:18:03,270 - INFO # 58|                                                |
+2018-08-08 16:18:03,328 - INFO # 60|                                                |
+2018-08-08 16:18:03,381 - INFO # 62|                                                |
+2018-08-08 16:18:03,438 - INFO # 64|                                                |
+2018-08-08 16:18:03,491 - INFO # 66|                                                |
+2018-08-08 16:18:04,634 - INFO # 00|           ▄▄▖                                  |
+2018-08-08 16:18:04,700 - INFO # 02|         ▗████▋                                 |
+2018-08-08 16:18:04,770 - INFO # 04|        ▗█▛▘ ▜█▖                                |
+2018-08-08 16:18:04,835 - INFO # 06|        ▐█    █▋                                |
+2018-08-08 16:18:04,897 - INFO # 08|        ██    █▋                                |
+2018-08-08 16:18:04,962 - INFO # 10|        ██   ▟█▘                                |
+2018-08-08 16:18:05,044 - INFO # 12|        ▜█ ▄▟█▛  ▄   ▄▄  ▄▄▄▄                   |
+2018-08-08 16:18:05,142 - INFO # 14|    ▗▄█▖▐█▝██▀   █▋ ▟▛▜▙ ▀▜▛▀                   |
+2018-08-08 16:18:05,224 - INFO # 16|   ▗██▀ ▐█ ▝     █▋ █▋ █  ▐▋                    |
+2018-08-08 16:18:05,306 - INFO # 18|   ▟▛   ▐█  ▄    █▋ █▋ █  ▐▋                    |
+2018-08-08 16:18:05,388 - INFO # 20|   █▋   ▐█ ▝█▋   █▋ █▋ █  ▐▋                    |
+2018-08-08 16:18:05,474 - INFO # 22|   █▋   ▐█  ▜█   █▋ █▋ █  ▐▋                    |
+2018-08-08 16:18:05,560 - INFO # 24|   █▙  ▗█▛  ▝█▙  █▋ █▋▗█  ▐▋                    |
+2018-08-08 16:18:05,650 - INFO # 26|   ▐█▙▄██▘   ▜█  █▘ ▝██▘  ▐▋                    |
+2018-08-08 16:18:05,716 - INFO # 28|    ▝▜█▀▘                                       |
+2018-08-08 16:18:05,773 - INFO # 30|                                                |
+2018-08-08 16:18:05,826 - INFO # 32|                                                |
+2018-08-08 16:18:05,883 - INFO # 34|                                                |
+2018-08-08 16:18:05,937 - INFO # 36|                                                |
+2018-08-08 16:18:05,990 - INFO # 38|                                                |
+2018-08-08 16:18:06,048 - INFO # 40|                                                |
+2018-08-08 16:18:06,101 - INFO # 42|                                                |
+2018-08-08 16:18:06,158 - INFO # 44|                                                |
+2018-08-08 16:18:06,212 - INFO # 46|                                                |
+2018-08-08 16:18:06,269 - INFO # 48|                                                |
+2018-08-08 16:18:06,322 - INFO # 50|                                                |
+2018-08-08 16:18:06,379 - INFO # 52|                                                |
+2018-08-08 16:18:06,433 - INFO # 54|                                                |
+2018-08-08 16:18:06,490 - INFO # 56|                                                |
+2018-08-08 16:18:06,543 - INFO # 58|                                                |
+2018-08-08 16:18:06,600 - INFO # 60|                                                |
+2018-08-08 16:18:06,654 - INFO # 62|                                                |
+2018-08-08 16:18:06,707 - INFO # 64|                                                |
+2018-08-08 16:18:06,764 - INFO # 66|                                                |
+

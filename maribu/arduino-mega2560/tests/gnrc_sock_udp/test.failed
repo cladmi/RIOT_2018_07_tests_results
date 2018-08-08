@@ -1,0 +1,189 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT/tests/gnrc_sock_udp flash-only test
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/gnrc_sock_udp/bin/arduino-mega2560/tests_gnrc_sock_udp.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/gnrc_sock_udp/bin/arduino-mega2560/tests_gnrc_sock_udp.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/gnrc_sock_udp/bin/arduino-mega2560/tests_gnrc_sock_udp.hex auto detected as Intel Hex
+avrdude: writing flash (51092 bytes):
+
+Writing | ################################################## | 100% 8.19s
+
+avrdude: 51092 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/gnrc_sock_udp/bin/arduino-mega2560/tests_gnrc_sock_udp.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/gnrc_sock_udp/bin/arduino-mega2560/tests_gnrc_sock_udp.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/gnrc_sock_udp/bin/arduino-mega2560/tests_gnrc_sock_udp.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/gnrc_sock_udp/bin/arduino-mega2560/tests_gnrc_sock_udp.hex contains 51092 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 6.55s
+
+avrdude: verifying ...
+avrdude: 51092 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+./tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:01:50,918 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:01:51,922 - INFO # ck_udp_create__EAFNOSUPPORT()
+2018-08-08 16:01:51,925 - INFO # Calling test_sock_udp_create__EINVAL_addr()
+2018-08-08 16:01:51,927 - INFO # Calling test_sock_create__EADDRINUSE()
+2018-08-08 16:01:51,928 - INFO # Calling test_sock_udp_create__EAFNOSUPPORT()
+2018-08-08 16:01:51,928 - INFO # Calling test_sock_udp_create__EINVAL_addr()
+2018-08-08 16:01:51,929 - INFO # Calling test_sock_
+2018-08-08 16:01:51,929 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 16:01:51,930 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:01:51,951 - INFO # Calling test_sock_udp_create__EADDRINUSE()
+2018-08-08 16:01:51,996 - INFO # Calling test_sock_udp_create__EAFNOSUPPORT()
+2018-08-08 16:01:52,042 - INFO # Calling test_sock_udp_create__EINVAL_addr()
+2018-08-08 16:01:52,091 - INFO # Calling test_sock_udp_create__EINVAL_netif()
+2018-08-08 16:01:52,136 - INFO # Calling test_sock_udp_create__no_endpoints()
+2018-08-08 16:01:52,181 - INFO # Calling test_sock_udp_create__only_local()
+2018-08-08 16:01:52,230 - INFO # Calling test_sock_udp_create__only_local_port0()
+2018-08-08 16:01:52,287 - INFO # Calling test_sock_udp_create__only_local_reuse_ep()
+2018-08-08 16:01:52,332 - INFO # Calling test_sock_udp_create__only_remote()
+2018-08-08 16:01:52,369 - INFO # Calling test_sock_udp_create__full()
+2018-08-08 16:01:52,414 - INFO # Calling test_sock_udp_recv__EADDRNOTAVAIL()
+2018-08-08 16:01:52,455 - INFO # Calling test_sock_udp_recv__EAGAIN()
+2018-08-08 16:01:52,492 - INFO # Calling test_sock_udp_recv__ENOBUFS()
+2018-08-08 16:01:52,533 - INFO # Calling test_sock_udp_recv__EPROTO()
+2018-08-08 16:01:52,574 - INFO # Calling test_sock_udp_recv__ETIMEDOUT()
+2018-08-08 16:01:52,603 - INFO #  * Calling sock_udp_recv()
+2018-08-08 16:01:53,487 - INFO # 
+2018-08-08 16:01:53,516 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 16:01:53,561 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:01:53,606 - INFO # Calling test_sock_udp_create__EADDRINUSE()
+2018-08-08 16:01:53,655 - INFO # Calling test_sock_udp_create__EAFNOSUPPORT()
+2018-08-08 16:01:53,700 - INFO # Calling test_sock_udp_create__EINVAL_addr()
+2018-08-08 16:01:53,745 - INFO # Calling test_sock_udp_create__EINVAL_netif()
+2018-08-08 16:01:53,794 - INFO # Calling test_sock_udp_create__no_endpoints()
+2018-08-08 16:01:53,839 - INFO # Calling test_sock_udp_create__only_local()
+2018-08-08 16:01:53,889 - INFO # Calling test_sock_udp_create__only_local_port0()
+2018-08-08 16:01:53,942 - INFO # Calling test_sock_udp_create__only_local_reuse_ep()
+2018-08-08 16:01:53,987 - INFO # Calling test_sock_udp_create__only_remote()
+2018-08-08 16:01:54,028 - INFO # Calling test_sock_udp_create__full()
+2018-08-08 16:01:54,073 - INFO # Calling test_sock_udp_recv__EADDRNOTAVAIL()
+2018-08-08 16:01:54,110 - INFO # Calling test_sock_udp_recv__EAGAIN()
+2018-08-08 16:01:54,151 - INFO # Calling test_sock_udp_recv__ENOBUFS()
+2018-08-08 16:01:54,188 - INFO # Calling test_sock_udp_recv__EPROTO()
+2018-08-08 16:01:54,233 - INFO # Calling test_sock_udp_recv__ETIMEDOUT()
+2018-08-08 16:01:54,258 - INFO #  * Calling sock_udp_recv()
+2018-08-08 16:01:55,146 - INFO # 
+2018-08-08 16:01:55,175 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 16:01:55,220 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:01:55,265 - INFO # Calling test_sock_udp_create__EADDRINUSE()
+2018-08-08 16:01:55,310 - INFO # Calling test_sock_udp_create__EAFNOSUPPORT()
+2018-08-08 16:01:55,355 - INFO # Calling test_sock_udp_create__EINVAL_addr()
+2018-08-08 16:01:55,405 - INFO # Calling test_sock_udp_create__EINVAL_netif()
+2018-08-08 16:01:55,449 - INFO # Calling test_sock_udp_create__no_endpoints()
+2018-08-08 16:01:55,495 - INFO # Calling test_sock_udp_create__only_local()
+2018-08-08 16:01:55,548 - INFO # Calling test_sock_udp_create__only_local_port0()
+2018-08-08 16:01:55,601 - INFO # Calling test_sock_udp_create__only_local_reuse_ep()
+2018-08-08 16:01:55,646 - INFO # Calling test_sock_udp_create__only_remote()
+2018-08-08 16:01:55,683 - INFO # Calling test_sock_udp_create__full()
+2018-08-08 16:01:55,732 - INFO # Calling test_sock_udp_recv__EADDRNOTAVAIL()
+2018-08-08 16:01:55,769 - INFO # Calling test_sock_udp_recv__EAGAIN()
+2018-08-08 16:01:55,810 - INFO # Calling test_sock_udp_recv__ENOBUFS()
+2018-08-08 16:01:55,847 - INFO # Calling test_sock_udp_recv__EPROTO()
+2018-08-08 16:01:55,888 - INFO # Calling test_sock_udp_recv__ETIMEDOUT()
+2018-08-08 16:01:55,917 - INFO #  * Calling sock_udp_recv()
+2018-08-08 16:01:56,805 - INFO # 
+2018-08-08 16:01:56,834 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 16:01:56,875 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:01:56,920 - INFO # Calling test_sock_udp_create__EADDRINUSE()
+2018-08-08 16:01:56,969 - INFO # Calling test_sock_udp_create__EAFNOSUPPORT()
+2018-08-08 16:01:57,014 - INFO # Calling test_sock_udp_create__EINVAL_addr()
+2018-08-08 16:01:57,060 - INFO # Calling test_sock_udp_create__EINVAL_netif()
+2018-08-08 16:01:57,108 - INFO # Calling test_sock_udp_create__no_endpoints()
+2018-08-08 16:01:57,154 - INFO # Calling test_sock_udp_create__only_local()
+2018-08-08 16:01:57,203 - INFO # Calling test_sock_udp_create__only_local_port0()
+2018-08-08 16:01:57,256 - INFO # Calling test_sock_udp_create__only_local_reuse_ep()
+2018-08-08 16:01:57,305 - INFO # Calling test_sock_udp_create__only_remote()
+2018-08-08 16:01:57,342 - INFO # Calling test_sock_udp_create__full()
+2018-08-08 16:01:57,387 - INFO # Calling test_sock_udp_recv__EADDRNOTAVAIL()
+2018-08-08 16:01:57,428 - INFO # Calling test_sock_udp_recv__EAGAIN()
+2018-08-08 16:01:57,465 - INFO # Calling test_sock_udp_recv__ENOBUFS()
+2018-08-08 16:01:57,506 - INFO # Calling test_sock_udp_recv__EPROTO()
+2018-08-08 16:01:57,547 - INFO # Calling test_sock_udp_recv__ETIMEDOUT()
+2018-08-08 16:01:57,575 - INFO #  * Calling sock_udp_recv()
+2018-08-08 16:01:58,460 - INFO # 
+2018-08-08 16:01:58,489 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 16:01:58,534 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:01:58,579 - INFO # Calling test_sock_udp_create__EADDRINUSE()
+2018-08-08 16:01:58,624 - INFO # Calling test_sock_udp_create__EAFNOSUPPORT()
+2018-08-08 16:01:58,673 - INFO # Calling test_sock_udp_create__EINVAL_addr()
+2018-08-08 16:01:58,718 - INFO # Calling test_sock_udp_create__EINVAL_netif()
+2018-08-08 16:01:58,764 - INFO # Calling test_sock_udp_create__no_endpoints()
+2018-08-08 16:01:58,808 - INFO # Calling test_sock_udp_create__only_local()
+2018-08-08 16:01:58,861 - INFO # Calling test_sock_udp_create__only_local_port0()
+2018-08-08 16:01:58,915 - INFO # Calling test_sock_udp_create__only_local_reuse_ep()
+2018-08-08 16:01:58,960 - INFO # Calling test_sock_udp_create__only_remote()
+2018-08-08 16:01:59,001 - INFO # Calling test_sock_udp_create__full()
+2018-08-08 16:01:59,046 - INFO # Calling test_sock_udp_recv__EADDRNOTAVAIL()
+2018-08-08 16:01:59,083 - INFO # Calling test_sock_udp_recv__EAGAIN()
+2018-08-08 16:01:59,124 - INFO # Calling test_sock_udp_recv__ENOBUFS()
+2018-08-08 16:01:59,161 - INFO # Calling test_sock_udp_recv__EPROTO()
+2018-08-08 16:01:59,201 - INFO # Calling test_sock_udp_recv__ETIMEDOUT()
+2018-08-08 16:01:59,231 - INFO #  * Calling sock_udp_recv()
+2018-08-08 16:02:00,119 - INFO # 
+2018-08-08 16:02:00,148 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 16:02:00,193 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:02:00,238 - INFO # Calling test_sock_udp_create__EADDRINUSE()
+2018-08-08 16:02:00,283 - INFO # Calling test_sock_udp_create__EAFNOSUPPORT()
+2018-08-08 16:02:00,328 - INFO # Calling test_sock_udp_create__EINVAL_addr()
+2018-08-08 16:02:00,377 - INFO # Calling test_sock_udp_create__EINVAL_netif()
+2018-08-08 16:02:00,422 - INFO # Calling test_sock_udp_create__no_endpoints()
+2018-08-08 16:02:00,468 - INFO # Calling test_sock_udp_create__only_local()
+2018-08-08 16:02:00,517 - INFO # Calling test_sock_udp_create__only_local_port0()
+2018-08-08 16:02:00,574 - INFO # Calling test_sock_udp_create__only_local_reuse_ep()
+2018-08-08 16:02:00,619 - INFO # Calling test_sock_udp_create__only_remote()
+2018-08-08 16:02:00,656 - INFO # Calling test_sock_udp_create__full()
+2018-08-08 16:02:00,701 - INFO # Calling test_sock_udp_recv__EADDRNOTAVAIL()
+2018-08-08 16:02:00,742 - INFO # Calling test_sock_udp_recv__EAGAIN()
+2018-08-08 16:02:00,779 - INFO # Calling test_sock_udp_recv__ENOBUFS()
+2018-08-08 16:02:00,820 - INFO # Calling test_sock_udp_recv__EPROTO()
+2018-08-08 16:02:00,861 - INFO # Calling test_sock_udp_recv__ETIMEDOUT()
+2018-08-08 16:02:00,889 - INFO #  * Calling sock_udp_recv()
+2018-08-08 16:02:01,774 - INFO # 
+2018-08-08 16:02:01,803 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 16:02:01,848 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:02:01,893 - INFO # Calling test_sock_udp_create__EADDRINUSE()
+2018-08-08 16:02:01,942 - INFO # Calling test_sock_udp_create__EAFNOSUPPORT()
+2018-08-08 16:02:01,987 - INFO # Calling test_sock_udp_create__EINVAL_addr()
+2018-08-08 16:02:02,032 - INFO # Calling test_sock_udp_create__EINVAL_netif()
+2018-08-08 16:02:02,081 - INFO # Calling test_sock_udp_create__no_endpoints()
+2018-08-08 16:02:02,126 - INFO # Calling test_sock_udp_create__only_local()
+2018-08-08 16:02:02,176 - INFO # Calling test_sock_udp_create__only_local_port0()
+2018-08-08 16:02:02,229 - INFO # Calling test_sock_udp_create__only_local_reuse_ep()
+2018-08-08 16:02:02,274 - INFO # Calling test_sock_udp_create__only_remote()
+2018-08-08 16:02:02,314 - INFO # Calling test_sock_udp_create__full()
+2018-08-08 16:02:02,360 - INFO # Calling test_sock_udp_recv__EADDRNOTAVAIL()
+2018-08-08 16:02:02,397 - INFO # Calling test_sock_udp_recv__EAGAIN()
+2018-08-08 16:02:02,437 - INFO # Calling test_sock_udp_recv__ENOBUFS()
+2018-08-08 16:02:02,475 - INFO # Calling test_sock_udp_recv__EPROTO()
+2018-08-08 16:02:02,520 - INFO # Calling test_sock_udp_recv__ETIMEDOUT()
+2018-08-08 16:02:02,544 - INFO #  * Calling sock_udp_recv()
+2018-08-08 16:02:03,433 - INFO # 
+2018-08-08 16:02:03,462 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 16:02:03,507 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:02:03,552 - INFO # Calling test_sock_udp_create__EADDRINUSE()
+2018-08-08 16:02:03,597 - INFO # Calling test_sock_udp_create__EAFNOSUPPORT()
+2018-08-08 16:02:03,642 - INFO # Calling test_sock_udp_create__EINVAL_addr()
+2018-08-08 16:02:03,691 - INFO # Calling test_sock_udp_create__EINVAL_netif()
+2018-08-08 16:02:03,736 - INFO # Calling test_sock_udp_create__no_endpoints()
+2018-08-08 16:02:03,781 - INFO # Calling test_sock_udp_create__only_local()
+2018-08-08 16:02:03,835 - INFO # Calling test_sock_udp_create__only_local_port0()
+Timeout in expect script at "child.expect(r" \* \(timed out with timeout \d+\)")" (tests/gnrc_sock_udp/tests/01-run.py:29)
+
+make: *** [Makefile:18: test] Error 1
+
+Return value: 2

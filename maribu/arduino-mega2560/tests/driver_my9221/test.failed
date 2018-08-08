@@ -1,0 +1,54 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT/tests/driver_my9221 flash-only test
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/driver_my9221/bin/arduino-mega2560/tests_driver_my9221.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/driver_my9221/bin/arduino-mega2560/tests_driver_my9221.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/driver_my9221/bin/arduino-mega2560/tests_driver_my9221.hex auto detected as Intel Hex
+avrdude: writing flash (11292 bytes):
+
+Writing | ################################################## | 100% 1.84s
+
+avrdude: 11292 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/driver_my9221/bin/arduino-mega2560/tests_driver_my9221.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/driver_my9221/bin/arduino-mega2560/tests_driver_my9221.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/driver_my9221/bin/arduino-mega2560/tests_driver_my9221.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/driver_my9221/bin/arduino-mega2560/tests_driver_my9221.hex contains 11292 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 1.48s
+
+avrdude: verifying ...
+avrdude: 11292 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 15:53:37,886 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 15:53:38,891 - INFO # n(): This is RIOT! (Version: buildtest)
+2018-08-08 15:53:38,892 - INFO # [START]
+2018-08-08 15:53:38,894 - INFO # - light up all LEDs one by one.
+2018-08-08 15:53:38,894 - INFO # 
+2018-08-08 15:53:38,896 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 15:53:38,896 - INFO # [START]
+2018-08-08 15:53:38,896 - INFO # - light up all LEDs one by one.
+2018-08-08 15:53:39,654 - INFO # Stack Pointer: 0x0547
+2018-08-08 15:53:39,678 - INFO # *** RIOT kernel panic:
+2018-08-08 15:53:39,695 - INFO # FAILED ASSERTION.
+2018-08-08 15:53:39,699 - INFO # 
+2018-08-08 15:53:39,711 - INFO # *** halted.
+2018-08-08 15:53:39,711 - INFO # 
+Timeout in expect script at "child.expect_exact("[SUCCESS]", timeout=60)" (tests/driver_my9221/tests/01-run.py:15)
+
+make: *** [Makefile:19: test] Error 1
+
+Return value: 2

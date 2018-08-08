@@ -1,0 +1,73 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT/tests/periph_timer flash-only test
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/periph_timer/bin/arduino-mega2560/tests_periph_timer.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/periph_timer/bin/arduino-mega2560/tests_periph_timer.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/periph_timer/bin/arduino-mega2560/tests_periph_timer.hex auto detected as Intel Hex
+avrdude: writing flash (9260 bytes):
+
+Writing | ################################################## | 100% 1.52s
+
+avrdude: 9260 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/periph_timer/bin/arduino-mega2560/tests_periph_timer.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/periph_timer/bin/arduino-mega2560/tests_periph_timer.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/periph_timer/bin/arduino-mega2560/tests_periph_timer.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/periph_timer/bin/arduino-mega2560/tests_periph_timer.hex contains 9260 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 1.21s
+
+avrdude: verifying ...
+avrdude: 9260 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:14:21,628 - INFO # Connect to serial port /dev/ttyACM0
+2018-08-08 16:14:22,631 - INFO # 
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:14:22,635 - INFO # targeted platform. For each timer, it will set each channel with
+2018-08-08 16:14:22,638 - INFO # an incr�est will test all configured peripheral timers of the
+2018-08-08 16:14:22,639 - INFO # targeted platform. For each timer, it will set each channel with
+2018-08-08 16:14:22,639 - INFO # an incr�
+2018-08-08 16:14:22,640 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:14:22,640 - INFO # 
+2018-08-08 16:14:22,641 - INFO # Test for peripheral TIMERs
+2018-08-08 16:14:22,641 - INFO # 
+2018-08-08 16:14:22,676 - INFO # This test will test all configured peripheral timers of the
+2018-08-08 16:14:22,746 - INFO # targeted platform. For each timer, it will set each channel with
+2018-08-08 16:14:22,812 - INFO # an incrementing timeout. CH0 set to 5ms, CH1 to 10ms, CH2 to 15ms
+2018-08-08 16:14:22,824 - INFO # and so on.
+2018-08-08 16:14:22,893 - INFO # In the output you should see that every channel fired, after an
+2018-08-08 16:14:22,959 - INFO # evenly distributed amount of time -> the shown diff values should
+2018-08-08 16:14:23,004 - INFO # be pretty much equal (to some jitter...)
+2018-08-08 16:14:23,070 - INFO # This test does however NOT show, if the timeouts were correct in
+2018-08-08 16:14:23,139 - INFO # relation to the expected real-time ~ use e.g. tests/xtimer_msg for
+2018-08-08 16:14:23,147 - INFO # this.
+2018-08-08 16:14:23,148 - INFO # 
+2018-08-08 16:14:23,148 - INFO # 
+2018-08-08 16:14:23,168 - INFO # Available timers: 2
+2018-08-08 16:14:23,172 - INFO # 
+2018-08-08 16:14:23,188 - INFO # Testing TIMER_0:
+2018-08-08 16:14:23,233 - INFO # TIMER_0: ERROR on initialization - skipping
+2018-08-08 16:14:23,234 - INFO # 
+2018-08-08 16:14:23,237 - INFO # 
+2018-08-08 16:14:23,254 - INFO # Testing TIMER_1:
+2018-08-08 16:14:23,299 - INFO # TIMER_1: ERROR on initialization - skipping
+2018-08-08 16:14:23,300 - INFO # 
+2018-08-08 16:14:23,303 - INFO # 
+2018-08-08 16:14:23,315 - INFO # TEST FAILED
+Timeout in expect script at "child.expect_exact('TIMER_{}: initialization successful'.format(timer))" (tests/periph_timer/tests/01-run.py:18)
+
+make: *** [Makefile:10: test] Error 1
+
+Return value: 2

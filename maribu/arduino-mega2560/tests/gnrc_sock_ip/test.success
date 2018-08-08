@@ -1,0 +1,80 @@
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/gnrc_sock_ip/bin/arduino-mega2560/tests_gnrc_sock_ip.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/gnrc_sock_ip/bin/arduino-mega2560/tests_gnrc_sock_ip.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/gnrc_sock_ip/bin/arduino-mega2560/tests_gnrc_sock_ip.hex auto detected as Intel Hex
+avrdude: writing flash (47936 bytes):
+
+Writing | ################################################## | 100% 7.70s
+
+avrdude: 47936 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/gnrc_sock_ip/bin/arduino-mega2560/tests_gnrc_sock_ip.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/gnrc_sock_ip/bin/arduino-mega2560/tests_gnrc_sock_ip.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/gnrc_sock_ip/bin/arduino-mega2560/tests_gnrc_sock_ip.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/gnrc_sock_ip/bin/arduino-mega2560/tests_gnrc_sock_ip.hex contains 47936 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 6.15s
+
+avrdude: verifying ...
+avrdude: 47936 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+./tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:01:24,911 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:01:25,915 - INFO # ck_ip_create__EINVAL_addr()
+2018-08-08 16:01:25,918 - INFO # Calling test_sock_ip_create__EINVAL_neti
+2018-08-08 16:01:25,920 - INFO # Calling test_sock_ip_create__EAFNOSUPPORT()
+2018-08-08 16:01:25,921 - INFO # Calling test_sock_ip_create__EINVAL_addr()
+2018-08-08 16:01:25,921 - INFO # Calling test_sock_ip_create__EINVAL_neti�
+2018-08-08 16:01:25,922 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 16:01:25,922 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:01:25,943 - INFO # Calling test_sock_ip_create__EAFNOSUPPORT()
+2018-08-08 16:01:25,989 - INFO # Calling test_sock_ip_create__EINVAL_addr()
+2018-08-08 16:01:26,034 - INFO # Calling test_sock_ip_create__EINVAL_netif()
+2018-08-08 16:01:26,079 - INFO # Calling test_sock_ip_create__no_endpoints()
+2018-08-08 16:01:26,124 - INFO # Calling test_sock_ip_create__only_local()
+2018-08-08 16:01:26,177 - INFO # Calling test_sock_ip_create__only_local_reuse_ep()
+2018-08-08 16:01:26,222 - INFO # Calling test_sock_ip_create__only_remote()
+2018-08-08 16:01:26,259 - INFO # Calling test_sock_ip_create__full()
+2018-08-08 16:01:26,304 - INFO # Calling test_sock_ip_recv__EADDRNOTAVAIL()
+2018-08-08 16:01:26,341 - INFO # Calling test_sock_ip_recv__EAGAIN()
+2018-08-08 16:01:26,378 - INFO # Calling test_sock_ip_recv__ENOBUFS()
+2018-08-08 16:01:26,415 - INFO # Calling test_sock_ip_recv__EPROTO()
+2018-08-08 16:01:26,456 - INFO # Calling test_sock_ip_recv__ETIMEDOUT()
+2018-08-08 16:01:26,484 - INFO #  * Calling sock_ip_recv()
+2018-08-08 16:01:27,521 - INFO #  * (timed out with timeout 1000000)
+2018-08-08 16:01:27,557 - INFO # Calling test_sock_ip_recv__socketed()
+2018-08-08 16:01:27,611 - INFO # Calling test_sock_ip_recv__socketed_with_remote()
+2018-08-08 16:01:27,652 - INFO # Calling test_sock_ip_recv__unsocketed()
+2018-08-08 16:01:27,705 - INFO # Calling test_sock_ip_recv__unsocketed_with_remote()
+2018-08-08 16:01:27,750 - INFO # Calling test_sock_ip_recv__with_timeout()
+2018-08-08 16:01:27,795 - INFO # Calling test_sock_ip_recv__non_blocking()
+2018-08-08 16:01:27,836 - INFO # Calling test_sock_ip_send__EAFNOSUPPORT()
+2018-08-08 16:01:27,881 - INFO # Calling test_sock_ip_send__EINVAL_addr()
+2018-08-08 16:01:27,926 - INFO # Calling test_sock_ip_send__EINVAL_netif()
+2018-08-08 16:01:28,026 - INFO # Calling test_sock_ip_send__ENOTCONN()
+2018-08-08 16:01:28,031 - INFO # Calling test_sock_ip_send__socketed_no_local_no_netif()
+2018-08-08 16:01:28,069 - INFO # Calling test_sock_ip_send__socketed_no_netif()
+2018-08-08 16:01:28,119 - INFO # Calling test_sock_ip_send__socketed_no_local()
+2018-08-08 16:01:28,160 - INFO # Calling test_sock_ip_send__socketed()
+2018-08-08 16:01:28,213 - INFO # Calling test_sock_ip_send__socketed_other_remote()
+2018-08-08 16:01:28,274 - INFO # Calling test_sock_ip_send__unsocketed_no_local_no_netif()
+2018-08-08 16:01:28,324 - INFO # Calling test_sock_ip_send__unsocketed_no_netif()
+2018-08-08 16:01:28,377 - INFO # Calling test_sock_ip_send__unsocketed_no_local()
+2018-08-08 16:01:28,418 - INFO # Calling test_sock_ip_send__unsocketed()
+2018-08-08 16:01:28,463 - INFO # Calling test_sock_ip_send__no_sock_no_netif()
+2018-08-08 16:01:28,504 - INFO # Calling test_sock_ip_send__no_sock()
+2018-08-08 16:01:28,524 - INFO # ALL TESTS SUCCESSFUL
+

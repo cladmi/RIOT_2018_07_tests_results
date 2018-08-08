@@ -1,0 +1,82 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT/tests/rng flash-only test
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/rng/bin/arduino-mega2560/tests_rng.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/rng/bin/arduino-mega2560/tests_rng.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/rng/bin/arduino-mega2560/tests_rng.hex auto detected as Intel Hex
+avrdude: writing flash (22468 bytes):
+
+Writing | ################################################## | 100% 3.60s
+
+avrdude: 22468 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/rng/bin/arduino-mega2560/tests_rng.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/rng/bin/arduino-mega2560/tests_rng.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/rng/bin/arduino-mega2560/tests_rng.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/rng/bin/arduino-mega2560/tests_rng.hex contains 22468 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 2.88s
+
+avrdude: verifying ...
+avrdude: 22468 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+source 0
+seed 1337
+fips
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:20:47,690 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:20:48,694 - INFO # ndom: NO SEED AVAILABLE!
+2018-08-08 16:20:48,696 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:20:48,698 - INFO # Starting shell...
+> 2018-08-08 16:20:48,698 - INFO #  
+2018-08-08 16:20:48,699 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 16:20:48,700 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:20:48,700 - INFO # Starting shell...
+> source 0
+2018-08-08 16:20:50,854 - INFO #  source 0
+> seed 1337
+2018-08-08 16:20:50,903 - INFO #  seed 1337
+2018-08-08 16:20:50,923 - INFO # Seed set to 1337
+> fips
+2018-08-08 16:20:50,948 - INFO #  fips
+2018-08-08 16:20:51,026 - INFO # Running FIPS 140-2 test, with seed 1337 using Tiny Mersenne Twister PRNG.
+2018-08-08 16:20:51,027 - INFO # 
+2018-08-08 16:20:51,214 - INFO # - Monobit test: passed
+2018-08-08 16:20:51,235 - INFO # - Poker test: passed
+2018-08-08 16:20:51,256 - INFO # - Run test: passed
+2018-08-08 16:20:51,280 - INFO # - Longrun test: passed
+> dump 10
+2018-08-08 16:20:51,313 - INFO #  `HH������NO SEED AVAILABLE!
+dump 10
+2018-08-08 16:20:51,358 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:20:51,378 - INFO # Starting shell...
+> 2018-08-08 16:20:51,387 - INFO #  dump 10
+2018-08-08 16:20:51,456 - INFO # Running dump test, with seed 0 using Tiny Mersenne Twister PRNG.
+2018-08-08 16:20:51,457 - INFO # 
+2018-08-08 16:20:51,469 - INFO # 1895301861
+2018-08-08 16:20:51,480 - INFO # 1624449521
+2018-08-08 16:20:51,489 - INFO # 1884589402
+2018-08-08 16:20:51,501 - INFO # 843959963
+2018-08-08 16:20:51,513 - INFO # 4111756435
+2018-08-08 16:20:51,526 - INFO # 2253496077
+2018-08-08 16:20:51,534 - INFO # 3747766394
+2018-08-08 16:20:51,546 - INFO # 2298637358
+2018-08-08 16:20:51,559 - INFO # 1487943169
+2018-08-08 16:20:51,571 - INFO # 1732267966
+> Timeout in expect script at "child.expect("1555530734")" (tests/rng/tests/01-run.py:27)
+
+make: *** [Makefile:23: test] Error 1
+
+Return value: 2

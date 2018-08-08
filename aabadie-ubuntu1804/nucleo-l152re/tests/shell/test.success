@@ -1,0 +1,99 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v25 API v2 SWIM v14 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.266974
+Info : stm32l1.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 46355 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l1.cpu        hla_target little stm32l1.cpu        running
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000454 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L1xx (Cat.5/Cat.6)
+Info : STM32L flash has dual banks. Bank (0) size is 256kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 12288 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/shell/bin/nucleo-l152re/tests_shell.elf in 1.615280s (7.429 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 9328 bytes in 0.629036s (14.481 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 18:16:35,535 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:16:38,398 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-08 18:16:38,398 - INFO # test_shell.
+reboot
+> reboot
+2018-08-08 18:16:38,452 - INFO #  reboot
+2018-08-08 18:16:38,464 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-08 18:16:38,465 - INFO # test_shell.
+123456789012345678901234567890123456789012345678901234567890
+> 123456789012345678901234567890123456789012345678901234567890
+2018-08-08 18:16:38,531 - INFO #  123456789012345678901234567890123456789012345678901234567890
+2018-08-08 18:16:38,542 - INFO # shell: command not found: 123456789012345678901234567890123456789012345678901234567890
+help
+> help
+2018-08-08 18:16:38,602 - INFO #  help
+2018-08-08 18:16:38,603 - INFO # Command              Description
+2018-08-08 18:16:38,608 - INFO # ---------------------------------------
+2018-08-08 18:16:38,610 - INFO # start_test           starts a test
+2018-08-08 18:16:38,614 - INFO # end_test             ends a test
+2018-08-08 18:16:38,614 - INFO # echo                 prints the input command
+2018-08-08 18:16:38,620 - INFO # reboot               Reboot the node
+2018-08-08 18:16:38,626 - INFO # ps                   Prints information about running threads.
+> end_test
+end_test
+2018-08-08 18:16:38,680 - INFO #  end_test
+2018-08-08 18:16:38,686 - INFO # [TEST_END]
+ps
+> ps
+2018-08-08 18:16:38,739 - INFO #  ps
+2018-08-08 18:16:38,746 - INFO # 	pid | state    Q | pri 
+2018-08-08 18:16:38,747 - INFO # 	  1 | pending  Q |  15
+2018-08-08 18:16:38,748 - INFO # 	  2 | running  Q |   7
+unknown_command
+> unknown_command
+2018-08-08 18:16:38,806 - INFO #  unknown_command
+2018-08-08 18:16:38,812 - INFO # shell: command not found: unknown_command
+echo a string
+> echo a string
+2018-08-08 18:16:38,872 - INFO #  echo a string
+2018-08-08 18:16:38,873 - INFO # "echo""a""string"
+start_test
+> start_test
+2018-08-08 18:16:38,932 - INFO #  start_test
+2018-08-08 18:16:38,933 - INFO # [TEST_START]
+
+
+> 
+

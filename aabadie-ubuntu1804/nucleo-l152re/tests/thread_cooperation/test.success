@@ -1,0 +1,117 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v25 API v2 SWIM v14 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.266974
+Info : stm32l1.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 44005 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l1.cpu        hla_target little stm32l1.cpu        running
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000454 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L1xx (Cat.5/Cat.6)
+Info : STM32L flash has dual banks. Bank (0) size is 256kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 12288 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/thread_cooperation/bin/nucleo-l152re/tests_thread_cooperation.elf in 1.621594s (7.400 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 9440 bytes in 0.633125s (14.561 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+./tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 18:17:48,817 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:17:51,692 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-08 18:17:51,693 - INFO # [START] compute 12! (factorial).
+2018-08-08 18:17:51,698 - INFO # MAIN: create thread, arg: 1
+2018-08-08 18:17:51,699 - INFO # MAIN: msg to T-3
+2018-08-08 18:17:51,699 - INFO # T-03: alive
+2018-08-08 18:17:51,700 - INFO # T-03: got arg 1
+2018-08-08 18:17:51,704 - INFO # MAIN: create thread, arg: 2
+2018-08-08 18:17:51,705 - INFO # MAIN: msg to T-4
+2018-08-08 18:17:51,705 - INFO # T-04: alive
+2018-08-08 18:17:51,706 - INFO # T-04: got arg 2
+2018-08-08 18:17:51,710 - INFO # MAIN: create thread, arg: 3
+2018-08-08 18:17:51,716 - INFO # MAIN: msg to T-5
+2018-08-08 18:17:51,716 - INFO # T-05: alive
+2018-08-08 18:17:51,717 - INFO # T-05: got arg 3
+2018-08-08 18:17:51,717 - INFO # MAIN: create thread, arg: 4
+2018-08-08 18:17:51,717 - INFO # MAIN: msg to T-6
+2018-08-08 18:17:51,717 - INFO # T-06: alive
+2018-08-08 18:17:51,722 - INFO # T-06: got arg 4
+2018-08-08 18:17:51,723 - INFO # MAIN: create thread, arg: 5
+2018-08-08 18:17:51,723 - INFO # MAIN: msg to T-7
+2018-08-08 18:17:51,728 - INFO # T-07: alive
+2018-08-08 18:17:51,729 - INFO # T-07: got arg 5
+2018-08-08 18:17:51,729 - INFO # MAIN: create thread, arg: 6
+2018-08-08 18:17:51,730 - INFO # MAIN: msg to T-8
+2018-08-08 18:17:51,734 - INFO # T-08: alive
+2018-08-08 18:17:51,740 - INFO # T-08: got arg 6
+2018-08-08 18:17:51,741 - INFO # MAIN: create thread, arg: 7
+2018-08-08 18:17:51,742 - INFO # MAIN: msg to T-9
+2018-08-08 18:17:51,742 - INFO # T-09: alive
+2018-08-08 18:17:51,743 - INFO # T-09: got arg 7
+2018-08-08 18:17:51,744 - INFO # MAIN: create thread, arg: 8
+2018-08-08 18:17:51,746 - INFO # MAIN: msg to T-10
+2018-08-08 18:17:51,747 - INFO # T-10: alive
+2018-08-08 18:17:51,747 - INFO # T-10: got arg 8
+2018-08-08 18:17:51,752 - INFO # MAIN: create thread, arg: 9
+2018-08-08 18:17:51,753 - INFO # MAIN: msg to T-11
+2018-08-08 18:17:51,753 - INFO # T-11: alive
+2018-08-08 18:17:51,753 - INFO # T-11: got arg 9
+2018-08-08 18:17:51,758 - INFO # MAIN: create thread, arg: 10
+2018-08-08 18:17:51,764 - INFO # MAIN: msg to T-12
+2018-08-08 18:17:51,765 - INFO # T-12: alive
+2018-08-08 18:17:51,765 - INFO # T-12: got arg 10
+2018-08-08 18:17:51,766 - INFO # MAIN: create thread, arg: 11
+2018-08-08 18:17:51,767 - INFO # MAIN: msg to T-13
+2018-08-08 18:17:51,767 - INFO # T-13: alive
+2018-08-08 18:17:51,770 - INFO # T-13: got arg 11
+2018-08-08 18:17:51,771 - INFO # MAIN: create thread, arg: 12
+2018-08-08 18:17:51,772 - INFO # MAIN: msg to T-14
+2018-08-08 18:17:51,776 - INFO # T-14: alive
+2018-08-08 18:17:51,776 - INFO # T-14: got arg 12
+2018-08-08 18:17:51,777 - INFO # MAIN: reply from T-3
+2018-08-08 18:17:51,777 - INFO # MAIN: reply from T-4
+2018-08-08 18:17:51,788 - INFO # MAIN: reply from T-5
+2018-08-08 18:17:51,789 - INFO # MAIN: reply from T-6
+2018-08-08 18:17:51,790 - INFO # MAIN: reply from T-7
+2018-08-08 18:17:51,790 - INFO # MAIN: reply from T-8
+2018-08-08 18:17:51,791 - INFO # MAIN: reply from T-9
+2018-08-08 18:17:51,792 - INFO # MAIN: reply from T-10
+2018-08-08 18:17:51,794 - INFO # MAIN: reply from T-11
+2018-08-08 18:17:51,795 - INFO # MAIN: reply from T-12
+2018-08-08 18:17:51,796 - INFO # MAIN: reply from T-13
+2018-08-08 18:17:51,800 - INFO # MAIN: reply from T-14
+2018-08-08 18:17:51,801 - INFO # MAIN: 12! = 479001600
+2018-08-08 18:17:51,802 - INFO # [SUCCESS]
+

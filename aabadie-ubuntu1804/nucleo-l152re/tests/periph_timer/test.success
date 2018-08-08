@@ -1,0 +1,85 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v25 API v2 SWIM v14 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.263810
+Info : stm32l1.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 34809 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l1.cpu        hla_target little stm32l1.cpu        running
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000454 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L1xx (Cat.5/Cat.6)
+Info : STM32L flash has dual banks. Bank (0) size is 256kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 12288 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/periph_timer/bin/nucleo-l152re/tests_periph_timer.elf in 1.595440s (7.521 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 9912 bytes in 0.651457s (14.859 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 18:05:55,455 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:05:58,214 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-08 18:05:58,215 - INFO # 
+2018-08-08 18:05:58,220 - INFO # Test for peripheral TIMERs
+2018-08-08 18:05:58,220 - INFO # 
+2018-08-08 18:05:58,226 - INFO # This test will test all configured peripheral timers of the
+2018-08-08 18:05:58,232 - INFO # targeted platform. For each timer, it will set each channel with
+2018-08-08 18:05:58,244 - INFO # an incrementing timeout. CH0 set to 5ms, CH1 to 10ms, CH2 to 15ms
+2018-08-08 18:05:58,244 - INFO # and so on.
+2018-08-08 18:05:58,245 - INFO # In the output you should see that every channel fired, after an
+2018-08-08 18:05:58,250 - INFO # evenly distributed amount of time -> the shown diff values should
+2018-08-08 18:05:58,250 - INFO # be pretty much equal (to some jitter...)
+2018-08-08 18:05:58,257 - INFO # This test does however NOT show, if the timeouts were correct in
+2018-08-08 18:05:58,263 - INFO # relation to the expected real-time ~ use e.g. tests/xtimer_msg for
+2018-08-08 18:05:58,264 - INFO # this.
+2018-08-08 18:05:58,264 - INFO # 
+2018-08-08 18:05:58,264 - INFO # 
+2018-08-08 18:05:58,268 - INFO # Available timers: 1
+2018-08-08 18:05:58,268 - INFO # 
+2018-08-08 18:05:58,269 - INFO # Testing TIMER_0:
+2018-08-08 18:05:58,269 - INFO # TIMER_0: initialization successful
+2018-08-08 18:05:58,274 - INFO # TIMER_0: stopped
+2018-08-08 18:05:58,275 - INFO # TIMER_0: set channel 0 to 5000
+2018-08-08 18:05:58,280 - INFO # TIMER_0: set channel 1 to 10000
+2018-08-08 18:05:58,286 - INFO # TIMER_0: set channel 2 to 15000
+2018-08-08 18:05:58,286 - INFO # TIMER_0: set channel 3 to 20000
+2018-08-08 18:05:58,287 - INFO # TIMER_0: starting
+2018-08-08 18:05:58,311 - INFO # TIMER_0: channel 0 fired at SW count    13332 - init:    13332
+2018-08-08 18:05:58,317 - INFO # TIMER_0: channel 1 fired at SW count    26654 - diff:    13322
+2018-08-08 18:05:58,322 - INFO # TIMER_0: channel 2 fired at SW count    39976 - diff:    13322
+2018-08-08 18:05:58,328 - INFO # TIMER_0: channel 3 fired at SW count    53298 - diff:    13322
+2018-08-08 18:05:58,329 - INFO # 
+2018-08-08 18:05:58,330 - INFO # TEST SUCCEEDED
+

@@ -1,0 +1,116 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v25 API v2 SWIM v14 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.265392
+Info : stm32l1.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 33265 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l1.cpu        hla_target little stm32l1.cpu        running
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000454 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L1xx (Cat.5/Cat.6)
+Info : STM32L flash has dual banks. Bank (0) size is 256kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 12288 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/pkg_tiny-asn1/bin/nucleo-l152re/tests_pkg_tiny-asn1.elf in 1.605532s (7.474 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 11152 bytes in 0.721171s (15.101 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+./tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 18:09:43,074 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:09:45,904 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-08 18:09:45,909 - INFO # d=0, Tag: 30, len=96
+2018-08-08 18:09:45,910 - INFO # d=1, Tag: 06, len=9
+2018-08-08 18:09:45,910 - INFO # Value:
+2018-08-08 18:09:45,915 - INFO # 2a 86 48 86   f7 0d 01 07 
+2018-08-08 18:09:45,915 - INFO # 06 
+2018-08-08 18:09:45,915 - INFO # d=1, Tag: a0, len=83
+2018-08-08 18:09:45,916 - INFO # d=2, Tag: 30, len=81
+2018-08-08 18:09:45,921 - INFO # d=3, Tag: 02, len=1
+2018-08-08 18:09:45,921 - INFO # Value:
+2018-08-08 18:09:45,921 - INFO # 00 
+2018-08-08 18:09:45,922 - INFO # d=3, Tag: 30, len=76
+2018-08-08 18:09:45,922 - INFO # d=4, Tag: 06, len=9
+2018-08-08 18:09:45,927 - INFO # Value:
+2018-08-08 18:09:45,933 - INFO # 2a 86 48 86   f7 0d 01 07 
+2018-08-08 18:09:45,933 - INFO # 01 
+2018-08-08 18:09:45,934 - INFO # d=4, Tag: 30, len=29
+2018-08-08 18:09:45,934 - INFO # d=5, Tag: 06, len=9
+2018-08-08 18:09:45,934 - INFO # Value:
+2018-08-08 18:09:45,935 - INFO # 60 86 48 01   65 03 04 01 
+2018-08-08 18:09:45,935 - INFO # 02 
+2018-08-08 18:09:45,939 - INFO # d=5, Tag: 04, len=16
+2018-08-08 18:09:45,939 - INFO # Value:
+2018-08-08 18:09:45,940 - INFO # 4d aa 7b 74   fb f7 7a fa 
+2018-08-08 18:09:45,945 - INFO # b0 23 a2 9c   1a b6 51 e4 
+2018-08-08 18:09:45,945 - INFO # 
+2018-08-08 18:09:45,946 - INFO # d=4, Tag: 80, len=32
+2018-08-08 18:09:45,946 - INFO # Value:
+2018-08-08 18:09:45,947 - INFO # 6b 8f 64 d7   3a 81 01 0c 
+2018-08-08 18:09:45,957 - INFO # 7b ab fd 26   6d 46 2e 3e 
+2018-08-08 18:09:45,957 - INFO # c4 f6 01 78   8a c0 c0 52 
+2018-08-08 18:09:45,958 - INFO # 0a 66 17 71   4f f6 d9 95 
+2018-08-08 18:09:45,958 - INFO # 
+2018-08-08 18:09:45,958 - INFO # ContentType: encryptedData
+2018-08-08 18:09:45,959 - INFO # CMSVersion: 0
+2018-08-08 18:09:45,963 - INFO # ContentType of EncryptedContentInfo: pkcs#7
+2018-08-08 18:09:45,969 - INFO # Content encryption algorithm: AES-128-CBC.
+2018-08-08 18:09:45,970 - INFO # IV:
+2018-08-08 18:09:45,971 - INFO # 4d aa 7b 74   fb f7 7a fa 
+2018-08-08 18:09:45,975 - INFO # b0 23 a2 9c   1a b6 51 e4 
+2018-08-08 18:09:45,975 - INFO # 
+2018-08-08 18:09:45,981 - INFO # Encrypted content:
+2018-08-08 18:09:45,982 - INFO # 6b 8f 64 d7   3a 81 01 0c 
+2018-08-08 18:09:45,982 - INFO # 7b ab fd 26   6d 46 2e 3e 
+2018-08-08 18:09:45,982 - INFO # c4 f6 01 78   8a c0 c0 52 
+2018-08-08 18:09:45,987 - INFO # 0a 66 17 71   4f f6 d9 95 
+2018-08-08 18:09:45,987 - INFO # 
+2018-08-08 18:09:45,988 - INFO # Unprotected attributes are not available.
+2018-08-08 18:09:45,993 - INFO # DER encoded data:
+2018-08-08 18:09:45,994 - INFO # 30 60 06 09   2a 86 48 86 
+2018-08-08 18:09:45,999 - INFO # f7 0d 01 07   06 a0 53 30 
+2018-08-08 18:09:46,005 - INFO # 51 02 01 00   30 4c 06 09 
+2018-08-08 18:09:46,006 - INFO # 2a 86 48 86   f7 0d 01 07 
+2018-08-08 18:09:46,007 - INFO # 01 30 1d 06   09 60 86 48 
+2018-08-08 18:09:46,007 - INFO # 01 65 03 04   01 02 04 10 
+2018-08-08 18:09:46,012 - INFO # 4d aa 7b 74   fb f7 7a fa 
+2018-08-08 18:09:46,012 - INFO # b0 23 a2 9c   1a b6 51 e4 
+2018-08-08 18:09:46,017 - INFO # 80 20 6b 8f   64 d7 3a 81 
+2018-08-08 18:09:46,017 - INFO # 01 0c 7b ab   fd 26 6d 46 
+2018-08-08 18:09:46,023 - INFO # 2e 3e c4 f6   01 78 8a c0 
+2018-08-08 18:09:46,023 - INFO # c0 52 0a 66   17 71 4f f6 
+2018-08-08 18:09:46,024 - INFO # d9 95 
+2018-08-08 18:09:46,029 - INFO # Decoding finished succesfully
+

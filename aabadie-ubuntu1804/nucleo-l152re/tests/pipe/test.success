@@ -1,0 +1,76 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v25 API v2 SWIM v14 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.266974
+Info : stm32l1.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 43441 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l1.cpu        hla_target little stm32l1.cpu        running
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000454 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L1xx (Cat.5/Cat.6)
+Info : STM32L flash has dual banks. Bank (0) size is 256kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 12288 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/pipe/bin/nucleo-l152re/tests_pipe.elf in 1.606741s (7.469 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 9080 bytes in 0.610923s (14.514 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 18:06:11,888 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:06:14,733 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-08 18:06:14,733 - INFO # Start.
+2018-08-08 18:06:14,738 - INFO # Middle read: <ABCD> [0:4]
+2018-08-08 18:06:14,738 - INFO # Middle read: <EF> [4:6]
+2018-08-08 18:06:14,743 - INFO # End read: <ABC> [0:3]
+2018-08-08 18:06:14,744 - INFO # End read: <DEF> [3:6]
+2018-08-08 18:06:14,744 - INFO # Middle read: <GHIJ> [6:10]
+2018-08-08 18:06:14,750 - INFO # Middle read: <KL> [10:12]
+2018-08-08 18:06:14,750 - INFO # End read: <GHI> [6:9]
+2018-08-08 18:06:14,751 - INFO # End read: <JKL> [9:12]
+2018-08-08 18:06:14,762 - INFO # Middle read: <MNOP> [12:16]
+2018-08-08 18:06:14,763 - INFO # Middle read: <QR> [16:18]
+2018-08-08 18:06:14,764 - INFO # End read: <MNO> [12:15]
+2018-08-08 18:06:14,765 - INFO # End read: <PQR> [15:18]
+2018-08-08 18:06:14,766 - INFO # Middle read: <STUV> [18:22]
+2018-08-08 18:06:14,768 - INFO # Middle read: <WX> [22:24]
+2018-08-08 18:06:14,769 - INFO # Main done.
+2018-08-08 18:06:14,770 - INFO # End read: <STU> [18:21]
+2018-08-08 18:06:14,774 - INFO # End read: <VWX> [21:24]
+2018-08-08 18:06:14,775 - INFO # Middle read: <YZ> [24:26]
+2018-08-08 18:06:14,776 - INFO # Middle done.
+2018-08-08 18:06:14,786 - INFO # End read: <YZ> [24:26]
+2018-08-08 18:06:14,786 - INFO # End done.
+

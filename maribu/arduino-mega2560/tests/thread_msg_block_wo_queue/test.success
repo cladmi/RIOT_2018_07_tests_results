@@ -1,0 +1,43 @@
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/thread_msg_block_wo_queue/bin/arduino-mega2560/tests_thread_msg_block_wo_queue.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/thread_msg_block_wo_queue/bin/arduino-mega2560/tests_thread_msg_block_wo_queue.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/thread_msg_block_wo_queue/bin/arduino-mega2560/tests_thread_msg_block_wo_queue.hex auto detected as Intel Hex
+avrdude: writing flash (7900 bytes):
+
+Writing | ################################################## | 100% 1.27s
+
+avrdude: 7900 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/thread_msg_block_wo_queue/bin/arduino-mega2560/tests_thread_msg_block_wo_queue.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/thread_msg_block_wo_queue/bin/arduino-mega2560/tests_thread_msg_block_wo_queue.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/thread_msg_block_wo_queue/bin/arduino-mega2560/tests_thread_msg_block_wo_queue.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/thread_msg_block_wo_queue/bin/arduino-mega2560/tests_thread_msg_block_wo_queue.hex contains 7900 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 1.02s
+
+avrdude: verifying ...
+avrdude: 7900 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:23:19,590 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:23:20,594 - INFO # n(): This is RIOT! (Version: buildtest)
+2018-08-08 16:23:20,596 - INFO # sender_thread start
+2018-08-08 16:23:20,597 - INFO # main thread alive
+2018-08-08 16:23:20,598 - INFO # 
+2018-08-08 16:23:20,599 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:23:20,599 - INFO # sender_thread start
+2018-08-08 16:23:20,599 - INFO # main thread alive
+

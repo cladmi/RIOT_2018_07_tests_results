@@ -1,0 +1,54 @@
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/xtimer_remove/bin/arduino-mega2560/tests_xtimer_remove.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/xtimer_remove/bin/arduino-mega2560/tests_xtimer_remove.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/xtimer_remove/bin/arduino-mega2560/tests_xtimer_remove.hex auto detected as Intel Hex
+avrdude: writing flash (10670 bytes):
+
+Writing | ################################################## | 100% 1.72s
+
+avrdude: 10670 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/xtimer_remove/bin/arduino-mega2560/tests_xtimer_remove.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/xtimer_remove/bin/arduino-mega2560/tests_xtimer_remove.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/xtimer_remove/bin/arduino-mega2560/tests_xtimer_remove.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/xtimer_remove/bin/arduino-mega2560/tests_xtimer_remove.hex contains 10670 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 1.38s
+
+avrdude: verifying ...
+avrdude: 10670 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:26:17,131 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:26:18,136 - INFO # n(): This is RIOT! (Version: buildtest)
+2018-08-08 16:26:18,138 - INFO # xtimer_remove test application.
+2018-08-08 16:26:18,138 - INFO # 
+2018-08-08 16:26:18,140 - INFO # Setting 3 timers, removing timer 0/3
+2018-08-08 16:26:18,140 - INFO # 
+2018-08-08 16:26:18,141 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:26:18,141 - INFO # xtimer_remove test application.
+2018-08-08 16:26:18,141 - INFO # 
+2018-08-08 16:26:18,161 - INFO # Setting 3 timers, removing timer 0/3
+2018-08-08 16:26:18,377 - INFO # timer 1 triggered.
+2018-08-08 16:26:18,476 - INFO # timer 2 triggered.
+2018-08-08 16:26:18,517 - INFO # Setting 3 timers, removing timer 1/3
+2018-08-08 16:26:18,635 - INFO # timer 0 triggered.
+2018-08-08 16:26:18,833 - INFO # timer 2 triggered.
+2018-08-08 16:26:18,873 - INFO # Setting 3 timers, removing timer 2/3
+2018-08-08 16:26:18,992 - INFO # timer 0 triggered.
+2018-08-08 16:26:19,090 - INFO # timer 1 triggered.
+2018-08-08 16:26:19,107 - INFO # test successful.
+

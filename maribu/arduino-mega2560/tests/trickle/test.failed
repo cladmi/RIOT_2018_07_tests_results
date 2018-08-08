@@ -1,0 +1,55 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT/tests/trickle flash-only test
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/trickle/bin/arduino-mega2560/tests_trickle.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/trickle/bin/arduino-mega2560/tests_trickle.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/trickle/bin/arduino-mega2560/tests_trickle.hex auto detected as Intel Hex
+avrdude: writing flash (13262 bytes):
+
+Writing | ################################################## | 100% 2.13s
+
+avrdude: 13262 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/trickle/bin/arduino-mega2560/tests_trickle.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/trickle/bin/arduino-mega2560/tests_trickle.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/trickle/bin/arduino-mega2560/tests_trickle.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/trickle/bin/arduino-mega2560/tests_trickle.hex contains 13262 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 1.70s
+
+avrdude: verifying ...
+avrdude: 13262 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:23:51,578 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:23:52,582 - INFO # dom: NO SEED AVAILABLE!
+2018-08-08 16:23:52,584 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:23:52,585 - INFO # [START]
+2018-08-08 16:23:52,586 - INFO # now = 102624, prev_now = 44392, diff = 58232
+2018-08-08 16:23:52,587 - INFO # 
+2018-08-08 16:23:52,587 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 16:23:52,588 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:23:52,588 - INFO # [START]
+2018-08-08 16:23:52,664 - INFO # now = 102624, prev_now = 44392, diff = 58232
+2018-08-08 16:23:52,791 - INFO # now = 228532, prev_now = 102624, diff = 125908
+2018-08-08 16:23:53,115 - INFO # now = 549524, prev_now = 228532, diff = 320992
+2018-08-08 16:23:53,577 - INFO # now = 1011516, prev_now = 549524, diff = 461992
+2018-08-08 16:23:54,548 - INFO # now = 1980548, prev_now = 1011516, diff = 969032
+2018-08-08 16:23:54,564 - INFO # [TRICKLE_RESET]
+Timeout in expect script at "child.expect(u"now = \d+, prev_now = \d+, diff = \d+")" (tests/trickle/tests/01-run.py:22)
+
+make: *** [Makefile:10: test] Error 1
+
+Return value: 2

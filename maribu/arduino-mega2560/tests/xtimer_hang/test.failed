@@ -1,0 +1,217 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT/tests/xtimer_hang flash-only test
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/xtimer_hang/bin/arduino-mega2560/tests_xtimer_hang.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/xtimer_hang/bin/arduino-mega2560/tests_xtimer_hang.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/xtimer_hang/bin/arduino-mega2560/tests_xtimer_hang.hex auto detected as Intel Hex
+avrdude: writing flash (10636 bytes):
+
+Writing | ################################################## | 100% 1.72s
+
+avrdude: 10636 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/xtimer_hang/bin/arduino-mega2560/tests_xtimer_hang.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/xtimer_hang/bin/arduino-mega2560/tests_xtimer_hang.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/xtimer_hang/bin/arduino-mega2560/tests_xtimer_hang.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/xtimer_hang/bin/arduino-mega2560/tests_xtimer_hang.hex contains 10636 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 1.37s
+
+avrdude: verifying ...
+avrdude: 10636 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:24:15,031 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:24:16,034 - INFO # n(): This is RIOT! (Version: buildtest)
+2018-08-08 16:24:16,034 - INFO # [START]
+2018-08-08 16:24:16,035 - INFO # Testing (  0%)
+2018-08-08 16:24:16,035 - INFO # 
+2018-08-08 16:24:16,036 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:24:16,036 - INFO # [START]
+2018-08-08 16:24:16,107 - INFO # Testing (  0%)
+2018-08-08 16:24:16,222 - INFO # Testing (  1%)
+2018-08-08 16:24:16,337 - INFO # Testing (  2%)
+2018-08-08 16:24:16,451 - INFO # Testing (  3%)
+2018-08-08 16:24:16,566 - INFO # Testing (  4%)
+2018-08-08 16:24:16,681 - INFO # Testing (  5%)
+2018-08-08 16:24:16,792 - INFO # Testing (  6%)
+2018-08-08 16:24:16,906 - INFO # Testing (  8%)
+2018-08-08 16:24:17,021 - INFO # Testing (  9%)
+2018-08-08 16:24:17,135 - INFO # Testing ( 10%)
+2018-08-08 16:24:17,250 - INFO # Testing ( 11%)
+2018-08-08 16:24:17,364 - INFO # Testing ( 12%)
+2018-08-08 16:24:17,476 - INFO # Testing ( 13%)
+2018-08-08 16:24:17,590 - INFO # Testing ( 14%)
+2018-08-08 16:24:17,705 - INFO # Testing ( 16%)
+2018-08-08 16:24:17,819 - INFO # Testing ( 17%)
+2018-08-08 16:24:17,934 - INFO # Testing ( 18%)
+2018-08-08 16:24:18,045 - INFO # Testing ( 19%)
+2018-08-08 16:24:18,159 - INFO # Testing ( 20%)
+2018-08-08 16:24:18,274 - INFO # Testing ( 21%)
+2018-08-08 16:24:18,389 - INFO # Testing ( 22%)
+2018-08-08 16:24:18,504 - INFO # Testing ( 23%)
+2018-08-08 16:24:18,614 - INFO # Testing ( 25%)
+2018-08-08 16:24:18,729 - INFO # Testing ( 26%)
+2018-08-08 16:24:18,844 - INFO # Testing ( 27%)
+2018-08-08 16:24:18,958 - INFO # Testing ( 28%)
+2018-08-08 16:24:19,073 - INFO # Testing ( 29%)
+2018-08-08 16:24:19,188 - INFO # Testing ( 30%)
+2018-08-08 16:24:19,299 - INFO # Testing ( 31%)
+2018-08-08 16:24:19,413 - INFO # Testing ( 33%)
+2018-08-08 16:24:19,527 - INFO # Testing ( 34%)
+2018-08-08 16:24:19,642 - INFO # Testing ( 35%)
+2018-08-08 16:24:20,019 - INFO # Testing ( 36%)
+2018-08-08 16:24:20,130 - INFO # Testing ( 37%)
+2018-08-08 16:24:20,245 - INFO # Testing ( 38%)
+2018-08-08 16:24:20,359 - INFO # Testing ( 39%)
+2018-08-08 16:24:20,474 - INFO # Testing ( 41%)
+2018-08-08 16:24:20,588 - INFO # Testing ( 42%)
+2018-08-08 16:24:20,961 - INFO # Testing ( 43%)
+2018-08-08 16:24:21,338 - INFO # Testing ( 44%)
+2018-08-08 16:24:21,453 - INFO # Testing ( 45%)
+2018-08-08 16:24:21,568 - INFO # Testing ( 46%)
+2018-08-08 16:24:21,682 - INFO # Testing ( 47%)
+2018-08-08 16:24:21,793 - INFO # Testing ( 49%)
+2018-08-08 16:24:21,907 - INFO # Testing ( 50%)
+2018-08-08 16:24:22,022 - INFO # Testing ( 51%)
+2018-08-08 16:24:22,137 - INFO # Testing ( 52%)
+2018-08-08 16:24:22,252 - INFO # Testing ( 53%)
+2018-08-08 16:24:22,363 - INFO # Testing ( 54%)
+2018-08-08 16:24:22,477 - INFO # Testing ( 55%)
+2018-08-08 16:24:22,592 - INFO # Testing ( 57%)
+2018-08-08 16:24:22,969 - INFO # Testing ( 58%)
+2018-08-08 16:24:23,083 - INFO # Testing ( 59%)
+2018-08-08 16:24:23,456 - INFO # Testing ( 60%)
+2018-08-08 16:24:23,571 - INFO # Testing ( 61%)
+2018-08-08 16:24:23,685 - INFO # Testing ( 62%)
+2018-08-08 16:24:23,800 - INFO # Testing ( 63%)
+2018-08-08 16:24:23,915 - INFO # Testing ( 64%)
+2018-08-08 16:24:24,026 - INFO # Testing ( 66%)
+2018-08-08 16:24:24,140 - INFO # Testing ( 67%)
+2018-08-08 16:24:24,255 - INFO # Testing ( 68%)
+2018-08-08 16:24:24,370 - INFO # Testing ( 69%)
+2018-08-08 16:24:24,484 - INFO # Testing ( 70%)
+2018-08-08 16:24:24,595 - INFO # Testing ( 71%)
+2018-08-08 16:24:24,710 - INFO # Testing ( 72%)
+2018-08-08 16:24:24,824 - INFO # Testing ( 74%)
+2018-08-08 16:24:24,938 - INFO # Testing ( 75%)
+2018-08-08 16:24:25,053 - INFO # Testing ( 76%)
+2018-08-08 16:24:25,426 - INFO # Testing ( 77%)
+2018-08-08 16:24:25,541 - INFO # Testing ( 78%)
+2018-08-08 16:24:25,656 - INFO # Testing ( 79%)
+2018-08-08 16:24:25,771 - INFO # Testing ( 80%)
+2018-08-08 16:24:25,885 - INFO # Testing ( 82%)
+2018-08-08 16:24:25,996 - INFO # Testing ( 83%)
+2018-08-08 16:24:26,111 - INFO # Testing ( 84%)
+2018-08-08 16:24:26,225 - INFO # Testing ( 85%)
+2018-08-08 16:24:26,340 - INFO # Testing ( 86%)
+2018-08-08 16:24:26,454 - INFO # Testing ( 87%)
+2018-08-08 16:24:26,565 - INFO # Testing ( 88%)
+2018-08-08 16:24:26,680 - INFO # Testing ( 90%)
+2018-08-08 16:24:26,795 - INFO # Testing ( 91%)
+2018-08-08 16:24:26,909 - INFO # Testing ( 92%)
+2018-08-08 16:24:27,286 - INFO # Testing ( 93%)
+2018-08-08 16:24:27,397 - INFO # Testing ( 94%)
+2018-08-08 16:24:27,511 - INFO # Testing ( 95%)
+2018-08-08 16:24:27,626 - INFO # Testing ( 96%)
+2018-08-08 16:24:27,741 - INFO # Testing ( 98%)
+2018-08-08 16:24:27,856 - INFO # Testing ( 99%)
+2018-08-08 16:24:27,868 - INFO # Testing (100%)
+2018-08-08 16:24:27,880 - INFO # [SUCCESS]
+2018-08-08 16:24:28,007 - INFO # 
+2018-08-08 16:24:28,052 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:24:28,060 - INFO # [START]
+2018-08-08 16:24:28,171 - INFO # Testing (  0%)
+2018-08-08 16:24:28,285 - INFO # Testing (  1%)
+2018-08-08 16:24:28,401 - INFO # Testing (  2%)
+2018-08-08 16:24:28,515 - INFO # Testing (  3%)
+2018-08-08 16:24:28,629 - INFO # Testing (  4%)
+2018-08-08 16:24:28,741 - INFO # Testing (  5%)
+2018-08-08 16:24:28,855 - INFO # Testing (  6%)
+2018-08-08 16:24:28,970 - INFO # Testing (  8%)
+2018-08-08 16:24:29,347 - INFO # Testing (  9%)
+2018-08-08 16:24:29,461 - INFO # Testing ( 10%)
+2018-08-08 16:24:29,572 - INFO # Testing ( 11%)
+2018-08-08 16:24:29,687 - INFO # Testing ( 12%)
+2018-08-08 16:24:29,801 - INFO # Testing ( 13%)
+2018-08-08 16:24:29,916 - INFO # Testing ( 14%)
+2018-08-08 16:24:30,031 - INFO # Testing ( 16%)
+2018-08-08 16:24:30,141 - INFO # Testing ( 17%)
+2018-08-08 16:24:30,256 - INFO # Testing ( 18%)
+2018-08-08 16:24:30,370 - INFO # Testing ( 19%)
+2018-08-08 16:24:30,485 - INFO # Testing ( 20%)
+2018-08-08 16:24:30,600 - INFO # Testing ( 21%)
+2018-08-08 16:24:30,711 - INFO # Testing ( 22%)
+2018-08-08 16:24:30,825 - INFO # Testing ( 23%)
+2018-08-08 16:24:31,202 - INFO # Testing ( 25%)
+2018-08-08 16:24:31,317 - INFO # Testing ( 26%)
+2018-08-08 16:24:31,431 - INFO # Testing ( 27%)
+2018-08-08 16:24:31,542 - INFO # Testing ( 28%)
+2018-08-08 16:24:31,657 - INFO # Testing ( 29%)
+2018-08-08 16:24:31,772 - INFO # Testing ( 30%)
+2018-08-08 16:24:31,886 - INFO # Testing ( 31%)
+2018-08-08 16:24:32,001 - INFO # Testing ( 33%)
+2018-08-08 16:24:32,112 - INFO # Testing ( 34%)
+2018-08-08 16:24:32,226 - INFO # Testing ( 35%)
+2018-08-08 16:24:32,341 - INFO # Testing ( 36%)
+2018-08-08 16:24:32,456 - INFO # Testing ( 37%)
+2018-08-08 16:24:32,570 - INFO # Testing ( 38%)
+2018-08-08 16:24:32,681 - INFO # Testing ( 39%)
+2018-08-08 16:24:32,796 - INFO # Testing ( 41%)
+2018-08-08 16:24:32,911 - INFO # Testing ( 42%)
+2018-08-08 16:24:33,025 - INFO # Testing ( 43%)
+2018-08-08 16:24:33,140 - INFO # Testing ( 44%)
+2018-08-08 16:24:33,251 - INFO # Testing ( 45%)
+2018-08-08 16:24:33,365 - INFO # Testing ( 46%)
+2018-08-08 16:24:33,480 - INFO # Testing ( 47%)
+2018-08-08 16:24:33,594 - INFO # Testing ( 49%)
+2018-08-08 16:24:33,709 - INFO # Testing ( 50%)
+2018-08-08 16:24:33,823 - INFO # Testing ( 51%)
+2018-08-08 16:24:33,935 - INFO # Testing ( 52%)
+2018-08-08 16:24:34,049 - INFO # Testing ( 53%)
+2018-08-08 16:24:34,164 - INFO # Testing ( 54%)
+2018-08-08 16:24:34,279 - INFO # Testing ( 55%)
+2018-08-08 16:24:34,389 - INFO # Testing ( 57%)
+2018-08-08 16:24:34,504 - INFO # Testing ( 58%)
+2018-08-08 16:24:34,619 - INFO # Testing ( 59%)
+2018-08-08 16:24:34,733 - INFO # Testing ( 60%)
+2018-08-08 16:24:34,848 - INFO # Testing ( 61%)
+2018-08-08 16:24:34,959 - INFO # Testing ( 62%)
+2018-08-08 16:24:35,335 - INFO # Testing ( 63%)
+2018-08-08 16:24:35,450 - INFO # Testing ( 64%)
+2018-08-08 16:24:35,565 - INFO # Testing ( 66%)
+2018-08-08 16:24:35,679 - INFO # Testing ( 67%)
+2018-08-08 16:24:35,794 - INFO # Testing ( 68%)
+2018-08-08 16:24:35,905 - INFO # Testing ( 69%)
+2018-08-08 16:24:36,281 - INFO # Testing ( 70%)
+2018-08-08 16:24:36,396 - INFO # Testing ( 71%)
+2018-08-08 16:24:36,511 - INFO # Testing ( 72%)
+2018-08-08 16:24:36,626 - INFO # Testing ( 74%)
+2018-08-08 16:24:36,737 - INFO # Testing ( 75%)
+2018-08-08 16:24:36,851 - INFO # Testing ( 76%)
+2018-08-08 16:24:37,228 - INFO # Testing ( 77%)
+2018-08-08 16:24:37,342 - INFO # Testing ( 78%)
+2018-08-08 16:24:37,457 - INFO # Testing ( 79%)
+2018-08-08 16:24:37,568 - INFO # Testing ( 80%)
+2018-08-08 16:24:37,683 - INFO # Testing ( 82%)
+2018-08-08 16:24:37,797 - INFO # Testing ( 83%)
+2018-08-08 16:24:37,912 - INFO # Testing ( 84%)
+2018-08-08 16:24:38,027 - INFO # Testing ( 85%)
+2018-08-08 16:24:38,138 - INFO # Testing ( 86%)
+Timeout in expect script at "child.expect_exact("[SUCCESS]")" (tests/xtimer_hang/tests/01-run.py:21)
+
+make: *** [Makefile:12: test] Error 1
+
+Return value: 2

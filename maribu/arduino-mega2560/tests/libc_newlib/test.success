@@ -1,0 +1,45 @@
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/libc_newlib/bin/arduino-mega2560/tests_libc_newlib.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/libc_newlib/bin/arduino-mega2560/tests_libc_newlib.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/libc_newlib/bin/arduino-mega2560/tests_libc_newlib.hex auto detected as Intel Hex
+avrdude: writing flash (8468 bytes):
+
+Writing | ################################################## | 100% 1.39s
+
+avrdude: 8468 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/libc_newlib/bin/arduino-mega2560/tests_libc_newlib.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/libc_newlib/bin/arduino-mega2560/tests_libc_newlib.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/libc_newlib/bin/arduino-mega2560/tests_libc_newlib.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/libc_newlib/bin/arduino-mega2560/tests_libc_newlib.hex contains 8468 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 1.12s
+
+avrdude: verifying ...
+avrdude: 8468 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:02:51,349 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:02:52,354 - INFO # n(): This is RIOT! (Version: buildtest)
+2018-08-08 16:02:52,355 - INFO # Newlib/nano test
+2018-08-08 16:02:52,356 - INFO # .
+2018-08-08 16:02:52,357 - INFO # OK (1 tests)
+2018-08-08 16:02:52,357 - INFO # 
+2018-08-08 16:02:52,358 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:02:52,358 - INFO # Newlib/nano test
+2018-08-08 16:02:52,359 - INFO # .
+2018-08-08 16:02:52,359 - INFO # OK (1 tests)
+

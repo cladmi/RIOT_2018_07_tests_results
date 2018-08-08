@@ -1,0 +1,78 @@
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/thread_msg/bin/arduino-mega2560/tests_thread_msg.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/thread_msg/bin/arduino-mega2560/tests_thread_msg.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/thread_msg/bin/arduino-mega2560/tests_thread_msg.hex auto detected as Intel Hex
+avrdude: writing flash (8526 bytes):
+
+Writing | ################################################## | 100% 1.39s
+
+avrdude: 8526 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/thread_msg/bin/arduino-mega2560/tests_thread_msg.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/thread_msg/bin/arduino-mega2560/tests_thread_msg.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/thread_msg/bin/arduino-mega2560/tests_thread_msg.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/thread_msg/bin/arduino-mega2560/tests_thread_msg.hex contains 8526 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 1.12s
+
+avrdude: verifying ...
+avrdude: 8526 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:23:01,651 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:23:02,654 - INFO #  0(i=0)
+2018-08-08 16:23:02,656 - INFO # T2 got 0 (i=0)
+2018-08-08 16:23:02,661 - INFO # T1 got reply: 0 (i=0)
+2018-08-08 16:23:02,662 - INFO # T1 recv: 1(i=1)
+2018-08-08 16:23:02,663 - INFO # T3 i=2
+2018-08-08 16:23:02,664 - INFO # T2 got 1 (i=1)
+2018-08-08 16:23:02,665 - INFO # T1 got reply: 1 (i=1)
+2018-08-08 16:23:02,666 - INFO # T13 i=0
+2018-08-08 16:23:02,666 - INFO # T3 i=1
+2018-08-08 16:23:02,667 - INFO # T1 recv: 0(i=0)
+2018-08-08 16:23:02,668 - INFO # T2 got 0 (i=0)
+2018-08-08 16:23:02,670 - INFO # T1 got reply: 0 (i=0)
+2018-08-08 16:23:02,671 - INFO # T1 recv: 1(i=1)
+2018-08-08 16:23:02,671 - INFO # T3 i=2
+2018-08-08 16:23:02,672 - INFO # T2 got 1 (i=1)
+2018-08-08 16:23:02,673 - INFO # T1 got reply: 1 (i=1)
+2018-08-08 16:23:02,674 - INFO # T1�
+2018-08-08 16:23:02,676 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:23:02,677 - INFO # THREADS CREATED
+2018-08-08 16:23:02,677 - INFO # 
+2018-08-08 16:23:02,678 - INFO # THREAD 1 start
+2018-08-08 16:23:02,679 - INFO # 
+2018-08-08 16:23:02,680 - INFO # THREAD 2 start
+2018-08-08 16:23:02,680 - INFO # 
+2018-08-08 16:23:02,681 - INFO # THREAD 3 start
+2018-08-08 16:23:02,681 - INFO # 
+2018-08-08 16:23:02,682 - INFO # T3 i=0
+2018-08-08 16:23:02,689 - INFO # T3 i=1
+2018-08-08 16:23:02,706 - INFO # T1 recv: 0(i=0)
+2018-08-08 16:23:02,722 - INFO # T2 got 0 (i=0)
+2018-08-08 16:23:02,743 - INFO # T1 got reply: 0 (i=0)
+2018-08-08 16:23:02,763 - INFO # T1 recv: 1(i=1)
+2018-08-08 16:23:02,767 - INFO # T3 i=2
+2018-08-08 16:23:02,784 - INFO # T2 got 1 (i=1)
+2018-08-08 16:23:02,808 - INFO # T1 got reply: 1 (i=1)
+2018-08-08 16:23:02,824 - INFO # T1 recv: 2(i=2)
+2018-08-08 16:23:02,833 - INFO # T3 i=3
+2018-08-08 16:23:02,845 - INFO # T2 got 2 (i=2)
+2018-08-08 16:23:02,870 - INFO # T1 got reply: 2 (i=2)
+2018-08-08 16:23:02,882 - INFO # THREAD 1 end
+2018-08-08 16:23:02,886 - INFO # 
+2018-08-08 16:23:02,894 - INFO # SUCCESS
+

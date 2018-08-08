@@ -1,0 +1,43 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT/tests/evtimer_msg flash-only test
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/evtimer_msg/bin/arduino-mega2560/tests_evtimer_msg.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/evtimer_msg/bin/arduino-mega2560/tests_evtimer_msg.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/evtimer_msg/bin/arduino-mega2560/tests_evtimer_msg.hex auto detected as Intel Hex
+avrdude: writing flash (12658 bytes):
+
+Writing | ################################################## | 100% 2.05s
+
+avrdude: 12658 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/evtimer_msg/bin/arduino-mega2560/tests_evtimer_msg.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/evtimer_msg/bin/arduino-mega2560/tests_evtimer_msg.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/evtimer_msg/bin/arduino-mega2560/tests_evtimer_msg.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/evtimer_msg/bin/arduino-mega2560/tests_evtimer_msg.hex contains 12658 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 1.64s
+
+avrdude: verifying ...
+avrdude: 12658 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+
+Traceback (most recent call last):
+  File "tests/01-run.py", line 35, in <module>
+    sys.exit(run(testfunc, echo=False))
+  File "/home/maribu/Repos/software/RIOT/dist/tools/testrunner/testrunner.py", line 55, in run
+    testfunc(child)
+  File "tests/01-run.py", line 26, in testfunc
+    assert(int(child.match.group(1)) in range(exp - ACCEPTED_ERROR, exp + ACCEPTED_ERROR + 1))
+AssertionError
+make: *** [Makefile:12: test] Error 1
+
+Return value: 2

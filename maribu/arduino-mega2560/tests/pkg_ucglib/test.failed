@@ -1,0 +1,43 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT/tests/pkg_ucglib flash-only test
+make[1]: Nothing to be done for 'Makefile.include'.
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/pkg_ucglib/bin/arduino-mega2560/tests_pkg_ucglib.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/pkg_ucglib/bin/arduino-mega2560/tests_pkg_ucglib.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/pkg_ucglib/bin/arduino-mega2560/tests_pkg_ucglib.hex auto detected as Intel Hex
+avrdude: writing flash (30296 bytes):
+
+Writing | ################################################## | 100% 4.87s
+
+avrdude: 30296 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/pkg_ucglib/bin/arduino-mega2560/tests_pkg_ucglib.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/pkg_ucglib/bin/arduino-mega2560/tests_pkg_ucglib.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/pkg_ucglib/bin/arduino-mega2560/tests_pkg_ucglib.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/pkg_ucglib/bin/arduino-mega2560/tests_pkg_ucglib.hex contains 30296 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 3.90s
+
+avrdude: verifying ...
+avrdude: 30296 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+make[2]: Nothing to be done for 'Makefile.include'.
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:18:34,189 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+Timeout in expect script at "child.expect_exact('Initializing dummy output.')" (tests/pkg_ucglib/tests/01-run.py:53)
+
+make: *** [Makefile:45: test] Error 1
+
+Return value: 2

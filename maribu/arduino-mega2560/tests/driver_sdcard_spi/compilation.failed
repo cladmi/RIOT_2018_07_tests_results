@@ -1,0 +1,16 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT/tests/driver_sdcard_spi clean all
+Building application "tests_driver_sdcard_spi" for "arduino-mega2560" with MCU "atmega2560".
+
+/home/maribu/Repos/software/RIOT/drivers/sdcard_spi/sdcard_spi.c: In function 'sdcard_spi_get_capacity':
+/home/maribu/Repos/software/RIOT/drivers/sdcard_spi/sdcard_spi.c:1012:72: error: result of '512 << 10' requires 21 bits to represent, but 'int' only has 16 bits [-Werror=shift-overflow=]
+         return (card->csd.v2.C_SIZE + 1) * (uint64_t)(SD_HC_BLOCK_SIZE << 10);
+                                                                        ^~
+/home/maribu/Repos/software/RIOT/drivers/sdcard_spi/sdcard_spi.c: At top level:
+cc1: error: unrecognized command line option '-Wno-implicit-fallthrough' [-Werror]
+cc1: all warnings being treated as errors
+make[3]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:83: /home/maribu/Repos/software/RIOT/tests/driver_sdcard_spi/bin/arduino-mega2560/sdcard_spi/sdcard_spi.o] Error 1
+make[2]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:20: ALL--/home/maribu/Repos/software/RIOT/drivers/sdcard_spi] Error 2
+make[1]: *** [/home/maribu/Repos/software/RIOT/Makefile.base:20: ALL--/home/maribu/Repos/software/RIOT/drivers] Error 2
+make: *** [/home/maribu/Repos/software/RIOT/tests/driver_sdcard_spi/../../Makefile.include:414: /home/maribu/Repos/software/RIOT/tests/driver_sdcard_spi/bin/arduino-mega2560/application_tests_driver_sdcard_spi.a] Error 2
+
+Return value: 2

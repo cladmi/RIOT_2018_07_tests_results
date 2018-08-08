@@ -1,0 +1,56 @@
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/msg_send_receive/bin/arduino-mega2560/tests_msg_send_receive.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/msg_send_receive/bin/arduino-mega2560/tests_msg_send_receive.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/msg_send_receive/bin/arduino-mega2560/tests_msg_send_receive.hex auto detected as Intel Hex
+avrdude: writing flash (7916 bytes):
+
+Writing | ################################################## | 100% 1.27s
+
+avrdude: 7916 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/msg_send_receive/bin/arduino-mega2560/tests_msg_send_receive.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/msg_send_receive/bin/arduino-mega2560/tests_msg_send_receive.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/msg_send_receive/bin/arduino-mega2560/tests_msg_send_receive.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/msg_send_receive/bin/arduino-mega2560/tests_msg_send_receive.hex contains 7916 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 1.02s
+
+avrdude: verifying ...
+avrdude: 7916 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+./tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:12:51,819 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:12:52,823 - INFO # 3 and 3
+2018-08-08 16:12:52,825 - INFO # Incremented counters to 4 and 4
+2018-08-08 16:12:52,830 - INFO # Incremented counters to 5 and 5
+2018-08-08 16:12:52,831 - INFO # Incremented counters to 2 and 2
+2018-08-08 16:12:52,833 - INFO # Incremented counters to 3 and 3
+2018-08-08 16:12:52,834 - INFO # Incremented counters to 4 and 4
+2018-08-08 16:12:52,834 - INFO # Incremented counters to 5 and 5
+2018-08-08 16:12:52,834 - INFO # �
+2018-08-08 16:12:52,835 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:12:52,835 - INFO # Incremented counters to 1 and 1
+2018-08-08 16:12:52,840 - INFO # Incremented counters to 2 and 2
+2018-08-08 16:12:52,877 - INFO # Incremented counters to 3 and 3
+2018-08-08 16:12:52,910 - INFO # Incremented counters to 4 and 4
+2018-08-08 16:12:52,943 - INFO # Incremented counters to 5 and 5
+2018-08-08 16:12:52,975 - INFO # Incremented counters to 6 and 6
+2018-08-08 16:12:53,008 - INFO # Incremented counters to 7 and 7
+2018-08-08 16:12:53,041 - INFO # Incremented counters to 8 and 8
+2018-08-08 16:12:53,074 - INFO # Incremented counters to 9 and 9
+2018-08-08 16:12:53,111 - INFO # Incremented counters to 10 and 10
+2018-08-08 16:12:53,127 - INFO # Test successful.
+

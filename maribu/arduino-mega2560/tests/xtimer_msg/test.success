@@ -1,0 +1,109 @@
+avrdude -p m2560 -c stk500v2 -P /dev/ttyACM0 -b 115200 -F -D -U flash:w:/home/maribu/Repos/software/RIOT/tests/xtimer_msg/bin/arduino-mega2560/tests_xtimer_msg.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e9801 (probably m2560)
+avrdude: reading input file "/home/maribu/Repos/software/RIOT/tests/xtimer_msg/bin/arduino-mega2560/tests_xtimer_msg.hex"
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/xtimer_msg/bin/arduino-mega2560/tests_xtimer_msg.hex auto detected as Intel Hex
+avrdude: writing flash (12132 bytes):
+
+Writing | ################################################## | 100% 1.97s
+
+avrdude: 12132 bytes of flash written
+avrdude: verifying flash memory against /home/maribu/Repos/software/RIOT/tests/xtimer_msg/bin/arduino-mega2560/tests_xtimer_msg.hex:
+avrdude: load data flash data from input file /home/maribu/Repos/software/RIOT/tests/xtimer_msg/bin/arduino-mega2560/tests_xtimer_msg.hex:
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/xtimer_msg/bin/arduino-mega2560/tests_xtimer_msg.hex auto detected as Intel Hex
+avrdude: input file /home/maribu/Repos/software/RIOT/tests/xtimer_msg/bin/arduino-mega2560/tests_xtimer_msg.hex contains 12132 bytes
+avrdude: reading on-chip flash data:
+
+Reading | ################################################## | 100% 1.55s
+
+avrdude: verifying ...
+avrdude: 12132 bytes of flash verified
+
+avrdude: safemode: Fuses OK (E:FD, H:D8, L:FF)
+
+avrdude done.  Thank you.
+
+tests/01-run.py
+/home/maribu/Repos/software/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+Twisted not available, please install it if you want to use pyterm's JSON capabilities
+2018-08-08 16:24:48,940 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 16:24:49,945 - INFO # now=0:135924 -> every 5.0s: This is a Test
+2018-08-08 16:24:49,947 - INFO # This is thread 4
+2018-08-08 16:24:49,948 - INFO # ding 1st msg
+2018-08-08 16:24:49,950 - INFO # now=0:78724 -> every 2.0s: Hello World
+2018-08-08 16:24:49,951 - INFO # sending 2nd msg
+2018-08-08 16:24:49,954 - INFO # now=0:135924 -> every 5.0s: This is a Test
+2018-08-08 16:24:49,956 - INFO # This is thread 4
+2018-08-08 16:24:49,956 - INFO # 
+2018-08-08 16:24:49,959 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 16:24:49,960 - INFO # This is thread 3
+2018-08-08 16:24:49,961 - INFO # sending 1st msg
+2018-08-08 16:24:49,971 - INFO # now=0:78724 -> every 2.0s: Hello World
+2018-08-08 16:24:49,987 - INFO # sending 2nd msg
+2018-08-08 16:24:50,033 - INFO # now=0:135924 -> every 5.0s: This is a Test
+2018-08-08 16:24:50,049 - INFO # This is thread 4
+2018-08-08 16:24:51,069 - INFO # sec=1 min=0 hour=0
+2018-08-08 16:24:52,011 - INFO # now=2:119328 -> every 2.0s: Hello World
+2018-08-08 16:24:52,402 - INFO # sec=2 min=0 hour=0
+2018-08-08 16:24:53,105 - INFO # sec=3 min=0 hour=0
+2018-08-08 16:24:54,051 - INFO # now=4:159036 -> every 2.0s: Hello World
+2018-08-08 16:24:54,125 - INFO # sec=4 min=0 hour=0
+2018-08-08 16:24:55,076 - INFO # now=5:180684 -> every 5.0s: This is a Test
+2018-08-08 16:24:55,141 - INFO # sec=5 min=0 hour=0
+2018-08-08 16:24:56,091 - INFO # now=6:198748 -> every 2.0s: Hello World
+2018-08-08 16:24:56,161 - INFO # sec=6 min=0 hour=0
+2018-08-08 16:24:57,177 - INFO # sec=7 min=0 hour=0
+2018-08-08 16:24:58,131 - INFO # now=8:238460 -> every 2.0s: Hello World
+2018-08-08 16:24:58,197 - INFO # sec=8 min=0 hour=0
+2018-08-08 16:24:59,213 - INFO # sec=9 min=0 hour=0
+2018-08-08 16:25:00,122 - INFO # now=10:223516 -> every 5.0s: This is a Test
+2018-08-08 16:25:00,175 - INFO # now=10:278172 -> every 2.0s: Hello World
+2018-08-08 16:25:00,233 - INFO # sec=10 min=0 hour=0
+2018-08-08 16:25:01,253 - INFO # sec=11 min=0 hour=0
+2018-08-08 16:25:02,215 - INFO # now=12:318924 -> every 2.0s: Hello World
+2018-08-08 16:25:02,273 - INFO # sec=12 min=0 hour=0
+2018-08-08 16:25:03,293 - INFO # sec=13 min=0 hour=0
+2018-08-08 16:25:04,255 - INFO # now=14:359668 -> every 2.0s: Hello World
+2018-08-08 16:25:04,313 - INFO # sec=14 min=0 hour=0
+2018-08-08 16:25:05,169 - INFO # now=15:267388 -> every 5.0s: This is a Test
+2018-08-08 16:25:05,329 - INFO # sec=15 min=0 hour=0
+2018-08-08 16:25:06,299 - INFO # now=16:400420 -> every 2.0s: Hello World
+2018-08-08 16:25:06,349 - INFO # sec=16 min=0 hour=0
+2018-08-08 16:25:07,369 - INFO # sec=17 min=0 hour=0
+2018-08-08 16:25:08,339 - INFO # now=18:441172 -> every 2.0s: Hello World
+2018-08-08 16:25:08,388 - INFO # sec=18 min=0 hour=0
+2018-08-08 16:25:09,408 - INFO # sec=19 min=0 hour=0
+2018-08-08 16:25:10,211 - INFO # now=20:311256 -> every 5.0s: This is a Test
+2018-08-08 16:25:10,379 - INFO # now=20:481924 -> every 2.0s: Hello World
+2018-08-08 16:25:10,428 - INFO # sec=20 min=0 hour=0
+2018-08-08 16:25:11,444 - INFO # sec=21 min=0 hour=0
+2018-08-08 16:25:12,423 - INFO # now=22:522676 -> every 2.0s: Hello World
+2018-08-08 16:25:12,464 - INFO # sec=22 min=0 hour=0
+2018-08-08 16:25:13,484 - INFO # sec=23 min=0 hour=0
+2018-08-08 16:25:14,463 - INFO # now=24:563424 -> every 2.0s: Hello World
+2018-08-08 16:25:14,504 - INFO # sec=24 min=0 hour=0
+2018-08-08 16:25:15,258 - INFO # now=25:355124 -> every 5.0s: This is a Test
+2018-08-08 16:25:15,524 - INFO # sec=25 min=0 hour=0
+2018-08-08 16:25:16,503 - INFO # now=26:604180 -> every 2.0s: Hello World
+2018-08-08 16:25:16,544 - INFO # sec=26 min=0 hour=0
+2018-08-08 16:25:17,560 - INFO # sec=27 min=0 hour=0
+2018-08-08 16:25:18,547 - INFO # now=28:644932 -> every 2.0s: Hello World
+2018-08-08 16:25:18,580 - INFO # sec=28 min=0 hour=0
+2018-08-08 16:25:19,600 - INFO # sec=29 min=0 hour=0
+2018-08-08 16:25:20,304 - INFO # now=30:398996 -> every 5.0s: This is a Test
+2018-08-08 16:25:20,587 - INFO # now=30:685684 -> every 2.0s: Hello World
+2018-08-08 16:25:20,620 - INFO # sec=30 min=0 hour=0
+2018-08-08 16:25:21,640 - INFO # sec=31 min=0 hour=0
+2018-08-08 16:25:22,627 - INFO # now=32:726432 -> every 2.0s: Hello World
+2018-08-08 16:25:22,660 - INFO # sec=32 min=0 hour=0
+2018-08-08 16:25:23,676 - INFO # sec=33 min=0 hour=0
+2018-08-08 16:25:24,671 - INFO # now=34:767184 -> every 2.0s: Hello World
+2018-08-08 16:25:24,696 - INFO # sec=34 min=0 hour=0
+2018-08-08 16:25:25,347 - INFO # now=35:442864 -> every 5.0s: This is a Test
+

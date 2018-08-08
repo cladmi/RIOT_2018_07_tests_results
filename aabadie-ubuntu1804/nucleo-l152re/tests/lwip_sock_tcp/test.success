@@ -1,0 +1,110 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v25 API v2 SWIM v14 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.266974
+Info : stm32l1.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 43001 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l1.cpu        hla_target little stm32l1.cpu        running
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x080004b4 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L1xx (Cat.5/Cat.6)
+Info : STM32L flash has dual banks. Bank (0) size is 256kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 65536 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/lwip_sock_tcp/bin/nucleo-l152re/tests_lwip_sock_tcp.elf in 8.316300s (7.696 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 62960 bytes in 3.534805s (17.394 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+./tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 18:02:15,416 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:02:16,420 - INFO #  * (timed out with timeout 1000000)
+2018-08-08 18:02:16,422 - INFO # Calling test_tcp_accept6__success()
+2018-08-08 18:02:16,423 - INFO # Calling test_tcp_read6__EAGAIN()
+2018-08-08 18:02:16,424 - INFO # Calling test_tcp_read6__ECONNRESET()
+2018-08-08 18:02:16,425 - INFO # Calling test_tcp_read6__ENOTCONN()
+2018-08-08 18:02:16,425 - INFO # Calling test_tcp_read6__ETIMEDOUT()
+2018-08-08 18:02:16,426 - INFO #  * Calling sock_tcp_read()
+2018-08-08 18:02:16,853 - INFO #  * (timed out with timeout 1000000)
+2018-08-08 18:02:16,855 - INFO # Calling test_tcp_read6__success()
+2018-08-08 18:02:16,860 - INFO # Calling test_tcp_read6__success_with_timeout()
+2018-08-08 18:02:16,866 - INFO # Calling test_tcp_read6__success_non_blocking()
+2018-08-08 18:02:16,871 - INFO # Calling test_tcp_write6__ENOTCONN()
+2018-08-08 18:02:16,877 - INFO # Calling test_tcp_write6__success()
+2018-08-08 18:02:16,889 - INFO # ALL TESTS SUCCESSFUL
+2018-08-08 18:02:18,263 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-08 18:02:18,263 - INFO # code 0x41
+2018-08-08 18:02:18,264 - INFO # Calling test_tcp_connect6__EADDRINUSE()
+2018-08-08 18:02:18,269 - INFO # Calling test_tcp_connect6__EAFNOSUPPORT()
+2018-08-08 18:02:18,269 - INFO # Calling test_tcp_connect6__EINVAL_addr()
+2018-08-08 18:02:18,275 - INFO # Calling test_tcp_connect6__EINVAL_netif()
+2018-08-08 18:02:18,281 - INFO # Calling test_tcp_connect6__success_without_port()
+2018-08-08 18:02:18,287 - INFO # Calling test_tcp_connect6__success_local_port()
+2018-08-08 18:02:18,293 - INFO # Calling test_tcp_listen6__EADDRINUSE()
+2018-08-08 18:02:18,294 - INFO # Calling test_tcp_listen6__EAFNOSUPPORT()
+2018-08-08 18:02:18,299 - INFO # Calling test_tcp_listen6__EINVAL()
+2018-08-08 18:02:18,305 - INFO # Calling test_tcp_listen6__success_any_netif()
+2018-08-08 18:02:18,306 - INFO # Calling test_tcp_listen6__success_spec_netif()
+2018-08-08 18:02:18,311 - INFO # Calling test_tcp_accept6__EAGAIN()
+2018-08-08 18:02:18,312 - INFO # Calling test_tcp_accept6__EINVAL()
+2018-08-08 18:02:18,317 - INFO # Calling test_tcp_accept6__ETIMEDOUT()
+2018-08-08 18:02:18,318 - INFO #  * Calling sock_tcp_accept()
+2018-08-08 18:02:19,325 - INFO #  * (timed out with timeout 1000000)
+2018-08-08 18:02:19,327 - INFO # Calling test_tcp_accept6__success()
+2018-08-08 18:02:19,332 - INFO # Calling test_tcp_read6__EAGAIN()
+2018-08-08 18:02:19,343 - INFO # Calling test_tcp_read6__ECONNRESET()
+2018-08-08 18:02:19,344 - INFO # Calling test_tcp_read6__ENOTCONN()
+2018-08-08 18:02:19,349 - INFO # Calling test_tcp_read6__ETIMEDOUT()
+2018-08-08 18:02:19,350 - INFO #  * Calling sock_tcp_read()
+2018-08-08 18:02:20,352 - INFO #  * (timed out with timeout 1000000)
+2018-08-08 18:02:20,358 - INFO # Calling test_tcp_read6__success()
+2018-08-08 18:02:20,364 - INFO # Calling test_tcp_read6__success_with_timeout()
+2018-08-08 18:02:20,375 - INFO # Calling test_tcp_read6__success_non_blocking()
+2018-08-08 18:02:20,381 - INFO # Calling test_tcp_write6__ENOTCONN()
+2018-08-08 18:02:20,382 - INFO # Calling test_tcp_write6__success()
+2018-08-08 18:02:20,393 - INFO # ALL TESTS SUCCESSFUL
+

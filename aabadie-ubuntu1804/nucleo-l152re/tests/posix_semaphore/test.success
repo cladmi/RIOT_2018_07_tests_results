@@ -1,0 +1,126 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+adapter speed: 300 kHz
+adapter_nsrst_delay: 100
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : clock speed 240 kHz
+Info : STLINK v2 JTAG v25 API v2 SWIM v14 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.263810
+Info : stm32l1.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : Listening on port 45279 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32l1.cpu        hla_target little stm32l1.cpu        running
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0x01000000 pc: 0x08000454 msp: 0x20000200
+auto erase enabled
+Info : Device: STM32L1xx (Cat.5/Cat.6)
+Info : STM32L flash has dual banks. Bank (0) size is 256kb, base address is 0x8000000
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000000e msp: 0x20000200
+wrote 16384 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/posix_semaphore/bin/nucleo-l152re/tests_posix_semaphore.elf in 2.126529s (7.524 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 14852 bytes in 0.925606s (15.670 KiB/s)
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+Info : Unable to match requested speed 300 kHz, using 240 kHz
+adapter speed: 240 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 18:12:30,853 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:12:31,856 - INFO # first: timed out
+2018-08-08 18:12:31,858 - INFO # first: waited 1000034 usec
+2018-08-08 18:12:31,859 - INFO # ######################### DONE
+2018-08-08 18:12:33,713 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-08 18:12:33,714 - INFO # ######################### TEST1:
+2018-08-08 18:12:33,715 - INFO # first: sem_init
+2018-08-08 18:12:33,719 - INFO # first: thread create
+2018-08-08 18:12:33,720 - INFO # first: thread created
+2018-08-08 18:12:33,721 - INFO # first: sem_getvalue
+2018-08-08 18:12:33,725 - INFO # first: sem_getvalue != 0
+2018-08-08 18:12:33,731 - INFO # first: do yield
+2018-08-08 18:12:33,731 - INFO # second: sem_trywait
+2018-08-08 18:12:33,732 - INFO # second: sem_trywait failed
+2018-08-08 18:12:33,732 - INFO # second: sem_trywait done with == 0
+2018-08-08 18:12:33,732 - INFO # second: wait for post
+2018-08-08 18:12:33,737 - INFO # first: done yield
+2018-08-08 18:12:33,737 - INFO # first: sem_trywait
+2018-08-08 18:12:33,738 - INFO # first: sem_trywait FAILED
+2018-08-08 18:12:33,743 - INFO # first: sem_trywait done
+2018-08-08 18:12:33,743 - INFO # first: sem_post
+2018-08-08 18:12:33,744 - INFO # second: sem was posted
+2018-08-08 18:12:33,749 - INFO # second: end
+2018-08-08 18:12:33,749 - INFO # first: sem_post done
+2018-08-08 18:12:33,750 - INFO # first: sem_destroy
+2018-08-08 18:12:33,750 - INFO # first: end
+2018-08-08 18:12:33,755 - INFO # ######################### TEST2:
+2018-08-08 18:12:33,755 - INFO # first: sem_init
+2018-08-08 18:12:33,756 - INFO # first: thread create: 5
+2018-08-08 18:12:33,761 - INFO # first: thread created: priority 5 (1/5)
+2018-08-08 18:12:33,761 - INFO # first: thread create: 4
+2018-08-08 18:12:33,767 - INFO # first: thread created: priority 4 (2/5)
+2018-08-08 18:12:33,767 - INFO # first: thread create: 3
+2018-08-08 18:12:33,773 - INFO # first: thread created: priority 3 (3/5)
+2018-08-08 18:12:33,774 - INFO # first: thread create: 2
+2018-08-08 18:12:33,779 - INFO # first: thread created: priority 2 (4/5)
+2018-08-08 18:12:33,780 - INFO # first: thread create: 1
+2018-08-08 18:12:33,785 - INFO # first: thread created: priority 1 (5/5)
+2018-08-08 18:12:33,786 - INFO # ------------------------------------------
+2018-08-08 18:12:33,791 - INFO # post no. 0
+2018-08-08 18:12:33,792 - INFO # Thread 'priority 1' woke up.
+2018-08-08 18:12:33,797 - INFO # Back in main thread.
+2018-08-08 18:12:33,797 - INFO # post no. 1
+2018-08-08 18:12:33,798 - INFO # Thread 'priority 2' woke up.
+2018-08-08 18:12:33,799 - INFO # Back in main thread.
+2018-08-08 18:12:33,799 - INFO # post no. 2
+2018-08-08 18:12:33,803 - INFO # Thread 'priority 3' woke up.
+2018-08-08 18:12:33,804 - INFO # Back in main thread.
+2018-08-08 18:12:33,804 - INFO # post no. 3
+2018-08-08 18:12:33,809 - INFO # Thread 'priority 4' woke up.
+2018-08-08 18:12:33,810 - INFO # Back in main thread.
+2018-08-08 18:12:33,810 - INFO # post no. 4
+2018-08-08 18:12:33,815 - INFO # Thread 'priority 5' woke up.
+2018-08-08 18:12:33,821 - INFO # Back in main thread.
+2018-08-08 18:12:33,822 - INFO # ######################### TEST3:
+2018-08-08 18:12:33,822 - INFO # first: sem_init s1
+2018-08-08 18:12:33,823 - INFO # first: sem_init s2
+2018-08-08 18:12:33,823 - INFO # first: create thread 1
+2018-08-08 18:12:33,827 - INFO # first: create thread 2
+2018-08-08 18:12:33,828 - INFO # ------------------------------------------
+2018-08-08 18:12:33,828 - INFO # post s1
+2018-08-08 18:12:33,833 - INFO # Thread 1 woke up after waiting for s1.
+2018-08-08 18:12:33,834 - INFO # post s2
+2018-08-08 18:12:33,839 - INFO # Thread 2 woke up after waiting for s2.
+2018-08-08 18:12:33,845 - INFO # post s2
+2018-08-08 18:12:33,846 - INFO # Thread 1 woke up after waiting for s2.
+2018-08-08 18:12:33,847 - INFO # post s1
+2018-08-08 18:12:33,848 - INFO # Thread 2 woke up after waiting for s1.
+2018-08-08 18:12:33,851 - INFO # ######################### TEST4:
+2018-08-08 18:12:33,852 - INFO # first: sem_init s1
+2018-08-08 18:12:33,853 - INFO # first: wait 1 sec for s1
+2018-08-08 18:12:34,853 - INFO # first: timed out
+2018-08-08 18:12:34,859 - INFO # first: waited 1000034 usec
+2018-08-08 18:12:34,860 - INFO # ######################### DONE
+

@@ -1,0 +1,68 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/pthread_barrier/bin/arduino-zero/tests_pthread_barrier.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming..................................................... done.
+Verification..................................................... done.
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:51:18,899 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:51:20,041 - INFO # 
+2018-08-08 22:51:20,044 - INFO # ======================================
+2018-08-08 22:51:20,045 - INFO # 
+2018-08-08 22:51:20,687 - INFO # Child 1 sleeps for  1514587 us.
+2018-08-08 22:51:20,690 - INFO # Child 3 sleeps for  1706397 us.
+2018-08-08 22:51:20,693 - INFO # Child 4 sleeps for  1265353 us.
+2018-08-08 22:51:20,696 - INFO # Child 2 sleeps for  2085252 us.
+2018-08-08 22:51:21,786 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:51:21,787 - INFO # START
+2018-08-08 22:51:21,787 - INFO # 
+2018-08-08 22:51:21,788 - INFO # Start 1
+2018-08-08 22:51:21,789 - INFO # Start 2
+2018-08-08 22:51:21,790 - INFO # Start 3
+2018-08-08 22:51:21,790 - INFO # Start 4
+2018-08-08 22:51:21,791 - INFO # 
+2018-08-08 22:51:21,794 - INFO # ======================================
+2018-08-08 22:51:21,794 - INFO # 
+2018-08-08 22:51:21,797 - INFO # Child 4 sleeps for  1752298 us.
+2018-08-08 22:51:21,800 - INFO # Child 3 sleeps for  1772042 us.
+2018-08-08 22:51:21,803 - INFO # Child 2 sleeps for  1287734 us.
+2018-08-08 22:51:21,805 - INFO # Child 1 sleeps for  2386493 us.
+2018-08-08 22:51:23,550 - INFO # 
+2018-08-08 22:51:23,554 - INFO # ======================================
+2018-08-08 22:51:23,554 - INFO # 
+2018-08-08 22:51:24,196 - INFO # Child 1 sleeps for  1514587 us.
+2018-08-08 22:51:24,199 - INFO # Child 3 sleeps for  1706397 us.
+2018-08-08 22:51:24,202 - INFO # Child 4 sleeps for  1265353 us.
+2018-08-08 22:51:24,205 - INFO # Child 2 sleeps for  2085252 us.
+2018-08-08 22:51:25,468 - INFO # 
+2018-08-08 22:51:25,471 - INFO # ======================================
+2018-08-08 22:51:25,472 - INFO # 
+2018-08-08 22:51:26,294 - INFO # Child 2 sleeps for  2406092 us.
+2018-08-08 22:51:26,297 - INFO # Child 3 sleeps for  2184134 us.
+2018-08-08 22:51:26,300 - INFO # Child 1 sleeps for   921395 us.
+2018-08-08 22:51:26,303 - INFO # Child 4 sleeps for   107980 us.
+2018-08-08 22:51:26,411 - INFO # 
+2018-08-08 22:51:26,414 - INFO # ======================================
+2018-08-08 22:51:26,415 - INFO # 
+2018-08-08 22:51:28,704 - INFO # Child 2 sleeps for    76940 us.
+2018-08-08 22:51:28,707 - INFO # Child 3 sleeps for  2273767 us.
+2018-08-08 22:51:28,710 - INFO # Child 1 sleeps for  1868346 us.
+2018-08-08 22:51:28,713 - INFO # Child 4 sleeps for  1650360 us.
+2018-08-08 22:51:30,364 - INFO # 
+2018-08-08 22:51:30,368 - INFO # ======================================
+2018-08-08 22:51:30,368 - INFO # 
+2018-08-08 22:51:30,985 - INFO # Child 3 sleeps for  1729994 us.
+2018-08-08 22:51:30,988 - INFO # Child 1 sleeps for  1288040 us.
+2018-08-08 22:51:30,991 - INFO # Child 4 sleeps for  2397307 us.
+2018-08-08 22:51:30,994 - INFO # Child 2 sleeps for   580990 us.
+2018-08-08 22:51:31,576 - INFO # Done 2
+2018-08-08 22:51:32,277 - INFO # Done 1
+2018-08-08 22:51:32,716 - INFO # Done 3
+2018-08-08 22:51:33,390 - INFO # Done 4
+2018-08-08 22:51:33,390 - INFO # 
+2018-08-08 22:51:33,391 - INFO # SUCCESS
+

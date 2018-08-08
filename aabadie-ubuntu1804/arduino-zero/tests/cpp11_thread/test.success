@@ -1,0 +1,55 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/cpp11_thread/bin/arduino-zero/tests_cpp11_thread.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming......................................................................................................................... done.
+Verification......................................................................................................................... done.
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:15:04,682 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:15:05,686 - INFO # Done
+2018-08-08 22:15:05,686 - INFO # 
+2018-08-08 22:15:05,687 - INFO # Testing sleep_until ...
+2018-08-08 22:15:06,086 - INFO # Done
+2018-08-08 22:15:06,087 - INFO # 
+2018-08-08 22:15:06,089 - INFO # Swapping two threads ...
+2018-08-08 22:15:06,089 - INFO # Done
+2018-08-08 22:15:06,089 - INFO # 
+2018-08-08 22:15:06,091 - INFO # Move constructor ...
+2018-08-08 22:15:06,092 - INFO # Done
+2018-08-08 22:15:06,092 - INFO # 
+2018-08-08 22:15:06,093 - INFO # Bye, bye.
+2018-08-08 22:15:06,096 - INFO # ******************************************
+2018-08-08 22:15:07,560 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:15:07,560 - INFO # 
+2018-08-08 22:15:07,563 - INFO # ************ C++ thread test ***********
+2018-08-08 22:15:07,568 - INFO # Creating one thread and passing an argument ...
+2018-08-08 22:15:07,568 - INFO # Done
+2018-08-08 22:15:07,568 - INFO # 
+2018-08-08 22:15:07,571 - INFO # Creating detached thread ...
+2018-08-08 22:15:07,571 - INFO # Done
+2018-08-08 22:15:07,571 - INFO # 
+2018-08-08 22:15:07,574 - INFO # Join on 'finished' thread ...
+2018-08-08 22:15:07,574 - INFO # Done
+2018-08-08 22:15:07,575 - INFO # 
+2018-08-08 22:15:07,577 - INFO # Join on 'running' thread ...
+2018-08-08 22:15:07,578 - INFO # Done
+2018-08-08 22:15:07,578 - INFO # 
+2018-08-08 22:15:07,580 - INFO # Testing sleep_for ...
+2018-08-08 22:15:08,581 - INFO # Done
+2018-08-08 22:15:08,581 - INFO # 
+2018-08-08 22:15:08,583 - INFO # Testing sleep_until ...
+2018-08-08 22:15:09,584 - INFO # Done
+2018-08-08 22:15:09,585 - INFO # 
+2018-08-08 22:15:09,586 - INFO # Swapping two threads ...
+2018-08-08 22:15:09,586 - INFO # Done
+2018-08-08 22:15:09,587 - INFO # 
+2018-08-08 22:15:09,588 - INFO # Move constructor ...
+2018-08-08 22:15:09,589 - INFO # Done
+2018-08-08 22:15:09,589 - INFO # 
+2018-08-08 22:15:09,590 - INFO # Bye, bye.
+2018-08-08 22:15:09,594 - INFO # ******************************************
+

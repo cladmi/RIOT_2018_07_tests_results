@@ -1,0 +1,180 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 1000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : clock speed 950 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.255227
+Info : stm32f0x.cpu: hardware has 4 breakpoints, 2 watchpoints
+Info : Listening on port 42463 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f0x.cpu       hla_target little stm32f0x.cpu       running
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xc1000000 pc: 0x08000458 msp: 0x20000200
+auto erase enabled
+Info : device id = 0x20016448
+Info : flash size = 128kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000003a msp: 0x20000200
+wrote 10240 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/xtimer_hang/bin/nucleo-f070rb/tests_xtimer_hang.elf in 0.478966s (20.878 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 10064 bytes in 0.162722s (60.398 KiB/s)
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:00:04,300 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:00:05,304 - INFO #  This is RIOT! (Testing (  5%)
+2018-08-08 22:00:05,305 - INFO # Testing (  6%)
+2018-08-08 22:00:05,305 - INFO # Testing (  7%)
+2018-08-08 22:00:05,305 - INFO # Testing (  8%)
+2018-08-08 22:00:05,305 - INFO # Testing (  9%)
+2018-08-08 22:00:05,306 - INFO # Testing ( 10%)
+2018-08-08 22:00:05,306 - INFO # Testing ( 11%)
+2018-08-08 22:00:05,306 - INFO # Testing ( 12%)
+2018-08-08 22:00:05,307 - INFO # Testing ( 13%)
+2018-08-08 22:00:05,307 - INFO # Testing ( 14%)
+2018-08-08 22:00:05,414 - INFO # Testing ( 15%)
+2018-08-08 22:00:05,515 - INFO # Testing ( 16%)
+2018-08-08 22:00:05,617 - INFO # Testing ( 17%)
+2018-08-08 22:00:05,718 - INFO # Testing ( 18%)
+2018-08-08 22:00:05,820 - INFO # Testing ( 19%)
+2018-08-08 22:00:05,921 - INFO # Testing ( 20%)
+2018-08-08 22:00:06,022 - INFO # Testing ( 21%)
+2018-08-08 22:00:06,124 - INFO # Testing ( 22%)
+2018-08-08 22:00:06,291 - INFO # Testing ( 23%)
+2018-08-08 22:00:06,392 - INFO # Testing ( 24%)
+2018-08-08 22:00:06,494 - INFO # Testing ( 25%)
+2018-08-08 22:00:06,595 - INFO # Testing ( 26%)
+2018-08-08 22:00:06,697 - INFO # Testing ( 27%)
+2018-08-08 22:00:06,798 - INFO # Testing ( 28%)
+2018-08-08 22:00:06,900 - INFO # Testing ( 29%)
+2018-08-08 22:00:07,001 - INFO # Testing ( 30%)
+2018-08-08 22:00:07,123 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:00:07,124 - INFO # [START]
+2018-08-08 22:00:07,226 - INFO # Testing (  0%)
+2018-08-08 22:00:07,327 - INFO # Testing (  1%)
+2018-08-08 22:00:07,429 - INFO # Testing (  2%)
+2018-08-08 22:00:07,530 - INFO # Testing (  3%)
+2018-08-08 22:00:07,632 - INFO # Testing (  4%)
+2018-08-08 22:00:07,798 - INFO # Testing (  5%)
+2018-08-08 22:00:07,900 - INFO # Testing (  6%)
+2018-08-08 22:00:08,001 - INFO # Testing (  7%)
+2018-08-08 22:00:08,103 - INFO # Testing (  8%)
+2018-08-08 22:00:08,203 - INFO # Testing (  9%)
+2018-08-08 22:00:08,305 - INFO # Testing ( 10%)
+2018-08-08 22:00:08,407 - INFO # Testing ( 11%)
+2018-08-08 22:00:08,508 - INFO # Testing ( 12%)
+2018-08-08 22:00:08,610 - INFO # Testing ( 13%)
+2018-08-08 22:00:08,710 - INFO # Testing ( 14%)
+2018-08-08 22:00:08,878 - INFO # Testing ( 15%)
+2018-08-08 22:00:08,979 - INFO # Testing ( 16%)
+2018-08-08 22:00:09,081 - INFO # Testing ( 17%)
+2018-08-08 22:00:09,182 - INFO # Testing ( 18%)
+2018-08-08 22:00:09,284 - INFO # Testing ( 19%)
+2018-08-08 22:00:09,385 - INFO # Testing ( 20%)
+2018-08-08 22:00:09,487 - INFO # Testing ( 21%)
+2018-08-08 22:00:09,588 - INFO # Testing ( 22%)
+2018-08-08 22:00:09,755 - INFO # Testing ( 23%)
+2018-08-08 22:00:09,856 - INFO # Testing ( 24%)
+2018-08-08 22:00:09,958 - INFO # Testing ( 25%)
+2018-08-08 22:00:10,059 - INFO # Testing ( 26%)
+2018-08-08 22:00:10,161 - INFO # Testing ( 27%)
+2018-08-08 22:00:10,262 - INFO # Testing ( 28%)
+2018-08-08 22:00:10,363 - INFO # Testing ( 29%)
+2018-08-08 22:00:10,465 - INFO # Testing ( 30%)
+2018-08-08 22:00:10,632 - INFO # Testing ( 31%)
+2018-08-08 22:00:10,733 - INFO # Testing ( 32%)
+2018-08-08 22:00:10,835 - INFO # Testing ( 33%)
+2018-08-08 22:00:10,936 - INFO # Testing ( 34%)
+2018-08-08 22:00:11,103 - INFO # Testing ( 35%)
+2018-08-08 22:00:11,204 - INFO # Testing ( 36%)
+2018-08-08 22:00:11,306 - INFO # Testing ( 37%)
+2018-08-08 22:00:11,408 - INFO # Testing ( 38%)
+2018-08-08 22:00:11,509 - INFO # Testing ( 39%)
+2018-08-08 22:00:11,610 - INFO # Testing ( 40%)
+2018-08-08 22:00:11,711 - INFO # Testing ( 41%)
+2018-08-08 22:00:11,813 - INFO # Testing ( 42%)
+2018-08-08 22:00:11,980 - INFO # Testing ( 43%)
+2018-08-08 22:00:12,081 - INFO # Testing ( 44%)
+2018-08-08 22:00:12,183 - INFO # Testing ( 45%)
+2018-08-08 22:00:12,284 - INFO # Testing ( 46%)
+2018-08-08 22:00:12,386 - INFO # Testing ( 47%)
+2018-08-08 22:00:12,487 - INFO # Testing ( 48%)
+2018-08-08 22:00:12,588 - INFO # Testing ( 49%)
+2018-08-08 22:00:12,690 - INFO # Testing ( 50%)
+2018-08-08 22:00:12,791 - INFO # Testing ( 51%)
+2018-08-08 22:00:12,892 - INFO # Testing ( 52%)
+2018-08-08 22:00:12,994 - INFO # Testing ( 53%)
+2018-08-08 22:00:13,095 - INFO # Testing ( 54%)
+2018-08-08 22:00:13,198 - INFO # Testing ( 55%)
+2018-08-08 22:00:13,364 - INFO # Testing ( 56%)
+2018-08-08 22:00:13,465 - INFO # Testing ( 57%)
+2018-08-08 22:00:13,567 - INFO # Testing ( 58%)
+2018-08-08 22:00:13,668 - INFO # Testing ( 59%)
+2018-08-08 22:00:13,769 - INFO # Testing ( 60%)
+2018-08-08 22:00:13,871 - INFO # Testing ( 61%)
+2018-08-08 22:00:13,971 - INFO # Testing ( 62%)
+2018-08-08 22:00:14,073 - INFO # Testing ( 63%)
+2018-08-08 22:00:14,175 - INFO # Testing ( 64%)
+2018-08-08 22:00:14,276 - INFO # Testing ( 65%)
+2018-08-08 22:00:14,377 - INFO # Testing ( 66%)
+2018-08-08 22:00:14,478 - INFO # Testing ( 67%)
+2018-08-08 22:00:14,580 - INFO # Testing ( 68%)
+2018-08-08 22:00:14,681 - INFO # Testing ( 69%)
+2018-08-08 22:00:14,783 - INFO # Testing ( 70%)
+2018-08-08 22:00:14,884 - INFO # Testing ( 72%)
+2018-08-08 22:00:14,985 - INFO # Testing ( 73%)
+2018-08-08 22:00:15,087 - INFO # Testing ( 74%)
+2018-08-08 22:00:15,188 - INFO # Testing ( 75%)
+2018-08-08 22:00:15,290 - INFO # Testing ( 76%)
+2018-08-08 22:00:15,392 - INFO # Testing ( 77%)
+2018-08-08 22:00:15,493 - INFO # Testing ( 78%)
+2018-08-08 22:00:15,595 - INFO # Testing ( 79%)
+2018-08-08 22:00:15,696 - INFO # Testing ( 80%)
+2018-08-08 22:00:15,798 - INFO # Testing ( 81%)
+2018-08-08 22:00:15,899 - INFO # Testing ( 82%)
+2018-08-08 22:00:16,000 - INFO # Testing ( 83%)
+2018-08-08 22:00:16,102 - INFO # Testing ( 84%)
+2018-08-08 22:00:16,203 - INFO # Testing ( 85%)
+2018-08-08 22:00:16,370 - INFO # Testing ( 86%)
+2018-08-08 22:00:16,472 - INFO # Testing ( 87%)
+2018-08-08 22:00:16,573 - INFO # Testing ( 88%)
+2018-08-08 22:00:16,675 - INFO # Testing ( 89%)
+2018-08-08 22:00:16,776 - INFO # Testing ( 90%)
+2018-08-08 22:00:16,877 - INFO # Testing ( 91%)
+2018-08-08 22:00:16,979 - INFO # Testing ( 92%)
+2018-08-08 22:00:17,146 - INFO # Testing ( 93%)
+2018-08-08 22:00:17,246 - INFO # Testing ( 94%)
+2018-08-08 22:00:17,348 - INFO # Testing ( 95%)
+2018-08-08 22:00:17,450 - INFO # Testing ( 96%)
+2018-08-08 22:00:17,551 - INFO # Testing ( 97%)
+2018-08-08 22:00:17,652 - INFO # Testing ( 98%)
+2018-08-08 22:00:17,753 - INFO # Testing ( 99%)
+2018-08-08 22:00:17,755 - INFO # Testing (100%)
+2018-08-08 22:00:17,756 - INFO # [SUCCESS]
+

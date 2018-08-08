@@ -1,0 +1,34 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT-RC/tests/driver_my9221 flash-only test
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/driver_my9221/bin/arduino-zero/tests_driver_my9221.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming............................................... done.
+Verification............................................... done.
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:21:35,913 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:21:36,916 - INFO # 0x171b
+2018-08-08 22:21:36,916 - INFO # *** RIOT kernel panic:
+2018-08-08 22:21:36,917 - INFO # FAILED ASSERTION.
+2018-08-08 22:21:36,917 - INFO # 
+2018-08-08 22:21:36,918 - INFO # *** halted.
+2018-08-08 22:21:36,918 - INFO # 
+2018-08-08 22:21:38,760 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:21:38,761 - INFO # [START]
+2018-08-08 22:21:38,774 - INFO # - light up all LEDs one by one.
+2018-08-08 22:21:39,444 - INFO # 0x171b
+2018-08-08 22:21:39,447 - INFO # *** RIOT kernel panic:
+2018-08-08 22:21:39,448 - INFO # FAILED ASSERTION.
+2018-08-08 22:21:39,448 - INFO # 
+2018-08-08 22:21:39,449 - INFO # *** halted.
+2018-08-08 22:21:39,450 - INFO # 
+Timeout in expect script at "child.expect_exact("[SUCCESS]", timeout=60)" (tests/driver_my9221/tests/01-run.py:15)
+
+Makefile:19: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

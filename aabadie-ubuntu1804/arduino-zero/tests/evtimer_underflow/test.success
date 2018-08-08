@@ -1,0 +1,12 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/evtimer_underflow/bin/arduino-zero/tests_evtimer_underflow.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming................................................ done.
+Verification................................................ done.
+tests/01-run.py
+....................................................................................................
+Stopped after 100 iterations, but should run forever.
+=> All tests successful
+

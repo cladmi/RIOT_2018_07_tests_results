@@ -1,0 +1,111 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/openocd/openocd.sh flash
+### Flashing Target ###
+Open On-Chip Debugger 0.10.0+dev-00399-g09076d10 (2018-04-12-15:43)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+WARNING: interface/stlink-v2-1.cfg is deprecated, please switch to interface/stlink.cfg
+hla_swd
+Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
+adapter speed: 1000 kHz
+adapter_nsrst_delay: 100
+none separate
+srst_only separate srst_nogate srst_open_drain connect_deassert_srst
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : clock speed 950 kHz
+Info : STLINK v2 JTAG v28 API v2 SWIM v18 VID 0x0483 PID 0x374B
+Info : using stlink api v2
+Info : Target voltage: 3.259960
+Info : stm32f0x.cpu: hardware has 4 breakpoints, 2 watchpoints
+Info : Listening on port 44383 for gdb connections
+    TargetName         Type       Endian TapName            State       
+--  ------------------ ---------- ------ ------------------ ------------
+ 0* stm32f0x.cpu       hla_target little stm32f0x.cpu       running
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+target halted due to debug-request, current mode: Thread 
+xPSR: 0xc1000000 pc: 0x08000414 msp: 0x20000200
+auto erase enabled
+Info : device id = 0x20016448
+Info : flash size = 128kbytes
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000003a msp: 0x20000200
+wrote 12288 bytes from file /home/aabadie/softs/src/riot/RIOT-RC/tests/xtimer_msg/bin/nucleo-f070rb/tests_xtimer_msg.elf in 0.558518s (21.485 KiB/s)
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+target halted due to breakpoint, current mode: Thread 
+xPSR: 0x61000000 pc: 0x2000002e msp: 0x20000200
+verified 11580 bytes in 0.179869s (62.871 KiB/s)
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+Info : Unable to match requested speed 1000 kHz, using 950 kHz
+adapter speed: 950 kHz
+shutdown command invoked
+Done flashing
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:00:28,485 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:00:29,489 - INFO # sec=1 min=0 hour=0
+2018-08-08 22:00:29,857 - INFO # now=2:10410 -> every 2.0s: Hello World
+2018-08-08 22:00:29,863 - INFO # sec=2 min=0 hour=0
+2018-08-08 22:00:30,866 - INFO # sec=3 min=0 hour=0
+2018-08-08 22:00:31,304 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:00:31,305 - INFO # This is thread 3
+2018-08-08 22:00:31,307 - INFO # sending 1st msg
+2018-08-08 22:00:31,310 - INFO # now=0:6942 -> every 2.0s: Hello World
+2018-08-08 22:00:31,312 - INFO # sending 2nd msg
+2018-08-08 22:00:31,315 - INFO # now=0:11827 -> every 5.0s: This is a Test
+2018-08-08 22:00:31,317 - INFO # This is thread 4
+2018-08-08 22:00:32,319 - INFO # sec=1 min=0 hour=0
+2018-08-08 22:00:33,314 - INFO # now=2:10410 -> every 2.0s: Hello World
+2018-08-08 22:00:33,321 - INFO # sec=2 min=0 hour=0
+2018-08-08 22:00:34,323 - INFO # sec=3 min=0 hour=0
+2018-08-08 22:00:35,318 - INFO # now=4:13969 -> every 2.0s: Hello World
+2018-08-08 22:00:35,324 - INFO # sec=4 min=0 hour=0
+2018-08-08 22:00:36,320 - INFO # now=5:15648 -> every 5.0s: This is a Test
+2018-08-08 22:00:36,326 - INFO # sec=5 min=0 hour=0
+2018-08-08 22:00:37,321 - INFO # now=6:17528 -> every 2.0s: Hello World
+2018-08-08 22:00:37,328 - INFO # sec=6 min=0 hour=0
+2018-08-08 22:00:38,330 - INFO # sec=7 min=0 hour=0
+2018-08-08 22:00:39,325 - INFO # now=8:21087 -> every 2.0s: Hello World
+2018-08-08 22:00:39,332 - INFO # sec=8 min=0 hour=0
+2018-08-08 22:00:40,333 - INFO # sec=9 min=0 hour=0
+2018-08-08 22:00:41,324 - INFO # now=10:19471 -> every 5.0s: This is a Test
+2018-08-08 22:00:41,329 - INFO # now=10:24647 -> every 2.0s: Hello World
+2018-08-08 22:00:41,335 - INFO # sec=10 min=0 hour=0
+2018-08-08 22:00:42,338 - INFO # sec=11 min=0 hour=0
+2018-08-08 22:00:43,332 - INFO # now=12:28295 -> every 2.0s: Hello World
+2018-08-08 22:00:43,339 - INFO # sec=12 min=0 hour=0
+2018-08-08 22:00:44,341 - INFO # sec=13 min=0 hour=0
+2018-08-08 22:00:45,336 - INFO # now=14:31944 -> every 2.0s: Hello World
+2018-08-08 22:00:45,343 - INFO # sec=14 min=0 hour=0
+2018-08-08 22:00:46,328 - INFO # now=15:23383 -> every 5.0s: This is a Test
+2018-08-08 22:00:46,345 - INFO # sec=15 min=0 hour=0
+2018-08-08 22:00:47,340 - INFO # now=16:35593 -> every 2.0s: Hello World
+2018-08-08 22:00:47,348 - INFO # sec=16 min=0 hour=0
+2018-08-08 22:00:48,349 - INFO # sec=17 min=0 hour=0
+2018-08-08 22:00:49,344 - INFO # now=18:39243 -> every 2.0s: Hello World
+2018-08-08 22:00:49,351 - INFO # sec=18 min=0 hour=0
+2018-08-08 22:00:50,353 - INFO # sec=19 min=0 hour=0
+2018-08-08 22:00:51,332 - INFO # now=20:27295 -> every 5.0s: This is a Test
+2018-08-08 22:00:51,347 - INFO # now=20:42893 -> every 2.0s: Hello World
+2018-08-08 22:00:51,355 - INFO # sec=20 min=0 hour=0
+2018-08-08 22:00:52,356 - INFO # sec=21 min=0 hour=0
+2018-08-08 22:00:53,351 - INFO # now=22:46544 -> every 2.0s: Hello World
+2018-08-08 22:00:53,358 - INFO # sec=22 min=0 hour=0
+2018-08-08 22:00:54,360 - INFO # sec=23 min=0 hour=0
+2018-08-08 22:00:55,355 - INFO # now=24:50195 -> every 2.0s: Hello World
+2018-08-08 22:00:55,362 - INFO # sec=24 min=0 hour=0
+2018-08-08 22:00:56,336 - INFO # now=25:31209 -> every 5.0s: This is a Test
+2018-08-08 22:00:56,364 - INFO # sec=25 min=0 hour=0
+2018-08-08 22:00:57,359 - INFO # now=26:53845 -> every 2.0s: Hello World
+2018-08-08 22:00:57,366 - INFO # sec=26 min=0 hour=0
+2018-08-08 22:00:58,368 - INFO # sec=27 min=0 hour=0
+2018-08-08 22:00:59,362 - INFO # now=28:57496 -> every 2.0s: Hello World
+2018-08-08 22:00:59,370 - INFO # sec=28 min=0 hour=0
+2018-08-08 22:01:00,372 - INFO # sec=29 min=0 hour=0
+2018-08-08 22:01:01,340 - INFO # now=30:35123 -> every 5.0s: This is a Test
+

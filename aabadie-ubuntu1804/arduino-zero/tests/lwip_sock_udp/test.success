@@ -1,0 +1,70 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/lwip_sock_udp/bin/arduino-zero/tests_lwip_sock_udp.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming......................................................................................................................................................................................................... done.
+Verification......................................................................................................................................................................................................... done.
+./tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:38:24,036 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:38:26,362 - INFO # Calling test_sock_udp_create6__EADDRINUSE()
+2018-08-08 22:38:26,366 - INFO # Calling test_sock_udp_create6__EAFNOSUPPORT()
+2018-08-08 22:38:26,370 - INFO # Calling test_sock_udp_create6__EINVAL_addr()
+2018-08-08 22:38:26,374 - INFO # Calling test_sock_udp_create6__EINVAL_netif()
+2018-08-08 22:38:26,378 - INFO # Calling test_sock_udp_create6__no_endpoints()
+2018-08-08 22:38:26,382 - INFO # Calling test_sock_udp_create6__only_local()
+2018-08-08 22:38:26,387 - INFO # Calling test_sock_udp_create6__only_local_port0()
+2018-08-08 22:38:26,392 - INFO # Calling test_sock_udp_create6__only_local_reuse_ep()
+2018-08-08 22:38:26,396 - INFO # Calling test_sock_udp_create6__only_remote()
+2018-08-08 22:38:26,399 - INFO # Calling test_sock_udp_create6__full()
+2018-08-08 22:38:26,406 - INFO # Calling test_sock_udp_recv6__EADDRNOTAVAIL()
+2018-08-08 22:38:26,407 - INFO # Calling test_sock_udp_recv6__EAGAIN()
+2018-08-08 22:38:26,410 - INFO # Calling test_sock_udp_recv6__ENOBUFS()
+2018-08-08 22:38:26,414 - INFO # Calling test_sock_udp_recv6__ETIMEDOUT()
+2018-08-08 22:38:26,417 - INFO #  * Calling sock_udp_recv()
+2018-08-08 22:38:26,876 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:38:26,877 - INFO # code 0x41
+2018-08-08 22:38:29,883 - INFO # Calling test_sock_udp_create6__EADDRINUSE()
+2018-08-08 22:38:29,887 - INFO # Calling test_sock_udp_create6__EAFNOSUPPORT()
+2018-08-08 22:38:29,891 - INFO # Calling test_sock_udp_create6__EINVAL_addr()
+2018-08-08 22:38:29,895 - INFO # Calling test_sock_udp_create6__EINVAL_netif()
+2018-08-08 22:38:29,899 - INFO # Calling test_sock_udp_create6__no_endpoints()
+2018-08-08 22:38:29,903 - INFO # Calling test_sock_udp_create6__only_local()
+2018-08-08 22:38:29,907 - INFO # Calling test_sock_udp_create6__only_local_port0()
+2018-08-08 22:38:29,912 - INFO # Calling test_sock_udp_create6__only_local_reuse_ep()
+2018-08-08 22:38:29,916 - INFO # Calling test_sock_udp_create6__only_remote()
+2018-08-08 22:38:29,920 - INFO # Calling test_sock_udp_create6__full()
+2018-08-08 22:38:29,924 - INFO # Calling test_sock_udp_recv6__EADDRNOTAVAIL()
+2018-08-08 22:38:29,927 - INFO # Calling test_sock_udp_recv6__EAGAIN()
+2018-08-08 22:38:29,931 - INFO # Calling test_sock_udp_recv6__ENOBUFS()
+2018-08-08 22:38:29,935 - INFO # Calling test_sock_udp_recv6__ETIMEDOUT()
+2018-08-08 22:38:29,937 - INFO #  * Calling sock_udp_recv()
+2018-08-08 22:38:30,941 - INFO #  * (timed out with timeout 1000000)
+2018-08-08 22:38:30,944 - INFO # Calling test_sock_udp_recv6__socketed()
+2018-08-08 22:38:30,950 - INFO # Calling test_sock_udp_recv6__socketed_with_remote()
+2018-08-08 22:38:30,954 - INFO # Calling test_sock_udp_recv6__unsocketed()
+2018-08-08 22:38:30,959 - INFO # Calling test_sock_udp_recv6__unsocketed_with_remote()
+2018-08-08 22:38:30,963 - INFO # Calling test_sock_udp_recv6__with_timeout()
+2018-08-08 22:38:30,967 - INFO # Calling test_sock_udp_recv6__non_blocking()
+2018-08-08 22:38:30,972 - INFO # Calling test_sock_udp_send6__EAFNOSUPPORT()
+2018-08-08 22:38:30,976 - INFO # Calling test_sock_udp_send6__EINVAL_addr()
+2018-08-08 22:38:30,980 - INFO # Calling test_sock_udp_send6__EINVAL_netif()
+2018-08-08 22:38:30,984 - INFO # Calling test_sock_udp_send6__EINVAL_port()
+2018-08-08 22:38:30,988 - INFO # Calling test_sock_udp_send6__EHOSTUNREACH()
+2018-08-08 22:38:30,991 - INFO # Calling test_sock_udp_send6__ENOTCONN()
+2018-08-08 22:38:30,996 - INFO # Calling test_sock_udp_send6__socketed_no_local_no_netif()
+2018-08-08 22:38:31,002 - INFO # Calling test_sock_udp_send6__socketed_no_netif()
+2018-08-08 22:38:31,008 - INFO # Calling test_sock_udp_send6__socketed_no_local()
+2018-08-08 22:38:31,012 - INFO # Calling test_sock_udp_send6__socketed()
+2018-08-08 22:38:31,018 - INFO # Calling test_sock_udp_send6__socketed_other_remote()
+2018-08-08 22:38:31,025 - INFO # Calling test_sock_udp_send6__unsocketed_no_local_no_netif()
+2018-08-08 22:38:31,031 - INFO # Calling test_sock_udp_send6__unsocketed_no_netif()
+2018-08-08 22:38:31,036 - INFO # Calling test_sock_udp_send6__unsocketed_no_local()
+2018-08-08 22:38:31,041 - INFO # Calling test_sock_udp_send6__unsocketed()
+2018-08-08 22:38:31,047 - INFO # Calling test_sock_udp_send6__no_sock_no_netif()
+2018-08-08 22:38:31,051 - INFO # Calling test_sock_udp_send6__no_sock()
+2018-08-08 22:38:31,055 - INFO # ALL TESTS SUCCESSFUL
+

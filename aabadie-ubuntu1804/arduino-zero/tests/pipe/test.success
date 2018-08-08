@@ -1,0 +1,36 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/edbg/edbg  -t atmel_cm0p -b -e -v -p -f /home/aabadie/softs/src/riot/RIOT-RC/tests/pipe/bin/arduino-zero/tests_pipe.bin
+Debugger: ATMEL EDBG CMSIS-DAP 00000000AZE000000166 02.01.0157 (S)
+Clock frequency: 16.0 MHz
+Target: SAM D21G18A (Rev D)
+Erasing...  done.
+Programming........................................ done.
+Verification........................................ done.
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 22:42:13,273 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 22:42:16,154 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 22:42:16,154 - INFO # Start.
+2018-08-08 22:42:16,157 - INFO # Middle read: <ABCD> [0:4]
+2018-08-08 22:42:16,159 - INFO # Middle read: <EF> [4:6]
+2018-08-08 22:42:16,161 - INFO # End read: <ABC> [0:3]
+2018-08-08 22:42:16,163 - INFO # End read: <DEF> [3:6]
+2018-08-08 22:42:16,166 - INFO # Middle read: <GHIJ> [6:10]
+2018-08-08 22:42:16,168 - INFO # Middle read: <KL> [10:12]
+2018-08-08 22:42:16,170 - INFO # End read: <GHI> [6:9]
+2018-08-08 22:42:16,172 - INFO # End read: <JKL> [9:12]
+2018-08-08 22:42:16,175 - INFO # Middle read: <MNOP> [12:16]
+2018-08-08 22:42:16,177 - INFO # Middle read: <QR> [16:18]
+2018-08-08 22:42:16,179 - INFO # End read: <MNO> [12:15]
+2018-08-08 22:42:16,181 - INFO # End read: <PQR> [15:18]
+2018-08-08 22:42:16,184 - INFO # Middle read: <STUV> [18:22]
+2018-08-08 22:42:16,186 - INFO # Middle read: <WX> [22:24]
+2018-08-08 22:42:16,187 - INFO # Main done.
+2018-08-08 22:42:16,189 - INFO # End read: <STU> [18:21]
+2018-08-08 22:42:16,192 - INFO # End read: <VWX> [21:24]
+2018-08-08 22:42:16,194 - INFO # Middle read: <YZ> [24:26]
+2018-08-08 22:42:16,195 - INFO # Middle done.
+2018-08-08 22:42:16,197 - INFO # End read: <YZ> [24:26]
+2018-08-08 22:42:16,198 - INFO # End done.
+

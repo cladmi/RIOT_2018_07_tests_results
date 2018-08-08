@@ -1,0 +1,94 @@
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/jlink/jlink.sh flash
+### Flashing Target ###
+### Flashing at address 0x0 ###
+HEXFILE found
+SEGGER J-Link Commander V6.33g (Compiled Jun 28 2018 15:09:53)
+DLL version V6.33g, compiled Jun 28 2018 15:09:48
+
+
+J-Link Command File read successfully.
+Processing script file...
+
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: J-Link OB-SAM3U128-V2-NordicSemi compiled Jan 12 2018 16:05:20
+Hardware version: V1.00
+S/N: 683238897
+VTref=3.300V
+Target connection not established yet but required for command.
+Device "NRF52" selected.
+
+
+Connecting to target via SWD
+Found SW-DP with ID 0x2BA01477
+Found SW-DP with ID 0x2BA01477
+Scanning AP map to find all available APs
+AP[2]: Stopped AP scan as end of AP map has been reached
+AP[0]: AHB-AP (IDR: 0x24770011)
+AP[1]: JTAG-AP (IDR: 0x02880000)
+Iterating through AP map to find AHB-AP to use
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)
+Found Cortex-M4 r0p1, Little endian.
+FPUnit: 6 code (BP) slots and 2 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB00C SCS-M7
+ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 003BB002 DWT
+ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 002BB003 FPB
+ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 003BB001 ITM
+ROMTbl[0][4]: E0040000, CID: B105900D, PID: 000BB9A1 TPIU
+ROMTbl[0][5]: E0041000, CID: B105900D, PID: 000BB925 ETM
+Cortex-M4 identified.
+Halting CPU for downloading file.
+Downloading file [/home/aabadie/softs/src/riot/RIOT-RC/tests/trickle/bin/nrf52840dk/tests_trickle.bin]...
+Comparing flash   [000%]000%]050%]100%] Done.
+Erasing flash     [000%]000%]100%] Done.
+Programming flash [000%]000%]000%]000%]005%]005%]010%]010%]015%]015%]020%]020%]025%]025%]025%]025%]030%]030%]035%]035%]040%]040%]045%]045%]050%]050%]050%]050%]055%]055%]060%]060%]065%]065%]070%]070%]075%]075%]075%]075%]080%]080%]085%]085%]090%]100%] Done.
+Verifying flash   [000%]000%]100%] Done.
+J-Link: Flash download: Bank 0 @ 0x00000000: 1 range affected (12288 bytes)
+J-Link: Flash download: Total time needed: 0.500s (Prepare: 0.040s, Compare: 0.004s, Erase: 0.253s, Program: 0.192s, Verify: 0.000s, Restore: 0.008s)
+O.K.
+
+Reset delay: 0 ms
+Reset type NORMAL: Resets core & peripherals via SYSRESETREQ & VECTRESET bit.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+
+
+
+Script processing completed.
+
+tests/01-run.py
+/home/aabadie/softs/src/riot/RIOT-RC/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+2018-08-08 21:18:10,171 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 21:18:11,175 - INFO # now = 1270876, prev_now = 605734, diff = 665142
+2018-08-08 21:18:11,176 - INFO # [TRICKLE_RESET]
+2018-08-08 21:18:11,177 - INFO # now = 1286118, prev_now = 1270876, diff = 15242
+2018-08-08 21:18:11,178 - INFO # now = 1318346, prev_now = 1286118, diff = 32228
+2018-08-08 21:18:11,179 - INFO # now = 1364577, prev_now = 1318346, diff = 46231
+2018-08-08 21:18:11,181 - INFO # now = 1475807, prev_now = 1364577, diff = 111230
+2018-08-08 21:18:11,240 - INFO # now = 1713121, prev_now = 1475807, diff = 237314
+2018-08-08 21:18:11,683 - INFO # now = 2156438, prev_now = 1713121, diff = 443317
+2018-08-08 21:18:12,843 - INFO # now = 3316754, prev_now = 2156438, diff = 1160316
+2018-08-08 21:18:12,844 - INFO # [SUCCESS]
+2018-08-08 21:18:13,682 - INFO # main(): This is RIOT! (Version: buildtest)
+2018-08-08 21:18:13,683 - INFO # [START]
+2018-08-08 21:18:13,709 - INFO # now = 26828, prev_now = 3808, diff = 23020
+2018-08-08 21:18:13,805 - INFO # now = 122623, prev_now = 26828, diff = 95795
+2018-08-08 21:18:13,953 - INFO # now = 270591, prev_now = 122623, diff = 147968
+2018-08-08 21:18:14,288 - INFO # now = 605734, prev_now = 270591, diff = 335143
+2018-08-08 21:18:14,953 - INFO # now = 1270876, prev_now = 605734, diff = 665142
+2018-08-08 21:18:14,955 - INFO # [TRICKLE_RESET]
+2018-08-08 21:18:14,968 - INFO # now = 1286118, prev_now = 1270876, diff = 15242
+2018-08-08 21:18:15,001 - INFO # now = 1318345, prev_now = 1286118, diff = 32227
+2018-08-08 21:18:15,047 - INFO # now = 1364568, prev_now = 1318345, diff = 46223
+2018-08-08 21:18:15,158 - INFO # now = 1475798, prev_now = 1364568, diff = 111230
+2018-08-08 21:18:15,395 - INFO # now = 1713112, prev_now = 1475798, diff = 237314
+2018-08-08 21:18:15,839 - INFO # now = 2156429, prev_now = 1713112, diff = 443317
+2018-08-08 21:18:16,999 - INFO # now = 3316745, prev_now = 2156429, diff = 1160316
+2018-08-08 21:18:17,000 - INFO # [SUCCESS]
+

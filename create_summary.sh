@@ -19,6 +19,7 @@ output_for_step() {
         for name in $(find . -name ${step}.failed | sed 's|^./||'); do
             echo "- [$(dirname ${name})](${name})"
         done
+        echo
     fi
 }
 

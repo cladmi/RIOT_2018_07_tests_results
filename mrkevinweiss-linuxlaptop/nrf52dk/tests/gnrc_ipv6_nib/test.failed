@@ -1,0 +1,90 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/kevinweiss/WorkingDirectory/RIOT/tests/gnrc_ipv6_nib flash-only test
+/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/jlink/jlink.sh flash
+### Flashing Target ###
+### Flashing at address 0x0 ###
+HEXFILE found
+SEGGER J-Link Commander V6.32i (Compiled Jul 24 2018 15:20:49)
+DLL version V6.32i, compiled Jul 24 2018 15:20:43
+
+
+J-Link Command File read successfully.
+Processing script file...
+
+J-Link connection not established yet but required for command.
+Connecting to J-Link via USB...O.K.
+Firmware: J-Link OB-SAM3U128-V2-NordicSemi compiled Jul 12 2018 11:44:41
+Hardware version: V1.00
+S/N: 682031933
+VTref=3.300V
+Target connection not established yet but required for command.
+Device "NRF52" selected.
+
+
+Connecting to target via SWD
+Found SW-DP with ID 0x2BA01477
+Found SW-DP with ID 0x2BA01477
+Scanning AP map to find all available APs
+AP[2]: Stopped AP scan as end of AP map has been reached
+AP[0]: AHB-AP (IDR: 0x24770011)
+AP[1]: JTAG-AP (IDR: 0x02880000)
+Iterating through AP map to find AHB-AP to use
+AP[0]: Core found
+AP[0]: AHB-AP ROM base: 0xE00FF000
+CPUID register: 0x410FC241. Implementer code: 0x41 (ARM)
+Found Cortex-M4 r0p1, Little endian.
+FPUnit: 6 code (BP) slots and 2 literal slots
+CoreSight components:
+ROMTbl[0] @ E00FF000
+ROMTbl[0][0]: E000E000, CID: B105E00D, PID: 000BB00C SCS-M7
+ROMTbl[0][1]: E0001000, CID: B105E00D, PID: 003BB002 DWT
+ROMTbl[0][2]: E0002000, CID: B105E00D, PID: 002BB003 FPB
+ROMTbl[0][3]: E0000000, CID: B105E00D, PID: 003BB001 ITM
+ROMTbl[0][4]: E0040000, CID: B105900D, PID: 000BB9A1 TPIU
+ROMTbl[0][5]: E0041000, CID: B105900D, PID: 000BB925 ETM
+Cortex-M4 identified.
+Halting CPU for downloading file.
+Downloading file [/home/kevinweiss/WorkingDirectory/RIOT/tests/gnrc_ipv6_nib/bin/nrf52dk/tests_gnrc_ipv6_nib.bin]...
+Comparing flash   [000%]000%]050%]100%] Done.
+Erasing flash     [000%]000%]085%]085%]100%] Done.
+Programming flash [000%]000%]000%]000%]000%]000%]005%]005%]005%]005%]010%]010%]010%]010%]010%]010%]015%]015%]015%]015%]020%]020%]020%]020%]025%]025%]025%]025%]025%]025%]030%]030%]030%]030%]035%]035%]035%]035%]035%]035%]040%]040%]040%]040%]045%]045%]045%]045%]050%]050%]050%]050%]050%]050%]055%]055%]055%]055%]060%]060%]060%]060%]060%]060%]065%]065%]065%]065%]070%]070%]070%]070%]075%]075%]075%]075%]075%]075%]080%]080%]080%]080%]085%]085%]085%]085%]085%]085%]090%]090%]090%]100%] Done.
+Verifying flash   [000%]000%]100%] Done.
+J-Link: Flash download: Bank 0 @ 0x00000000: 1 range affected (49152 bytes)
+J-Link: Flash download: Total time needed: 0.890s (Prepare: 0.041s, Compare: 0.007s, Erase: 0.033s, Program: 0.797s, Verify: 0.001s, Restore: 0.008s)
+O.K.
+
+Reset delay: 0 ms
+Reset type NORMAL: Resets core & peripherals via SYSRESETREQ & VECTRESET bit.
+Reset: Halt core after reset via DEMCR.VC_CORERESET.
+Reset: Reset device via AIRCR.SYSRESETREQ.
+
+
+
+Script processing completed.
+
+tests/01-run.py
+/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-08 16:49:17,732 - INFO # Connect to serial port /dev/ttyACM0
+Traceback (most recent call last):
+  File "/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/pyterm/pyterm", line 787, in <module>
+    myshell.cmdloop("Welcome to pyterm!\nType '/exit' to exit.")
+  File "/usr/lib/python2.7/cmd.py", line 109, in cmdloop
+    self.preloop()
+  File "/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/pyterm/pyterm", line 243, in preloop
+    self.serial_connect()
+  File "/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/pyterm/pyterm", line 603, in serial_connect
+    self.ser = serial.Serial(port=self.port, dsrdtr=0, rtscts=0)
+  File "/usr/local/lib/python2.7/dist-packages/serial/serialutil.py", line 240, in __init__
+    self.open()
+  File "/usr/local/lib/python2.7/dist-packages/serial/serialposix.py", line 268, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
+/home/kevinweiss/WorkingDirectory/RIOT/Makefile.include:483: recipe for target 'term' failed
+make[1]: *** [term] Error 1
+Unexpected end of file in expect script at "child.expect(r"OK \(\d+ tests\)")" (tests/gnrc_ipv6_nib/tests/01-run.py:15)
+
+Process already stopped
+Makefile:22: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

@@ -1,0 +1,11 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/kevinweiss/WorkingDirectory/RIOT/tests/mcuboot clean all
+Traceback (most recent call last):
+  File "/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/mcuboot/imgtool.py", line 4, in <module>
+    from imgtool import keys
+  File "/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/mcuboot/imgtool/keys.py", line 5, in <module>
+    from Crypto.Hash import SHA256
+ImportError: No module named 'Crypto'
+/home/kevinweiss/WorkingDirectory/RIOT/makefiles/mcuboot.mk:19: recipe for target '/home/kevinweiss/WorkingDirectory/RIOT/tests/mcuboot/bin/nrf52dk/key.pem' failed
+make: *** [/home/kevinweiss/WorkingDirectory/RIOT/tests/mcuboot/bin/nrf52dk/key.pem] Error 1
+
+Return value: 2

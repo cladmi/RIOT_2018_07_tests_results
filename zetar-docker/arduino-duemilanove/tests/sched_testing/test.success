@@ -1,0 +1,16 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 19:03:02,722 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 19:03:04,200 - INFO # 
+2018-08-08 19:03:04,280 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-ade8071b9f61-2018.07-branch)
+2018-08-08 19:03:04,344 - INFO # The output should be: yield 1, snd_thread running, yield 2, done
+2018-08-08 19:03:04,424 - INFO # ----------------------------------------------------------------
+2018-08-08 19:03:04,425 - INFO # yield 1
+2018-08-08 19:03:04,440 - INFO # snd_thread running
+2018-08-08 19:03:04,456 - INFO # yield 2
+2018-08-08 19:03:04,457 - INFO # done
+

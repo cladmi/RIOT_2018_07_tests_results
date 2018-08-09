@@ -1,0 +1,63 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 18:05:19,706 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:05:20,716 - INFO # n(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-ca26180bde92-2018.07-branch)
+2018-08-08 18:05:20,719 - INFO # test_shell.
+> 2018-08-08 18:05:21,387 - INFO #  
+2018-08-08 18:05:21,476 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-ca26180bde92-2018.07-branch)
+2018-08-08 18:05:21,489 - INFO # test_shell.
+> start_test
+start_test
+2018-08-08 18:05:22,738 - INFO #  start_test
+2018-08-08 18:05:22,750 - INFO # [TEST_START]
+end_test
+> end_test
+2018-08-08 18:05:22,816 - INFO #  end_test
+2018-08-08 18:05:22,828 - INFO # [TEST_END]
+
+
+> 
+123456789012345678901234567890123456789012345678901234567890
+
+2018-08-08 18:05:22,895 - INFO #  end_test
+2018-08-08 18:05:22,906 - INFO # [TEST_END]
+> 2018-08-08 18:05:22,918 - INFO #  end_test
+2018-08-08 18:05:22,930 - INFO # [TEST_END]
+> 123456789012345678901234567890123456789012345678901234567890
+2018-08-08 18:05:23,000 - INFO #  123456789012345678901234567890123456789012345678901234567890
+2018-08-08 18:05:23,090 - INFO # shell: command not found: 123456789012345678901234567890123456789012345678901234567890
+unknown_command
+> unknown_command
+2018-08-08 18:05:23,168 - INFO #  unknown_command
+2018-08-08 18:05:23,213 - INFO # shell: command not found: unknown_command
+help
+> help
+2018-08-08 18:05:23,279 - INFO #  help
+2018-08-08 18:05:23,311 - INFO # Command              Description
+2018-08-08 18:05:23,352 - INFO # ---------------------------------------
+2018-08-08 18:05:23,389 - INFO # start_test           starts a test
+2018-08-08 18:05:23,426 - INFO # end_test             ends a test
+2018-08-08 18:05:23,471 - INFO # echo                 prints the input command
+2018-08-08 18:05:23,512 - INFO # reboot               Reboot the node
+2018-08-08 18:05:23,578 - INFO # ps                   Prints information about running threads.
+echo a string
+> echo a string
+2018-08-08 18:05:23,647 - INFO #  echo a string
+2018-08-08 18:05:23,668 - INFO # "echo""a""string"
+ps
+> ps
+2018-08-08 18:05:23,729 - INFO #  ps
+2018-08-08 18:05:23,754 - INFO # 	pid | state    Q | pri 
+2018-08-08 18:05:23,778 - INFO # 	  1 | pending  Q |  15
+2018-08-08 18:05:23,803 - INFO # 	  2 | running  Q |   7
+reboot
+> reboot
+2018-08-08 18:05:23,868 - INFO #  reboot
+2018-08-08 18:05:24,229 - INFO # 
+2018-08-08 18:05:24,319 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-ca26180bde92-2018.07-branch)
+2018-08-08 18:05:24,331 - INFO # test_shell.
+

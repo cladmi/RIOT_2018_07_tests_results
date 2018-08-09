@@ -1,0 +1,312 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/gnrc_ipv6_nib test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 15:06:39,434 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 15:06:40,438 - INFO # 
+2018-08-08 15:06:40,441 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:40,444 - INFO # main(): This is RIOT! (Version: 201ranch)
+2018-08-08 15:06:40,445 - INFO # 
+2018-08-08 15:06:40,447 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:40,451 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:40,451 - INFO # 
+2018-08-08 15:06:40,452 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:40,454 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:40,454 - INFO # 
+2018-08-08 15:06:40,455 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:40,457 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:40,457 - INFO # 
+2018-08-08 15:06:40,457 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:40,459 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:40,460 - INFO # 
+2018-08-08 15:06:40,460 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:40,462 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:40,462 - INFO # 
+2018-08-08 15:06:40,463 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:40,465 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:40,465 - INFO # 
+2018-08-08 15:06:40,466 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:40,468 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:40,468 - INFO # 
+2018-08-08 15:06:40,469 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:40,514 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:40,514 - INFO # 
+2018-08-08 15:06:40,602 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:40,637 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:40,704 - INFO # 
+2018-08-08 15:06:40,706 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:40,814 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:40,815 - INFO # 
+2018-08-08 15:06:40,817 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:40,916 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:40,917 - INFO # 
+2018-08-08 15:06:40,937 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:41,037 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:41,037 - INFO # 
+2018-08-08 15:06:41,104 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:41,214 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:41,214 - INFO # 
+2018-08-08 15:06:41,217 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:41,316 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:41,316 - INFO # 
+2018-08-08 15:06:41,336 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:41,436 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:41,437 - INFO # 
+2018-08-08 15:06:41,503 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:41,613 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:41,614 - INFO # 
+2018-08-08 15:06:41,616 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:41,715 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:41,716 - INFO # 
+2018-08-08 15:06:41,736 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:41,836 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:41,837 - INFO # 
+2018-08-08 15:06:41,902 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:42,013 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:42,013 - INFO # 
+2018-08-08 15:06:42,016 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:42,115 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:42,115 - INFO # 
+2018-08-08 15:06:42,118 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:42,217 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:42,236 - INFO # 
+2018-08-08 15:06:42,302 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:42,337 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:42,410 - INFO # 
+2018-08-08 15:06:42,411 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:42,515 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:42,515 - INFO # 
+2018-08-08 15:06:42,517 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:42,617 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:42,617 - INFO # 
+2018-08-08 15:06:42,701 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:42,737 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:42,804 - INFO # 
+2018-08-08 15:06:42,806 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:42,914 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:42,915 - INFO # 
+2018-08-08 15:06:42,917 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:43,016 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:43,017 - INFO # 
+2018-08-08 15:06:43,037 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:43,136 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:43,136 - INFO # 
+2018-08-08 15:06:43,203 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:43,314 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:43,315 - INFO # 
+2018-08-08 15:06:43,317 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:43,416 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:43,416 - INFO # 
+2018-08-08 15:06:43,436 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:43,536 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:43,537 - INFO # 
+2018-08-08 15:06:43,604 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:43,713 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:43,714 - INFO # 
+2018-08-08 15:06:43,716 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:43,815 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:43,816 - INFO # 
+2018-08-08 15:06:43,837 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:43,936 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:43,937 - INFO # 
+2018-08-08 15:06:44,003 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:44,113 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:44,114 - INFO # 
+2018-08-08 15:06:44,116 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:44,214 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:44,214 - INFO # 
+2018-08-08 15:06:44,217 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:44,303 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:44,336 - INFO # 
+2018-08-08 15:06:44,402 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:44,438 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:44,512 - INFO # 
+2018-08-08 15:06:44,514 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:44,615 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:44,615 - INFO # 
+2018-08-08 15:06:44,618 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:44,717 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:44,717 - INFO # 
+2018-08-08 15:06:44,803 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:44,836 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:44,906 - INFO # 
+2018-08-08 15:06:44,908 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:45,014 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:45,015 - INFO # 
+2018-08-08 15:06:45,017 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:45,114 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:45,115 - INFO # 
+2018-08-08 15:06:45,136 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:45,237 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:45,237 - INFO # 
+2018-08-08 15:06:45,303 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:45,413 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:45,413 - INFO # 
+2018-08-08 15:06:45,416 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:45,514 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:45,514 - INFO # 
+2018-08-08 15:06:45,536 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:45,636 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:45,637 - INFO # 
+2018-08-08 15:06:45,703 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:45,813 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:45,814 - INFO # 
+2018-08-08 15:06:45,816 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:45,915 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:45,915 - INFO # 
+2018-08-08 15:06:45,936 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:46,036 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:46,037 - INFO # 
+2018-08-08 15:06:46,104 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:46,213 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:46,214 - INFO # 
+2018-08-08 15:06:46,216 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:46,315 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:46,316 - INFO # 
+2018-08-08 15:06:46,318 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:46,436 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:46,436 - INFO # 
+2018-08-08 15:06:46,502 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:46,538 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:46,612 - INFO # 
+2018-08-08 15:06:46,614 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:46,715 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:46,715 - INFO # 
+2018-08-08 15:06:46,718 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:46,817 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:46,817 - INFO # 
+2018-08-08 15:06:46,903 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:46,936 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:47,007 - INFO # 
+2018-08-08 15:06:47,009 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:47,114 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:47,115 - INFO # 
+2018-08-08 15:06:47,117 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:47,213 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:47,214 - INFO # 
+2018-08-08 15:06:47,236 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:47,337 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:47,338 - INFO # 
+2018-08-08 15:06:47,405 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:47,514 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:47,514 - INFO # 
+2018-08-08 15:06:47,517 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:47,616 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:47,617 - INFO # 
+2018-08-08 15:06:47,637 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:47,736 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:47,736 - INFO # 
+2018-08-08 15:06:47,803 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:47,914 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:47,914 - INFO # 
+2018-08-08 15:06:47,916 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:48,016 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:48,016 - INFO # 
+2018-08-08 15:06:48,036 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:48,136 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:48,136 - INFO # 
+2018-08-08 15:06:48,204 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:48,313 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:48,314 - INFO # 
+2018-08-08 15:06:48,316 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:48,415 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:48,416 - INFO # 
+2018-08-08 15:06:48,436 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:48,536 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:48,536 - INFO # 
+2018-08-08 15:06:48,603 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:48,713 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:48,713 - INFO # 
+2018-08-08 15:06:48,716 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:48,814 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:48,814 - INFO # 
+2018-08-08 15:06:48,815 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:48,917 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:48,918 - INFO # 
+2018-08-08 15:06:49,002 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:49,038 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:49,108 - INFO # 
+2018-08-08 15:06:49,110 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:49,214 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:49,215 - INFO # 
+2018-08-08 15:06:49,218 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:49,314 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:49,314 - INFO # 
+2018-08-08 15:06:49,337 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:49,437 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:49,503 - INFO # 
+2018-08-08 15:06:49,505 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:49,614 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:49,615 - INFO # 
+2018-08-08 15:06:49,617 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:49,716 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:49,717 - INFO # 
+2018-08-08 15:06:49,737 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:49,837 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:49,837 - INFO # 
+2018-08-08 15:06:49,903 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:50,013 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:50,013 - INFO # 
+2018-08-08 15:06:50,016 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:50,116 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:50,116 - INFO # 
+2018-08-08 15:06:50,136 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:50,236 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:50,236 - INFO # 
+2018-08-08 15:06:50,303 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:50,413 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:50,414 - INFO # 
+2018-08-08 15:06:50,416 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:50,514 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:50,514 - INFO # 
+2018-08-08 15:06:50,536 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:50,636 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:50,637 - INFO # 
+2018-08-08 15:06:50,704 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:50,813 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:50,814 - INFO # 
+2018-08-08 15:06:50,816 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:50,915 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:50,916 - INFO # 
+2018-08-08 15:06:50,918 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:51,017 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:51,036 - INFO # 
+2018-08-08 15:06:51,102 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:51,137 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:51,211 - INFO # 
+2018-08-08 15:06:51,213 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:51,314 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:51,314 - INFO # 
+2018-08-08 15:06:51,317 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:51,417 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:51,417 - INFO # 
+2018-08-08 15:06:51,503 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:51,537 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:51,604 - INFO # 
+2018-08-08 15:06:51,606 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:51,713 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:51,714 - INFO # 
+2018-08-08 15:06:51,716 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:51,816 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:51,817 - INFO # 
+2018-08-08 15:06:51,837 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:51,936 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:51,937 - INFO # 
+2018-08-08 15:06:52,003 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:52,114 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:52,114 - INFO # 
+2018-08-08 15:06:52,117 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:52,216 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:52,216 - INFO # 
+2018-08-08 15:06:52,236 - INFO # random: NO SEED AVAILABLE!
+2018-08-08 15:06:52,337 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-beeb7742d534-2018.07-branch)
+2018-08-08 15:06:52,337 - INFO # 
+Timeout in expect script at "child.expect(r"OK \(\d+ tests\)")" (tests/gnrc_ipv6_nib/tests/01-run.py:15)
+
+Makefile:22: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

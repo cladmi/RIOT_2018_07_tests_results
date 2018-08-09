@@ -1,0 +1,30 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/cb_mux test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+./tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 14:45:48,077 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 14:45:49,081 - INFO # 
+2018-08-08 14:45:49,090 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-74090est execution of CB with lowest ID (1)
+2018-08-08 14:45:49,092 - INFO # Callback 1 executed
+2018-08-08 14:45:49,094 - INFO # Test execution of CB with highest ID (3)
+2018-08-08 14:45:49,094 - INFO # Callback 3 executed
+2018-08-08 14:45:49,096 - INFO # Re-adding list entries (0, 2, 4) by finding next free ID
+2018-08-08 14:45:49,096 - INFO # Added entry 0
+2018-08-08 14:45:49,097 - INFO # Added entry 2
+2018-08-08 14:45:49,097 - INFO # Added entry 4
+2018-08-08 14:45:49,098 - INFO # Test iteration of a function over list
+2018-08-08 14:45:49,099 - INFO # Entry 0 was updated correctly
+2018-08-08 14:45:49,099 - INFO # Entry 1 was updated correctly
+2018-08-08 14:45:49,100 - INFO # Entry 2 was updated correctly
+2018-08-08 14:45:49,101 - INFO # Entry 3 was updated correctly
+2018-08-08 14:45:49,102 - INFO # Entry 4 was updated correctly
+2018-08-08 14:45:49,102 - INFO # Tests complete!
+Timeout in expect script at "child.expect_exact("cb_mux test routine")" (tests/cb_mux/tests/01-run.py:14)
+
+Makefile:10: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

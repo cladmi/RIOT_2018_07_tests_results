@@ -1,0 +1,16 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/gnrc_ndp test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 15:11:22,772 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 15:11:23,776 - INFO # 
+2018-08-08 15:11:23,780 - INFO # random: NO SEED AVAILABLE!
+Timeout in expect script at "child.expect(r"OK \(\d+ tests\)")" (tests/gnrc_ndp/tests/01-run.py:16)
+
+Makefile:21: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

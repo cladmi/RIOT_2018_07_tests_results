@@ -1,0 +1,21 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/driver_my9221 test
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 14:55:05,864 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 14:55:06,868 - INFO # 
+2018-08-08 14:55:06,876 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-ed5faStack Pointer: 0x04fe
+2018-08-08 14:55:06,878 - INFO # *** RIOT kernel panic:
+2018-08-08 14:55:06,879 - INFO # FAILED ASSERTION.
+2018-08-08 14:55:06,880 - INFO # 
+2018-08-08 14:55:06,881 - INFO # *** halted.
+2018-08-08 14:55:06,882 - INFO # 
+Timeout in expect script at "child.expect_exact("[SUCCESS]", timeout=60)" (tests/driver_my9221/tests/01-run.py:15)
+
+Makefile:19: recipe for target 'test' failed
+make: *** [test] Error 1
+
+Return value: 2

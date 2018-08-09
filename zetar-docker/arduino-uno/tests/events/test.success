@@ -1,0 +1,33 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 17:46:31,636 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 17:46:32,641 - INFO # x0000011a
+2018-08-08 17:46:32,644 - INFO # posting 0x00000116
+2018-08-08 17:46:32,650 - INFO # canceling 0x00000116
+2018-08-08 17:46:32,651 - INFO # posting custom event
+2018-08-08 17:46:32,651 - INFO # posting t�h)
+2018-08-08 17:46:32,652 - INFO # [START] event test application.
+2018-08-08 17:46:32,652 - INFO # 
+2018-08-08 17:46:32,653 - INFO # posting 0x0000011a
+2018-08-08 17:46:32,653 - INFO # posting 0x00000116
+2018-08-08 17:46:32,654 - INFO # canceling 0x00000116
+2018-08-08 17:46:32,654 - INFO # posting custom event
+2018-08-08 17:46:33,406 - INFO # posting t�main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-96d69d62d41f-2018.07-branch)
+2018-08-08 17:46:33,439 - INFO # [START] event test application.
+2018-08-08 17:46:33,443 - INFO # 
+2018-08-08 17:46:33,460 - INFO # posting 0x0000011a
+2018-08-08 17:46:33,480 - INFO # posting 0x00000116
+2018-08-08 17:46:33,505 - INFO # canceling 0x00000116
+2018-08-08 17:46:33,525 - INFO # posting custom event
+2018-08-08 17:46:33,566 - INFO # posting timed callback with timeout 1sec
+2018-08-08 17:46:33,636 - INFO # posting timed callback with timeout 0.5sec and canceling it again
+2018-08-08 17:46:33,660 - INFO # launching event queue
+2018-08-08 17:46:33,681 - INFO # triggered 0x0000011a
+2018-08-08 17:46:33,734 - INFO # triggered custom event with text: "CUSTOM CALLBACK"
+2018-08-08 17:46:34,627 - INFO # triggered timed callback with arg 0x00005678 after 1000108us
+2018-08-08 17:46:34,639 - INFO # [SUCCESS]
+

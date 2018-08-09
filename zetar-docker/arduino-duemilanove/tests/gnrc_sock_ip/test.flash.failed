@@ -1,0 +1,22 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../RIOT_2018.07-branch/tests/gnrc_sock_ip flash-only
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+avrdude -p m328p -c arduino -P /dev/ttyUSB0 -b 57600 -F -D -U flash:w:/home/user/Desktop/RIOT_2018.07-branch/tests/gnrc_sock_ip/bin/arduino-duemilanove/tests_gnrc_sock_ip.hex
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading | ################################################## | 100% 0.01s
+
+avrdude: Device signature = 0x1e950f (probably m328p)
+avrdude: reading input file "/home/user/Desktop/RIOT_2018.07-branch/tests/gnrc_sock_ip/bin/arduino-duemilanove/tests_gnrc_sock_ip.hex"
+avrdude: input file /home/user/Desktop/RIOT_2018.07-branch/tests/gnrc_sock_ip/bin/arduino-duemilanove/tests_gnrc_sock_ip.hex auto detected as Intel Hex
+avrdude: ERROR: address 0x8010 out of range at line 2049 of /home/user/Desktop/RIOT_2018.07-branch/tests/gnrc_sock_ip/bin/arduino-duemilanove/tests_gnrc_sock_ip.hex
+avrdude: read from file '/home/user/Desktop/RIOT_2018.07-branch/tests/gnrc_sock_ip/bin/arduino-duemilanove/tests_gnrc_sock_ip.hex' failed
+
+avrdude: safemode: Fuses OK (E:00, H:00, L:00)
+
+avrdude done.  Thank you.
+
+/home/user/Desktop/RIOT_2018.07-branch/tests/gnrc_sock_ip/../../Makefile.include:474: recipe for target 'flash' failed
+make: *** [flash] Error 1
+
+Return value: 2

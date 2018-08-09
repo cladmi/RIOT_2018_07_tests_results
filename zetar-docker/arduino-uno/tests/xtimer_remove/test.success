@@ -1,0 +1,27 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 18:13:00,605 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:13:01,611 - INFO # imers, removing timer 0/3
+2018-08-08 18:13:01,616 - INFO # on: 2018.10-devel-94-g14ee90-56c5ac3af5f8-2018.07-branch)
+2018-08-08 18:13:01,622 - INFO # xtimer_remove test application.
+2018-08-08 18:13:01,622 - INFO # 
+2018-08-08 18:13:01,623 - INFO # Setting 3 timers, removing timer 0/3
+2018-08-08 18:13:02,286 - INFO # 
+2018-08-08 18:13:02,375 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-56c5ac3af5f8-2018.07-branch)
+2018-08-08 18:13:02,408 - INFO # xtimer_remove test application.
+2018-08-08 18:13:02,411 - INFO # 
+2018-08-08 18:13:02,449 - INFO # Setting 3 timers, removing timer 0/3
+2018-08-08 18:13:02,666 - INFO # timer 1 triggered.
+2018-08-08 18:13:02,768 - INFO # timer 2 triggered.
+2018-08-08 18:13:02,806 - INFO # Setting 3 timers, removing timer 1/3
+2018-08-08 18:13:02,923 - INFO # timer 0 triggered.
+2018-08-08 18:13:03,124 - INFO # timer 2 triggered.
+2018-08-08 18:13:03,162 - INFO # Setting 3 timers, removing timer 2/3
+2018-08-08 18:13:03,280 - INFO # timer 0 triggered.
+2018-08-08 18:13:03,379 - INFO # timer 1 triggered.
+2018-08-08 18:13:03,395 - INFO # test successful.
+

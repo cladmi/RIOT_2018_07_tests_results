@@ -1,0 +1,41 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+./tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 17:33:38,679 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 17:33:39,686 - INFO # ieval, execution of 5 CBs
+2018-08-08 17:33:39,688 - INFO # Callback 0 executed
+2018-08-08 17:33:39,691 - INFO # Callback 1 4bfcfc1259-2018.07-branch)
+2018-08-08 17:33:39,693 - INFO # cb_mux test routine
+2018-08-08 17:33:39,695 - INFO # Test list addition, retrieval, execution of 5 CBs
+2018-08-08 17:33:39,695 - INFO # Callback 0 executed
+2018-08-08 17:33:40,362 - INFO # Callback 1 �
+2018-08-08 17:33:40,451 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-1e4bfcfc1259-2018.07-branch)
+2018-08-08 17:33:40,472 - INFO # cb_mux test routine
+2018-08-08 17:33:40,525 - INFO # Test list addition, retrieval, execution of 5 CBs
+2018-08-08 17:33:40,545 - INFO # Callback 0 executed
+2018-08-08 17:33:40,566 - INFO # Callback 1 executed
+2018-08-08 17:33:40,586 - INFO # Callback 2 executed
+2018-08-08 17:33:40,607 - INFO # Callback 3 executed
+2018-08-08 17:33:40,627 - INFO # Callback 4 executed
+2018-08-08 17:33:40,681 - INFO # Test list deletion of CB 0, 2, 4, execution of 1, 3
+2018-08-08 17:33:40,701 - INFO # Callback 1 executed
+2018-08-08 17:33:40,726 - INFO # Callback 3 executed
+2018-08-08 17:33:40,767 - INFO # Test execution of CB with lowest ID (1)
+2018-08-08 17:33:40,787 - INFO # Callback 1 executed
+2018-08-08 17:33:40,828 - INFO # Test execution of CB with highest ID (3)
+2018-08-08 17:33:40,849 - INFO # Callback 3 executed
+2018-08-08 17:33:40,910 - INFO # Re-adding list entries (0, 2, 4) by finding next free ID
+2018-08-08 17:33:40,922 - INFO # Added entry 0
+2018-08-08 17:33:40,939 - INFO # Added entry 2
+2018-08-08 17:33:40,951 - INFO # Added entry 4
+2018-08-08 17:33:40,992 - INFO # Test iteration of a function over list
+2018-08-08 17:33:41,025 - INFO # Entry 0 was updated correctly
+2018-08-08 17:33:41,057 - INFO # Entry 1 was updated correctly
+2018-08-08 17:33:41,085 - INFO # Entry 2 was updated correctly
+2018-08-08 17:33:41,119 - INFO # Entry 3 was updated correctly
+2018-08-08 17:33:41,148 - INFO # Entry 4 was updated correctly
+2018-08-08 17:33:41,164 - INFO # Tests complete!
+

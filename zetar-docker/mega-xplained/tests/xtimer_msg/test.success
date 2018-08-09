@@ -1,0 +1,70 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 15:53:06,629 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 15:53:07,634 - INFO # Testing ( 77%)
+2018-08-08 15:53:07,636 - INFO # Testing ( 78%)
+2018-08-08 15:53:07,637 - INFO # Testing ( 79%)
+2018-08-08 15:53:07,639 - INFO # Testing ( 81%)
+2018-08-08 15:53:07,641 - INFO # Testsec=1 min=0 hour=0
+2018-08-08 15:53:08,533 - INFO # now=2:164856 -> every 2.0s: Hello World
+2018-08-08 15:53:08,632 - INFO # sec=2 min=0 hour=0
+2018-08-08 15:53:09,632 - INFO # sec=3 min=0 hour=0
+2018-08-08 15:53:10,631 - INFO # now=4:204752 -> every 2.0s: Hello World
+2018-08-08 15:53:10,633 - INFO # sec=4 min=0 hour=0
+2018-08-08 15:53:11,634 - INFO # now=5:226200 -> every 5.0s: This is a Test
+2018-08-08 15:53:11,731 - INFO # sec=5 min=0 hour=0
+2018-08-08 15:53:12,633 - INFO # now=6:244632 -> every 2.0s: Hello World
+2018-08-08 15:53:12,732 - INFO # sec=6 min=0 hour=0
+2018-08-08 15:53:13,732 - INFO # sec=7 min=0 hour=0
+2018-08-08 15:53:14,732 - INFO # now=8:284536 -> every 2.0s: Hello World
+2018-08-08 15:53:14,734 - INFO # sec=8 min=0 hour=0
+2018-08-08 15:53:15,832 - INFO # sec=9 min=0 hour=0
+2018-08-08 15:53:16,708 - INFO # now=10:269224 -> every 5.0s: This is a Test
+2018-08-08 15:53:16,731 - INFO # now=10:324432 -> every 2.0s: Hello World
+2018-08-08 15:53:16,832 - INFO # sec=10 min=0 hour=0
+2018-08-08 15:53:17,832 - INFO # sec=11 min=0 hour=0
+2018-08-08 15:53:18,833 - INFO # now=12:365376 -> every 2.0s: Hello World
+2018-08-08 15:53:18,931 - INFO # sec=12 min=0 hour=0
+2018-08-08 15:53:19,932 - INFO # sec=13 min=0 hour=0
+2018-08-08 15:53:20,931 - INFO # now=14:406320 -> every 2.0s: Hello World
+2018-08-08 15:53:20,933 - INFO # sec=14 min=0 hour=0
+2018-08-08 15:53:21,832 - INFO # now=15:313280 -> every 5.0s: This is a Test
+2018-08-08 15:53:21,932 - INFO # sec=15 min=0 hour=0
+2018-08-08 15:53:22,933 - INFO # now=16:447256 -> every 2.0s: Hello World
+2018-08-08 15:53:23,032 - INFO # sec=16 min=0 hour=0
+2018-08-08 15:53:24,032 - INFO # sec=17 min=0 hour=0
+2018-08-08 15:53:25,032 - INFO # now=18:488200 -> every 2.0s: Hello World
+2018-08-08 15:53:25,034 - INFO # sec=18 min=0 hour=0
+2018-08-08 15:53:26,131 - INFO # sec=19 min=0 hour=0
+2018-08-08 15:53:26,931 - INFO # now=20:357328 -> every 5.0s: This is a Test
+2018-08-08 15:53:27,031 - INFO # now=20:529144 -> every 2.0s: Hello World
+2018-08-08 15:53:27,132 - INFO # sec=20 min=0 hour=0
+2018-08-08 15:53:28,132 - INFO # sec=21 min=0 hour=0
+2018-08-08 15:53:29,133 - INFO # now=22:570080 -> every 2.0s: Hello World
+2018-08-08 15:53:29,135 - INFO # sec=22 min=0 hour=0
+2018-08-08 15:53:30,232 - INFO # sec=23 min=0 hour=0
+2018-08-08 15:53:31,134 - INFO # now=24:611000 -> every 2.0s: Hello World
+2018-08-08 15:53:31,232 - INFO # sec=24 min=0 hour=0
+2018-08-08 15:53:31,934 - INFO # now=25:401376 -> every 5.0s: This is a Test
+2018-08-08 15:53:32,232 - INFO # sec=25 min=0 hour=0
+2018-08-08 15:53:33,234 - INFO # now=26:651944 -> every 2.0s: Hello World
+2018-08-08 15:53:33,331 - INFO # sec=26 min=0 hour=0
+2018-08-08 15:53:34,332 - INFO # sec=27 min=0 hour=0
+2018-08-08 15:53:35,332 - INFO # now=28:692888 -> every 2.0s: Hello World
+2018-08-08 15:53:35,334 - INFO # sec=28 min=0 hour=0
+2018-08-08 15:53:36,332 - INFO # sec=29 min=0 hour=0
+2018-08-08 15:53:37,034 - INFO # now=30:445448 -> every 5.0s: This is a Test
+2018-08-08 15:53:37,334 - INFO # now=30:733832 -> every 2.0s: Hello World
+2018-08-08 15:53:37,432 - INFO # sec=30 min=0 hour=0
+2018-08-08 15:53:38,432 - INFO # sec=31 min=0 hour=0
+2018-08-08 15:53:39,433 - INFO # now=32:774768 -> every 2.0s: Hello World
+2018-08-08 15:53:39,435 - INFO # sec=32 min=0 hour=0
+2018-08-08 15:53:40,432 - INFO # sec=33 min=0 hour=0
+2018-08-08 15:53:41,434 - INFO # now=34:815704 -> every 2.0s: Hello World
+2018-08-08 15:53:41,532 - INFO # sec=34 min=0 hour=0
+2018-08-08 15:53:42,134 - INFO # now=35:489496 -> every 5.0s: This is a Test
+

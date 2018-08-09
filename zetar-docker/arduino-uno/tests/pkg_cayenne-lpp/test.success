@@ -1,0 +1,37 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 17:57:06,487 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 17:57:07,491 - INFO # 
+2018-08-08 17:57:07,494 - INFO # Result: 03670110056700FF SUCCESS
+2018-08-08 17:57:07,499 - INFO # 
+2018-08-08 17:57:07,500 - INFO # Test 2:
+2018-08-08 17:57:07,501 - INFO # -------
+2018-08-08 17:57:07,502 - INFO # Result: 0167F0f-2018.07-branch)
+2018-08-08 17:57:07,503 - INFO # Cayenne LPP test application
+2018-08-08 17:57:07,503 - INFO # 
+2018-08-08 17:57:07,503 - INFO # Test 1:
+2018-08-08 17:57:07,504 - INFO # -------
+2018-08-08 17:57:07,504 - INFO # Result: 03670110056700FF SUCCESS
+2018-08-08 17:57:07,505 - INFO # 
+2018-08-08 17:57:07,505 - INFO # Test 2:
+2018-08-08 17:57:07,505 - INFO # -------
+2018-08-08 17:57:08,168 - INFO # Result: 0167F�
+2018-08-08 17:57:08,257 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-f08ede162d0f-2018.07-branch)
+2018-08-08 17:57:08,287 - INFO # Cayenne LPP test application
+2018-08-08 17:57:08,290 - INFO # 
+2018-08-08 17:57:08,298 - INFO # Test 1:
+2018-08-08 17:57:08,307 - INFO # -------
+2018-08-08 17:57:08,339 - INFO # Result: 03670110056700FF SUCCESS
+2018-08-08 17:57:08,340 - INFO # 
+2018-08-08 17:57:08,349 - INFO # Test 2:
+2018-08-08 17:57:08,357 - INFO # -------
+2018-08-08 17:57:08,401 - INFO # Result: 0167FFD7067104D2FB2E0000 SUCCESS
+2018-08-08 17:57:08,402 - INFO # 
+2018-08-08 17:57:08,409 - INFO # Test 3:
+2018-08-08 17:57:08,417 - INFO # -------
+2018-08-08 17:57:08,458 - INFO # Result: 018806765EF2960A0003E8 SUCCESS
+

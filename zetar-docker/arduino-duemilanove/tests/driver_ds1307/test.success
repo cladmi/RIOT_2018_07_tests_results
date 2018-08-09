@@ -1,0 +1,13 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 18:30:35,338 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 18:30:36,807 - INFO # 
+2018-08-08 18:30:36,904 - INFO # main(): This is RIOT! (Version: 2018.10-devel-94-g14ee90-e87e5e661509-2018.07-branch)
+2018-08-08 18:30:36,920 - INFO # DS1307 RTC test
+2018-08-08 18:30:36,920 - INFO # 
+2018-08-08 18:30:36,983 - INFO # error: unable to initialize RTC [I2C initialization error]
+

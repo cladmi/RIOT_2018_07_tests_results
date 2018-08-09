@@ -1,0 +1,18 @@
+/home/user/Desktop/RIOT_2018.07-branch/makefiles/toolchain/gnu.inc.mk:18: objcopy not found. Hex file will not be created.
+tests/01-run.py
+/home/user/Desktop/RIOT_2018.07-branch/dist/tools/pyterm/pyterm -p "/dev/ttyACM0" -b "9600"
+No handlers could be found for logger "root"
+2018-08-08 15:37:33,202 - INFO # Connect to serial port /dev/ttyACM0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-08 15:37:34,208 - INFO # ucg: UCG_MSG_DRAW_PIXEL (13952)
+2018-08-08 15:37:34,212 - INFO # ucg: UCG_MSG_DRAW_PIXEL (14080)
+2018-08-08 15:37:38,104 - INFO # .. . ._.. ._.. ___ / ._. .. ___ _ ___ ...
+2018-08-08 15:37:44,304 - INFO # _ .... .. ... / .. ... / .._ __ ___ ._. ... .
+> 2018-08-08 15:37:45,174 - INFO #  encoded length=52
+> 2018-08-08 15:37:45,177 - INFO #  using compact encoding:
+2018-08-08 15:37:45,206 - INFO # .... . ._.. ._.. ___ / ._. .. ___ _ ___ ...
+2018-08-08 15:37:45,307 - INFO # _ .... .. ... / .. ... / .._ __ ___ ._. ... .
+> 2018-08-08 15:37:52,406 - INFO #  encoded length=25
+2018-08-08 15:37:52,407 - INFO # [SUCCESS]
+

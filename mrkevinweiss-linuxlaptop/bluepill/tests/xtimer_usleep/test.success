@@ -1,0 +1,48 @@
+./tests/01-run.py
+/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-09 18:14:04,674 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-09 18:14:07,867 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-09 18:14:07,869 - INFO # Running test 5 times with 7 distinct sleep times
+2018-08-09 18:14:07,871 - INFO # Please hit any key and then ENTER to continue
+a
+a
+2018-08-09 18:14:07,995 - INFO # Slept for 10013 us (expected: 10000 us) Offset: 13 us
+2018-08-09 18:14:08,073 - INFO # Slept for 50013 us (expected: 50000 us) Offset: 13 us
+2018-08-09 18:14:08,074 - INFO # Slept for 10247 us (expected: 10234 us) Offset: 13 us
+2018-08-09 18:14:08,120 - INFO # Slept for 56793 us (expected: 56780 us) Offset: 13 us
+2018-08-09 18:14:08,152 - INFO # Slept for 12135 us (expected: 12122 us) Offset: 13 us
+2018-08-09 18:14:08,250 - INFO # Slept for 98778 us (expected: 98765 us) Offset: 13 us
+2018-08-09 18:14:08,329 - INFO # Slept for 75013 us (expected: 75000 us) Offset: 13 us
+2018-08-09 18:14:08,346 - INFO # Slept for 10013 us (expected: 10000 us) Offset: 13 us
+2018-08-09 18:14:08,394 - INFO # Slept for 50013 us (expected: 50000 us) Offset: 13 us
+2018-08-09 18:14:08,410 - INFO # Slept for 10246 us (expected: 10234 us) Offset: 12 us
+2018-08-09 18:14:08,473 - INFO # Slept for 56792 us (expected: 56780 us) Offset: 12 us
+2018-08-09 18:14:08,489 - INFO # Slept for 12135 us (expected: 12122 us) Offset: 13 us
+2018-08-09 18:14:08,601 - INFO # Slept for 98777 us (expected: 98765 us) Offset: 12 us
+2018-08-09 18:14:08,696 - INFO # Slept for 75012 us (expected: 75000 us) Offset: 12 us
+2018-08-09 18:14:08,698 - INFO # Slept for 10012 us (expected: 10000 us) Offset: 12 us
+2018-08-09 18:14:08,744 - INFO # Slept for 50012 us (expected: 50000 us) Offset: 12 us
+2018-08-09 18:14:08,759 - INFO # Slept for 10247 us (expected: 10234 us) Offset: 13 us
+2018-08-09 18:14:08,823 - INFO # Slept for 56793 us (expected: 56780 us) Offset: 13 us
+2018-08-09 18:14:08,840 - INFO # Slept for 12134 us (expected: 12122 us) Offset: 12 us
+2018-08-09 18:14:08,936 - INFO # Slept for 98778 us (expected: 98765 us) Offset: 13 us
+2018-08-09 18:14:09,016 - INFO # Slept for 75013 us (expected: 75000 us) Offset: 13 us
+2018-08-09 18:14:09,032 - INFO # Slept for 10013 us (expected: 10000 us) Offset: 13 us
+2018-08-09 18:14:09,095 - INFO # Slept for 50013 us (expected: 50000 us) Offset: 13 us
+2018-08-09 18:14:09,111 - INFO # Slept for 10247 us (expected: 10234 us) Offset: 13 us
+2018-08-09 18:14:09,174 - INFO # Slept for 56793 us (expected: 56780 us) Offset: 13 us
+2018-08-09 18:14:09,190 - INFO # Slept for 12135 us (expected: 12122 us) Offset: 13 us
+2018-08-09 18:14:09,287 - INFO # Slept for 98778 us (expected: 98765 us) Offset: 13 us
+2018-08-09 18:14:09,367 - INFO # Slept for 75013 us (expected: 75000 us) Offset: 13 us
+2018-08-09 18:14:09,383 - INFO # Slept for 10013 us (expected: 10000 us) Offset: 13 us
+2018-08-09 18:14:09,445 - INFO # Slept for 50013 us (expected: 50000 us) Offset: 13 us
+2018-08-09 18:14:09,448 - INFO # Slept for 10246 us (expected: 10234 us) Offset: 12 us
+2018-08-09 18:14:09,511 - INFO # Slept for 56792 us (expected: 56780 us) Offset: 12 us
+2018-08-09 18:14:09,527 - INFO # Slept for 12135 us (expected: 12122 us) Offset: 13 us
+2018-08-09 18:14:09,638 - INFO # Slept for 98777 us (expected: 98765 us) Offset: 12 us
+2018-08-09 18:14:09,724 - INFO # Slept for 75012 us (expected: 75000 us) Offset: 12 us
+2018-08-09 18:14:09,725 - INFO # Test ran for 1732343 us
+

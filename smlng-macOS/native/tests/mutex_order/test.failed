@@ -1,0 +1,28 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/mutex_order test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/mutex_order/bin/native/tests_mutex_order.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Mutex order test
+Please refer to the README.md for more information
+
+T3 (prio 6): trying to lock mutex now
+T4 (prio 4): trying to lock mutex now
+T5 (prio 0): trying to lock mutex now
+T6 (prio 2): trying to lock mutex now
+T7 (prio 1): trying to lock mutex now
+T5 (prio 0): locked mutex now
+T7 (prio 1): locked mutex now
+Unexpected end of file in expect script at "child.expect(u"T\d+ \(prio (\d+)\): locked mutex now")" (tests/mutex_order/tests/01-run.py:28)
+
+Process already stopped
+make: *** [test] Error 1
+
+Return value: 2

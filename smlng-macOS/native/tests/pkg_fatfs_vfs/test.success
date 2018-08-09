@@ -1,0 +1,84 @@
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+make[1]: Nothing to be done for `Makefile.include'.
+./tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+make[2]: Nothing to be done for `Makefile.include'.
+/Volumes/devel/github/smlng/RIOT/tests/pkg_fatfs_vfs/bin/native/pkg_fatfs_vfs.elf   
+RIOT native interrupts/signals initialized.
+Native RTC initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Tests for FatFs over VFS - test results will be printed in the format test_name:result
+test_mount__mount:[OK]
+test_mount__umount:[OK]
+test_open__mount:[OK]
+test_open__open:[OK]
+test_open__open_ro:[OK]
+test_open__close_ro:[OK]
+test_open__open_wo:[OK]
+test_open__close_wo:[OK]
+test_open__open_rw:[OK]
+test_open__close_rw:[OK]
+test_open__umount:[OK]
+test_rw__mount:[OK]
+test_rw__open_ro:[OK]
+test_rw__read_ro:[OK]
+test_rw__write_ro:[OK]
+test_rw__close_ro:[OK]
+test_rw__open_wo:[OK]
+test_rw__read_wo:[OK]
+test_rw__close_wo:[OK]
+test_rw__open_rw:[OK]
+test_rw__read_rw:[OK]
+test_rw__write_rw:[OK]
+test_rw__lseek:[OK]
+test_rw__read_rw:[OK]
+test_rw__close_rw:[OK]
+test_rw__open_rwc:[OK]
+test_rw__write_rwc:[OK]
+test_rw__lseek_rwc:[OK]
+test_rw__read_rwc:[OK]
+test_rw__close_rwc:[OK]
+test_rw__umount:[OK]
+test_dir__mount:[OK]
+test_dir__opendir:[OK]
+test_dir__readdir1:[OK]
+test_dir__readdir2:[OK]
+test_dir__readdir_name:[OK]
+test_dir__readdir3:[OK]
+test_dir__closedir:[OK]
+test_dir__umount:[OK]
+test_rename__mount:[OK]
+test_rename__rename:[OK]
+test_rename__opendir:[OK]
+test_rename__readdir1:[OK]
+test_rename__readdir2:[OK]
+test_rename__check_name:[OK]
+test_rename__readdir3:[OK]
+test_rename__closedir:[OK]
+test_rename__umount:[OK]
+test_unlink__mount:[OK]
+test_unlink__unlink1:[OK]
+test_unlink__unlink2:[OK]
+test_unlink__opendir:[OK]
+test_unlink__readdir:[OK]
+test_unlink__closedir:[OK]
+test_unlink__umount:[OK]
+test_mkrmdir__mount:[OK]
+test_mkrmdir__mkdir:[OK]
+test_mkrmdir__opendir1:[OK]
+test_mkrmdir__closedir:[OK]
+test_mkrmdir__rmdir:[OK]
+test_mkrmdir__opendir2:[OK]
+test_mkrmdir__umount:[OK]
+test_create__mount:[OK]
+test_create__open_wo:[OK]
+test_create__write_wo:[OK]
+test_create__close_wo:[OK]
+test_create__umount:[OK]
+Test end.
+

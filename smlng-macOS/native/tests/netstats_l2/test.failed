@@ -1,0 +1,21 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/netstats_l2 test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+ifconfig
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/netstats_l2/bin/native/tests_netstats_l2.elf tap0 tap0 
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+/Volumes/devel/github/smlng/RIOT/tests/netstats_l2/bin/native/tests_netstats_l2.elf: open(/dev/tap0): Permission denied
+make[1]: *** [term] Error 1
+ifconfig
+Unexpected end of file in expect script at "child.expect(r'       Statistics for Layer 2')" (tests/netstats_l2/tests/01-run.py:16)
+
+Process already stopped
+make: *** [test] Error 1
+
+Return value: 2

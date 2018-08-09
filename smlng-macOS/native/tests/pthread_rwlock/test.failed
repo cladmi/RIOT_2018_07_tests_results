@@ -1,0 +1,80 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/pthread_rwlock test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/pthread_rwlock/bin/native/tests_pthread_rwlock.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+START
+start
+d3 (prio=8): sleep for    75127 µs.
+start
+d4 (prio=8): sleep for    67707 µs.
+start
+start
+start
+start
+start
+start
+r4 (prio=8): 0: read  <-  0 (correct = 1)
+d4 (prio=8): sleep for    77869 µs.
+r3 (prio=8): 0: read  <-  0 (correct = 1)
+d3 (prio=8): sleep for    11256 µs.
+d8 (prio=8): sleep for   208437 µs.
+w8 (prio=8): 0: write ->  1 (correct = 1)
+d8 (prio=8): sleep for    15580 µs.
+d3 (prio=8): sleep for    42959 µs.
+d4 (prio=8): sleep for    19754 µs.
+d5 (prio=9): sleep for    38573 µs.
+d6 (prio=9): sleep for    83096 µs.
+d7 (prio=9): sleep for    54906 µs.
+r4 (prio=8d4 (prio=8): sleep for    67083 µs.
+r3 (prio=8): 1: read  <-  1 (correct = 1)
+d3 (prio=8): sleep for    76134 µs.
+r5 (prio=9): 0: read  <-  1 (correct = 1)
+d5 (prio=9): sleep for    48270 µs.
+r7 (prio=9): 0: read  <-  1 (correct = 1)
+d7 (prio=9): sleep for    93340 µs.
+r6 (prio=9): 0: read  <-  1 (correct = 1)
+d8 (prio=8): sleep for    73428 µs.
+d6 (prio=9): sleep for    61270 µs.
+w8 (prio=8): 1: write ->  2 (correct = 1)
+d8 (prio=8): sleep for   197076 µs.
+d4 (prio=8): sleep for    68053 µs.
+d3 (prio=8): sleep for    45608 µs.
+r3 (prio=8): 2: read  <-  2 (correct = 1)
+d3 (prio=8): sleep for    81598 µs.
+r4 (prio=8): 2: read  <-  2 (correct = 1)
+d4 (prio=8): sleep for    83577 µs.
+d9 (prio=9): sleep for   249981 µs.
+w9 (prio=9): 0: write ->  3 (correct = 1)
+d3 (prio=8): sleep for    54402 µs.
+d4 (prio=8): sleep for    70234 µs.
+d9 (prio=9): sleep for    45548 µs.
+r3 (prio=8): 3: read  <-  3 (correct = 1)
+d3 (prio=8): sleep for    24282 µs.
+r4 (prio=8): 3: read  <-  3 (correct = 1)
+d4 (prio=8): sleep for    82707 µs.
+d8 (prio=8): sleep for    95640 µs.
+w8 (prio=8): 2: write ->  4 (correct = 1)
+d8 (prio=8): sleep for   156068 µs.
+d3 (prio=8): sleep for    63483 µs.
+d4 (prio=8): sleep for    81013 µs.
+r3 (prio=8): 4: read  <-  4 (correct = 1)
+d3 (prio=8): sleep for    17904 µs.
+r4 (prio=8): 4: read  <-  4 (correct = 1)
+d4 (prio=8): sleep for    24165 µs.
+d10 (prio=9): sleep for   231156 µs.
+done
+done
+Unexpected end of file in expect script at "child.expect('done')" (tests/pthread_rwlock/tests/01-run.py:13)
+
+Process already stopped
+make: *** [test] Error 1
+
+Return value: 2

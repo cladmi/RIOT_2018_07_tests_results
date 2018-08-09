@@ -1,0 +1,23 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/thread_exit test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/thread_exit/bin/native/tests_thread_exit.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+main: starting
+main: exiting
+2nd: starting
+3rd: starting
+3rd: exiting
+Unexpected end of file in expect script at "child.expect("2nd: exiting")" (tests/thread_exit/tests/01-run.py:13)
+
+Process already stopped
+make: *** [test] Error 1
+
+Return value: 2

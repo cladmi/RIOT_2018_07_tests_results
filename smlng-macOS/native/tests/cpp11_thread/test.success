@@ -1,0 +1,40 @@
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/cpp11_thread/bin/native/tests_cpp11_thread.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+
+************ C++ thread test ***********
+Creating one thread and passing an argument ...
+Done
+
+Creating detached thread ...
+Done
+
+Join on 'finished' thread ...
+Done
+
+Join on 'running' thread ...
+Done
+
+Testing sleep_for ...
+Done
+
+Testing sleep_until ...
+Done
+
+Swapping two threads ...
+Done
+
+Move constructor ...
+Done
+
+Bye, bye.
+******************************************
+

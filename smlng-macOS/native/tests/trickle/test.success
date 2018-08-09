@@ -1,0 +1,27 @@
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/trickle/bin/native/tests_trickle.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 48637, prev_now = 66, diff = 48571
+now = 159212, prev_now = 48637, diff = 110575
+now = 368430, prev_now = 159212, diff = 209218
+now = 671868, prev_now = 368430, diff = 303438
+now = 1613188, prev_now = 671868, diff = 941320
+[TRICKLE_RESET]
+now = 1625299, prev_now = 1613188, diff = 12111
+now = 1661985, prev_now = 1625299, diff = 36686
+now = 1736191, prev_now = 1661985, diff = 74206
+now = 1866081, prev_now = 1736191, diff = 129890
+now = 2080196, prev_now = 1866081, diff = 214115
+now = 2631200, prev_now = 2080196, diff = 551004
+now = 3207918, prev_now = 2631200, diff = 576718
+[SUCCESS]
+

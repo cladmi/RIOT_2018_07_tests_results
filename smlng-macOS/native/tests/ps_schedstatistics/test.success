@@ -1,0 +1,40 @@
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/ps_schedstatistics/bin/native/tests_ps_schedstatistics.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Creating thread #0, next=1
+Creating thread #1, next=2
+Creating thread #2, next=3
+Creating thread #3, next=4
+Creating thread #4, next=0
+> 
+help
+
+
+> help
+help
+Command              Description
+---------------------------------------
+reboot               Reboot the node
+ps                   Prints information about running threads.
+> ps
+ps
+ps
+	pid | name                 | state    Q | pri | stack  ( used) | base addr  | current     | runtime  | switches
+	  - | isr_stack            | -        - |   - | 163840 (   -1) |     0xb7a8 |     0xb7a8
+	  1 | idle                 | pending  Q |  15 | 163840 ( 1004) |   0x133b14 |   0x15b868  | 31.836% |         1
+	  2 | main                 | running  Q |   7 | 245760 ( 3044) |   0x15bb14 |   0x197868  | 54.835% |      1895
+	  3 | thread               | bl rx    _ |   6 | 163840 ( 2376) |    0x6bb08 |    0x93860  |  1.943% |       757
+	  4 | thread               | bl rx    _ |   6 | 163840 ( 2376) |    0x93b08 |    0xbb860  |  2.670% |       757
+	  5 | thread               | bl mutex _ |   6 | 163840 ( 2376) |    0xbbb08 |    0xe3860  |  3.399% |       756
+	  6 | thread               | bl rx    _ |   6 | 163840 ( 2376) |    0xe3b08 |   0x10b860  |  4.112% |       755
+	  7 | thread               | bl rx    _ |   6 | 163840 ( 2376) |   0x10bb08 |   0x133860  |  1.203% |       755
+	    | SUM                  |            |     | 1392640 (15928)
+> 

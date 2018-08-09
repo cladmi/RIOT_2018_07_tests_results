@@ -1,0 +1,38 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/pipe test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/pipe/bin/native/tests_pipe.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Start.
+Middle read: <ABCD> [0:4]
+Middle read: <EF> [4:6]
+End read: <ABC> [0:3]
+End read: <DEF> [3:6]
+Middle read: <GHIJ> [6:10]
+Middle read: <KL> [10:12]
+End read: <GHI> [6:9]
+End read: <JKL> [9:12]
+Middle read: <MNOP> [12:16]
+Middle read: <QR> [16:18]
+End read: <MNO> [12:15]
+End read: <PQR> [15:18]
+Middle read: <STUV> [18:22]
+Middle read: <WX> [22:24]
+Main done.
+End read: <STU> [18:21]
+End read: <VWX> [21:24]
+Middle read: <YZ> [24:26]
+Middle done.
+Unexpected end of file in expect script at "child.expect_exact('End read: <YZ> [24:26]')" (tests/pipe/tests/01-run.py:28)
+
+Process already stopped
+make: *** [test] Error 1
+
+Return value: 2

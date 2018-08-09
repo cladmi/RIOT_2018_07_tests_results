@@ -1,5 +1,4 @@
-make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/harter/work/git/RIOT_release/tests/driver_my9221 flash-only test
-true 
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/harter/work/git/RIOT_release/tests/driver_my9221 test
 tests/01-run.py
 /home/harter/work/git/RIOT_release/tests/driver_my9221/bin/native/tests_driver_my9221.elf   
 RIOT native interrupts/signals initialized.

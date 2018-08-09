@@ -1,4 +1,44 @@
-true 
 tests/01-run.py
+/home/harter/work/git/RIOT_release/tests/cbor/bin/native/tests_cbor.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Data:
+(uint64_t, 1)
+(uint64_t, 2)
+(uint64_t, 3)
+(int64_t, -5)
+(bool, 1)
+(float, 1.099609)
+(float, 1.500000)
+(double, 2.000000)
+(byte string, "abc")
+(unicode string, "def")
+(array, length: 2)
+  (uint64_t, 0)
+  (uint64_t, 1)
+(array, length: [indefinite])
+  (uint64_t, 10)
+  (uint64_t, 11)
+(map, length: 2)
+ (uint64_t, 1)
+  (byte string, "1")
+ (uint64_t, 2)
+  (byte string, "2")
+(map, length: [indefinite])
+ (uint64_t, 10)
+  (byte string, "10")
+ (uint64_t, 11)
+  (byte string, "11")
+(tag: 0, date/time string: "Thu Aug  9 07:06:48 2018")
+(tag: 1, date/time epoch: 1533791208)
+(unsupported, 0xC2
+)
+(byte string, "1")
+
 All tests successful
 

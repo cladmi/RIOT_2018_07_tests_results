@@ -1,3 +1,14 @@
-true 
 ./tests/test.py
+/home/harter/work/git/RIOT_release/tests/isr_yield_higher/bin/native/isr_yield_higher.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+first thread started
+timer triggered
+first thread done
+TEST SUCCESSFUL
 

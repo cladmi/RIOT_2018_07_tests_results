@@ -1,0 +1,21 @@
+tests/01-run.py
+/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-09 18:03:26,770 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-09 18:03:27,775 - INFO # [ALIVE] alternated 30k times.
+2018-08-09 18:03:27,777 - INFO # [ALIVE] alternated 40k times.
+2018-08-09 18:03:27,778 - INFO # [ALIVE] alternated 50k times.
+2018-08-09 18:03:27,779 - INFO # [ALIVE] alternated 60k times.
+2018-08-09 18:03:27,779 - INFO # [ALIVE] alternated 70k times.
+2018-08-09 18:03:28,000 - INFO # [ALIVE] alternated 80k times.
+2018-08-09 18:03:28,224 - INFO # [ALIVE] alternated 90k times.
+2018-08-09 18:03:28,448 - INFO # [ALIVE] alternated 100k times.
+2018-08-09 18:03:28,670 - INFO # [ALIVE] alternated 110k times.
+2018-08-09 18:03:28,895 - INFO # [ALIVE] alternated 120k times.
+2018-08-09 18:03:29,119 - INFO # [ALIVE] alternated 130k times.
+2018-08-09 18:03:29,342 - INFO # [ALIVE] alternated 140k times.
+2018-08-09 18:03:29,566 - INFO # [ALIVE] alternated 150k times.
+2018-08-09 18:03:29,789 - INFO # [ALIVE] alternated 160k times.
+

@@ -1,0 +1,14 @@
+tests/01-run.py
+/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-09 18:10:18,286 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-09 18:10:21,549 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-09 18:10:21,550 - INFO # The output should be: yield 1, snd_thread running, yield 2, done
+2018-08-09 18:10:21,551 - INFO # ----------------------------------------------------------------
+2018-08-09 18:10:21,552 - INFO # yield 1
+2018-08-09 18:10:21,552 - INFO # snd_thread running
+2018-08-09 18:10:21,552 - INFO # yield 2
+2018-08-09 18:10:21,553 - INFO # done
+

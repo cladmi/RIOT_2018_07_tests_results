@@ -1,35 +1,13 @@
-make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/kevinweiss/WorkingDirectory/RIOT/tests/pkg_fatfs_vfs flash-only test
-/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/openocd/openocd.sh flash
-### Flashing Target ###
-Open On-Chip Debugger 0.10.0+dev-00399-g09076d1 (2018-04-12-17:12)
-Licensed under GNU GPL v2
-For bug reports, read
-	http://openocd.org/doc/doxygen/bugs.html
-WARNING: interface/stlink-v2.cfg is deprecated, please switch to interface/stlink.cfg
-hla_swd
-Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
-adapter speed: 1000 kHz
-adapter_nsrst_delay: 100
-none separate
-none separate
-Info : Unable to match requested speed 1000 kHz, using 950 kHz
-Info : Unable to match requested speed 1000 kHz, using 950 kHz
-Info : clock speed 950 kHz
-Info : STLINK v2 JTAG v29 API v2 SWIM v18 VID 0x0483 PID 0x374B
-Info : using stlink api v2
-Info : Target voltage: 3.256242
-Info : stm32f1x.cpu: hardware has 6 breakpoints, 4 watchpoints
-Info : Listening on port 39907 for gdb connections
-    TargetName         Type       Endian TapName            State       
---  ------------------ ---------- ------ ------------------ ------------
- 0* stm32f1x.cpu       hla_target little stm32f1x.cpu       reset
-Error: timed out while waiting for target halted
-TARGET: stm32f1x.cpu - Not halted
-in procedure 'reset' 
-in procedure 'ocd_bouncer'
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C /home/kevinweiss/WorkingDirectory/RIOT/tests/pkg_fatfs_vfs test
+./tests/01-run.py
+/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-09 18:04:20,270 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+Timeout in expect script at "child.expect(u"Tests for FatFs over VFS - test results will be printed in "" (tests/pkg_fatfs_vfs/tests/01-run.py:19)
 
-
-/home/kevinweiss/WorkingDirectory/RIOT/tests/pkg_fatfs_vfs/../../Makefile.include:474: recipe for target 'flash' failed
-make: *** [flash] Error 1
+Makefile:59: recipe for target 'test' failed
+make: *** [test] Error 1
 
 Return value: 2

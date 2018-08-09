@@ -1,0 +1,67 @@
+tests/01-run.py
+/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-09 18:12:51,424 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-09 18:12:52,429 - INFO # sec=1 min=0 hour=0
+2018-08-09 18:12:52,958 - INFO # now=2:10294 -> every 2.0s: Hello World
+2018-08-09 18:12:52,958 - INFO # sec=2 min=0 hour=0
+2018-08-09 18:12:53,964 - INFO # sec=3 min=0 hour=0
+2018-08-09 18:12:54,670 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-09 18:12:54,671 - INFO # This is thread 3
+2018-08-09 18:12:54,672 - INFO # sending 1st msg
+2018-08-09 18:12:54,673 - INFO # now=0:6873 -> every 2.0s: Hello World
+2018-08-09 18:12:54,674 - INFO # sending 2nd msg
+2018-08-09 18:12:54,675 - INFO # now=0:11700 -> every 5.0s: This is a Test
+2018-08-09 18:12:54,676 - INFO # This is thread 4
+2018-08-09 18:12:55,660 - INFO # sec=1 min=0 hour=0
+2018-08-09 18:12:56,666 - INFO # now=2:10294 -> every 2.0s: Hello World
+2018-08-09 18:12:56,667 - INFO # sec=2 min=0 hour=0
+2018-08-09 18:12:57,672 - INFO # sec=3 min=0 hour=0
+2018-08-09 18:12:58,663 - INFO # now=4:13802 -> every 2.0s: Hello World
+2018-08-09 18:12:58,664 - INFO # sec=4 min=0 hour=0
+2018-08-09 18:12:59,669 - INFO # now=5:15467 -> every 5.0s: This is a Test
+2018-08-09 18:12:59,670 - INFO # sec=5 min=0 hour=0
+2018-08-09 18:13:00,660 - INFO # now=6:17310 -> every 2.0s: Hello World
+2018-08-09 18:13:00,675 - INFO # sec=6 min=0 hour=0
+2018-08-09 18:13:01,681 - INFO # sec=7 min=0 hour=0
+2018-08-09 18:13:02,672 - INFO # now=8:20818 -> every 2.0s: Hello World
+2018-08-09 18:13:02,673 - INFO # sec=8 min=0 hour=0
+2018-08-09 18:13:03,677 - INFO # sec=9 min=0 hour=0
+2018-08-09 18:13:04,679 - INFO # now=10:19237 -> every 5.0s: This is a Test
+2018-08-09 18:13:04,682 - INFO # now=10:24325 -> every 2.0s: Hello World
+2018-08-09 18:13:04,683 - INFO # sec=10 min=0 hour=0
+2018-08-09 18:13:05,685 - INFO # sec=11 min=0 hour=0
+2018-08-09 18:13:06,676 - INFO # now=12:27920 -> every 2.0s: Hello World
+2018-08-09 18:13:06,677 - INFO # sec=12 min=0 hour=0
+2018-08-09 18:13:07,681 - INFO # sec=13 min=0 hour=0
+2018-08-09 18:13:08,687 - INFO # now=14:31515 -> every 2.0s: Hello World
+2018-08-09 18:13:08,688 - INFO # sec=14 min=0 hour=0
+2018-08-09 18:13:09,678 - INFO # now=15:23093 -> every 5.0s: This is a Test
+2018-08-09 18:13:09,693 - INFO # sec=15 min=0 hour=0
+2018-08-09 18:13:10,685 - INFO # now=16:35109 -> every 2.0s: Hello World
+2018-08-09 18:13:10,686 - INFO # sec=16 min=0 hour=0
+2018-08-09 18:13:11,690 - INFO # sec=17 min=0 hour=0
+2018-08-09 18:13:12,681 - INFO # now=18:38704 -> every 2.0s: Hello World
+2018-08-09 18:13:12,696 - INFO # sec=18 min=0 hour=0
+2018-08-09 18:13:13,702 - INFO # sec=19 min=0 hour=0
+2018-08-09 18:13:14,677 - INFO # now=20:26949 -> every 5.0s: This is a Test
+2018-08-09 18:13:14,693 - INFO # now=20:42299 -> every 2.0s: Hello World
+2018-08-09 18:13:14,694 - INFO # sec=20 min=0 hour=0
+2018-08-09 18:13:15,699 - INFO # sec=21 min=0 hour=0
+2018-08-09 18:13:16,690 - INFO # now=22:45893 -> every 2.0s: Hello World
+2018-08-09 18:13:16,705 - INFO # sec=22 min=0 hour=0
+2018-08-09 18:13:17,695 - INFO # sec=23 min=0 hour=0
+2018-08-09 18:13:18,702 - INFO # now=24:49487 -> every 2.0s: Hello World
+2018-08-09 18:13:18,703 - INFO # sec=24 min=0 hour=0
+2018-08-09 18:13:19,677 - INFO # now=25:30804 -> every 5.0s: This is a Test
+2018-08-09 18:13:19,708 - INFO # sec=25 min=0 hour=0
+2018-08-09 18:13:20,699 - INFO # now=26:53083 -> every 2.0s: Hello World
+2018-08-09 18:13:20,714 - INFO # sec=26 min=0 hour=0
+2018-08-09 18:13:21,704 - INFO # sec=27 min=0 hour=0
+2018-08-09 18:13:22,710 - INFO # now=28:56677 -> every 2.0s: Hello World
+2018-08-09 18:13:22,711 - INFO # sec=28 min=0 hour=0
+2018-08-09 18:13:23,716 - INFO # sec=29 min=0 hour=0
+2018-08-09 18:13:24,675 - INFO # now=30:34661 -> every 5.0s: This is a Test
+

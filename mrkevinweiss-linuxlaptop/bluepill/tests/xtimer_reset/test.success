@@ -1,0 +1,14 @@
+tests/01-run.py
+/home/kevinweiss/WorkingDirectory/RIOT/dist/tools/pyterm/pyterm -p "/dev/ttyUSB0" -b "115200"
+No handlers could be found for logger "root"
+2018-08-09 18:13:57,916 - INFO # Connect to serial port /dev/ttyUSB0
+Welcome to pyterm!
+Type '/exit' to exit.
+2018-08-09 18:14:01,201 - INFO # �main(): This is RIOT! (Version: buildtest)
+2018-08-09 18:14:01,204 - INFO # This test tests re-setting of an already active timer.
+2018-08-09 18:14:01,207 - INFO # It should print three times "now=<value>", with values approximately 100ms (100000us) apart.
+2018-08-09 18:14:01,208 - INFO # now=16923
+2018-08-09 18:14:01,296 - INFO # now=116928
+2018-08-09 18:14:01,392 - INFO # now=216921
+2018-08-09 18:14:01,393 - INFO # Test completed!
+

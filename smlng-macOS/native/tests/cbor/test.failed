@@ -1,8 +1,0 @@
-make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/cbor test
-Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
-tests/01-run.py
-Timeout in expect script at "child.expect(r'\(tag: 0, date/time string: "[\w :]+"\)')" (tests/cbor/tests/01-run.py:43)
-
-make: *** [test] Error 1
-
-Return value: 2

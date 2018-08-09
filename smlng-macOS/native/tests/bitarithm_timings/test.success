@@ -10,8 +10,8 @@ RIOT native hardware initialization complete.
 
 main(): This is RIOT! (Version: buildtest)
 Start.
-+ bitarithm_msb: 100702150 iterations per second
-+ bitarithm_lsb: 217368352 iterations per second
-+ bitarithm_bits_set: 41483868 iterations per second
++ bitarithm_msb: 100977382 iterations per second
++ bitarithm_lsb: 217523676 iterations per second
++ bitarithm_bits_set: 41364688 iterations per second
 Done.
 

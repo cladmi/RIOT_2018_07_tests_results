@@ -10,5 +10,5 @@ RIOT native hardware initialization complete.
 
 main(): This is RIOT! (Version: buildtest)
 main starting
-{ "result" : 117218 }
+{ "result" : 118022 }
 

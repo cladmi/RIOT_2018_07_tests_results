@@ -1,0 +1,31 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/trickle test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/trickle/bin/native/tests_trickle.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+[START]
+now = 23486, prev_now = 66, diff = 23420
+now = 75189, prev_now = 23486, diff = 51703
+now = 211329, prev_now = 75189, diff = 136140
+now = 457158, prev_now = 211329, diff = 245829
+now = 963164, prev_now = 457158, diff = 506006
+[TRICKLE_RESET]
+now = 976755, prev_now = 963164, diff = 13591
+now = 1015725, prev_now = 976755, diff = 38970
+now = 1089703, prev_now = 1015725, diff = 73978
+now = 1201893, prev_now = 1089703, diff = 112190
+now = 1491171, prev_now = 1201893, diff = 289278
+now = 1773008, prev_now = 1491171, diff = 281837
+[FAILURE]
+Timeout in expect script at "child.expect(u"now = \d+, prev_now = \d+, diff = \d+")" (tests/trickle/tests/01-run.py:22)
+
+make: *** [test] Error 1
+
+Return value: 2

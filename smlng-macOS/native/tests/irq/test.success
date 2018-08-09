@@ -14,9 +14,9 @@ busy_thread created
 xtimer_wait()
 busy_thread starting
 main: return
-i: 82223349
-j: 82223349
-k: 82223349
+i: 82739808
+j: 82739808
+k: 82739808
 SUCCESS
 
 Process already stopped

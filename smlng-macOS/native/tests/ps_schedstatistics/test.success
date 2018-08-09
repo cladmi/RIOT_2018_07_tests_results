@@ -29,12 +29,8 @@ ps
 ps
 	pid | name                 | state    Q | pri | stack  ( used) | base addr  | current     | runtime  | switches
 	  - | isr_stack            | -        - |   - | 163840 (   -1) |     0xb7a8 |     0xb7a8
-	  1 | idle                 | pending  Q |  15 | 163840 ( 1004) |   0x133b14 |   0x15b868  | 31.836% |         1
-	  2 | main                 | running  Q |   7 | 245760 ( 3044) |   0x15bb14 |   0x197868  | 54.835% |      1895
-	  3 | thread               | bl rx    _ |   6 | 163840 ( 2376) |    0x6bb08 |    0x93860  |  1.943% |       757
-	  4 | thread               | bl rx    _ |   6 | 163840 ( 2376) |    0x93b08 |    0xbb860  |  2.670% |       757
-	  5 | thread               | bl mutex _ |   6 | 163840 ( 2376) |    0xbbb08 |    0xe3860  |  3.399% |       756
-	  6 | thread               | bl rx    _ |   6 | 163840 ( 2376) |    0xe3b08 |   0x10b860  |  4.112% |       755
-	  7 | thread               | bl rx    _ |   6 | 163840 ( 2376) |   0x10bb08 |   0x133860  |  1.203% |       755
-	    | SUM                  |            |     | 1392640 (15928)
-> 
+	  1 | idle                 | pending  Q |  15 | 163840 ( 1004) |   0x133b14 |   0x15b868  | 31.622% |         1
+	  2 | main                 | running  Q |   7 | 245760 ( 3044) |   0x15bb14 |   0x197868  | 55.064% |      1898
+	  3 | thread               | bl mutex _ |   6 | 163840 ( 2376) |    0x6bb08 |    0x93860  |  1.939% |       758
+	  4 | thread               | bl rx    _ |   6 | 163840 ( 2376) |    0x93b08 |    0xbb860  |  2.656% |       757
+

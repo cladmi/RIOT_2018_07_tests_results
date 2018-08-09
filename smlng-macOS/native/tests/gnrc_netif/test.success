@@ -8,88 +8,7 @@ LED_GREEN_ON
 RIOT native board initialized.
 RIOT native hardware initialization complete.
 
-.Sending data from Ethernet device:
-00000000  33  33  FF  22  FD  0A  3E  E6  B5  22  FD  0A  86  DD  60  00
-00000010  00  00  00  18  3A  FF  00  00  00  00  00  00  00  00  00  00
-00000020  00  00  00  00  00  00  FF  02  00  00  00  00  00  00  00  00
-00000030  00  01  FF  22  FD  0A  87  00  90  E6  00  00  00  00  FE  80
-00000040  00  00  00  00  00  00  3C  E6  B5  FF  FE  22  FD  0A
-PKTDUMP: data to send:
-~~ SNIP  0 - size:   8 byte, type: NETTYPE_NETIF (-1)
-if_pid: 6  rssi: 0  lqi: 0
-flags: 0x0
-src_l2addr: (nil)
-dst_l2addr: (nil)
-~~ SNIP  1 - size:  40 byte, type: NETTYPE_IPV6 (2)
-traffic class: 0x00 (ECN: 0x0, DSCP: 0x00)
-flow label: 0x00000Sending data from Ethernet device:
-00000000  33  33  00  00  00  02  3E  E6  B5  22  FD  0A  86  DD  60  00
-00000010  00  00  00  08  3A  FF  00  00  00  00  00  00  00  00  00  00
-00000020  00  00  00  00  00  00  FF  02  00  00  00  00  00  00  00  00
-00000030  00  00  00  00  00  02  85  00  7B  B8  00  00  00  00
-length: 47127  next header: 255  hop limit: 255
-source address: ::
-destination address: ff02::1:ff22:fd0a
-~~ SNIP  2 - size:  24 byte, type: NETTYPE_ICMPV6 (3)
-   type: 135  code:   0
-   cksum: 0x0000
-00000000  00  00  00  00  FE  80  00  00  00  00  00  00  3C  E6  B5  FF
-00000010  FE  22  FD  0A
-~~ PKT    -  3 snips, total size:  72 byte
-PKTDUMP: data to send:
-~~ SNIP  0 - size:   8 byte, type: NETTYPE_NETIF (-1)
-if_pid: 6  rssi: 0  lqi: 0
-flags: 0x0
-src_l2addr: (nil)
-dst_l2addr: (nil)
-~~ SNIP  1 - size:  40 byte, type: NETTYPE_IPV6 (2)
-traffic class: 0x00 (ECN: 0x0, DSCP: 0x00)
-flow label: 0x00000
-length: 14359  next header: 255  hop limit: 255
-source address: ::
-destination address: ff02::2
-~~ SNIP  2 - size:   8 byte, type: NETTYPE_ICMPV6 (3)
-   type: 133  code:   0
-   cksum: 0x0000
-00000000  00  00  00  00
-~~ PKT    -  3 snips, total size:  56 byte
-PKTDUMP: data to send:
-~~ SNIP  0 - size:   8 byte, type: NETTYPE_NETIF (-1)
-if_pid: 8  rssi: 0  lqi: 0
-flags: 0x0
-src_l2addr: (nil)
-dst_l2addr: (nil)
-~~ SNIP  1 - size:  40 byte, type: NETTYPE_IPV6 (2)
-traffic class: 0x00 (ECN: 0x0, DSCP: 0x00)
-flow label: 0x00000
-length: 47127  next header: 255  hop limit: 255
-source address: ::
-destination address: ff02::1:ff00:0
-~~ SNIP  2 - size:  24 byte, type: NETTYPE_ICMPV6 (3)
-   type: 135  code:   0
-   cksum: 0x0000
-00000000  00  00  00  00  FE  80  00  00  00  00  00  00  00  00  00  00
-00000010  00  00  00  00
-~~ PKT    -  3 snips, total size:  72 byte
-PKTDUMP: data to send:
-~~ SNIP  0 - size:   8 byte, type: NETTYPE_NETIF (-1)
-if_pid: 8  rssi: 0  lqi: 0
-flags: 0x0
-src_l2addr: (nil)
-dst_l2addr: (nil)
-~~ SNIP  1 - size:  40 byte, type: NETTYPE_IPV6 (2)
-traffic class: 0x00 (ECN: 0x0, DSCP: 0x00)
-flow label: 0x00000
-length: 18432  next header: 255  hop limit: 255
-source address: ::
-destination address: ff02::1:ff00:0
-~~ SNIP  2 - size:  24 byte, type: NETTYPE_ICMPV6 (3)
-   type: 135  code:   0
-   cksum: 0x0000
-00000000  00  00  00  00  FE  80  00  00  00  00  00  00  00  00  00  00
-00000010  00  00  00  00
-~~ PKT    -  3 snips, total size:  72 byte
-...................................................................
+....................................................................
 OK (68 tests)
 Sending data from Ethernet device:
 00000000  3E  E6  B5  0F  19  23  3E  E6  B5  22  FD  0A  FF  FF  41  42
@@ -152,7 +71,7 @@ pktdump dumping IEEE 802.15.4 packet with empty payload
 PKTDUMP: data received:
 ~~ SNIP  0 - size:   0 byte, type: NETTYPE_UNDEF (0)
 00000000~~ SNIP  1 - size:  24 byte, type: NETTYPE_NETIF (-1)
-if_pid: 7  rssi: 14296  lqi: 17
+if_pid: 7  rssi: 2008  lqi: 17
 flags: 0x0
 src_l2addr: 3e:e6:b5:0f:19:22:fd:0b
 dst_l2addr: 3e:e6:b5:0f:19:22:fd:0a
@@ -172,7 +91,7 @@ PKTDUMP: data received:
 ~~ SNIP  0 - size:   4 byte, type: NETTYPE_UNDEF (0)
 00000000  12  34  45  56
 ~~ SNIP  1 - size:  24 byte, type: NETTYPE_NETIF (-1)
-if_pid: 7  rssi: 14296  lqi: 17
+if_pid: 7  rssi: 2008  lqi: 17
 flags: 0x0
 src_l2addr: 3e:e6:b5:0f:19:22:fd:0b
 dst_l2addr: 3e:e6:b5:0f:19:22:fd:0a

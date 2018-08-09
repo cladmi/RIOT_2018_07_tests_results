@@ -1,8 +1,6 @@
 Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
-make[1]: Nothing to be done for `Makefile.include'.
 tests/01-run.py
 Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
-make[2]: Nothing to be done for `Makefile.include'.
 /Volumes/devel/github/smlng/RIOT/tests/pkg_monocypher/bin/native/tests_pkg_monocypher.elf   
 RIOT native interrupts/signals initialized.
 LED_RED_OFF

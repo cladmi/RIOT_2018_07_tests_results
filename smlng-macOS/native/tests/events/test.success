@@ -20,6 +20,6 @@ posting timed callback with timeout 0.5sec and canceling it again
 launching event queue
 triggered 0x0000a1a0
 triggered custom event with text: "CUSTOM CALLBACK"
-triggered timed callback with arg 0x12345678 after 1004789us
+triggered timed callback with arg 0x12345678 after 1005196us
 [SUCCESS]
 

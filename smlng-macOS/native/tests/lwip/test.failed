@@ -1,6 +1,5 @@
 make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/lwip test
 Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
-make[1]: Nothing to be done for `Makefile.include'.
 ./tests/01-run.py
 Testing for (<Board 'native',port='tap0',serial=None>, <Board 'native',port='tap1',serial=None>): 
 Traceback (most recent call last):
@@ -32,7 +31,7 @@ Traceback (most recent call last):
   File "/usr/local/lib/python3.7/site-packages/pexpect/expect.py", line 63, in eof
     raise EOF(msg)
 pexpect.exceptions.EOF: End Of File (EOF). Empty string style platform.
-<pexpect.pty_spawn.spawn object at 0x10328edd8>
+<pexpect.pty_spawn.spawn object at 0x10446ae10>
 command: /usr/bin/make
 args: [b'/usr/bin/make', b'-C', b'/Volumes/devel/github/smlng/RIOT/tests/lwip', b'term']
 buffer (last 100 chars): ''
@@ -40,9 +39,9 @@ before (last 100 chars): 'ts/lwip/bin/native/tests_lwip.elf: open(/dev/tap1): Pe
 after: <class 'pexpect.exceptions.EOF'>
 match: None
 match_index: None
-exitstatus: 2
+exitstatus: None
 flag_eof: True
-pid: 60843
+pid: 93159
 child_fd: 6
 closed: False
 timeout: 5

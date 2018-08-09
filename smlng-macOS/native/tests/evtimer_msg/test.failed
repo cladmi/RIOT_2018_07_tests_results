@@ -1,0 +1,15 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/evtimer_msg test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+...
+Traceback (most recent call last):
+  File "tests/01-run.py", line 35, in <module>
+    sys.exit(run(testfunc, echo=False))
+  File "/Volumes/devel/github/smlng/RIOT/dist/tools/testrunner/testrunner.py", line 55, in run
+    testfunc(child)
+  File "tests/01-run.py", line 26, in testfunc
+    assert(int(child.match.group(1)) in range(exp - ACCEPTED_ERROR, exp + ACCEPTED_ERROR + 1))
+AssertionError
+make: *** [test] Error 1
+
+Return value: 2

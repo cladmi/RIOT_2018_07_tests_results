@@ -10,6 +10,6 @@ RIOT native hardware initialization complete.
 
 main(): This is RIOT! (Version: buildtest)
 [START]
-[RESULTS] min=5, avg=6, max=108
+[RESULTS] min=5, avg=6, max=84
 [SUCCESS]
 

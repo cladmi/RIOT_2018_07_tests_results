@@ -31,7 +31,7 @@ TIMER_0: initialization successful
 TIMER_0: stopped
 TIMER_0: set channel 0 to 5000
 TIMER_0: starting
-TIMER_0: channel 0 fired at SW count  6592239 - init:  6592239
+TIMER_0: channel 0 fired at SW count  6610163 - init:  6610163
 
 TEST SUCCEEDED
 

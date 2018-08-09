@@ -1,6 +1,5 @@
 make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/examples/dtls-echo clean all
 Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
-make[1]: Nothing to be done for `Makefile.include'.
 make: Nothing to be done for `clean'.
 Building application "dtls_echo" for "native" with MCU "native".
 

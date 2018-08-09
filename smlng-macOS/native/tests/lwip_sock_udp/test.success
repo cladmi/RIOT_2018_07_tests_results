@@ -1,0 +1,55 @@
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+make[1]: Nothing to be done for `Makefile.include'.
+./tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+make[2]: Nothing to be done for `Makefile.include'.
+/Volumes/devel/github/smlng/RIOT/tests/lwip_sock_udp/bin/native/tests_lwip_sock_udp.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+code 0x41
+Calling test_sock_udp_create6__EADDRINUSE()
+Calling test_sock_udp_create6__EAFNOSUPPORT()
+Calling test_sock_udp_create6__EINVAL_addr()
+Calling test_sock_udp_create6__EINVAL_netif()
+Calling test_sock_udp_create6__no_endpoints()
+Calling test_sock_udp_create6__only_local()
+Calling test_sock_udp_create6__only_local_port0()
+Calling test_sock_udp_create6__only_local_reuse_ep()
+Calling test_sock_udp_create6__only_remote()
+Calling test_sock_udp_create6__full()
+Calling test_sock_udp_recv6__EADDRNOTAVAIL()
+Calling test_sock_udp_recv6__EAGAIN()
+Calling test_sock_udp_recv6__ENOBUFS()
+Calling test_sock_udp_recv6__ETIMEDOUT()
+ * Calling sock_udp_recv()
+ * (timed out with timeout 1000000)
+Calling test_sock_udp_recv6__socketed()
+Calling test_sock_udp_recv6__socketed_with_remote()
+Calling test_sock_udp_recv6__unsocketed()
+Calling test_sock_udp_recv6__unsocketed_with_remote()
+Calling test_sock_udp_recv6__with_timeout()
+Calling test_sock_udp_recv6__non_blocking()
+Calling test_sock_udp_send6__EAFNOSUPPORT()
+Calling test_sock_udp_send6__EINVAL_addr()
+Calling test_sock_udp_send6__EINVAL_netif()
+Calling test_sock_udp_send6__EINVAL_port()
+Calling test_sock_udp_send6__EHOSTUNREACH()
+Calling test_sock_udp_send6__ENOTCONN()
+Calling test_sock_udp_send6__socketed_no_local_no_netif()
+Calling test_sock_udp_send6__socketed_no_netif()
+Calling test_sock_udp_send6__socketed_no_local()
+Calling test_sock_udp_send6__socketed()
+Calling test_sock_udp_send6__socketed_other_remote()
+Calling test_sock_udp_send6__unsocketed_no_local_no_netif()
+Calling test_sock_udp_send6__unsocketed_no_netif()
+Calling test_sock_udp_send6__unsocketed_no_local()
+Calling test_sock_udp_send6__unsocketed()
+Calling test_sock_udp_send6__no_sock_no_netif()
+Calling test_sock_udp_send6__no_sock()
+ALL TESTS SUCCESSFUL
+

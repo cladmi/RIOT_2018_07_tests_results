@@ -1,0 +1,37 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/socket_zep test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+./tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/socket_zep/bin/native/socket_zep.elf  -z [::]:12345,[::1]:17754
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Socket ZEP device driver test
+Initializing socket ZEP with (local: [::]:12345, remote: [::1]:17754)
+(Hwaddrs: 3038, 005a45501c1e3038)
+Send zero-length packet
+Send 'Hello\0World\0'
+Waiting for an incoming message (use `make test`)
+Received invalid packet
+  File "/Volumes/devel/github/smlng/RIOT/dist/tools/testrunner/testrunner.py", line 55, in run
+    testfunc(child)
+  File "./tests/01-run.py", line 50, in testfunc
+    child.expect(r"RSSI: \d+, LQI: \d+, Data:")
+  File "/usr/local/lib/python3.7/site-packages/pexpect/spawnbase.py", line 341, in expect
+    timeout, searchwindowsize, async_)
+  File "/usr/local/lib/python3.7/site-packages/pexpect/spawnbase.py", line 369, in expect_list
+    return exp.expect_loop(timeout)
+  File "/usr/local/lib/python3.7/site-packages/pexpect/expect.py", line 119, in expect_loop
+    return self.timeout(e)
+  File "/usr/local/lib/python3.7/site-packages/pexpect/expect.py", line 82, in timeout
+    raise TIMEOUT(msg)
+Timeout in expect script at "child.expect(r"RSSI: \d+, LQI: \d+, Data:")" (tests/socket_zep/tests/01-run.py:50)
+
+Run tests failed
+make: *** [test] Error 1
+
+Return value: 2

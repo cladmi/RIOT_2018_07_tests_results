@@ -1,0 +1,38 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/thread_flags test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/thread_flags/bin/native/tests_thread_flags.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+START
+thread(): waiting for 0x1...
+main(): setting flag 0x0001
+thread(): received flags: 0x0001
+thread(): waiting for 0x1 || 0x64...
+main(): setting flag 0x0064
+thread(): received flags: 0x0064
+thread(): waiting for 0x2 && 0x4...
+main(): setting flag 0x0001
+main(): setting flag 0x0008
+main(): setting flag 0x0002
+main(): setting flag 0x0004
+thread(): received flags: 0x0006
+thread(): waiting for any flag, one by one
+thread(): received flags: 0x0001
+thread(): waiting for any flag, one by one
+thread(): received flags: 0x0008
+main: setting 100ms timeout...
+main: timeout triggered. time passed: 105942us
+FAILURE
+Unexpected end of file in expect script at "child.expect("SUCCESS")" (tests/thread_flags/tests/01-run.py:27)
+
+Process already stopped
+make: *** [test] Error 1
+
+Return value: 2

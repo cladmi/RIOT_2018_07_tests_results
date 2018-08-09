@@ -1,0 +1,16 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/examples/dtls-echo clean all
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+make[1]: Nothing to be done for `Makefile.include'.
+make: Nothing to be done for `clean'.
+Building application "dtls_echo" for "native" with MCU "native".
+
+make[1]: Nothing to be done for `prepare'.
+"/Library/Developer/CommandLineTools/usr/bin/make" -C /Volumes/devel/github/smlng/RIOT/examples/dtls-echo/bin/pkg/native/tinydtls
+/Volumes/devel/github/smlng/RIOT/examples/dtls-echo/dtls-client.c:122:17: error: comparison of address of 'remote.netif' equal to a null pointer is always false [-Werror,-Wtautological-pointer-compare]
+    if (&remote.netif ==  SOCK_ADDR_ANY_NETIF) {
+         ~~~~~~~^~~~~     ~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make[1]: *** [/Volumes/devel/github/smlng/RIOT/examples/dtls-echo/bin/native/application_dtls_echo/dtls-client.o] Error 1
+make: *** [/Volumes/devel/github/smlng/RIOT/examples/dtls-echo/bin/native/application_dtls_echo.a] Error 2
+
+Return value: 2

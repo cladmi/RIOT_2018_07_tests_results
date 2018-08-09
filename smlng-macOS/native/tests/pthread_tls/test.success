@@ -1,0 +1,99 @@
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/pthread_tls/bin/native/tests_pthread_tls.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+START
+
+-= TEST 1 - create 20 tls with sequencial values 0...19 =-
+now rise sequencial by one values 1...20
+pick deliberate storage (key[3]:3150496) and change the value
+show tls values:
+key[0]: 3150400, val: 1
+key[1]: 3150432, val: 2
+key[2]: 3150464, val: 3
+key[3]: 3150496, val: 42
+key[4]: 3150528, val: 5
+key[5]: 3150560, val: 6
+key[6]: 3150592, val: 7
+key[7]: 3150624, val: 8
+key[8]: 3150656, val: 9
+key[9]: 3150688, val: 10
+key[10]: 3150720, val: 11
+key[11]: 3150752, val: 12
+key[12]: 3150784, val: 13
+key[13]: 3150816, val: 14
+key[14]: 3150848, val: 15
+key[15]: 3150880, val: 16
+key[16]: 3150912, val: 17
+key[17]: 3150944, val: 18
+key[18]: 3150976, val: 19
+key[19]: 3151008, val: 20
+
+ -= TEST 2 - delete deliberate key (key[5]:3150560) =-
+show tls values:
+key[0]: 3150400, val: 1
+key[1]: 3150432, val: 2
+key[2]: 3150464, val: 3
+key[3]: 3150496, val: 42
+key[4]: 3150528, val: 5
+key[6]: 3150592, val: 7
+key[7]: 3150624, val: 8
+key[8]: 3150656, val: 9
+key[9]: 3150688, val: 10
+key[10]: 3150720, val: 11
+key[11]: 3150752, val: 12
+key[12]: 3150784, val: 13
+key[13]: 3150816, val: 14
+key[14]: 3150848, val: 15
+key[15]: 3150880, val: 16
+key[16]: 3150912, val: 17
+key[17]: 3150944, val: 18
+key[18]: 3150976, val: 19
+key[19]: 3151008, val: 20
+
+-= TEST 3 - create new tls =-
+added new tls, key: 4194432, val: 99
+show tls values:
+key[0]: 3150400, val: 1
+key[1]: 3150432, val: 2
+key[2]: 3150464, val: 3
+key[3]: 3150496, val: 42
+key[4]: 3150528, val: 5
+key[6]: 3150592, val: 7
+key[7]: 3150624, val: 8
+key[8]: 3150656, val: 9
+key[9]: 3150688, val: 10
+key[10]: 3150720, val: 11
+key[11]: 3150752, val: 12
+key[12]: 3150784, val: 13
+key[13]: 3150816, val: 14
+key[14]: 3150848, val: 15
+key[15]: 3150880, val: 16
+key[16]: 3150912, val: 17
+key[17]: 3150944, val: 18
+key[18]: 3150976, val: 19
+key[19]: 3151008, val: 20
+
+-= TEST 4 - delete all keys =-
+show tls values:
+
+-= TEST 5 - try delete non-existing key =-
+try to delete returns: 0
+
+-= TEST 6 - add key and delete without a tls =-
+created key: 5243312
+try to delete returns: 0
+
+-= TEST 7 - add key without tls =-
+created key: 5243328
+test_7_val: 0x0
+tls tests finished.
+SUCCESS
+

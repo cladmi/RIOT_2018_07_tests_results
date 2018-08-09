@@ -1,0 +1,63 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/examples/lua_basic clean all
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+make[1]: Nothing to be done for `Makefile.include'.
+make[1]: Nothing to be done for `Makefile.include'.
+make: Nothing to be done for `clean'.
+Building application "lua_basic" for "native" with MCU "native".
+
+xxd -i main.lua | sed 's/^unsigned/const unsigned/g' > /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/native/lua/main.lua.h
+rm -Rf /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/lua
+mkdir -p /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/lua
+/Volumes/devel/github/smlng/RIOT/dist/tools/git/git-cache clone "https://github.com/lua/lua.git" "e354c6355e7f48e087678ec49e340ca0696725b1" "/Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/lua"
+Cloning into '/Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/lua'...
+HEAD is now at e354c635 small updates
+touch /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/lua/.git-downloaded
+git -C /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/lua checkout -f e354c6355e7f48e087678ec49e340ca0696725b1
+HEAD is now at e354c635 small updates
+git -C /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/lua am --no-gpg-sign --ignore-whitespace "/Volumes/devel/github/smlng/RIOT/pkg/lua"/patches/*.patch
+Applying: Remove luaL_newstate.
+Applying: Allow LUAL_BUFFERSIZE to be defined in the command line.
+Applying: Make size of LoadF buffer configurable.
+Applying: Remove os.tmpname.
+Applying: Do not allocate buffers on the stack.
+Applying: Cleanup test module.
+Applying: Add a proper makefile.
+Applying: Default to 32 bit build and small buffer size.
+touch /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/lua/.git-patched
+rm -Rf /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/tlsf
+mkdir -p /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/tlsf
+/Volumes/devel/github/smlng/RIOT/dist/tools/git/git-cache clone "https://github.com/mattconte/tlsf" "a1f743ffac0305408b39e791e0ffb45f6d9bc777" "/Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/tlsf"
+Cloning into '/Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/tlsf'...
+HEAD is now at a1f743f Merge pull request #3 from velvitonator/large-alloc-corruption
+touch /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/tlsf/.git-downloaded
+git -C /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/tlsf checkout -f a1f743ffac0305408b39e791e0ffb45f6d9bc777
+HEAD is now at a1f743f Merge pull request #3 from velvitonator/large-alloc-corruption
+git -C /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/tlsf am --no-gpg-sign --ignore-whitespace "/Volumes/devel/github/smlng/RIOT/pkg/tlsf"/patches/*.patch
+Applying: Fix warnining on implicit pointer conversion.
+touch /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/tlsf/.git-patched
+"/Library/Developer/CommandLineTools/usr/bin/make" -C /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/lua -f Makefile.lua
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/native/lua.a(ltests.o) has no symbols
+"/Library/Developer/CommandLineTools/usr/bin/make" -C /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/pkg/native/tlsf
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/native/core.a(atomic_sync.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/native/periph_common.a(cpuid.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/native/periph_common.a(eeprom.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/native/periph_common.a(flashpage.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/native/periph_common.a(i2c.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/native/periph_common.a(pm.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/native/periph_common.a(spi.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/native/periph_common.a(timer.o) has no symbols
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/native/auto_init.a(auto_init_sht1x.o) has no symbols
+Undefined symbols for architecture i386:
+  "_lua_riot_builtin_lua_table_len", referenced from:
+      __ll_searcher_builtin_lua in lua-contrib.a(lua_loadlib.o)
+  "_lua_riot_builtin_lua_table", referenced from:
+      __ll_searcher_builtin_lua in lua-contrib.a(lua_loadlib.o)
+  "_lua_riot_builtin_c_table_len", referenced from:
+      __ll_searcher_builtin_c in lua-contrib.a(lua_loadlib.o)
+  "_lua_riot_builtin_c_table", referenced from:
+      __ll_searcher_builtin_c in lua-contrib.a(lua_loadlib.o)
+ld: symbol(s) not found for architecture i386
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [/Volumes/devel/github/smlng/RIOT/examples/lua_basic/bin/native/lua_basic.elf] Error 1
+
+Return value: 2

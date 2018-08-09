@@ -1,0 +1,46 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/rmutex test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/rmutex/bin/native/tests_rmutex.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Recursive Mutex test
+Please refer to the README.md for more information
+
+T3 (prio 6, depth 0): trying to lock rmutex now
+T4 (prio 4, depth 0): trying to lock rmutex now
+T5 (prio 5, depth 0): trying to lock rmutex now
+T6 (prio 2, depth 0): trying to lock rmutex now
+T7 (prio 4, depth 0): trying to lock rmutex now
+main: unlocking recursive mutex
+T6 (prio 2, depth 0): locked rmutex now
+T6 (prio 2, depth 1): trying to lock rmutex now
+T6 (prio 2, depth 1): locked rmutex now
+T6 (prio 2, depth 2): trying to lock rmutex now
+T6 (prio 2, depth 2): locked rmutex now
+T6 (prio 2, depth 3): trying to lock rmutex now
+T6 (prio 2, depth 3): locked rmutex now
+T6 (prio 2, depth 3): unlocked rmutex
+T6 (prio 2, depth 2): unlocked rmutex
+T6 (prio 2, depth 1): unlocked rmutex
+T6 (prio 2, depth 0): unlocked rmutex
+T4 (prio 4, depth 0): locked rmutex now
+T4 (prio 4, depth 1): trying to lock rmutex now
+T4 (prio 4, depth 1): locked rmutex now
+T4 (prio 4, depth 2): trying to lock rmutex now
+T4 (prio 4, depth 2): locked rmutex now
+T4 (prio 4, depth 2): unlocked rmutex
+T4 (prio 4, depth 1): unlocked rmutex
+T4 (prio 4, depth 0): unlocked rmutex
+Unexpected end of file in expect script at "(T, thread_prio[T], depth))" (tests/rmutex/tests/01-run.py:44)
+
+Process already stopped
+make: *** [test] Error 1
+
+Return value: 2

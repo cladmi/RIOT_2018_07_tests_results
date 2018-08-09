@@ -1,0 +1,68 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/thread_cooperation test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+./tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/thread_cooperation/bin/native/tests_thread_cooperation.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+[START] compute 12! (factorial).
+MAIN: create thread, arg: 1
+MAIN: msg to T-3
+T-03: alive
+T-03: got arg 1
+MAIN: create thread, arg: 2
+MAIN: msg to T-4
+T-04: alive
+T-04: got arg 2
+MAIN: create thread, arg: 3
+MAIN: msg to T-5
+T-05: alive
+T-05: got arg 3
+MAIN: create thread, arg: 4
+MAIN: msg to T-6
+T-06: alive
+T-06: got arg 4
+MAIN: create thread, arg: 5
+MAIN: msg to T-7
+T-07: alive
+T-07: got arg 5
+MAIN: create thread, arg: 6
+MAIN: msg to T-8
+T-08: alive
+T-08: got arg 6
+MAIN: create thread, arg: 7
+MAIN: msg to T-9
+T-09: alive
+T-09: got arg 7
+MAIN: create thread, arg: 8
+MAIN: msg to T-10
+T-10: alive
+T-10: got arg 8
+MAIN: create thread, arg: 9
+MAIN: msg to T-11
+T-11: alive
+T-11: got arg 9
+MAIN: create thread, arg: 10
+MAIN: msg to T-12
+T-12: alive
+T-12: got arg 10
+MAIN: create thread, arg: 11
+MAIN: msg to T-13
+T-13: alive
+T-13: got arg 11
+MAIN: create thread, arg: 12
+MAIN: msg to T-14
+T-14: alive
+T-14: got arg 12
+MAIN: reply from T-3
+Unexpected end of file in expect script at "child.expect(r"MAIN: \d+! = \d+")" (tests/thread_cooperation/tests/01-run.py:16)
+
+Process already stopped
+make: *** [test] Error 1
+
+Return value: 2

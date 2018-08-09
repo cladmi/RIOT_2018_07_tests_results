@@ -1,0 +1,49 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/lwip_sock_tcp test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+make[1]: Nothing to be done for `Makefile.include'.
+./tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+make[2]: Nothing to be done for `Makefile.include'.
+/Volumes/devel/github/smlng/RIOT/tests/lwip_sock_tcp/bin/native/tests_lwip_sock_tcp.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+code 0x41
+Calling test_tcp_connect6__EADDRINUSE()
+Calling test_tcp_connect6__EAFNOSUPPORT()
+Calling test_tcp_connect6__EINVAL_addr()
+Calling test_tcp_connect6__EINVAL_netif()
+Calling test_tcp_connect6__success_without_port()
+Calling test_tcp_connect6__success_local_port()
+Calling test_tcp_listen6__EADDRINUSE()
+Calling test_tcp_listen6__EAFNOSUPPORT()
+Calling test_tcp_listen6__EINVAL()
+Calling test_tcp_listen6__success_any_netif()
+Calling test_tcp_listen6__success_spec_netif()
+Calling test_tcp_accept6__EAGAIN()
+Calling test_tcp_accept6__EINVAL()
+Call
+ * Calling sock_tcp_accept()
+ * (timed out with timeout 1000000)
+Calling test_tcp_accept6__success()
+Calling test_tcp_read6__EAGAIN()
+Calling test_tcp_read6__ECONNRESET()
+Calling test_tcp_read6__ENOTCONN()
+Calling test_tcp_read6__ETIMEDOUT()
+ * Calling sock_tcp_read()
+ * (timed out with timeout 1000000)
+Calling test_tcp_read6__success()
+Calling test_tcp_read6__success_with_timeout()
+Calling test_tcp_read6__success_non_blocking()
+Calling test_tcp_write6__ENOTCONN()
+Calling test_tcp_write6__success()
+ALL TESTS SUCCESSFUL
+Timeout in expect script at "child.expect_exact("Calling test_tcp_accept6__ETIMEDOUT()")" (tests/lwip_sock_tcp/tests/01-run.py:75)
+
+make: *** [test] Error 1
+
+Return value: 2

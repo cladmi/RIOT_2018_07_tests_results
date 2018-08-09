@@ -1,0 +1,28 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/driver_my9221 test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/driver_my9221/bin/native/tests_driver_my9221.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+[START]
+- light up all LEDs one by one.
+drivers/my9221/my9221.c:124 => 0x33ae
+*** RIOT kernel panic:
+FAILED ASSERTION.
+
+*** halted.
+
+
+native: exiting
+Unexpected end of file in expect script at "child.expect_exact("[SUCCESS]", timeout=60)" (tests/driver_my9221/tests/01-run.py:15)
+
+Process already stopped
+make: *** [test] Error 1
+
+Return value: 2

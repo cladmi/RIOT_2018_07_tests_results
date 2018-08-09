@@ -1,0 +1,55 @@
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+make[1]: Nothing to be done for `Makefile.include'.
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+make[2]: Nothing to be done for `Makefile.include'.
+/Volumes/devel/github/smlng/RIOT/tests/pkg_ucglib/bin/native/tests_pkg_ucglib.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+Initializing dummy output.
+ucg: UCG_MSG_DEV_POWER_UP
+ucg: UCG_MSG_GET_DIMENSION
+Initializing display.
+Drawing on screen.
+ucg: UCG_MSG_DRAW_PIXEL (128)
+ucg: UCG_MSG_DRAW_PIXEL (256)
+ucg: UCG_MSG_DRAW_PIXEL (384)
+ucg: UCG_MSG_DRAW_PIXEL (512)
+ucg: UCG_MSG_DRAW_PIXEL (640)
+ucg: UCG_MSG_DRAW_PIXEL (768)
+ucg: UCG_MSG_DRAW_PIXEL (896)
+ucg: UCG_MSG_DRAW_PIXEL (1024)
+ucg: UCG_MSG_DRAW_PIXEL (1152)
+ucg: UCG_MSG_DRAW_PIXEL (1280)
+ucg: UCG_MSG_DRAW_PIXEL (1408)
+ucg: UCG_MSG_DRAW_PIXEL (1536)
+ucg: UCG_MSG_DRAW_PIXEL (1664)
+ucg: UCG_MSG_DRAW_PIXEL (1792)
+ucg: UCG_MSG_DRAW_PIXEL (1920)
+ucg: UCG_MSG_DRAW_PIXEL (2048)
+ucg: UCG_MSG_DRAW_PIXEL (2176)
+ucg: UCG_MSG_DRAW_PIXEL (2304)
+ucg: UCG_MSG_DRAW_PIXEL (2432)
+ucg: UCG_MSG_DRAW_PIXEL (2560)
+ucg: UCG_MSG_DRAW_PIXEL (2688)
+ucg: UCG_MSG_DRAW_PIXEL (2816)
+ucg: UCG_MSG_DRAW_PIXEL (2944)
+ucg: UCG_MSG_DRAW_PIXEL (3072)
+ucg: UCG_MSG_DRAW_PIXEL (3200)
+ucg: UCG_MSG_DRAW_PIXEL (3328)
+ucg: UCG_MSG_DRAW_PIXEL (3456)
+ucg: UCG_MSG_DRAW_PIXEL (3584)
+ucg: UCG_MSG_DRAW_PIXEL (3712)
+ucg: UCG_MSG_DRAW_PIXEL (3840)
+ucg: UCG_MSG_DRAW_PIXEL (3968)
+ucg: UCG_MSG_DRAW_PIXEL (4096)
+ucg: UCG_MSG_DRAW_PIXEL (4224)
+ucg: UCG_MSG_DRAW_PIXEL (4352)
+ucg: UCG_MSG_DRAW_PIXEL (4480)
+ucg: UCG_MSG_DRAW_PIXEL (4608)
+

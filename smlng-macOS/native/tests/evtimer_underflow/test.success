@@ -1,0 +1,6 @@
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+....................................................................................................
+Stopped after 100 iterations, but should run forever.
+=> All tests successful
+

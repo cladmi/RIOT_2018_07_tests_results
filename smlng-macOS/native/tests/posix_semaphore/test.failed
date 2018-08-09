@@ -1,0 +1,54 @@
+make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/posix_semaphore test
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+tests/01-run.py
+Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+/Volumes/devel/github/smlng/RIOT/tests/posix_semaphore/bin/native/tests_posix_semaphore.elf   
+RIOT native interrupts/signals initialized.
+LED_RED_OFF
+LED_GREEN_ON
+RIOT native board initialized.
+RIOT native hardware initialization complete.
+
+main(): This is RIOT! (Version: buildtest)
+######################### TEST1:
+first: sem_init
+first: thread create
+first: thread created
+first: sem_getvalue
+first: sem_getvalue != 0
+first: do yield
+second: sem_trywait
+second: sem_trywait failed
+second: sem_trywait done with == 0
+second: wait for post
+first: done yield
+first: sem_trywait
+first: sem_trywait FAILED
+first: sem_trywait done
+first: sem_post
+second: sem was posted
+second: end
+first: sem_post done
+first: sem_destroy
+first: end
+######################### TEST2:
+first: sem_init
+first: thread create: 5
+first: thread created: priority 5 (1/5)
+first: thread create: 4
+first: thread created: priority 4 (2/5)
+first: thread create: 3
+first: thread created: priority 3 (3/5)
+first: thread create: 2
+first: thread created: priority 2 (4/5)
+first: thread create: 1
+first: thread created: priority 1 (5/5)
+------------------------------------------
+post no. 0
+Thread 'priority 1' woke up.
+Unexpected end of file in expect script at "term.expect_exact("Back in main thread.")" (tests/posix_semaphore/tests/01-run.py:52)
+
+Process already stopped
+make: *** [test] Error 1
+
+Return value: 2

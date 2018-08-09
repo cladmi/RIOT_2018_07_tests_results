@@ -1,0 +1,25 @@
+Installed compiler toolchains 
+-----------------------------
+             native gcc: Apple LLVM version 9.1.0 (clang-902.0.39.2)
+      arm-none-eabi-gcc: arm-none-eabi-gcc (GNU Tools for Arm Embedded Processors 7-2017-q4-major) 7.2.1 20170904 (release) [ARM/embedded-7-branch revision 255204]
+                avr-gcc: avr-gcc (GCC) 8.1.0
+       mips-mti-elf-gcc: missing
+             msp430-gcc: missing
+   riscv-none-embed-gcc: missing
+                  clang: Apple LLVM version 9.1.0 (clang-902.0.39.2)
+
+Installed compiler libs
+-----------------------
+   arm-none-eabi-newlib: "2.5.0"
+    mips-mti-elf-newlib: missing
+riscv-none-embed-newlib: missing
+               avr-libc: "2.0.0" ("20150208")
+
+Installed development tools
+---------------------------
+                  cmake: cmake version 3.12.0
+               cppcheck: Cppcheck 1.84
+                doxygen: 1.8.14
+                 flake8: 3.5.0 (mccabe: 0.6.1, pycodestyle: 2.3.1, pyflakes: 1.6.0) CPython 2.7.15 on Darwin
+                    git: git version 2.18.0
+             coccinelle: spatch version 1.0.6 compiled with OCaml version 4.05.0

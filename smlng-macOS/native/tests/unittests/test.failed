@@ -1,25 +1,7 @@
 make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/unittests test
 Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
-make[1]: Nothing to be done for `Makefile.include'.
-make[1]: Nothing to be done for `Makefile.include'.
-make[1]: Nothing to be done for `Makefile.include'.
-make[1]: Nothing to be done for `Makefile.include'.
-make[1]: Nothing to be done for `Makefile.include'.
-make[1]: Nothing to be done for `Makefile.include'.
-make[1]: Nothing to be done for `Makefile.include'.
-make[1]: Nothing to be done for `Makefile.include'.
-make[1]: Nothing to be done for `Makefile.include'.
 ./tests/01-run.py
 Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
-make[2]: Nothing to be done for `Makefile.include'.
-make[2]: Nothing to be done for `Makefile.include'.
-make[2]: Nothing to be done for `Makefile.include'.
-make[2]: Nothing to be done for `Makefile.include'.
-make[2]: Nothing to be done for `Makefile.include'.
-make[2]: Nothing to be done for `Makefile.include'.
-make[2]: Nothing to be done for `Makefile.include'.
-make[2]: Nothing to be done for `Makefile.include'.
-make[2]: Nothing to be done for `Makefile.include'.
 /Volumes/devel/github/smlng/RIOT/tests/unittests/bin/native/tests_unittests.elf   
 RIOT native interrupts/signals initialized.
 LED_RED_OFF

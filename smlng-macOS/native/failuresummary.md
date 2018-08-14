@@ -5,13 +5,14 @@ Failures during compilation:
 - [examples/lua_basic](examples/lua_basic/compilation.failed)
 
 Failures during test:
-- [tests/cbor](tests/cbor/test.failed)
 - [tests/driver_my9221](tests/driver_my9221/test.failed)
+- [tests/evtimer_msg](tests/evtimer_msg/test.failed)
 - [tests/lwip](tests/lwip/test.failed)
 - [tests/lwip_sock_tcp](tests/lwip_sock_tcp/test.failed)
 - [tests/mutex_order](tests/mutex_order/test.failed)
 - [tests/netstats_l2](tests/netstats_l2/test.failed)
 - [tests/pipe](tests/pipe/test.failed)
+- [tests/pkg_cayenne-lpp](tests/pkg_cayenne-lpp/test.failed)
 - [tests/posix_semaphore](tests/posix_semaphore/test.failed)
 - [tests/pthread_rwlock](tests/pthread_rwlock/test.failed)
 - [tests/rmutex](tests/rmutex/test.failed)
@@ -21,6 +22,6 @@ Failures during test:
 - [tests/thread_flags](tests/thread_flags/test.failed)
 - [tests/thread_msg_seq](tests/thread_msg_seq/test.failed)
 - [tests/trace](tests/trace/test.failed)
+- [tests/trickle](tests/trickle/test.failed)
 - [tests/unittests](tests/unittests/test.failed)
-- [tests/xtimer_msg_receive_timeout](tests/xtimer_msg_receive_timeout/test.failed)
 - [tests/xtimer_usleep](tests/xtimer_usleep/test.failed)

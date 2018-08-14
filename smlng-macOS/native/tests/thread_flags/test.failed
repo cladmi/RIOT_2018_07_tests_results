@@ -28,7 +28,7 @@ thread(): received flags: 0x0001
 thread(): waiting for any flag, one by one
 thread(): received flags: 0x0008
 main: setting 100ms timeout...
-main: timeout triggered. time passed: 105942us
+main: timeout triggered. time passed: 101305us
 FAILURE
 Unexpected end of file in expect script at "child.expect("SUCCESS")" (tests/thread_flags/tests/01-run.py:27)
 

@@ -22,8 +22,8 @@ days_in              Tells you the number of days in a month.
 leap_year            Tells you if a supplied year is a leap year.
 doomsday             Tells you the wday Doomsday of the supplied year.
 day                  Tells you the day of the supplied date.
-days_in
 > days_in
+days_in
 days_in
 Usage: days_in <Month[1..12]>
 > days_in 13
@@ -130,8 +130,8 @@ What weekday was 2017-01-01? The 1(th) day of the year was a SUN.
 day 2017 1 15
 day 2017 1 15
 What weekday was 2017-01-15? The 15(th) day of the year was a SUN.
-> day 2017 1 28
 day 2017 1 28
+> day 2017 1 28
 day 2017 1 28
 What weekday was 2017-01-28? The 28(th) day of the year was a SAT.
 > day 2017 4 1
@@ -146,8 +146,8 @@ What weekday was 2017-04-15? The 105(th) day of the year was a SAT.
 day 2017 4 28
 day 2017 4 28
 What weekday was 2017-04-28? The 118(th) day of the year was a FRI.
-> day 2017 11 1
 day 2017 11 1
+> day 2017 11 1
 day 2017 11 1
 What weekday was 2017-11-01? The 305(th) day of the year was a WED.
 > day 2017 11 15
@@ -186,8 +186,8 @@ What weekday was 2018-04-28? The 118(th) day of the year was a SAT.
 day 2018 11 1
 day 2018 11 1
 What weekday was 2018-11-01? The 305(th) day of the year was a THU.
-day 2018 11 15
 > day 2018 11 15
+day 2018 11 15
 day 2018 11 15
 What weekday was 2018-11-15? The 319(th) day of the year was a THU.
 > day 2018 11 28

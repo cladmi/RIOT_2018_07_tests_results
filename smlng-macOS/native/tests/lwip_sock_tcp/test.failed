@@ -1,9 +1,7 @@
 make RIOT_CI_BUILD=1 CC_NOCOLOR=1 --no-print-directory -C ../../smlng/RIOT/tests/lwip_sock_tcp test
 Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
-make[1]: Nothing to be done for `Makefile.include'.
 ./tests/01-run.py
 Configured with: --prefix=/Library/Developer/CommandLineTools/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
-make[2]: Nothing to be done for `Makefile.include'.
 /Volumes/devel/github/smlng/RIOT/tests/lwip_sock_tcp/bin/native/tests_lwip_sock_tcp.elf   
 RIOT native interrupts/signals initialized.
 LED_RED_OFF
@@ -26,8 +24,8 @@ Calling test_tcp_listen6__success_any_netif()
 Calling test_tcp_listen6__success_spec_netif()
 Calling test_tcp_accept6__EAGAIN()
 Calling test_tcp_accept6__EINVAL()
-Call
- * Calling sock_tcp_accept()
+Calling test_tcp_accept6__ETIMEDOUT()
+ * Calling sock_tc
  * (timed out with timeout 1000000)
 Calling test_tcp_accept6__success()
 Calling test_tcp_read6__EAGAIN()
@@ -42,7 +40,7 @@ Calling test_tcp_read6__success_non_blocking()
 Calling test_tcp_write6__ENOTCONN()
 Calling test_tcp_write6__success()
 ALL TESTS SUCCESSFUL
-Timeout in expect script at "child.expect_exact("Calling test_tcp_accept6__ETIMEDOUT()")" (tests/lwip_sock_tcp/tests/01-run.py:75)
+Timeout in expect script at "child.expect_exact(" * Calling sock_tcp_accept()")" (tests/lwip_sock_tcp/tests/01-run.py:76)
 
 make: *** [test] Error 1
 

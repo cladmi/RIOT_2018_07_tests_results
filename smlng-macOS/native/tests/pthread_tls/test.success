@@ -88,11 +88,11 @@ show tls values:
 try to delete returns: 0
 
 -= TEST 6 - add key and delete without a tls =-
-created key: 5243312
+created key: 3151040
 try to delete returns: 0
 
 -= TEST 7 - add key without tls =-
-created key: 5243328
+created key: 3151056
 test_7_val: 0x0
 tls tests finished.
 SUCCESS

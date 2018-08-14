@@ -14,10 +14,10 @@ Running test 5 times with 7 distinct sleep times
 Please hit any key and then ENTER to continue
 a
 a
-Slept for 15091 us (expected: 10000 us) Offset: 5091 us
-Invalid timeout 15091 ,expected 9500 < 10000 < 10500
+Slept for 15070 us (expected: 10000 us) Offset: 5070 us
+Invalid timeout 15070 ,expected 9500 < 10000 < 10500
 Host max error	500
-error		5591
+error		5570
 
 make: *** [test] Error 1
 

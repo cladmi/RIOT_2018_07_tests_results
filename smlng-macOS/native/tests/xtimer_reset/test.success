@@ -12,7 +12,7 @@ main(): This is RIOT! (Version: buildtest)
 This test tests re-setting of an already active timer.
 It should print three times "now=<value>", with values approximately 100ms (100000us) apart.
 now=172
-now=106712
-now=210254
+now=108487
+now=200717
 Test completed!
 
